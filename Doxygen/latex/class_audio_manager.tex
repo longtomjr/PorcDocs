@@ -1,0 +1,169 @@
+\hypertarget{class_audio_manager}{}\section{Audio\+Manager Class Reference}
+\label{class_audio_manager}\index{Audio\+Manager@{Audio\+Manager}}
+
+
+The Manager that handles the loading and storing of audio from streaming\+Assets.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_audio_manager_a3b15a1c66b05db34662afc48280e46cd}{Audio\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_audio_manager}{Audio\+Manager} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_audio_manager_a6299d7d95089dc7f96f3596905496b6a}{Get\+Audio\+Dictionary\+String} ()
+\begin{DoxyCompactList}\small\item\em Creates a human readable string of the audio\+Clips Dictionary. Used for debugging. \end{DoxyCompactList}\item 
+static \hyperlink{class_sound_clip}{Sound\+Clip} \hyperlink{class_audio_manager_a58e26f36e8bf3c4f06312bcc9ec75f13}{Get\+Audio} (string category\+Name, string audio\+Name)
+\begin{DoxyCompactList}\small\item\em Gets an Audio\+C\+Lip from the specified category, with the specified name. Throws a Log\+Warning and returns an Error sound if the Audio\+Clip does not exist. \end{DoxyCompactList}\item 
+static void \hyperlink{class_audio_manager_a5f2cf46ece0d2721215fc43865ddc378}{Load\+Audio\+Files} (string directory\+Path)
+\begin{DoxyCompactList}\small\item\em Loads all the audio files from the specified directory. \end{DoxyCompactList}\item 
+static void \hyperlink{class_audio_manager_ae00b97e57d52aa4b569004c48e5cd9ab}{Destroy} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_simple_priority_queue_8cs_a81a223a02c34d82b47199f08308847f2}{F\+M\+O\+D.\+System} \hyperlink{class_audio_manager_ad814b36aaed870a96339bcc8fb97e742}{Sound\+System}
+\item 
+static Dictionary$<$ string, Channel\+Group $>$ \hyperlink{class_audio_manager_a244e34ddca536d06f27f229d9bf5a892}{channel\+Groups}
+\item 
+static Channel\+Group \hyperlink{class_audio_manager_ad10f0724af4436d127f862f949b6f613}{master}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Manager that handles the loading and storing of audio from streaming\+Assets. 
+
+
+
+Definition at line 18 of file Audio\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_audio_manager_a3b15a1c66b05db34662afc48280e46cd}\label{class_audio_manager_a3b15a1c66b05db34662afc48280e46cd}} 
+\index{Audio\+Manager@{Audio\+Manager}!Audio\+Manager@{Audio\+Manager}}
+\index{Audio\+Manager@{Audio\+Manager}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Audio\+Manager()}{AudioManager()}}
+{\footnotesize\ttfamily Audio\+Manager.\+Audio\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_audio_manager}{Audio\+Manager} class. 
+
+
+
+Definition at line 32 of file Audio\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_audio_manager_ae00b97e57d52aa4b569004c48e5cd9ab}\label{class_audio_manager_ae00b97e57d52aa4b569004c48e5cd9ab}} 
+\index{Audio\+Manager@{Audio\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily static void Audio\+Manager.\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 122 of file Audio\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_audio_manager_a58e26f36e8bf3c4f06312bcc9ec75f13}\label{class_audio_manager_a58e26f36e8bf3c4f06312bcc9ec75f13}} 
+\index{Audio\+Manager@{Audio\+Manager}!Get\+Audio@{Get\+Audio}}
+\index{Get\+Audio@{Get\+Audio}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Audio()}{GetAudio()}}
+{\footnotesize\ttfamily static \hyperlink{class_sound_clip}{Sound\+Clip} Audio\+Manager.\+Get\+Audio (\begin{DoxyParamCaption}\item[{string}]{category\+Name,  }\item[{string}]{audio\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets an Audio\+C\+Lip from the specified category, with the specified name. Throws a Log\+Warning and returns an Error sound if the Audio\+Clip does not exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Name} & The category that the Audio\+Clip is in. Usually the same as the directory that the audio file was load from. \\
+\hline
+{\em audio\+Name} & The name of the \hyperlink{class_sound_clip}{Sound\+Clip}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_sound_clip}{Sound\+Clip} from the specified category with the specified name.
+\end{DoxyReturn}
+
+
+Definition at line 80 of file Audio\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_audio_manager_a6299d7d95089dc7f96f3596905496b6a}\label{class_audio_manager_a6299d7d95089dc7f96f3596905496b6a}} 
+\index{Audio\+Manager@{Audio\+Manager}!Get\+Audio\+Dictionary\+String@{Get\+Audio\+Dictionary\+String}}
+\index{Get\+Audio\+Dictionary\+String@{Get\+Audio\+Dictionary\+String}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Audio\+Dictionary\+String()}{GetAudioDictionaryString()}}
+{\footnotesize\ttfamily static string Audio\+Manager.\+Get\+Audio\+Dictionary\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a human readable string of the audio\+Clips Dictionary. Used for debugging. 
+
+\begin{DoxyReturn}{Returns}
+String containing the information of audio\+Clips.
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Audio\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_audio_manager_a5f2cf46ece0d2721215fc43865ddc378}\label{class_audio_manager_a5f2cf46ece0d2721215fc43865ddc378}} 
+\index{Audio\+Manager@{Audio\+Manager}!Load\+Audio\+Files@{Load\+Audio\+Files}}
+\index{Load\+Audio\+Files@{Load\+Audio\+Files}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Audio\+Files()}{LoadAudioFiles()}}
+{\footnotesize\ttfamily static void Audio\+Manager.\+Load\+Audio\+Files (\begin{DoxyParamCaption}\item[{string}]{directory\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all the audio files from the specified directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory\+Path} & The path of the directory you want to load the audio files from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file Audio\+Manager.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_audio_manager_a244e34ddca536d06f27f229d9bf5a892}\label{class_audio_manager_a244e34ddca536d06f27f229d9bf5a892}} 
+\index{Audio\+Manager@{Audio\+Manager}!channel\+Groups@{channel\+Groups}}
+\index{channel\+Groups@{channel\+Groups}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{channel\+Groups}{channelGroups}}
+{\footnotesize\ttfamily Dictionary$<$string, Channel\+Group$>$ Audio\+Manager.\+channel\+Groups\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 23 of file Audio\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_audio_manager_ad10f0724af4436d127f862f949b6f613}\label{class_audio_manager_ad10f0724af4436d127f862f949b6f613}} 
+\index{Audio\+Manager@{Audio\+Manager}!master@{master}}
+\index{master@{master}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{master}{master}}
+{\footnotesize\ttfamily Channel\+Group Audio\+Manager.\+master\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 25 of file Audio\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_audio_manager_ad814b36aaed870a96339bcc8fb97e742}\label{class_audio_manager_ad814b36aaed870a96339bcc8fb97e742}} 
+\index{Audio\+Manager@{Audio\+Manager}!Sound\+System@{Sound\+System}}
+\index{Sound\+System@{Sound\+System}!Audio\+Manager@{Audio\+Manager}}
+\subsubsection{\texorpdfstring{Sound\+System}{SoundSystem}}
+{\footnotesize\ttfamily \hyperlink{_simple_priority_queue_8cs_a81a223a02c34d82b47199f08308847f2}{F\+M\+O\+D.\+System} Audio\+Manager.\+Sound\+System\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 20 of file Audio\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Input\+Output/\hyperlink{_audio_manager_8cs}{Audio\+Manager.\+cs}\end{DoxyCompactItemize}

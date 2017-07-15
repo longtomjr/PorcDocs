@@ -1,0 +1,233 @@
+\hypertarget{class_ship_manager}{}\section{Ship\+Manager Class Reference}
+\label{class_ship_manager}\index{Ship\+Manager@{Ship\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ship_manager_ac66c77a24cd7fe00ef4083a5eed322ac}{Ship\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{class_ship_manager}{Ship\+Manager} with no ships or berths registered. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Event\+Handler} (\hyperlink{class_ship}{Ship} ship)
+\item 
+void \hyperlink{class_ship_manager_a4f54aabd64ef5b7e366e9dcbcffb1151}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Updates all ships according to the elapsed time. \end{DoxyCompactList}\item 
+\hyperlink{class_ship}{Ship} \hyperlink{class_ship_manager_a5251a3f11c3d47796f97a541a1ed4c44}{Add\+Ship} (string type, float x, float y)
+\begin{DoxyCompactList}\small\item\em Adds a ship to the world and puts its position at (x,y). Returns the created ship instance. Calls the Ship\+Created event. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_manager_a8a9fa6ebfb1f8f059f1776d620658808}{Remove\+Ship} (\hyperlink{class_ship}{Ship} ship)
+\begin{DoxyCompactList}\small\item\em Removes this ship from the world and calls the Ship\+Removed event. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ship_manager_a1a97c84b3ac0c958fbf1f11f9d04d16b}{Is\+Occupied} (\hyperlink{class_furniture}{Furniture} berth)
+\begin{DoxyCompactList}\small\item\em Returns true if this berth is currently holding a ship. Returns false if the furniture is not a berth. \end{DoxyCompactList}\item 
+\hyperlink{class_ship}{Ship} \hyperlink{class_ship_manager_a105f42a557a914a51310cf37be5624d9}{Get\+Berthed\+Ship} (\hyperlink{class_furniture}{Furniture} berth)
+\begin{DoxyCompactList}\small\item\em Gets the ship currently at this berth. Returns null if berth is unoccupied. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_manager_a681b9593e655583c8b0742f80daf5c96}{Berth\+Ship} (\hyperlink{class_furniture}{Furniture} berth, \hyperlink{class_ship}{Ship} ship)
+\begin{DoxyCompactList}\small\item\em Berths the ship at this berth. Cahgnes state of ship. \hyperlink{class_ship}{Ship} berthing should always be handled through this function to make sure the states are properly updated on both sides. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_manager_ad53a071f1e61d3542f7a95e1e5a6d783}{Deberth\+Ship} (\hyperlink{class_furniture}{Furniture} berth)
+\begin{DoxyCompactList}\small\item\em Deberths the ship from this berth. Throws an error if no ship was berthed here. Changes the ship state to W\+R\+A\+P\+P\+ED. Deberthing should always be handled through this function to make sure states are properly updated on both ends. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Event\+Handler} \hyperlink{class_ship_manager_ac4c4c3e36457dd80806ca4c08820852c}{Ship\+Created}
+\begin{DoxyCompactList}\small\item\em Called when a ship is added to the world through this manager. \end{DoxyCompactList}\item 
+\hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Event\+Handler} \hyperlink{class_ship_manager_a896ffeb71731c612b9da2dc9ffdcdae7}{Ship\+Removed}
+\begin{DoxyCompactList}\small\item\em Called when a ship is removed from the world through this manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Ship\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ship_manager_ac66c77a24cd7fe00ef4083a5eed322ac}\label{class_ship_manager_ac66c77a24cd7fe00ef4083a5eed322ac}} 
+\index{Ship\+Manager@{Ship\+Manager}!Ship\+Manager@{Ship\+Manager}}
+\index{Ship\+Manager@{Ship\+Manager}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Ship\+Manager()}{ShipManager()}}
+{\footnotesize\ttfamily Ship\+Manager.\+Ship\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \hyperlink{class_ship_manager}{Ship\+Manager} with no ships or berths registered. 
+
+
+
+Definition at line 27 of file Ship\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ship_manager_a5251a3f11c3d47796f97a541a1ed4c44}\label{class_ship_manager_a5251a3f11c3d47796f97a541a1ed4c44}} 
+\index{Ship\+Manager@{Ship\+Manager}!Add\+Ship@{Add\+Ship}}
+\index{Add\+Ship@{Add\+Ship}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Ship()}{AddShip()}}
+{\footnotesize\ttfamily \hyperlink{class_ship}{Ship} Ship\+Manager.\+Add\+Ship (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Adds a ship to the world and puts its position at (x,y). Returns the created ship instance. Calls the Ship\+Created event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The ship type to spawn.\\
+\hline
+{\em x} & The x coordinate where the ship should appear.\\
+\hline
+{\em y} & The y coordinate where the ship should appear.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a681b9593e655583c8b0742f80daf5c96}\label{class_ship_manager_a681b9593e655583c8b0742f80daf5c96}} 
+\index{Ship\+Manager@{Ship\+Manager}!Berth\+Ship@{Berth\+Ship}}
+\index{Berth\+Ship@{Berth\+Ship}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Berth\+Ship()}{BerthShip()}}
+{\footnotesize\ttfamily void Ship\+Manager.\+Berth\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{berth,  }\item[{\hyperlink{class_ship}{Ship}}]{ship }\end{DoxyParamCaption})}
+
+
+
+Berths the ship at this berth. Cahgnes state of ship. \hyperlink{class_ship}{Ship} berthing should always be handled through this function to make sure the states are properly updated on both sides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em berth} & The berth furniture object.\\
+\hline
+{\em ship} & The ship to berth.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_ad53a071f1e61d3542f7a95e1e5a6d783}\label{class_ship_manager_ad53a071f1e61d3542f7a95e1e5a6d783}} 
+\index{Ship\+Manager@{Ship\+Manager}!Deberth\+Ship@{Deberth\+Ship}}
+\index{Deberth\+Ship@{Deberth\+Ship}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Deberth\+Ship()}{DeberthShip()}}
+{\footnotesize\ttfamily void Ship\+Manager.\+Deberth\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{berth }\end{DoxyParamCaption})}
+
+
+
+Deberths the ship from this berth. Throws an error if no ship was berthed here. Changes the ship state to W\+R\+A\+P\+P\+ED. Deberthing should always be handled through this function to make sure states are properly updated on both ends. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em berth} & The berth furniture object.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a105f42a557a914a51310cf37be5624d9}\label{class_ship_manager_a105f42a557a914a51310cf37be5624d9}} 
+\index{Ship\+Manager@{Ship\+Manager}!Get\+Berthed\+Ship@{Get\+Berthed\+Ship}}
+\index{Get\+Berthed\+Ship@{Get\+Berthed\+Ship}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Berthed\+Ship()}{GetBerthedShip()}}
+{\footnotesize\ttfamily \hyperlink{class_ship}{Ship} Ship\+Manager.\+Get\+Berthed\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{berth }\end{DoxyParamCaption})}
+
+
+
+Gets the ship currently at this berth. Returns null if berth is unoccupied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em berth} & The berth furniture object.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a1a97c84b3ac0c958fbf1f11f9d04d16b}\label{class_ship_manager_a1a97c84b3ac0c958fbf1f11f9d04d16b}} 
+\index{Ship\+Manager@{Ship\+Manager}!Is\+Occupied@{Is\+Occupied}}
+\index{Is\+Occupied@{Is\+Occupied}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Occupied()}{IsOccupied()}}
+{\footnotesize\ttfamily bool Ship\+Manager.\+Is\+Occupied (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{berth }\end{DoxyParamCaption})}
+
+
+
+Returns true if this berth is currently holding a ship. Returns false if the furniture is not a berth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em berth} & The berth furniture object.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a8a9fa6ebfb1f8f059f1776d620658808}\label{class_ship_manager_a8a9fa6ebfb1f8f059f1776d620658808}} 
+\index{Ship\+Manager@{Ship\+Manager}!Remove\+Ship@{Remove\+Ship}}
+\index{Remove\+Ship@{Remove\+Ship}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Ship()}{RemoveShip()}}
+{\footnotesize\ttfamily void Ship\+Manager.\+Remove\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{class_ship}{Ship}}]{ship }\end{DoxyParamCaption})}
+
+
+
+Removes this ship from the world and calls the Ship\+Removed event. 
+
+
+
+Definition at line 89 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}\label{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}} 
+\index{Ship\+Manager@{Ship\+Manager}!Ship\+Event\+Handler@{Ship\+Event\+Handler}}
+\index{Ship\+Event\+Handler@{Ship\+Event\+Handler}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Ship\+Event\+Handler()}{ShipEventHandler()}}
+{\footnotesize\ttfamily delegate void Ship\+Manager.\+Ship\+Event\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{class_ship}{Ship}}]{ship }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ship_manager_a4f54aabd64ef5b7e366e9dcbcffb1151}\label{class_ship_manager_a4f54aabd64ef5b7e366e9dcbcffb1151}} 
+\index{Ship\+Manager@{Ship\+Manager}!Update@{Update}}
+\index{Update@{Update}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ship\+Manager.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Updates all ships according to the elapsed time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time in seconds since the last call of this function.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Ship\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_ship_manager_ac4c4c3e36457dd80806ca4c08820852c}\label{class_ship_manager_ac4c4c3e36457dd80806ca4c08820852c}} 
+\index{Ship\+Manager@{Ship\+Manager}!Ship\+Created@{Ship\+Created}}
+\index{Ship\+Created@{Ship\+Created}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Ship\+Created}{ShipCreated}}
+{\footnotesize\ttfamily \hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Event\+Handler} Ship\+Manager.\+Ship\+Created}
+
+
+
+Called when a ship is added to the world through this manager. 
+
+
+
+Definition at line 38 of file Ship\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_ship_manager_a896ffeb71731c612b9da2dc9ffdcdae7}\label{class_ship_manager_a896ffeb71731c612b9da2dc9ffdcdae7}} 
+\index{Ship\+Manager@{Ship\+Manager}!Ship\+Removed@{Ship\+Removed}}
+\index{Ship\+Removed@{Ship\+Removed}!Ship\+Manager@{Ship\+Manager}}
+\subsubsection{\texorpdfstring{Ship\+Removed}{ShipRemoved}}
+{\footnotesize\ttfamily \hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Event\+Handler} Ship\+Manager.\+Ship\+Removed}
+
+
+
+Called when a ship is removed from the world through this manager. 
+
+
+
+Definition at line 43 of file Ship\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Ships/\hyperlink{_ship_manager_8cs}{Ship\+Manager.\+cs}\end{DoxyCompactItemize}

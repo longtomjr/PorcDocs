@@ -1,0 +1,1299 @@
+\hypertarget{class_furniture}{}\section{Furniture Class Reference}
+\label{class_furniture}\index{Furniture@{Furniture}}
+
+
+Installed\+Objects are things like walls, doors, and furniture (e.\+g. a sofa).  
+
+
+Inheritance diagram for Furniture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.493333cm]{class_furniture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_furniture_a126d329d48ac7f41a8567d400c0a2598}{Furniture} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_furniture}{Furniture} class. This constructor is used to create prototypes and should never be used ouside the Prototype Manager. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_ad44ee227637d74afa5636c9610ec8dbc}{Every\+Frame\+Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em This function is called to update the furniture animation in lua. This will be called every frame and should be used carefully. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_af86f663d0e91858a85de20149a0188e5}{Fixed\+Frequency\+Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em This function is called to update the furniture. This will also trigger Events\+Actions. This checks if the furniture is a Power\+Consumer, and if it does not have power it cancels its job. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_a3210d7837b7568a37f3f3f2f70c58d98}{Set\+Animation\+State} (string state\+Name)
+\begin{DoxyCompactList}\small\item\em Set the animation state. Will only have an effect if state\+Name is different from current animation state\+Name. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_a3cd1d79bc68f11708bca068e684385fd}{Set\+Animation\+Progress\+Value} (float current\+Value, float max\+Value)
+\begin{DoxyCompactList}\small\item\em Set the animation frame depending on a value. The currentvalue percent of the maxvalue will determine which frame is shown. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a88048e4444b4b10eb7826876798a4f0f}{Is\+Exit} ()
+\begin{DoxyCompactList}\small\item\em Whether this furniture is an exit for a room. \end{DoxyCompactList}\item 
+\hyperlink{_tile_8cs_a48a7177f465b04f310ccf25ae69d070a}{Enterability} \hyperlink{class_furniture_ac904b310f6d33670dd836b9c05da9496}{Is\+Enterable} ()
+\begin{DoxyCompactList}\small\item\em Checks if the furniture can be Entered. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a93e5bf048fbaa6d99f45f15d62b99915}{Get\+Default\+Sprite\+Name} ()
+\item 
+string \hyperlink{class_furniture_a9820e3379b92d0765131a3bbe0383c6e}{Get\+Sprite\+Name} (out bool explicit\+Sprite\+Used)
+\begin{DoxyCompactList}\small\item\em Check if the furniture has a function to determine the sprite name and calls that function. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a841c1151284cf19735791658688fd77d}{Get\+Overlay\+Sprite\+Name} ()
+\item 
+void \hyperlink{class_furniture_a28d8b4c5024c93c5d4da4879ce6c2f2b}{Read\+Xml\+Prototype} (Xml\+Reader reader\+Parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype furniture from X\+ML. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_a810a91747971fea72daee137e8aab9f5}{Read\+Xml\+Params} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the X\+ML for parameters that this furniture has and assign it to the furniture. \end{DoxyCompactList}\item 
+object \hyperlink{class_furniture_a70a11718cc06b20399767ac765ef52e7}{To\+J\+Son} ()
+\item 
+void \hyperlink{class_furniture_aeedc1bfd6d4fedeb81b839f89a545583}{From\+Json} (J\+Token furniture\+Token)
+\item 
+\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]} \hyperlink{class_furniture_ad88bf85157a61bb143b5347e6492a905}{Accepts\+For\+Storage} ()
+\begin{DoxyCompactList}\small\item\em Accepts for storage. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_afe6b540a3cc9ea3e3a7d951ad9d92097}{Set\+Uninstall\+Job} ()
+\item 
+void \hyperlink{class_furniture_ae369f8b64c986a029ffe7b9ecf5d3f30}{Uninstall} ()
+\begin{DoxyCompactList}\small\item\em Deconstructs the furniture. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_a3049fb349d8e8990ab703ca641488d59}{Set\+Deconstruct\+Job} ()
+\begin{DoxyCompactList}\small\item\em Sets the furniture to be deconstructed. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_a7ca16a3c95b1bf9b3d3f60c543e691b5}{Deconstruct} ()
+\begin{DoxyCompactList}\small\item\em Deconstructs the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_ac7197b3778cafab778581d936d2b5983}{Has\+Type\+Tag} (string type\+Tag)
+\begin{DoxyCompactList}\small\item\em Checks whether the furniture has a certain tag. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_furniture_aca7ba6acd54e3969018a2f8848dc2632}{Get\+Type\+Tags} ()
+\begin{DoxyCompactList}\small\item\em Gets the type tags. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a4cca1807f72cdf61fe438976db5ecf9c}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns Localization\+Code name for the furniture. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_af77901f8fc7bfde9ab7dfe55a5bdb57a}{Get\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the Unlocalized\+Description of the furniture. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_aaa94fa81a9ef7c7fd7fcc5854fd1ce61}{Get\+Job\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the description of the job linked to the furniture. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a19a8b804f1bcf3d3b9db7e184e17b250}{Get\+Progress\+Info} ()
+\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_furniture_a0834aab5c42424b7c700feeac78a8cc5}{Get\+Additional\+Info} ()
+\item 
+\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} \hyperlink{class_furniture_ac28ca12fba747625e26a10382ed47c84}{Get\+Pluggable} (Hash\+Set$<$ string $>$ utility\+Tags)
+\item 
+T \hyperlink{class_furniture_adfea45b46ac394267dbd99b8ee521728}{Get\+Component$<$ T $>$} (string component\+Name)
+\begin{DoxyCompactList}\small\item\em Gets component if present or null. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Buildable\+Component.\+Requirements} \hyperlink{class_furniture_aeddb6c1525947e6517f4c27ca992c1ab}{Get\+Possible\+Requirements} ()
+\item 
+T \hyperlink{class_furniture_aa6e7a8ac556cf6b05148257752bb5a58}{Get\+Order\+Action$<$ T $>$} ()
+\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_furniture_ac89ee5662bc36695cc7d5b8eaa246f43}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\begin{DoxyCompactList}\small\item\em Gets the Context Menu Actions. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_ac11b1b3875abe21193844976a90032de}{Set\+Rotation} (float rotation)
+\item 
+\hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} \hyperlink{class_furniture_a80906e15f092dd5b46c60b4b973dd36f}{Get\+All\+Tiles} ()
+\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_furniture_a65087cef9d54e54fa04cd816cd8a0386}{Clone} ()
+\item 
+bool \hyperlink{class_furniture_a290abe92f7472bfdf3dc1f0096e29e0b}{Is\+Valid\+Position} (\hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Check if the position of the furniture is valid or not. This is called when placing the furniture. T\+O\+DO \+: Add some L\+UA special requierments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_furniture}{Furniture} \hyperlink{class_furniture_acc8b4bbcae6465985d9a4904cc6cc94e}{Place\+Instance} (\hyperlink{class_furniture}{Furniture} proto, \hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Used to place furniture in a certain position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_furniture_a6a6f7f0e402f354adf5aa1d3125ef364}{Pathfinding\+Modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{class_furniture}{Furniture}\textquotesingle{}s \hyperlink{class_furniture_a6a6f7f0e402f354adf5aa1d3125ef364}{Pathfinding\+Modifier} which is added into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. \end{DoxyCompactList}\item 
+float \hyperlink{class_furniture_a8c6a8f93acbcc055d88fe8cee68713d0}{Pathfinding\+Weight}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{class_furniture}{Furniture}\textquotesingle{}s pathfinding weight which is multiplied into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. \end{DoxyCompactList}\item 
+Color \hyperlink{class_furniture_a41508df7e9308f8b1afaadbc73decb14}{Tint}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tint used to change the color of the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_ad071451038dfba3b911fee3067ea4981}{Vertical\+Door}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the door is Vertical or not. Should be false if the furniture is not a door. This field will most likely be moved to another class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_abf3299bf6129c3fff38397c232dba291}{Has\+Custom\+Progress\+Report}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Checks whether furniturehas some custom progress info. \end{DoxyCompactList}\item 
+\hyperlink{class_event_actions}{Event\+Actions} \hyperlink{class_furniture_a56ff5780eea7e88478de948193cf2191}{Event\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Event\+Action for the current furniture. These actions are called when an event is called. They get passed the furniture they belong to, plus a delta\+Time (which defaults to 0). \end{DoxyCompactList}\item 
+Bounds \hyperlink{class_furniture_a496d1f87bc89564b45ef182166eebc8d}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_furniture_addc32913065ddd0ee4660b2de3f84a42}{Is\+Operating}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the furniture is operating or not. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a5ae8766d2419a00dfadc9728100ef68e}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the furniture is selected by the player or not. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_furniture_ac22ea3ffa9d94a5df9506fe619fed854}{Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the B\+A\+SE tile of the furniture. (Large objects can span over multiple tiles). This should be R\+E\+N\+A\+M\+ED (possibly to Base\+Tile). \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a20ab8b51ecf342cf0463482bf2816de4}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the string that defines the type of object the furniture is. This gets queried by the visual system to know what sprite to render for this furniture. \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_furniture_a02d901fd13537cfeaafbae655c42391d}{Replaceable\+Furniture}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a list of furniture Type this furniture can be replaced with. This should most likely not be a list of strings. \end{DoxyCompactList}\item 
+float \hyperlink{class_furniture_a3265b21652e2bc4c43131e8fe0b9c23f}{Movement\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the movement cost multiplier that this furniture has. This can be a float value from 0 to any positive number. The movement cost acts as a multiplier\+: e.\+g. 1 is default, 2 is twice as slow. \hyperlink{class_tile}{Tile} types and environmental effects will be combined with this value (additive). If this value is \textquotesingle{}0\textquotesingle{} then the furniture is impassable. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a7672062c7a01115a8010681ef06fa42a}{Room\+Enclosure}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the furniture can close a room (e.\+g. act as a wall). \end{DoxyCompactList}\item 
+int \hyperlink{class_furniture_ae25de1a4dc2d70f8f8ab39a66aff60c2}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the width of the furniture. \end{DoxyCompactList}\item 
+int \hyperlink{class_furniture_a1d0f0137f064f6231b3eeca83dc1e843}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the height of the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a48015edd488d45e215e358638d088939}{Can\+Rotate}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If true player is allowed to rotate the furniture. \end{DoxyCompactList}\item 
+float \hyperlink{class_furniture_ac5af988a7d8e9c91bd8f09ef6c9e95e7}{Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets/\+Set the rotation of the furniture. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a9994c5ec8b832590778692fdff7731ee}{Localization\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the code used for Localization of the furniture. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_aa9e0fe9e4a5b51d86a76d3e11f79f58a}{Unlocalized\+Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the description of the furniture. This is used by localization. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a5a41f977566d47fb634921bc799fc40a}{Links\+To\+Neighbour}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this furniture is next to any furniture of the same type. This is used to check what sprite to use if furniture is next to each other. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_ae368a4dd184283499a882e715b8a8388}{Drag\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the type of dragging that is used to build multiples of this furniture. e.\+g walls. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_acf7ad5c7362463b38594605407d0d189}{Default\+Sprite\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Represents name of the sprite shown in menus. \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_a1a600b2226d319fcd75955b222abad03}{Sprite\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Actual sprite name (can be null). \end{DoxyCompactList}\item 
+string \hyperlink{class_furniture_ab8181a6ce98e986e33c2c414296787a2}{Overlay\+Sprite\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sprite name for overlay. \end{DoxyCompactList}\item 
+\hyperlink{class_animation_1_1_furniture_animation}{Furniture\+Animation} \hyperlink{class_furniture_a6c205a695d6f398f76df5c5c90ae170c}{Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the furniture animation. \end{DoxyCompactList}\item 
+\hyperlink{class_parameter}{Parameter} \hyperlink{class_furniture_ae388e4eddbd3745a5cc7f3505b7abfca}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the parameters that is tied to the furniture. \end{DoxyCompactList}\item 
+\hyperlink{class_buildable_jobs}{Buildable\+Jobs} \hyperlink{class_furniture_acde3e7f9d40af5b75c441d53778a3fe2}{Jobs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a component that handles the jobs linked to the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a4faff1043382e7b48824a2a16eb15712}{Is\+Being\+Destroyed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This flag is set if the furniture is tasked to be destroyed. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_ac105738f22c551e0420de3efa348c6d2}{Has\+Components}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance has components. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_a4ae33e19e8b9e821bd39baca75687699}{Requires\+Fast\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_furniture_ab830f3c4829513c868040619575f0b7e}{Requires\+Slow\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Buildable\+Component.\+Requirements} \hyperlink{class_furniture_a9c624d4c2cc252ae4cec2dc36d585953}{Requirements}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Flag with furniture requirements (used for showing icon overlay, e.\+g. No power, ... ). \end{DoxyCompactList}\item 
+\hyperlink{class_health_system}{Health\+System} \hyperlink{class_furniture_aa3ed4de73a436f888ac9689a8f2fab0d}{Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Health of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_furniture_a5d5652c9eac3ef6e0cf796eaf3cc9a67}{Changed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the furniture has been changed. This is means that any change (parameters, job state etc) to the furniture will trigger this. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_furniture_a253700b462c0e22ade21918a314cab76}{Removed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the furniture has been removed. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_furniture_a29f6e5c52a936590518b4a5f281ea26e}{Is\+Operating\+Changed}
+\begin{DoxyCompactList}\small\item\em This event will trigger if \hyperlink{class_furniture_addc32913065ddd0ee4660b2de3f84a42}{Is\+Operating} has been changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Installed\+Objects are things like walls, doors, and furniture (e.\+g. a sofa). 
+
+
+
+Definition at line 29 of file Furniture.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_furniture_a126d329d48ac7f41a8567d400c0a2598}\label{class_furniture_a126d329d48ac7f41a8567d400c0a2598}} 
+\index{Furniture@{Furniture}!Furniture@{Furniture}}
+\index{Furniture@{Furniture}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Furniture()}{Furniture()}}
+{\footnotesize\ttfamily Furniture.\+Furniture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_furniture}{Furniture} class. This constructor is used to create prototypes and should never be used ouside the Prototype Manager. 
+
+
+
+Definition at line 69 of file Furniture.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_furniture_ad88bf85157a61bb143b5347e6492a905}\label{class_furniture_ad88bf85157a61bb143b5347e6492a905}} 
+\index{Furniture@{Furniture}!Accepts\+For\+Storage@{Accepts\+For\+Storage}}
+\index{Accepts\+For\+Storage@{Accepts\+For\+Storage}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Accepts\+For\+Storage()}{AcceptsForStorage()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]} Furniture.\+Accepts\+For\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accepts for storage. 
+
+\begin{DoxyReturn}{Returns}
+A list of Requested\+Item which the \hyperlink{class_furniture}{Furniture} accepts for storage.
+\end{DoxyReturn}
+
+
+Definition at line 849 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a65087cef9d54e54fa04cd816cd8a0386}\label{class_furniture_a65087cef9d54e54fa04cd816cd8a0386}} 
+\index{Furniture@{Furniture}!Clone@{Clone}}
+\index{Clone@{Clone}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Furniture.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1319 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a7ca16a3c95b1bf9b3d3f60c543e691b5}\label{class_furniture_a7ca16a3c95b1bf9b3d3f60c543e691b5}} 
+\index{Furniture@{Furniture}!Deconstruct@{Deconstruct}}
+\index{Deconstruct@{Deconstruct}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Deconstruct()}{Deconstruct()}}
+{\footnotesize\ttfamily void Furniture.\+Deconstruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructs the furniture. 
+
+
+
+Definition at line 991 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ad44ee227637d74afa5636c9610ec8dbc}\label{class_furniture_ad44ee227637d74afa5636c9610ec8dbc}} 
+\index{Furniture@{Furniture}!Every\+Frame\+Update@{Every\+Frame\+Update}}
+\index{Every\+Frame\+Update@{Every\+Frame\+Update}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Every\+Frame\+Update()}{EveryFrameUpdate()}}
+{\footnotesize\ttfamily void Furniture.\+Every\+Frame\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+This function is called to update the furniture animation in lua. This will be called every frame and should be used carefully. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time since the last update was called.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_updatable_a07ea8d8e0858fd96c18baef481632c9d}{I\+Updatable}.
+
+
+
+Definition at line 492 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_af86f663d0e91858a85de20149a0188e5}\label{class_furniture_af86f663d0e91858a85de20149a0188e5}} 
+\index{Furniture@{Furniture}!Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}}
+\index{Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency\+Update()}{FixedFrequencyUpdate()}}
+{\footnotesize\ttfamily void Furniture.\+Fixed\+Frequency\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+This function is called to update the furniture. This will also trigger Events\+Actions. This checks if the furniture is a Power\+Consumer, and if it does not have power it cancels its job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time since the last update was called.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_updatable_a360da1e579ac8d1ed8adb700176cc45f}{I\+Updatable}.
+
+
+
+Definition at line 510 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aeedc1bfd6d4fedeb81b839f89a545583}\label{class_furniture_aeedc1bfd6d4fedeb81b839f89a545583}} 
+\index{Furniture@{Furniture}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Furniture.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{furniture\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 834 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a0834aab5c42424b7c700feeac78a8cc5}\label{class_furniture_a0834aab5c42424b7c700feeac78a8cc5}} 
+\index{Furniture@{Furniture}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Furniture.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 1125 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a80906e15f092dd5b46c60b4b973dd36f}\label{class_furniture_a80906e15f092dd5b46c60b4b973dd36f}} 
+\index{Furniture@{Furniture}!Get\+All\+Tiles@{Get\+All\+Tiles}}
+\index{Get\+All\+Tiles@{Get\+All\+Tiles}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+All\+Tiles()}{GetAllTiles()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} Furniture.\+Get\+All\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1302 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_adfea45b46ac394267dbd99b8ee521728}\label{class_furniture_adfea45b46ac394267dbd99b8ee521728}} 
+\index{Furniture@{Furniture}!Get\+Component$<$ T $>$@{Get\+Component$<$ T $>$}}
+\index{Get\+Component$<$ T $>$@{Get\+Component$<$ T $>$}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Component$<$ T $>$()}{GetComponent< T >()}}
+{\footnotesize\ttfamily T Furniture.\+Get\+Component$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{component\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets component if present or null. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of component.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Name} & Type of the component, e.\+g. Power\+Connection, Work\+Shop.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Component or null.
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Buildable\+Component}]\end{description}
+\end{Desc}
+
+
+Definition at line 1171 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac89ee5662bc36695cc7d5b8eaa246f43}\label{class_furniture_ac89ee5662bc36695cc7d5b8eaa246f43}} 
+\index{Furniture@{Furniture}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Furniture.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Gets the Context Menu Actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\+Menu} & The context menu to check for actions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Context menu actions.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 1220 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a93e5bf048fbaa6d99f45f15d62b99915}\label{class_furniture_a93e5bf048fbaa6d99f45f15d62b99915}} 
+\index{Furniture@{Furniture}!Get\+Default\+Sprite\+Name@{Get\+Default\+Sprite\+Name}}
+\index{Get\+Default\+Sprite\+Name@{Get\+Default\+Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Default\+Sprite\+Name()}{GetDefaultSpriteName()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Default\+Sprite\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 631 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_af77901f8fc7bfde9ab7dfe55a5bdb57a}\label{class_furniture_af77901f8fc7bfde9ab7dfe55a5bdb57a}} 
+\index{Furniture@{Furniture}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Unlocalized\+Description of the furniture. 
+
+\begin{DoxyReturn}{Returns}
+Description of the furniture.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 1098 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aaa94fa81a9ef7c7fd7fcc5854fd1ce61}\label{class_furniture_aaa94fa81a9ef7c7fd7fcc5854fd1ce61}} 
+\index{Furniture@{Furniture}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the description of the job linked to the furniture. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_job}{Job} description of the job linked to the furniture.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 1107 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a4cca1807f72cdf61fe438976db5ecf9c}\label{class_furniture_a4cca1807f72cdf61fe438976db5ecf9c}} 
+\index{Furniture@{Furniture}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns Localization\+Code name for the furniture. 
+
+\begin{DoxyReturn}{Returns}
+Localization\+Code for the name of the furniture.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 1089 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aa6e7a8ac556cf6b05148257752bb5a58}\label{class_furniture_aa6e7a8ac556cf6b05148257752bb5a58}} 
+\index{Furniture@{Furniture}!Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}}
+\index{Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Order\+Action$<$ T $>$()}{GetOrderAction< T >()}}
+{\footnotesize\ttfamily T Furniture.\+Get\+Order\+Action$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Order\+Action}]\end{description}
+\end{Desc}
+
+
+Definition at line 1199 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a841c1151284cf19735791658688fd77d}\label{class_furniture_a841c1151284cf19735791658688fd77d}} 
+\index{Furniture@{Furniture}!Get\+Overlay\+Sprite\+Name@{Get\+Overlay\+Sprite\+Name}}
+\index{Get\+Overlay\+Sprite\+Name@{Get\+Overlay\+Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Overlay\+Sprite\+Name()}{GetOverlaySpriteName()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Overlay\+Sprite\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 666 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac28ca12fba747625e26a10382ed47c84}\label{class_furniture_ac28ca12fba747625e26a10382ed47c84}} 
+\index{Furniture@{Furniture}!Get\+Pluggable@{Get\+Pluggable}}
+\index{Get\+Pluggable@{Get\+Pluggable}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Pluggable()}{GetPluggable()}}
+{\footnotesize\ttfamily \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} Furniture.\+Get\+Pluggable (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ string $>$}]{utility\+Tags }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1148 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aeddb6c1525947e6517f4c27ca992c1ab}\label{class_furniture_aeddb6c1525947e6517f4c27ca992c1ab}} 
+\index{Furniture@{Furniture}!Get\+Possible\+Requirements@{Get\+Possible\+Requirements}}
+\index{Get\+Possible\+Requirements@{Get\+Possible\+Requirements}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Possible\+Requirements()}{GetPossibleRequirements()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Buildable\+Component.\+Requirements} Furniture.\+Get\+Possible\+Requirements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1187 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a19a8b804f1bcf3d3b9db7e184e17b250}\label{class_furniture_a19a8b804f1bcf3d3b9db7e184e17b250}} 
+\index{Furniture@{Furniture}!Get\+Progress\+Info@{Get\+Progress\+Info}}
+\index{Get\+Progress\+Info@{Get\+Progress\+Info}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Progress\+Info()}{GetProgressInfo()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Progress\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1112 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a9820e3379b92d0765131a3bbe0383c6e}\label{class_furniture_a9820e3379b92d0765131a3bbe0383c6e}} 
+\index{Furniture@{Furniture}!Get\+Sprite\+Name@{Get\+Sprite\+Name}}
+\index{Get\+Sprite\+Name@{Get\+Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Name()}{GetSpriteName()}}
+{\footnotesize\ttfamily string Furniture.\+Get\+Sprite\+Name (\begin{DoxyParamCaption}\item[{out bool}]{explicit\+Sprite\+Used }\end{DoxyParamCaption})}
+
+
+
+Check if the furniture has a function to determine the sprite name and calls that function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em explicit\+Sprite\+Used} & Out\+: true if explicit sprite was used, false if default type was used.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name of the sprite.
+\end{DoxyReturn}
+
+
+Definition at line 647 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aca7ba6acd54e3969018a2f8848dc2632}\label{class_furniture_aca7ba6acd54e3969018a2f8848dc2632}} 
+\index{Furniture@{Furniture}!Get\+Type\+Tags@{Get\+Type\+Tags}}
+\index{Get\+Type\+Tags@{Get\+Type\+Tags}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Get\+Type\+Tags()}{GetTypeTags()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Furniture.\+Get\+Type\+Tags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the type tags. 
+
+\begin{DoxyReturn}{Returns}
+The type tags.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_buildable_ab1f899fc1d9ece21b46612d6119f744d}{I\+Buildable}.
+
+
+
+Definition at line 1080 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac7197b3778cafab778581d936d2b5983}\label{class_furniture_ac7197b3778cafab778581d936d2b5983}} 
+\index{Furniture@{Furniture}!Has\+Type\+Tag@{Has\+Type\+Tag}}
+\index{Has\+Type\+Tag@{Has\+Type\+Tag}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Has\+Type\+Tag()}{HasTypeTag()}}
+{\footnotesize\ttfamily bool Furniture.\+Has\+Type\+Tag (\begin{DoxyParamCaption}\item[{string}]{type\+Tag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the furniture has a certain tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Tag} & Tag to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if furniture has specified tag.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_buildable_a4569a897fc2ac7c0ecfaddc518fa346f}{I\+Buildable}.
+
+
+
+Definition at line 1071 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac904b310f6d33670dd836b9c05da9496}\label{class_furniture_ac904b310f6d33670dd836b9c05da9496}} 
+\index{Furniture@{Furniture}!Is\+Enterable@{Is\+Enterable}}
+\index{Is\+Enterable@{Is\+Enterable}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Enterable()}{IsEnterable()}}
+{\footnotesize\ttfamily \hyperlink{_tile_8cs_a48a7177f465b04f310ccf25ae69d070a}{Enterability} Furniture.\+Is\+Enterable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the furniture can be Entered. 
+
+\begin{DoxyReturn}{Returns}
+Enterability state Yes if furniture can be entered, Soon if it can be entered after a bit and No if it cannot be entered.
+\end{DoxyReturn}
+
+
+Definition at line 620 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a88048e4444b4b10eb7826876798a4f0f}\label{class_furniture_a88048e4444b4b10eb7826876798a4f0f}} 
+\index{Furniture@{Furniture}!Is\+Exit@{Is\+Exit}}
+\index{Is\+Exit@{Is\+Exit}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Exit()}{IsExit()}}
+{\footnotesize\ttfamily bool Furniture.\+Is\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Whether this furniture is an exit for a room. 
+
+\begin{DoxyReturn}{Returns}
+True if furniture is an exit.
+\end{DoxyReturn}
+
+
+Definition at line 605 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a290abe92f7472bfdf3dc1f0096e29e0b}\label{class_furniture_a290abe92f7472bfdf3dc1f0096e29e0b}} 
+\index{Furniture@{Furniture}!Is\+Valid\+Position@{Is\+Valid\+Position}}
+\index{Is\+Valid\+Position@{Is\+Valid\+Position}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Valid\+Position()}{IsValidPosition()}}
+{\footnotesize\ttfamily bool Furniture.\+Is\+Valid\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Check if the position of the furniture is valid or not. This is called when placing the furniture. T\+O\+DO \+: Add some L\+UA special requierments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The base tile.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tile is valid for the placement of the furniture.
+\end{DoxyReturn}
+
+
+Definition at line 1331 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_acc8b4bbcae6465985d9a4904cc6cc94e}\label{class_furniture_acc8b4bbcae6465985d9a4904cc6cc94e}} 
+\index{Furniture@{Furniture}!Place\+Instance@{Place\+Instance}}
+\index{Place\+Instance@{Place\+Instance}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Place\+Instance()}{PlaceInstance()}}
+{\footnotesize\ttfamily static \hyperlink{class_furniture}{Furniture} Furniture.\+Place\+Instance (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{proto,  }\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Used to place furniture in a certain position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & The prototype furniture to place.\\
+\hline
+{\em tile} & The base tile to place the furniture on, The tile will be the bottom left corner of the furniture (to check).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_furniture}{Furniture} object.
+\end{DoxyReturn}
+
+
+Definition at line 428 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a810a91747971fea72daee137e8aab9f5}\label{class_furniture_a810a91747971fea72daee137e8aab9f5}} 
+\index{Furniture@{Furniture}!Read\+Xml\+Params@{Read\+Xml\+Params}}
+\index{Read\+Xml\+Params@{Read\+Xml\+Params}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Params()}{ReadXmlParams()}}
+{\footnotesize\ttfamily void Furniture.\+Read\+Xml\+Params (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the X\+ML for parameters that this furniture has and assign it to the furniture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The reader to read the parameters from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 812 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a28d8b4c5024c93c5d4da4879ce6c2f2b}\label{class_furniture_a28d8b4c5024c93c5d4da4879ce6c2f2b}} 
+\index{Furniture@{Furniture}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Furniture.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader\+Parent }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype furniture from X\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 677 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a3cd1d79bc68f11708bca068e684385fd}\label{class_furniture_a3cd1d79bc68f11708bca068e684385fd}} 
+\index{Furniture@{Furniture}!Set\+Animation\+Progress\+Value@{Set\+Animation\+Progress\+Value}}
+\index{Set\+Animation\+Progress\+Value@{Set\+Animation\+Progress\+Value}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Set\+Animation\+Progress\+Value()}{SetAnimationProgressValue()}}
+{\footnotesize\ttfamily void Furniture.\+Set\+Animation\+Progress\+Value (\begin{DoxyParamCaption}\item[{float}]{current\+Value,  }\item[{float}]{max\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the animation frame depending on a value. The currentvalue percent of the maxvalue will determine which frame is shown. 
+
+
+
+Definition at line 583 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a3210d7837b7568a37f3f3f2f70c58d98}\label{class_furniture_a3210d7837b7568a37f3f3f2f70c58d98}} 
+\index{Furniture@{Furniture}!Set\+Animation\+State@{Set\+Animation\+State}}
+\index{Set\+Animation\+State@{Set\+Animation\+State}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Set\+Animation\+State()}{SetAnimationState()}}
+{\footnotesize\ttfamily void Furniture.\+Set\+Animation\+State (\begin{DoxyParamCaption}\item[{string}]{state\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the animation state. Will only have an effect if state\+Name is different from current animation state\+Name. 
+
+
+
+Definition at line 570 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a3049fb349d8e8990ab703ca641488d59}\label{class_furniture_a3049fb349d8e8990ab703ca641488d59}} 
+\index{Furniture@{Furniture}!Set\+Deconstruct\+Job@{Set\+Deconstruct\+Job}}
+\index{Set\+Deconstruct\+Job@{Set\+Deconstruct\+Job}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Set\+Deconstruct\+Job()}{SetDeconstructJob()}}
+{\footnotesize\ttfamily void Furniture.\+Set\+Deconstruct\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the furniture to be deconstructed. 
+
+
+
+Definition at line 963 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac11b1b3875abe21193844976a90032de}\label{class_furniture_ac11b1b3875abe21193844976a90032de}} 
+\index{Furniture@{Furniture}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}}
+{\footnotesize\ttfamily void Furniture.\+Set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1290 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_afe6b540a3cc9ea3e3a7d951ad9d92097}\label{class_furniture_afe6b540a3cc9ea3e3a7d951ad9d92097}} 
+\index{Furniture@{Furniture}!Set\+Uninstall\+Job@{Set\+Uninstall\+Job}}
+\index{Set\+Uninstall\+Job@{Set\+Uninstall\+Job}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Set\+Uninstall\+Job()}{SetUninstallJob()}}
+{\footnotesize\ttfamily void Furniture.\+Set\+Uninstall\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 867 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a70a11718cc06b20399767ac765ef52e7}\label{class_furniture_a70a11718cc06b20399767ac765ef52e7}} 
+\index{Furniture@{Furniture}!To\+J\+Son@{To\+J\+Son}}
+\index{To\+J\+Son@{To\+J\+Son}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{To\+J\+Son()}{ToJSon()}}
+{\footnotesize\ttfamily object Furniture.\+To\+J\+Son (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 818 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ae369f8b64c986a029ffe7b9ecf5d3f30}\label{class_furniture_ae369f8b64c986a029ffe7b9ecf5d3f30}} 
+\index{Furniture@{Furniture}!Uninstall@{Uninstall}}
+\index{Uninstall@{Uninstall}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Uninstall()}{Uninstall()}}
+{\footnotesize\ttfamily void Furniture.\+Uninstall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructs the furniture. 
+
+
+
+Definition at line 889 of file Furniture.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_furniture_a6c205a695d6f398f76df5c5c90ae170c}\label{class_furniture_a6c205a695d6f398f76df5c5c90ae170c}} 
+\index{Furniture@{Furniture}!Animation@{Animation}}
+\index{Animation@{Animation}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Animation}{Animation}}
+{\footnotesize\ttfamily \hyperlink{class_animation_1_1_furniture_animation}{Furniture\+Animation} Furniture.\+Animation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the furniture animation. 
+
+
+
+Definition at line 366 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a496d1f87bc89564b45ef182166eebc8d}\label{class_furniture_a496d1f87bc89564b45ef182166eebc8d}} 
+\index{Furniture@{Furniture}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Bounds Furniture.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 230 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a48015edd488d45e215e358638d088939}\label{class_furniture_a48015edd488d45e215e358638d088939}} 
+\index{Furniture@{Furniture}!Can\+Rotate@{Can\+Rotate}}
+\index{Can\+Rotate@{Can\+Rotate}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Can\+Rotate}{CanRotate}}
+{\footnotesize\ttfamily bool Furniture.\+Can\+Rotate\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+If true player is allowed to rotate the furniture. 
+
+
+
+Definition at line 319 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_acf7ad5c7362463b38594605407d0d189}\label{class_furniture_acf7ad5c7362463b38594605407d0d189}} 
+\index{Furniture@{Furniture}!Default\+Sprite\+Name@{Default\+Sprite\+Name}}
+\index{Default\+Sprite\+Name@{Default\+Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Default\+Sprite\+Name}{DefaultSpriteName}}
+{\footnotesize\ttfamily string Furniture.\+Default\+Sprite\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Represents name of the sprite shown in menus. 
+
+
+
+Definition at line 351 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ae368a4dd184283499a882e715b8a8388}\label{class_furniture_ae368a4dd184283499a882e715b8a8388}} 
+\index{Furniture@{Furniture}!Drag\+Type@{Drag\+Type}}
+\index{Drag\+Type@{Drag\+Type}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Drag\+Type}{DragType}}
+{\footnotesize\ttfamily string Furniture.\+Drag\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the type of dragging that is used to build multiples of this furniture. e.\+g walls. 
+
+
+
+Definition at line 346 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a56ff5780eea7e88478de948193cf2191}\label{class_furniture_a56ff5780eea7e88478de948193cf2191}} 
+\index{Furniture@{Furniture}!Event\+Actions@{Event\+Actions}}
+\index{Event\+Actions@{Event\+Actions}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Event\+Actions}{EventActions}}
+{\footnotesize\ttfamily \hyperlink{class_event_actions}{Event\+Actions} Furniture.\+Event\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Event\+Action for the current furniture. These actions are called when an event is called. They get passed the furniture they belong to, plus a delta\+Time (which defaults to 0). 
+
+The event actions that is called on update.
+
+Definition at line 227 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac105738f22c551e0420de3efa348c6d2}\label{class_furniture_ac105738f22c551e0420de3efa348c6d2}} 
+\index{Furniture@{Furniture}!Has\+Components@{Has\+Components}}
+\index{Has\+Components@{Has\+Components}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Has\+Components}{HasComponents}}
+{\footnotesize\ttfamily bool Furniture.\+Has\+Components\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this instance has components. 
+
+{\ttfamily true} if this instance has components; otherwise, {\ttfamily false}.
+
+Definition at line 388 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_abf3299bf6129c3fff38397c232dba291}\label{class_furniture_abf3299bf6129c3fff38397c232dba291}} 
+\index{Furniture@{Furniture}!Has\+Custom\+Progress\+Report@{Has\+Custom\+Progress\+Report}}
+\index{Has\+Custom\+Progress\+Report@{Has\+Custom\+Progress\+Report}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Has\+Custom\+Progress\+Report}{HasCustomProgressReport}}
+{\footnotesize\ttfamily bool Furniture.\+Has\+Custom\+Progress\+Report\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Checks whether furniturehas some custom progress info. 
+
+
+
+Definition at line 214 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aa3ed4de73a436f888ac9689a8f2fab0d}\label{class_furniture_aa3ed4de73a436f888ac9689a8f2fab0d}} 
+\index{Furniture@{Furniture}!Health@{Health}}
+\index{Health@{Health}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Health}{Health}}
+{\footnotesize\ttfamily \hyperlink{class_health_system}{Health\+System} Furniture.\+Health\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Health of this object. 
+
+
+
+Definition at line 408 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a1d0f0137f064f6231b3eeca83dc1e843}\label{class_furniture_a1d0f0137f064f6231b3eeca83dc1e843}} 
+\index{Furniture@{Furniture}!Height@{Height}}
+\index{Height@{Height}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Furniture.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the height of the furniture. 
+
+
+
+Definition at line 314 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a4faff1043382e7b48824a2a16eb15712}\label{class_furniture_a4faff1043382e7b48824a2a16eb15712}} 
+\index{Furniture@{Furniture}!Is\+Being\+Destroyed@{Is\+Being\+Destroyed}}
+\index{Is\+Being\+Destroyed@{Is\+Being\+Destroyed}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Being\+Destroyed}{IsBeingDestroyed}}
+{\footnotesize\ttfamily bool Furniture.\+Is\+Being\+Destroyed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+This flag is set if the furniture is tasked to be destroyed. 
+
+
+
+Definition at line 381 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_addc32913065ddd0ee4660b2de3f84a42}\label{class_furniture_addc32913065ddd0ee4660b2de3f84a42}} 
+\index{Furniture@{Furniture}!Is\+Operating@{Is\+Operating}}
+\index{Is\+Operating@{Is\+Operating}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Operating}{IsOperating}}
+{\footnotesize\ttfamily bool Furniture.\+Is\+Operating\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether the furniture is operating or not. 
+
+Whether the furniture is operating or not.
+
+Definition at line 244 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a5ae8766d2419a00dfadc9728100ef68e}\label{class_furniture_a5ae8766d2419a00dfadc9728100ef68e}} 
+\index{Furniture@{Furniture}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Furniture.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether the furniture is selected by the player or not. 
+
+Whether the furniture is selected or not.
+
+Definition at line 266 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_acde3e7f9d40af5b75c441d53778a3fe2}\label{class_furniture_acde3e7f9d40af5b75c441d53778a3fe2}} 
+\index{Furniture@{Furniture}!Jobs@{Jobs}}
+\index{Jobs@{Jobs}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Jobs}{Jobs}}
+{\footnotesize\ttfamily \hyperlink{class_buildable_jobs}{Buildable\+Jobs} Furniture.\+Jobs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a component that handles the jobs linked to the furniture. 
+
+
+
+Definition at line 376 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a5a41f977566d47fb634921bc799fc40a}\label{class_furniture_a5a41f977566d47fb634921bc799fc40a}} 
+\index{Furniture@{Furniture}!Links\+To\+Neighbour@{Links\+To\+Neighbour}}
+\index{Links\+To\+Neighbour@{Links\+To\+Neighbour}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Links\+To\+Neighbour}{LinksToNeighbour}}
+{\footnotesize\ttfamily string Furniture.\+Links\+To\+Neighbour\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this furniture is next to any furniture of the same type. This is used to check what sprite to use if furniture is next to each other. 
+
+
+
+Definition at line 340 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a9994c5ec8b832590778692fdff7731ee}\label{class_furniture_a9994c5ec8b832590778692fdff7731ee}} 
+\index{Furniture@{Furniture}!Localization\+Code@{Localization\+Code}}
+\index{Localization\+Code@{Localization\+Code}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Localization\+Code}{LocalizationCode}}
+{\footnotesize\ttfamily string Furniture.\+Localization\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the code used for Localization of the furniture. 
+
+
+
+Definition at line 329 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a3265b21652e2bc4c43131e8fe0b9c23f}\label{class_furniture_a3265b21652e2bc4c43131e8fe0b9c23f}} 
+\index{Furniture@{Furniture}!Movement\+Cost@{Movement\+Cost}}
+\index{Movement\+Cost@{Movement\+Cost}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Movement\+Cost}{MovementCost}}
+{\footnotesize\ttfamily float Furniture.\+Movement\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the movement cost multiplier that this furniture has. This can be a float value from 0 to any positive number. The movement cost acts as a multiplier\+: e.\+g. 1 is default, 2 is twice as slow. \hyperlink{class_tile}{Tile} types and environmental effects will be combined with this value (additive). If this value is \textquotesingle{}0\textquotesingle{} then the furniture is impassable. 
+
+The movement cost multiplier the furniture has.
+
+Definition at line 299 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ab8181a6ce98e986e33c2c414296787a2}\label{class_furniture_ab8181a6ce98e986e33c2c414296787a2}} 
+\index{Furniture@{Furniture}!Overlay\+Sprite\+Name@{Overlay\+Sprite\+Name}}
+\index{Overlay\+Sprite\+Name@{Overlay\+Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Overlay\+Sprite\+Name}{OverlaySpriteName}}
+{\footnotesize\ttfamily string Furniture.\+Overlay\+Sprite\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sprite name for overlay. 
+
+
+
+Definition at line 361 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ae388e4eddbd3745a5cc7f3505b7abfca}\label{class_furniture_ae388e4eddbd3745a5cc7f3505b7abfca}} 
+\index{Furniture@{Furniture}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter} Furniture.\+Parameters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the parameters that is tied to the furniture. 
+
+
+
+Definition at line 371 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a6a6f7f0e402f354adf5aa1d3125ef364}\label{class_furniture_a6a6f7f0e402f354adf5aa1d3125ef364}} 
+\index{Furniture@{Furniture}!Pathfinding\+Modifier@{Pathfinding\+Modifier}}
+\index{Pathfinding\+Modifier@{Pathfinding\+Modifier}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Pathfinding\+Modifier}{PathfindingModifier}}
+{\footnotesize\ttfamily float Furniture.\+Pathfinding\+Modifier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the \hyperlink{class_furniture}{Furniture}\textquotesingle{}s \hyperlink{class_furniture_a6a6f7f0e402f354adf5aa1d3125ef364}{Pathfinding\+Modifier} which is added into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. 
+
+The modifier used in pathfinding.
+
+Definition at line 188 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a8c6a8f93acbcc055d88fe8cee68713d0}\label{class_furniture_a8c6a8f93acbcc055d88fe8cee68713d0}} 
+\index{Furniture@{Furniture}!Pathfinding\+Weight@{Pathfinding\+Weight}}
+\index{Pathfinding\+Weight@{Pathfinding\+Weight}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Pathfinding\+Weight}{PathfindingWeight}}
+{\footnotesize\ttfamily float Furniture.\+Pathfinding\+Weight\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the \hyperlink{class_furniture}{Furniture}\textquotesingle{}s pathfinding weight which is multiplied into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. 
+
+The pathfinding weight for the tiles the furniture currently occupies.
+
+Definition at line 194 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a02d901fd13537cfeaafbae655c42391d}\label{class_furniture_a02d901fd13537cfeaafbae655c42391d}} 
+\index{Furniture@{Furniture}!Replaceable\+Furniture@{Replaceable\+Furniture}}
+\index{Replaceable\+Furniture@{Replaceable\+Furniture}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Replaceable\+Furniture}{ReplaceableFurniture}}
+{\footnotesize\ttfamily List$<$string$>$ Furniture.\+Replaceable\+Furniture\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a list of furniture Type this furniture can be replaced with. This should most likely not be a list of strings. 
+
+A list of furniture that this furniture can be replaced with.
+
+Definition at line 288 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a9c624d4c2cc252ae4cec2dc36d585953}\label{class_furniture_a9c624d4c2cc252ae4cec2dc36d585953}} 
+\index{Furniture@{Furniture}!Requirements@{Requirements}}
+\index{Requirements@{Requirements}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Requirements}{Requirements}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Buildable\+Component.\+Requirements} Furniture.\+Requirements\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Flag with furniture requirements (used for showing icon overlay, e.\+g. No power, ... ). 
+
+
+
+Definition at line 402 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a4ae33e19e8b9e821bd39baca75687699}\label{class_furniture_a4ae33e19e8b9e821bd39baca75687699}} 
+\index{Furniture@{Furniture}!Requires\+Fast\+Update@{Requires\+Fast\+Update}}
+\index{Requires\+Fast\+Update@{Requires\+Fast\+Update}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Requires\+Fast\+Update}{RequiresFastUpdate}}
+{\footnotesize\ttfamily bool Furniture.\+Requires\+Fast\+Update\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 395 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ab830f3c4829513c868040619575f0b7e}\label{class_furniture_ab830f3c4829513c868040619575f0b7e}} 
+\index{Furniture@{Furniture}!Requires\+Slow\+Update@{Requires\+Slow\+Update}}
+\index{Requires\+Slow\+Update@{Requires\+Slow\+Update}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Requires\+Slow\+Update}{RequiresSlowUpdate}}
+{\footnotesize\ttfamily bool Furniture.\+Requires\+Slow\+Update\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 397 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a7672062c7a01115a8010681ef06fa42a}\label{class_furniture_a7672062c7a01115a8010681ef06fa42a}} 
+\index{Furniture@{Furniture}!Room\+Enclosure@{Room\+Enclosure}}
+\index{Room\+Enclosure@{Room\+Enclosure}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Room\+Enclosure}{RoomEnclosure}}
+{\footnotesize\ttfamily bool Furniture.\+Room\+Enclosure\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether the furniture can close a room (e.\+g. act as a wall). 
+
+
+
+Definition at line 304 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac5af988a7d8e9c91bd8f09ef6c9e95e7}\label{class_furniture_ac5af988a7d8e9c91bd8f09ef6c9e95e7}} 
+\index{Furniture@{Furniture}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily float Furniture.\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets/\+Set the rotation of the furniture. 
+
+
+
+Definition at line 324 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a1a600b2226d319fcd75955b222abad03}\label{class_furniture_a1a600b2226d319fcd75955b222abad03}} 
+\index{Furniture@{Furniture}!Sprite\+Name@{Sprite\+Name}}
+\index{Sprite\+Name@{Sprite\+Name}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Sprite\+Name}{SpriteName}}
+{\footnotesize\ttfamily string Furniture.\+Sprite\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Actual sprite name (can be null). 
+
+
+
+Definition at line 356 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ac22ea3ffa9d94a5df9506fe619fed854}\label{class_furniture_ac22ea3ffa9d94a5df9506fe619fed854}} 
+\index{Furniture@{Furniture}!Tile@{Tile}}
+\index{Tile@{Tile}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Tile}{Tile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Furniture.\+Tile\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the B\+A\+SE tile of the furniture. (Large objects can span over multiple tiles). This should be R\+E\+N\+A\+M\+ED (possibly to Base\+Tile). 
+
+The B\+A\+SE tile of the furniture.
+
+Definition at line 273 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a41508df7e9308f8b1afaadbc73decb14}\label{class_furniture_a41508df7e9308f8b1afaadbc73decb14}} 
+\index{Furniture@{Furniture}!Tint@{Tint}}
+\index{Tint@{Tint}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Tint}{Tint}}
+{\footnotesize\ttfamily Color Furniture.\+Tint\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets the tint used to change the color of the furniture. 
+
+The Color of the furniture.
+
+Definition at line 200 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a20ab8b51ecf342cf0463482bf2816de4}\label{class_furniture_a20ab8b51ecf342cf0463482bf2816de4}} 
+\index{Furniture@{Furniture}!Type@{Type}}
+\index{Type@{Type}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Furniture.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the string that defines the type of object the furniture is. This gets queried by the visual system to know what sprite to render for this furniture. 
+
+The type of the furniture.
+
+Definition at line 280 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_aa9e0fe9e4a5b51d86a76d3e11f79f58a}\label{class_furniture_aa9e0fe9e4a5b51d86a76d3e11f79f58a}} 
+\index{Furniture@{Furniture}!Unlocalized\+Description@{Unlocalized\+Description}}
+\index{Unlocalized\+Description@{Unlocalized\+Description}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Unlocalized\+Description}{UnlocalizedDescription}}
+{\footnotesize\ttfamily string Furniture.\+Unlocalized\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the description of the furniture. This is used by localization. 
+
+
+
+Definition at line 334 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ad071451038dfba3b911fee3067ea4981}\label{class_furniture_ad071451038dfba3b911fee3067ea4981}} 
+\index{Furniture@{Furniture}!Vertical\+Door@{Vertical\+Door}}
+\index{Vertical\+Door@{Vertical\+Door}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Vertical\+Door}{VerticalDoor}}
+{\footnotesize\ttfamily bool Furniture.\+Vertical\+Door\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether the door is Vertical or not. Should be false if the furniture is not a door. This field will most likely be moved to another class. 
+
+Whether the door is Vertical or not.
+
+Definition at line 208 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_ae25de1a4dc2d70f8f8ab39a66aff60c2}\label{class_furniture_ae25de1a4dc2d70f8f8ab39a66aff60c2}} 
+\index{Furniture@{Furniture}!Width@{Width}}
+\index{Width@{Width}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Furniture.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the width of the furniture. 
+
+
+
+Definition at line 309 of file Furniture.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_furniture_a5d5652c9eac3ef6e0cf796eaf3cc9a67}\label{class_furniture_a5d5652c9eac3ef6e0cf796eaf3cc9a67}} 
+\index{Furniture@{Furniture}!Changed@{Changed}}
+\index{Changed@{Changed}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Changed}{Changed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_furniture}{Furniture}$>$ Furniture.\+Changed}
+
+
+
+This event will trigger when the furniture has been changed. This is means that any change (parameters, job state etc) to the furniture will trigger this. 
+
+
+
+Definition at line 172 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a29f6e5c52a936590518b4a5f281ea26e}\label{class_furniture_a29f6e5c52a936590518b4a5f281ea26e}} 
+\index{Furniture@{Furniture}!Is\+Operating\+Changed@{Is\+Operating\+Changed}}
+\index{Is\+Operating\+Changed@{Is\+Operating\+Changed}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Is\+Operating\+Changed}{IsOperatingChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_furniture}{Furniture}$>$ Furniture.\+Is\+Operating\+Changed}
+
+
+
+This event will trigger if \hyperlink{class_furniture_addc32913065ddd0ee4660b2de3f84a42}{Is\+Operating} has been changed. 
+
+
+
+Definition at line 182 of file Furniture.\+cs.
+
+\mbox{\Hypertarget{class_furniture_a253700b462c0e22ade21918a314cab76}\label{class_furniture_a253700b462c0e22ade21918a314cab76}} 
+\index{Furniture@{Furniture}!Removed@{Removed}}
+\index{Removed@{Removed}!Furniture@{Furniture}}
+\subsubsection{\texorpdfstring{Removed}{Removed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_furniture}{Furniture}$>$ Furniture.\+Removed}
+
+
+
+This event will trigger when the furniture has been removed. 
+
+
+
+Definition at line 177 of file Furniture.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_furniture_8cs}{Furniture.\+cs}\end{DoxyCompactItemize}

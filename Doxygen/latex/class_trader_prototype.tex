@@ -1,0 +1,209 @@
+\hypertarget{class_trader_prototype}{}\section{Trader\+Prototype Class Reference}
+\label{class_trader_prototype}\index{Trader\+Prototype@{Trader\+Prototype}}
+Inheritance diagram for Trader\+Prototype\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_trader_prototype}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trader_prototype_a0b071be077414f02a1f78b3217743fe6}{Read\+Xml\+Prototype} (Xml\+Reader reader\+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\item 
+\hyperlink{class_trader}{Trader} \hyperlink{class_trader_prototype_a872ada8d81c0b2e7e1fc236447758e3a}{Create\+Trader} ()
+\begin{DoxyCompactList}\small\item\em Create a random \hyperlink{class_trader}{Trader} out of this \hyperlink{class_trader_prototype}{Trader\+Prototype}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_trader_prototype_a16f54dc71faed15a0466dc7ebc413926}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \hyperlink{class_trader_prototype_a9ae59b2fcd50f11570f4e81e2fac6427}{Potential\+Names}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_trader_prototype_aaa627e7a39e69ba57d703f3d0056585b}{Min\+Currency\+Balance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_trader_prototype_a767e713c25e3a3d45219da5f1f2d5c7f}{Max\+Currency\+Balance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_trader_prototype_ac27d2b342481a71505f3e31d995165e9}{Currency\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_trader_prototype_ae6adbb7df143ffe22c397817bdfc61c9}{Min\+Sale\+Margin\+Multiplier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_trader_prototype_ad3bbb1b8cb38db246dad80ddd9f21c1a}{Max\+Sale\+Margin\+Multiplier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{class_trader_potential_inventory}{Trader\+Potential\+Inventory} $>$ \hyperlink{class_trader_prototype_a7c5d5d814feb2f88ec9734d04520f353}{Potential\+Stock}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_animation_1_1_spritename_animation}{Spritename\+Animation} \hyperlink{class_trader_prototype_ab93ef3072e1273b6aecacff9c5afa9c5}{Animation\+Idle}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_animation_1_1_spritename_animation}{Spritename\+Animation} \hyperlink{class_trader_prototype_a2a412bcfc58980d6c862bf4d46bf8fa9}{Animation\+Flying}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_trader_prototype_a4207b86e570e7237b9df76b91cd0e7e1}{Rarity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Value from 0 to 1, higher value represent higher availability of the trade resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Trader\+Prototype.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trader_prototype_a872ada8d81c0b2e7e1fc236447758e3a}\label{class_trader_prototype_a872ada8d81c0b2e7e1fc236447758e3a}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Create\+Trader@{Create\+Trader}}
+\index{Create\+Trader@{Create\+Trader}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Create\+Trader()}{CreateTrader()}}
+{\footnotesize\ttfamily \hyperlink{class_trader}{Trader} Trader\+Prototype.\+Create\+Trader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a random \hyperlink{class_trader}{Trader} out of this \hyperlink{class_trader_prototype}{Trader\+Prototype}. 
+
+
+
+Definition at line 131 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a0b071be077414f02a1f78b3217743fe6}\label{class_trader_prototype_a0b071be077414f02a1f78b3217743fe6}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Trader\+Prototype.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 55 of file Trader\+Prototype.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_trader_prototype_a2a412bcfc58980d6c862bf4d46bf8fa9}\label{class_trader_prototype_a2a412bcfc58980d6c862bf4d46bf8fa9}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Animation\+Flying@{Animation\+Flying}}
+\index{Animation\+Flying@{Animation\+Flying}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Animation\+Flying}{AnimationFlying}}
+{\footnotesize\ttfamily \hyperlink{class_animation_1_1_spritename_animation}{Spritename\+Animation} Trader\+Prototype.\+Animation\+Flying\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 37 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_ab93ef3072e1273b6aecacff9c5afa9c5}\label{class_trader_prototype_ab93ef3072e1273b6aecacff9c5afa9c5}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Animation\+Idle@{Animation\+Idle}}
+\index{Animation\+Idle@{Animation\+Idle}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Animation\+Idle}{AnimationIdle}}
+{\footnotesize\ttfamily \hyperlink{class_animation_1_1_spritename_animation}{Spritename\+Animation} Trader\+Prototype.\+Animation\+Idle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 35 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_ac27d2b342481a71505f3e31d995165e9}\label{class_trader_prototype_ac27d2b342481a71505f3e31d995165e9}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Currency\+Name@{Currency\+Name}}
+\index{Currency\+Name@{Currency\+Name}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Currency\+Name}{CurrencyName}}
+{\footnotesize\ttfamily string Trader\+Prototype.\+Currency\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 27 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a767e713c25e3a3d45219da5f1f2d5c7f}\label{class_trader_prototype_a767e713c25e3a3d45219da5f1f2d5c7f}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Max\+Currency\+Balance@{Max\+Currency\+Balance}}
+\index{Max\+Currency\+Balance@{Max\+Currency\+Balance}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Max\+Currency\+Balance}{MaxCurrencyBalance}}
+{\footnotesize\ttfamily float Trader\+Prototype.\+Max\+Currency\+Balance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 25 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_ad3bbb1b8cb38db246dad80ddd9f21c1a}\label{class_trader_prototype_ad3bbb1b8cb38db246dad80ddd9f21c1a}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Max\+Sale\+Margin\+Multiplier@{Max\+Sale\+Margin\+Multiplier}}
+\index{Max\+Sale\+Margin\+Multiplier@{Max\+Sale\+Margin\+Multiplier}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Max\+Sale\+Margin\+Multiplier}{MaxSaleMarginMultiplier}}
+{\footnotesize\ttfamily float Trader\+Prototype.\+Max\+Sale\+Margin\+Multiplier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 31 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_aaa627e7a39e69ba57d703f3d0056585b}\label{class_trader_prototype_aaa627e7a39e69ba57d703f3d0056585b}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Min\+Currency\+Balance@{Min\+Currency\+Balance}}
+\index{Min\+Currency\+Balance@{Min\+Currency\+Balance}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Min\+Currency\+Balance}{MinCurrencyBalance}}
+{\footnotesize\ttfamily float Trader\+Prototype.\+Min\+Currency\+Balance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 23 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_ae6adbb7df143ffe22c397817bdfc61c9}\label{class_trader_prototype_ae6adbb7df143ffe22c397817bdfc61c9}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Min\+Sale\+Margin\+Multiplier@{Min\+Sale\+Margin\+Multiplier}}
+\index{Min\+Sale\+Margin\+Multiplier@{Min\+Sale\+Margin\+Multiplier}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Min\+Sale\+Margin\+Multiplier}{MinSaleMarginMultiplier}}
+{\footnotesize\ttfamily float Trader\+Prototype.\+Min\+Sale\+Margin\+Multiplier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 29 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a9ae59b2fcd50f11570f4e81e2fac6427}\label{class_trader_prototype_a9ae59b2fcd50f11570f4e81e2fac6427}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Potential\+Names@{Potential\+Names}}
+\index{Potential\+Names@{Potential\+Names}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Potential\+Names}{PotentialNames}}
+{\footnotesize\ttfamily List$<$string$>$ Trader\+Prototype.\+Potential\+Names\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 21 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a7c5d5d814feb2f88ec9734d04520f353}\label{class_trader_prototype_a7c5d5d814feb2f88ec9734d04520f353}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Potential\+Stock@{Potential\+Stock}}
+\index{Potential\+Stock@{Potential\+Stock}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Potential\+Stock}{PotentialStock}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_trader_potential_inventory}{Trader\+Potential\+Inventory}$>$ Trader\+Prototype.\+Potential\+Stock\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 33 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a4207b86e570e7237b9df76b91cd0e7e1}\label{class_trader_prototype_a4207b86e570e7237b9df76b91cd0e7e1}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Rarity@{Rarity}}
+\index{Rarity@{Rarity}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Rarity}{Rarity}}
+{\footnotesize\ttfamily float Trader\+Prototype.\+Rarity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Value from 0 to 1, higher value represent higher availability of the trade resource. 
+
+
+
+Definition at line 43 of file Trader\+Prototype.\+cs.
+
+\mbox{\Hypertarget{class_trader_prototype_a16f54dc71faed15a0466dc7ebc413926}\label{class_trader_prototype_a16f54dc71faed15a0466dc7ebc413926}} 
+\index{Trader\+Prototype@{Trader\+Prototype}!Type@{Type}}
+\index{Type@{Type}!Trader\+Prototype@{Trader\+Prototype}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Trader\+Prototype.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 19 of file Trader\+Prototype.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Trade/\hyperlink{_trader_prototype_8cs}{Trader\+Prototype.\+cs}\end{DoxyCompactItemize}

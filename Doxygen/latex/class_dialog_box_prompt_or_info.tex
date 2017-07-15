@@ -1,0 +1,198 @@
+\hypertarget{class_dialog_box_prompt_or_info}{}\section{Dialog\+Box\+Prompt\+Or\+Info Class Reference}
+\label{class_dialog_box_prompt_or_info}\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+
+
+Can be used to create message boxes with info to the user (with an OK button to close or none) or prompt dialogs with a choice of \char`\"{}\+Yes\char`\"{}, \char`\"{}\+No\char`\"{} and/or \char`\"{}\+Cancel\char`\"{} buttons.  
+
+
+Inheritance diagram for Dialog\+Box\+Prompt\+Or\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dialog_box_prompt_or_info}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a451eae3b87295695885d74c3cab62e47}{Set\+Buttons} (params \hyperlink{_dialog_box_result_8cs_acd933b66f7b1c8ad36ee61780622c54f}{Dialog\+Box\+Result}\mbox{[}$\,$\mbox{]} buttons\+To\+Set)
+\begin{DoxyCompactList}\small\item\em Define the buttons that should appear in the dialog (yes, no, cancel). \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_box_prompt_or_info_ae28253797d0c08cdebb1e61782861766}{Set\+Buttons} (Table buttons)
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a591120ef3e537b3c237cffa980db3fdf}{Set\+As\+Info} (string info\+Text)
+\begin{DoxyCompactList}\small\item\em This creates a simple message box with an ok button. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_box_prompt_or_info_aeaefe36074973518526bf7ad4cb9c034}{Yes\+Button\+Click} ()
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a8f81842e512aa487b54926ae31422dc0}{No\+Button\+Click} ()
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a085993f7345873bb6cdc71c0f0ca955e}{Cancel\+Button\+Click} ()
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a7e675056ad6c03b07fbf34f906db1c47}{Ok\+Button\+Click} ()
+\item 
+override void \hyperlink{class_dialog_box_prompt_or_info_a43847039bc30df2a99bad373312fcffb}{Close\+Dialog} ()
+\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a0073f1ea17e3a1fa1aa4735082d29034}{Set\+Prompt} (string key, params string\mbox{[}$\,$\mbox{]} additional\+Values)
+\begin{DoxyCompactList}\small\item\em Sets the text to show in the dialog. \end{DoxyCompactList}\item 
+void \hyperlink{class_dialog_box_prompt_or_info_a241847fb9d325f044bd7ee383ad1282b}{Set\+Width} (float width)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_dialog_box_result_8cs_acd933b66f7b1c8ad36ee61780622c54f}{Dialog\+Box\+Result} \hyperlink{class_dialog_box_prompt_or_info_a83bf411cf5714a5bc53999fd72ddeb97}{Buttons}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Can be used to create message boxes with info to the user (with an OK button to close or none) or prompt dialogs with a choice of \char`\"{}\+Yes\char`\"{}, \char`\"{}\+No\char`\"{} and/or \char`\"{}\+Cancel\char`\"{} buttons. 
+
+
+
+Definition at line 20 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a085993f7345873bb6cdc71c0f0ca955e}\label{class_dialog_box_prompt_or_info_a085993f7345873bb6cdc71c0f0ca955e}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Cancel\+Button\+Click@{Cancel\+Button\+Click}}
+\index{Cancel\+Button\+Click@{Cancel\+Button\+Click}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Cancel\+Button\+Click()}{CancelButtonClick()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Cancel\+Button\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a43847039bc30df2a99bad373312fcffb}\label{class_dialog_box_prompt_or_info_a43847039bc30df2a99bad373312fcffb}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Close\+Dialog@{Close\+Dialog}}
+\index{Close\+Dialog@{Close\+Dialog}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Close\+Dialog()}{CloseDialog()}}
+{\footnotesize\ttfamily override void Dialog\+Box\+Prompt\+Or\+Info.\+Close\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_dialog_box_ad4f408b78d5e109525c229ad34f5a447}{Dialog\+Box}.
+
+
+
+Definition at line 128 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a8f81842e512aa487b54926ae31422dc0}\label{class_dialog_box_prompt_or_info_a8f81842e512aa487b54926ae31422dc0}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!No\+Button\+Click@{No\+Button\+Click}}
+\index{No\+Button\+Click@{No\+Button\+Click}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{No\+Button\+Click()}{NoButtonClick()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+No\+Button\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a7e675056ad6c03b07fbf34f906db1c47}\label{class_dialog_box_prompt_or_info_a7e675056ad6c03b07fbf34f906db1c47}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Ok\+Button\+Click@{Ok\+Button\+Click}}
+\index{Ok\+Button\+Click@{Ok\+Button\+Click}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Ok\+Button\+Click()}{OkButtonClick()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Ok\+Button\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a591120ef3e537b3c237cffa980db3fdf}\label{class_dialog_box_prompt_or_info_a591120ef3e537b3c237cffa980db3fdf}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Set\+As\+Info@{Set\+As\+Info}}
+\index{Set\+As\+Info@{Set\+As\+Info}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Set\+As\+Info()}{SetAsInfo()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Set\+As\+Info (\begin{DoxyParamCaption}\item[{string}]{info\+Text }\end{DoxyParamCaption})}
+
+
+
+This creates a simple message box with an ok button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info\+Text} & Text to show.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a451eae3b87295695885d74c3cab62e47}\label{class_dialog_box_prompt_or_info_a451eae3b87295695885d74c3cab62e47}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Set\+Buttons@{Set\+Buttons}}
+\index{Set\+Buttons@{Set\+Buttons}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Set\+Buttons()}{SetButtons()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Set\+Buttons (\begin{DoxyParamCaption}\item[{params \hyperlink{_dialog_box_result_8cs_acd933b66f7b1c8ad36ee61780622c54f}{Dialog\+Box\+Result} \mbox{[}$\,$\mbox{]}}]{buttons\+To\+Set }\end{DoxyParamCaption})}
+
+
+
+Define the buttons that should appear in the dialog (yes, no, cancel). 
+
+
+
+Definition at line 29 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_ae28253797d0c08cdebb1e61782861766}\label{class_dialog_box_prompt_or_info_ae28253797d0c08cdebb1e61782861766}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Set\+Buttons@{Set\+Buttons}}
+\index{Set\+Buttons@{Set\+Buttons}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Set\+Buttons()}{SetButtons()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Set\+Buttons (\begin{DoxyParamCaption}\item[{Table}]{buttons }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a0073f1ea17e3a1fa1aa4735082d29034}\label{class_dialog_box_prompt_or_info_a0073f1ea17e3a1fa1aa4735082d29034}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Set\+Prompt@{Set\+Prompt}}
+\index{Set\+Prompt@{Set\+Prompt}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Set\+Prompt()}{SetPrompt()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Set\+Prompt (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{params string \mbox{[}$\,$\mbox{]}}]{additional\+Values }\end{DoxyParamCaption})}
+
+
+
+Sets the text to show in the dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Loalization key for the prompt\textquotesingle{}s text.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a241847fb9d325f044bd7ee383ad1282b}\label{class_dialog_box_prompt_or_info_a241847fb9d325f044bd7ee383ad1282b}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Set\+Width@{Set\+Width}}
+\index{Set\+Width@{Set\+Width}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Set\+Width()}{SetWidth()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Set\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_aeaefe36074973518526bf7ad4cb9c034}\label{class_dialog_box_prompt_or_info_aeaefe36074973518526bf7ad4cb9c034}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Yes\+Button\+Click@{Yes\+Button\+Click}}
+\index{Yes\+Button\+Click@{Yes\+Button\+Click}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Yes\+Button\+Click()}{YesButtonClick()}}
+{\footnotesize\ttfamily void Dialog\+Box\+Prompt\+Or\+Info.\+Yes\+Button\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_dialog_box_prompt_or_info_a83bf411cf5714a5bc53999fd72ddeb97}\label{class_dialog_box_prompt_or_info_a83bf411cf5714a5bc53999fd72ddeb97}} 
+\index{Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}!Buttons@{Buttons}}
+\index{Buttons@{Buttons}!Dialog\+Box\+Prompt\+Or\+Info@{Dialog\+Box\+Prompt\+Or\+Info}}
+\subsubsection{\texorpdfstring{Buttons}{Buttons}}
+{\footnotesize\ttfamily \hyperlink{_dialog_box_result_8cs_acd933b66f7b1c8ad36ee61780622c54f}{Dialog\+Box\+Result} Dialog\+Box\+Prompt\+Or\+Info.\+Buttons\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 24 of file Dialog\+Box\+Prompt\+Or\+Info.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+Dialog\+Box/\+Prompt\+Or\+Info/\hyperlink{_dialog_box_prompt_or_info_8cs}{Dialog\+Box\+Prompt\+Or\+Info.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\hypertarget{class_mouse_controller}{}\section{Mouse\+Controller Class Reference}
+\label{class_mouse_controller}\index{Mouse\+Controller@{Mouse\+Controller}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_mouse_controller_1_1_drag_parameters}{Drag\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}{Mouse\+Mode} \{ \hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a63225f19fccb18e7c709f1fa11bc738e}{Mouse\+Mode.\+S\+E\+L\+E\+CT}, 
+\hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a96239ee297e0a92ac6ff96a6bc434ef0}{Mouse\+Mode.\+B\+U\+I\+LD}, 
+\hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a03e4597cfea6442c61ec6c6a3f6eb59c}{Mouse\+Mode.\+S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mouse_controller_a94346c229fc62e5f63bcb737181fa946}{Mouse\+Controller} (\hyperlink{class_build_mode_controller}{Build\+Mode\+Controller} build\+Mode\+Controller, \hyperlink{class_furniture_sprite_controller}{Furniture\+Sprite\+Controller} furniture\+Sprite\+Controller, \hyperlink{class_utility_sprite_controller}{Utility\+Sprite\+Controller} utility\+Sprite\+Controller, Game\+Object cursor\+Object)
+\item 
+Vector3 \hyperlink{class_mouse_controller_ad6ab2c64fc9448c083bba1dcc834a642}{Get\+Mouse\+Position} ()
+\begin{DoxyCompactList}\small\item\em Gets the mouse position in world space. \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_mouse_controller_a15de1e155c9b78d28df606af2d6817dd}{Get\+Placing\+Position} ()
+\item 
+\hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}{Mouse\+Mode} \hyperlink{class_mouse_controller_afebdeed6462eccd639e5799851597c14}{Get\+Current\+Mode} ()
+\item 
+bool \hyperlink{class_mouse_controller_a1cc8e4525f57977037f3cae9e70327ab}{Get\+Is\+Dragging} ()
+\item 
+List$<$ Game\+Object $>$ \hyperlink{class_mouse_controller_a8afd7ab9fc2d9768228c59250f27c3f8}{Get\+Drag\+Objects} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_mouse_controller_a47ce689ad82385d2fdc959cfca34c6b5}{Get\+Mouse\+Over\+Tile} ()
+\item 
+Game\+Object \hyperlink{class_mouse_controller_aa4c2fcaf3a053b691fec75a34d93b5c4}{Get\+Cursor\+Parent} ()
+\item 
+void \hyperlink{class_mouse_controller_aa38db8a75d9e6875bbc574588b26ac41}{Start\+Build\+Mode} ()
+\item 
+void \hyperlink{class_mouse_controller_a99a99423977b205150b7f05a2701f581}{Start\+Spawn\+Mode} ()
+\item 
+void \hyperlink{class_mouse_controller_ac9b2f0fae750d7128123db59fe99c6d5}{Update} ()
+\item 
+bool \hyperlink{class_mouse_controller_a3ef7887060eaa7a7320c5432a395e923}{Is\+Character\+Selected} ()
+\item 
+void \hyperlink{class_mouse_controller_ad4712d93dd933c64427391b9789b3d99}{Clear\+Mouse\+Mode} (bool change\+Mode=false)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_selection_info}{Selection\+Info} \hyperlink{class_mouse_controller_ac4180c166ce9084e0f817ab7e7f930fd}{my\+Selection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Mouse\+Controller.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}\label{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Mouse\+Mode@{Mouse\+Mode}}
+\index{Mouse\+Mode@{Mouse\+Mode}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Mouse\+Mode}{MouseMode}}
+{\footnotesize\ttfamily enum \hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}{Mouse\+Controller.\+Mouse\+Mode}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+L\+E\+CT@{S\+E\+L\+E\+CT}!Mouse\+Controller@{Mouse\+Controller}}\index{Mouse\+Controller@{Mouse\+Controller}!S\+E\+L\+E\+CT@{S\+E\+L\+E\+CT}}}\mbox{\Hypertarget{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a63225f19fccb18e7c709f1fa11bc738e}\label{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a63225f19fccb18e7c709f1fa11bc738e}} 
+S\+E\+L\+E\+CT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+U\+I\+LD@{B\+U\+I\+LD}!Mouse\+Controller@{Mouse\+Controller}}\index{Mouse\+Controller@{Mouse\+Controller}!B\+U\+I\+LD@{B\+U\+I\+LD}}}\mbox{\Hypertarget{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a96239ee297e0a92ac6ff96a6bc434ef0}\label{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a96239ee297e0a92ac6ff96a6bc434ef0}} 
+B\+U\+I\+LD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY@{S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY}!Mouse\+Controller@{Mouse\+Controller}}\index{Mouse\+Controller@{Mouse\+Controller}!S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY@{S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY}}}\mbox{\Hypertarget{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a03e4597cfea6442c61ec6c6a3f6eb59c}\label{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51a03e4597cfea6442c61ec6c6a3f6eb59c}} 
+S\+P\+A\+W\+N\+\_\+\+I\+N\+V\+E\+N\+T\+O\+RY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 65 of file Mouse\+Controller.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mouse_controller_a94346c229fc62e5f63bcb737181fa946}\label{class_mouse_controller_a94346c229fc62e5f63bcb737181fa946}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Mouse\+Controller@{Mouse\+Controller}}
+\index{Mouse\+Controller@{Mouse\+Controller}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Mouse\+Controller()}{MouseController()}}
+{\footnotesize\ttfamily Mouse\+Controller.\+Mouse\+Controller (\begin{DoxyParamCaption}\item[{\hyperlink{class_build_mode_controller}{Build\+Mode\+Controller}}]{build\+Mode\+Controller,  }\item[{\hyperlink{class_furniture_sprite_controller}{Furniture\+Sprite\+Controller}}]{furniture\+Sprite\+Controller,  }\item[{\hyperlink{class_utility_sprite_controller}{Utility\+Sprite\+Controller}}]{utility\+Sprite\+Controller,  }\item[{Game\+Object}]{cursor\+Object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file Mouse\+Controller.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mouse_controller_ad4712d93dd933c64427391b9789b3d99}\label{class_mouse_controller_ad4712d93dd933c64427391b9789b3d99}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Clear\+Mouse\+Mode@{Clear\+Mouse\+Mode}}
+\index{Clear\+Mouse\+Mode@{Clear\+Mouse\+Mode}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Clear\+Mouse\+Mode()}{ClearMouseMode()}}
+{\footnotesize\ttfamily void Mouse\+Controller.\+Clear\+Mouse\+Mode (\begin{DoxyParamCaption}\item[{bool}]{change\+Mode = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_afebdeed6462eccd639e5799851597c14}\label{class_mouse_controller_afebdeed6462eccd639e5799851597c14}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Current\+Mode@{Get\+Current\+Mode}}
+\index{Get\+Current\+Mode@{Get\+Current\+Mode}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Current\+Mode()}{GetCurrentMode()}}
+{\footnotesize\ttfamily \hyperlink{class_mouse_controller_aa9b016ba73cc945841e3fae192330a51}{Mouse\+Mode} Mouse\+Controller.\+Get\+Current\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_aa4c2fcaf3a053b691fec75a34d93b5c4}\label{class_mouse_controller_aa4c2fcaf3a053b691fec75a34d93b5c4}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Cursor\+Parent@{Get\+Cursor\+Parent}}
+\index{Get\+Cursor\+Parent@{Get\+Cursor\+Parent}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+Parent()}{GetCursorParent()}}
+{\footnotesize\ttfamily Game\+Object Mouse\+Controller.\+Get\+Cursor\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a8afd7ab9fc2d9768228c59250f27c3f8}\label{class_mouse_controller_a8afd7ab9fc2d9768228c59250f27c3f8}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Drag\+Objects@{Get\+Drag\+Objects}}
+\index{Get\+Drag\+Objects@{Get\+Drag\+Objects}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Drag\+Objects()}{GetDragObjects()}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Mouse\+Controller.\+Get\+Drag\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a1cc8e4525f57977037f3cae9e70327ab}\label{class_mouse_controller_a1cc8e4525f57977037f3cae9e70327ab}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Is\+Dragging@{Get\+Is\+Dragging}}
+\index{Get\+Is\+Dragging@{Get\+Is\+Dragging}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Is\+Dragging()}{GetIsDragging()}}
+{\footnotesize\ttfamily bool Mouse\+Controller.\+Get\+Is\+Dragging (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a47ce689ad82385d2fdc959cfca34c6b5}\label{class_mouse_controller_a47ce689ad82385d2fdc959cfca34c6b5}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Mouse\+Over\+Tile@{Get\+Mouse\+Over\+Tile}}
+\index{Get\+Mouse\+Over\+Tile@{Get\+Mouse\+Over\+Tile}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Mouse\+Over\+Tile()}{GetMouseOverTile()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Mouse\+Controller.\+Get\+Mouse\+Over\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_ad6ab2c64fc9448c083bba1dcc834a642}\label{class_mouse_controller_ad6ab2c64fc9448c083bba1dcc834a642}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Mouse\+Position@{Get\+Mouse\+Position}}
+\index{Get\+Mouse\+Position@{Get\+Mouse\+Position}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Mouse\+Position()}{GetMousePosition()}}
+{\footnotesize\ttfamily Vector3 Mouse\+Controller.\+Get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the mouse position in world space. 
+
+
+
+Definition at line 75 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a15de1e155c9b78d28df606af2d6817dd}\label{class_mouse_controller_a15de1e155c9b78d28df606af2d6817dd}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Get\+Placing\+Position@{Get\+Placing\+Position}}
+\index{Get\+Placing\+Position@{Get\+Placing\+Position}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Placing\+Position()}{GetPlacingPosition()}}
+{\footnotesize\ttfamily Vector3 Mouse\+Controller.\+Get\+Placing\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a3ef7887060eaa7a7320c5432a395e923}\label{class_mouse_controller_a3ef7887060eaa7a7320c5432a395e923}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Is\+Character\+Selected@{Is\+Character\+Selected}}
+\index{Is\+Character\+Selected@{Is\+Character\+Selected}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Is\+Character\+Selected()}{IsCharacterSelected()}}
+{\footnotesize\ttfamily bool Mouse\+Controller.\+Is\+Character\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 144 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_aa38db8a75d9e6875bbc574588b26ac41}\label{class_mouse_controller_aa38db8a75d9e6875bbc574588b26ac41}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Start\+Build\+Mode@{Start\+Build\+Mode}}
+\index{Start\+Build\+Mode@{Start\+Build\+Mode}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Start\+Build\+Mode()}{StartBuildMode()}}
+{\footnotesize\ttfamily void Mouse\+Controller.\+Start\+Build\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_a99a99423977b205150b7f05a2701f581}\label{class_mouse_controller_a99a99423977b205150b7f05a2701f581}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Start\+Spawn\+Mode@{Start\+Spawn\+Mode}}
+\index{Start\+Spawn\+Mode@{Start\+Spawn\+Mode}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Start\+Spawn\+Mode()}{StartSpawnMode()}}
+{\footnotesize\ttfamily void Mouse\+Controller.\+Start\+Spawn\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file Mouse\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_mouse_controller_ac9b2f0fae750d7128123db59fe99c6d5}\label{class_mouse_controller_ac9b2f0fae750d7128123db59fe99c6d5}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!Update@{Update}}
+\index{Update@{Update}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Mouse\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 121 of file Mouse\+Controller.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mouse_controller_ac4180c166ce9084e0f817ab7e7f930fd}\label{class_mouse_controller_ac4180c166ce9084e0f817ab7e7f930fd}} 
+\index{Mouse\+Controller@{Mouse\+Controller}!my\+Selection@{my\+Selection}}
+\index{my\+Selection@{my\+Selection}!Mouse\+Controller@{Mouse\+Controller}}
+\subsubsection{\texorpdfstring{my\+Selection}{mySelection}}
+{\footnotesize\ttfamily \hyperlink{class_selection_info}{Selection\+Info} Mouse\+Controller.\+my\+Selection}
+
+
+
+Definition at line 15 of file Mouse\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Controllers/\+Input\+Output/\hyperlink{_mouse_controller_8cs}{Mouse\+Controller.\+cs}\end{DoxyCompactItemize}

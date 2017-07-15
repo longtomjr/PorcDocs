@@ -1,0 +1,167 @@
+\hypertarget{interface_priority___queue_1_1_i_priority_queue}{}\section{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$ Interface Template Reference}
+\label{interface_priority___queue_1_1_i_priority_queue}\index{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$@{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}}
+
+
+The \hyperlink{interface_priority___queue_1_1_i_priority_queue}{I\+Priority\+Queue} interface. This is mainly here for purists, and in case I decide to add more implementations later. For speed purposes, it is actually recommended that you {\itshape don\textquotesingle{}t} access the priority queue through this interface, since the J\+IT can (theoretically?) optimize method calls from concrete-\/types slightly better.  
+
+
+Inheritance diagram for Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_priority___queue_1_1_i_priority_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_priority___queue_1_1_i_priority_queue_ab9de1e02c2861409b9ee7ee2b0935840}{Enqueue} (T node, double priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. See implementation for how duplicates are handled. \end{DoxyCompactList}\item 
+T \hyperlink{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. \end{DoxyCompactList}\item 
+void \hyperlink{interface_priority___queue_1_1_i_priority_queue_a5939e029c023e34d3f70c350f6355823}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Removes every node from the queue. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_priority___queue_1_1_i_priority_queue_ac7d7359b5f70bbed350d2fe3135519cf}{Contains} (T node)
+\begin{DoxyCompactList}\small\item\em Returns whether the given node is in the queue. \end{DoxyCompactList}\item 
+void \hyperlink{interface_priority___queue_1_1_i_priority_queue_a4140ec265c23d3b230d701a25def6cf9}{Remove} (T node)
+\begin{DoxyCompactList}\small\item\em Removes a node from the queue. The node does not need to be the head of the queue. \end{DoxyCompactList}\item 
+void \hyperlink{interface_priority___queue_1_1_i_priority_queue_a2f2576faa1974a2266d155addb431db2}{Update\+Priority} (T node, double priority)
+\begin{DoxyCompactList}\small\item\em Call this method to change the priority of a node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{interface_priority___queue_1_1_i_priority_queue_a0faa318e892617bedc0f5f9f6c3e6e8b}{First}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the head of the queue, without removing it (use \hyperlink{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}{Dequeue()} for that). \end{DoxyCompactList}\item 
+int \hyperlink{interface_priority___queue_1_1_i_priority_queue_a7cbcf139fcce73525521fee063bc4392}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{interface_priority___queue_1_1_i_priority_queue}{I\+Priority\+Queue} interface. This is mainly here for purists, and in case I decide to add more implementations later. For speed purposes, it is actually recommended that you {\itshape don\textquotesingle{}t} access the priority queue through this interface, since the J\+IT can (theoretically?) optimize method calls from concrete-\/types slightly better. 
+
+
+
+Definition at line 11 of file I\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_a5939e029c023e34d3f70c350f6355823}\label{interface_priority___queue_1_1_i_priority_queue_a5939e029c023e34d3f70c350f6355823}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Clear@{Clear}}
+\index{Clear@{Clear}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes every node from the queue. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_simple_priority_queue_a23b62d7c0a813de7136c48396f2e936c}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_fast_priority_queue_a2e6712e62f3f64596884f35d6fec4441}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_ac7d7359b5f70bbed350d2fe3135519cf}\label{interface_priority___queue_1_1_i_priority_queue_ac7d7359b5f70bbed350d2fe3135519cf}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Contains@{Contains}}
+\index{Contains@{Contains}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Returns whether the given node is in the queue. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}\label{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily T \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_ab9de1e02c2861409b9ee7ee2b0935840}\label{interface_priority___queue_1_1_i_priority_queue_ab9de1e02c2861409b9ee7ee2b0935840}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Enqueue (\begin{DoxyParamCaption}\item[{T}]{node,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. See implementation for how duplicates are handled. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7f24aa70888f2509f9ec9f714619a075}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_fast_priority_queue_a9338584620111d3a2f0dc429e197be1a}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_a4140ec265c23d3b230d701a25def6cf9}\label{interface_priority___queue_1_1_i_priority_queue_a4140ec265c23d3b230d701a25def6cf9}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Remove@{Remove}}
+\index{Remove@{Remove}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Removes a node from the queue. The node does not need to be the head of the queue. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac4b7f14c5114cc676537d80168679698}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_simple_priority_queue_a16f1802e80604982bd76fef639f271e8}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_a2f2576faa1974a2266d155addb431db2}\label{interface_priority___queue_1_1_i_priority_queue_a2f2576faa1974a2266d155addb431db2}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Update\+Priority@{Update\+Priority}}
+\index{Update\+Priority@{Update\+Priority}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Update\+Priority()}{UpdatePriority()}}
+{\footnotesize\ttfamily void \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Update\+Priority (\begin{DoxyParamCaption}\item[{T}]{node,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+Call this method to change the priority of a node. 
+
+
+
+Implemented in \hyperlink{class_priority___queue_1_1_fast_priority_queue_a6a264392ba7d522df490170facc1f252}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}, and \hyperlink{class_priority___queue_1_1_simple_priority_queue_a90988345298443d824db48ae0fa35f2f}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_a7cbcf139fcce73525521fee063bc4392}\label{interface_priority___queue_1_1_i_priority_queue_a7cbcf139fcce73525521fee063bc4392}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!Count@{Count}}
+\index{Count@{Count}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the number of nodes in the queue. 
+
+
+
+Definition at line 52 of file I\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{interface_priority___queue_1_1_i_priority_queue_a0faa318e892617bedc0f5f9f6c3e6e8b}\label{interface_priority___queue_1_1_i_priority_queue_a0faa318e892617bedc0f5f9f6c3e6e8b}} 
+\index{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}!First@{First}}
+\index{First@{First}!Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+I\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{First}{First}}
+{\footnotesize\ttfamily T \hyperlink{interface_priority___queue_1_1_i_priority_queue}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue}$<$ T $>$.First\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the head of the queue, without removing it (use \hyperlink{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}{Dequeue()} for that). 
+
+
+
+Definition at line 47 of file I\+Priority\+Queue.\+cs.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utilities/\+Priority\+\_\+\+Queue/\+Priority Queue/\hyperlink{_i_priority_queue_8cs}{I\+Priority\+Queue.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,527 @@
+\hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{}\section{Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component Class Reference}
+\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}\index{Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component@{Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component}}
+Inheritance diagram for Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.612022cm]{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_conditions}{Conditions}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_info}{Info}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_parameter_condition}{Parameter\+Condition}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_parameter_definition}{Parameter\+Definition}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_source_data_info}{Source\+Data\+Info}
+\item 
+class \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_use_animation}{Use\+Animation}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Requirements} \{ \newline
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa6adf97f83acf6453d4a6a4b1070f3754}{Requirements.\+None} = 0, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aadd4fe0cc913f704600b97d1f5dd285de}{Requirements.\+Power} = 1, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa756d97bb256b8580d4d71ee0c547804e}{Requirements.\+Production} = 1 $<$$<$ 1, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa635459702f9817de29e608fa3395637c}{Requirements.\+Gas} = 1 $<$$<$ 2, 
+\newline
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aac2e7db5ac7ab74ea4bb9a7a89d251f3a}{Requirements.\+Fluid} = 1 $<$$<$ 3
+ \}
+\item 
+enum \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffc}{Condition\+Type} \{ \newline
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca899ae9d23452ff8e0905e569e7f56a0c}{Condition\+Type.\+Is\+Greater\+Than\+Zero}, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca1722ca23c93caa6be908e4504ad221ad}{Condition\+Type.\+Is\+Less\+Than\+One}, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2f3f669881bc071d6688d3bd19cdc477}{Condition\+Type.\+Is\+Zero}, 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca0cd226573a589dc6775a1ada74550253}{Condition\+Type.\+Is\+True}, 
+\newline
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2a68db972bb0827c79c342fef56334b6}{Condition\+Type.\+Is\+False}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a256a38b8f8f3b33df233903ddae29867}{Buildable\+Component} ()
+\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af69d5bff8618022633c71d8f0e949a54}{Buildable\+Component} (\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} other)
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a94210cf5d6a4ea1a90d6b54cd379836e}{Initialize\+Prototype} (\hyperlink{class_furniture}{Furniture} proto\+Furniture)
+\begin{DoxyCompactList}\small\item\em Initializes after loading the prototype. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac2ca9344f184cd922fa8a089a95f6765}{Initialize} (\hyperlink{class_furniture}{Furniture} parent\+Furniture)
+\begin{DoxyCompactList}\small\item\em Initializes after placed into world. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a589203e44ce8de22262caead43ad38d6}{Can\+Function} ()
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0528e50f3dbe24481256802e758deeb9}{Fixed\+Frequency\+Update} (float delta\+Time)
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3e28428fccf4350118bef518e98af024}{Every\+Frame\+Update} (float delta\+Time)
+\item 
+virtual List$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aeab2f8844d0c51fbaceffc733b3eb74f}{Get\+Context\+Menu} ()
+\item 
+virtual I\+Enumerable$<$ string $>$ \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a78dcaf17ccd463eb4f47fc4b3671b7b5}{Get\+Description} ()
+\item 
+override string \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a72c9ae31770dff072e2ed330ab998f6a}{To\+String} ()
+\item 
+abstract \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acfe1aedeaf167118ca5d0d2b046e00fb}{Clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0d0366b27cc355c8c02b99de39b2ae3f}{Deserialize} (Xml\+Reader xml\+Reader)
+\item 
+static \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a849bec823484ae994bbdb47f5d8776ac}{Deserialize} (J\+Token jtoken)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac3050db5e9d240e7618ce156920a9dc6}{Initialize} ()
+\item 
+\hyperlink{class_context_menu_action}{Context\+Menu\+Action} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af66e467d15e1d8a11bbda57e1e4a4be5}{Create\+Component\+Context\+Menu\+Item} (\hyperlink{class_component_context_menu}{Component\+Context\+Menu} component\+Context\+Menu\+Action)
+\item 
+void \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aa96114c3fece4e34d5d088d3966d098a}{Invoke\+Context\+Menu\+Action} (Action$<$ \hyperlink{class_furniture}{Furniture}, string $>$ function, string arg)
+\item 
+bool \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac7250f55e7d48d6ac1f1dc2258320a8c}{Are\+Parameter\+Conditions\+Fulfilled} (List$<$ \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_parameter_condition}{Parameter\+Condition} $>$ conditions)
+\item 
+string \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a255b41979e606cf16e7d6fec11f8c6bd}{Retrieve\+String\+For} (\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_source_data_info}{Source\+Data\+Info} source\+Data\+Info, \hyperlink{class_furniture}{Furniture} furniture)
+\item 
+float \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ad37f9b655dc234ca2154686c39cc455e}{Retrieve\+Float\+For} (\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_source_data_info}{Source\+Data\+Info} source\+Data\+Info, \hyperlink{class_furniture}{Furniture} furniture)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Requirements} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a16e8af5b3219d1ca0bd9fff7851b9fa4}{component\+Requirements} = \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa6adf97f83acf6453d4a6a4b1070f3754}{Requirements.\+None}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac77147a18cd2db90f7e2bb57e01692c8}{Component\+Log\+Channel} = \char`\"{}Furniture\+Components\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aec1e1b6a229897af73da04a445618d25}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Requirements} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a73972c1361c2a4d7c9d98d8ce8a40eb9}{Needs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_abcd05389f01af31312cda28ae1b75277}{Initialized}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af79ccbafac141e8529483e24d6c8dae5}{Requires\+Slow\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aabb6474ee977d19235ef17345a2c8c8e}{Requires\+Fast\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a563746a8a8cce0cf2c2024b9f3387027}{Parent\+Furniture}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_parameter}{Parameter} \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acea58f772d2b256a594113769fff664e}{Furniture\+Params}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Buildable\+Component.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffc}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffc}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Condition\+Type@{Condition\+Type}}
+\index{Condition\+Type@{Condition\+Type}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Condition\+Type}{ConditionType}}
+{\footnotesize\ttfamily enum \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffc}{Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Condition\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Is\+Greater\+Than\+Zero@{Is\+Greater\+Than\+Zero}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Is\+Greater\+Than\+Zero@{Is\+Greater\+Than\+Zero}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca899ae9d23452ff8e0905e569e7f56a0c}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca899ae9d23452ff8e0905e569e7f56a0c}} 
+Is\+Greater\+Than\+Zero&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Is\+Less\+Than\+One@{Is\+Less\+Than\+One}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Is\+Less\+Than\+One@{Is\+Less\+Than\+One}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca1722ca23c93caa6be908e4504ad221ad}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca1722ca23c93caa6be908e4504ad221ad}} 
+Is\+Less\+Than\+One&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Is\+Zero@{Is\+Zero}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Is\+Zero@{Is\+Zero}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2f3f669881bc071d6688d3bd19cdc477}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2f3f669881bc071d6688d3bd19cdc477}} 
+Is\+Zero&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Is\+True@{Is\+True}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Is\+True@{Is\+True}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca0cd226573a589dc6775a1ada74550253}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca0cd226573a589dc6775a1ada74550253}} 
+Is\+True&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Is\+False@{Is\+False}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Is\+False@{Is\+False}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2a68db972bb0827c79c342fef56334b6}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3d88a65107c808a21df55bde70954ffca2a68db972bb0827c79c342fef56334b6}} 
+Is\+False&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 54 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Requirements@{Requirements}}
+\index{Requirements@{Requirements}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Requirements}{Requirements}}
+{\footnotesize\ttfamily enum \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Requirements}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!None@{None}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa6adf97f83acf6453d4a6a4b1070f3754}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Power@{Power}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Power@{Power}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aadd4fe0cc913f704600b97d1f5dd285de}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aadd4fe0cc913f704600b97d1f5dd285de}} 
+Power&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Production@{Production}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Production@{Production}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa756d97bb256b8580d4d71ee0c547804e}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa756d97bb256b8580d4d71ee0c547804e}} 
+Production&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gas@{Gas}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Gas@{Gas}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa635459702f9817de29e608fa3395637c}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa635459702f9817de29e608fa3395637c}} 
+Gas&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fluid@{Fluid}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Fluid@{Fluid}}}\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aac2e7db5ac7ab74ea4bb9a7a89d251f3a}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aac2e7db5ac7ab74ea4bb9a7a89d251f3a}} 
+Fluid&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 45 of file Buildable\+Component.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a256a38b8f8f3b33df233903ddae29867}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a256a38b8f8f3b33df233903ddae29867}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Buildable\+Component@{Buildable\+Component}}
+\index{Buildable\+Component@{Buildable\+Component}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Buildable\+Component()}{BuildableComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Buildable\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af69d5bff8618022633c71d8f0e949a54}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af69d5bff8618022633c71d8f0e949a54}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Buildable\+Component@{Buildable\+Component}}
+\index{Buildable\+Component@{Buildable\+Component}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Buildable\+Component()}{BuildableComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Buildable\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component}}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file Buildable\+Component.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac7250f55e7d48d6ac1f1dc2258320a8c}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac7250f55e7d48d6ac1f1dc2258320a8c}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Are\+Parameter\+Conditions\+Fulfilled@{Are\+Parameter\+Conditions\+Fulfilled}}
+\index{Are\+Parameter\+Conditions\+Fulfilled@{Are\+Parameter\+Conditions\+Fulfilled}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Are\+Parameter\+Conditions\+Fulfilled()}{AreParameterConditionsFulfilled()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Are\+Parameter\+Conditions\+Fulfilled (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_parameter_condition}{Parameter\+Condition} $>$}]{conditions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 223 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a589203e44ce8de22262caead43ad38d6}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a589203e44ce8de22262caead43ad38d6}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Can\+Function@{Can\+Function}}
+\index{Can\+Function@{Can\+Function}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Can\+Function()}{CanFunction()}}
+{\footnotesize\ttfamily virtual bool Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Can\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_ae0c98f5109191531858d433295a99841}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_a8f3e90619dd04d8adc149e2d24ebf31a}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_a1b478ecd3ba6d1229dd851d1ce9d1a7e}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_gas_connection_a12332ec93cb8ad81b48f5b362810c281}{Project\+Porcupine.\+Buildable.\+Components.\+Gas\+Connection}.
+
+
+
+Definition at line 176 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acfe1aedeaf167118ca5d0d2b046e00fb}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acfe1aedeaf167118ca5d0d2b046e00fb}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Clone@{Clone}}
+\index{Clone@{Clone}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily abstract \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_a8ce41c07a574080c54f2b45e7ce7279d}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_aa280aa9d7723a5dad3ceecdba405c4ba}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_a902289f6ee9c0f227e093af73a477009}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_visuals_aa52dbb79a4a4f72b83c7a117080700d9}{Project\+Porcupine.\+Buildable.\+Components.\+Visuals}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_gas_connection_a7e4de83edc3f1d37663e14f5601c00e7}{Project\+Porcupine.\+Buildable.\+Components.\+Gas\+Connection}.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af66e467d15e1d8a11bbda57e1e4a4be5}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af66e467d15e1d8a11bbda57e1e4a4be5}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Create\+Component\+Context\+Menu\+Item@{Create\+Component\+Context\+Menu\+Item}}
+\index{Create\+Component\+Context\+Menu\+Item@{Create\+Component\+Context\+Menu\+Item}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Create\+Component\+Context\+Menu\+Item()}{CreateComponentContextMenuItem()}}
+{\footnotesize\ttfamily \hyperlink{class_context_menu_action}{Context\+Menu\+Action} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Create\+Component\+Context\+Menu\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{class_component_context_menu}{Component\+Context\+Menu}}]{component\+Context\+Menu\+Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 208 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0d0366b27cc355c8c02b99de39b2ae3f}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0d0366b27cc355c8c02b99de39b2ae3f}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Deserialize()}{Deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Deserialize (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{xml\+Reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 108 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a849bec823484ae994bbdb47f5d8776ac}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a849bec823484ae994bbdb47f5d8776ac}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Deserialize()}{Deserialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component}{Buildable\+Component} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Deserialize (\begin{DoxyParamCaption}\item[{J\+Token}]{jtoken }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 133 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3e28428fccf4350118bef518e98af024}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a3e28428fccf4350118bef518e98af024}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Every\+Frame\+Update@{Every\+Frame\+Update}}
+\index{Every\+Frame\+Update@{Every\+Frame\+Update}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Every\+Frame\+Update()}{EveryFrameUpdate()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Every\+Frame\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 185 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0528e50f3dbe24481256802e758deeb9}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a0528e50f3dbe24481256802e758deeb9}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}}
+\index{Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency\+Update()}{FixedFrequencyUpdate()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Fixed\+Frequency\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_a1e7dcf30f17d4169978a2bf31a31b50c}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_aa61596b6b7cb20b8ef6c0672fa3f3119}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_adaf70643c87224e88a4efe3cc45ec288}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_gas_connection_a999f07a477a5d042ae0b53ede65b34dd}{Project\+Porcupine.\+Buildable.\+Components.\+Gas\+Connection}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_visuals_a3650e3d2ff6aef61090eeaf900f9a041}{Project\+Porcupine.\+Buildable.\+Components.\+Visuals}.
+
+
+
+Definition at line 181 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aeab2f8844d0c51fbaceffc733b3eb74f}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aeab2f8844d0c51fbaceffc733b3eb74f}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Get\+Context\+Menu@{Get\+Context\+Menu}}
+\index{Get\+Context\+Menu@{Get\+Context\+Menu}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu()}{GetContextMenu()}}
+{\footnotesize\ttfamily virtual List$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Get\+Context\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_a08da90f814b602c3de05862fdc33dd03}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}.
+
+
+
+Definition at line 189 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a78dcaf17ccd463eb4f47fc4b3671b7b5}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a78dcaf17ccd463eb4f47fc4b3671b7b5}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily virtual I\+Enumerable$<$string$>$ Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_a65a8b6edcd5f5ece2c1b8dc78e735597}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_a61c5dde2b1470fc3127136891d4e9888}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_ab72b89bcd9a1c02321dadd29368769d9}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}.
+
+
+
+Definition at line 194 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac2ca9344f184cd922fa8a089a95f6765}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac2ca9344f184cd922fa8a089a95f6765}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Initialize (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{parent\+Furniture }\end{DoxyParamCaption})}
+
+
+
+Initializes after placed into world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Furniture} & Reference to furniture placed in world.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac3050db5e9d240e7618ce156920a9dc6}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac3050db5e9d240e7618ce156920a9dc6}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_a876abd5cb8ac85a2b9b4abae9e645418}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_af0f0f3e2aad78348bc8f68baddc119a2}{Project\+Porcupine.\+Buildable.\+Components.\+Workshop}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_ad5997d00cb9c0c341df24c021b499b05}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}, \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_gas_connection_a1eab83807e81517d9defd25ab97bf9a0}{Project\+Porcupine.\+Buildable.\+Components.\+Gas\+Connection}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_visuals_a9ddca8a9a68c0f79a7475025d3b08205}{Project\+Porcupine.\+Buildable.\+Components.\+Visuals}.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a94210cf5d6a4ea1a90d6b54cd379836e}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a94210cf5d6a4ea1a90d6b54cd379836e}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Initialize\+Prototype@{Initialize\+Prototype}}
+\index{Initialize\+Prototype@{Initialize\+Prototype}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Initialize\+Prototype()}{InitializePrototype()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Initialize\+Prototype (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{proto\+Furniture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes after loading the prototype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto\+Furniture} & Reference to prototype of furniture.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_visuals_a0b0f9d1cf4d32880d051897bc0789732}{Project\+Porcupine.\+Buildable.\+Components.\+Visuals}.
+
+
+
+Definition at line 161 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aa96114c3fece4e34d5d088d3966d098a}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aa96114c3fece4e34d5d088d3966d098a}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Invoke\+Context\+Menu\+Action@{Invoke\+Context\+Menu\+Action}}
+\index{Invoke\+Context\+Menu\+Action@{Invoke\+Context\+Menu\+Action}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Invoke\+Context\+Menu\+Action()}{InvokeContextMenuAction()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Invoke\+Context\+Menu\+Action (\begin{DoxyParamCaption}\item[{Action$<$ \hyperlink{class_furniture}{Furniture}, string $>$}]{function,  }\item[{string}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 218 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ad37f9b655dc234ca2154686c39cc455e}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ad37f9b655dc234ca2154686c39cc455e}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Retrieve\+Float\+For@{Retrieve\+Float\+For}}
+\index{Retrieve\+Float\+For@{Retrieve\+Float\+For}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Retrieve\+Float\+For()}{RetrieveFloatFor()}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Retrieve\+Float\+For (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_source_data_info}{Source\+Data\+Info}}]{source\+Data\+Info,  }\item[{\hyperlink{class_furniture}{Furniture}}]{furniture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 281 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a255b41979e606cf16e7d6fec11f8c6bd}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a255b41979e606cf16e7d6fec11f8c6bd}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Retrieve\+String\+For@{Retrieve\+String\+For}}
+\index{Retrieve\+String\+For@{Retrieve\+String\+For}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Retrieve\+String\+For()}{RetrieveStringFor()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Retrieve\+String\+For (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_1_1_source_data_info}{Source\+Data\+Info}}]{source\+Data\+Info,  }\item[{\hyperlink{class_furniture}{Furniture}}]{furniture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 258 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a72c9ae31770dff072e2ed330ab998f6a}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a72c9ae31770dff072e2ed330ab998f6a}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 199 of file Buildable\+Component.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac77147a18cd2db90f7e2bb57e01692c8}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_ac77147a18cd2db90f7e2bb57e01692c8}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Component\+Log\+Channel@{Component\+Log\+Channel}}
+\index{Component\+Log\+Channel@{Component\+Log\+Channel}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Component\+Log\+Channel}{ComponentLogChannel}}
+{\footnotesize\ttfamily readonly string Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Component\+Log\+Channel = \char`\"{}Furniture\+Components\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 25 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a16e8af5b3219d1ca0bd9fff7851b9fa4}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a16e8af5b3219d1ca0bd9fff7851b9fa4}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!component\+Requirements@{component\+Requirements}}
+\index{component\+Requirements@{component\+Requirements}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{component\+Requirements}{componentRequirements}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Requirements} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+component\+Requirements = \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8aa6adf97f83acf6453d4a6a4b1070f3754}{Requirements.\+None}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 27 of file Buildable\+Component.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acea58f772d2b256a594113769fff664e}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_acea58f772d2b256a594113769fff664e}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Furniture\+Params@{Furniture\+Params}}
+\index{Furniture\+Params@{Furniture\+Params}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Furniture\+Params}{FurnitureParams}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Furniture\+Params\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 104 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_abcd05389f01af31312cda28ae1b75277}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_abcd05389f01af31312cda28ae1b75277}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Initialized@{Initialized}}
+\index{Initialized@{Initialized}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Initialized}{Initialized}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Initialized\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 76 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a73972c1361c2a4d7c9d98d8ce8a40eb9}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a73972c1361c2a4d7c9d98d8ce8a40eb9}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Needs@{Needs}}
+\index{Needs@{Needs}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Needs}{Needs}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a331a0d67512b8b402c04c8cf31c0ca8a}{Requirements} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Needs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 68 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a563746a8a8cce0cf2c2024b9f3387027}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_a563746a8a8cce0cf2c2024b9f3387027}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Parent\+Furniture@{Parent\+Furniture}}
+\index{Parent\+Furniture@{Parent\+Furniture}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Parent\+Furniture}{ParentFurniture}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Parent\+Furniture\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 100 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aabb6474ee977d19235ef17345a2c8c8e}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aabb6474ee977d19235ef17345a2c8c8e}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Requires\+Fast\+Update@{Requires\+Fast\+Update}}
+\index{Requires\+Fast\+Update@{Requires\+Fast\+Update}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Requires\+Fast\+Update}{RequiresFastUpdate}}
+{\footnotesize\ttfamily virtual bool Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Requires\+Fast\+Update\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 92 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af79ccbafac141e8529483e24d6c8dae5}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_af79ccbafac141e8529483e24d6c8dae5}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Requires\+Slow\+Update@{Requires\+Slow\+Update}}
+\index{Requires\+Slow\+Update@{Requires\+Slow\+Update}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Requires\+Slow\+Update}{RequiresSlowUpdate}}
+{\footnotesize\ttfamily virtual bool Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Requires\+Slow\+Update\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 84 of file Buildable\+Component.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aec1e1b6a229897af73da04a445618d25}\label{class_project_porcupine_1_1_buildable_1_1_components_1_1_buildable_component_aec1e1b6a229897af73da04a445618d25}} 
+\index{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}!Type@{Type}}
+\index{Type@{Type}!Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component@{Project\+Porcupine\+::\+Buildable\+::\+Components\+::\+Buildable\+Component}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Buildable.\+Components.\+Buildable\+Component.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 64 of file Buildable\+Component.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\+Components/\hyperlink{_buildable_component_8cs}{Buildable\+Component.\+cs}\end{DoxyCompactItemize}

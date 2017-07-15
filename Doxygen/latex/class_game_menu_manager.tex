@@ -1,0 +1,199 @@
+\hypertarget{class_game_menu_manager}{}\section{Game\+Menu\+Manager Class Reference}
+\label{class_game_menu_manager}\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+Inheritance diagram for Game\+Menu\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_menu_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_menu_manager_a7cab6d4a32b636bf93a835f9be82b00a}{Game\+Menu\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_main_menu}{Main\+Menu} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_menu_manager_a9619c435e22a9149b2ac6baa672ed018}{Add\+Menu\+Item} (\hyperlink{class_game_menu_item}{Game\+Menu\+Item} menu\+Item, int position=0)
+\begin{DoxyCompactList}\small\item\em Adds the given main menu item at the given position. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_menu_manager_a0ce66a98816e59b4385d48b1dabb3cb4}{Add\+Menu\+Item} (string key, Action callback, int position=0)
+\begin{DoxyCompactList}\small\item\em Adds a new menu item at the given position. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_menu_manager_a4f943a136b5f5925c197b6db73d8c60b}{Add\+Menu\+Item} (string key, Action callback, string after\+Key, bool add\+Later=false)
+\begin{DoxyCompactList}\small\item\em Adds a new menu item behind the menu item with the given key. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_game_menu_manager_ad13751caaa9d6728f8ac465ba27b06f9}{Get\+Enumerator} ()
+\begin{DoxyCompactList}\small\item\em Gets the menu items enumerator. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_menu_manager_a005762272c62660d9c013e33ef671487}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_game_menu_manager}{Game\+Menu\+Manager} \hyperlink{class_game_menu_manager_ad98a6509494a0988d2cc845e3b8cc089}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Main Menu instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_game_menu_item}{Game\+Menu\+Item}, int $>$ \hyperlink{class_game_menu_manager_a5628e819ba6ebe7d3905de7af1843b9f}{Added}
+\begin{DoxyCompactList}\small\item\em Occurs when a new menu item is added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Game\+Menu\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_menu_manager_a7cab6d4a32b636bf93a835f9be82b00a}\label{class_game_menu_manager_a7cab6d4a32b636bf93a835f9be82b00a}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Game\+Menu\+Manager()}{GameMenuManager()}}
+{\footnotesize\ttfamily Game\+Menu\+Manager.\+Game\+Menu\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_main_menu}{Main\+Menu} class. 
+
+
+
+Definition at line 23 of file Game\+Menu\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_menu_manager_a9619c435e22a9149b2ac6baa672ed018}\label{class_game_menu_manager_a9619c435e22a9149b2ac6baa672ed018}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Add\+Menu\+Item@{Add\+Menu\+Item}}
+\index{Add\+Menu\+Item@{Add\+Menu\+Item}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Menu\+Item()}{AddMenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Game\+Menu\+Manager.\+Add\+Menu\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_menu_item}{Game\+Menu\+Item}}]{menu\+Item,  }\item[{int}]{position = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Adds the given main menu item at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+Item} & The main menu item to add.\\
+\hline
+{\em position} & The position where to place the item.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Game\+Menu\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_menu_manager_a0ce66a98816e59b4385d48b1dabb3cb4}\label{class_game_menu_manager_a0ce66a98816e59b4385d48b1dabb3cb4}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Add\+Menu\+Item@{Add\+Menu\+Item}}
+\index{Add\+Menu\+Item@{Add\+Menu\+Item}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Menu\+Item()}{AddMenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Game\+Menu\+Manager.\+Add\+Menu\+Item (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{Action}]{callback,  }\item[{int}]{position = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Adds a new menu item at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The menu item key.\\
+\hline
+{\em callback} & The menu item callback. Called when the menu item is clicked.\\
+\hline
+{\em position} & The position where to place the item.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Game\+Menu\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_menu_manager_a4f943a136b5f5925c197b6db73d8c60b}\label{class_game_menu_manager_a4f943a136b5f5925c197b6db73d8c60b}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Add\+Menu\+Item@{Add\+Menu\+Item}}
+\index{Add\+Menu\+Item@{Add\+Menu\+Item}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Menu\+Item()}{AddMenuItem()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Game\+Menu\+Manager.\+Add\+Menu\+Item (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{Action}]{callback,  }\item[{string}]{after\+Key,  }\item[{bool}]{add\+Later = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Adds a new menu item behind the menu item with the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The menu item key.\\
+\hline
+{\em callback} & The menu item callback. Called when the menu item is clicked.\\
+\hline
+{\em after\+Key} & Place the given menu item after a menu item with this key.\\
+\hline
+{\em add\+Later} & If true and if there are no menu items with the given key, the menu item will be added later.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Game\+Menu\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_menu_manager_a005762272c62660d9c013e33ef671487}\label{class_game_menu_manager_a005762272c62660d9c013e33ef671487}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Game\+Menu\+Manager.\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy this instance. 
+
+
+
+Definition at line 141 of file Game\+Menu\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_menu_manager_ad13751caaa9d6728f8ac465ba27b06f9}\label{class_game_menu_manager_ad13751caaa9d6728f8ac465ba27b06f9}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator Game\+Menu\+Manager.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the menu items enumerator. 
+
+\begin{DoxyReturn}{Returns}
+The enumerator.
+\end{DoxyReturn}
+
+
+Definition at line 121 of file Game\+Menu\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_game_menu_manager_ad98a6509494a0988d2cc845e3b8cc089}\label{class_game_menu_manager_ad98a6509494a0988d2cc845e3b8cc089}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{class_game_menu_manager}{Game\+Menu\+Manager} Game\+Menu\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the Main Menu instance. 
+
+The Main Menu instance.
+
+Definition at line 40 of file Game\+Menu\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_game_menu_manager_a5628e819ba6ebe7d3905de7af1843b9f}\label{class_game_menu_manager_a5628e819ba6ebe7d3905de7af1843b9f}} 
+\index{Game\+Menu\+Manager@{Game\+Menu\+Manager}!Added@{Added}}
+\index{Added@{Added}!Game\+Menu\+Manager@{Game\+Menu\+Manager}}
+\subsubsection{\texorpdfstring{Added}{Added}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_game_menu_item}{Game\+Menu\+Item}, int$>$ Game\+Menu\+Manager.\+Added}
+
+
+
+Occurs when a new menu item is added. 
+
+
+
+Definition at line 33 of file Game\+Menu\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Game\+Menu/\hyperlink{_game_menu_manager_8cs}{Game\+Menu\+Manager.\+cs}\end{DoxyCompactItemize}

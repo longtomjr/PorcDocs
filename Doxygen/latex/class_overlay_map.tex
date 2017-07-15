@@ -1,0 +1,284 @@
+\hypertarget{class_overlay_map}{}\section{Overlay\+Map Class Reference}
+\label{class_overlay_map}\index{Overlay\+Map@{Overlay\+Map}}
+
+
+This game object manages a mesh+texture+renderer+material that is used to superimpose a semi-\/transparent \char`\"{}overlay\char`\"{} to the map.  
+
+
+Inheritance diagram for Overlay\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_overlay_map}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_overlay_map_a8745d98cd606fcf5f702a3d2d162f6a5}{Set\+Size} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Set size of texture and mesh, recreates mesh. \end{DoxyCompactList}\item 
+void \hyperlink{class_overlay_map_ad9a3b08f69584626858cd7c26f7bff56}{Bake} ()
+\begin{DoxyCompactList}\small\item\em Paint the texture. \end{DoxyCompactList}\item 
+void \hyperlink{class_overlay_map_a60fd79e27c5b7f9c18d2bddf88f182b5}{Set\+Overlay} (string name)
+\begin{DoxyCompactList}\small\item\em Set overlay to display perototype with name \char`\"{}name\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Color32 \mbox{[}$\,$\mbox{]} \hyperlink{class_overlay_map_abe7d5d2e2d9895fd9116eb3f9f12d869}{Color\+Map} (\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Overlay\+Descriptor.\+Color\+Map\+Option} color\+Map, int size=256, byte alpha=128)
+\begin{DoxyCompactList}\small\item\em Returns an array of color, using the preset colormap with the name \char`\"{}name\char`\"{}. Sets the alpha channel to alpha and uses \char`\"{}size\char`\"{} colors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_overlay_map_ad6d2516e0f0bdaf19f8639191668e91f}{transparency} = 0.\+8f
+\begin{DoxyCompactList}\small\item\em Transparency of overlay. \end{DoxyCompactList}\item 
+float \hyperlink{class_overlay_map_a9fb8c6f87fac7a1010b382376cac3fd5}{update\+Interval} = 5f
+\begin{DoxyCompactList}\small\item\em Update interval (0 for every Update, inf for never). \end{DoxyCompactList}\item 
+int \hyperlink{class_overlay_map_a45e5684142986bdb03421c4cb5f6a102}{sizeX} = 10
+\begin{DoxyCompactList}\small\item\em Internal storage of size of map. \end{DoxyCompactList}\item 
+int \hyperlink{class_overlay_map_a41ca1be6bb50efb0ed8a8df74aabad96}{sizeY} = 10
+\item 
+int \hyperlink{class_overlay_map_a29e1d10e3cbdcc11c04526272997ba52}{color\+Map\+Width} = 20
+\begin{DoxyCompactList}\small\item\em Internal storage of color map width. \end{DoxyCompactList}\item 
+string \hyperlink{class_overlay_map_ac2b64793947ba88ca33ff3aab6c7ac21}{current\+Overlay}
+\begin{DoxyCompactList}\small\item\em Current Overlay. \end{DoxyCompactList}\item 
+Func$<$ int, int, int, int $>$ \hyperlink{class_overlay_map_a088245c64083beb9fe5f8c26e0c0d125}{value\+At}
+\begin{DoxyCompactList}\small\item\em You can set any function, overlay will display value of func at point (x,y) Depending on how many colors the Color\+Map\+SG has, the displayed values will cycle. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_overlay_map_a3fe567a59389478f427f4d558aec9112}{parent\+Panel}
+\item 
+Dictionary$<$ string, Dictionary$<$ int, Color $>$ $>$ \hyperlink{class_overlay_map_a99587c2f7fac62c96199e3980e9be0cb}{overlay\+Color\+Map\+Lookup}
+\begin{DoxyCompactList}\small\item\em In memory color map lookup per overlay to speed up the overlay texture generation and avoid too much call to the Get\+Pixel method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Overlay\+Descriptor.\+Color\+Map\+Option} \hyperlink{class_overlay_map_a5ecbeb0754f09284f3142a3b8f1f127f}{Color\+Map\+SG}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This game object manages a mesh+texture+renderer+material that is used to superimpose a semi-\/transparent \char`\"{}overlay\char`\"{} to the map. 
+
+
+
+Definition at line 22 of file Overlay\+Map.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_overlay_map_ad9a3b08f69584626858cd7c26f7bff56}\label{class_overlay_map_ad9a3b08f69584626858cd7c26f7bff56}} 
+\index{Overlay\+Map@{Overlay\+Map}!Bake@{Bake}}
+\index{Bake@{Bake}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{Bake()}{Bake()}}
+{\footnotesize\ttfamily void Overlay\+Map.\+Bake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Paint the texture. 
+
+
+
+Definition at line 241 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_abe7d5d2e2d9895fd9116eb3f9f12d869}\label{class_overlay_map_abe7d5d2e2d9895fd9116eb3f9f12d869}} 
+\index{Overlay\+Map@{Overlay\+Map}!Color\+Map@{Color\+Map}}
+\index{Color\+Map@{Color\+Map}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{Color\+Map()}{ColorMap()}}
+{\footnotesize\ttfamily static Color32 \mbox{[}$\,$\mbox{]} Overlay\+Map.\+Color\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Overlay\+Descriptor.\+Color\+Map\+Option}}]{color\+Map,  }\item[{int}]{size = {\ttfamily 256},  }\item[{byte}]{alpha = {\ttfamily 128} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an array of color, using the preset colormap with the name \char`\"{}name\char`\"{}. Sets the alpha channel to alpha and uses \char`\"{}size\char`\"{} colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+Map} & Name of colormap.\\
+\hline
+{\em size} & Number of colors to use.\\
+\hline
+{\em alpha} & Alpha channel of color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a60fd79e27c5b7f9c18d2bddf88f182b5}\label{class_overlay_map_a60fd79e27c5b7f9c18d2bddf88f182b5}} 
+\index{Overlay\+Map@{Overlay\+Map}!Set\+Overlay@{Set\+Overlay}}
+\index{Set\+Overlay@{Set\+Overlay}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{Set\+Overlay()}{SetOverlay()}}
+{\footnotesize\ttfamily void Overlay\+Map.\+Set\+Overlay (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set overlay to display perototype with name \char`\"{}name\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of overlay prototype.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 253 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a8745d98cd606fcf5f702a3d2d162f6a5}\label{class_overlay_map_a8745d98cd606fcf5f702a3d2d162f6a5}} 
+\index{Overlay\+Map@{Overlay\+Map}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}}
+{\footnotesize\ttfamily void Overlay\+Map.\+Set\+Size (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Set size of texture and mesh, recreates mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Num tiles x-\/dir.\\
+\hline
+{\em y} & Num tiles y-\/dir.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 228 of file Overlay\+Map.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_overlay_map_a29e1d10e3cbdcc11c04526272997ba52}\label{class_overlay_map_a29e1d10e3cbdcc11c04526272997ba52}} 
+\index{Overlay\+Map@{Overlay\+Map}!color\+Map\+Width@{color\+Map\+Width}}
+\index{color\+Map\+Width@{color\+Map\+Width}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{color\+Map\+Width}{colorMapWidth}}
+{\footnotesize\ttfamily int Overlay\+Map.\+color\+Map\+Width = 20}
+
+
+
+Internal storage of color map width. 
+
+
+
+Definition at line 44 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_ac2b64793947ba88ca33ff3aab6c7ac21}\label{class_overlay_map_ac2b64793947ba88ca33ff3aab6c7ac21}} 
+\index{Overlay\+Map@{Overlay\+Map}!current\+Overlay@{current\+Overlay}}
+\index{current\+Overlay@{current\+Overlay}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{current\+Overlay}{currentOverlay}}
+{\footnotesize\ttfamily string Overlay\+Map.\+current\+Overlay}
+
+
+
+Current Overlay. 
+
+
+
+Definition at line 49 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a99587c2f7fac62c96199e3980e9be0cb}\label{class_overlay_map_a99587c2f7fac62c96199e3980e9be0cb}} 
+\index{Overlay\+Map@{Overlay\+Map}!overlay\+Color\+Map\+Lookup@{overlay\+Color\+Map\+Lookup}}
+\index{overlay\+Color\+Map\+Lookup@{overlay\+Color\+Map\+Lookup}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{overlay\+Color\+Map\+Lookup}{overlayColorMapLookup}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$int, Color$>$ $>$ Overlay\+Map.\+overlay\+Color\+Map\+Lookup}
+
+
+
+In memory color map lookup per overlay to speed up the overlay texture generation and avoid too much call to the Get\+Pixel method. 
+
+
+
+Definition at line 63 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a3fe567a59389478f427f4d558aec9112}\label{class_overlay_map_a3fe567a59389478f427f4d558aec9112}} 
+\index{Overlay\+Map@{Overlay\+Map}!parent\+Panel@{parent\+Panel}}
+\index{parent\+Panel@{parent\+Panel}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{parent\+Panel}{parentPanel}}
+{\footnotesize\ttfamily Game\+Object Overlay\+Map.\+parent\+Panel}
+
+
+
+Definition at line 57 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a45e5684142986bdb03421c4cb5f6a102}\label{class_overlay_map_a45e5684142986bdb03421c4cb5f6a102}} 
+\index{Overlay\+Map@{Overlay\+Map}!sizeX@{sizeX}}
+\index{sizeX@{sizeX}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{sizeX}{sizeX}}
+{\footnotesize\ttfamily int Overlay\+Map.\+sizeX = 10}
+
+
+
+Internal storage of size of map. 
+
+
+
+Definition at line 38 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a41ca1be6bb50efb0ed8a8df74aabad96}\label{class_overlay_map_a41ca1be6bb50efb0ed8a8df74aabad96}} 
+\index{Overlay\+Map@{Overlay\+Map}!sizeY@{sizeY}}
+\index{sizeY@{sizeY}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{sizeY}{sizeY}}
+{\footnotesize\ttfamily int Overlay\+Map.\+sizeY = 10}
+
+
+
+Definition at line 39 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_ad6d2516e0f0bdaf19f8639191668e91f}\label{class_overlay_map_ad6d2516e0f0bdaf19f8639191668e91f}} 
+\index{Overlay\+Map@{Overlay\+Map}!transparency@{transparency}}
+\index{transparency@{transparency}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{transparency}{transparency}}
+{\footnotesize\ttfamily float Overlay\+Map.\+transparency = 0.\+8f}
+
+
+
+Transparency of overlay. 
+
+
+
+Definition at line 28 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a9fb8c6f87fac7a1010b382376cac3fd5}\label{class_overlay_map_a9fb8c6f87fac7a1010b382376cac3fd5}} 
+\index{Overlay\+Map@{Overlay\+Map}!update\+Interval@{update\+Interval}}
+\index{update\+Interval@{update\+Interval}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{update\+Interval}{updateInterval}}
+{\footnotesize\ttfamily float Overlay\+Map.\+update\+Interval = 5f}
+
+
+
+Update interval (0 for every Update, inf for never). 
+
+
+
+Definition at line 33 of file Overlay\+Map.\+cs.
+
+\mbox{\Hypertarget{class_overlay_map_a088245c64083beb9fe5f8c26e0c0d125}\label{class_overlay_map_a088245c64083beb9fe5f8c26e0c0d125}} 
+\index{Overlay\+Map@{Overlay\+Map}!value\+At@{value\+At}}
+\index{value\+At@{value\+At}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{value\+At}{valueAt}}
+{\footnotesize\ttfamily Func$<$int, int, int, int$>$ Overlay\+Map.\+value\+At}
+
+
+
+You can set any function, overlay will display value of func at point (x,y) Depending on how many colors the Color\+Map\+SG has, the displayed values will cycle. 
+
+
+
+Definition at line 55 of file Overlay\+Map.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_overlay_map_a5ecbeb0754f09284f3142a3b8f1f127f}\label{class_overlay_map_a5ecbeb0754f09284f3142a3b8f1f127f}} 
+\index{Overlay\+Map@{Overlay\+Map}!Color\+Map\+SG@{Color\+Map\+SG}}
+\index{Color\+Map\+SG@{Color\+Map\+SG}!Overlay\+Map@{Overlay\+Map}}
+\subsubsection{\texorpdfstring{Color\+Map\+SG}{ColorMapSG}}
+{\footnotesize\ttfamily \hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Overlay\+Descriptor.\+Color\+Map\+Option} Overlay\+Map.\+Color\+Map\+SG\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 124 of file Overlay\+Map.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+Overlay/\hyperlink{_overlay_map_8cs}{Overlay\+Map.\+cs}\end{DoxyCompactItemize}

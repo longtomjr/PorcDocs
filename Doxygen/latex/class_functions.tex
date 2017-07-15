@@ -1,0 +1,191 @@
+\hypertarget{class_functions}{}\section{Functions Class Reference}
+\label{class_functions}\index{Functions@{Functions}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}{Type} \{ \hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a0ae9478a1db9d1e2c48efa49eac1c7c6}{Type.\+Lua}, 
+\hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a83925001a044cdfe0c64e9a44345b66d}{Type.\+C\+Sharp}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_functions_af3dc73628755a9edc419081bdaddba40}{Functions} ()
+\item 
+bool \hyperlink{class_functions_a76e2be7aabf4daac93ec85056f9439c9}{Has\+Function} (string name)
+\item 
+bool \hyperlink{class_functions_a44ec162e65030c8e050b7217825c06e4}{Load\+Script} (string text, string script\+Name, \hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}{Type} type)
+\item 
+Dyn\+Value \hyperlink{class_functions_ae33add32d22cc0eea74eaca446e03111}{Call} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em The Common Call Function. \end{DoxyCompactList}\item 
+Dyn\+Value \hyperlink{class_functions_a920863b00e31bb1c7c24e838d9639016}{Call\+With\+Error} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Throws an error if warranted. \end{DoxyCompactList}\item 
+T \hyperlink{class_functions_a6dd52370fc31e2190479683765fff302}{Call$<$ T $>$} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+void \hyperlink{class_functions_a32d1bcb840da0bfa692dfa5fc7bfff06}{Call} (List$<$ string $>$ function\+Names, params object\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em The Common Call Function expanded for multiple functions. \end{DoxyCompactList}\item 
+T \hyperlink{class_functions_a9e6e97f260832a313e636662a08b0311}{Create\+Instance$<$ T $>$} (string class\+Name, bool throw\+Error, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+void \hyperlink{class_functions_a80433db8540228fe69d49c3dfcb94660}{Register\+Type} (System.\+Type type)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{interface_i_functions}{I\+Functions} $>$ \hyperlink{class_functions_a254acb0bde27c6fc1bb10a1292309180}{Functions\+Sets}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Functions.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}\label{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}} 
+\index{Functions@{Functions}!Type@{Type}}
+\index{Type@{Type}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}{Functions.\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Lua@{Lua}!Functions@{Functions}}\index{Functions@{Functions}!Lua@{Lua}}}\mbox{\Hypertarget{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a0ae9478a1db9d1e2c48efa49eac1c7c6}\label{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a0ae9478a1db9d1e2c48efa49eac1c7c6}} 
+Lua&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+Sharp@{C\+Sharp}!Functions@{Functions}}\index{Functions@{Functions}!C\+Sharp@{C\+Sharp}}}\mbox{\Hypertarget{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a83925001a044cdfe0c64e9a44345b66d}\label{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4a83925001a044cdfe0c64e9a44345b66d}} 
+C\+Sharp&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 23 of file Functions.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_functions_af3dc73628755a9edc419081bdaddba40}\label{class_functions_af3dc73628755a9edc419081bdaddba40}} 
+\index{Functions@{Functions}!Functions@{Functions}}
+\index{Functions@{Functions}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Functions()}{Functions()}}
+{\footnotesize\ttfamily Functions.\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file Functions.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_functions_ae33add32d22cc0eea74eaca446e03111}\label{class_functions_ae33add32d22cc0eea74eaca446e03111}} 
+\index{Functions@{Functions}!Call@{Call}}
+\index{Call@{Call}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Dyn\+Value Functions.\+Call (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+The Common Call Function. 
+
+
+
+Definition at line 63 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a32d1bcb840da0bfa692dfa5fc7bfff06}\label{class_functions_a32d1bcb840da0bfa692dfa5fc7bfff06}} 
+\index{Functions@{Functions}!Call@{Call}}
+\index{Call@{Call}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Functions.\+Call (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{function\+Names,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+The Common Call Function expanded for multiple functions. 
+
+
+
+Definition at line 93 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a6dd52370fc31e2190479683765fff302}\label{class_functions_a6dd52370fc31e2190479683765fff302}} 
+\index{Functions@{Functions}!Call$<$ T $>$@{Call$<$ T $>$}}
+\index{Call$<$ T $>$@{Call$<$ T $>$}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Call$<$ T $>$()}{Call< T >()}}
+{\footnotesize\ttfamily T \hyperlink{class_functions_ae33add32d22cc0eea74eaca446e03111}{Functions.\+Call}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a920863b00e31bb1c7c24e838d9639016}\label{class_functions_a920863b00e31bb1c7c24e838d9639016}} 
+\index{Functions@{Functions}!Call\+With\+Error@{Call\+With\+Error}}
+\index{Call\+With\+Error@{Call\+With\+Error}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Call\+With\+Error()}{CallWithError()}}
+{\footnotesize\ttfamily Dyn\+Value Functions.\+Call\+With\+Error (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Throws an error if warranted. 
+
+
+
+Definition at line 71 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a9e6e97f260832a313e636662a08b0311}\label{class_functions_a9e6e97f260832a313e636662a08b0311}} 
+\index{Functions@{Functions}!Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}}
+\index{Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Create\+Instance$<$ T $>$()}{CreateInstance< T >()}}
+{\footnotesize\ttfamily T Functions.\+Create\+Instance$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{class\+Name,  }\item[{bool}]{throw\+Error,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a76e2be7aabf4daac93ec85056f9439c9}\label{class_functions_a76e2be7aabf4daac93ec85056f9439c9}} 
+\index{Functions@{Functions}!Has\+Function@{Has\+Function}}
+\index{Has\+Function@{Has\+Function}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Has\+Function()}{HasFunction()}}
+{\footnotesize\ttfamily bool Functions.\+Has\+Function (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a44ec162e65030c8e050b7217825c06e4}\label{class_functions_a44ec162e65030c8e050b7217825c06e4}} 
+\index{Functions@{Functions}!Load\+Script@{Load\+Script}}
+\index{Load\+Script@{Load\+Script}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Load\+Script()}{LoadScript()}}
+{\footnotesize\ttfamily bool Functions.\+Load\+Script (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{script\+Name,  }\item[{\hyperlink{class_functions_a652bc8a0dcb6afd360459f15e2d9bdf4}{Type}}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Functions.\+cs.
+
+\mbox{\Hypertarget{class_functions_a80433db8540228fe69d49c3dfcb94660}\label{class_functions_a80433db8540228fe69d49c3dfcb94660}} 
+\index{Functions@{Functions}!Register\+Type@{Register\+Type}}
+\index{Register\+Type@{Register\+Type}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Register\+Type()}{RegisterType()}}
+{\footnotesize\ttfamily void Functions.\+Register\+Type (\begin{DoxyParamCaption}\item[{System.\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 149 of file Functions.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_functions_a254acb0bde27c6fc1bb10a1292309180}\label{class_functions_a254acb0bde27c6fc1bb10a1292309180}} 
+\index{Functions@{Functions}!Functions\+Sets@{Functions\+Sets}}
+\index{Functions\+Sets@{Functions\+Sets}!Functions@{Functions}}
+\subsubsection{\texorpdfstring{Functions\+Sets}{FunctionsSets}}
+{\footnotesize\ttfamily List$<$\hyperlink{interface_i_functions}{I\+Functions}$>$ Functions.\+Functions\+Sets\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 29 of file Functions.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Functions/\hyperlink{_functions_8cs}{Functions.\+cs}\end{DoxyCompactItemize}

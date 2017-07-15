@@ -1,0 +1,133 @@
+\hypertarget{class_developer_console_1_1_core_1_1_invoke_command}{}\section{Developer\+Console.\+Core.\+Invoke\+Command Class Reference}
+\label{class_developer_console_1_1_core_1_1_invoke_command}\index{Developer\+Console.\+Core.\+Invoke\+Command@{Developer\+Console.\+Core.\+Invoke\+Command}}
+
+
+Invoke some code from either C\# Function Manager or L\+UA Function Manager.  
+
+
+Inheritance diagram for Developer\+Console.\+Core.\+Invoke\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_developer_console_1_1_core_1_1_invoke_command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a3c7631154759c3304ae757cbc437d27d}{Execute\+Command} (string arguments)
+\begin{DoxyCompactList}\small\item\em Execute this command. \end{DoxyCompactList}\item 
+void \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a0d75a4414c49b069138f270a492754ee}{Read\+Xml\+Prototype} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads from the reader provided. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a6611c32afd9c13054231a0240d702a2e}{Function\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the function to execute. \end{DoxyCompactList}\item 
+override string \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a4a7d065bd008fa4534a45f9e996c9a6e}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em All the parameters in format Type name, with a comma seperator. \end{DoxyCompactList}\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a2b8f38abe9f7892e5a18fcbec6ffb978}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Invoke some code from either C\# Function Manager or L\+UA Function Manager. 
+
+
+
+Definition at line 21 of file Invoke\+Command.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_invoke_command_a3c7631154759c3304ae757cbc437d27d}\label{class_developer_console_1_1_core_1_1_invoke_command_a3c7631154759c3304ae757cbc437d27d}} 
+\index{Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}!Execute\+Command@{Execute\+Command}}
+\index{Execute\+Command@{Execute\+Command}!Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}}
+\subsubsection{\texorpdfstring{Execute\+Command()}{ExecuteCommand()}}
+{\footnotesize\ttfamily override void Developer\+Console.\+Core.\+Invoke\+Command.\+Execute\+Command (\begin{DoxyParamCaption}\item[{string}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Execute this command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & The arguments to pass in. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_developer_console_1_1_core_1_1_command_base_ab68054239b7e3d2a47029839f90d59ca}{Developer\+Console.\+Core.\+Command\+Base}.
+
+
+
+Definition at line 54 of file Invoke\+Command.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_invoke_command_a0d75a4414c49b069138f270a492754ee}\label{class_developer_console_1_1_core_1_1_invoke_command_a0d75a4414c49b069138f270a492754ee}} 
+\index{Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Developer\+Console.\+Core.\+Invoke\+Command.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads from the reader provided. 
+
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 69 of file Invoke\+Command.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_invoke_command_a6611c32afd9c13054231a0240d702a2e}\label{class_developer_console_1_1_core_1_1_invoke_command_a6611c32afd9c13054231a0240d702a2e}} 
+\index{Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}!Function\+Name@{Function\+Name}}
+\index{Function\+Name@{Function\+Name}!Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}}
+\subsubsection{\texorpdfstring{Function\+Name}{FunctionName}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Invoke\+Command.\+Function\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The name of the function to execute. 
+
+
+
+Definition at line 27 of file Invoke\+Command.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_invoke_command_a4a7d065bd008fa4534a45f9e996c9a6e}\label{class_developer_console_1_1_core_1_1_invoke_command_a4a7d065bd008fa4534a45f9e996c9a6e}} 
+\index{Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily override string Developer\+Console.\+Core.\+Invoke\+Command.\+Parameters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+All the parameters in format Type name, with a comma seperator. 
+
+
+
+Definition at line 35 of file Invoke\+Command.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_invoke_command_a2b8f38abe9f7892e5a18fcbec6ffb978}\label{class_developer_console_1_1_core_1_1_invoke_command_a2b8f38abe9f7892e5a18fcbec6ffb978}} 
+\index{Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}!Type@{Type}}
+\index{Type@{Type}!Developer\+Console\+::\+Core\+::\+Invoke\+Command@{Developer\+Console\+::\+Core\+::\+Invoke\+Command}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Invoke\+Command.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The type of command. 
+
+
+
+Definition at line 43 of file Invoke\+Command.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Dev\+Console/\+Command\+Types/\hyperlink{_invoke_command_8cs}{Invoke\+Command.\+cs}\end{DoxyCompactItemize}

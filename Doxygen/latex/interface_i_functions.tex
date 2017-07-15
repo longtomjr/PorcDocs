@@ -1,0 +1,130 @@
+\hypertarget{interface_i_functions}{}\section{I\+Functions Interface Reference}
+\label{interface_i_functions}\index{I\+Functions@{I\+Functions}}
+Inheritance diagram for I\+Functions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_functions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_i_functions_ab61bd915f0f4e1aa0b2ba6fe268a4790}{Register\+Type} (System.\+Type type)
+\item 
+bool \hyperlink{interface_i_functions_a55a472175a59db8ec3b00c5dad20cf20}{Has\+Function} (string name)
+\item 
+bool \hyperlink{interface_i_functions_a41edac00a2af1290932ae95536f987f9}{Has\+Constructor} (string name)
+\item 
+bool \hyperlink{interface_i_functions_acdee59b5855ab9e87fcf11e3cdf9c967}{Load\+Script} (string text, string script\+Name)
+\item 
+Dyn\+Value \hyperlink{interface_i_functions_a0d5502d86d4b34c04f36d7f8a41c5f27}{Call} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+T \hyperlink{interface_i_functions_ab14a9a3261c860d7dba22a9c927f1068}{Call$<$ T $>$} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+Dyn\+Value \hyperlink{interface_i_functions_a6914f7ab45913120802554ac2ef28dba}{Call\+With\+Error} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+Dyn\+Value \hyperlink{interface_i_functions_a7578bf930745a057a9e24f6048858fe2}{Create\+Instance} (object from\+Object)
+\item 
+T \hyperlink{interface_i_functions_a5acd536d97990a6d5d575dce8bfff5f1}{Create\+Instance$<$ T $>$} (string class\+Name, params object\mbox{[}$\,$\mbox{]} arguments)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file I\+Functions.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_i_functions_a0d5502d86d4b34c04f36d7f8a41c5f27}\label{interface_i_functions_a0d5502d86d4b34c04f36d7f8a41c5f27}} 
+\index{I\+Functions@{I\+Functions}!Call@{Call}}
+\index{Call@{Call}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Call()}{Call()}}
+{\footnotesize\ttfamily Dyn\+Value I\+Functions.\+Call (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_a6c500d1a443f10a60c96819583cc3168}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a8662db102890d5b12fada540482c51eb}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_ab14a9a3261c860d7dba22a9c927f1068}\label{interface_i_functions_ab14a9a3261c860d7dba22a9c927f1068}} 
+\index{I\+Functions@{I\+Functions}!Call$<$ T $>$@{Call$<$ T $>$}}
+\index{Call$<$ T $>$@{Call$<$ T $>$}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Call$<$ T $>$()}{Call< T >()}}
+{\footnotesize\ttfamily T \hyperlink{interface_i_functions_a0d5502d86d4b34c04f36d7f8a41c5f27}{I\+Functions.\+Call}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_aaa94615d2df3daab6e2d22a4b257d2e0}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_ac1bbf0ec272f91f4322e89796deadf52}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_a6914f7ab45913120802554ac2ef28dba}\label{interface_i_functions_a6914f7ab45913120802554ac2ef28dba}} 
+\index{I\+Functions@{I\+Functions}!Call\+With\+Error@{Call\+With\+Error}}
+\index{Call\+With\+Error@{Call\+With\+Error}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Call\+With\+Error()}{CallWithError()}}
+{\footnotesize\ttfamily Dyn\+Value I\+Functions.\+Call\+With\+Error (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_a734f7a4d7c779388343d55e42de203c2}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a8fcb93802ded2a89af4ce20efef82a70}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_a7578bf930745a057a9e24f6048858fe2}\label{interface_i_functions_a7578bf930745a057a9e24f6048858fe2}} 
+\index{I\+Functions@{I\+Functions}!Create\+Instance@{Create\+Instance}}
+\index{Create\+Instance@{Create\+Instance}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Create\+Instance()}{CreateInstance()}}
+{\footnotesize\ttfamily Dyn\+Value I\+Functions.\+Create\+Instance (\begin{DoxyParamCaption}\item[{object}]{from\+Object }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_ae2a8accaa0f465b627997d145452ec19}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a48e53ec3f02676d03050066fd3555d12}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_a5acd536d97990a6d5d575dce8bfff5f1}\label{interface_i_functions_a5acd536d97990a6d5d575dce8bfff5f1}} 
+\index{I\+Functions@{I\+Functions}!Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}}
+\index{Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Create\+Instance$<$ T $>$()}{CreateInstance< T >()}}
+{\footnotesize\ttfamily T \hyperlink{interface_i_functions_a7578bf930745a057a9e24f6048858fe2}{I\+Functions.\+Create\+Instance}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{class\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{arguments }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_a9571709a7b9247f42ebf27cac0286751}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a920ae8303f3acff9b271c68889ca7ee5}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_a41edac00a2af1290932ae95536f987f9}\label{interface_i_functions_a41edac00a2af1290932ae95536f987f9}} 
+\index{I\+Functions@{I\+Functions}!Has\+Constructor@{Has\+Constructor}}
+\index{Has\+Constructor@{Has\+Constructor}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Has\+Constructor()}{HasConstructor()}}
+{\footnotesize\ttfamily bool I\+Functions.\+Has\+Constructor (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_a803d561b3e19f9b6420d4afcf5e4c631}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a308710875bcf9a6d4a8513029922a766}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_a55a472175a59db8ec3b00c5dad20cf20}\label{interface_i_functions_a55a472175a59db8ec3b00c5dad20cf20}} 
+\index{I\+Functions@{I\+Functions}!Has\+Function@{Has\+Function}}
+\index{Has\+Function@{Has\+Function}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Has\+Function()}{HasFunction()}}
+{\footnotesize\ttfamily bool I\+Functions.\+Has\+Function (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_ac272ce8ef722b90c5c9c95c93527f85a}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_a1bcc0469b7501e9e949e0575aba7fb80}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_acdee59b5855ab9e87fcf11e3cdf9c967}\label{interface_i_functions_acdee59b5855ab9e87fcf11e3cdf9c967}} 
+\index{I\+Functions@{I\+Functions}!Load\+Script@{Load\+Script}}
+\index{Load\+Script@{Load\+Script}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Load\+Script()}{LoadScript()}}
+{\footnotesize\ttfamily bool I\+Functions.\+Load\+Script (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{script\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_c_sharp_functions_a547a7d8ed518aa7395920c07ad59d0f4}{C\+Sharp\+Functions}, and \hyperlink{class_lua_functions_af17a439c6a875a777b9b2e5bc3f5c072}{Lua\+Functions}.
+
+\mbox{\Hypertarget{interface_i_functions_ab61bd915f0f4e1aa0b2ba6fe268a4790}\label{interface_i_functions_ab61bd915f0f4e1aa0b2ba6fe268a4790}} 
+\index{I\+Functions@{I\+Functions}!Register\+Type@{Register\+Type}}
+\index{Register\+Type@{Register\+Type}!I\+Functions@{I\+Functions}}
+\subsubsection{\texorpdfstring{Register\+Type()}{RegisterType()}}
+{\footnotesize\ttfamily void I\+Functions.\+Register\+Type (\begin{DoxyParamCaption}\item[{System.\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Functions/\hyperlink{_i_functions_8cs}{I\+Functions.\+cs}\end{DoxyCompactItemize}

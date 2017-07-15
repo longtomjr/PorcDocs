@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['unlocalizeddescription',['UnlocalizedDescription',['../class_project_porcupine_1_1_rooms_1_1_room_behavior.html#aeb1f7869f4a6ab5600a9320acf2978f3',1,'ProjectPorcupine.Rooms.RoomBehavior.UnlocalizedDescription()'],['../class_furniture.html#aa9e0fe9e4a5b51d86a76d3e11f79f58a',1,'Furniture.UnlocalizedDescription()'],['../class_tile_type.html#afb617b11992631ba7862acacbd5daee2',1,'TileType.UnlocalizedDescription()'],['../class_utility.html#a35e4fbf70d953b969e2637bba1256254',1,'Utility.UnlocalizedDescription()']]],
+  ['usedanimations',['UsedAnimations',['../class_project_porcupine_1_1_buildable_1_1_components_1_1_visuals.html#a13ee720e5a055efc05e6e383ce8ead80',1,'ProjectPorcupine::Buildable::Components::Visuals']]],
+  ['utilities',['Utilities',['../class_tile.html#a2073539dbc53f09e81b688dacfc4efb7',1,'Tile.Utilities()'],['../class_utility_manager.html#af4625dbf9e27a0eb4a3e7b30b40e450a',1,'UtilityManager.Utilities()']]],
+  ['utility',['Utility',['../class_functions_manager.html#af3ecee4c8c9b81690a58ee7f41fe6de1',1,'FunctionsManager.Utility()'],['../class_prototype_manager.html#a0628717a2cce375062112062d2200435',1,'PrototypeManager.Utility()']]],
+  ['utilitymanager',['UtilityManager',['../class_world.html#a093670f1e25572daa8cadd96ab295250',1,'World']]],
+  ['utilityspritecontroller',['UtilitySpriteController',['../class_world_controller.html#ade5c8157ae83db0367c11f9e8bbb5fb9',1,'WorldController']]],
+  ['utilitytype',['UtilityType',['../class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection.html#a29a883d7c8856c95dd8053b54b930c78',1,'ProjectPorcupine.Buildable.Components.FluidConnection.UtilityType()'],['../class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection.html#ac18f248784a52eb510ce6854328f8ef7',1,'ProjectPorcupine.Buildable.Components.PowerConnection.UtilityType()'],['../class_project_porcupine_1_1_power_network_1_1_grid.html#ae15fa1698e2b9a4584e012f42a723833',1,'ProjectPorcupine.PowerNetwork.Grid.UtilityType()'],['../interface_project_porcupine_1_1_power_network_1_1_i_pluggable.html#a5d4ca8ed761e31947af44b8a52b1ed48',1,'ProjectPorcupine.PowerNetwork.IPluggable.UtilityType()']]]
+];

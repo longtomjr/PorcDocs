@@ -1,0 +1,153 @@
+\hypertarget{class_quest}{}\section{Quest Class Reference}
+\label{class_quest}\index{Quest@{Quest}}
+Inheritance diagram for Quest\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_quest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_quest_a236e119719eaaed9e39874c3d7fdac68}{Read\+Xml\+Prototype} (Xml\+Reader reader\+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_quest_a0d12fe711350d850ead300f03926e6db}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_quest_a8dbdb675c319dd32654bf6b1ea66db01}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_quest_afb8483a073d09ccc09ea668014a91f7a}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{class_quest_goal}{Quest\+Goal} $>$ \hyperlink{class_quest_a404f8c405e51a0b892b9b93f785a7bcf}{Goals}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_quest_aa4cdb538ad95f876192f9e161e209448}{Is\+Accepted}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_quest_a571b9ac9728e3fe099fef9f5b3c9b7ef}{Is\+Completed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{class_quest_reward}{Quest\+Reward} $>$ \hyperlink{class_quest_a5b90df0034d0798ec3ba92c55b6f8118}{Rewards}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ string $>$ \hyperlink{class_quest_ab6a42ba89f28e4871036bd097b1ab1dd}{Pre\+Required\+Completed\+Quest}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Quest.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quest_a236e119719eaaed9e39874c3d7fdac68}\label{class_quest_a236e119719eaaed9e39874c3d7fdac68}} 
+\index{Quest@{Quest}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Quest.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 35 of file Quest.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_quest_afb8483a073d09ccc09ea668014a91f7a}\label{class_quest_afb8483a073d09ccc09ea668014a91f7a}} 
+\index{Quest@{Quest}!Description@{Description}}
+\index{Description@{Description}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily string Quest.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 23 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_a404f8c405e51a0b892b9b93f785a7bcf}\label{class_quest_a404f8c405e51a0b892b9b93f785a7bcf}} 
+\index{Quest@{Quest}!Goals@{Goals}}
+\index{Goals@{Goals}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Goals}{Goals}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_quest_goal}{Quest\+Goal}$>$ Quest.\+Goals\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 25 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_aa4cdb538ad95f876192f9e161e209448}\label{class_quest_aa4cdb538ad95f876192f9e161e209448}} 
+\index{Quest@{Quest}!Is\+Accepted@{Is\+Accepted}}
+\index{Is\+Accepted@{Is\+Accepted}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Is\+Accepted}{IsAccepted}}
+{\footnotesize\ttfamily bool Quest.\+Is\+Accepted\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 27 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_a571b9ac9728e3fe099fef9f5b3c9b7ef}\label{class_quest_a571b9ac9728e3fe099fef9f5b3c9b7ef}} 
+\index{Quest@{Quest}!Is\+Completed@{Is\+Completed}}
+\index{Is\+Completed@{Is\+Completed}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Is\+Completed}{IsCompleted}}
+{\footnotesize\ttfamily bool Quest.\+Is\+Completed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 29 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_a0d12fe711350d850ead300f03926e6db}\label{class_quest_a0d12fe711350d850ead300f03926e6db}} 
+\index{Quest@{Quest}!Name@{Name}}
+\index{Name@{Name}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Quest.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 16 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_ab6a42ba89f28e4871036bd097b1ab1dd}\label{class_quest_ab6a42ba89f28e4871036bd097b1ab1dd}} 
+\index{Quest@{Quest}!Pre\+Required\+Completed\+Quest@{Pre\+Required\+Completed\+Quest}}
+\index{Pre\+Required\+Completed\+Quest@{Pre\+Required\+Completed\+Quest}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Pre\+Required\+Completed\+Quest}{PreRequiredCompletedQuest}}
+{\footnotesize\ttfamily List$<$string$>$ Quest.\+Pre\+Required\+Completed\+Quest\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 33 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_a5b90df0034d0798ec3ba92c55b6f8118}\label{class_quest_a5b90df0034d0798ec3ba92c55b6f8118}} 
+\index{Quest@{Quest}!Rewards@{Rewards}}
+\index{Rewards@{Rewards}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Rewards}{Rewards}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_quest_reward}{Quest\+Reward}$>$ Quest.\+Rewards\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 31 of file Quest.\+cs.
+
+\mbox{\Hypertarget{class_quest_a8dbdb675c319dd32654bf6b1ea66db01}\label{class_quest_a8dbdb675c319dd32654bf6b1ea66db01}} 
+\index{Quest@{Quest}!Type@{Type}}
+\index{Type@{Type}!Quest@{Quest}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Quest.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 19 of file Quest.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Quest/\hyperlink{_quest_8cs}{Quest.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,231 @@
+\hypertarget{class_utility_manager}{}\section{Utility\+Manager Class Reference}
+\label{class_utility_manager}\index{Utility\+Manager@{Utility\+Manager}}
+Inheritance diagram for Utility\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_utility_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utility_manager_a4ee75d8bf97b9cdda04c8f6b5df9f55d}{Utility\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_utility_manager}{Utility\+Manager} class. \end{DoxyCompactList}\item 
+\hyperlink{class_utility}{Utility} \hyperlink{class_utility_manager_aa0f600f8e00d39369a9c739b3a7d5c4e}{Place\+Utility} (string type, \hyperlink{class_tile}{Tile} tile, bool skip\+Grid\+Update=false)
+\begin{DoxyCompactList}\small\item\em Creates a utility with the given type and places it at the given tile. \end{DoxyCompactList}\item 
+\hyperlink{class_utility}{Utility} \hyperlink{class_utility_manager_aebfe52cfaf40c55421ae5fbc2ed0c130}{Place\+Utility} (\hyperlink{class_utility}{Utility} prototype, \hyperlink{class_tile}{Tile} tile, bool skip\+Grid\+Update=false)
+\begin{DoxyCompactList}\small\item\em Places the given utility prototype at the given tile. \end{DoxyCompactList}\item 
+void \hyperlink{class_utility_manager_a6b0d4a143b6944fc6f539f1762ede9be}{Construct\+Job\+Completed} (\hyperlink{class_job}{Job} job)
+\begin{DoxyCompactList}\small\item\em When a construction job is completed, place the utility. \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_manager_a617ae33d8a98a4c831036acfb91ccb8a}{Is\+Placement\+Valid} (string type, \hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Determines whether the placement of a utility with the given type at the given tile is valid. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_utility_manager_a38b4a23270b7a6955e1bf0c66037dd1b}{Get\+Enumerator} ()
+\begin{DoxyCompactList}\small\item\em Gets the utilities enumerator. \end{DoxyCompactList}\item 
+J\+Token \hyperlink{class_utility_manager_a78831152225d0b5e5531b9d8152ebbc4}{To\+Json} ()
+\item 
+void \hyperlink{class_utility_manager_aa5d5b53d6e90eb7463202e01e72ab5f1}{From\+Json} (J\+Token utilities\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{class_utility}{Utility} $>$ \hyperlink{class_utility_manager_af4625dbf9e27a0eb4a3e7b30b40e450a}{Utilities}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_utility}{Utility} $>$ \hyperlink{class_utility_manager_a7f706d46fe0abd5992aac32fc2fd80e2}{Created}
+\begin{DoxyCompactList}\small\item\em Occurs when a utility is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Utility\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_utility_manager_a4ee75d8bf97b9cdda04c8f6b5df9f55d}\label{class_utility_manager_a4ee75d8bf97b9cdda04c8f6b5df9f55d}} 
+\index{Utility\+Manager@{Utility\+Manager}!Utility\+Manager@{Utility\+Manager}}
+\index{Utility\+Manager@{Utility\+Manager}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Utility\+Manager()}{UtilityManager()}}
+{\footnotesize\ttfamily Utility\+Manager.\+Utility\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_utility_manager}{Utility\+Manager} class. 
+
+
+
+Definition at line 19 of file Utility\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_utility_manager_a6b0d4a143b6944fc6f539f1762ede9be}\label{class_utility_manager_a6b0d4a143b6944fc6f539f1762ede9be}} 
+\index{Utility\+Manager@{Utility\+Manager}!Construct\+Job\+Completed@{Construct\+Job\+Completed}}
+\index{Construct\+Job\+Completed@{Construct\+Job\+Completed}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Construct\+Job\+Completed()}{ConstructJobCompleted()}}
+{\footnotesize\ttfamily void Utility\+Manager.\+Construct\+Job\+Completed (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+When a construction job is completed, place the utility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & The completed job.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_aa5d5b53d6e90eb7463202e01e72ab5f1}\label{class_utility_manager_aa5d5b53d6e90eb7463202e01e72ab5f1}} 
+\index{Utility\+Manager@{Utility\+Manager}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Utility\+Manager.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{utilities\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_a38b4a23270b7a6955e1bf0c66037dd1b}\label{class_utility_manager_a38b4a23270b7a6955e1bf0c66037dd1b}} 
+\index{Utility\+Manager@{Utility\+Manager}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator Utility\+Manager.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the utilities enumerator. 
+
+\begin{DoxyReturn}{Returns}
+The enumerator.
+\end{DoxyReturn}
+
+
+Definition at line 107 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_a617ae33d8a98a4c831036acfb91ccb8a}\label{class_utility_manager_a617ae33d8a98a4c831036acfb91ccb8a}} 
+\index{Utility\+Manager@{Utility\+Manager}!Is\+Placement\+Valid@{Is\+Placement\+Valid}}
+\index{Is\+Placement\+Valid@{Is\+Placement\+Valid}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Placement\+Valid()}{IsPlacementValid()}}
+{\footnotesize\ttfamily bool Utility\+Manager.\+Is\+Placement\+Valid (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Determines whether the placement of a utility with the given type at the given tile is valid. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the placement is valid; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The utility type.\\
+\hline
+{\em tile} & The tile where the utility will be placed.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 98 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_aa0f600f8e00d39369a9c739b3a7d5c4e}\label{class_utility_manager_aa0f600f8e00d39369a9c739b3a7d5c4e}} 
+\index{Utility\+Manager@{Utility\+Manager}!Place\+Utility@{Place\+Utility}}
+\index{Place\+Utility@{Place\+Utility}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Place\+Utility()}{PlaceUtility()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_utility}{Utility} Utility\+Manager.\+Place\+Utility (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{skip\+Grid\+Update = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Creates a utility with the given type and places it at the given tile. 
+
+\begin{DoxyReturn}{Returns}
+The utility.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the utility.\\
+\hline
+{\em tile} & The tile to place the utility at.\\
+\hline
+{\em skip\+Grid\+Update} & If set to {\ttfamily true} don\textquotesingle{}t build the network, in which case the network will need explictly built.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_aebfe52cfaf40c55421ae5fbc2ed0c130}\label{class_utility_manager_aebfe52cfaf40c55421ae5fbc2ed0c130}} 
+\index{Utility\+Manager@{Utility\+Manager}!Place\+Utility@{Place\+Utility}}
+\index{Place\+Utility@{Place\+Utility}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Place\+Utility()}{PlaceUtility()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_utility}{Utility} Utility\+Manager.\+Place\+Utility (\begin{DoxyParamCaption}\item[{\hyperlink{class_utility}{Utility}}]{prototype,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{skip\+Grid\+Update = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Places the given utility prototype at the given tile. 
+
+\begin{DoxyReturn}{Returns}
+The utility.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em prototype} & The utility prototype.\\
+\hline
+{\em tile} & The tile to place the utility at.\\
+\hline
+{\em skip\+Grid\+Update} & If set to {\ttfamily true} don\textquotesingle{}t build the network, in which case the network will need explictly built.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Utility\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_utility_manager_a78831152225d0b5e5531b9d8152ebbc4}\label{class_utility_manager_a78831152225d0b5e5531b9d8152ebbc4}} 
+\index{Utility\+Manager@{Utility\+Manager}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Utility\+Manager.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file Utility\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_utility_manager_af4625dbf9e27a0eb4a3e7b30b40e450a}\label{class_utility_manager_af4625dbf9e27a0eb4a3e7b30b40e450a}} 
+\index{Utility\+Manager@{Utility\+Manager}!Utilities@{Utilities}}
+\index{Utilities@{Utilities}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Utilities}{Utilities}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_utility}{Utility}$>$ Utility\+Manager.\+Utilities\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 29 of file Utility\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_utility_manager_a7f706d46fe0abd5992aac32fc2fd80e2}\label{class_utility_manager_a7f706d46fe0abd5992aac32fc2fd80e2}} 
+\index{Utility\+Manager@{Utility\+Manager}!Created@{Created}}
+\index{Created@{Created}!Utility\+Manager@{Utility\+Manager}}
+\subsubsection{\texorpdfstring{Created}{Created}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_utility}{Utility}$>$ Utility\+Manager.\+Created}
+
+
+
+Occurs when a utility is created. 
+
+
+
+Definition at line 27 of file Utility\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_utility_manager_8cs}{Utility\+Manager.\+cs}\end{DoxyCompactItemize}

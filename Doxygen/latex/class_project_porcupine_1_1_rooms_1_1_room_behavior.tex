@@ -1,0 +1,544 @@
+\hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior}{}\section{Project\+Porcupine.\+Rooms.\+Room\+Behavior Class Reference}
+\label{class_project_porcupine_1_1_rooms_1_1_room_behavior}\index{Project\+Porcupine.\+Rooms.\+Room\+Behavior@{Project\+Porcupine.\+Rooms.\+Room\+Behavior}}
+
+
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Behaviors are functions added to specific rooms, such as an airlock, a dining room, or an abattoir.  
+
+
+Inheritance diagram for Project\+Porcupine.\+Rooms.\+Room\+Behavior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.523810cm]{class_project_porcupine_1_1_rooms_1_1_room_behavior}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_af35b1412339f8b04d90890e65e4eb29b}{Room\+Behavior} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a83f1d23b050fb5e8ce2e06a67f7b2fbc}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em This function is called to update the room behavior. This will also trigger Events\+Actions. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a2d9241fa5a087631437cffe86dbde6e2}{Is\+Valid\+Room} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\begin{DoxyCompactList}\small\item\em Check if the room is valid for the room behavior. This is called when assigning the room behavior. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7126ff361499e55f3a2badac20549766}{Read\+Xml\+Prototype} (Xml\+Reader reader\+Parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype room behavior from X\+ML. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0374cb2dfc4feb34a3f380bb3528edfd}{Read\+Xml} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the specified X\+M\+L\+Reader (pass it to \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae48ef51cb4429bf179c1730bdf5857e7}{Read\+Xml\+Params(\+Xml\+Reader)}) This is used to load room behavior from a save file. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae48ef51cb4429bf179c1730bdf5857e7}{Read\+Xml\+Params} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the X\+ML for parameters that this room behavior has and assign it to the room behavior. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1c385b13b4bee6982fc662ba1cdaf048}{Deconstruct} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} room\+Behavior)
+\begin{DoxyCompactList}\small\item\em Deconstructs the room behavior. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab8b0bf8d4a930240e5e9acbdc028bf97}{Has\+Type\+Tag} (string type\+Tag)
+\begin{DoxyCompactList}\small\item\em Checks whether the room behavior has a certain tag. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1b6f920757fd3485cb0bc59b1101c0fb}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns Localization\+Code name for the room behavior. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a43beeaa1ce08cced8ee7044e8c97a06d}{Get\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the Unlocalized\+Description of the room behavior. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a5e88494dd23269e902c2f5cbe9442d4c}{Get\+Additional\+Info} ()
+\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a56ddca30811b2815ccf9f3c8045ec4cc}{Get\+Job\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the description of the job linked to the room behavior. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a21b7f3134d1a74f70aa7a1d0f8ee9c23}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\begin{DoxyCompactList}\small\item\em Gets the Context Menu Actions. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a474e120ab2239b9ede3fe4ededf9f818}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Make a copy of the current room behavior. Sub-\/classes should override this \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a474e120ab2239b9ede3fe4ededf9f818}{Clone()} if a different (sub-\/classed) copy constructor should be run. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae89500a977f0bf215f4179f7e7921b1b}{Control} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\item 
+J\+Object \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f4f21306dc09b45b022e86d5879196f}{To\+Json} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_event_actions}{Event\+Actions} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f890f9fdbf836d50cbc6e2ea8f8aaec}{Event\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Event\+Action for the current \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. These actions are called when an event is called. They get passed the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} they belong to, plus a delta\+Time (which defaults to 0). \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a036e3155df45c58acefa7ef0d41e394f}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} is selected by the player or not. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7b19b205c62a475bc5d70aecba6d0eb9}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the string that defines the type of object the room behavior is. This gets queried by the visual system to know what sprite to render for this \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_af4e0d68fcb704cb98fe634e7e1847760}{Room}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the room this Behavior is attached to. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a283c9dd902ca5806b8f672f27ca6eb98}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the name of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. The name is the object type by default. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_aa7bf0c23e20fde63d0ed6018c8a11884}{Localization\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the code used for \hyperlink{namespace_project_porcupine_1_1_localization}{Localization} of the room behavior. \end{DoxyCompactList}\item 
+string \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_aeb1f7869f4a6ab5600a9320acf2978f3}{Unlocalized\+Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the description of the room behavior. This is used by localization. \end{DoxyCompactList}\item 
+\hyperlink{class_parameter}{Parameter} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a96a65a8b1a6df3f917b693e996eba5a1}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the parameters that is tied to the room behavior. \end{DoxyCompactList}\item 
+Dictionary$<$ string, List$<$ \hyperlink{class_furniture}{Furniture} $>$ $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ad30cb9e324be3e4eb582015e2c25c77a}{Controlled\+Furniture}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_af53085bc4c6cc1c1ff3785dc318bccbc}{Changed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} has been changed. This is means that any change (parameters, job state etc) to the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} will trigger this. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab49ba34c2107945554b224fe814cf212}{Removed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} has been removed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Behaviors are functions added to specific rooms, such as an airlock, a dining room, or an abattoir. 
+
+
+
+Definition at line 26 of file Room\+Behavior.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_af35b1412339f8b04d90890e65e4eb29b}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_af35b1412339f8b04d90890e65e4eb29b}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Room\+Behavior@{Room\+Behavior}}
+\index{Room\+Behavior@{Room\+Behavior}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Room\+Behavior()}{RoomBehavior()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Room\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} class. 
+
+
+
+Definition at line 49 of file Room\+Behavior.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a474e120ab2239b9ede3fe4ededf9f818}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a474e120ab2239b9ede3fe4ededf9f818}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Clone@{Clone}}
+\index{Clone@{Clone}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Make a copy of the current room behavior. Sub-\/classes should override this \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_a474e120ab2239b9ede3fe4ededf9f818}{Clone()} if a different (sub-\/classed) copy constructor should be run. 
+
+\begin{DoxyReturn}{Returns}
+A clone of the room behavior.
+\end{DoxyReturn}
+
+
+Definition at line 383 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae89500a977f0bf215f4179f7e7921b1b}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae89500a977f0bf215f4179f7e7921b1b}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Control@{Control}}
+\index{Control@{Control}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Control()}{Control()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Control (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Definition at line 388 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1c385b13b4bee6982fc662ba1cdaf048}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1c385b13b4bee6982fc662ba1cdaf048}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Deconstruct@{Deconstruct}}
+\index{Deconstruct@{Deconstruct}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Deconstruct()}{Deconstruct()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Deconstruct (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}}]{room\+Behavior }\end{DoxyParamCaption})}
+
+
+
+Deconstructs the room behavior. 
+
+
+
+Definition at line 289 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a5e88494dd23269e902c2f5cbe9442d4c}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a5e88494dd23269e902c2f5cbe9442d4c}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 332 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a21b7f3134d1a74f70aa7a1d0f8ee9c23}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a21b7f3134d1a74f70aa7a1d0f8ee9c23}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Gets the Context Menu Actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\+Menu} & The context menu to check for actions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Context menu actions.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 351 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a43beeaa1ce08cced8ee7044e8c97a06d}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a43beeaa1ce08cced8ee7044e8c97a06d}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Unlocalized\+Description of the room behavior. 
+
+\begin{DoxyReturn}{Returns}
+Description of the room behavior.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 327 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a56ddca30811b2815ccf9f3c8045ec4cc}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a56ddca30811b2815ccf9f3c8045ec4cc}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the description of the job linked to the room behavior. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_job}{Job} description of the job linked to the room behavior.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 341 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1b6f920757fd3485cb0bc59b1101c0fb}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a1b6f920757fd3485cb0bc59b1101c0fb}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns Localization\+Code name for the room behavior. 
+
+\begin{DoxyReturn}{Returns}
+Localization\+Code for the name of the room behavior.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 318 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab8b0bf8d4a930240e5e9acbdc028bf97}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab8b0bf8d4a930240e5e9acbdc028bf97}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Has\+Type\+Tag@{Has\+Type\+Tag}}
+\index{Has\+Type\+Tag@{Has\+Type\+Tag}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Has\+Type\+Tag()}{HasTypeTag()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Has\+Type\+Tag (\begin{DoxyParamCaption}\item[{string}]{type\+Tag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the room behavior has a certain tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Tag} & Tag to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if room behavior has specified tag.
+\end{DoxyReturn}
+
+
+Definition at line 309 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a2d9241fa5a087631437cffe86dbde6e2}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a2d9241fa5a087631437cffe86dbde6e2}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Is\+Valid\+Room@{Is\+Valid\+Room}}
+\index{Is\+Valid\+Room@{Is\+Valid\+Room}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Is\+Valid\+Room()}{IsValidRoom()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Is\+Valid\+Room (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Check if the room is valid for the room behavior. This is called when assigning the room behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & The room to be validated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the room is valid for the the room behavior.
+\end{DoxyReturn}
+
+
+Definition at line 194 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0374cb2dfc4feb34a3f380bb3528edfd}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0374cb2dfc4feb34a3f380bb3528edfd}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Read\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the specified X\+M\+L\+Reader (pass it to \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae48ef51cb4429bf179c1730bdf5857e7}{Read\+Xml\+Params(\+Xml\+Reader)}) This is used to load room behavior from a save file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 265 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae48ef51cb4429bf179c1730bdf5857e7}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_ae48ef51cb4429bf179c1730bdf5857e7}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Read\+Xml\+Params@{Read\+Xml\+Params}}
+\index{Read\+Xml\+Params@{Read\+Xml\+Params}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Params()}{ReadXmlParams()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Read\+Xml\+Params (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the X\+ML for parameters that this room behavior has and assign it to the room behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The reader to read the parameters from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 279 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7126ff361499e55f3a2badac20549766}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7126ff361499e55f3a2badac20549766}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader\+Parent }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype room behavior from X\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 203 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f4f21306dc09b45b022e86d5879196f}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f4f21306dc09b45b022e86d5879196f}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Object Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 407 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a83f1d23b050fb5e8ce2e06a67f7b2fbc}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a83f1d23b050fb5e8ce2e06a67f7b2fbc}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Update@{Update}}
+\index{Update@{Update}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+This function is called to update the room behavior. This will also trigger Events\+Actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time since the last update was called.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 179 of file Room\+Behavior.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_ad30cb9e324be3e4eb582015e2c25c77a}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_ad30cb9e324be3e4eb582015e2c25c77a}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Controlled\+Furniture@{Controlled\+Furniture}}
+\index{Controlled\+Furniture@{Controlled\+Furniture}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Controlled\+Furniture}{ControlledFurniture}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$\hyperlink{class_furniture}{Furniture}$>$ $>$ Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Controlled\+Furniture\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 173 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f890f9fdbf836d50cbc6e2ea8f8aaec}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a0f890f9fdbf836d50cbc6e2ea8f8aaec}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Event\+Actions@{Event\+Actions}}
+\index{Event\+Actions@{Event\+Actions}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Event\+Actions}{EventActions}}
+{\footnotesize\ttfamily \hyperlink{class_event_actions}{Event\+Actions} Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Event\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Event\+Action for the current \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. These actions are called when an event is called. They get passed the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} they belong to, plus a delta\+Time (which defaults to 0). 
+
+The event actions that is called on update.
+
+Definition at line 121 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a036e3155df45c58acefa7ef0d41e394f}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a036e3155df45c58acefa7ef0d41e394f}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} is selected by the player or not. 
+
+Whether the room behavior is selected or not.
+
+Definition at line 127 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_aa7bf0c23e20fde63d0ed6018c8a11884}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_aa7bf0c23e20fde63d0ed6018c8a11884}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Localization\+Code@{Localization\+Code}}
+\index{Localization\+Code@{Localization\+Code}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Localization\+Code}{LocalizationCode}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Localization\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the code used for \hyperlink{namespace_project_porcupine_1_1_localization}{Localization} of the room behavior. 
+
+
+
+Definition at line 161 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a283c9dd902ca5806b8f672f27ca6eb98}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a283c9dd902ca5806b8f672f27ca6eb98}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Name@{Name}}
+\index{Name@{Name}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the name of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. The name is the object type by default. 
+
+The name of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}.
+
+Definition at line 146 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a96a65a8b1a6df3f917b693e996eba5a1}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a96a65a8b1a6df3f917b693e996eba5a1}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter} Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Parameters\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets or sets the parameters that is tied to the room behavior. 
+
+
+
+Definition at line 171 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_af4e0d68fcb704cb98fe634e7e1847760}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_af4e0d68fcb704cb98fe634e7e1847760}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Room@{Room}}
+\index{Room@{Room}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Room}{Room}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Room\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the room this Behavior is attached to. 
+
+
+
+Definition at line 139 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7b19b205c62a475bc5d70aecba6d0eb9}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_a7b19b205c62a475bc5d70aecba6d0eb9}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Type@{Type}}
+\index{Type@{Type}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the string that defines the type of object the room behavior is. This gets queried by the visual system to know what sprite to render for this \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}. 
+
+The type of the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}.
+
+Definition at line 134 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_aeb1f7869f4a6ab5600a9320acf2978f3}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_aeb1f7869f4a6ab5600a9320acf2978f3}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Unlocalized\+Description@{Unlocalized\+Description}}
+\index{Unlocalized\+Description@{Unlocalized\+Description}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Unlocalized\+Description}{UnlocalizedDescription}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Unlocalized\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the description of the room behavior. This is used by localization. 
+
+
+
+Definition at line 166 of file Room\+Behavior.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_af53085bc4c6cc1c1ff3785dc318bccbc}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_af53085bc4c6cc1c1ff3785dc318bccbc}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Changed@{Changed}}
+\index{Changed@{Changed}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Changed}{Changed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}$>$ Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Changed}
+
+
+
+This event will trigger when the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} has been changed. This is means that any change (parameters, job state etc) to the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} will trigger this. 
+
+
+
+Definition at line 108 of file Room\+Behavior.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab49ba34c2107945554b224fe814cf212}\label{class_project_porcupine_1_1_rooms_1_1_room_behavior_ab49ba34c2107945554b224fe814cf212}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}!Removed@{Removed}}
+\index{Removed@{Removed}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Behavior}}
+\subsubsection{\texorpdfstring{Removed}{Removed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior}$>$ Project\+Porcupine.\+Rooms.\+Room\+Behavior.\+Removed}
+
+
+
+This event will trigger when the \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_behavior}{Room\+Behavior} has been removed. 
+
+
+
+Definition at line 113 of file Room\+Behavior.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_room_behavior_8cs}{Room\+Behavior.\+cs}\end{DoxyCompactItemize}

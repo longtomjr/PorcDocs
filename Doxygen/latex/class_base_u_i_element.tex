@@ -1,0 +1,256 @@
+\hypertarget{class_base_u_i_element}{}\section{Base\+U\+I\+Element Class Reference}
+\label{class_base_u_i_element}\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+Inheritance diagram for Base\+U\+I\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_base_u_i_element}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract string \hyperlink{class_base_u_i_element_acb7fcd49138477941f2e43733ad9d34d}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of this object for internal reasons. Mainly for error debugging and/or gameobject name. \end{DoxyCompactList}\item 
+abstract Game\+Object \hyperlink{class_base_u_i_element_a9a0aa6ac0b194f90e092b372adce4e30}{Initialize\+Element} ()
+\begin{DoxyCompactList}\small\item\em Set ranges, set fields... Pass it back basically. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parameter}{Parameter} \hyperlink{class_base_u_i_element_a1c66251d0672fb0931f92f5f604bd56a}{parameter\+Data}
+\begin{DoxyCompactList}\small\item\em Internal option data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_base_u_i_element_a4d35178a8b799757bcec7bb3c22ec92d}{Get\+Fluid\+Horizontal\+Base\+Element} (string element\+Title=\char`\"{}\char`\"{}, bool stretchX=false, bool stretchY=false, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Center, int spacing=10, int allocated\+Height=60, int allocated\+Width=220)
+\item 
+Game\+Object \hyperlink{class_base_u_i_element_a8080c783c4cf125ffd73abc41b701847}{Get\+Fluid\+Vertical\+Base\+Element} (string element\+Title=\char`\"{}\char`\"{}, bool stretchX=false, bool stretchY=false, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Center, int spacing=10, int allocated\+Height=60, int allocated\+Width=220)
+\item 
+Game\+Object \hyperlink{class_base_u_i_element_a54c09af57514cd421eee80888928a8c3}{Get\+Grid\+Base\+Element} (string element\+Title=\char`\"{}\char`\"{}, int x\+Size=97, int y\+Size=37, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Center, int spacingX=5, int spacingY=5, int allocated\+Height=60, int allocated\+Width=220)
+\begin{DoxyCompactList}\small\item\em Returns a base element, with a grid layout. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_base_u_i_element_a27784f8eb56ae3c0062395069052e7cc}{Get\+Horizontal\+Base\+Element} (string element\+Title=\char`\"{}\char`\"{}, int x\+Size=95, int y\+Size=80, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Center, int spacing=10, int allocated\+Height=60, int allocated\+Width=220)
+\begin{DoxyCompactList}\small\item\em Returns a base element, with a horizontal layout. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_base_u_i_element_a1f779d297d7c6ce4253979c263980702}{Get\+Vertical\+Base\+Element} (string element\+Title=\char`\"{}\char`\"{}, int x\+Size=100, int y\+Size=80, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Center, int spacing=10, int allocated\+Height=60, int allocated\+Width=220)
+\begin{DoxyCompactList}\small\item\em Returns a base element, with a vertical layout. \end{DoxyCompactList}\item 
+void \hyperlink{class_base_u_i_element_a9c2460f69f6f206de7bbda85e9cb6062}{Allocate\+Space\+For\+Game\+Object} (Game\+Object to\+Allocate, int allocated\+Height=60, int allocated\+Width=220)
+\item 
+Text \hyperlink{class_base_u_i_element_ad6793a01923a012a3d0431e74e460029}{Create\+Text} (string with\+Text, bool auto\+Fit=false, Text\+Anchor alignment=Text\+Anchor.\+Middle\+Left, bool localize=true)
+\item 
+Toggle \hyperlink{class_base_u_i_element_a6a88fe381d2b20203669af0057669a9b}{Create\+Toggle} (string type)
+\item 
+Input\+Field \hyperlink{class_base_u_i_element_a66e9971975d8d24b2f59a5f67e498f44}{Create\+Input\+Field} (string with\+Text)
+\item 
+Slider \hyperlink{class_base_u_i_element_a79f0d812a1cb543024770f45450c6daf}{Create\+Slider} (float value, Vector2 range, bool whole\+Numbers=true)
+\item 
+Dropdown \hyperlink{class_base_u_i_element_a0c39035955d916aaf1f1259b5775f31d}{Create\+Empty\+Dropdown} ()
+\item 
+Dropdown \hyperlink{class_base_u_i_element_a639e4a3de2f62f1ab90f96f70f5b2833}{Create\+Dropdown\+From\+Text} (string\mbox{[}$\,$\mbox{]} text\+Options, int value)
+\item 
+Dropdown \hyperlink{class_base_u_i_element_ae171e935c4d38482a14abe560a96b556}{Create\+Dropdown\+From\+Option\+Data} (Dropdown.\+Option\+Data\mbox{[}$\,$\mbox{]} option\+Data\+Options, int value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Base\+U\+I\+Element.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_u_i_element_a9c2460f69f6f206de7bbda85e9cb6062}\label{class_base_u_i_element_a9c2460f69f6f206de7bbda85e9cb6062}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Allocate\+Space\+For\+Game\+Object@{Allocate\+Space\+For\+Game\+Object}}
+\index{Allocate\+Space\+For\+Game\+Object@{Allocate\+Space\+For\+Game\+Object}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Allocate\+Space\+For\+Game\+Object()}{AllocateSpaceForGameObject()}}
+{\footnotesize\ttfamily void Base\+U\+I\+Element.\+Allocate\+Space\+For\+Game\+Object (\begin{DoxyParamCaption}\item[{Game\+Object}]{to\+Allocate,  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 123 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_ae171e935c4d38482a14abe560a96b556}\label{class_base_u_i_element_ae171e935c4d38482a14abe560a96b556}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Dropdown\+From\+Option\+Data@{Create\+Dropdown\+From\+Option\+Data}}
+\index{Create\+Dropdown\+From\+Option\+Data@{Create\+Dropdown\+From\+Option\+Data}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Dropdown\+From\+Option\+Data()}{CreateDropdownFromOptionData()}}
+{\footnotesize\ttfamily Dropdown Base\+U\+I\+Element.\+Create\+Dropdown\+From\+Option\+Data (\begin{DoxyParamCaption}\item[{Dropdown.\+Option\+Data \mbox{[}$\,$\mbox{]}}]{option\+Data\+Options,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 216 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a639e4a3de2f62f1ab90f96f70f5b2833}\label{class_base_u_i_element_a639e4a3de2f62f1ab90f96f70f5b2833}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Dropdown\+From\+Text@{Create\+Dropdown\+From\+Text}}
+\index{Create\+Dropdown\+From\+Text@{Create\+Dropdown\+From\+Text}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Dropdown\+From\+Text()}{CreateDropdownFromText()}}
+{\footnotesize\ttfamily Dropdown Base\+U\+I\+Element.\+Create\+Dropdown\+From\+Text (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{text\+Options,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 207 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a0c39035955d916aaf1f1259b5775f31d}\label{class_base_u_i_element_a0c39035955d916aaf1f1259b5775f31d}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Empty\+Dropdown@{Create\+Empty\+Dropdown}}
+\index{Create\+Empty\+Dropdown@{Create\+Empty\+Dropdown}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Empty\+Dropdown()}{CreateEmptyDropdown()}}
+{\footnotesize\ttfamily Dropdown Base\+U\+I\+Element.\+Create\+Empty\+Dropdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 197 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a66e9971975d8d24b2f59a5f67e498f44}\label{class_base_u_i_element_a66e9971975d8d24b2f59a5f67e498f44}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Input\+Field@{Create\+Input\+Field}}
+\index{Create\+Input\+Field@{Create\+Input\+Field}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Input\+Field()}{CreateInputField()}}
+{\footnotesize\ttfamily Input\+Field Base\+U\+I\+Element.\+Create\+Input\+Field (\begin{DoxyParamCaption}\item[{string}]{with\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 168 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a79f0d812a1cb543024770f45450c6daf}\label{class_base_u_i_element_a79f0d812a1cb543024770f45450c6daf}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Slider@{Create\+Slider}}
+\index{Create\+Slider@{Create\+Slider}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Slider()}{CreateSlider()}}
+{\footnotesize\ttfamily Slider Base\+U\+I\+Element.\+Create\+Slider (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{Vector2}]{range,  }\item[{bool}]{whole\+Numbers = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 180 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_ad6793a01923a012a3d0431e74e460029}\label{class_base_u_i_element_ad6793a01923a012a3d0431e74e460029}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Text@{Create\+Text}}
+\index{Create\+Text@{Create\+Text}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Text()}{CreateText()}}
+{\footnotesize\ttfamily Text Base\+U\+I\+Element.\+Create\+Text (\begin{DoxyParamCaption}\item[{string}]{with\+Text,  }\item[{bool}]{auto\+Fit = {\ttfamily false},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleLeft},  }\item[{bool}]{localize = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 130 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a6a88fe381d2b20203669af0057669a9b}\label{class_base_u_i_element_a6a88fe381d2b20203669af0057669a9b}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Create\+Toggle@{Create\+Toggle}}
+\index{Create\+Toggle@{Create\+Toggle}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Create\+Toggle()}{CreateToggle()}}
+{\footnotesize\ttfamily Toggle Base\+U\+I\+Element.\+Create\+Toggle (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 158 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a4d35178a8b799757bcec7bb3c22ec92d}\label{class_base_u_i_element_a4d35178a8b799757bcec7bb3c22ec92d}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Fluid\+Horizontal\+Base\+Element@{Get\+Fluid\+Horizontal\+Base\+Element}}
+\index{Get\+Fluid\+Horizontal\+Base\+Element@{Get\+Fluid\+Horizontal\+Base\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Fluid\+Horizontal\+Base\+Element()}{GetFluidHorizontalBaseElement()}}
+{\footnotesize\ttfamily Game\+Object Base\+U\+I\+Element.\+Get\+Fluid\+Horizontal\+Base\+Element (\begin{DoxyParamCaption}\item[{string}]{element\+Title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{stretchX = {\ttfamily false},  }\item[{bool}]{stretchY = {\ttfamily false},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleCenter},  }\item[{int}]{spacing = {\ttfamily 10},  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 40 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a8080c783c4cf125ffd73abc41b701847}\label{class_base_u_i_element_a8080c783c4cf125ffd73abc41b701847}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Fluid\+Vertical\+Base\+Element@{Get\+Fluid\+Vertical\+Base\+Element}}
+\index{Get\+Fluid\+Vertical\+Base\+Element@{Get\+Fluid\+Vertical\+Base\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Fluid\+Vertical\+Base\+Element()}{GetFluidVerticalBaseElement()}}
+{\footnotesize\ttfamily Game\+Object Base\+U\+I\+Element.\+Get\+Fluid\+Vertical\+Base\+Element (\begin{DoxyParamCaption}\item[{string}]{element\+Title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{stretchX = {\ttfamily false},  }\item[{bool}]{stretchY = {\ttfamily false},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleCenter},  }\item[{int}]{spacing = {\ttfamily 10},  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a54c09af57514cd421eee80888928a8c3}\label{class_base_u_i_element_a54c09af57514cd421eee80888928a8c3}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Grid\+Base\+Element@{Get\+Grid\+Base\+Element}}
+\index{Get\+Grid\+Base\+Element@{Get\+Grid\+Base\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Grid\+Base\+Element()}{GetGridBaseElement()}}
+{\footnotesize\ttfamily Game\+Object Base\+U\+I\+Element.\+Get\+Grid\+Base\+Element (\begin{DoxyParamCaption}\item[{string}]{element\+Title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{x\+Size = {\ttfamily 97},  }\item[{int}]{y\+Size = {\ttfamily 37},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleCenter},  }\item[{int}]{spacingX = {\ttfamily 5},  }\item[{int}]{spacingY = {\ttfamily 5},  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a base element, with a grid layout. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a27784f8eb56ae3c0062395069052e7cc}\label{class_base_u_i_element_a27784f8eb56ae3c0062395069052e7cc}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Horizontal\+Base\+Element@{Get\+Horizontal\+Base\+Element}}
+\index{Get\+Horizontal\+Base\+Element@{Get\+Horizontal\+Base\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Horizontal\+Base\+Element()}{GetHorizontalBaseElement()}}
+{\footnotesize\ttfamily Game\+Object Base\+U\+I\+Element.\+Get\+Horizontal\+Base\+Element (\begin{DoxyParamCaption}\item[{string}]{element\+Title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{x\+Size = {\ttfamily 95},  }\item[{int}]{y\+Size = {\ttfamily 80},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleCenter},  }\item[{int}]{spacing = {\ttfamily 10},  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a base element, with a horizontal layout. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_acb7fcd49138477941f2e43733ad9d34d}\label{class_base_u_i_element_acb7fcd49138477941f2e43733ad9d34d}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily abstract string Base\+U\+I\+Element.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the name of this object for internal reasons. Mainly for error debugging and/or gameobject name. 
+
+
+
+Implemented in \hyperlink{class_base_settings_element_a01da3ad61726996dfbf111a2bcabe166}{Base\+Settings\+Element}.
+
+\mbox{\Hypertarget{class_base_u_i_element_a1f779d297d7c6ce4253979c263980702}\label{class_base_u_i_element_a1f779d297d7c6ce4253979c263980702}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Get\+Vertical\+Base\+Element@{Get\+Vertical\+Base\+Element}}
+\index{Get\+Vertical\+Base\+Element@{Get\+Vertical\+Base\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Get\+Vertical\+Base\+Element()}{GetVerticalBaseElement()}}
+{\footnotesize\ttfamily Game\+Object Base\+U\+I\+Element.\+Get\+Vertical\+Base\+Element (\begin{DoxyParamCaption}\item[{string}]{element\+Title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{x\+Size = {\ttfamily 100},  }\item[{int}]{y\+Size = {\ttfamily 80},  }\item[{Text\+Anchor}]{alignment = {\ttfamily TextAnchor.MiddleCenter},  }\item[{int}]{spacing = {\ttfamily 10},  }\item[{int}]{allocated\+Height = {\ttfamily 60},  }\item[{int}]{allocated\+Width = {\ttfamily 220} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returns a base element, with a vertical layout. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Base\+U\+I\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_u_i_element_a9a0aa6ac0b194f90e092b372adce4e30}\label{class_base_u_i_element_a9a0aa6ac0b194f90e092b372adce4e30}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!Initialize\+Element@{Initialize\+Element}}
+\index{Initialize\+Element@{Initialize\+Element}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{Initialize\+Element()}{InitializeElement()}}
+{\footnotesize\ttfamily abstract Game\+Object Base\+U\+I\+Element.\+Initialize\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set ranges, set fields... Pass it back basically. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_base_u_i_element_a1c66251d0672fb0931f92f5f604bd56a}\label{class_base_u_i_element_a1c66251d0672fb0931f92f5f604bd56a}} 
+\index{Base\+U\+I\+Element@{Base\+U\+I\+Element}!parameter\+Data@{parameter\+Data}}
+\index{parameter\+Data@{parameter\+Data}!Base\+U\+I\+Element@{Base\+U\+I\+Element}}
+\subsubsection{\texorpdfstring{parameter\+Data}{parameterData}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter} Base\+U\+I\+Element.\+parameter\+Data}
+
+
+
+Internal option data. 
+
+
+
+Definition at line 21 of file Base\+U\+I\+Element.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+U\+I\+Elements/\hyperlink{_base_u_i_element_8cs}{Base\+U\+I\+Element.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{class_keyboard_manager}{}\section{Keyboard\+Manager Class Reference}
+\label{class_keyboard_manager}\index{Keyboard\+Manager@{Keyboard\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_keyboard_manager_adb37ed218542d83894ccaa2108773da7}{Keyboard\+Manager} ()
+\item 
+void \hyperlink{class_keyboard_manager_a2393502e8ac109543e028bbbd3ed149c}{Register\+Modal\+Input\+Field} (Input\+Field filter\+Field)
+\item 
+void \hyperlink{class_keyboard_manager_a458b30dc7b22d0f068b9646c2db73063}{Un\+Register\+Modal\+Input\+Field} (Input\+Field filter\+Field)
+\item 
+void \hyperlink{class_keyboard_manager_a1e1c00f7abd67e4f784cb3ca8497f6de}{Read\+Xml\+Or\+Json\+After\+We\+Decide} ()
+\item 
+void \hyperlink{class_keyboard_manager_a9131b36109dcdfb02e7e5c93c523cbdf}{Trigger\+Action\+If\+Valid} (string input\+Name)
+\begin{DoxyCompactList}\small\item\em This won\textquotesingle{}t care about the focus fields. Needed for some things like Dev\+Console. \end{DoxyCompactList}\item 
+void \hyperlink{class_keyboard_manager_aa462926c6558f1939ed876f93c1ba777}{Update} ()
+\item 
+void \hyperlink{class_keyboard_manager_a5981403c950a8151472aecc921d2fcb5}{Register\+Input\+Action} (string input\+Name, \hyperlink{_keyboard_mapped_input_type_8cs_ae342fcbcca71b2c821363b14ed799463}{Keyboard\+Mapped\+Input\+Type} input\+Type, Action on\+Trigger)
+\item 
+void \hyperlink{class_keyboard_manager_a797f31873324867559c3aabf66e91fdd}{Un\+Register\+Input\+Action} (string input\+Name)
+\item 
+void \hyperlink{class_keyboard_manager_a6fec4daf08361b0f51fe7f45a60dfcf3}{Register\+Input\+Mapping} (string input\+Name, \hyperlink{_keyboard_input_modifier_8cs_a45c5fbd3fc0bd2cbe0f27f511d6b5955}{Keyboard\+Input\+Modifier} input\+Modifiers, params Key\+Code\mbox{[}$\,$\mbox{]} key\+Codes)
+\item 
+void \hyperlink{class_keyboard_manager_abe76665b5a2c3ed850d6c7edb942656e}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_keyboard_manager}{Keyboard\+Manager} \hyperlink{class_keyboard_manager_aa3ba01f0ebce34e50563d2fe607f7bbd}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ Input\+Field $>$ \hyperlink{class_keyboard_manager_a98ebd09a48b0b924ad13e18b6dfeb969}{Modal\+Input\+Fields}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Keyboard\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_keyboard_manager_adb37ed218542d83894ccaa2108773da7}\label{class_keyboard_manager_adb37ed218542d83894ccaa2108773da7}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Keyboard\+Manager@{Keyboard\+Manager}}
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Keyboard\+Manager()}{KeyboardManager()}}
+{\footnotesize\ttfamily Keyboard\+Manager.\+Keyboard\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Keyboard\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_keyboard_manager_abe76665b5a2c3ed850d6c7edb942656e}\label{class_keyboard_manager_abe76665b5a2c3ed850d6c7edb942656e}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy this instance. 
+
+
+
+Definition at line 187 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a1e1c00f7abd67e4f784cb3ca8497f6de}\label{class_keyboard_manager_a1e1c00f7abd67e4f784cb3ca8497f6de}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Read\+Xml\+Or\+Json\+After\+We\+Decide@{Read\+Xml\+Or\+Json\+After\+We\+Decide}}
+\index{Read\+Xml\+Or\+Json\+After\+We\+Decide@{Read\+Xml\+Or\+Json\+After\+We\+Decide}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Or\+Json\+After\+We\+Decide()}{ReadXmlOrJsonAfterWeDecide()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Read\+Xml\+Or\+Json\+After\+We\+Decide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a5981403c950a8151472aecc921d2fcb5}\label{class_keyboard_manager_a5981403c950a8151472aecc921d2fcb5}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Register\+Input\+Action@{Register\+Input\+Action}}
+\index{Register\+Input\+Action@{Register\+Input\+Action}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Input\+Action()}{RegisterInputAction()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Register\+Input\+Action (\begin{DoxyParamCaption}\item[{string}]{input\+Name,  }\item[{\hyperlink{_keyboard_mapped_input_type_8cs_ae342fcbcca71b2c821363b14ed799463}{Keyboard\+Mapped\+Input\+Type}}]{input\+Type,  }\item[{Action}]{on\+Trigger }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a6fec4daf08361b0f51fe7f45a60dfcf3}\label{class_keyboard_manager_a6fec4daf08361b0f51fe7f45a60dfcf3}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Register\+Input\+Mapping@{Register\+Input\+Mapping}}
+\index{Register\+Input\+Mapping@{Register\+Input\+Mapping}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Input\+Mapping()}{RegisterInputMapping()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Register\+Input\+Mapping (\begin{DoxyParamCaption}\item[{string}]{input\+Name,  }\item[{\hyperlink{_keyboard_input_modifier_8cs_a45c5fbd3fc0bd2cbe0f27f511d6b5955}{Keyboard\+Input\+Modifier}}]{input\+Modifiers,  }\item[{params Key\+Code \mbox{[}$\,$\mbox{]}}]{key\+Codes }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a2393502e8ac109543e028bbbd3ed149c}\label{class_keyboard_manager_a2393502e8ac109543e028bbbd3ed149c}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Register\+Modal\+Input\+Field@{Register\+Modal\+Input\+Field}}
+\index{Register\+Modal\+Input\+Field@{Register\+Modal\+Input\+Field}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Modal\+Input\+Field()}{RegisterModalInputField()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Register\+Modal\+Input\+Field (\begin{DoxyParamCaption}\item[{Input\+Field}]{filter\+Field }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a9131b36109dcdfb02e7e5c93c523cbdf}\label{class_keyboard_manager_a9131b36109dcdfb02e7e5c93c523cbdf}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Trigger\+Action\+If\+Valid@{Trigger\+Action\+If\+Valid}}
+\index{Trigger\+Action\+If\+Valid@{Trigger\+Action\+If\+Valid}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Trigger\+Action\+If\+Valid()}{TriggerActionIfValid()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Trigger\+Action\+If\+Valid (\begin{DoxyParamCaption}\item[{string}]{input\+Name }\end{DoxyParamCaption})}
+
+
+
+This won\textquotesingle{}t care about the focus fields. Needed for some things like Dev\+Console. 
+
+
+
+Definition at line 115 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a797f31873324867559c3aabf66e91fdd}\label{class_keyboard_manager_a797f31873324867559c3aabf66e91fdd}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Un\+Register\+Input\+Action@{Un\+Register\+Input\+Action}}
+\index{Un\+Register\+Input\+Action@{Un\+Register\+Input\+Action}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Un\+Register\+Input\+Action()}{UnRegisterInputAction()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Un\+Register\+Input\+Action (\begin{DoxyParamCaption}\item[{string}]{input\+Name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a458b30dc7b22d0f068b9646c2db73063}\label{class_keyboard_manager_a458b30dc7b22d0f068b9646c2db73063}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Un\+Register\+Modal\+Input\+Field@{Un\+Register\+Modal\+Input\+Field}}
+\index{Un\+Register\+Modal\+Input\+Field@{Un\+Register\+Modal\+Input\+Field}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Un\+Register\+Modal\+Input\+Field()}{UnRegisterModalInputField()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Un\+Register\+Modal\+Input\+Field (\begin{DoxyParamCaption}\item[{Input\+Field}]{filter\+Field }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_aa462926c6558f1939ed876f93c1ba777}\label{class_keyboard_manager_aa462926c6558f1939ed876f93c1ba777}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Update@{Update}}
+\index{Update@{Update}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Keyboard\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file Keyboard\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_keyboard_manager_aa3ba01f0ebce34e50563d2fe607f7bbd}\label{class_keyboard_manager_aa3ba01f0ebce34e50563d2fe607f7bbd}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{class_keyboard_manager}{Keyboard\+Manager} Keyboard\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 34 of file Keyboard\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_keyboard_manager_a98ebd09a48b0b924ad13e18b6dfeb969}\label{class_keyboard_manager_a98ebd09a48b0b924ad13e18b6dfeb969}} 
+\index{Keyboard\+Manager@{Keyboard\+Manager}!Modal\+Input\+Fields@{Modal\+Input\+Fields}}
+\index{Modal\+Input\+Fields@{Modal\+Input\+Fields}!Keyboard\+Manager@{Keyboard\+Manager}}
+\subsubsection{\texorpdfstring{Modal\+Input\+Fields}{ModalInputFields}}
+{\footnotesize\ttfamily List$<$Input\+Field$>$ Keyboard\+Manager.\+Modal\+Input\+Fields\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 51 of file Keyboard\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Keyboard/\hyperlink{_keyboard_manager_8cs}{Keyboard\+Manager.\+cs}\end{DoxyCompactItemize}

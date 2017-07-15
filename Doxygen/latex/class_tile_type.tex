@@ -1,0 +1,367 @@
+\hypertarget{class_tile_type}{}\section{Tile\+Type Class Reference}
+\label{class_tile_type}\index{Tile\+Type@{Tile\+Type}}
+Inheritance diagram for Tile\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tile_type}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tile_type_abbcdc00951e1510c63f38613c9d63f59}{Tile\+Type} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_tile_type}{Tile\+Type} class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tile_type_a64fc9bec84444700962a0e7658a205fa}{Equals} (\hyperlink{class_tile_type}{Tile\+Type} other)
+\item 
+override bool \hyperlink{class_tile_type_ac39e4bed164069c9dbb5ce5d630bf11a}{Equals} (object obj)
+\item 
+override int \hyperlink{class_tile_type_a29b7914ec11c89facbca91e69b8a2420}{Get\+Hash\+Code} ()
+\item 
+override string \hyperlink{class_tile_type_ab6b89688d93a7e3b1cb18be3bbbf0b82}{To\+String} ()
+\item 
+T \hyperlink{class_tile_type_a9385c11a23951c3fd8d357631be69b7e}{Get\+Order\+Action$<$ T $>$} ()
+\item 
+bool \hyperlink{class_tile_type_ac981ce0a7c419814bcafdafba670d117}{Can\+Build\+Here} (\hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Determines whether this tile type is allowed to be built on the given tile. \end{DoxyCompactList}\item 
+void \hyperlink{class_tile_type_ae39d2b8e69a19ad1aedcd8ad9ab19727}{Read\+Xml\+Prototype} (Xml\+Reader parent\+Reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_tile_type_a626a9795ec9334cd621342faab6fa6e4}{operator==} (\hyperlink{class_tile_type}{Tile\+Type} left, \hyperlink{class_tile_type}{Tile\+Type} right)
+\item 
+static bool \hyperlink{class_tile_type_a9f34d34dd04b6ff5b6141db70f8e0c48}{operator!=} (\hyperlink{class_tile_type}{Tile\+Type} left, \hyperlink{class_tile_type}{Tile\+Type} right)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_tile_type}{Tile\+Type} \hyperlink{class_tile_type_a60e6955dc3faf61db0a2fa8426499b92}{Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the empty tile type prototype. \end{DoxyCompactList}\item 
+static \hyperlink{class_tile_type}{Tile\+Type} \hyperlink{class_tile_type_a340e5076e637c0ef7ff1b11ac4cf04fd}{Floor}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the floor tile type prototype. \end{DoxyCompactList}\item 
+string \hyperlink{class_tile_type_ade3d6ab90410efe24493eed09f5a8d21}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unique \hyperlink{class_tile_type}{Tile\+Type} identifier. \end{DoxyCompactList}\item 
+float \hyperlink{class_tile_type_a7d008dccbb7ecaf0f12acae8f7989068}{Base\+Movement\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the base movement cost. \end{DoxyCompactList}\item 
+float \hyperlink{class_tile_type_a51128d6ebf05eb04f7187ca86b181846}{Pathfinding\+Weight}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{class_tile_type}{Tile\+Type}\textquotesingle{}s pathfinding weight which is multiplied into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. \end{DoxyCompactList}\item 
+float \hyperlink{class_tile_type_a4325bfa21ffacf67fa1ead7b0394abe7}{Pathfinding\+Modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the \hyperlink{class_tile_type}{Tile\+Type}\textquotesingle{}s pathfinding modifier which is added into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tile_type_af93d2a77c5ac943fe763b8e0dfed6360}{Links\+To\+Neighbours}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this \hyperlink{class_tile_type}{Tile\+Type} links to neighbours. \end{DoxyCompactList}\item 
+string \hyperlink{class_tile_type_a4a0ffcd58093d3a5c9b085f9a69707f7}{Can\+Build\+Here\+Lua}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the lua function that can be called to determine if this instance can build here lua. \end{DoxyCompactList}\item 
+string \hyperlink{class_tile_type_aec98b27159318d4f3132015f1a367f00}{Localization\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the localization code. \end{DoxyCompactList}\item 
+string \hyperlink{class_tile_type_afb617b11992631ba7862acacbd5daee2}{Unlocalized\+Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the localized description. \end{DoxyCompactList}\item 
+Dictionary$<$ string, \hyperlink{class_project_porcupine_1_1_order_actions_1_1_order_action}{Order\+Action} $>$ \hyperlink{class_tile_type_af41afc0dfba859d0a1a1449c95579d04}{Order\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The order action to create tile\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Tile\+Type.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_type_abbcdc00951e1510c63f38613c9d63f59}\label{class_tile_type_abbcdc00951e1510c63f38613c9d63f59}} 
+\index{Tile\+Type@{Tile\+Type}!Tile\+Type@{Tile\+Type}}
+\index{Tile\+Type@{Tile\+Type}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Tile\+Type()}{TileType()}}
+{\footnotesize\ttfamily Tile\+Type.\+Tile\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_tile_type}{Tile\+Type} class. 
+
+
+
+Definition at line 22 of file Tile\+Type.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_type_ac981ce0a7c419814bcafdafba670d117}\label{class_tile_type_ac981ce0a7c419814bcafdafba670d117}} 
+\index{Tile\+Type@{Tile\+Type}!Can\+Build\+Here@{Can\+Build\+Here}}
+\index{Can\+Build\+Here@{Can\+Build\+Here}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Can\+Build\+Here()}{CanBuildHere()}}
+{\footnotesize\ttfamily bool Tile\+Type.\+Can\+Build\+Here (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Determines whether this tile type is allowed to be built on the given tile. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the ile type is allowed to be built on the given tile; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The tile to build on.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a64fc9bec84444700962a0e7658a205fa}\label{class_tile_type_a64fc9bec84444700962a0e7658a205fa}} 
+\index{Tile\+Type@{Tile\+Type}!Equals@{Equals}}
+\index{Equals@{Equals}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Tile\+Type.\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_ac39e4bed164069c9dbb5ce5d630bf11a}\label{class_tile_type_ac39e4bed164069c9dbb5ce5d630bf11a}} 
+\index{Tile\+Type@{Tile\+Type}!Equals@{Equals}}
+\index{Equals@{Equals}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override bool Tile\+Type.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 114 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a29b7914ec11c89facbca91e69b8a2420}\label{class_tile_type_a29b7914ec11c89facbca91e69b8a2420}} 
+\index{Tile\+Type@{Tile\+Type}!Get\+Hash\+Code@{Get\+Hash\+Code}}
+\index{Get\+Hash\+Code@{Get\+Hash\+Code}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Get\+Hash\+Code()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Tile\+Type.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a9385c11a23951c3fd8d357631be69b7e}\label{class_tile_type_a9385c11a23951c3fd8d357631be69b7e}} 
+\index{Tile\+Type@{Tile\+Type}!Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}}
+\index{Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Get\+Order\+Action$<$ T $>$()}{GetOrderAction< T >()}}
+{\footnotesize\ttfamily T Tile\+Type.\+Get\+Order\+Action$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Order\+Action}]\end{description}
+\end{Desc}
+
+
+Definition at line 129 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a9f34d34dd04b6ff5b6141db70f8e0c48}\label{class_tile_type_a9f34d34dd04b6ff5b6141db70f8e0c48}} 
+\index{Tile\+Type@{Tile\+Type}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Tile\+Type.\+operator!= (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{left,  }\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 104 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a626a9795ec9334cd621342faab6fa6e4}\label{class_tile_type_a626a9795ec9334cd621342faab6fa6e4}} 
+\index{Tile\+Type@{Tile\+Type}!operator==@{operator==}}
+\index{operator==@{operator==}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Tile\+Type.\+operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{left,  }\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 99 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_ae39d2b8e69a19ad1aedcd8ad9ab19727}\label{class_tile_type_ae39d2b8e69a19ad1aedcd8ad9ab19727}} 
+\index{Tile\+Type@{Tile\+Type}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Tile\+Type.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{parent\+Reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Reader} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 168 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_ab6b89688d93a7e3b1cb18be3bbbf0b82}\label{class_tile_type_ab6b89688d93a7e3b1cb18be3bbbf0b82}} 
+\index{Tile\+Type@{Tile\+Type}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Tile\+Type.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file Tile\+Type.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_tile_type_a7d008dccbb7ecaf0f12acae8f7989068}\label{class_tile_type_a7d008dccbb7ecaf0f12acae8f7989068}} 
+\index{Tile\+Type@{Tile\+Type}!Base\+Movement\+Cost@{Base\+Movement\+Cost}}
+\index{Base\+Movement\+Cost@{Base\+Movement\+Cost}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Base\+Movement\+Cost}{BaseMovementCost}}
+{\footnotesize\ttfamily float Tile\+Type.\+Base\+Movement\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the base movement cost. 
+
+The base movement cost.
+
+Definition at line 56 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a4a0ffcd58093d3a5c9b085f9a69707f7}\label{class_tile_type_a4a0ffcd58093d3a5c9b085f9a69707f7}} 
+\index{Tile\+Type@{Tile\+Type}!Can\+Build\+Here\+Lua@{Can\+Build\+Here\+Lua}}
+\index{Can\+Build\+Here\+Lua@{Can\+Build\+Here\+Lua}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Can\+Build\+Here\+Lua}{CanBuildHereLua}}
+{\footnotesize\ttfamily string Tile\+Type.\+Can\+Build\+Here\+Lua\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the lua function that can be called to determine if this instance can build here lua. 
+
+The name of the lua function.
+
+Definition at line 80 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a60e6955dc3faf61db0a2fa8426499b92}\label{class_tile_type_a60e6955dc3faf61db0a2fa8426499b92}} 
+\index{Tile\+Type@{Tile\+Type}!Empty@{Empty}}
+\index{Empty@{Empty}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Empty}{Empty}}
+{\footnotesize\ttfamily \hyperlink{class_tile_type}{Tile\+Type} Tile\+Type.\+Empty\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the empty tile type prototype. 
+
+The empty tile type.
+
+Definition at line 33 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a340e5076e637c0ef7ff1b11ac4cf04fd}\label{class_tile_type_a340e5076e637c0ef7ff1b11ac4cf04fd}} 
+\index{Tile\+Type@{Tile\+Type}!Floor@{Floor}}
+\index{Floor@{Floor}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Floor}{Floor}}
+{\footnotesize\ttfamily \hyperlink{class_tile_type}{Tile\+Type} Tile\+Type.\+Floor\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the floor tile type prototype. 
+
+The floor tile type.
+
+Definition at line 42 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_af93d2a77c5ac943fe763b8e0dfed6360}\label{class_tile_type_af93d2a77c5ac943fe763b8e0dfed6360}} 
+\index{Tile\+Type@{Tile\+Type}!Links\+To\+Neighbours@{Links\+To\+Neighbours}}
+\index{Links\+To\+Neighbours@{Links\+To\+Neighbours}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Links\+To\+Neighbours}{LinksToNeighbours}}
+{\footnotesize\ttfamily bool Tile\+Type.\+Links\+To\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this \hyperlink{class_tile_type}{Tile\+Type} links to neighbours. 
+
+{\ttfamily true} if links to neighbours; otherwise, {\ttfamily false}.
+
+Definition at line 74 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_aec98b27159318d4f3132015f1a367f00}\label{class_tile_type_aec98b27159318d4f3132015f1a367f00}} 
+\index{Tile\+Type@{Tile\+Type}!Localization\+Code@{Localization\+Code}}
+\index{Localization\+Code@{Localization\+Code}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Localization\+Code}{LocalizationCode}}
+{\footnotesize\ttfamily string Tile\+Type.\+Localization\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the localization code. 
+
+The localization code.
+
+Definition at line 86 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_af41afc0dfba859d0a1a1449c95579d04}\label{class_tile_type_af41afc0dfba859d0a1a1449c95579d04}} 
+\index{Tile\+Type@{Tile\+Type}!Order\+Actions@{Order\+Actions}}
+\index{Order\+Actions@{Order\+Actions}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Order\+Actions}{OrderActions}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{class_project_porcupine_1_1_order_actions_1_1_order_action}{Order\+Action}$>$ Tile\+Type.\+Order\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The order action to create tile\+Type. 
+
+
+
+Definition at line 97 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a4325bfa21ffacf67fa1ead7b0394abe7}\label{class_tile_type_a4325bfa21ffacf67fa1ead7b0394abe7}} 
+\index{Tile\+Type@{Tile\+Type}!Pathfinding\+Modifier@{Pathfinding\+Modifier}}
+\index{Pathfinding\+Modifier@{Pathfinding\+Modifier}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Pathfinding\+Modifier}{PathfindingModifier}}
+{\footnotesize\ttfamily float Tile\+Type.\+Pathfinding\+Modifier\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets or sets the \hyperlink{class_tile_type}{Tile\+Type}\textquotesingle{}s pathfinding modifier which is added into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. 
+
+The pathfinding modifier.
+
+Definition at line 68 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_a51128d6ebf05eb04f7187ca86b181846}\label{class_tile_type_a51128d6ebf05eb04f7187ca86b181846}} 
+\index{Tile\+Type@{Tile\+Type}!Pathfinding\+Weight@{Pathfinding\+Weight}}
+\index{Pathfinding\+Weight@{Pathfinding\+Weight}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Pathfinding\+Weight}{PathfindingWeight}}
+{\footnotesize\ttfamily float Tile\+Type.\+Pathfinding\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets or sets the \hyperlink{class_tile_type}{Tile\+Type}\textquotesingle{}s pathfinding weight which is multiplied into the \hyperlink{class_tile}{Tile}\textquotesingle{}s final Pathfinding\+Cost. 
+
+The pathfinding weight.
+
+Definition at line 62 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_ade3d6ab90410efe24493eed09f5a8d21}\label{class_tile_type_ade3d6ab90410efe24493eed09f5a8d21}} 
+\index{Tile\+Type@{Tile\+Type}!Type@{Type}}
+\index{Type@{Type}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Tile\+Type.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Unique \hyperlink{class_tile_type}{Tile\+Type} identifier. 
+
+The tile type.
+
+Definition at line 50 of file Tile\+Type.\+cs.
+
+\mbox{\Hypertarget{class_tile_type_afb617b11992631ba7862acacbd5daee2}\label{class_tile_type_afb617b11992631ba7862acacbd5daee2}} 
+\index{Tile\+Type@{Tile\+Type}!Unlocalized\+Description@{Unlocalized\+Description}}
+\index{Unlocalized\+Description@{Unlocalized\+Description}!Tile\+Type@{Tile\+Type}}
+\subsubsection{\texorpdfstring{Unlocalized\+Description}{UnlocalizedDescription}}
+{\footnotesize\ttfamily string Tile\+Type.\+Unlocalized\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the localized description. 
+
+The localized description.
+
+Definition at line 92 of file Tile\+Type.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_tile_type_8cs}{Tile\+Type.\+cs}\end{DoxyCompactItemize}

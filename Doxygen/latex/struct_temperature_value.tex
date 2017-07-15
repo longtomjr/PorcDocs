@@ -1,0 +1,252 @@
+\hypertarget{struct_temperature_value}{}\section{Temperature\+Value Struct Reference}
+\label{struct_temperature_value}\index{Temperature\+Value@{Temperature\+Value}}
+
+
+Holds temperature data in Kelvin but can be accessed in celsius, fahrenheit, and rankine.  
+
+
+Inheritance diagram for Temperature\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_temperature_value}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_temperature_value_a0c5d1613d2629789708449388230df00}{Temperature\+Value} (float temperature\+In\+Kelvin)
+\begin{DoxyCompactList}\small\item\em Create from Kelvin units. \end{DoxyCompactList}\item 
+override string \hyperlink{struct_temperature_value_afd6eeef5d9c43b759e6a6439ddc855aa}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string of the current temperature in format\+: K\+: x, C\+: C(x), F\+: F(x), R\+: R(x). Where C(x)/F(x)/R(x) mean the celsius/farenheit/rankine function/conversion of x. \end{DoxyCompactList}\item 
+string \hyperlink{struct_temperature_value_a2ef953e39514eea9cc65261393484d68}{To\+String} (string format)
+\begin{DoxyCompactList}\small\item\em Returns a string formatted to the format supplied. \end{DoxyCompactList}\item 
+string \hyperlink{struct_temperature_value_a69b048929bb1c0623170b623e9b1f052}{To\+String} (string format, I\+Format\+Provider format\+Provider)
+\begin{DoxyCompactList}\small\item\em Returns a string formatted to the format supplied. Also includes a format provider for country specific data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_temperature_value}{Temperature\+Value} \hyperlink{struct_temperature_value_a4281a7b4ca1196b7282db630909c810c}{Absolute\+Zero} = new \hyperlink{struct_temperature_value}{Temperature\+Value}(0f)
+\begin{DoxyCompactList}\small\item\em Absolute 0, or 0 K. \end{DoxyCompactList}\item 
+static \hyperlink{struct_temperature_value}{Temperature\+Value} \hyperlink{struct_temperature_value_af396a3d096a2b78c7669976a6bf38d16}{Celsius\+Zero} = new \hyperlink{struct_temperature_value}{Temperature\+Value}(273.\+15f)
+\begin{DoxyCompactList}\small\item\em The freezing point of water, or 0 C. \end{DoxyCompactList}\item 
+static \hyperlink{struct_temperature_value}{Temperature\+Value} \hyperlink{struct_temperature_value_a11cdb28b1792fe73588f3fd75b790c98}{Celsius100} = new \hyperlink{struct_temperature_value}{Temperature\+Value}(373.\+15f)
+\begin{DoxyCompactList}\small\item\em The boiling point of water, or 100 C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_temperature_value_a7ca4eabfab106e1cf112128ae7d63642}{In\+Kelvin}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current temperature in Kelvin. \end{DoxyCompactList}\item 
+float \hyperlink{struct_temperature_value_ab95968d40504a277284efa58d56feb40}{In\+Celsius}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current temperature in Celsius. \end{DoxyCompactList}\item 
+float \hyperlink{struct_temperature_value_aafb6e7497cc9fb13fc1be03ddb8514da}{In\+Fahrenheit}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current temperature in Farenheit. \end{DoxyCompactList}\item 
+float \hyperlink{struct_temperature_value_ad4ddd17eb8022c74e9e905364aa06566}{In\+Rankine}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current temperature in Rankine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds temperature data in Kelvin but can be accessed in celsius, fahrenheit, and rankine. 
+
+
+
+Definition at line 19 of file Temperature\+Unit.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_temperature_value_a0c5d1613d2629789708449388230df00}\label{struct_temperature_value_a0c5d1613d2629789708449388230df00}} 
+\index{Temperature\+Value@{Temperature\+Value}!Temperature\+Value@{Temperature\+Value}}
+\index{Temperature\+Value@{Temperature\+Value}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{Temperature\+Value()}{TemperatureValue()}}
+{\footnotesize\ttfamily Temperature\+Value.\+Temperature\+Value (\begin{DoxyParamCaption}\item[{float}]{temperature\+In\+Kelvin }\end{DoxyParamCaption})}
+
+
+
+Create from Kelvin units. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature\+In\+Kelvin} & Temperature in Kelvin. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Temperature\+Unit.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_temperature_value_afd6eeef5d9c43b759e6a6439ddc855aa}\label{struct_temperature_value_afd6eeef5d9c43b759e6a6439ddc855aa}} 
+\index{Temperature\+Value@{Temperature\+Value}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily override string Temperature\+Value.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a string of the current temperature in format\+: K\+: x, C\+: C(x), F\+: F(x), R\+: R(x). Where C(x)/F(x)/R(x) mean the celsius/farenheit/rankine function/conversion of x. 
+
+Good for debuggging. 
+
+\begin{DoxyReturn}{Returns}
+A string of every format. 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_a2ef953e39514eea9cc65261393484d68}\label{struct_temperature_value_a2ef953e39514eea9cc65261393484d68}} 
+\index{Temperature\+Value@{Temperature\+Value}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily string Temperature\+Value.\+To\+String (\begin{DoxyParamCaption}\item[{string}]{format }\end{DoxyParamCaption})}
+
+
+
+Returns a string formatted to the format supplied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & Format to format the string to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formmatted string. 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_a69b048929bb1c0623170b623e9b1f052}\label{struct_temperature_value_a69b048929bb1c0623170b623e9b1f052}} 
+\index{Temperature\+Value@{Temperature\+Value}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily string Temperature\+Value.\+To\+String (\begin{DoxyParamCaption}\item[{string}]{format,  }\item[{I\+Format\+Provider}]{format\+Provider }\end{DoxyParamCaption})}
+
+
+
+Returns a string formatted to the format supplied. Also includes a format provider for country specific data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & Format to format the string to. \\
+\hline
+{\em format\+Provider} & The format provider to use for globalization/localization of data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formmatted string. 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Temperature\+Unit.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_temperature_value_a4281a7b4ca1196b7282db630909c810c}\label{struct_temperature_value_a4281a7b4ca1196b7282db630909c810c}} 
+\index{Temperature\+Value@{Temperature\+Value}!Absolute\+Zero@{Absolute\+Zero}}
+\index{Absolute\+Zero@{Absolute\+Zero}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{Absolute\+Zero}{AbsoluteZero}}
+{\footnotesize\ttfamily \hyperlink{struct_temperature_value}{Temperature\+Value} Temperature\+Value.\+Absolute\+Zero = new \hyperlink{struct_temperature_value}{Temperature\+Value}(0f)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Absolute 0, or 0 K. 
+
+
+
+Definition at line 24 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_a11cdb28b1792fe73588f3fd75b790c98}\label{struct_temperature_value_a11cdb28b1792fe73588f3fd75b790c98}} 
+\index{Temperature\+Value@{Temperature\+Value}!Celsius100@{Celsius100}}
+\index{Celsius100@{Celsius100}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{Celsius100}{Celsius100}}
+{\footnotesize\ttfamily \hyperlink{struct_temperature_value}{Temperature\+Value} Temperature\+Value.\+Celsius100 = new \hyperlink{struct_temperature_value}{Temperature\+Value}(373.\+15f)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The boiling point of water, or 100 C. 
+
+
+
+Definition at line 34 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_af396a3d096a2b78c7669976a6bf38d16}\label{struct_temperature_value_af396a3d096a2b78c7669976a6bf38d16}} 
+\index{Temperature\+Value@{Temperature\+Value}!Celsius\+Zero@{Celsius\+Zero}}
+\index{Celsius\+Zero@{Celsius\+Zero}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{Celsius\+Zero}{CelsiusZero}}
+{\footnotesize\ttfamily \hyperlink{struct_temperature_value}{Temperature\+Value} Temperature\+Value.\+Celsius\+Zero = new \hyperlink{struct_temperature_value}{Temperature\+Value}(273.\+15f)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The freezing point of water, or 0 C. 
+
+
+
+Definition at line 29 of file Temperature\+Unit.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{struct_temperature_value_ab95968d40504a277284efa58d56feb40}\label{struct_temperature_value_ab95968d40504a277284efa58d56feb40}} 
+\index{Temperature\+Value@{Temperature\+Value}!In\+Celsius@{In\+Celsius}}
+\index{In\+Celsius@{In\+Celsius}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{In\+Celsius}{InCelsius}}
+{\footnotesize\ttfamily float Temperature\+Value.\+In\+Celsius\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current temperature in Celsius. 
+
+
+
+Definition at line 54 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_aafb6e7497cc9fb13fc1be03ddb8514da}\label{struct_temperature_value_aafb6e7497cc9fb13fc1be03ddb8514da}} 
+\index{Temperature\+Value@{Temperature\+Value}!In\+Fahrenheit@{In\+Fahrenheit}}
+\index{In\+Fahrenheit@{In\+Fahrenheit}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{In\+Fahrenheit}{InFahrenheit}}
+{\footnotesize\ttfamily float Temperature\+Value.\+In\+Fahrenheit\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current temperature in Farenheit. 
+
+
+
+Definition at line 65 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_a7ca4eabfab106e1cf112128ae7d63642}\label{struct_temperature_value_a7ca4eabfab106e1cf112128ae7d63642}} 
+\index{Temperature\+Value@{Temperature\+Value}!In\+Kelvin@{In\+Kelvin}}
+\index{In\+Kelvin@{In\+Kelvin}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{In\+Kelvin}{InKelvin}}
+{\footnotesize\ttfamily float Temperature\+Value.\+In\+Kelvin\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current temperature in Kelvin. 
+
+
+
+Definition at line 48 of file Temperature\+Unit.\+cs.
+
+\mbox{\Hypertarget{struct_temperature_value_ad4ddd17eb8022c74e9e905364aa06566}\label{struct_temperature_value_ad4ddd17eb8022c74e9e905364aa06566}} 
+\index{Temperature\+Value@{Temperature\+Value}!In\+Rankine@{In\+Rankine}}
+\index{In\+Rankine@{In\+Rankine}!Temperature\+Value@{Temperature\+Value}}
+\subsubsection{\texorpdfstring{In\+Rankine}{InRankine}}
+{\footnotesize\ttfamily float Temperature\+Value.\+In\+Rankine\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current temperature in Rankine. 
+
+
+
+Definition at line 76 of file Temperature\+Unit.\+cs.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_temperature_unit_8cs}{Temperature\+Unit.\+cs}\end{DoxyCompactItemize}

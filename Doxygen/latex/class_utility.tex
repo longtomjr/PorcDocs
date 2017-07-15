@@ -1,0 +1,734 @@
+\hypertarget{class_utility}{}\section{Utility Class Reference}
+\label{class_utility}\index{Utility@{Utility}}
+
+
+Installed\+Objects are things like walls, doors, and utility (e.\+g. a sofa).  
+
+
+Inheritance diagram for Utility\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{class_utility}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_utility_a71a0ed20d9aac655319458fcb2012518}{Utility} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_utility}{Utility} class. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_ae8719e73fda166b35ddec2b93a6a336f}{Get\+Sprite\+Name} ()
+\begin{DoxyCompactList}\small\item\em Check if the utility has a function to determine the sprite name and calls that function. \end{DoxyCompactList}\item 
+T \hyperlink{class_utility_a9b4b77e3b110b715f56d5a06824f691a}{Get\+Order\+Action$<$ T $>$} ()
+\item 
+void \hyperlink{class_utility_a4ad3d6bda3c087221a7ec2a5a309d79e}{Read\+Xml\+Prototype} (Xml\+Reader reader\+Parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype utility from X\+ML. \end{DoxyCompactList}\item 
+void \hyperlink{class_utility_a7c02fda89553fa462d1cbaa78803ece3}{Read\+Xml\+Params} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the X\+ML for parameters that this utility has and assign it to the utility. \end{DoxyCompactList}\item 
+void \hyperlink{class_utility_a47849b1b0e692c3736df84a0944d8312}{Set\+Deconstruct\+Job} ()
+\begin{DoxyCompactList}\small\item\em Sets up a job to deconstruct the utility. \end{DoxyCompactList}\item 
+void \hyperlink{class_utility_a30304ee98c9e7f29c66584cbd8e393c0}{Deconstruct} ()
+\begin{DoxyCompactList}\small\item\em Deconstructs the utility. \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_ac16027b44fefca96cea2491461a7d36c}{Has\+Type\+Tag} (string type\+Tag)
+\begin{DoxyCompactList}\small\item\em Checks whether the utility has a certain tag. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_utility_afd1291684c20135877fc55e4bb261199}{Get\+Type\+Tags} ()
+\begin{DoxyCompactList}\small\item\em Gets the type tags. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a3c5c2a1968dfcf083e9b1fa9b843184d}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns Localization\+Code name for the utility. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a1571ffbfff4e7b254842e7078e5725e0}{Get\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the Unlocalized\+Description of the utility. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_utility_a7b5e30bb3065f9edb004d385019d9c5b}{Get\+Additional\+Info} ()
+\item 
+string \hyperlink{class_utility_a5689ffa1e6e2d4df20a92fd0a9f24309}{Get\+Job\+Description} ()
+\begin{DoxyCompactList}\small\item\em Returns the description of the job linked to the utility. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_utility_a579c99983d713ac33be085976ef424df}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\begin{DoxyCompactList}\small\item\em Gets the Context Menu Actions. \end{DoxyCompactList}\item 
+\hyperlink{class_utility}{Utility} \hyperlink{class_utility_a54de483d7822530b229a0456780fcc6f}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Make a copy of the current utility. Sub-\/classes should override this \hyperlink{class_utility_a54de483d7822530b229a0456780fcc6f}{Clone()} if a different (sub-\/classed) copy constructor should be run. \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_a1b84a54773d5d229afc911c4f1bdb66d}{Is\+Valid\+Position} (\hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Check if the position of the utility is valid or not. This is called when placing the utility. T\+O\+DO \+: Add some L\+UA special requierments. \end{DoxyCompactList}\item 
+void \hyperlink{class_utility_aef8d5581e49a8841dbd15f9d0f6b6c3c}{Update\+Grid} (\hyperlink{class_utility}{Utility} utility\+To\+Update, \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} new\+Grid=null)
+\begin{DoxyCompactList}\small\item\em Updates the grids of this utility sharing the grids along the network of connected utilities. \end{DoxyCompactList}\item 
+object \hyperlink{class_utility_a958b42276dab1f260988a4104a948fd6}{To\+J\+Son} ()
+\item 
+void \hyperlink{class_utility_aaf08054a8528db9736f7d8dcdc78105e}{From\+Json} (J\+Token utility\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_utility}{Utility} \hyperlink{class_utility_a6eac11c367b9574de78f3aacb159513a}{Place\+Instance} (\hyperlink{class_utility}{Utility} proto, \hyperlink{class_tile}{Tile} tile, bool skip\+Grid\+Update=false)
+\begin{DoxyCompactList}\small\item\em Used to place utility in a certain position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_utility_a8ca5cdd9830db40c5a4d424eb65c31a5}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the width of the utility. \end{DoxyCompactList}\item 
+int \hyperlink{class_utility_af3f8e91c0b54c05fa5e0306af9ab47d3}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the height of the utility. \end{DoxyCompactList}\item 
+Color \hyperlink{class_utility_ab87189fd3ca0e6d448cabfe254ded0cb}{Tint}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tint used to change the color of the utility. \end{DoxyCompactList}\item 
+\hyperlink{class_event_actions}{Event\+Actions} \hyperlink{class_utility_a186a1d1f22ab01e15ac65aff6961eb64}{Event\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Event\+Action for the current utility. These actions are called when an event is called. They get passed the utility they belong to, plus a delta\+Time (which defaults to 0). \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_a51c3ffb57defa6be90a9d12cbf43902c}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the utility is selected by the player or not. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_utility_a4c2701b68c0b9edf73a2ebf30507cd5f}{Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the B\+A\+SE tile of the utility. (Large objects can span over multiple tiles). This should be R\+E\+N\+A\+M\+ED (possibly to Base\+Tile). \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a482c0a04d918813023914288701526f6}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the string that defines the type of object the utility is. This gets queried by the visual system to know what sprite to render for this utility. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a6f65ac813baf71fa3dd074cdc5f0dac9}{Localization\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the code used for Localization of the utility. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a35e4fbf70d953b969e2637bba1256254}{Unlocalized\+Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the description of the utility. This is used by localization. \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_a296d48306922e1bf7a859171849ea7da}{Links\+To\+Neighbour}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this utility is next to any utility of the same type. This is used to check what sprite to use if utility is next to each other. \end{DoxyCompactList}\item 
+string \hyperlink{class_utility_a6594cc21d854b3a0962bf10a12b1306b}{Drag\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the type of dragging that is used to build multiples of this utility. e.\+g walls. \end{DoxyCompactList}\item 
+\hyperlink{class_parameter}{Parameter} \hyperlink{class_utility_a658da302287ff04bf872426e46d6eac6}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the parameters that is tied to the utility. \end{DoxyCompactList}\item 
+\hyperlink{class_buildable_jobs}{Buildable\+Jobs} \hyperlink{class_utility_afe0e0b52870147d9e0a84349972145c8}{Jobs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a component that handles the jobs linked to the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_utility_a4162dd92a991cc994685f53ec3f2ddb4}{Is\+Being\+Destroyed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Details if this is tasked for destruction. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} \hyperlink{class_utility_a291d46edb60ed6838bd5c6cd7100a8ee}{Grid}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the grid used by this utility. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_utility}{Utility} $>$ \hyperlink{class_utility_ae0af28441e3bed8aa3529c9b5a3836cc}{Changed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the utility has been changed. This is means that any change (parameters, job state etc) to the utility will trigger this. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_utility}{Utility} $>$ \hyperlink{class_utility_ab1e23864eb68be882ac5acc52d26552a}{Removed}
+\begin{DoxyCompactList}\small\item\em This event will trigger when the utility has been removed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Installed\+Objects are things like walls, doors, and utility (e.\+g. a sofa). 
+
+
+
+Definition at line 25 of file Utility.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_utility_a71a0ed20d9aac655319458fcb2012518}\label{class_utility_a71a0ed20d9aac655319458fcb2012518}} 
+\index{Utility@{Utility}!Utility@{Utility}}
+\index{Utility@{Utility}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}}
+{\footnotesize\ttfamily Utility.\+Utility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_utility}{Utility} class. 
+
+
+
+Definition at line 49 of file Utility.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_utility_a54de483d7822530b229a0456780fcc6f}\label{class_utility_a54de483d7822530b229a0456780fcc6f}} 
+\index{Utility@{Utility}!Clone@{Clone}}
+\index{Clone@{Clone}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_utility}{Utility} Utility.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Make a copy of the current utility. Sub-\/classes should override this \hyperlink{class_utility_a54de483d7822530b229a0456780fcc6f}{Clone()} if a different (sub-\/classed) copy constructor should be run. 
+
+\begin{DoxyReturn}{Returns}
+A clone of the utility.
+\end{DoxyReturn}
+
+
+Definition at line 562 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a30304ee98c9e7f29c66584cbd8e393c0}\label{class_utility_a30304ee98c9e7f29c66584cbd8e393c0}} 
+\index{Utility@{Utility}!Deconstruct@{Deconstruct}}
+\index{Deconstruct@{Deconstruct}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Deconstruct()}{Deconstruct()}}
+{\footnotesize\ttfamily void Utility.\+Deconstruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructs the utility. 
+
+
+
+Definition at line 405 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_aaf08054a8528db9736f7d8dcdc78105e}\label{class_utility_aaf08054a8528db9736f7d8dcdc78105e}} 
+\index{Utility@{Utility}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Utility.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{utility\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 678 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a7b5e30bb3065f9edb004d385019d9c5b}\label{class_utility_a7b5e30bb3065f9edb004d385019d9c5b}} 
+\index{Utility@{Utility}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Utility.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 496 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a579c99983d713ac33be085976ef424df}\label{class_utility_a579c99983d713ac33be085976ef424df}} 
+\index{Utility@{Utility}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Utility.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Gets the Context Menu Actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context\+Menu} & The context menu to check for actions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Context menu actions.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 515 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a1571ffbfff4e7b254842e7078e5725e0}\label{class_utility_a1571ffbfff4e7b254842e7078e5725e0}} 
+\index{Utility@{Utility}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Utility.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Unlocalized\+Description of the utility. 
+
+\begin{DoxyReturn}{Returns}
+Description of the utility.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 491 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a5689ffa1e6e2d4df20a92fd0a9f24309}\label{class_utility_a5689ffa1e6e2d4df20a92fd0a9f24309}} 
+\index{Utility@{Utility}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Utility.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the description of the job linked to the utility. N\+OT I\+N\+M\+P\+L\+E\+M\+E\+N\+T\+ED. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_job}{Job} description of the job linked to the utility.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 505 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a3c5c2a1968dfcf083e9b1fa9b843184d}\label{class_utility_a3c5c2a1968dfcf083e9b1fa9b843184d}} 
+\index{Utility@{Utility}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Utility.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns Localization\+Code name for the utility. 
+
+\begin{DoxyReturn}{Returns}
+Localization\+Code for the name of the utility.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 482 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a9b4b77e3b110b715f56d5a06824f691a}\label{class_utility_a9b4b77e3b110b715f56d5a06824f691a}} 
+\index{Utility@{Utility}!Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}}
+\index{Get\+Order\+Action$<$ T $>$@{Get\+Order\+Action$<$ T $>$}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Order\+Action$<$ T $>$()}{GetOrderAction< T >()}}
+{\footnotesize\ttfamily T Utility.\+Get\+Order\+Action$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Order\+Action}]\end{description}
+\end{Desc}
+
+
+Definition at line 289 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_ae8719e73fda166b35ddec2b93a6a336f}\label{class_utility_ae8719e73fda166b35ddec2b93a6a336f}} 
+\index{Utility@{Utility}!Get\+Sprite\+Name@{Get\+Sprite\+Name}}
+\index{Get\+Sprite\+Name@{Get\+Sprite\+Name}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Name()}{GetSpriteName()}}
+{\footnotesize\ttfamily string Utility.\+Get\+Sprite\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the utility has a function to determine the sprite name and calls that function. 
+
+\begin{DoxyReturn}{Returns}
+Name of the sprite.
+\end{DoxyReturn}
+
+
+Definition at line 278 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_afd1291684c20135877fc55e4bb261199}\label{class_utility_afd1291684c20135877fc55e4bb261199}} 
+\index{Utility@{Utility}!Get\+Type\+Tags@{Get\+Type\+Tags}}
+\index{Get\+Type\+Tags@{Get\+Type\+Tags}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Get\+Type\+Tags()}{GetTypeTags()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Utility.\+Get\+Type\+Tags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the type tags. 
+
+\begin{DoxyReturn}{Returns}
+The type tags.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_buildable_ab1f899fc1d9ece21b46612d6119f744d}{I\+Buildable}.
+
+
+
+Definition at line 473 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_ac16027b44fefca96cea2491461a7d36c}\label{class_utility_ac16027b44fefca96cea2491461a7d36c}} 
+\index{Utility@{Utility}!Has\+Type\+Tag@{Has\+Type\+Tag}}
+\index{Has\+Type\+Tag@{Has\+Type\+Tag}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Has\+Type\+Tag()}{HasTypeTag()}}
+{\footnotesize\ttfamily bool Utility.\+Has\+Type\+Tag (\begin{DoxyParamCaption}\item[{string}]{type\+Tag }\end{DoxyParamCaption})}
+
+
+
+Checks whether the utility has a certain tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Tag} & Tag to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if utility has specified tag.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_i_buildable_a4569a897fc2ac7c0ecfaddc518fa346f}{I\+Buildable}.
+
+
+
+Definition at line 464 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a1b84a54773d5d229afc911c4f1bdb66d}\label{class_utility_a1b84a54773d5d229afc911c4f1bdb66d}} 
+\index{Utility@{Utility}!Is\+Valid\+Position@{Is\+Valid\+Position}}
+\index{Is\+Valid\+Position@{Is\+Valid\+Position}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Is\+Valid\+Position()}{IsValidPosition()}}
+{\footnotesize\ttfamily bool Utility.\+Is\+Valid\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Check if the position of the utility is valid or not. This is called when placing the utility. T\+O\+DO \+: Add some L\+UA special requierments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The base tile.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the tile is valid for the placement of the utility.
+\end{DoxyReturn}
+
+
+Definition at line 574 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a6eac11c367b9574de78f3aacb159513a}\label{class_utility_a6eac11c367b9574de78f3aacb159513a}} 
+\index{Utility@{Utility}!Place\+Instance@{Place\+Instance}}
+\index{Place\+Instance@{Place\+Instance}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Place\+Instance()}{PlaceInstance()}}
+{\footnotesize\ttfamily static \hyperlink{class_utility}{Utility} Utility.\+Place\+Instance (\begin{DoxyParamCaption}\item[{\hyperlink{class_utility}{Utility}}]{proto,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{skip\+Grid\+Update = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Used to place utility in a certain position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & The prototype utility to place.\\
+\hline
+{\em tile} & The base tile to place the utility on, The tile will be the bottom left corner of the utility (to check).\\
+\hline
+{\em skip\+Grid\+Update} & If true, the grid won\textquotesingle{}t be updated from neighboring Utilities, Update\+Grid must be called on at least one utility connected to this utility for them to network properly.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_utility}{Utility} object.
+\end{DoxyReturn}
+
+
+Definition at line 219 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a7c02fda89553fa462d1cbaa78803ece3}\label{class_utility_a7c02fda89553fa462d1cbaa78803ece3}} 
+\index{Utility@{Utility}!Read\+Xml\+Params@{Read\+Xml\+Params}}
+\index{Read\+Xml\+Params@{Read\+Xml\+Params}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Params()}{ReadXmlParams()}}
+{\footnotesize\ttfamily void Utility.\+Read\+Xml\+Params (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the X\+ML for parameters that this utility has and assign it to the utility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The reader to read the parameters from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 367 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a4ad3d6bda3c087221a7ec2a5a309d79e}\label{class_utility_a4ad3d6bda3c087221a7ec2a5a309d79e}} 
+\index{Utility@{Utility}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Utility.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader\+Parent }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype utility from X\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 306 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a47849b1b0e692c3736df84a0944d8312}\label{class_utility_a47849b1b0e692c3736df84a0944d8312}} 
+\index{Utility@{Utility}!Set\+Deconstruct\+Job@{Set\+Deconstruct\+Job}}
+\index{Set\+Deconstruct\+Job@{Set\+Deconstruct\+Job}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Set\+Deconstruct\+Job()}{SetDeconstructJob()}}
+{\footnotesize\ttfamily void Utility.\+Set\+Deconstruct\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up a job to deconstruct the utility. 
+
+
+
+Definition at line 377 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a958b42276dab1f260988a4104a948fd6}\label{class_utility_a958b42276dab1f260988a4104a948fd6}} 
+\index{Utility@{Utility}!To\+J\+Son@{To\+J\+Son}}
+\index{To\+J\+Son@{To\+J\+Son}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{To\+J\+Son()}{ToJSon()}}
+{\footnotesize\ttfamily object Utility.\+To\+J\+Son (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 663 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_aef8d5581e49a8841dbd15f9d0f6b6c3c}\label{class_utility_aef8d5581e49a8841dbd15f9d0f6b6c3c}} 
+\index{Utility@{Utility}!Update\+Grid@{Update\+Grid}}
+\index{Update\+Grid@{Update\+Grid}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Update\+Grid()}{UpdateGrid()}}
+{\footnotesize\ttfamily void Utility.\+Update\+Grid (\begin{DoxyParamCaption}\item[{\hyperlink{class_utility}{Utility}}]{utility\+To\+Update,  }\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{new\+Grid = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Updates the grids of this utility sharing the grids along the network of connected utilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+To\+Update} & \hyperlink{class_utility}{Utility} to update.\\
+\hline
+{\em new\+Grid} & If not null this will force neighboring utilities to use the specified Instance of Grid.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 598 of file Utility.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_utility_a6594cc21d854b3a0962bf10a12b1306b}\label{class_utility_a6594cc21d854b3a0962bf10a12b1306b}} 
+\index{Utility@{Utility}!Drag\+Type@{Drag\+Type}}
+\index{Drag\+Type@{Drag\+Type}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Drag\+Type}{DragType}}
+{\footnotesize\ttfamily string Utility.\+Drag\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the type of dragging that is used to build multiples of this utility. e.\+g walls. 
+
+
+
+Definition at line 186 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a186a1d1f22ab01e15ac65aff6961eb64}\label{class_utility_a186a1d1f22ab01e15ac65aff6961eb64}} 
+\index{Utility@{Utility}!Event\+Actions@{Event\+Actions}}
+\index{Event\+Actions@{Event\+Actions}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Event\+Actions}{EventActions}}
+{\footnotesize\ttfamily \hyperlink{class_event_actions}{Event\+Actions} Utility.\+Event\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Event\+Action for the current utility. These actions are called when an event is called. They get passed the utility they belong to, plus a delta\+Time (which defaults to 0). 
+
+The event actions that is called on update.
+
+Definition at line 140 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a291d46edb60ed6838bd5c6cd7100a8ee}\label{class_utility_a291d46edb60ed6838bd5c6cd7100a8ee}} 
+\index{Utility@{Utility}!Grid@{Grid}}
+\index{Grid@{Grid}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Grid}{Grid}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} Utility.\+Grid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the grid used by this utility. 
+
+The grid used by this utility.
+
+Definition at line 209 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_af3f8e91c0b54c05fa5e0306af9ab47d3}\label{class_utility_af3f8e91c0b54c05fa5e0306af9ab47d3}} 
+\index{Utility@{Utility}!Height@{Height}}
+\index{Height@{Height}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Utility.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the height of the utility. 
+
+
+
+Definition at line 124 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a4162dd92a991cc994685f53ec3f2ddb4}\label{class_utility_a4162dd92a991cc994685f53ec3f2ddb4}} 
+\index{Utility@{Utility}!Is\+Being\+Destroyed@{Is\+Being\+Destroyed}}
+\index{Is\+Being\+Destroyed@{Is\+Being\+Destroyed}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Is\+Being\+Destroyed}{IsBeingDestroyed}}
+{\footnotesize\ttfamily bool Utility.\+Is\+Being\+Destroyed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Details if this is tasked for destruction. 
+
+
+
+Definition at line 203 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a51c3ffb57defa6be90a9d12cbf43902c}\label{class_utility_a51c3ffb57defa6be90a9d12cbf43902c}} 
+\index{Utility@{Utility}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Utility.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether the utility is selected by the player or not. 
+
+Whether the utility is selected or not.
+
+Definition at line 146 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_afe0e0b52870147d9e0a84349972145c8}\label{class_utility_afe0e0b52870147d9e0a84349972145c8}} 
+\index{Utility@{Utility}!Jobs@{Jobs}}
+\index{Jobs@{Jobs}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Jobs}{Jobs}}
+{\footnotesize\ttfamily \hyperlink{class_buildable_jobs}{Buildable\+Jobs} Utility.\+Jobs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a component that handles the jobs linked to the furniture. 
+
+
+
+Definition at line 198 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a296d48306922e1bf7a859171849ea7da}\label{class_utility_a296d48306922e1bf7a859171849ea7da}} 
+\index{Utility@{Utility}!Links\+To\+Neighbour@{Links\+To\+Neighbour}}
+\index{Links\+To\+Neighbour@{Links\+To\+Neighbour}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Links\+To\+Neighbour}{LinksToNeighbour}}
+{\footnotesize\ttfamily bool Utility.\+Links\+To\+Neighbour\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this utility is next to any utility of the same type. This is used to check what sprite to use if utility is next to each other. 
+
+
+
+Definition at line 177 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a6f65ac813baf71fa3dd074cdc5f0dac9}\label{class_utility_a6f65ac813baf71fa3dd074cdc5f0dac9}} 
+\index{Utility@{Utility}!Localization\+Code@{Localization\+Code}}
+\index{Localization\+Code@{Localization\+Code}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Localization\+Code}{LocalizationCode}}
+{\footnotesize\ttfamily string Utility.\+Localization\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the code used for Localization of the utility. 
+
+
+
+Definition at line 165 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a658da302287ff04bf872426e46d6eac6}\label{class_utility_a658da302287ff04bf872426e46d6eac6}} 
+\index{Utility@{Utility}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter} Utility.\+Parameters\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets or sets the parameters that is tied to the utility. 
+
+
+
+Definition at line 193 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a4c2701b68c0b9edf73a2ebf30507cd5f}\label{class_utility_a4c2701b68c0b9edf73a2ebf30507cd5f}} 
+\index{Utility@{Utility}!Tile@{Tile}}
+\index{Tile@{Tile}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Tile}{Tile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Utility.\+Tile\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the B\+A\+SE tile of the utility. (Large objects can span over multiple tiles). This should be R\+E\+N\+A\+M\+ED (possibly to Base\+Tile). 
+
+The B\+A\+SE tile of the utility.
+
+Definition at line 153 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_ab87189fd3ca0e6d448cabfe254ded0cb}\label{class_utility_ab87189fd3ca0e6d448cabfe254ded0cb}} 
+\index{Utility@{Utility}!Tint@{Tint}}
+\index{Tint@{Tint}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Tint}{Tint}}
+{\footnotesize\ttfamily Color Utility.\+Tint\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the tint used to change the color of the utility. 
+
+The Color of the utility.
+
+Definition at line 132 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a482c0a04d918813023914288701526f6}\label{class_utility_a482c0a04d918813023914288701526f6}} 
+\index{Utility@{Utility}!Type@{Type}}
+\index{Type@{Type}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Utility.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the string that defines the type of object the utility is. This gets queried by the visual system to know what sprite to render for this utility. 
+
+The type of the utility.
+
+Definition at line 160 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a35e4fbf70d953b969e2637bba1256254}\label{class_utility_a35e4fbf70d953b969e2637bba1256254}} 
+\index{Utility@{Utility}!Unlocalized\+Description@{Unlocalized\+Description}}
+\index{Unlocalized\+Description@{Unlocalized\+Description}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Unlocalized\+Description}{UnlocalizedDescription}}
+{\footnotesize\ttfamily string Utility.\+Unlocalized\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the description of the utility. This is used by localization. 
+
+
+
+Definition at line 170 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_a8ca5cdd9830db40c5a4d424eb65c31a5}\label{class_utility_a8ca5cdd9830db40c5a4d424eb65c31a5}} 
+\index{Utility@{Utility}!Width@{Width}}
+\index{Width@{Width}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Utility.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the width of the utility. 
+
+
+
+Definition at line 116 of file Utility.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_utility_ae0af28441e3bed8aa3529c9b5a3836cc}\label{class_utility_ae0af28441e3bed8aa3529c9b5a3836cc}} 
+\index{Utility@{Utility}!Changed@{Changed}}
+\index{Changed@{Changed}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Changed}{Changed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_utility}{Utility}$>$ Utility.\+Changed}
+
+
+
+This event will trigger when the utility has been changed. This is means that any change (parameters, job state etc) to the utility will trigger this. 
+
+
+
+Definition at line 105 of file Utility.\+cs.
+
+\mbox{\Hypertarget{class_utility_ab1e23864eb68be882ac5acc52d26552a}\label{class_utility_ab1e23864eb68be882ac5acc52d26552a}} 
+\index{Utility@{Utility}!Removed@{Removed}}
+\index{Removed@{Removed}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Removed}{Removed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_utility}{Utility}$>$ Utility.\+Removed}
+
+
+
+This event will trigger when the utility has been removed. 
+
+
+
+Definition at line 110 of file Utility.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_utility_8cs}{Utility.\+cs}\end{DoxyCompactItemize}

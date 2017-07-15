@@ -1,0 +1,395 @@
+\hypertarget{class_ship}{}\section{Ship Class Reference}
+\label{class_ship}\index{Ship@{Ship}}
+Inheritance diagram for Ship\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ship}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ship_ad5e5b275a4936c74279a8efb7412cc2c}{Ship} ()
+\begin{DoxyCompactList}\small\item\em Constructs a blank prototype object of the \hyperlink{class_ship}{Ship} class. Only type-\/defning variables are initialised. Other variables are not safe to use. \end{DoxyCompactList}\item 
+\hyperlink{class_ship_a4cefe98d88c50eb364b5baec61e23b95}{Ship} (\hyperlink{class_ship_manager}{Ship\+Manager} ship\+Manager, \hyperlink{class_ship}{Ship} proto)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_ship}{Ship} from a prototype. All type-\/defining variables are copied over. The prototype and the instance share no references to objects. In-\/game changing variables are initialised to default values. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_a5c5ee984c2e67e8a771ad920ef513818}{Set\+Destination} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the destination to an arbitrary world space location. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_a59115e2eaadf1012769b415743f5e549}{Set\+Destination} (\hyperlink{class_furniture}{Furniture} goal\+Berth)
+\begin{DoxyCompactList}\small\item\em Sets the destination to a berth. Should not be called with null value. If cancelling intention to berth, use {\ttfamily ship.\+Berth = null} directly. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_a6fd507fb621f00ba01a76fa685cc0d66}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em If unwrapped, the ship does nothing. If wrapped it will move to its destination with a fixed speed of 5 tiles per seoond. If it reaches its destination it is removed if it an arbitrary position (assumed to be the edge of the map) or berth if it was heading to a berth. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_a56485e286ef7dcb757681217bcc796f5}{Unwrap\+At\+Berth} ()
+\begin{DoxyCompactList}\small\item\em Unwraps the ship into a collection of tiles according to the types defined in the tile and furniture arrays. Tiles are counted from the Berth, so this function should only be called when a destination berth is defined. Assumes that these tiles were empty before. The state of the ship is not changed. That is handled by \hyperlink{class_ship_manager}{Ship\+Manager}. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_ad0f53056aa94b27894bc9d8bb5601e16}{Wrap} ()
+\begin{DoxyCompactList}\small\item\em Wraps the ship by turning the affected tiles back into empty tiles. Tiles are counted from the Berth, so this function should only be called when a destination berth is defined. \end{DoxyCompactList}\item 
+void \hyperlink{class_ship_aa81fd20c93280bc0325cf0da26f14ca5}{Read\+Xml\+Prototype} (Xml\+Reader parent\+Reader)
+\begin{DoxyCompactList}\small\item\em Reads the xml definition for a \hyperlink{class_ship}{Ship} prototype. \end{DoxyCompactList}\item 
+bool \hyperlink{class_ship_a073f1568ef8d9ea7d04867b0b6ee4888}{Would\+Fit\+In\+Berth} (\hyperlink{class_furniture}{Furniture} berth)
+\begin{DoxyCompactList}\small\item\em Checks if there is enough room around the given berth for the ship to fit into. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_ship_a2248235d4add6f4f6b4aa2618a705372}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of the ship. All ships with the same type share their type-\/specific variables. \end{DoxyCompactList}\item 
+int \hyperlink{class_ship_a6c39fc4957664fabe750c64c057e2508}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The width of the ship in tiles when unwrapped. \end{DoxyCompactList}\item 
+int \hyperlink{class_ship_a5812d27ab513c99d41b7d232aa3bdd6d}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The height of the ship in tiles when unwrapped. \end{DoxyCompactList}\item 
+int \hyperlink{class_ship_a701af608a2094d00e59888170afcc3ce}{Berth\+PointX}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The X coordinate of the berth point. The berth point will overlap with the center of the berth furniture when the ship is berthed, so it will usually be outside the ship\textquotesingle{}s tile space. \end{DoxyCompactList}\item 
+int \hyperlink{class_ship_af57117a07b57f2b6764fd12e678f01ae}{Berth\+PointY}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Y coordinate of the berth point. The berth point will overlap with the center of the berth furniture when the ship is berthed, so it will usually be outside the ship\textquotesingle{}s tile space. \end{DoxyCompactList}\item 
+\hyperlink{_ship_8cs_a7fa5743d14bde173fc53b46363f52a92}{Berth\+Direction} \hyperlink{class_ship_a73af2744eb79135baee7ed389cc1b2c7}{Berth\+Direction}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The direction the ship is berthed in. This is one of the 4 cardinal directions. Keep in mind the ship will be positioned opposite to this direction. \end{DoxyCompactList}\item 
+\hyperlink{_ship_8cs_a5cc8179225e5abfa75feab8d8b8d13e7}{Ship\+State} \hyperlink{class_ship_a1d15ce4feda27f6f176eedfe576acfe9}{State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The state the ship is in. This is either W\+R\+A\+P\+P\+ED, meaning the ship is in its sprite form, or U\+N\+W\+R\+A\+P\+P\+ED, meaning it exists as a collection of tiles in the world. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_ship_a462c6c91f5e90055823264eb4f451be8}{Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The world position of the ship. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_ship_a799006d584ee78be4656c149a60babde}{Destination}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The destination in world space of the ship. \end{DoxyCompactList}\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_ship_ab8f3f2f2922059c0349d737b7dea5c13}{Berth}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The destination berth of the ship. A value of null indicates the ship has a destination somewhere else in the world and shouldn\textquotesingle{}t berth. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Manager.\+Ship\+Event\+Handler} \hyperlink{class_ship_a007fdacf563e7678e489bb8c0fc82a65}{Ship\+Changed}
+\begin{DoxyCompactList}\small\item\em Called when a change is made to the ship\textquotesingle{}s instance variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file Ship.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ship_ad5e5b275a4936c74279a8efb7412cc2c}\label{class_ship_ad5e5b275a4936c74279a8efb7412cc2c}} 
+\index{Ship@{Ship}!Ship@{Ship}}
+\index{Ship@{Ship}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Ship()}{Ship()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ship.\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a blank prototype object of the \hyperlink{class_ship}{Ship} class. Only type-\/defning variables are initialised. Other variables are not safe to use. 
+
+
+
+Definition at line 43 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a4cefe98d88c50eb364b5baec61e23b95}\label{class_ship_a4cefe98d88c50eb364b5baec61e23b95}} 
+\index{Ship@{Ship}!Ship@{Ship}}
+\index{Ship@{Ship}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Ship()}{Ship()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ship.\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{class_ship_manager}{Ship\+Manager}}]{ship\+Manager,  }\item[{\hyperlink{class_ship}{Ship}}]{proto }\end{DoxyParamCaption})}
+
+
+
+Constructs a \hyperlink{class_ship}{Ship} from a prototype. All type-\/defining variables are copied over. The prototype and the instance share no references to objects. In-\/game changing variables are initialised to default values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ship\+Manager} & The ship manager that will serve as interface for the ship.\\
+\hline
+{\em proto} & The template prototype that this ship is based on.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Ship.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ship_aa81fd20c93280bc0325cf0da26f14ca5}\label{class_ship_aa81fd20c93280bc0325cf0da26f14ca5}} 
+\index{Ship@{Ship}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Ship.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{parent\+Reader }\end{DoxyParamCaption})}
+
+
+
+Reads the xml definition for a \hyperlink{class_ship}{Ship} prototype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Reader} & The parent reader that reads the bigger file.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 340 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a5c5ee984c2e67e8a771ad920ef513818}\label{class_ship_a5c5ee984c2e67e8a771ad920ef513818}} 
+\index{Ship@{Ship}!Set\+Destination@{Set\+Destination}}
+\index{Set\+Destination@{Set\+Destination}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Set\+Destination()}{SetDestination()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Ship.\+Set\+Destination (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the destination to an arbitrary world space location. 
+
+
+
+Definition at line 226 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a59115e2eaadf1012769b415743f5e549}\label{class_ship_a59115e2eaadf1012769b415743f5e549}} 
+\index{Ship@{Ship}!Set\+Destination@{Set\+Destination}}
+\index{Set\+Destination@{Set\+Destination}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Set\+Destination()}{SetDestination()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Ship.\+Set\+Destination (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{goal\+Berth }\end{DoxyParamCaption})}
+
+
+
+Sets the destination to a berth. Should not be called with null value. If cancelling intention to berth, use {\ttfamily ship.\+Berth = null} directly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal\+Berth} & Goal berth.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 237 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a56485e286ef7dcb757681217bcc796f5}\label{class_ship_a56485e286ef7dcb757681217bcc796f5}} 
+\index{Ship@{Ship}!Unwrap\+At\+Berth@{Unwrap\+At\+Berth}}
+\index{Unwrap\+At\+Berth@{Unwrap\+At\+Berth}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Unwrap\+At\+Berth()}{UnwrapAtBerth()}}
+{\footnotesize\ttfamily void Ship.\+Unwrap\+At\+Berth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unwraps the ship into a collection of tiles according to the types defined in the tile and furniture arrays. Tiles are counted from the Berth, so this function should only be called when a destination berth is defined. Assumes that these tiles were empty before. The state of the ship is not changed. That is handled by \hyperlink{class_ship_manager}{Ship\+Manager}. 
+
+
+
+Definition at line 289 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a6fd507fb621f00ba01a76fa685cc0d66}\label{class_ship_a6fd507fb621f00ba01a76fa685cc0d66}} 
+\index{Ship@{Ship}!Update@{Update}}
+\index{Update@{Update}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ship.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+If unwrapped, the ship does nothing. If wrapped it will move to its destination with a fixed speed of 5 tiles per seoond. If it reaches its destination it is removed if it an arbitrary position (assumed to be the edge of the map) or berth if it was heading to a berth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time in seconds elapsed since the last update.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 256 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a073f1568ef8d9ea7d04867b0b6ee4888}\label{class_ship_a073f1568ef8d9ea7d04867b0b6ee4888}} 
+\index{Ship@{Ship}!Would\+Fit\+In\+Berth@{Would\+Fit\+In\+Berth}}
+\index{Would\+Fit\+In\+Berth@{Would\+Fit\+In\+Berth}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Would\+Fit\+In\+Berth()}{WouldFitInBerth()}}
+{\footnotesize\ttfamily bool Ship.\+Would\+Fit\+In\+Berth (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{berth }\end{DoxyParamCaption})}
+
+
+
+Checks if there is enough room around the given berth for the ship to fit into. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if all potentially occupied tiles are indeed empty, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em berth} & The berth to test on.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 377 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_ad0f53056aa94b27894bc9d8bb5601e16}\label{class_ship_ad0f53056aa94b27894bc9d8bb5601e16}} 
+\index{Ship@{Ship}!Wrap@{Wrap}}
+\index{Wrap@{Wrap}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Wrap()}{Wrap()}}
+{\footnotesize\ttfamily void Ship.\+Wrap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wraps the ship by turning the affected tiles back into empty tiles. Tiles are counted from the Berth, so this function should only be called when a destination berth is defined. 
+
+
+
+Definition at line 316 of file Ship.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ship_ab8f3f2f2922059c0349d737b7dea5c13}\label{class_ship_ab8f3f2f2922059c0349d737b7dea5c13}} 
+\index{Ship@{Ship}!Berth@{Berth}}
+\index{Berth@{Berth}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Berth}{Berth}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Ship.\+Berth\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The destination berth of the ship. A value of null indicates the ship has a destination somewhere else in the world and shouldn\textquotesingle{}t berth. 
+
+
+
+Definition at line 207 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a73af2744eb79135baee7ed389cc1b2c7}\label{class_ship_a73af2744eb79135baee7ed389cc1b2c7}} 
+\index{Ship@{Ship}!Berth\+Direction@{Berth\+Direction}}
+\index{Berth\+Direction@{Berth\+Direction}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Berth\+Direction}{BerthDirection}}
+{\footnotesize\ttfamily \hyperlink{_ship_8cs_a7fa5743d14bde173fc53b46363f52a92}{Berth\+Direction} Ship.\+Berth\+Direction\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The direction the ship is berthed in. This is one of the 4 cardinal directions. Keep in mind the ship will be positioned opposite to this direction. 
+
+
+
+Definition at line 130 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a701af608a2094d00e59888170afcc3ce}\label{class_ship_a701af608a2094d00e59888170afcc3ce}} 
+\index{Ship@{Ship}!Berth\+PointX@{Berth\+PointX}}
+\index{Berth\+PointX@{Berth\+PointX}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Berth\+PointX}{BerthPointX}}
+{\footnotesize\ttfamily int Ship.\+Berth\+PointX\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The X coordinate of the berth point. The berth point will overlap with the center of the berth furniture when the ship is berthed, so it will usually be outside the ship\textquotesingle{}s tile space. 
+
+
+
+Definition at line 117 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_af57117a07b57f2b6764fd12e678f01ae}\label{class_ship_af57117a07b57f2b6764fd12e678f01ae}} 
+\index{Ship@{Ship}!Berth\+PointY@{Berth\+PointY}}
+\index{Berth\+PointY@{Berth\+PointY}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Berth\+PointY}{BerthPointY}}
+{\footnotesize\ttfamily int Ship.\+Berth\+PointY\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The Y coordinate of the berth point. The berth point will overlap with the center of the berth furniture when the ship is berthed, so it will usually be outside the ship\textquotesingle{}s tile space. 
+
+
+
+Definition at line 124 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a799006d584ee78be4656c149a60babde}\label{class_ship_a799006d584ee78be4656c149a60babde}} 
+\index{Ship@{Ship}!Destination@{Destination}}
+\index{Destination@{Destination}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Destination}{Destination}}
+{\footnotesize\ttfamily Vector2 Ship.\+Destination\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The destination in world space of the ship. 
+
+
+
+Definition at line 183 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a5812d27ab513c99d41b7d232aa3bdd6d}\label{class_ship_a5812d27ab513c99d41b7d232aa3bdd6d}} 
+\index{Ship@{Ship}!Height@{Height}}
+\index{Height@{Height}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Ship.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The height of the ship in tiles when unwrapped. 
+
+
+
+Definition at line 110 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a462c6c91f5e90055823264eb4f451be8}\label{class_ship_a462c6c91f5e90055823264eb4f451be8}} 
+\index{Ship@{Ship}!Position@{Position}}
+\index{Position@{Position}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Vector2 Ship.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The world position of the ship. 
+
+
+
+Definition at line 160 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a1d15ce4feda27f6f176eedfe576acfe9}\label{class_ship_a1d15ce4feda27f6f176eedfe576acfe9}} 
+\index{Ship@{Ship}!State@{State}}
+\index{State@{State}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \hyperlink{_ship_8cs_a5cc8179225e5abfa75feab8d8b8d13e7}{Ship\+State} Ship.\+State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The state the ship is in. This is either W\+R\+A\+P\+P\+ED, meaning the ship is in its sprite form, or U\+N\+W\+R\+A\+P\+P\+ED, meaning it exists as a collection of tiles in the world. 
+
+
+
+Definition at line 137 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a2248235d4add6f4f6b4aa2618a705372}\label{class_ship_a2248235d4add6f4f6b4aa2618a705372}} 
+\index{Ship@{Ship}!Type@{Type}}
+\index{Type@{Type}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Ship.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The type of the ship. All ships with the same type share their type-\/specific variables. 
+
+
+
+Definition at line 100 of file Ship.\+cs.
+
+\mbox{\Hypertarget{class_ship_a6c39fc4957664fabe750c64c057e2508}\label{class_ship_a6c39fc4957664fabe750c64c057e2508}} 
+\index{Ship@{Ship}!Width@{Width}}
+\index{Width@{Width}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Ship.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The width of the ship in tiles when unwrapped. 
+
+
+
+Definition at line 105 of file Ship.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_ship_a007fdacf563e7678e489bb8c0fc82a65}\label{class_ship_a007fdacf563e7678e489bb8c0fc82a65}} 
+\index{Ship@{Ship}!Ship\+Changed@{Ship\+Changed}}
+\index{Ship\+Changed@{Ship\+Changed}!Ship@{Ship}}
+\subsubsection{\texorpdfstring{Ship\+Changed}{ShipChanged}}
+{\footnotesize\ttfamily \hyperlink{class_ship_manager_a9dbbc387497ab2f4fc7c90cde65dfd4d}{Ship\+Manager.\+Ship\+Event\+Handler} Ship.\+Ship\+Changed}
+
+
+
+Called when a change is made to the ship\textquotesingle{}s instance variables. 
+
+
+
+Definition at line 95 of file Ship.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Ships/\hyperlink{_ship_8cs}{Ship.\+cs}\end{DoxyCompactItemize}

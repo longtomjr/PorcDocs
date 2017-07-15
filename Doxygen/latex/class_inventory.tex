@@ -1,0 +1,460 @@
+\hypertarget{class_inventory}{}\section{Inventory Class Reference}
+\label{class_inventory}\index{Inventory@{Inventory}}
+Inheritance diagram for Inventory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inventory}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_inventory_1_1_inventory_claim}{Inventory\+Claim}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_inventory_ab6c0bebea51f2ddf2015cf78b8b4aca1}{Inventory} ()
+\item 
+\hyperlink{class_inventory_a61d08071c428945e872ef87c0c2e2823}{Inventory} (string type, int stack\+Size, int max\+Stack\+Size=50)
+\item 
+\hyperlink{class_inventory}{Inventory} \hyperlink{class_inventory_a1f887c1fe8e885cdf64db0a4f57086c1}{Clone} ()
+\item 
+void \hyperlink{class_inventory_a19ba4679b788734eeb5f5d752d0b55a0}{Claim} (\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character, int amount)
+\item 
+void \hyperlink{class_inventory_a3f0c0fdb89b16a036ad6a6f73021a906}{Release\+Claim} (\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character)
+\item 
+bool \hyperlink{class_inventory_a689d3f5140a9dccf4c783f190634bbe8}{Can\+Claim} ()
+\item 
+string \hyperlink{class_inventory_a627326dce64285113303015d25a80fd0}{Get\+Name} ()
+\item 
+string \hyperlink{class_inventory_abd4b4e47544f6697bcec6fea62b80fe2}{Get\+Description} ()
+\item 
+string \hyperlink{class_inventory_a4781e2a97ef39ee9e137d64c819c7f8a}{Get\+Job\+Description} ()
+\item 
+bool \hyperlink{class_inventory_a07fdb83a12132708e4435914346dade2}{Can\+Accept} (\hyperlink{class_inventory}{Inventory} inv)
+\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_inventory_a6cf01d5205fb424105c869f28ad66f79}{Get\+Additional\+Info} ()
+\item 
+object \hyperlink{class_inventory_af242e454f4f434098177fcea0f56214c}{To\+J\+Son} ()
+\item 
+void \hyperlink{class_inventory_ad7a75289736a8fd3b0c036e9d79e0079}{From\+Json} (J\+Token inventory\+Token)
+\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_inventory_aa7f9e191f5d4e2cdb012d3de59f2eacf}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\item 
+bool \hyperlink{class_inventory_ae36dfb1d29316cd8dc4e7d8bda8c60f8}{Can\+Be\+Picked\+Up} (bool can\+Take\+From\+Stockpile)
+\item 
+override string \hyperlink{class_inventory_ade6e157a03985e91c6f00881e423d058}{To\+String} ()
+\item 
+void \hyperlink{class_inventory_aac854a42e73fd7d0fa04ba3581cc339b}{Read\+Xml\+Prototype} (Xml\+Reader reader\+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_inventory}{Inventory} \hyperlink{class_inventory_a79ca58bbf438e53b0a83f7d10dd9e468}{Create\+Prototype} (string type, int max\+Stack\+Size, float base\+Price, string category, string localization\+Name, string localization\+Desc)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{class_inventory}{Inventory} to be used as a prototype. Still needs to be added to the \hyperlink{class_prototype_map}{Prototype\+Map}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_inventory_a6ce84e5edd07997e764ef8f0f3a047c5}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{class_inventory_a27bd27b3ba5a7c396c6d8b7cc98c5df2}{Max\+Stack\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_inventory_a3e9cedba92d689d70d765f25ca7f7830}{Base\+Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_inventory_aafba8da2a679ce42d351fd071de24295}{Category}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_inventory_ad99ffac71e181c38c31a48131b76e73d}{Localization\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_inventory_aee8e3400bd94b3bb09417a778af3c354}{Localization\+Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_inventory_a1b93a8cbc09713a7e2528c7800e915e9}{Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_inventory_a93655f2c64f8b0bbe7e9d670c7d66e80}{Locked}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_inventory_a92b3f098aafbca7a46e3204f4435112f}{Stack\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_inventory_a5d26eb9165bd777a9d3f6e7428bd1047}{Available\+Inventory}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_inventory_a65c2afad578199c93e073d7a0c7c29ae}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_inventory}{Inventory} $>$ \hyperlink{class_inventory_a11987d6b238ea819af32fda62b1f13eb}{Stack\+Size\+Changed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Inventory.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inventory_ab6c0bebea51f2ddf2015cf78b8b4aca1}\label{class_inventory_ab6c0bebea51f2ddf2015cf78b8b4aca1}} 
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Inventory()}{Inventory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Inventory.\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a61d08071c428945e872ef87c0c2e2823}\label{class_inventory_a61d08071c428945e872ef87c0c2e2823}} 
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Inventory()}{Inventory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Inventory.\+Inventory (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{int}]{stack\+Size,  }\item[{int}]{max\+Stack\+Size = {\ttfamily 50} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Inventory.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_a07fdb83a12132708e4435914346dade2}\label{class_inventory_a07fdb83a12132708e4435914346dade2}} 
+\index{Inventory@{Inventory}!Can\+Accept@{Can\+Accept}}
+\index{Can\+Accept@{Can\+Accept}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Can\+Accept()}{CanAccept()}}
+{\footnotesize\ttfamily bool Inventory.\+Can\+Accept (\begin{DoxyParamCaption}\item[{\hyperlink{class_inventory}{Inventory}}]{inv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_ae36dfb1d29316cd8dc4e7d8bda8c60f8}\label{class_inventory_ae36dfb1d29316cd8dc4e7d8bda8c60f8}} 
+\index{Inventory@{Inventory}!Can\+Be\+Picked\+Up@{Can\+Be\+Picked\+Up}}
+\index{Can\+Be\+Picked\+Up@{Can\+Be\+Picked\+Up}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Can\+Be\+Picked\+Up()}{CanBePickedUp()}}
+{\footnotesize\ttfamily bool Inventory.\+Can\+Be\+Picked\+Up (\begin{DoxyParamCaption}\item[{bool}]{can\+Take\+From\+Stockpile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 250 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a689d3f5140a9dccf4c783f190634bbe8}\label{class_inventory_a689d3f5140a9dccf4c783f190634bbe8}} 
+\index{Inventory@{Inventory}!Can\+Claim@{Can\+Claim}}
+\index{Can\+Claim@{Can\+Claim}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Can\+Claim()}{CanClaim()}}
+{\footnotesize\ttfamily bool Inventory.\+Can\+Claim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a19ba4679b788734eeb5f5d752d0b55a0}\label{class_inventory_a19ba4679b788734eeb5f5d752d0b55a0}} 
+\index{Inventory@{Inventory}!Claim@{Claim}}
+\index{Claim@{Claim}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Claim()}{Claim()}}
+{\footnotesize\ttfamily void Inventory.\+Claim (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a1f887c1fe8e885cdf64db0a4f57086c1}\label{class_inventory_a1f887c1fe8e885cdf64db0a4f57086c1}} 
+\index{Inventory@{Inventory}!Clone@{Clone}}
+\index{Clone@{Clone}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_inventory}{Inventory} Inventory.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a79ca58bbf438e53b0a83f7d10dd9e468}\label{class_inventory_a79ca58bbf438e53b0a83f7d10dd9e468}} 
+\index{Inventory@{Inventory}!Create\+Prototype@{Create\+Prototype}}
+\index{Create\+Prototype@{Create\+Prototype}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Create\+Prototype()}{CreatePrototype()}}
+{\footnotesize\ttfamily static \hyperlink{class_inventory}{Inventory} Inventory.\+Create\+Prototype (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{int}]{max\+Stack\+Size,  }\item[{float}]{base\+Price,  }\item[{string}]{category,  }\item[{string}]{localization\+Name,  }\item[{string}]{localization\+Desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an \hyperlink{class_inventory}{Inventory} to be used as a prototype. Still needs to be added to the \hyperlink{class_prototype_map}{Prototype\+Map}. 
+
+\begin{DoxyReturn}{Returns}
+The prototype.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Prototype\textquotesingle{}s Type.\\
+\hline
+{\em max\+Stack\+Size} & Prototype\textquotesingle{}s Max stack size.\\
+\hline
+{\em base\+Price} & Prototype\textquotesingle{}s Base price.\\
+\hline
+{\em category} & Prototype\textquotesingle{}s Category.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_ad7a75289736a8fd3b0c036e9d79e0079}\label{class_inventory_ad7a75289736a8fd3b0c036e9d79e0079}} 
+\index{Inventory@{Inventory}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Inventory.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{inventory\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 218 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a6cf01d5205fb424105c869f28ad66f79}\label{class_inventory_a6cf01d5205fb424105c869f28ad66f79}} 
+\index{Inventory@{Inventory}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Inventory.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 187 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_aa7f9e191f5d4e2cdb012d3de59f2eacf}\label{class_inventory_aa7f9e191f5d4e2cdb012d3de59f2eacf}} 
+\index{Inventory@{Inventory}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Inventory.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 230 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_abd4b4e47544f6697bcec6fea62b80fe2}\label{class_inventory_abd4b4e47544f6697bcec6fea62b80fe2}} 
+\index{Inventory@{Inventory}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Inventory.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 172 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a4781e2a97ef39ee9e137d64c819c7f8a}\label{class_inventory_a4781e2a97ef39ee9e137d64c819c7f8a}} 
+\index{Inventory@{Inventory}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Inventory.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 177 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a627326dce64285113303015d25a80fd0}\label{class_inventory_a627326dce64285113303015d25a80fd0}} 
+\index{Inventory@{Inventory}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Inventory.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 167 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_aac854a42e73fd7d0fa04ba3581cc339b}\label{class_inventory_aac854a42e73fd7d0fa04ba3581cc339b}} 
+\index{Inventory@{Inventory}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Inventory.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 266 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a3f0c0fdb89b16a036ad6a6f73021a906}\label{class_inventory_a3f0c0fdb89b16a036ad6a6f73021a906}} 
+\index{Inventory@{Inventory}!Release\+Claim@{Release\+Claim}}
+\index{Release\+Claim@{Release\+Claim}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Release\+Claim()}{ReleaseClaim()}}
+{\footnotesize\ttfamily void Inventory.\+Release\+Claim (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character }\end{DoxyParamCaption})}
+
+
+
+Definition at line 146 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_af242e454f4f434098177fcea0f56214c}\label{class_inventory_af242e454f4f434098177fcea0f56214c}} 
+\index{Inventory@{Inventory}!To\+J\+Son@{To\+J\+Son}}
+\index{To\+J\+Son@{To\+J\+Son}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{To\+J\+Son()}{ToJSon()}}
+{\footnotesize\ttfamily object Inventory.\+To\+J\+Son (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_ade6e157a03985e91c6f00881e423d058}\label{class_inventory_ade6e157a03985e91c6f00881e423d058}} 
+\index{Inventory@{Inventory}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Inventory.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 261 of file Inventory.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_inventory_a5d26eb9165bd777a9d3f6e7428bd1047}\label{class_inventory_a5d26eb9165bd777a9d3f6e7428bd1047}} 
+\index{Inventory@{Inventory}!Available\+Inventory@{Available\+Inventory}}
+\index{Available\+Inventory@{Available\+Inventory}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Available\+Inventory}{AvailableInventory}}
+{\footnotesize\ttfamily int Inventory.\+Available\+Inventory\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 104 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a3e9cedba92d689d70d765f25ca7f7830}\label{class_inventory_a3e9cedba92d689d70d765f25ca7f7830}} 
+\index{Inventory@{Inventory}!Base\+Price@{Base\+Price}}
+\index{Base\+Price@{Base\+Price}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Base\+Price}{BasePrice}}
+{\footnotesize\ttfamily float Inventory.\+Base\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 71 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_aafba8da2a679ce42d351fd071de24295}\label{class_inventory_aafba8da2a679ce42d351fd071de24295}} 
+\index{Inventory@{Inventory}!Category@{Category}}
+\index{Category@{Category}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Category}{Category}}
+{\footnotesize\ttfamily string Inventory.\+Category\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 73 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a65c2afad578199c93e073d7a0c7c29ae}\label{class_inventory_a65c2afad578199c93e073d7a0c7c29ae}} 
+\index{Inventory@{Inventory}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Inventory.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 112 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_aee8e3400bd94b3bb09417a778af3c354}\label{class_inventory_aee8e3400bd94b3bb09417a778af3c354}} 
+\index{Inventory@{Inventory}!Localization\+Description@{Localization\+Description}}
+\index{Localization\+Description@{Localization\+Description}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Localization\+Description}{LocalizationDescription}}
+{\footnotesize\ttfamily string Inventory.\+Localization\+Description\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 77 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_ad99ffac71e181c38c31a48131b76e73d}\label{class_inventory_ad99ffac71e181c38c31a48131b76e73d}} 
+\index{Inventory@{Inventory}!Localization\+Name@{Localization\+Name}}
+\index{Localization\+Name@{Localization\+Name}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Localization\+Name}{LocalizationName}}
+{\footnotesize\ttfamily string Inventory.\+Localization\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 75 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a93655f2c64f8b0bbe7e9d670c7d66e80}\label{class_inventory_a93655f2c64f8b0bbe7e9d670c7d66e80}} 
+\index{Inventory@{Inventory}!Locked@{Locked}}
+\index{Locked@{Locked}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Locked}{Locked}}
+{\footnotesize\ttfamily bool Inventory.\+Locked\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 82 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a27bd27b3ba5a7c396c6d8b7cc98c5df2}\label{class_inventory_a27bd27b3ba5a7c396c6d8b7cc98c5df2}} 
+\index{Inventory@{Inventory}!Max\+Stack\+Size@{Max\+Stack\+Size}}
+\index{Max\+Stack\+Size@{Max\+Stack\+Size}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Max\+Stack\+Size}{MaxStackSize}}
+{\footnotesize\ttfamily int Inventory.\+Max\+Stack\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 69 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a92b3f098aafbca7a46e3204f4435112f}\label{class_inventory_a92b3f098aafbca7a46e3204f4435112f}} 
+\index{Inventory@{Inventory}!Stack\+Size@{Stack\+Size}}
+\index{Stack\+Size@{Stack\+Size}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Stack\+Size}{StackSize}}
+{\footnotesize\ttfamily int Inventory.\+Stack\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 85 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a1b93a8cbc09713a7e2528c7800e915e9}\label{class_inventory_a1b93a8cbc09713a7e2528c7800e915e9}} 
+\index{Inventory@{Inventory}!Tile@{Tile}}
+\index{Tile@{Tile}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Tile}{Tile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Inventory.\+Tile\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 79 of file Inventory.\+cs.
+
+\mbox{\Hypertarget{class_inventory_a6ce84e5edd07997e764ef8f0f3a047c5}\label{class_inventory_a6ce84e5edd07997e764ef8f0f3a047c5}} 
+\index{Inventory@{Inventory}!Type@{Type}}
+\index{Type@{Type}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Inventory.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 67 of file Inventory.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_inventory_a11987d6b238ea819af32fda62b1f13eb}\label{class_inventory_a11987d6b238ea819af32fda62b1f13eb}} 
+\index{Inventory@{Inventory}!Stack\+Size\+Changed@{Stack\+Size\+Changed}}
+\index{Stack\+Size\+Changed@{Stack\+Size\+Changed}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Stack\+Size\+Changed}{StackSizeChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_inventory}{Inventory}$>$ Inventory.\+Stack\+Size\+Changed}
+
+
+
+Definition at line 65 of file Inventory.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Inventory/\hyperlink{_inventory_8cs}{Inventory.\+cs}\end{DoxyCompactItemize}

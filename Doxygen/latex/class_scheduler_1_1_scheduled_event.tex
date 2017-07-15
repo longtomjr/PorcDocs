@@ -1,0 +1,461 @@
+\hypertarget{class_scheduler_1_1_scheduled_event}{}\section{Scheduler.\+Scheduled\+Event Class Reference}
+\label{class_scheduler_1_1_scheduled_event}\index{Scheduler.\+Scheduled\+Event@{Scheduler.\+Scheduled\+Event}}
+
+
+The \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class represents an individual event which is handled by the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler}. May \char`\"{}fire\char`\"{} either a C\# or Lua function. \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is actually blind to the type of function backing the event. It knows through the Event\+Type property, but this has no impact on the functioning of the class itself. The scheduler is solely responsible for wrapping Lua functions in delegates for handling by the events.  
+
+
+Inheritance diagram for Scheduler.\+Scheduled\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scheduler_1_1_scheduled_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_a572dadae169da9d187678a0f1471389c}{Scheduled\+Event} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} class. This is required to create a Prototype. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_afb2e9b906bfc695ed19bd9822f4de34b}{Scheduled\+Event} (string name, Action$<$ \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} $>$ on\+Fire, float cooldown, bool repeats\+Forever=false, int repeats=1)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class. This form of the constructor assumes the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is of the \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Event\+Type.\+C\+Sharp} type. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_a5c66e685b9eee065a1ff446c6b9eb68c}{Scheduled\+Event} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} objects. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_a20a4e01a2ca9a54ed32f7f671f264a22}{Scheduled\+Event} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} event\+Prototype, float cooldown, float time\+To\+Wait, bool repeats\+Forever=false, int repeats=1)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} object from a prototype \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}. If event\+Prototype is an \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}{Event\+Type.\+Lua} event, the Lua function call is looked up based on the event\+Prototype.\+Lua\+Function\+Name attribute and bound to a C\# callback. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_a25d120ed1667f2542f7ffdfec7e79d89}{Scheduled\+Event} (string name, Action$<$ \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} $>$ on\+Fire)
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} prototype backed by a C\# action. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduler_1_1_scheduled_event_af331abbf2942f9889e7013587bfa5f8a}{Scheduled\+Event} (string name, string lua\+Fuction\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} prototype backed by a Lua function. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduled_event_a524553957da7bdb1e5bad3eeffd7ae8a}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Advance the event clock by the specified delta\+Time, and if it drops less that or equal to zero fire the event, resetting the clock to Cooldown. Note\+: This fires the event multiple times if delta\+Time is $>$= 2 $\ast$ cooldown. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduled_event_a232f2ce8f94c538c9e8be6af7177c8fd}{Fire} ()
+\begin{DoxyCompactList}\small\item\em Fires the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduled_event_ac45f7ec5f81d79844b5fcceee0ea09e2}{Stop} ()
+\begin{DoxyCompactList}\small\item\em Stops the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduled_event_a2ae6d7d00285809b7af79838b419b81f}{Set\+Cooldown} (float new\+Cooldown)
+\item 
+void \hyperlink{class_scheduler_1_1_scheduled_event_a2a4b07d98d26c870403ae7d405c0dfc9}{Read\+Xml\+Prototype} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\item 
+J\+Object \hyperlink{class_scheduler_1_1_scheduled_event_a16217933397481d05dd690b5a67e3fdb}{To\+Json} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_scheduler_1_1_scheduled_event_aa7173affda869088f36087fe308aa21f}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name. \end{DoxyCompactList}\item 
+string \hyperlink{class_scheduler_1_1_scheduled_event_a5a98cd2dcf9a67d898bed91d7e65eedf}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the type, which is the name. Required to implement \hyperlink{interface_i_prototypable}{I\+Prototypable}. \end{DoxyCompactList}\item 
+\hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}{Event\+Type} \hyperlink{class_scheduler_1_1_scheduled_event_ae2c9cdd783bf0874e5d2e8758dab70ba}{Event\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the type of the event. \end{DoxyCompactList}\item 
+string \hyperlink{class_scheduler_1_1_scheduled_event_a9d7fd8c8658907874ed2e18311e46d38}{Lua\+Function\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the lua function. Is null if Event\+Type is \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Event\+Type.\+C\+Sharp}. \end{DoxyCompactList}\item 
+int \hyperlink{class_scheduler_1_1_scheduled_event_aef67aa8b357363a78a4dd88e228c7bd7}{Repeats\+Left}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the number of repeats left. This value is ignored if Repeats\+Forever == true. \end{DoxyCompactList}\item 
+float \hyperlink{class_scheduler_1_1_scheduled_event_a63e25b478be5eb402b6c53cb6ad96adc}{Cooldown}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the cooldown in seconds. \end{DoxyCompactList}\item 
+float \hyperlink{class_scheduler_1_1_scheduled_event_afb4173ede6077c7adf54950499164a45}{Time\+To\+Wait}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the time to wait until the next event firing in seconds. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduler_1_1_scheduled_event_af7a0bb8b8b2962df9af5e549d1b3d178}{Repeats\+Forever}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} repeats forever. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduler_1_1_scheduled_event_a4ea0964dccdd458ff883edce11d6fac6}{Is\+Saveable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is saveable. Used by \hyperlink{class_scheduler_1_1_scheduler}{Scheduler.\+Scheduler} when serializing itself. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduler_1_1_scheduled_event_a1cb36619ff2480679def8c5d3a2770e8}{Last\+Shot}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this is the last shot of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduler_1_1_scheduled_event_a18809036499636d4629da4d803c74637}{Finished}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} is finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class represents an individual event which is handled by the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler}. May \char`\"{}fire\char`\"{} either a C\# or Lua function. \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is actually blind to the type of function backing the event. It knows through the Event\+Type property, but this has no impact on the functioning of the class itself. The scheduler is solely responsible for wrapping Lua functions in delegates for handling by the events. 
+
+
+
+Definition at line 38 of file Scheduled\+Event.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a572dadae169da9d187678a0f1471389c}\label{class_scheduler_1_1_scheduled_event_a572dadae169da9d187678a0f1471389c}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} class. This is required to create a Prototype. 
+
+
+
+Definition at line 44 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_afb2e9b906bfc695ed19bd9822f4de34b}\label{class_scheduler_1_1_scheduled_event_afb2e9b906bfc695ed19bd9822f4de34b}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Action$<$ \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} $>$}]{on\+Fire,  }\item[{float}]{cooldown,  }\item[{bool}]{repeats\+Forever = {\ttfamily false},  }\item[{int}]{repeats = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class. This form of the constructor assumes the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is of the \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Event\+Type.\+C\+Sharp} type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the event (for serialization etc.).\\
+\hline
+{\em on\+Fire} & Callback to call when the event fires.\\
+\hline
+{\em cooldown} & Cooldown in seconds.\\
+\hline
+{\em repeats\+Forever} & Whether the event repeats forever (defaults false). If true repeats is ignored.\\
+\hline
+{\em repeats} & Number of repeats (default 1). Ignored if repeats\+Forever == true.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a5c66e685b9eee065a1ff446c6b9eb68c}\label{class_scheduler_1_1_scheduled_event_a5c66e685b9eee065a1ff446c6b9eb68c}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The event to make a copy of.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a20a4e01a2ca9a54ed32f7f671f264a22}\label{class_scheduler_1_1_scheduled_event_a20a4e01a2ca9a54ed32f7f671f264a22}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{event\+Prototype,  }\item[{float}]{cooldown,  }\item[{float}]{time\+To\+Wait,  }\item[{bool}]{repeats\+Forever = {\ttfamily false},  }\item[{int}]{repeats = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} object from a prototype \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}. If event\+Prototype is an \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}{Event\+Type.\+Lua} event, the Lua function call is looked up based on the event\+Prototype.\+Lua\+Function\+Name attribute and bound to a C\# callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Prototype} & Event prototype.\\
+\hline
+{\em cooldown} & Cooldown in seconds.\\
+\hline
+{\em time\+To\+Wait} & Time to wait until next event firing.\\
+\hline
+{\em repeats\+Forever} & If set to {\ttfamily true} repeats forever.\\
+\hline
+{\em repeats} & Repeats left (only matters if repeats\+Forever == false).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a25d120ed1667f2542f7ffdfec7e79d89}\label{class_scheduler_1_1_scheduled_event_a25d120ed1667f2542f7ffdfec7e79d89}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Action$<$ \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} $>$}]{on\+Fire }\end{DoxyParamCaption})}
+
+
+
+Construct a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} prototype backed by a C\# action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the prototype.\\
+\hline
+{\em on\+Fire} & On fire action.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_af331abbf2942f9889e7013587bfa5f8a}\label{class_scheduler_1_1_scheduled_event_af331abbf2942f9889e7013587bfa5f8a}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Scheduled\+Event@{Scheduled\+Event}}
+\index{Scheduled\+Event@{Scheduled\+Event}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Scheduled\+Event()}{ScheduledEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Scheduler.\+Scheduled\+Event.\+Scheduled\+Event (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{lua\+Fuction\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} prototype backed by a Lua function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the prototype.\\
+\hline
+{\em lua\+Fuction\+Name} & Lua fuction name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Scheduled\+Event.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a232f2ce8f94c538c9e8be6af7177c8fd}\label{class_scheduler_1_1_scheduled_event_a232f2ce8f94c538c9e8be6af7177c8fd}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Fire@{Fire}}
+\index{Fire@{Fire}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Fire()}{Fire()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduled\+Event.\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fires the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. 
+
+
+
+Definition at line 237 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a2a4b07d98d26c870403ae7d405c0dfc9}\label{class_scheduler_1_1_scheduled_event_a2a4b07d98d26c870403ae7d405c0dfc9}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduled\+Event.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 274 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a2ae6d7d00285809b7af79838b419b81f}\label{class_scheduler_1_1_scheduled_event_a2ae6d7d00285809b7af79838b419b81f}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Set\+Cooldown@{Set\+Cooldown}}
+\index{Set\+Cooldown@{Set\+Cooldown}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Set\+Cooldown()}{SetCooldown()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduled\+Event.\+Set\+Cooldown (\begin{DoxyParamCaption}\item[{float}]{new\+Cooldown }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_ac45f7ec5f81d79844b5fcceee0ea09e2}\label{class_scheduler_1_1_scheduled_event_ac45f7ec5f81d79844b5fcceee0ea09e2}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Stop@{Stop}}
+\index{Stop@{Stop}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduled\+Event.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. 
+
+
+
+Definition at line 256 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a16217933397481d05dd690b5a67e3fdb}\label{class_scheduler_1_1_scheduled_event_a16217933397481d05dd690b5a67e3fdb}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Object Scheduler.\+Scheduled\+Event.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 281 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a524553957da7bdb1e5bad3eeffd7ae8a}\label{class_scheduler_1_1_scheduled_event_a524553957da7bdb1e5bad3eeffd7ae8a}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Update@{Update}}
+\index{Update@{Update}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduled\+Event.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Advance the event clock by the specified delta\+Time, and if it drops less that or equal to zero fire the event, resetting the clock to Cooldown. Note\+: This fires the event multiple times if delta\+Time is $>$= 2 $\ast$ cooldown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & Delta time in seconds (note\+: game time, not real time).\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Scheduled\+Event.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a63e25b478be5eb402b6c53cb6ad96adc}\label{class_scheduler_1_1_scheduled_event_a63e25b478be5eb402b6c53cb6ad96adc}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Cooldown@{Cooldown}}
+\index{Cooldown@{Cooldown}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Cooldown}{Cooldown}}
+{\footnotesize\ttfamily float Scheduler.\+Scheduled\+Event.\+Cooldown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the cooldown in seconds. 
+
+
+
+Definition at line 176 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_ae2c9cdd783bf0874e5d2e8758dab70ba}\label{class_scheduler_1_1_scheduled_event_ae2c9cdd783bf0874e5d2e8758dab70ba}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Event\+Type@{Event\+Type}}
+\index{Event\+Type@{Event\+Type}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Event\+Type}{EventType}}
+{\footnotesize\ttfamily \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}{Event\+Type} Scheduler.\+Scheduled\+Event.\+Event\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the type of the event. 
+
+
+
+Definition at line 159 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a18809036499636d4629da4d803c74637}\label{class_scheduler_1_1_scheduled_event_a18809036499636d4629da4d803c74637}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Finished@{Finished}}
+\index{Finished@{Finished}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Finished}{Finished}}
+{\footnotesize\ttfamily bool Scheduler.\+Scheduled\+Event.\+Finished\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} is finished. 
+
+{\ttfamily true} if finished; otherwise, {\ttfamily false}.
+
+Definition at line 211 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a4ea0964dccdd458ff883edce11d6fac6}\label{class_scheduler_1_1_scheduled_event_a4ea0964dccdd458ff883edce11d6fac6}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Is\+Saveable@{Is\+Saveable}}
+\index{Is\+Saveable@{Is\+Saveable}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Is\+Saveable}{IsSaveable}}
+{\footnotesize\ttfamily bool Scheduler.\+Scheduled\+Event.\+Is\+Saveable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this instance is saveable. Used by \hyperlink{class_scheduler_1_1_scheduler}{Scheduler.\+Scheduler} when serializing itself. 
+
+
+
+Definition at line 192 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a1cb36619ff2480679def8c5d3a2770e8}\label{class_scheduler_1_1_scheduled_event_a1cb36619ff2480679def8c5d3a2770e8}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Last\+Shot@{Last\+Shot}}
+\index{Last\+Shot@{Last\+Shot}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Last\+Shot}{LastShot}}
+{\footnotesize\ttfamily bool Scheduler.\+Scheduled\+Event.\+Last\+Shot\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this is the last shot of the \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}. 
+
+{\ttfamily true} if last shot; otherwise, {\ttfamily false}.
+
+Definition at line 199 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a9d7fd8c8658907874ed2e18311e46d38}\label{class_scheduler_1_1_scheduled_event_a9d7fd8c8658907874ed2e18311e46d38}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Lua\+Function\+Name@{Lua\+Function\+Name}}
+\index{Lua\+Function\+Name@{Lua\+Function\+Name}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Lua\+Function\+Name}{LuaFunctionName}}
+{\footnotesize\ttfamily string Scheduler.\+Scheduled\+Event.\+Lua\+Function\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the name of the lua function. Is null if Event\+Type is \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Event\+Type.\+C\+Sharp}. 
+
+
+
+Definition at line 165 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_aa7173affda869088f36087fe308aa21f}\label{class_scheduler_1_1_scheduled_event_aa7173affda869088f36087fe308aa21f}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Name@{Name}}
+\index{Name@{Name}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Scheduler.\+Scheduled\+Event.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the name. 
+
+
+
+Definition at line 146 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_af7a0bb8b8b2962df9af5e549d1b3d178}\label{class_scheduler_1_1_scheduled_event_af7a0bb8b8b2962df9af5e549d1b3d178}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Repeats\+Forever@{Repeats\+Forever}}
+\index{Repeats\+Forever@{Repeats\+Forever}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Repeats\+Forever}{RepeatsForever}}
+{\footnotesize\ttfamily bool Scheduler.\+Scheduled\+Event.\+Repeats\+Forever\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets a value indicating whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} repeats forever. 
+
+
+
+Definition at line 186 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_aef67aa8b357363a78a4dd88e228c7bd7}\label{class_scheduler_1_1_scheduled_event_aef67aa8b357363a78a4dd88e228c7bd7}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Repeats\+Left@{Repeats\+Left}}
+\index{Repeats\+Left@{Repeats\+Left}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Repeats\+Left}{RepeatsLeft}}
+{\footnotesize\ttfamily int Scheduler.\+Scheduled\+Event.\+Repeats\+Left\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the number of repeats left. This value is ignored if Repeats\+Forever == true. 
+
+
+
+Definition at line 171 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_afb4173ede6077c7adf54950499164a45}\label{class_scheduler_1_1_scheduled_event_afb4173ede6077c7adf54950499164a45}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Time\+To\+Wait@{Time\+To\+Wait}}
+\index{Time\+To\+Wait@{Time\+To\+Wait}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Time\+To\+Wait}{TimeToWait}}
+{\footnotesize\ttfamily float Scheduler.\+Scheduled\+Event.\+Time\+To\+Wait\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the time to wait until the next event firing in seconds. 
+
+
+
+Definition at line 181 of file Scheduled\+Event.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduled_event_a5a98cd2dcf9a67d898bed91d7e65eedf}\label{class_scheduler_1_1_scheduled_event_a5a98cd2dcf9a67d898bed91d7e65eedf}} 
+\index{Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}!Type@{Type}}
+\index{Type@{Type}!Scheduler\+::\+Scheduled\+Event@{Scheduler\+::\+Scheduled\+Event}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Scheduler.\+Scheduled\+Event.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the type, which is the name. Required to implement \hyperlink{interface_i_prototypable}{I\+Prototypable}. 
+
+
+
+Definition at line 152 of file Scheduled\+Event.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Scheduler/\hyperlink{_scheduled_event_8cs}{Scheduled\+Event.\+cs}\end{DoxyCompactItemize}

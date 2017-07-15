@@ -1,0 +1,421 @@
+\hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager}{}\section{Project\+Porcupine.\+Rooms.\+Room\+Manager Class Reference}
+\label{class_project_porcupine_1_1_rooms_1_1_room_manager}\index{Project\+Porcupine.\+Rooms.\+Room\+Manager@{Project\+Porcupine.\+Rooms.\+Room\+Manager}}
+Inheritance diagram for Project\+Porcupine.\+Rooms.\+Room\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_project_porcupine_1_1_rooms_1_1_room_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a8ce3c0a3d7904fe5c78439d87a1e49ff}{Room\+Manager} ()
+\item 
+int \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a4d27ea1253a0af30d859d36334a63e6f}{Get\+Room\+ID} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\begin{DoxyCompactList}\small\item\em Gets the room ID. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a5af1864323a8a37644cc47a332297aaa}{Add} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\begin{DoxyCompactList}\small\item\em Add a room to the manager. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a80086ec355ff9c1489858d76358fba8b}{Remove} (\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\begin{DoxyCompactList}\small\item\em Remove a room from the manager. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a2d73aa65d42b9cedebe790024f6abf68}{Equalise\+Gas\+By\+Tile} (\hyperlink{class_tile}{Tile} tile, float leak\+Factor)
+\begin{DoxyCompactList}\small\item\em Equalises the gas by tile. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_ac89dba8cf93ba78cc19e51d8ed948eae}{Do\+Room\+Flood\+Fill} (\hyperlink{class_tile}{Tile} source\+Tile, bool splitting, bool flood\+Filling\+On\+Tile\+Change=false)
+\begin{DoxyCompactList}\small\item\em Does a room flood fill. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a2c1e6804f4dcc26cb7f2aec59ddc286b}{Get\+Enumerator} ()
+\item 
+J\+Token \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a9f81f33cc998f4f7e3d4d1e05d52196f}{To\+Json} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a20fabe9e69ef78996cc87aa0ccd69b9e}{From\+Json} (J\+Token rooms\+Token)
+\item 
+J\+Token \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a90a95a310c917e67ee16cf47915cc8de}{Behaviors\+To\+Json} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a7572a579e508d61535cd3270edf906b2}{Behaviors\+From\+Json} (J\+Token behaviors\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_ab45e75648e69ed59c8e9ccc7a32f1db9}{Actual\+Flood\+Fill} (\hyperlink{class_tile}{Tile} source\+Tile, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} old\+Room, int size\+Of\+Old\+Room)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_aff155953e003b35071ce20d4cfc7aaf7}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the amount of rooms. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_adc67244d6abd3955beb780d4add7bbac}{Outside\+Room}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the outside room. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a6763abd4726b4dd98bb2fcb89484b31e}{this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a managed room from an ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a38434c8e6574c833249a75aebf9b0706}{Adding}
+\begin{DoxyCompactList}\small\item\em Occurs when adding a new room to the manager, before the room is actually added. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a89751a39cba37e08030063dbddbf3b0c}{Added}
+\begin{DoxyCompactList}\small\item\em Occurs after the room has been added to the manager. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_ad8eb00af1baebf4e31bc07b1e0244a7a}{Split}
+\begin{DoxyCompactList}\small\item\em Occurs when a room is split. The first room is the old one, the second is the new one. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a68aa9c86e78c2f25228010994ab43567}{Joined}
+\begin{DoxyCompactList}\small\item\em Occurs when two rooms are joined. The first room is the old one, the second is the new one. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_ab886414089e90a69275832444a3e6c66}{Removing}
+\begin{DoxyCompactList}\small\item\em Occurs when removing a room from the manager, before the room is actually removed. \end{DoxyCompactList}\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} $>$ \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_af499628911e02ea630620f63c2dec68d}{Removed}
+\begin{DoxyCompactList}\small\item\em Occurs after the room has been removed from the manager. \end{DoxyCompactList}\item 
+Action \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_a20b42ad78ff8996e457123cfb5cf0a0b}{Flood\+Fill\+Began}
+\begin{DoxyCompactList}\small\item\em Occurs before the floodfill or \textquotesingle{}as it begins\textquotesingle{}. \end{DoxyCompactList}\item 
+Action \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager_aeb63c8447353bd50a2d9608bfc0f6d52}{Flood\+Fill\+Ended}
+\begin{DoxyCompactList}\small\item\em Occurs after the floodfill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Room\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a8ce3c0a3d7904fe5c78439d87a1e49ff}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a8ce3c0a3d7904fe5c78439d87a1e49ff}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Room\+Manager@{Room\+Manager}}
+\index{Room\+Manager@{Room\+Manager}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Room\+Manager()}{RoomManager()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Room\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file Room\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_ab45e75648e69ed59c8e9ccc7a32f1db9}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_ab45e75648e69ed59c8e9ccc7a32f1db9}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Actual\+Flood\+Fill@{Actual\+Flood\+Fill}}
+\index{Actual\+Flood\+Fill@{Actual\+Flood\+Fill}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Actual\+Flood\+Fill()}{ActualFloodFill()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Actual\+Flood\+Fill (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{source\+Tile,  }\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{old\+Room,  }\item[{int}]{size\+Of\+Old\+Room }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 490 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a5af1864323a8a37644cc47a332297aaa}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a5af1864323a8a37644cc47a332297aaa}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Add@{Add}}
+\index{Add@{Add}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Add a room to the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & A room to be managed.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a7572a579e508d61535cd3270edf906b2}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a7572a579e508d61535cd3270edf906b2}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Behaviors\+From\+Json@{Behaviors\+From\+Json}}
+\index{Behaviors\+From\+Json@{Behaviors\+From\+Json}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Behaviors\+From\+Json()}{BehaviorsFromJson()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Behaviors\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{behaviors\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 479 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a90a95a310c917e67ee16cf47915cc8de}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a90a95a310c917e67ee16cf47915cc8de}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Behaviors\+To\+Json@{Behaviors\+To\+Json}}
+\index{Behaviors\+To\+Json@{Behaviors\+To\+Json}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Behaviors\+To\+Json()}{BehaviorsToJson()}}
+{\footnotesize\ttfamily J\+Token Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Behaviors\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 468 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_ac89dba8cf93ba78cc19e51d8ed948eae}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_ac89dba8cf93ba78cc19e51d8ed948eae}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Do\+Room\+Flood\+Fill@{Do\+Room\+Flood\+Fill}}
+\index{Do\+Room\+Flood\+Fill@{Do\+Room\+Flood\+Fill}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Do\+Room\+Flood\+Fill()}{DoRoomFloodFill()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Do\+Room\+Flood\+Fill (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{source\+Tile,  }\item[{bool}]{splitting,  }\item[{bool}]{flood\+Filling\+On\+Tile\+Change = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Does a room flood fill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Tile} & Source tile.\\
+\hline
+{\em splitting} & If set to {\ttfamily true} it will perform a split action. This is for when a room could be logically subdivided into more rooms. If set to {\ttfamily false} then it will try to join rooms.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 213 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a2d73aa65d42b9cedebe790024f6abf68}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a2d73aa65d42b9cedebe790024f6abf68}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Equalise\+Gas\+By\+Tile@{Equalise\+Gas\+By\+Tile}}
+\index{Equalise\+Gas\+By\+Tile@{Equalise\+Gas\+By\+Tile}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Equalise\+Gas\+By\+Tile()}{EqualiseGasByTile()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Equalise\+Gas\+By\+Tile (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{float}]{leak\+Factor }\end{DoxyParamCaption})}
+
+
+
+Equalises the gas by tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The tile to begin the check from.\\
+\hline
+{\em leak\+Factor} & How leaky should the equalization be.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a20fabe9e69ef78996cc87aa0ccd69b9e}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a20fabe9e69ef78996cc87aa0ccd69b9e}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{rooms\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 458 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a2c1e6804f4dcc26cb7f2aec59ddc286b}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a2c1e6804f4dcc26cb7f2aec59ddc286b}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 427 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a4d27ea1253a0af30d859d36334a63e6f}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a4d27ea1253a0af30d859d36334a63e6f}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Get\+Room\+ID@{Get\+Room\+ID}}
+\index{Get\+Room\+ID@{Get\+Room\+ID}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Room\+I\+D()}{GetRoomID()}}
+{\footnotesize\ttfamily int Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Get\+Room\+ID (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Gets the room ID. 
+
+\begin{DoxyReturn}{Returns}
+The room ID.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em room} & What \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} to check for ID.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a80086ec355ff9c1489858d76358fba8b}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a80086ec355ff9c1489858d76358fba8b}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Remove@{Remove}}
+\index{Remove@{Remove}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Remove a room from the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & The room to remove.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 155 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a9f81f33cc998f4f7e3d4d1e05d52196f}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a9f81f33cc998f4f7e3d4d1e05d52196f}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Project\+Porcupine.\+Rooms.\+Room\+Manager.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 442 of file Room\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_aff155953e003b35071ce20d4cfc7aaf7}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_aff155953e003b35071ce20d4cfc7aaf7}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Count@{Count}}
+\index{Count@{Count}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the amount of rooms. 
+
+The number of rooms managed.
+
+Definition at line 92 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_adc67244d6abd3955beb780d4add7bbac}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_adc67244d6abd3955beb780d4add7bbac}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Outside\+Room@{Outside\+Room}}
+\index{Outside\+Room@{Outside\+Room}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Outside\+Room}{OutsideRoom}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Outside\+Room\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the outside room. 
+
+The outside room.
+
+Definition at line 103 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a6763abd4726b4dd98bb2fcb89484b31e}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a6763abd4726b4dd98bb2fcb89484b31e}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{this[int index]}{this[int index]}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Project\+Porcupine.\+Rooms.\+Room\+Manager.\+this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a managed room from an ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The ID of the room.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file Room\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a89751a39cba37e08030063dbddbf3b0c}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a89751a39cba37e08030063dbddbf3b0c}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Added@{Added}}
+\index{Added@{Added}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Added}{Added}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Added}
+
+
+
+Occurs after the room has been added to the manager. 
+
+
+
+Definition at line 45 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a38434c8e6574c833249a75aebf9b0706}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a38434c8e6574c833249a75aebf9b0706}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Adding@{Adding}}
+\index{Adding@{Adding}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Adding}{Adding}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Adding}
+
+
+
+Occurs when adding a new room to the manager, before the room is actually added. 
+
+
+
+Definition at line 40 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a20b42ad78ff8996e457123cfb5cf0a0b}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a20b42ad78ff8996e457123cfb5cf0a0b}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Flood\+Fill\+Began@{Flood\+Fill\+Began}}
+\index{Flood\+Fill\+Began@{Flood\+Fill\+Began}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Flood\+Fill\+Began}{FloodFillBegan}}
+{\footnotesize\ttfamily Action Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Flood\+Fill\+Began}
+
+
+
+Occurs before the floodfill or \textquotesingle{}as it begins\textquotesingle{}. 
+
+
+
+Definition at line 80 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_aeb63c8447353bd50a2d9608bfc0f6d52}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_aeb63c8447353bd50a2d9608bfc0f6d52}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Flood\+Fill\+Ended@{Flood\+Fill\+Ended}}
+\index{Flood\+Fill\+Ended@{Flood\+Fill\+Ended}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Flood\+Fill\+Ended}{FloodFillEnded}}
+{\footnotesize\ttfamily Action Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Flood\+Fill\+Ended}
+
+
+
+Occurs after the floodfill. 
+
+
+
+Definition at line 85 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_a68aa9c86e78c2f25228010994ab43567}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_a68aa9c86e78c2f25228010994ab43567}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Joined@{Joined}}
+\index{Joined@{Joined}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Joined}{Joined}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Joined}
+
+
+
+Occurs when two rooms are joined. The first room is the old one, the second is the new one. 
+
+Warning, the old room has already been removed from the manager, and most of its data can be considered stale. This is a possible F\+I\+X\+ME. 
+
+Definition at line 63 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_af499628911e02ea630620f63c2dec68d}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_af499628911e02ea630620f63c2dec68d}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Removed@{Removed}}
+\index{Removed@{Removed}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Removed}{Removed}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Removed}
+
+
+
+Occurs after the room has been removed from the manager. 
+
+
+
+Definition at line 75 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_ab886414089e90a69275832444a3e6c66}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_ab886414089e90a69275832444a3e6c66}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Removing@{Removing}}
+\index{Removing@{Removing}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Removing}{Removing}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Removing}
+
+
+
+Occurs when removing a room from the manager, before the room is actually removed. 
+
+
+
+Definition at line 69 of file Room\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_rooms_1_1_room_manager_ad8eb00af1baebf4e31bc07b1e0244a7a}\label{class_project_porcupine_1_1_rooms_1_1_room_manager_ad8eb00af1baebf4e31bc07b1e0244a7a}} 
+\index{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}!Split@{Split}}
+\index{Split@{Split}!Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager@{Project\+Porcupine\+::\+Rooms\+::\+Room\+Manager}}
+\subsubsection{\texorpdfstring{Split}{Split}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}$>$ Project\+Porcupine.\+Rooms.\+Room\+Manager.\+Split}
+
+
+
+Occurs when a room is split. The first room is the old one, the second is the new one. 
+
+
+
+Definition at line 52 of file Room\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_room_manager_8cs}{Room\+Manager.\+cs}\end{DoxyCompactItemize}

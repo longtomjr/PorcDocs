@@ -1,0 +1,182 @@
+\hypertarget{class_overlay_descriptor}{}\section{Overlay\+Descriptor Class Reference}
+\label{class_overlay_descriptor}\index{Overlay\+Descriptor@{Overlay\+Descriptor}}
+
+
+Contains the description of a single overlay type. Contains L\+UA function name, id and coloring details.  
+
+
+Inheritance diagram for Overlay\+Descriptor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_overlay_descriptor}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Color\+Map\+Option} \{ \hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a252ce7e80c1ffd8c2558ad9b13d4ca2b}{Color\+Map\+Option.\+Jet}, 
+\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a64663f4646781c9c0110838b905daa23}{Color\+Map\+Option.\+Random}, 
+\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a278f9a3d3077c522e71022e302b9e0e4}{Color\+Map\+Option.\+Palette}
+ \}\begin{DoxyCompactList}\small\item\em Select the type of color map (coloring scheme) you want to use. T\+O\+DO\+: More color maps. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_overlay_descriptor_a518174908981876ab479afd8c47544c2}{Overlay\+Descriptor} ()
+\item 
+void \hyperlink{class_overlay_descriptor_ad20c8b4b4817e2bea919a3619401ef38}{Read\+Xml\+Prototype} (Xml\+Reader xml\+Reader)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{class_overlay_descriptor}{Overlay\+Descriptor} form a xml subtree with node $<$Overlay$>$$<$/\+Overlay$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_overlay_descriptor_a5d9bc37e7dbea883b6e3f2905641a34a}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unique identifier. \end{DoxyCompactList}\item 
+string \hyperlink{class_overlay_descriptor_aa49f263dd8fbf9ed36f031f2bacc5815}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the localized name. \end{DoxyCompactList}\item 
+\hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Color\+Map\+Option} \hyperlink{class_overlay_descriptor_ad6059c6ff98838034b392330e33b8217}{Color\+Map}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Type of color map used by this descriptor. \end{DoxyCompactList}\item 
+string \hyperlink{class_overlay_descriptor_a926c5e857cd945f6a2f560d71c79a927}{Lua\+Function\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of function returning int (index of color) given a tile t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the description of a single overlay type. Contains L\+UA function name, id and coloring details. 
+
+
+
+Definition at line 19 of file Overlay\+Descriptor.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}\label{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Color\+Map\+Option@{Color\+Map\+Option}}
+\index{Color\+Map\+Option@{Color\+Map\+Option}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Color\+Map\+Option}{ColorMapOption}}
+{\footnotesize\ttfamily enum \hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Overlay\+Descriptor.\+Color\+Map\+Option}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Select the type of color map (coloring scheme) you want to use. T\+O\+DO\+: More color maps. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Jet@{Jet}!Overlay\+Descriptor@{Overlay\+Descriptor}}\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Jet@{Jet}}}\mbox{\Hypertarget{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a252ce7e80c1ffd8c2558ad9b13d4ca2b}\label{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a252ce7e80c1ffd8c2558ad9b13d4ca2b}} 
+Jet&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Random@{Random}!Overlay\+Descriptor@{Overlay\+Descriptor}}\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Random@{Random}}}\mbox{\Hypertarget{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a64663f4646781c9c0110838b905daa23}\label{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a64663f4646781c9c0110838b905daa23}} 
+Random&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Palette@{Palette}!Overlay\+Descriptor@{Overlay\+Descriptor}}\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Palette@{Palette}}}\mbox{\Hypertarget{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a278f9a3d3077c522e71022e302b9e0e4}\label{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240a278f9a3d3077c522e71022e302b9e0e4}} 
+Palette&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 30 of file Overlay\+Descriptor.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_overlay_descriptor_a518174908981876ab479afd8c47544c2}\label{class_overlay_descriptor_a518174908981876ab479afd8c47544c2}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Overlay\+Descriptor()}{OverlayDescriptor()}}
+{\footnotesize\ttfamily Overlay\+Descriptor.\+Overlay\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Overlay\+Descriptor.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_overlay_descriptor_ad20c8b4b4817e2bea919a3619401ef38}\label{class_overlay_descriptor_ad20c8b4b4817e2bea919a3619401ef38}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Overlay\+Descriptor.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{xml\+Reader }\end{DoxyParamCaption})}
+
+
+
+Creates an \hyperlink{class_overlay_descriptor}{Overlay\+Descriptor} form a xml subtree with node $<$Overlay$>$$<$/\+Overlay$>$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Reader} & The subtree pointing to Overlay.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 64 of file Overlay\+Descriptor.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_overlay_descriptor_ad6059c6ff98838034b392330e33b8217}\label{class_overlay_descriptor_ad6059c6ff98838034b392330e33b8217}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Color\+Map@{Color\+Map}}
+\index{Color\+Map@{Color\+Map}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Color\+Map}{ColorMap}}
+{\footnotesize\ttfamily \hyperlink{class_overlay_descriptor_ace98995d8c49c9395934100f3e5e1240}{Color\+Map\+Option} Overlay\+Descriptor.\+Color\+Map\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Type of color map used by this descriptor. 
+
+
+
+Definition at line 53 of file Overlay\+Descriptor.\+cs.
+
+\mbox{\Hypertarget{class_overlay_descriptor_a926c5e857cd945f6a2f560d71c79a927}\label{class_overlay_descriptor_a926c5e857cd945f6a2f560d71c79a927}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Lua\+Function\+Name@{Lua\+Function\+Name}}
+\index{Lua\+Function\+Name@{Lua\+Function\+Name}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Lua\+Function\+Name}{LuaFunctionName}}
+{\footnotesize\ttfamily string Overlay\+Descriptor.\+Lua\+Function\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Name of function returning int (index of color) given a tile t. 
+
+
+
+Definition at line 58 of file Overlay\+Descriptor.\+cs.
+
+\mbox{\Hypertarget{class_overlay_descriptor_aa49f263dd8fbf9ed36f031f2bacc5815}\label{class_overlay_descriptor_aa49f263dd8fbf9ed36f031f2bacc5815}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Name@{Name}}
+\index{Name@{Name}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Overlay\+Descriptor.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the localized name. 
+
+
+
+Definition at line 46 of file Overlay\+Descriptor.\+cs.
+
+\mbox{\Hypertarget{class_overlay_descriptor_a5d9bc37e7dbea883b6e3f2905641a34a}\label{class_overlay_descriptor_a5d9bc37e7dbea883b6e3f2905641a34a}} 
+\index{Overlay\+Descriptor@{Overlay\+Descriptor}!Type@{Type}}
+\index{Type@{Type}!Overlay\+Descriptor@{Overlay\+Descriptor}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Overlay\+Descriptor.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Unique identifier. 
+
+
+
+Definition at line 40 of file Overlay\+Descriptor.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+Overlay/\hyperlink{_overlay_descriptor_8cs}{Overlay\+Descriptor.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\hypertarget{class_project_porcupine_1_1_power_network_1_1_grid}{}\section{Project\+Porcupine.\+Power\+Network.\+Grid Class Reference}
+\label{class_project_porcupine_1_1_power_network_1_1_grid}\index{Project\+Porcupine.\+Power\+Network.\+Grid@{Project\+Porcupine.\+Power\+Network.\+Grid}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a9a6675ff50fe5939bc19ebdf49e4aa87}{Grid} ()
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ad9f6231845db898ab5cefb659ba38572}{Can\+Plug\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\begin{DoxyCompactList}\small\item\em Determines whether the connection can plug into this grid. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a4848e6cc4ac8aceb3e1ff92ff5a01179}{Plug\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\begin{DoxyCompactList}\small\item\em Plugs the \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} into this grid. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a738028256ea811fa43b7022798ca527c}{Is\+Plugged\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\begin{DoxyCompactList}\small\item\em Determines whether the connection is plugged into this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_aa1b238cb717ad56a98c32890a2759e74}{Unplug} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\begin{DoxyCompactList}\small\item\em Unplug the specified \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} from this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a08ad6cd3b596d237c5b20eb0bcdac963}{Has\+Any\+Producer} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ab371c7c2e99eee313277cd560e570418}{Tick} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ae148d4d22d825dfe0365788bcba03c6c}{Merge} (\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} other\+Grid)
+\begin{DoxyCompactList}\small\item\em Merge the specified \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} with this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ada8e244deb48592263998d6718cf0e69}{Split} ()
+\begin{DoxyCompactList}\small\item\em Split this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} into multiple grids. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a278be982853de9eb9d48cf1c17c809ad}{Is\+Operating}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Power grid has enough power for all its connections. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ae22c90c2c9607a8cdd87383369831dc2}{Is\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em No connections in this grid. \end{DoxyCompactList}\item 
+int \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a87dd40416d4bc9632276dcadbbe9d32d}{Connection\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the number of connections to this grid. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_a26262c4410cf9fd06c0cb65172d320ce}{Efficiency}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ae15fa1698e2b9a4584e012f42a723833}{Utility\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid_ad3119ffe11797d4cbec859b501ed5437}{Sub\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Grid.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a9a6675ff50fe5939bc19ebdf49e4aa87}\label{class_project_porcupine_1_1_power_network_1_1_grid_a9a6675ff50fe5939bc19ebdf49e4aa87}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Power\+Network.\+Grid.\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Grid.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ad9f6231845db898ab5cefb659ba38572}\label{class_project_porcupine_1_1_power_network_1_1_grid_ad9f6231845db898ab5cefb659ba38572}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Can\+Plug\+In@{Can\+Plug\+In}}
+\index{Can\+Plug\+In@{Can\+Plug\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Can\+Plug\+In()}{CanPlugIn()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Can\+Plug\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Determines whether the connection can plug into this grid. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the connection can plug into this grid; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a08ad6cd3b596d237c5b20eb0bcdac963}\label{class_project_porcupine_1_1_power_network_1_1_grid_a08ad6cd3b596d237c5b20eb0bcdac963}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Has\+Any\+Producer@{Has\+Any\+Producer}}
+\index{Has\+Any\+Producer@{Has\+Any\+Producer}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Has\+Any\+Producer()}{HasAnyProducer()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Has\+Any\+Producer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 149 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a738028256ea811fa43b7022798ca527c}\label{class_project_porcupine_1_1_power_network_1_1_grid_a738028256ea811fa43b7022798ca527c}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Is\+Plugged\+In@{Is\+Plugged\+In}}
+\index{Is\+Plugged\+In@{Is\+Plugged\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Is\+Plugged\+In()}{IsPluggedIn()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Is\+Plugged\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Determines whether the connection is plugged into this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the connection is plugged into this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ae148d4d22d825dfe0365788bcba03c6c}\label{class_project_porcupine_1_1_power_network_1_1_grid_ae148d4d22d825dfe0365788bcba03c6c}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Merge@{Merge}}
+\index{Merge@{Merge}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Merge()}{Merge()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Grid.\+Merge (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{other\+Grid }\end{DoxyParamCaption})}
+
+
+
+Merge the specified \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} with this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Grid} & Other grid to be merged.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 267 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a4848e6cc4ac8aceb3e1ff92ff5a01179}\label{class_project_porcupine_1_1_power_network_1_1_grid_a4848e6cc4ac8aceb3e1ff92ff5a01179}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Plug\+In@{Plug\+In}}
+\index{Plug\+In@{Plug\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Plug\+In()}{PlugIn()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Plug\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Plugs the \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} into this grid. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if in was plugged, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} to be plugged in.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ada8e244deb48592263998d6718cf0e69}\label{class_project_porcupine_1_1_power_network_1_1_grid_ada8e244deb48592263998d6718cf0e69}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Split@{Split}}
+\index{Split@{Split}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Split()}{Split()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Grid.\+Split (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Split this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} into multiple grids. 
+
+
+
+Definition at line 275 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ab371c7c2e99eee313277cd560e570418}\label{class_project_porcupine_1_1_power_network_1_1_grid_ab371c7c2e99eee313277cd560e570418}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Tick@{Tick}}
+\index{Tick@{Tick}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Grid.\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_aa1b238cb717ad56a98c32890a2759e74}\label{class_project_porcupine_1_1_power_network_1_1_grid_aa1b238cb717ad56a98c32890a2759e74}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Unplug@{Unplug}}
+\index{Unplug@{Unplug}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Unplug()}{Unplug()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Grid.\+Unplug (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Unplug the specified \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} from this \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} to be unplugged.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 139 of file Grid.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a87dd40416d4bc9632276dcadbbe9d32d}\label{class_project_porcupine_1_1_power_network_1_1_grid_a87dd40416d4bc9632276dcadbbe9d32d}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Connection\+Count@{Connection\+Count}}
+\index{Connection\+Count@{Connection\+Count}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Connection\+Count}{ConnectionCount}}
+{\footnotesize\ttfamily int Project\+Porcupine.\+Power\+Network.\+Grid.\+Connection\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the number of connections to this grid. 
+
+
+
+Definition at line 46 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a26262c4410cf9fd06c0cb65172d320ce}\label{class_project_porcupine_1_1_power_network_1_1_grid_a26262c4410cf9fd06c0cb65172d320ce}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Efficiency@{Efficiency}}
+\index{Efficiency@{Efficiency}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Efficiency}{Efficiency}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+Grid.\+Efficiency\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 53 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ae22c90c2c9607a8cdd87383369831dc2}\label{class_project_porcupine_1_1_power_network_1_1_grid_ae22c90c2c9607a8cdd87383369831dc2}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Is\+Empty}{IsEmpty}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+No connections in this grid. 
+
+
+
+Definition at line 38 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_a278be982853de9eb9d48cf1c17c809ad}\label{class_project_porcupine_1_1_power_network_1_1_grid_a278be982853de9eb9d48cf1c17c809ad}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Is\+Operating@{Is\+Operating}}
+\index{Is\+Operating@{Is\+Operating}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Is\+Operating}{IsOperating}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Grid.\+Is\+Operating\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Power grid has enough power for all its connections. 
+
+
+
+Definition at line 32 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ad3119ffe11797d4cbec859b501ed5437}\label{class_project_porcupine_1_1_power_network_1_1_grid_ad3119ffe11797d4cbec859b501ed5437}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Sub\+Type@{Sub\+Type}}
+\index{Sub\+Type@{Sub\+Type}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Sub\+Type}{SubType}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Power\+Network.\+Grid.\+Sub\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 57 of file Grid.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_grid_ae15fa1698e2b9a4584e012f42a723833}\label{class_project_porcupine_1_1_power_network_1_1_grid_ae15fa1698e2b9a4584e012f42a723833}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}!Utility\+Type@{Utility\+Type}}
+\index{Utility\+Type@{Utility\+Type}!Project\+Porcupine\+::\+Power\+Network\+::\+Grid@{Project\+Porcupine\+::\+Power\+Network\+::\+Grid}}
+\subsubsection{\texorpdfstring{Utility\+Type}{UtilityType}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Power\+Network.\+Grid.\+Utility\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 55 of file Grid.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utility\+Network/\hyperlink{_grid_8cs}{Grid.\+cs}\end{DoxyCompactItemize}

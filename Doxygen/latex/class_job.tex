@@ -1,0 +1,846 @@
+\hypertarget{class_job}{}\section{Job Class Reference}
+\label{class_job}\index{Job@{Job}}
+Inheritance diagram for Job\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_job}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job\+Priority} \{ \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa655d20c1ca69519ca647684edbb2db35}{Job\+Priority.\+High}, 
+\hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa87f8a6ab85c9ced3702b4ea641ad4bb5}{Job\+Priority.\+Medium}, 
+\hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa28d0edd045e05cf5af64e35ae0c4c6ef}{Job\+Priority.\+Low}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_job_ab0be2e41ce656169b55e1017185479d3}{Job} ()
+\item 
+\hyperlink{class_job_a67710e7b5957e833e85730b6871b76e9}{Job} (\hyperlink{class_tile}{Tile} \hyperlink{class_job_a36c037d122ff255572942f7d3c949bbd}{tile}, string type, Action$<$ \hyperlink{class_job}{Job} $>$ job\+Complete, float job\+Time, \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item}\mbox{[}$\,$\mbox{]} requested\+Items, \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job.\+Job\+Priority} job\+Priority, bool \hyperlink{class_job_a6987ac66f301cfb576dac72451328b39}{job\+Repeats}=false, bool need=false, bool critical=false, bool \hyperlink{class_job_a68dea057c25e34f4d55cb70e913991a8}{adjacent}=false)
+\item 
+\hyperlink{class_job_af831acec06ac9895b3e6fb0dccb412b7}{Job} (\hyperlink{class_tile}{Tile} \hyperlink{class_job_a36c037d122ff255572942f7d3c949bbd}{tile}, \hyperlink{class_tile_type}{Tile\+Type} job\+Tile\+Type, Action$<$ \hyperlink{class_job}{Job} $>$ job\+Completed, float job\+Time, \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item}\mbox{[}$\,$\mbox{]} requested\+Items, \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job.\+Job\+Priority} job\+Priority, bool \hyperlink{class_job_a6987ac66f301cfb576dac72451328b39}{job\+Repeats}=false, bool \hyperlink{class_job_a68dea057c25e34f4d55cb70e913991a8}{adjacent}=false)
+\item 
+\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]} \hyperlink{class_job_adc2a081cf8637f97602878516118facb}{Get\+Inventory\+Requirement\+Values} ()
+\item 
+void \hyperlink{class_job_a4c742512928b31d7aed1751e3c110cf3}{Set\+Tile\+From\+Need\+Furniture} (\hyperlink{class_tile}{Tile} current\+Tile, string need\+Furniture)
+\item 
+virtual \hyperlink{class_job}{Job} \hyperlink{class_job_a76133c61d72b667905bef919a50b8c34}{Clone} ()
+\item 
+void \hyperlink{class_job_ac763d2ee96f8dee66d67122dd1667bc4}{Register\+Job\+Completed\+Callback} (string cb)
+\item 
+void \hyperlink{class_job_a97e78583a5f2291a03499e485109499e}{Unregister\+Job\+Completed\+Callback} (string cb)
+\item 
+void \hyperlink{class_job_ae6991b1a825e7f8dc2fa111d1a04cb7b}{Register\+Job\+Worked\+Callback} (string cb)
+\item 
+void \hyperlink{class_job_a3abd52db21d9340c3055035c203a8577}{Unregister\+Job\+Worked\+Callback} (string cb)
+\item 
+void \hyperlink{class_job_a072183f0b0e76cb6dc9839435135b410}{Do\+Work} (float work\+Time)
+\item 
+void \hyperlink{class_job_af944847e4846c7e243787d0d4536e1b4}{Cancel\+Job} ()
+\item 
+bool \hyperlink{class_job_a31ad0e22267859ee2a2574cf5e49cac1}{Material\+Needs\+Met} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if the job has met the material requirements needed to do this job. \end{DoxyCompactList}\item 
+bool \hyperlink{class_job_a1d272ad587bd70f2aeca6aba7ced837b}{Has\+All\+Material} ()
+\item 
+bool \hyperlink{class_job_a5225110615c06f8fca994f884073fe90}{Has\+Any\+Material} ()
+\item 
+int \hyperlink{class_job_a335532dd354ea5a99bbe5c49312689e8}{Amount\+Desired\+Of\+Inventory\+Type} (string type)
+\item 
+bool \hyperlink{class_job_a6f863c4a232bab7636ac7e075a2736d1}{Is\+Required\+Inventories\+Available} ()
+\item 
+\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \hyperlink{class_job_a0c3b5631b1791f188927ba33186d3446}{Get\+First\+Fulfillable\+Inventory\+Requirement} ()
+\begin{DoxyCompactList}\small\item\em Returns the first fulfillable requirement of this job. Especially useful for jobs that has a long list of materials and can use any of them. \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_job_ad4e44203afda2abff6219ec02cc61a9b}{Fulfillable\+Inventory\+Requirements} ()
+\begin{DoxyCompactList}\small\item\em Fulfillable inventory requirements for job. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \hyperlink{class_job_a8dde17edcf1f5d45a8ead9c663d02ad2}{Get\+First\+Desired\+Item} ()
+\item 
+void \hyperlink{class_job_adca382bacf03b82dbdaf6eb8178c97c1}{Drop\+Priority} ()
+\item 
+string \hyperlink{class_job_a250a84373e09871c23aab690829e91af}{Get\+Name} ()
+\item 
+string \hyperlink{class_job_a03ba4d976ec78d3e36b6ac7f5124ca06}{Get\+Description} ()
+\item 
+string \hyperlink{class_job_a7161746f9a93cc8dc204a01ca01cf2fa}{Get\+Job\+Description} ()
+\item 
+void \hyperlink{class_job_adfb8aca515c080a5dabb6d2bc2a8b615}{Add\+Char\+Cant\+Reach} (\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character)
+\begin{DoxyCompactList}\small\item\em Add the character to the list of characters that can not reach this job. \end{DoxyCompactList}\item 
+bool \hyperlink{class_job_a5dda43629c29e13b94b6faeb6380e572}{Can\+Get\+To\+Inventory} (\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character)
+\item 
+void \hyperlink{class_job_ae8040a01c1ba22f4e108eb623adce4b5}{Clear\+Char\+Cant\+Reach} ()
+\begin{DoxyCompactList}\small\item\em Resets the list of character unable to reach the job. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_job_a12f5c3ebc9277bc67f110ec80287ae37}{Get\+Additional\+Info} ()
+\item 
+void \hyperlink{class_job_a4f006710b0158ef22c0b4c5b8ca63e6f}{Read\+Xml\+Prototype} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\item 
+void \hyperlink{class_job_a4bc970de019bb287e67e3fd9a7098ceb}{F\+S\+M\+Log\+Requirements} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_job_a36c037d122ff255572942f7d3c949bbd}{tile}
+\item 
+\hyperlink{interface_i_buildable}{I\+Buildable} \hyperlink{class_job_a53afb8d21780b4252d6aa12d97765d00}{buildable\+Prototype}
+\item 
+\hyperlink{interface_i_buildable}{I\+Buildable} \hyperlink{class_job_a59502e5a19ee4d1ff89eb97c933b6f8e}{buildable}
+\item 
+bool \hyperlink{class_job_aa7e8528a15ee13d00ef61f9dfb116f63}{can\+Take\+From\+Stockpile} = true
+\item 
+bool \hyperlink{class_job_a68dea057c25e34f4d55cb70e913991a8}{adjacent}
+\begin{DoxyCompactList}\small\item\em If true, the work will be carried out on any adjacent tile of the target tile rather than on it. \end{DoxyCompactList}\item 
+bool \hyperlink{class_job_a92c1d5af0a58eb2c34cba2be7b4e3f97}{accepts\+Any}
+\begin{DoxyCompactList}\small\item\em If true the job is workable if A\+NY of the inventory requirements are met. Otherwise A\+LL requirements must be met before work can start. This is useful for stockpile/storage jobs which can accept many types of items. Defaults to false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_job_a733d72f027e5594644fe0cfc0774dcd1}{Job} (\hyperlink{class_job}{Job} other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_job_a23e934caf9fd211ccc29ae1a8eeb99be}{job\+Time\+Required}
+\item 
+bool \hyperlink{class_job_a6987ac66f301cfb576dac72451328b39}{job\+Repeats} = false
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} $>$ \hyperlink{class_job_adf323467d52d8b22ce88d9df48883c52}{Requested\+Items}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Dictionary$<$ string, \hyperlink{class_inventory}{Inventory} $>$ \hyperlink{class_job_a0ce910378be270a7b858139a3f7dac5e}{Delivered\+Items}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_job_afeda12f81081285a25b0b14196ea5dfd}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_job_abff4812529dfc153d28274a818128243}{Order\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of order that created this job. This should prevent multiple same orders on same things if not allowed. \end{DoxyCompactList}\item 
+string \hyperlink{class_job_a5656d78f1d382334c43364c1318f5c27}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+bool \hyperlink{class_job_afab3bbba6fbbf4a8982f8ae4a52642da}{Is\+Need}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+bool \hyperlink{class_job_addc4cd9d9fbf1a6faa155fae581b72b2}{Critical}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+bool \hyperlink{class_job_a176a9fc1578ec68148bbddfc46434fe9}{Is\+Being\+Worked}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_tile_type}{Tile\+Type} \hyperlink{class_job_ad894f38bb82ebf71a83f803f72bbf54e}{Job\+Tile\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+float \hyperlink{class_job_a0d4591bf90e5ca18e52abab59235f945}{Job\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job\+Priority} \hyperlink{class_job_a559abd8b2b3087742adc0ccb1045af7d}{Priority}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+bool \hyperlink{class_job_ac490b750b4dbe8227081665d882f900a}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_job_acccc269a1a1a79bbc4bdd8f1c2bd2e2e}{Is\+Repeating}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_job_a24dca863667c9abc692568e7cbeac981}{Chars\+Cant\+Reach}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Pathfinder.\+Goal\+Evaluator \hyperlink{class_job_a6975b7688a7fd6e7cd74544446ecbe4f}{Is\+Tile\+At\+Job\+Site}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_job_aa151ca0107d45278032e493df5a910a5}{On\+Job\+Completed}
+\item 
+Action$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_job_a68d63ec0351a545efa009e2afcac72f8}{On\+Job\+Stopped}
+\item 
+Action$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_job_a377621134925c1314248ccdd89756e52}{On\+Job\+Worked}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Job.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}\label{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}} 
+\index{Job@{Job}!Job\+Priority@{Job\+Priority}}
+\index{Job\+Priority@{Job\+Priority}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job\+Priority}{JobPriority}}
+{\footnotesize\ttfamily enum \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job.\+Job\+Priority}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{High@{High}!Job@{Job}}\index{Job@{Job}!High@{High}}}\mbox{\Hypertarget{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa655d20c1ca69519ca647684edbb2db35}\label{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa655d20c1ca69519ca647684edbb2db35}} 
+High&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Medium@{Medium}!Job@{Job}}\index{Job@{Job}!Medium@{Medium}}}\mbox{\Hypertarget{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa87f8a6ab85c9ced3702b4ea641ad4bb5}\label{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa87f8a6ab85c9ced3702b4ea641ad4bb5}} 
+Medium&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Low@{Low}!Job@{Job}}\index{Job@{Job}!Low@{Low}}}\mbox{\Hypertarget{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa28d0edd045e05cf5af64e35ae0c4c6ef}\label{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45aa28d0edd045e05cf5af64e35ae0c4c6ef}} 
+Low&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 154 of file Job.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_job_ab0be2e41ce656169b55e1017185479d3}\label{class_job_ab0be2e41ce656169b55e1017185479d3}} 
+\index{Job@{Job}!Job@{Job}}
+\index{Job@{Job}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job()}{Job()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Job.\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a67710e7b5957e833e85730b6871b76e9}\label{class_job_a67710e7b5957e833e85730b6871b76e9}} 
+\index{Job@{Job}!Job@{Job}}
+\index{Job@{Job}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job()}{Job()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Job.\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{string}]{type,  }\item[{Action$<$ \hyperlink{class_job}{Job} $>$}]{job\+Complete,  }\item[{float}]{job\+Time,  }\item[{\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]}}]{requested\+Items,  }\item[{\hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job.\+Job\+Priority}}]{job\+Priority,  }\item[{bool}]{job\+Repeats = {\ttfamily false},  }\item[{bool}]{need = {\ttfamily false},  }\item[{bool}]{critical = {\ttfamily false},  }\item[{bool}]{adjacent = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_af831acec06ac9895b3e6fb0dccb412b7}\label{class_job_af831acec06ac9895b3e6fb0dccb412b7}} 
+\index{Job@{Job}!Job@{Job}}
+\index{Job@{Job}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job()}{Job()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Job.\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{job\+Tile\+Type,  }\item[{Action$<$ \hyperlink{class_job}{Job} $>$}]{job\+Completed,  }\item[{float}]{job\+Time,  }\item[{\hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]}}]{requested\+Items,  }\item[{\hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job.\+Job\+Priority}}]{job\+Priority,  }\item[{bool}]{job\+Repeats = {\ttfamily false},  }\item[{bool}]{adjacent = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a733d72f027e5594644fe0cfc0774dcd1}\label{class_job_a733d72f027e5594644fe0cfc0774dcd1}} 
+\index{Job@{Job}!Job@{Job}}
+\index{Job@{Job}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job()}{Job()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Job.\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 119 of file Job.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_job_adfb8aca515c080a5dabb6d2bc2a8b615}\label{class_job_adfb8aca515c080a5dabb6d2bc2a8b615}} 
+\index{Job@{Job}!Add\+Char\+Cant\+Reach@{Add\+Char\+Cant\+Reach}}
+\index{Add\+Char\+Cant\+Reach@{Add\+Char\+Cant\+Reach}!Job@{Job}}
+\subsubsection{\texorpdfstring{Add\+Char\+Cant\+Reach()}{AddCharCantReach()}}
+{\footnotesize\ttfamily void Job.\+Add\+Char\+Cant\+Reach (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character }\end{DoxyParamCaption})}
+
+
+
+Add the character to the list of characters that can not reach this job. 
+
+
+
+Definition at line 520 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a335532dd354ea5a99bbe5c49312689e8}\label{class_job_a335532dd354ea5a99bbe5c49312689e8}} 
+\index{Job@{Job}!Amount\+Desired\+Of\+Inventory\+Type@{Amount\+Desired\+Of\+Inventory\+Type}}
+\index{Amount\+Desired\+Of\+Inventory\+Type@{Amount\+Desired\+Of\+Inventory\+Type}!Job@{Job}}
+\subsubsection{\texorpdfstring{Amount\+Desired\+Of\+Inventory\+Type()}{AmountDesiredOfInventoryType()}}
+{\footnotesize\ttfamily int Job.\+Amount\+Desired\+Of\+Inventory\+Type (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 401 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_af944847e4846c7e243787d0d4536e1b4}\label{class_job_af944847e4846c7e243787d0d4536e1b4}} 
+\index{Job@{Job}!Cancel\+Job@{Cancel\+Job}}
+\index{Cancel\+Job@{Cancel\+Job}!Job@{Job}}
+\subsubsection{\texorpdfstring{Cancel\+Job()}{CancelJob()}}
+{\footnotesize\ttfamily void Job.\+Cancel\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 337 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a5dda43629c29e13b94b6faeb6380e572}\label{class_job_a5dda43629c29e13b94b6faeb6380e572}} 
+\index{Job@{Job}!Can\+Get\+To\+Inventory@{Can\+Get\+To\+Inventory}}
+\index{Can\+Get\+To\+Inventory@{Can\+Get\+To\+Inventory}!Job@{Job}}
+\subsubsection{\texorpdfstring{Can\+Get\+To\+Inventory()}{CanGetToInventory()}}
+{\footnotesize\ttfamily bool Job.\+Can\+Get\+To\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character }\end{DoxyParamCaption})}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+True if the character can reach the inventory it needs.
+\end{DoxyReturn}
+
+
+Definition at line 532 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ae8040a01c1ba22f4e108eb623adce4b5}\label{class_job_ae8040a01c1ba22f4e108eb623adce4b5}} 
+\index{Job@{Job}!Clear\+Char\+Cant\+Reach@{Clear\+Char\+Cant\+Reach}}
+\index{Clear\+Char\+Cant\+Reach@{Clear\+Char\+Cant\+Reach}!Job@{Job}}
+\subsubsection{\texorpdfstring{Clear\+Char\+Cant\+Reach()}{ClearCharCantReach()}}
+{\footnotesize\ttfamily void Job.\+Clear\+Char\+Cant\+Reach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the list of character unable to reach the job. 
+
+
+
+Definition at line 549 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a76133c61d72b667905bef919a50b8c34}\label{class_job_a76133c61d72b667905bef919a50b8c34}} 
+\index{Job@{Job}!Clone@{Clone}}
+\index{Clone@{Clone}!Job@{Job}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_job}{Job} Job.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 258 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a072183f0b0e76cb6dc9839435135b410}\label{class_job_a072183f0b0e76cb6dc9839435135b410}} 
+\index{Job@{Job}!Do\+Work@{Do\+Work}}
+\index{Do\+Work@{Do\+Work}!Job@{Job}}
+\subsubsection{\texorpdfstring{Do\+Work()}{DoWork()}}
+{\footnotesize\ttfamily void Job.\+Do\+Work (\begin{DoxyParamCaption}\item[{float}]{work\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 285 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_adca382bacf03b82dbdaf6eb8178c97c1}\label{class_job_adca382bacf03b82dbdaf6eb8178c97c1}} 
+\index{Job@{Job}!Drop\+Priority@{Drop\+Priority}}
+\index{Drop\+Priority@{Drop\+Priority}!Job@{Job}}
+\subsubsection{\texorpdfstring{Drop\+Priority()}{DropPriority()}}
+{\footnotesize\ttfamily void Job.\+Drop\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 480 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a4bc970de019bb287e67e3fd9a7098ceb}\label{class_job_a4bc970de019bb287e67e3fd9a7098ceb}} 
+\index{Job@{Job}!F\+S\+M\+Log\+Requirements@{F\+S\+M\+Log\+Requirements}}
+\index{F\+S\+M\+Log\+Requirements@{F\+S\+M\+Log\+Requirements}!Job@{Job}}
+\subsubsection{\texorpdfstring{F\+S\+M\+Log\+Requirements()}{FSMLogRequirements()}}
+{\footnotesize\ttfamily void Job.\+F\+S\+M\+Log\+Requirements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 563 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ad4e44203afda2abff6219ec02cc61a9b}\label{class_job_ad4e44203afda2abff6219ec02cc61a9b}} 
+\index{Job@{Job}!Fulfillable\+Inventory\+Requirements@{Fulfillable\+Inventory\+Requirements}}
+\index{Fulfillable\+Inventory\+Requirements@{Fulfillable\+Inventory\+Requirements}!Job@{Job}}
+\subsubsection{\texorpdfstring{Fulfillable\+Inventory\+Requirements()}{FulfillableInventoryRequirements()}}
+{\footnotesize\ttfamily List$<$string$>$ Job.\+Fulfillable\+Inventory\+Requirements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fulfillable inventory requirements for job. 
+
+\begin{DoxyReturn}{Returns}
+A list of (string) Type for job inventory requirements that can be met. Returns null if the job requires materials which do not exist on the map.
+\end{DoxyReturn}
+
+
+Definition at line 437 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a12f5c3ebc9277bc67f110ec80287ae37}\label{class_job_a12f5c3ebc9277bc67f110ec80287ae37}} 
+\index{Job@{Job}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Job.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 554 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a03ba4d976ec78d3e36b6ac7f5124ca06}\label{class_job_a03ba4d976ec78d3e36b6ac7f5124ca06}} 
+\index{Job@{Job}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Job.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 498 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a8dde17edcf1f5d45a8ead9c663d02ad2}\label{class_job_a8dde17edcf1f5d45a8ead9c663d02ad2}} 
+\index{Job@{Job}!Get\+First\+Desired\+Item@{Get\+First\+Desired\+Item}}
+\index{Get\+First\+Desired\+Item@{Get\+First\+Desired\+Item}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+First\+Desired\+Item()}{GetFirstDesiredItem()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} Job.\+Get\+First\+Desired\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 465 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a0c3b5631b1791f188927ba33186d3446}\label{class_job_a0c3b5631b1791f188927ba33186d3446}} 
+\index{Job@{Job}!Get\+First\+Fulfillable\+Inventory\+Requirement@{Get\+First\+Fulfillable\+Inventory\+Requirement}}
+\index{Get\+First\+Fulfillable\+Inventory\+Requirement@{Get\+First\+Fulfillable\+Inventory\+Requirement}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+First\+Fulfillable\+Inventory\+Requirement()}{GetFirstFulfillableInventoryRequirement()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} Job.\+Get\+First\+Fulfillable\+Inventory\+Requirement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the first fulfillable requirement of this job. Especially useful for jobs that has a long list of materials and can use any of them. 
+
+
+
+Definition at line 420 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_adc2a081cf8637f97602878516118facb}\label{class_job_adc2a081cf8637f97602878516118facb}} 
+\index{Job@{Job}!Get\+Inventory\+Requirement\+Values@{Get\+Inventory\+Requirement\+Values}}
+\index{Get\+Inventory\+Requirement\+Values@{Get\+Inventory\+Requirement\+Values}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+Inventory\+Requirement\+Values()}{GetInventoryRequirementValues()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item} \mbox{[}$\,$\mbox{]} Job.\+Get\+Inventory\+Requirement\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 248 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a7161746f9a93cc8dc204a01ca01cf2fa}\label{class_job_a7161746f9a93cc8dc204a01ca01cf2fa}} 
+\index{Job@{Job}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Job.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 512 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a250a84373e09871c23aab690829e91af}\label{class_job_a250a84373e09871c23aab690829e91af}} 
+\index{Job@{Job}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Job@{Job}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Job.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 486 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a1d272ad587bd70f2aeca6aba7ced837b}\label{class_job_a1d272ad587bd70f2aeca6aba7ced837b}} 
+\index{Job@{Job}!Has\+All\+Material@{Has\+All\+Material}}
+\index{Has\+All\+Material@{Has\+All\+Material}!Job@{Job}}
+\subsubsection{\texorpdfstring{Has\+All\+Material()}{HasAllMaterial()}}
+{\footnotesize\ttfamily bool Job.\+Has\+All\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 378 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a5225110615c06f8fca994f884073fe90}\label{class_job_a5225110615c06f8fca994f884073fe90}} 
+\index{Job@{Job}!Has\+Any\+Material@{Has\+Any\+Material}}
+\index{Has\+Any\+Material@{Has\+Any\+Material}!Job@{Job}}
+\subsubsection{\texorpdfstring{Has\+Any\+Material()}{HasAnyMaterial()}}
+{\footnotesize\ttfamily bool Job.\+Has\+Any\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 396 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a6f863c4a232bab7636ac7e075a2736d1}\label{class_job_a6f863c4a232bab7636ac7e075a2736d1}} 
+\index{Job@{Job}!Is\+Required\+Inventories\+Available@{Is\+Required\+Inventories\+Available}}
+\index{Is\+Required\+Inventories\+Available@{Is\+Required\+Inventories\+Available}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Required\+Inventories\+Available()}{IsRequiredInventoriesAvailable()}}
+{\footnotesize\ttfamily bool Job.\+Is\+Required\+Inventories\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a31ad0e22267859ee2a2574cf5e49cac1}\label{class_job_a31ad0e22267859ee2a2574cf5e49cac1}} 
+\index{Job@{Job}!Material\+Needs\+Met@{Material\+Needs\+Met}}
+\index{Material\+Needs\+Met@{Material\+Needs\+Met}!Job@{Job}}
+\subsubsection{\texorpdfstring{Material\+Needs\+Met()}{MaterialNeedsMet()}}
+{\footnotesize\ttfamily bool Job.\+Material\+Needs\+Met (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks to see if the job has met the material requirements needed to do this job. 
+
+\begin{DoxyReturn}{Returns}
+Returns True if the job can do work based on material requirements.
+\end{DoxyReturn}
+
+
+Definition at line 363 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a4f006710b0158ef22c0b4c5b8ca63e6f}\label{class_job_a4f006710b0158ef22c0b4c5b8ca63e6f}} 
+\index{Job@{Job}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Job@{Job}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Job.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 559 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ac763d2ee96f8dee66d67122dd1667bc4}\label{class_job_ac763d2ee96f8dee66d67122dd1667bc4}} 
+\index{Job@{Job}!Register\+Job\+Completed\+Callback@{Register\+Job\+Completed\+Callback}}
+\index{Register\+Job\+Completed\+Callback@{Register\+Job\+Completed\+Callback}!Job@{Job}}
+\subsubsection{\texorpdfstring{Register\+Job\+Completed\+Callback()}{RegisterJobCompletedCallback()}}
+{\footnotesize\ttfamily void Job.\+Register\+Job\+Completed\+Callback (\begin{DoxyParamCaption}\item[{string}]{cb }\end{DoxyParamCaption})}
+
+
+
+Definition at line 264 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ae6991b1a825e7f8dc2fa111d1a04cb7b}\label{class_job_ae6991b1a825e7f8dc2fa111d1a04cb7b}} 
+\index{Job@{Job}!Register\+Job\+Worked\+Callback@{Register\+Job\+Worked\+Callback}}
+\index{Register\+Job\+Worked\+Callback@{Register\+Job\+Worked\+Callback}!Job@{Job}}
+\subsubsection{\texorpdfstring{Register\+Job\+Worked\+Callback()}{RegisterJobWorkedCallback()}}
+{\footnotesize\ttfamily void Job.\+Register\+Job\+Worked\+Callback (\begin{DoxyParamCaption}\item[{string}]{cb }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a4c742512928b31d7aed1751e3c110cf3}\label{class_job_a4c742512928b31d7aed1751e3c110cf3}} 
+\index{Job@{Job}!Set\+Tile\+From\+Need\+Furniture@{Set\+Tile\+From\+Need\+Furniture}}
+\index{Set\+Tile\+From\+Need\+Furniture@{Set\+Tile\+From\+Need\+Furniture}!Job@{Job}}
+\subsubsection{\texorpdfstring{Set\+Tile\+From\+Need\+Furniture()}{SetTileFromNeedFurniture()}}
+{\footnotesize\ttfamily void Job.\+Set\+Tile\+From\+Need\+Furniture (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{current\+Tile,  }\item[{string}]{need\+Furniture }\end{DoxyParamCaption})}
+
+
+
+Definition at line 253 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a97e78583a5f2291a03499e485109499e}\label{class_job_a97e78583a5f2291a03499e485109499e}} 
+\index{Job@{Job}!Unregister\+Job\+Completed\+Callback@{Unregister\+Job\+Completed\+Callback}}
+\index{Unregister\+Job\+Completed\+Callback@{Unregister\+Job\+Completed\+Callback}!Job@{Job}}
+\subsubsection{\texorpdfstring{Unregister\+Job\+Completed\+Callback()}{UnregisterJobCompletedCallback()}}
+{\footnotesize\ttfamily void Job.\+Unregister\+Job\+Completed\+Callback (\begin{DoxyParamCaption}\item[{string}]{cb }\end{DoxyParamCaption})}
+
+
+
+Definition at line 269 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a3abd52db21d9340c3055035c203a8577}\label{class_job_a3abd52db21d9340c3055035c203a8577}} 
+\index{Job@{Job}!Unregister\+Job\+Worked\+Callback@{Unregister\+Job\+Worked\+Callback}}
+\index{Unregister\+Job\+Worked\+Callback@{Unregister\+Job\+Worked\+Callback}!Job@{Job}}
+\subsubsection{\texorpdfstring{Unregister\+Job\+Worked\+Callback()}{UnregisterJobWorkedCallback()}}
+{\footnotesize\ttfamily void Job.\+Unregister\+Job\+Worked\+Callback (\begin{DoxyParamCaption}\item[{string}]{cb }\end{DoxyParamCaption})}
+
+
+
+Definition at line 279 of file Job.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_job_a92c1d5af0a58eb2c34cba2be7b4e3f97}\label{class_job_a92c1d5af0a58eb2c34cba2be7b4e3f97}} 
+\index{Job@{Job}!accepts\+Any@{accepts\+Any}}
+\index{accepts\+Any@{accepts\+Any}!Job@{Job}}
+\subsubsection{\texorpdfstring{accepts\+Any}{acceptsAny}}
+{\footnotesize\ttfamily bool Job.\+accepts\+Any}
+
+
+
+If true the job is workable if A\+NY of the inventory requirements are met. Otherwise A\+LL requirements must be met before work can start. This is useful for stockpile/storage jobs which can accept many types of items. Defaults to false. 
+
+
+
+Definition at line 47 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a68dea057c25e34f4d55cb70e913991a8}\label{class_job_a68dea057c25e34f4d55cb70e913991a8}} 
+\index{Job@{Job}!adjacent@{adjacent}}
+\index{adjacent@{adjacent}!Job@{Job}}
+\subsubsection{\texorpdfstring{adjacent}{adjacent}}
+{\footnotesize\ttfamily bool Job.\+adjacent}
+
+
+
+If true, the work will be carried out on any adjacent tile of the target tile rather than on it. 
+
+
+
+Definition at line 39 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a59502e5a19ee4d1ff89eb97c933b6f8e}\label{class_job_a59502e5a19ee4d1ff89eb97c933b6f8e}} 
+\index{Job@{Job}!buildable@{buildable}}
+\index{buildable@{buildable}!Job@{Job}}
+\subsubsection{\texorpdfstring{buildable}{buildable}}
+{\footnotesize\ttfamily \hyperlink{interface_i_buildable}{I\+Buildable} Job.\+buildable}
+
+
+
+Definition at line 32 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a53afb8d21780b4252d6aa12d97765d00}\label{class_job_a53afb8d21780b4252d6aa12d97765d00}} 
+\index{Job@{Job}!buildable\+Prototype@{buildable\+Prototype}}
+\index{buildable\+Prototype@{buildable\+Prototype}!Job@{Job}}
+\subsubsection{\texorpdfstring{buildable\+Prototype}{buildablePrototype}}
+{\footnotesize\ttfamily \hyperlink{interface_i_buildable}{I\+Buildable} Job.\+buildable\+Prototype}
+
+
+
+Definition at line 29 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_aa7e8528a15ee13d00ef61f9dfb116f63}\label{class_job_aa7e8528a15ee13d00ef61f9dfb116f63}} 
+\index{Job@{Job}!can\+Take\+From\+Stockpile@{can\+Take\+From\+Stockpile}}
+\index{can\+Take\+From\+Stockpile@{can\+Take\+From\+Stockpile}!Job@{Job}}
+\subsubsection{\texorpdfstring{can\+Take\+From\+Stockpile}{canTakeFromStockpile}}
+{\footnotesize\ttfamily bool Job.\+can\+Take\+From\+Stockpile = true}
+
+
+
+Definition at line 34 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a6987ac66f301cfb576dac72451328b39}\label{class_job_a6987ac66f301cfb576dac72451328b39}} 
+\index{Job@{Job}!job\+Repeats@{job\+Repeats}}
+\index{job\+Repeats@{job\+Repeats}!Job@{Job}}
+\subsubsection{\texorpdfstring{job\+Repeats}{jobRepeats}}
+{\footnotesize\ttfamily bool Job.\+job\+Repeats = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a23e934caf9fd211ccc29ae1a8eeb99be}\label{class_job_a23e934caf9fd211ccc29ae1a8eeb99be}} 
+\index{Job@{Job}!job\+Time\+Required@{job\+Time\+Required}}
+\index{job\+Time\+Required@{job\+Time\+Required}!Job@{Job}}
+\subsubsection{\texorpdfstring{job\+Time\+Required}{jobTimeRequired}}
+{\footnotesize\ttfamily float Job.\+job\+Time\+Required\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 49 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a36c037d122ff255572942f7d3c949bbd}\label{class_job_a36c037d122ff255572942f7d3c949bbd}} 
+\index{Job@{Job}!tile@{tile}}
+\index{tile@{tile}!Job@{Job}}
+\subsubsection{\texorpdfstring{tile}{tile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Job.\+tile}
+
+
+
+Definition at line 27 of file Job.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_job_a24dca863667c9abc692568e7cbeac981}\label{class_job_a24dca863667c9abc692568e7cbeac981}} 
+\index{Job@{Job}!Chars\+Cant\+Reach@{Chars\+Cant\+Reach}}
+\index{Chars\+Cant\+Reach@{Chars\+Cant\+Reach}!Job@{Job}}
+\subsubsection{\texorpdfstring{Chars\+Cant\+Reach}{CharsCantReach}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Job.\+Chars\+Cant\+Reach\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 227 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_addc4cd9d9fbf1a6faa155fae581b72b2}\label{class_job_addc4cd9d9fbf1a6faa155fae581b72b2}} 
+\index{Job@{Job}!Critical@{Critical}}
+\index{Critical@{Critical}!Job@{Job}}
+\subsubsection{\texorpdfstring{Critical}{Critical}}
+{\footnotesize\ttfamily bool Job.\+Critical\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 187 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a0ce910378be270a7b858139a3f7dac5e}\label{class_job_a0ce910378be270a7b858139a3f7dac5e}} 
+\index{Job@{Job}!Delivered\+Items@{Delivered\+Items}}
+\index{Delivered\+Items@{Delivered\+Items}!Job@{Job}}
+\subsubsection{\texorpdfstring{Delivered\+Items}{DeliveredItems}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{class_inventory}{Inventory}$>$ Job.\+Delivered\+Items\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 165 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_afeda12f81081285a25b0b14196ea5dfd}\label{class_job_afeda12f81081285a25b0b14196ea5dfd}} 
+\index{Job@{Job}!Description@{Description}}
+\index{Description@{Description}!Job@{Job}}
+\subsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily string Job.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 167 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a176a9fc1578ec68148bbddfc46434fe9}\label{class_job_a176a9fc1578ec68148bbddfc46434fe9}} 
+\index{Job@{Job}!Is\+Being\+Worked@{Is\+Being\+Worked}}
+\index{Is\+Being\+Worked@{Is\+Being\+Worked}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Being\+Worked}{IsBeingWorked}}
+{\footnotesize\ttfamily bool Job.\+Is\+Being\+Worked\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 192 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_afab3bbba6fbbf4a8982f8ae4a52642da}\label{class_job_afab3bbba6fbbf4a8982f8ae4a52642da}} 
+\index{Job@{Job}!Is\+Need@{Is\+Need}}
+\index{Is\+Need@{Is\+Need}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Need}{IsNeed}}
+{\footnotesize\ttfamily bool Job.\+Is\+Need\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 181 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_acccc269a1a1a79bbc4bdd8f1c2bd2e2e}\label{class_job_acccc269a1a1a79bbc4bdd8f1c2bd2e2e}} 
+\index{Job@{Job}!Is\+Repeating@{Is\+Repeating}}
+\index{Is\+Repeating@{Is\+Repeating}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Repeating}{IsRepeating}}
+{\footnotesize\ttfamily bool Job.\+Is\+Repeating\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 219 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ac490b750b4dbe8227081665d882f900a}\label{class_job_ac490b750b4dbe8227081665d882f900a}} 
+\index{Job@{Job}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Job.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 213 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a6975b7688a7fd6e7cd74544446ecbe4f}\label{class_job_a6975b7688a7fd6e7cd74544446ecbe4f}} 
+\index{Job@{Job}!Is\+Tile\+At\+Job\+Site@{Is\+Tile\+At\+Job\+Site}}
+\index{Is\+Tile\+At\+Job\+Site@{Is\+Tile\+At\+Job\+Site}!Job@{Job}}
+\subsubsection{\texorpdfstring{Is\+Tile\+At\+Job\+Site}{IsTileAtJobSite}}
+{\footnotesize\ttfamily Pathfinder.\+Goal\+Evaluator Job.\+Is\+Tile\+At\+Job\+Site\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 235 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_ad894f38bb82ebf71a83f803f72bbf54e}\label{class_job_ad894f38bb82ebf71a83f803f72bbf54e}} 
+\index{Job@{Job}!Job\+Tile\+Type@{Job\+Tile\+Type}}
+\index{Job\+Tile\+Type@{Job\+Tile\+Type}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job\+Tile\+Type}{JobTileType}}
+{\footnotesize\ttfamily \hyperlink{class_tile_type}{Tile\+Type} Job.\+Job\+Tile\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 195 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a0d4591bf90e5ca18e52abab59235f945}\label{class_job_a0d4591bf90e5ca18e52abab59235f945}} 
+\index{Job@{Job}!Job\+Time@{Job\+Time}}
+\index{Job\+Time@{Job\+Time}!Job@{Job}}
+\subsubsection{\texorpdfstring{Job\+Time}{JobTime}}
+{\footnotesize\ttfamily float Job.\+Job\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 201 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_abff4812529dfc153d28274a818128243}\label{class_job_abff4812529dfc153d28274a818128243}} 
+\index{Job@{Job}!Order\+Name@{Order\+Name}}
+\index{Order\+Name@{Order\+Name}!Job@{Job}}
+\subsubsection{\texorpdfstring{Order\+Name}{OrderName}}
+{\footnotesize\ttfamily string Job.\+Order\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Name of order that created this job. This should prevent multiple same orders on same things if not allowed. 
+
+
+
+Definition at line 172 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a559abd8b2b3087742adc0ccb1045af7d}\label{class_job_a559abd8b2b3087742adc0ccb1045af7d}} 
+\index{Job@{Job}!Priority@{Priority}}
+\index{Priority@{Priority}!Job@{Job}}
+\subsubsection{\texorpdfstring{Priority}{Priority}}
+{\footnotesize\ttfamily \hyperlink{class_job_a9c7ab1966c2a0a1d29a7f5822cbca45a}{Job\+Priority} Job.\+Priority\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 207 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_adf323467d52d8b22ce88d9df48883c52}\label{class_job_adf323467d52d8b22ce88d9df48883c52}} 
+\index{Job@{Job}!Requested\+Items@{Requested\+Items}}
+\index{Requested\+Items@{Requested\+Items}!Job@{Job}}
+\subsubsection{\texorpdfstring{Requested\+Items}{RequestedItems}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{class_project_porcupine_1_1_jobs_1_1_requested_item}{Requested\+Item}$>$ Job.\+Requested\+Items\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 162 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a5656d78f1d382334c43364c1318f5c27}\label{class_job_a5656d78f1d382334c43364c1318f5c27}} 
+\index{Job@{Job}!Type@{Type}}
+\index{Type@{Type}!Job@{Job}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Job.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 175 of file Job.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_job_aa151ca0107d45278032e493df5a910a5}\label{class_job_aa151ca0107d45278032e493df5a910a5}} 
+\index{Job@{Job}!On\+Job\+Completed@{On\+Job\+Completed}}
+\index{On\+Job\+Completed@{On\+Job\+Completed}!Job@{Job}}
+\subsubsection{\texorpdfstring{On\+Job\+Completed}{OnJobCompleted}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_job}{Job}$>$ Job.\+On\+Job\+Completed}
+
+
+
+Definition at line 147 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a68d63ec0351a545efa009e2afcac72f8}\label{class_job_a68d63ec0351a545efa009e2afcac72f8}} 
+\index{Job@{Job}!On\+Job\+Stopped@{On\+Job\+Stopped}}
+\index{On\+Job\+Stopped@{On\+Job\+Stopped}!Job@{Job}}
+\subsubsection{\texorpdfstring{On\+Job\+Stopped}{OnJobStopped}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_job}{Job}$>$ Job.\+On\+Job\+Stopped}
+
+
+
+Definition at line 149 of file Job.\+cs.
+
+\mbox{\Hypertarget{class_job_a377621134925c1314248ccdd89756e52}\label{class_job_a377621134925c1314248ccdd89756e52}} 
+\index{Job@{Job}!On\+Job\+Worked@{On\+Job\+Worked}}
+\index{On\+Job\+Worked@{On\+Job\+Worked}!Job@{Job}}
+\subsubsection{\texorpdfstring{On\+Job\+Worked}{OnJobWorked}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_job}{Job}$>$ Job.\+On\+Job\+Worked}
+
+
+
+Definition at line 152 of file Job.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Job/\hyperlink{_job_8cs}{Job.\+cs}\end{DoxyCompactItemize}

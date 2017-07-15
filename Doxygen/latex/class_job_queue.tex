@@ -1,0 +1,212 @@
+\hypertarget{class_job_queue}{}\section{Job\+Queue Class Reference}
+\label{class_job_queue}\index{Job\+Queue@{Job\+Queue}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_job_queue_a289d49dff9c2c49656dd589bd64c3aa6}{Job\+Queue} ()
+\item 
+bool \hyperlink{class_job_queue_ab88494452f5c6b0115d5fe5b452fa8eb}{Is\+Empty} ()
+\item 
+int \hyperlink{class_job_queue_ad9731c29b4830c04c1dd2f8f76cfd122}{Get\+Count} ()
+\item 
+void \hyperlink{class_job_queue_a1ad28f817250ffe648245c2ec76d1aa1}{Enqueue} (\hyperlink{class_job}{Job} job)
+\begin{DoxyCompactList}\small\item\em Add a job to the \hyperlink{class_job_queue}{Job\+Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_job}{Job} \hyperlink{class_job_queue_a4c09bd98140e27617b5b80c7f9c5fd13}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Returns the first job from the \hyperlink{class_job_queue}{Job\+Queue}. \end{DoxyCompactList}\item 
+\hyperlink{class_job}{Job} \hyperlink{class_job_queue_a22dd1f2d2bfdffc2b9cf8540c547f12b}{Get\+Job} (\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character)
+\begin{DoxyCompactList}\small\item\em Search for a job that can be performed by the specified character. Tests that the job can be reached and there is enough inventory to complete it, somewhere. \end{DoxyCompactList}\item 
+void \hyperlink{class_job_queue_aa81b1e92c067b91b41c8a612e9e7985d}{Remove} (\hyperlink{class_job}{Job} job)
+\item 
+I\+Enumerable$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_job_queue_a233a410811f3f747f0fb62b59650cf25}{Peek\+All\+Jobs} ()
+\begin{DoxyCompactList}\small\item\em Returns an I\+Enumerable for every job, including jobs that are in the waiting state. \end{DoxyCompactList}\item 
+void \hyperlink{class_job_queue_ab1c1837e1ad90e8b694cdb9df334bbc3}{Reevaluate\+Reachability} ()
+\begin{DoxyCompactList}\small\item\em Call this whenever a furniture gets changed or removed that might effect the reachability of an object. \end{DoxyCompactList}\item 
+bool \hyperlink{class_job_queue_a81f045f724b0f40fa79fe59f8784fe69}{Character\+Cant\+Reach\+Helper} (\hyperlink{class_job}{Job} job, \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} character)
+\begin{DoxyCompactList}\small\item\em Returns true if the character is already in the list of characters unable to reach the job. \end{DoxyCompactList}\item 
+void \hyperlink{class_job_queue_abc8f1aa2834e93b59016906b35a5281d}{Reevaluate\+Waiting\+Queue} (\hyperlink{class_inventory}{Inventory} inv)
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_job_queue_a9b7c35beb78b53bd8ae67b699e0758d9}{On\+Job\+Created}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Job\+Queue.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_job_queue_a289d49dff9c2c49656dd589bd64c3aa6}\label{class_job_queue_a289d49dff9c2c49656dd589bd64c3aa6}} 
+\index{Job\+Queue@{Job\+Queue}!Job\+Queue@{Job\+Queue}}
+\index{Job\+Queue@{Job\+Queue}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Job\+Queue()}{JobQueue()}}
+{\footnotesize\ttfamily Job\+Queue.\+Job\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Job\+Queue.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_job_queue_a81f045f724b0f40fa79fe59f8784fe69}\label{class_job_queue_a81f045f724b0f40fa79fe59f8784fe69}} 
+\index{Job\+Queue@{Job\+Queue}!Character\+Cant\+Reach\+Helper@{Character\+Cant\+Reach\+Helper}}
+\index{Character\+Cant\+Reach\+Helper@{Character\+Cant\+Reach\+Helper}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Character\+Cant\+Reach\+Helper()}{CharacterCantReachHelper()}}
+{\footnotesize\ttfamily bool Job\+Queue.\+Character\+Cant\+Reach\+Helper (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job,  }\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character }\end{DoxyParamCaption})}
+
+
+
+Returns true if the character is already in the list of characters unable to reach the job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 216 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_a4c09bd98140e27617b5b80c7f9c5fd13}\label{class_job_queue_a4c09bd98140e27617b5b80c7f9c5fd13}} 
+\index{Job\+Queue@{Job\+Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily \hyperlink{class_job}{Job} Job\+Queue.\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the first job from the \hyperlink{class_job_queue}{Job\+Queue}. 
+
+
+
+Definition at line 100 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_a1ad28f817250ffe648245c2ec76d1aa1}\label{class_job_queue_a1ad28f817250ffe648245c2ec76d1aa1}} 
+\index{Job\+Queue@{Job\+Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void Job\+Queue.\+Enqueue (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Add a job to the \hyperlink{class_job_queue}{Job\+Queue}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & The job to be inserted into the Queue.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_ad9731c29b4830c04c1dd2f8f76cfd122}\label{class_job_queue_ad9731c29b4830c04c1dd2f8f76cfd122}} 
+\index{Job\+Queue@{Job\+Queue}!Get\+Count@{Get\+Count}}
+\index{Get\+Count@{Get\+Count}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Get\+Count()}{GetCount()}}
+{\footnotesize\ttfamily int Job\+Queue.\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_a22dd1f2d2bfdffc2b9cf8540c547f12b}\label{class_job_queue_a22dd1f2d2bfdffc2b9cf8540c547f12b}} 
+\index{Job\+Queue@{Job\+Queue}!Get\+Job@{Get\+Job}}
+\index{Get\+Job@{Get\+Job}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Get\+Job()}{GetJob()}}
+{\footnotesize\ttfamily \hyperlink{class_job}{Job} Job\+Queue.\+Get\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character }\end{DoxyParamCaption})}
+
+
+
+Search for a job that can be performed by the specified character. Tests that the job can be reached and there is enough inventory to complete it, somewhere. 
+
+
+
+Definition at line 115 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_ab88494452f5c6b0115d5fe5b452fa8eb}\label{class_job_queue_ab88494452f5c6b0115d5fe5b452fa8eb}} 
+\index{Job\+Queue@{Job\+Queue}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Is\+Empty()}{IsEmpty()}}
+{\footnotesize\ttfamily bool Job\+Queue.\+Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_a233a410811f3f747f0fb62b59650cf25}\label{class_job_queue_a233a410811f3f747f0fb62b59650cf25}} 
+\index{Job\+Queue@{Job\+Queue}!Peek\+All\+Jobs@{Peek\+All\+Jobs}}
+\index{Peek\+All\+Jobs@{Peek\+All\+Jobs}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Peek\+All\+Jobs()}{PeekAllJobs()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_job}{Job}$>$ Job\+Queue.\+Peek\+All\+Jobs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns an I\+Enumerable for every job, including jobs that are in the waiting state. 
+
+
+
+Definition at line 177 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_ab1c1837e1ad90e8b694cdb9df334bbc3}\label{class_job_queue_ab1c1837e1ad90e8b694cdb9df334bbc3}} 
+\index{Job\+Queue@{Job\+Queue}!Reevaluate\+Reachability@{Reevaluate\+Reachability}}
+\index{Reevaluate\+Reachability@{Reevaluate\+Reachability}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Reevaluate\+Reachability()}{ReevaluateReachability()}}
+{\footnotesize\ttfamily void Job\+Queue.\+Reevaluate\+Reachability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Call this whenever a furniture gets changed or removed that might effect the reachability of an object. 
+
+
+
+Definition at line 196 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_abc8f1aa2834e93b59016906b35a5281d}\label{class_job_queue_abc8f1aa2834e93b59016906b35a5281d}} 
+\index{Job\+Queue@{Job\+Queue}!Reevaluate\+Waiting\+Queue@{Reevaluate\+Waiting\+Queue}}
+\index{Reevaluate\+Waiting\+Queue@{Reevaluate\+Waiting\+Queue}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Reevaluate\+Waiting\+Queue()}{ReevaluateWaitingQueue()}}
+{\footnotesize\ttfamily void Job\+Queue.\+Reevaluate\+Waiting\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{class_inventory}{Inventory}}]{inv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file Job\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_job_queue_aa81b1e92c067b91b41c8a612e9e7985d}\label{class_job_queue_aa81b1e92c067b91b41c8a612e9e7985d}} 
+\index{Job\+Queue@{Job\+Queue}!Remove@{Remove}}
+\index{Remove@{Remove}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Job\+Queue.\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Job\+Queue.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_job_queue_a9b7c35beb78b53bd8ae67b699e0758d9}\label{class_job_queue_a9b7c35beb78b53bd8ae67b699e0758d9}} 
+\index{Job\+Queue@{Job\+Queue}!On\+Job\+Created@{On\+Job\+Created}}
+\index{On\+Job\+Created@{On\+Job\+Created}!Job\+Queue@{Job\+Queue}}
+\subsubsection{\texorpdfstring{On\+Job\+Created}{OnJobCreated}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_job}{Job}$>$ Job\+Queue.\+On\+Job\+Created}
+
+
+
+Definition at line 30 of file Job\+Queue.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Job/\hyperlink{_job_queue_8cs}{Job\+Queue.\+cs}\end{DoxyCompactItemize}

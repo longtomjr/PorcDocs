@@ -1,0 +1,122 @@
+\hypertarget{class_trade}{}\section{Trade Class Reference}
+\label{class_trade}\index{Trade@{Trade}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trade_a6c33a0460eeb227454ca5796694ca377}{Trade} (\hyperlink{class_trader}{Trader} player, \hyperlink{class_trader}{Trader} trader)
+\begin{DoxyCompactList}\small\item\em Create a trade instance between two trader Creating a trade will scan the inventory of both trader and assign a trade price to each inventory A trade is a simple pivot on 2 Stock in a format easier to display to a human. \end{DoxyCompactList}\item 
+bool \hyperlink{class_trade_aecd1f04d634f477fa7325a618d33a066}{Is\+Valid} ()
+\begin{DoxyCompactList}\small\item\em Check if both trader in the trade have enough currency to complete the deal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{class_trade_item}{Trade\+Item} $>$ \hyperlink{class_trade_acc717b21584feecc94ecec3193063978}{Trade\+Items}
+\item 
+\hyperlink{class_trader}{Trader} \hyperlink{class_trade_aa0a7026f96034e12f9e5f091fecc0f7a}{Player}
+\item 
+\hyperlink{class_trader}{Trader} \hyperlink{class_trade_af15be18bc46b24eb2e8dd2b434f324ad}{Trader}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_trade_aaba340cfdb727fe90d16a43fb3ebe3ae}{Trade\+Currency\+Balance\+For\+Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current value of the deal for the player currency in the trade currency If negative, the player has to give money to complete the trade If positive, the player win money at the end of the trade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Trade.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trade_a6c33a0460eeb227454ca5796694ca377}\label{class_trade_a6c33a0460eeb227454ca5796694ca377}} 
+\index{Trade@{Trade}!Trade@{Trade}}
+\index{Trade@{Trade}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Trade()}{Trade()}}
+{\footnotesize\ttfamily Trade.\+Trade (\begin{DoxyParamCaption}\item[{\hyperlink{class_trader}{Trader}}]{player,  }\item[{\hyperlink{class_trader}{Trader}}]{trader }\end{DoxyParamCaption})}
+
+
+
+Create a trade instance between two trader Creating a trade will scan the inventory of both trader and assign a trade price to each inventory A trade is a simple pivot on 2 Stock in a format easier to display to a human. 
+
+
+
+Definition at line 24 of file Trade.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trade_aecd1f04d634f477fa7325a618d33a066}\label{class_trade_aecd1f04d634f477fa7325a618d33a066}} 
+\index{Trade@{Trade}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily bool Trade.\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if both trader in the trade have enough currency to complete the deal. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 61 of file Trade.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_trade_aa0a7026f96034e12f9e5f091fecc0f7a}\label{class_trade_aa0a7026f96034e12f9e5f091fecc0f7a}} 
+\index{Trade@{Trade}!Player@{Player}}
+\index{Player@{Player}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \hyperlink{class_trader}{Trader} Trade.\+Player}
+
+
+
+Definition at line 16 of file Trade.\+cs.
+
+\mbox{\Hypertarget{class_trade_acc717b21584feecc94ecec3193063978}\label{class_trade_acc717b21584feecc94ecec3193063978}} 
+\index{Trade@{Trade}!Trade\+Items@{Trade\+Items}}
+\index{Trade\+Items@{Trade\+Items}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Trade\+Items}{TradeItems}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_trade_item}{Trade\+Item}$>$ Trade.\+Trade\+Items}
+
+
+
+Definition at line 14 of file Trade.\+cs.
+
+\mbox{\Hypertarget{class_trade_af15be18bc46b24eb2e8dd2b434f324ad}\label{class_trade_af15be18bc46b24eb2e8dd2b434f324ad}} 
+\index{Trade@{Trade}!Trader@{Trader}}
+\index{Trader@{Trader}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Trader}{Trader}}
+{\footnotesize\ttfamily \hyperlink{class_trader}{Trader} Trade.\+Trader}
+
+
+
+Definition at line 17 of file Trade.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_trade_aaba340cfdb727fe90d16a43fb3ebe3ae}\label{class_trade_aaba340cfdb727fe90d16a43fb3ebe3ae}} 
+\index{Trade@{Trade}!Trade\+Currency\+Balance\+For\+Player@{Trade\+Currency\+Balance\+For\+Player}}
+\index{Trade\+Currency\+Balance\+For\+Player@{Trade\+Currency\+Balance\+For\+Player}!Trade@{Trade}}
+\subsubsection{\texorpdfstring{Trade\+Currency\+Balance\+For\+Player}{TradeCurrencyBalanceForPlayer}}
+{\footnotesize\ttfamily float Trade.\+Trade\+Currency\+Balance\+For\+Player\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Current value of the deal for the player currency in the trade currency If negative, the player has to give money to complete the trade If positive, the player win money at the end of the trade. 
+
+
+
+Definition at line 50 of file Trade.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Trade/\hyperlink{_trade_8cs}{Trade.\+cs}\end{DoxyCompactItemize}

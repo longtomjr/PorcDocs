@@ -1,0 +1,648 @@
+\hypertarget{class_world}{}\section{World Class Reference}
+\label{class_world}\index{World@{World}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_world_a4ec5a28e3d60acbe09b6bc266803007a}{World} (int width, int height, int depth)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_world}{World} class. \end{DoxyCompactList}\item 
+\hyperlink{class_world_a0f295f73a017f396d396f0ab4b5a35bc}{World} ()
+\begin{DoxyCompactList}\small\item\em Default constructor, used when loading a world from a file. \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a0d841bc2e07742a33176443373670eae}{Add\+Event\+Listeners} ()
+\begin{DoxyCompactList}\small\item\em Adds the listeners to the required Time Manager events. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_world_aeff2ae07aa8dcbe54fb9386ca043398c}{Get\+Tile\+At} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Gets the tile data at x and y. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_world_ac608bea85e2936e7170eaa0d31c9dcb8}{Get\+Center\+Tile} ()
+\item 
+void \hyperlink{class_world_a2524f9708b9e9e92804c7569ebf97ba8}{Invalidate\+Tile\+Graph} ()
+\item 
+void \hyperlink{class_world_afa0c55901cb90c6876f7e1b3b08e7aa5}{Reserve\+Tile\+As\+Work\+Spot} (\hyperlink{class_furniture}{Furniture} furniture, \hyperlink{class_tile}{Tile} tile=null)
+\begin{DoxyCompactList}\small\item\em Reserves the furniture\textquotesingle{}s work spot, preventing it from being built on. Will not reserve a workspot inside of the furniture. \end{DoxyCompactList}\item 
+void \hyperlink{class_world_a4ce845e2814d6da8d9d343ed355b02ac}{Unreserve\+Tile\+As\+Work\+Spot} (\hyperlink{class_furniture}{Furniture} furniture, \hyperlink{class_tile}{Tile} tile=null)
+\begin{DoxyCompactList}\small\item\em Unreserves the furniture\textquotesingle{}s work spot, allowing it to be built on. \end{DoxyCompactList}\item 
+bool \hyperlink{class_world_a4f86db4b941749f4296f1f7174405a16}{Is\+Room\+Behavior\+Valid\+For\+Room} (string room\+Behavior\+Type, \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} room)
+\item 
+J\+Token \hyperlink{class_world_a8b99f515191218dc39f810ef8e8cd78e}{Tiles\+To\+Json} ()
+\item 
+void \hyperlink{class_world_a70061bfa5cbd21c61d43a92437fce140}{Tiles\+From\+Json} (J\+Token tiles\+Token)
+\item 
+J\+Token \hyperlink{class_world_a24c5ca21d6e92d0bd592b253adb44d7f}{Random\+State\+To\+Json} ()
+\item 
+void \hyperlink{class_world_a7c9fd81a0965117266dd01f4e872339d}{Random\+State\+From\+Json} (J\+Token random\+State)
+\item 
+J\+Object \hyperlink{class_world_aaccd8af7ffb248bdd1e741eb89afb60f}{To\+Json} ()
+\item 
+void \hyperlink{class_world_a0a6b09300f49b33015e9599ffb66ce25}{Read\+Json} (string filename)
+\item 
+void \hyperlink{class_world_a5db684d7dbe14748304c6013c16356d6}{Read\+Json} (J\+Object world\+Json)
+\item 
+void \hyperlink{class_world_a8ec02da60d08dcecd73e55245305aae4}{Resize\+World} (Vector3 world\+Size)
+\item 
+void \hyperlink{class_world_a80b2ca274375a6cc12d2deabb636bde3}{Resize\+World} (int width, int height, int depth)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly string \hyperlink{class_world_a48a644d09cb24d4bd6c79cf7d438dc44}{Game\+Version} = \char`\"{}Someone\+\_\+will\+\_\+come\+\_\+up\+\_\+with\+\_\+a\+\_\+proper\+\_\+naming\+\_\+scheme\+\_\+later\char`\"{}
+\item 
+Material \hyperlink{class_world_a12947be82424650dfae7fccc0a475f4c}{skybox}
+\item 
+\hyperlink{class_temperature_diffusion}{Temperature\+Diffusion} \hyperlink{class_world_afb73b4c36ddaf9eaf79807b0d3b0e012}{temperature}
+\item 
+\hyperlink{class_path___tile_graph}{Path\+\_\+\+Tile\+Graph} \hyperlink{class_world_a68088a0e3057902e6110cc52c0ca4c47}{tile\+Graph}
+\item 
+\hyperlink{class_path___room_graph}{Path\+\_\+\+Room\+Graph} \hyperlink{class_world_a561e1ac531ff776e3fe193312313c60d}{room\+Graph}
+\item 
+\hyperlink{class_job_queue}{Job\+Queue} \hyperlink{class_world_a975e9e8ae481b92ef188e0421dac5ae6}{job\+Queue}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_world}{World} \hyperlink{class_world_a611a474efcbf8859dc219c66e667abb4}{Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \hyperlink{class_world_a861a1e47079f04cf1de46887f76f6177}{Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \hyperlink{class_world_ac3b5695035eeab526a054329773366fc}{Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \hyperlink{class_world_a67394494a39fdb85e259e9db96836b8b}{Depth}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \hyperlink{class_world_a41b0e31e73a738aece63fcd312be09fa}{Seed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the world seed. \end{DoxyCompactList}\item 
+\hyperlink{class_inventory_manager}{Inventory\+Manager} \hyperlink{class_world_aa0563c65b3aa81ff47b8a29ec9977b80}{Inventory\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the inventory manager. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager}{Character\+Manager} \hyperlink{class_world_aa17d26c9ced535874e16cf3f7e2da99d}{Character\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the character manager. \end{DoxyCompactList}\item 
+\hyperlink{class_furniture_manager}{Furniture\+Manager} \hyperlink{class_world_afd8c3d504d1170f5c99b20162fc25a0e}{Furniture\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the furniture manager. \end{DoxyCompactList}\item 
+\hyperlink{class_utility_manager}{Utility\+Manager} \hyperlink{class_world_a093670f1e25572daa8cadd96ab295250}{Utility\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_wallet}{Wallet} \hyperlink{class_world_a844a3f990503926d99a0a3410399f48f}{Wallet}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the wallet. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_power_network}{Power\+Network} \hyperlink{class_world_af1d11ccb7ad9d16b10bf364d7d54dc9d}{Power\+Network}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the power network. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network}{Fluid\+Network} \hyperlink{class_world_a5594338bb722fdc0ae176764e741ccde}{Fluid\+Network}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the power network. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager}{Room\+Manager} \hyperlink{class_world_aa0c1e3f4fff3462c848030f89ef5ebf5}{Room\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the room manager. \end{DoxyCompactList}\item 
+\hyperlink{class_game_event_manager}{Game\+Event\+Manager} \hyperlink{class_world_ace6c6d4a5ea86e39c20c6ad9cd573d08}{Game\+Event\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the game event manager. \end{DoxyCompactList}\item 
+\hyperlink{class_ship_manager}{Ship\+Manager} \hyperlink{class_world_a74a18f145ecbf627f2dccb454e06be43}{Ship\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ship manager. \end{DoxyCompactList}\item 
+\hyperlink{class_camera_data}{Camera\+Data} \hyperlink{class_world_ac0dc8730938f32a2e69ad943a71cb34d}{Camera\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the camera data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_tile}{Tile} $>$ \hyperlink{class_world_adbd4a4649f58585850e61318f28647f8}{On\+Tile\+Changed}
+\item 
+Action$<$ \hyperlink{class_tile}{Tile} $>$ \hyperlink{class_world_a9bb57a09d4ab53f9c69117402509772a}{On\+Tile\+Type\+Changed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file World.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_world_a4ec5a28e3d60acbe09b6bc266803007a}\label{class_world_a4ec5a28e3d60acbe09b6bc266803007a}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\subsubsection{\texorpdfstring{World()}{World()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily World.\+World (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{depth }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_world}{World} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width in tiles.\\
+\hline
+{\em height} & Height in tiles.\\
+\hline
+{\em depth} & Depth in amount.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a0f295f73a017f396d396f0ab4b5a35bc}\label{class_world_a0f295f73a017f396d396f0ab4b5a35bc}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\subsubsection{\texorpdfstring{World()}{World()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily World.\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor, used when loading a world from a file. 
+
+
+
+Definition at line 74 of file World.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_world_a0d841bc2e07742a33176443373670eae}\label{class_world_a0d841bc2e07742a33176443373670eae}} 
+\index{World@{World}!Add\+Event\+Listeners@{Add\+Event\+Listeners}}
+\index{Add\+Event\+Listeners@{Add\+Event\+Listeners}!World@{World}}
+\subsubsection{\texorpdfstring{Add\+Event\+Listeners()}{AddEventListeners()}}
+{\footnotesize\ttfamily void World.\+Add\+Event\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds the listeners to the required Time Manager events. 
+
+
+
+Definition at line 176 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_ac608bea85e2936e7170eaa0d31c9dcb8}\label{class_world_ac608bea85e2936e7170eaa0d31c9dcb8}} 
+\index{World@{World}!Get\+Center\+Tile@{Get\+Center\+Tile}}
+\index{Get\+Center\+Tile@{Get\+Center\+Tile}!World@{World}}
+\subsubsection{\texorpdfstring{Get\+Center\+Tile()}{GetCenterTile()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} World.\+Get\+Center\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 199 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_aeff2ae07aa8dcbe54fb9386ca043398c}\label{class_world_aeff2ae07aa8dcbe54fb9386ca043398c}} 
+\index{World@{World}!Get\+Tile\+At@{Get\+Tile\+At}}
+\index{Get\+Tile\+At@{Get\+Tile\+At}!World@{World}}
+\subsubsection{\texorpdfstring{Get\+Tile\+At()}{GetTileAt()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} World.\+Get\+Tile\+At (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Gets the tile data at x and y. 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_tile}{Tile} or null if called with invalid arguments.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate.\\
+\hline
+{\em y} & The y coordinate.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 188 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a2524f9708b9e9e92804c7569ebf97ba8}\label{class_world_a2524f9708b9e9e92804c7569ebf97ba8}} 
+\index{World@{World}!Invalidate\+Tile\+Graph@{Invalidate\+Tile\+Graph}}
+\index{Invalidate\+Tile\+Graph@{Invalidate\+Tile\+Graph}!World@{World}}
+\subsubsection{\texorpdfstring{Invalidate\+Tile\+Graph()}{InvalidateTileGraph()}}
+{\footnotesize\ttfamily void World.\+Invalidate\+Tile\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a4f86db4b941749f4296f1f7174405a16}\label{class_world_a4f86db4b941749f4296f1f7174405a16}} 
+\index{World@{World}!Is\+Room\+Behavior\+Valid\+For\+Room@{Is\+Room\+Behavior\+Valid\+For\+Room}}
+\index{Is\+Room\+Behavior\+Valid\+For\+Room@{Is\+Room\+Behavior\+Valid\+For\+Room}!World@{World}}
+\subsubsection{\texorpdfstring{Is\+Room\+Behavior\+Valid\+For\+Room()}{IsRoomBehaviorValidForRoom()}}
+{\footnotesize\ttfamily bool World.\+Is\+Room\+Behavior\+Valid\+For\+Room (\begin{DoxyParamCaption}\item[{string}]{room\+Behavior\+Type,  }\item[{\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room}}]{room }\end{DoxyParamCaption})}
+
+
+
+Definition at line 255 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a7c9fd81a0965117266dd01f4e872339d}\label{class_world_a7c9fd81a0965117266dd01f4e872339d}} 
+\index{World@{World}!Random\+State\+From\+Json@{Random\+State\+From\+Json}}
+\index{Random\+State\+From\+Json@{Random\+State\+From\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Random\+State\+From\+Json()}{RandomStateFromJson()}}
+{\footnotesize\ttfamily void World.\+Random\+State\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{random\+State }\end{DoxyParamCaption})}
+
+
+
+Definition at line 300 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a24c5ca21d6e92d0bd592b253adb44d7f}\label{class_world_a24c5ca21d6e92d0bd592b253adb44d7f}} 
+\index{World@{World}!Random\+State\+To\+Json@{Random\+State\+To\+Json}}
+\index{Random\+State\+To\+Json@{Random\+State\+To\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Random\+State\+To\+Json()}{RandomStateToJson()}}
+{\footnotesize\ttfamily J\+Token World.\+Random\+State\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 294 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a0a6b09300f49b33015e9599ffb66ce25}\label{class_world_a0a6b09300f49b33015e9599ffb66ce25}} 
+\index{World@{World}!Read\+Json@{Read\+Json}}
+\index{Read\+Json@{Read\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Read\+Json()}{ReadJson()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void World.\+Read\+Json (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Definition at line 332 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a5db684d7dbe14748304c6013c16356d6}\label{class_world_a5db684d7dbe14748304c6013c16356d6}} 
+\index{World@{World}!Read\+Json@{Read\+Json}}
+\index{Read\+Json@{Read\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Read\+Json()}{ReadJson()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void World.\+Read\+Json (\begin{DoxyParamCaption}\item[{J\+Object}]{world\+Json }\end{DoxyParamCaption})}
+
+
+
+Definition at line 338 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_afa0c55901cb90c6876f7e1b3b08e7aa5}\label{class_world_afa0c55901cb90c6876f7e1b3b08e7aa5}} 
+\index{World@{World}!Reserve\+Tile\+As\+Work\+Spot@{Reserve\+Tile\+As\+Work\+Spot}}
+\index{Reserve\+Tile\+As\+Work\+Spot@{Reserve\+Tile\+As\+Work\+Spot}!World@{World}}
+\subsubsection{\texorpdfstring{Reserve\+Tile\+As\+Work\+Spot()}{ReserveTileAsWorkSpot()}}
+{\footnotesize\ttfamily void World.\+Reserve\+Tile\+As\+Work\+Spot (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{furniture,  }\item[{\hyperlink{class_tile}{Tile}}]{tile = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Reserves the furniture\textquotesingle{}s work spot, preventing it from being built on. Will not reserve a workspot inside of the furniture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em furniture} & The furniture whose workspot will be reserved.\\
+\hline
+{\em tile} & The tile on which the furniture is located, for furnitures which don\textquotesingle{}t have a tile, such as prototypes.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a8ec02da60d08dcecd73e55245305aae4}\label{class_world_a8ec02da60d08dcecd73e55245305aae4}} 
+\index{World@{World}!Resize\+World@{Resize\+World}}
+\index{Resize\+World@{Resize\+World}!World@{World}}
+\subsubsection{\texorpdfstring{Resize\+World()}{ResizeWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void World.\+Resize\+World (\begin{DoxyParamCaption}\item[{Vector3}]{world\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 369 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a80b2ca274375a6cc12d2deabb636bde3}\label{class_world_a80b2ca274375a6cc12d2deabb636bde3}} 
+\index{World@{World}!Resize\+World@{Resize\+World}}
+\index{Resize\+World@{Resize\+World}!World@{World}}
+\subsubsection{\texorpdfstring{Resize\+World()}{ResizeWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void World.\+Resize\+World (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 374 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a70061bfa5cbd21c61d43a92437fce140}\label{class_world_a70061bfa5cbd21c61d43a92437fce140}} 
+\index{World@{World}!Tiles\+From\+Json@{Tiles\+From\+Json}}
+\index{Tiles\+From\+Json@{Tiles\+From\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Tiles\+From\+Json()}{TilesFromJson()}}
+{\footnotesize\ttfamily void World.\+Tiles\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{tiles\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 280 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a8b99f515191218dc39f810ef8e8cd78e}\label{class_world_a8b99f515191218dc39f810ef8e8cd78e}} 
+\index{World@{World}!Tiles\+To\+Json@{Tiles\+To\+Json}}
+\index{Tiles\+To\+Json@{Tiles\+To\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{Tiles\+To\+Json()}{TilesToJson()}}
+{\footnotesize\ttfamily J\+Token World.\+Tiles\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_aaccd8af7ffb248bdd1e741eb89afb60f}\label{class_world_aaccd8af7ffb248bdd1e741eb89afb60f}} 
+\index{World@{World}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!World@{World}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Object World.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 309 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a4ce845e2814d6da8d9d343ed355b02ac}\label{class_world_a4ce845e2814d6da8d9d343ed355b02ac}} 
+\index{World@{World}!Unreserve\+Tile\+As\+Work\+Spot@{Unreserve\+Tile\+As\+Work\+Spot}}
+\index{Unreserve\+Tile\+As\+Work\+Spot@{Unreserve\+Tile\+As\+Work\+Spot}!World@{World}}
+\subsubsection{\texorpdfstring{Unreserve\+Tile\+As\+Work\+Spot()}{UnreserveTileAsWorkSpot()}}
+{\footnotesize\ttfamily void World.\+Unreserve\+Tile\+As\+Work\+Spot (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{furniture,  }\item[{\hyperlink{class_tile}{Tile}}]{tile = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Unreserves the furniture\textquotesingle{}s work spot, allowing it to be built on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em furniture} & The furniture whose workspot will be unreserved.\\
+\hline
+{\em tile} & The tile on which the furniture is located, for furnitures which don\textquotesingle{}t have a tile, such as prototypes.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 241 of file World.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_world_a48a644d09cb24d4bd6c79cf7d438dc44}\label{class_world_a48a644d09cb24d4bd6c79cf7d438dc44}} 
+\index{World@{World}!Game\+Version@{Game\+Version}}
+\index{Game\+Version@{Game\+Version}!World@{World}}
+\subsubsection{\texorpdfstring{Game\+Version}{GameVersion}}
+{\footnotesize\ttfamily readonly string World.\+Game\+Version = \char`\"{}Someone\+\_\+will\+\_\+come\+\_\+up\+\_\+with\+\_\+a\+\_\+proper\+\_\+naming\+\_\+scheme\+\_\+later\char`\"{}}
+
+
+
+Definition at line 25 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a975e9e8ae481b92ef188e0421dac5ae6}\label{class_world_a975e9e8ae481b92ef188e0421dac5ae6}} 
+\index{World@{World}!job\+Queue@{job\+Queue}}
+\index{job\+Queue@{job\+Queue}!World@{World}}
+\subsubsection{\texorpdfstring{job\+Queue}{jobQueue}}
+{\footnotesize\ttfamily \hyperlink{class_job_queue}{Job\+Queue} World.\+job\+Queue}
+
+
+
+Definition at line 39 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a561e1ac531ff776e3fe193312313c60d}\label{class_world_a561e1ac531ff776e3fe193312313c60d}} 
+\index{World@{World}!room\+Graph@{room\+Graph}}
+\index{room\+Graph@{room\+Graph}!World@{World}}
+\subsubsection{\texorpdfstring{room\+Graph}{roomGraph}}
+{\footnotesize\ttfamily \hyperlink{class_path___room_graph}{Path\+\_\+\+Room\+Graph} World.\+room\+Graph}
+
+
+
+Definition at line 33 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a12947be82424650dfae7fccc0a475f4c}\label{class_world_a12947be82424650dfae7fccc0a475f4c}} 
+\index{World@{World}!skybox@{skybox}}
+\index{skybox@{skybox}!World@{World}}
+\subsubsection{\texorpdfstring{skybox}{skybox}}
+{\footnotesize\ttfamily Material World.\+skybox}
+
+
+
+Definition at line 26 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_afb73b4c36ddaf9eaf79807b0d3b0e012}\label{class_world_afb73b4c36ddaf9eaf79807b0d3b0e012}} 
+\index{World@{World}!temperature@{temperature}}
+\index{temperature@{temperature}!World@{World}}
+\subsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily \hyperlink{class_temperature_diffusion}{Temperature\+Diffusion} World.\+temperature}
+
+
+
+Definition at line 29 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a68088a0e3057902e6110cc52c0ca4c47}\label{class_world_a68088a0e3057902e6110cc52c0ca4c47}} 
+\index{World@{World}!tile\+Graph@{tile\+Graph}}
+\index{tile\+Graph@{tile\+Graph}!World@{World}}
+\subsubsection{\texorpdfstring{tile\+Graph}{tileGraph}}
+{\footnotesize\ttfamily \hyperlink{class_path___tile_graph}{Path\+\_\+\+Tile\+Graph} World.\+tile\+Graph}
+
+
+
+Definition at line 32 of file World.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_world_ac0dc8730938f32a2e69ad943a71cb34d}\label{class_world_ac0dc8730938f32a2e69ad943a71cb34d}} 
+\index{World@{World}!Camera\+Data@{Camera\+Data}}
+\index{Camera\+Data@{Camera\+Data}!World@{World}}
+\subsubsection{\texorpdfstring{Camera\+Data}{CameraData}}
+{\footnotesize\ttfamily \hyperlink{class_camera_data}{Camera\+Data} World.\+Camera\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the camera data. 
+
+The camera data.
+
+Definition at line 171 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_aa17d26c9ced535874e16cf3f7e2da99d}\label{class_world_aa17d26c9ced535874e16cf3f7e2da99d}} 
+\index{World@{World}!Character\+Manager@{Character\+Manager}}
+\index{Character\+Manager@{Character\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Character\+Manager}{CharacterManager}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager}{Character\+Manager} World.\+Character\+Manager\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets the character manager. 
+
+The character manager.
+
+Definition at line 118 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a611a474efcbf8859dc219c66e667abb4}\label{class_world_a611a474efcbf8859dc219c66e667abb4}} 
+\index{World@{World}!Current@{Current}}
+\index{Current@{Current}!World@{World}}
+\subsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily \hyperlink{class_world}{World} World.\+Current\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 91 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a67394494a39fdb85e259e9db96836b8b}\label{class_world_a67394494a39fdb85e259e9db96836b8b}} 
+\index{World@{World}!Depth@{Depth}}
+\index{Depth@{Depth}!World@{World}}
+\subsubsection{\texorpdfstring{Depth}{Depth}}
+{\footnotesize\ttfamily int World.\+Depth\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 100 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a5594338bb722fdc0ae176764e741ccde}\label{class_world_a5594338bb722fdc0ae176764e741ccde}} 
+\index{World@{World}!Fluid\+Network@{Fluid\+Network}}
+\index{Fluid\+Network@{Fluid\+Network}!World@{World}}
+\subsubsection{\texorpdfstring{Fluid\+Network}{FluidNetwork}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network}{Fluid\+Network} World.\+Fluid\+Network\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the power network. 
+
+The power network.
+
+Definition at line 147 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_afd8c3d504d1170f5c99b20162fc25a0e}\label{class_world_afd8c3d504d1170f5c99b20162fc25a0e}} 
+\index{World@{World}!Furniture\+Manager@{Furniture\+Manager}}
+\index{Furniture\+Manager@{Furniture\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Furniture\+Manager}{FurnitureManager}}
+{\footnotesize\ttfamily \hyperlink{class_furniture_manager}{Furniture\+Manager} World.\+Furniture\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the furniture manager. 
+
+The furniture manager.
+
+Definition at line 124 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_ace6c6d4a5ea86e39c20c6ad9cd573d08}\label{class_world_ace6c6d4a5ea86e39c20c6ad9cd573d08}} 
+\index{World@{World}!Game\+Event\+Manager@{Game\+Event\+Manager}}
+\index{Game\+Event\+Manager@{Game\+Event\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Game\+Event\+Manager}{GameEventManager}}
+{\footnotesize\ttfamily \hyperlink{class_game_event_manager}{Game\+Event\+Manager} World.\+Game\+Event\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the game event manager. 
+
+The game event manager.
+
+Definition at line 159 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_ac3b5695035eeab526a054329773366fc}\label{class_world_ac3b5695035eeab526a054329773366fc}} 
+\index{World@{World}!Height@{Height}}
+\index{Height@{Height}!World@{World}}
+\subsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int World.\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 97 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_aa0563c65b3aa81ff47b8a29ec9977b80}\label{class_world_aa0563c65b3aa81ff47b8a29ec9977b80}} 
+\index{World@{World}!Inventory\+Manager@{Inventory\+Manager}}
+\index{Inventory\+Manager@{Inventory\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Inventory\+Manager}{InventoryManager}}
+{\footnotesize\ttfamily \hyperlink{class_inventory_manager}{Inventory\+Manager} World.\+Inventory\+Manager\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets the inventory manager. 
+
+The inventory manager.
+
+Definition at line 112 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_af1d11ccb7ad9d16b10bf364d7d54dc9d}\label{class_world_af1d11ccb7ad9d16b10bf364d7d54dc9d}} 
+\index{World@{World}!Power\+Network@{Power\+Network}}
+\index{Power\+Network@{Power\+Network}!World@{World}}
+\subsubsection{\texorpdfstring{Power\+Network}{PowerNetwork}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_power_network_1_1_power_network}{Power\+Network} World.\+Power\+Network\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the power network. 
+
+The power network.
+
+Definition at line 141 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_aa0c1e3f4fff3462c848030f89ef5ebf5}\label{class_world_aa0c1e3f4fff3462c848030f89ef5ebf5}} 
+\index{World@{World}!Room\+Manager@{Room\+Manager}}
+\index{Room\+Manager@{Room\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Room\+Manager}{RoomManager}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room_manager}{Room\+Manager} World.\+Room\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the room manager. 
+
+The room manager.
+
+Definition at line 153 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a41b0e31e73a738aece63fcd312be09fa}\label{class_world_a41b0e31e73a738aece63fcd312be09fa}} 
+\index{World@{World}!Seed@{Seed}}
+\index{Seed@{Seed}!World@{World}}
+\subsubsection{\texorpdfstring{Seed}{Seed}}
+{\footnotesize\ttfamily int World.\+Seed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the world seed. 
+
+The world seed.
+
+Definition at line 106 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a74a18f145ecbf627f2dccb454e06be43}\label{class_world_a74a18f145ecbf627f2dccb454e06be43}} 
+\index{World@{World}!Ship\+Manager@{Ship\+Manager}}
+\index{Ship\+Manager@{Ship\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Ship\+Manager}{ShipManager}}
+{\footnotesize\ttfamily \hyperlink{class_ship_manager}{Ship\+Manager} World.\+Ship\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the ship manager. 
+
+The ship manager.
+
+Definition at line 165 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a093670f1e25572daa8cadd96ab295250}\label{class_world_a093670f1e25572daa8cadd96ab295250}} 
+\index{World@{World}!Utility\+Manager@{Utility\+Manager}}
+\index{Utility\+Manager@{Utility\+Manager}!World@{World}}
+\subsubsection{\texorpdfstring{Utility\+Manager}{UtilityManager}}
+{\footnotesize\ttfamily \hyperlink{class_utility_manager}{Utility\+Manager} World.\+Utility\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+Gets the utility manager. 
+
+The furniture manager.
+
+Definition at line 129 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a844a3f990503926d99a0a3410399f48f}\label{class_world_a844a3f990503926d99a0a3410399f48f}} 
+\index{World@{World}!Wallet@{Wallet}}
+\index{Wallet@{Wallet}!World@{World}}
+\subsubsection{\texorpdfstring{Wallet}{Wallet}}
+{\footnotesize\ttfamily \hyperlink{class_wallet}{Wallet} World.\+Wallet\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the wallet. 
+
+The wallet.
+
+Definition at line 135 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a861a1e47079f04cf1de46887f76f6177}\label{class_world_a861a1e47079f04cf1de46887f76f6177}} 
+\index{World@{World}!Width@{Width}}
+\index{Width@{Width}!World@{World}}
+\subsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int World.\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 94 of file World.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_world_adbd4a4649f58585850e61318f28647f8}\label{class_world_adbd4a4649f58585850e61318f28647f8}} 
+\index{World@{World}!On\+Tile\+Changed@{On\+Tile\+Changed}}
+\index{On\+Tile\+Changed@{On\+Tile\+Changed}!World@{World}}
+\subsubsection{\texorpdfstring{On\+Tile\+Changed}{OnTileChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_tile}{Tile}$>$ World.\+On\+Tile\+Changed}
+
+
+
+Definition at line 87 of file World.\+cs.
+
+\mbox{\Hypertarget{class_world_a9bb57a09d4ab53f9c69117402509772a}\label{class_world_a9bb57a09d4ab53f9c69117402509772a}} 
+\index{World@{World}!On\+Tile\+Type\+Changed@{On\+Tile\+Type\+Changed}}
+\index{On\+Tile\+Type\+Changed@{On\+Tile\+Type\+Changed}!World@{World}}
+\subsubsection{\texorpdfstring{On\+Tile\+Type\+Changed}{OnTileTypeChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_tile}{Tile}$>$ World.\+On\+Tile\+Type\+Changed}
+
+
+
+Definition at line 89 of file World.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_world_8cs}{World.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{class_animation_1_1_furniture_animation}{}\section{Animation.\+Furniture\+Animation Class Reference}
+\label{class_animation_1_1_furniture_animation}\index{Animation.\+Furniture\+Animation@{Animation.\+Furniture\+Animation}}
+
+
+Animations for furniture. Can have several \char`\"{}states\char`\"{} that can be switched using Set\+State.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_animation_1_1_furniture_animation_ab94f949cb697cba09ca8c73feeebcf0e}{Furniture\+Animation} ()
+\item 
+\hyperlink{class_animation_1_1_furniture_animation}{Furniture\+Animation} \hyperlink{class_animation_1_1_furniture_animation_a18c59f6b23e55576c2681476914eb4e7}{Clone} ()
+\item 
+void \hyperlink{class_animation_1_1_furniture_animation_a3ecc2e6776aaf24f511fb7661638c6b7}{Update} (float delta\+Time)
+\item 
+void \hyperlink{class_animation_1_1_furniture_animation_a018343ba77e8f7e0a1cb49945984fb4e}{On\+Furniture\+Changed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_furniture}{Furniture} has changed, so make sure the sprite is updated. \end{DoxyCompactList}\item 
+void \hyperlink{class_animation_1_1_furniture_animation_ad984276ce0ed22c53012ff9854e0f67b}{Set\+Progress\+Value} (float percent)
+\begin{DoxyCompactList}\small\item\em Set the animation frame depending on a value. The currentvalue percent of the maxvalue will determine which frame is shown. \end{DoxyCompactList}\item 
+void \hyperlink{class_animation_1_1_furniture_animation_ac1f264484fde14992bd962a03f57e2b8}{Set\+Frame\+Index} (int frame\+Index)
+\item 
+void \hyperlink{class_animation_1_1_furniture_animation_aae47f2b0d9440472a8e7b4f1bba52e45}{Set\+State} (string state\+Name)
+\begin{DoxyCompactList}\small\item\em Set the animation state. Will only have an effect if state\+Name is different from current animation state\+Name. \end{DoxyCompactList}\item 
+string \hyperlink{class_animation_1_1_furniture_animation_acf54feda77dce0a14221775080c22299}{Get\+Sprite\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get spritename from the current animation. \end{DoxyCompactList}\item 
+void \hyperlink{class_animation_1_1_furniture_animation_ac1d271b268d374119c337ccc2ef3b5a3}{Add\+Animation} (string state, List$<$ string $>$ sprite\+Names, float fps, bool looping, bool value\+Based)
+\begin{DoxyCompactList}\small\item\em Add animation to furniture. First animation added will be default for sprites e.\+g. ghost image when placing furniture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Sprite\+Renderer \hyperlink{class_animation_1_1_furniture_animation_a0fd63221e8b26694638564218cdb6ec3}{Renderer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Animations for furniture. Can have several \char`\"{}states\char`\"{} that can be switched using Set\+State. 
+
+
+
+Definition at line 18 of file Furniture\+Animation.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_ab94f949cb697cba09ca8c73feeebcf0e}\label{class_animation_1_1_furniture_animation_ab94f949cb697cba09ca8c73feeebcf0e}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Furniture\+Animation@{Furniture\+Animation}}
+\index{Furniture\+Animation@{Furniture\+Animation}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Furniture\+Animation()}{FurnitureAnimation()}}
+{\footnotesize\ttfamily Animation.\+Furniture\+Animation.\+Furniture\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Furniture\+Animation.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_ac1d271b268d374119c337ccc2ef3b5a3}\label{class_animation_1_1_furniture_animation_ac1d271b268d374119c337ccc2ef3b5a3}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Add\+Animation@{Add\+Animation}}
+\index{Add\+Animation@{Add\+Animation}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Add\+Animation()}{AddAnimation()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+Add\+Animation (\begin{DoxyParamCaption}\item[{string}]{state,  }\item[{List$<$ string $>$}]{sprite\+Names,  }\item[{float}]{fps,  }\item[{bool}]{looping,  }\item[{bool}]{value\+Based }\end{DoxyParamCaption})}
+
+
+
+Add animation to furniture. First animation added will be default for sprites e.\+g. ghost image when placing furniture. 
+
+
+
+Definition at line 116 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_a18c59f6b23e55576c2681476914eb4e7}\label{class_animation_1_1_furniture_animation_a18c59f6b23e55576c2681476914eb4e7}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Clone@{Clone}}
+\index{Clone@{Clone}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_animation_1_1_furniture_animation}{Furniture\+Animation} Animation.\+Furniture\+Animation.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_acf54feda77dce0a14221775080c22299}\label{class_animation_1_1_furniture_animation_acf54feda77dce0a14221775080c22299}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Get\+Sprite\+Name@{Get\+Sprite\+Name}}
+\index{Get\+Sprite\+Name@{Get\+Sprite\+Name}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Name()}{GetSpriteName()}}
+{\footnotesize\ttfamily string Animation.\+Furniture\+Animation.\+Get\+Sprite\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get spritename from the current animation. 
+
+
+
+Definition at line 108 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_a018343ba77e8f7e0a1cb49945984fb4e}\label{class_animation_1_1_furniture_animation_a018343ba77e8f7e0a1cb49945984fb4e}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!On\+Furniture\+Changed@{On\+Furniture\+Changed}}
+\index{On\+Furniture\+Changed@{On\+Furniture\+Changed}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{On\+Furniture\+Changed()}{OnFurnitureChanged()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+On\+Furniture\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_furniture}{Furniture} has changed, so make sure the sprite is updated. 
+
+
+
+Definition at line 64 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_ac1f264484fde14992bd962a03f57e2b8}\label{class_animation_1_1_furniture_animation_ac1f264484fde14992bd962a03f57e2b8}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Set\+Frame\+Index@{Set\+Frame\+Index}}
+\index{Set\+Frame\+Index@{Set\+Frame\+Index}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Set\+Frame\+Index()}{SetFrameIndex()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+Set\+Frame\+Index (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_ad984276ce0ed22c53012ff9854e0f67b}\label{class_animation_1_1_furniture_animation_ad984276ce0ed22c53012ff9854e0f67b}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Set\+Progress\+Value@{Set\+Progress\+Value}}
+\index{Set\+Progress\+Value@{Set\+Progress\+Value}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Set\+Progress\+Value()}{SetProgressValue()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+Set\+Progress\+Value (\begin{DoxyParamCaption}\item[{float}]{percent }\end{DoxyParamCaption})}
+
+
+
+Set the animation frame depending on a value. The currentvalue percent of the maxvalue will determine which frame is shown. 
+
+
+
+Definition at line 72 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_aae47f2b0d9440472a8e7b4f1bba52e45}\label{class_animation_1_1_furniture_animation_aae47f2b0d9440472a8e7b4f1bba52e45}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Set\+State()}{SetState()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+Set\+State (\begin{DoxyParamCaption}\item[{string}]{state\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the animation state. Will only have an effect if state\+Name is different from current animation state\+Name. 
+
+
+
+Definition at line 87 of file Furniture\+Animation.\+cs.
+
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_a3ecc2e6776aaf24f511fb7661638c6b7}\label{class_animation_1_1_furniture_animation_a3ecc2e6776aaf24f511fb7661638c6b7}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Update@{Update}}
+\index{Update@{Update}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animation.\+Furniture\+Animation.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file Furniture\+Animation.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_animation_1_1_furniture_animation_a0fd63221e8b26694638564218cdb6ec3}\label{class_animation_1_1_furniture_animation_a0fd63221e8b26694638564218cdb6ec3}} 
+\index{Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Animation\+::\+Furniture\+Animation@{Animation\+::\+Furniture\+Animation}}
+\subsubsection{\texorpdfstring{Renderer}{Renderer}}
+{\footnotesize\ttfamily Sprite\+Renderer Animation.\+Furniture\+Animation.\+Renderer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 36 of file Furniture\+Animation.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Animation/\hyperlink{_furniture_animation_8cs}{Furniture\+Animation.\+cs}\end{DoxyCompactItemize}

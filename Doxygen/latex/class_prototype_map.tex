@@ -1,0 +1,262 @@
+\hypertarget{class_prototype_map}{}\section{Prototype\+Map$<$ T $>$ Class Template Reference}
+\label{class_prototype_map}\index{Prototype\+Map$<$ T $>$@{Prototype\+Map$<$ T $>$}}
+
+
+A class that holds prototypes to be used later.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_prototype_map_a980e1783fc0a6997a7266e91a507e38b}{Prototype\+Map} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Prototype\+Map`1 class. \end{DoxyCompactList}\item 
+\hyperlink{class_prototype_map_af3d81ed7fda9fd1293bf3f3da095c477}{Prototype\+Map} (string list\+Tag, string element\+Tag)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Prototype\+Map`1 class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_prototype_map_af56d8b380f8f0375eef1e4de0e25283b}{Has} (string type)
+\begin{DoxyCompactList}\small\item\em Determines whether there is a prototype with the specified type. \end{DoxyCompactList}\item 
+T \hyperlink{class_prototype_map_a7cd5603d0944ca8baa6c6df01b8e3ad7}{Get} (string type)
+\begin{DoxyCompactList}\small\item\em Returns the prototype with the specified type. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_map_a68826fa80281a5e81f301b557ca1a37d}{Set} (T proto)
+\begin{DoxyCompactList}\small\item\em Adds the given prototype. If the protptype exists it is overwirten. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_map_aa17f775716564ba44be6b39b13b31241}{Add} (T proto)
+\begin{DoxyCompactList}\small\item\em Add the given prototype. If a prototype of the given type is already registered, overwrite the old one while logging a warning. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_map_af821190bc6abb8405e6c3e94a7d929b1}{Load\+Prototypes} (string xml\+Text)
+\begin{DoxyCompactList}\small\item\em Loads all the prototypes from the specified text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, T $>$.Key\+Collection \hyperlink{class_prototype_map_a87f4e8a0630815d04ce5a9db05f180ea}{Keys}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the prototype keys. \end{DoxyCompactList}\item 
+List$<$ T $>$ \hyperlink{class_prototype_map_a8a21d043e1ab37240599a85043899959}{Values}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the prototype Values. \end{DoxyCompactList}\item 
+int \hyperlink{class_prototype_map_a280c6ca0f386ebbfea8ae8359b657a4a}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the prototypes count. \end{DoxyCompactList}\item 
+T \hyperlink{class_prototype_map_a6ce47f0385f9863fec002085f94c18c8}{this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the prototype at the specified index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that holds prototypes to be used later. 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \hyperlink{interface_i_prototypable}{I\+Prototypable}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+Definition at line 20 of file Prototype\+Map.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prototype_map_a980e1783fc0a6997a7266e91a507e38b}\label{class_prototype_map_a980e1783fc0a6997a7266e91a507e38b}} 
+\index{Prototype\+Map@{Prototype\+Map}!Prototype\+Map@{Prototype\+Map}}
+\index{Prototype\+Map@{Prototype\+Map}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Prototype\+Map()}{PrototypeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.\hyperlink{class_prototype_map}{Prototype\+Map} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Prototype\+Map`1 class. 
+
+
+
+Definition at line 29 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_af3d81ed7fda9fd1293bf3f3da095c477}\label{class_prototype_map_af3d81ed7fda9fd1293bf3f3da095c477}} 
+\index{Prototype\+Map@{Prototype\+Map}!Prototype\+Map@{Prototype\+Map}}
+\index{Prototype\+Map@{Prototype\+Map}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Prototype\+Map()}{PrototypeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.\hyperlink{class_prototype_map}{Prototype\+Map} (\begin{DoxyParamCaption}\item[{string}]{list\+Tag,  }\item[{string}]{element\+Tag }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Prototype\+Map`1 class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Tag} & Name used for the X\+ML tag that holds all the prototypes.\\
+\hline
+{\em element\+Tag} & Name used for the X\+ML tag that hold each prototype.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Prototype\+Map.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prototype_map_aa17f775716564ba44be6b39b13b31241}\label{class_prototype_map_aa17f775716564ba44be6b39b13b31241}} 
+\index{Prototype\+Map@{Prototype\+Map}!Add@{Add}}
+\index{Add@{Add}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{proto }\end{DoxyParamCaption})}
+
+
+
+Add the given prototype. If a prototype of the given type is already registered, overwrite the old one while logging a warning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & The prototype instance.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_a7cd5603d0944ca8baa6c6df01b8e3ad7}\label{class_prototype_map_a7cd5603d0944ca8baa6c6df01b8e3ad7}} 
+\index{Prototype\+Map@{Prototype\+Map}!Get@{Get}}
+\index{Get@{Get}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily T \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Get (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Returns the prototype with the specified type. 
+
+\begin{DoxyReturn}{Returns}
+The prototype.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The prototype type.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_af56d8b380f8f0375eef1e4de0e25283b}\label{class_prototype_map_af56d8b380f8f0375eef1e4de0e25283b}} 
+\index{Prototype\+Map@{Prototype\+Map}!Has@{Has}}
+\index{Has@{Has}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Has()}{Has()}}
+{\footnotesize\ttfamily bool \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Has (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Determines whether there is a prototype with the specified type. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if there is a prototype with the specified type; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The prototype type.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_af821190bc6abb8405e6c3e94a7d929b1}\label{class_prototype_map_af821190bc6abb8405e6c3e94a7d929b1}} 
+\index{Prototype\+Map@{Prototype\+Map}!Load\+Prototypes@{Load\+Prototypes}}
+\index{Load\+Prototypes@{Load\+Prototypes}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Load\+Prototypes()}{LoadPrototypes()}}
+{\footnotesize\ttfamily void \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Load\+Prototypes (\begin{DoxyParamCaption}\item[{string}]{xml\+Text }\end{DoxyParamCaption})}
+
+
+
+Loads all the prototypes from the specified text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Text} & Xml text to parse.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_a68826fa80281a5e81f301b557ca1a37d}\label{class_prototype_map_a68826fa80281a5e81f301b557ca1a37d}} 
+\index{Prototype\+Map@{Prototype\+Map}!Set@{Set}}
+\index{Set@{Set}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Set (\begin{DoxyParamCaption}\item[{T}]{proto }\end{DoxyParamCaption})}
+
+
+
+Adds the given prototype. If the protptype exists it is overwirten. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto} & The prototype instance.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 124 of file Prototype\+Map.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_prototype_map_a280c6ca0f386ebbfea8ae8359b657a4a}\label{class_prototype_map_a280c6ca0f386ebbfea8ae8359b657a4a}} 
+\index{Prototype\+Map@{Prototype\+Map}!Count@{Count}}
+\index{Count@{Count}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the prototypes count. 
+
+The prototypes count.
+
+Definition at line 75 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_a87f4e8a0630815d04ce5a9db05f180ea}\label{class_prototype_map_a87f4e8a0630815d04ce5a9db05f180ea}} 
+\index{Prototype\+Map@{Prototype\+Map}!Keys@{Keys}}
+\index{Keys@{Keys}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily Dictionary$<$string, T$>$.Key\+Collection \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Keys\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the prototype keys. 
+
+The prototype keys.
+
+Definition at line 51 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_a6ce47f0385f9863fec002085f94c18c8}\label{class_prototype_map_a6ce47f0385f9863fec002085f94c18c8}} 
+\index{Prototype\+Map@{Prototype\+Map}!this\mbox{[}int index\mbox{]}@{this[int index]}}
+\index{this\mbox{[}int index\mbox{]}@{this[int index]}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{this[int index]}{this[int index]}}
+{\footnotesize\ttfamily T \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.this\mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the prototype at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The prototype index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The prototype.
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Prototype\+Map.\+cs.
+
+\mbox{\Hypertarget{class_prototype_map_a8a21d043e1ab37240599a85043899959}\label{class_prototype_map_a8a21d043e1ab37240599a85043899959}} 
+\index{Prototype\+Map@{Prototype\+Map}!Values@{Values}}
+\index{Values@{Values}!Prototype\+Map@{Prototype\+Map}}
+\subsubsection{\texorpdfstring{Values}{Values}}
+{\footnotesize\ttfamily List$<$T$>$ \hyperlink{class_prototype_map}{Prototype\+Map}$<$ T $>$.Values\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the prototype Values. 
+
+The prototype values.
+
+Definition at line 63 of file Prototype\+Map.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Prototypes/\hyperlink{_prototype_map_8cs}{Prototype\+Map.\+cs}\end{DoxyCompactItemize}

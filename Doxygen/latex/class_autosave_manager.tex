@@ -1,0 +1,94 @@
+\hypertarget{class_autosave_manager}{}\section{Autosave\+Manager Class Reference}
+\label{class_autosave_manager}\index{Autosave\+Manager@{Autosave\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_autosave_manager_a9856885198573cc21eec3034d77bc50e}{Autosave\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_autosave_manager}{Autosave\+Manager} class. This class schedules autosave events which save the game at regular intervals of \hyperlink{class_autosave_manager_aa499ab2fe041ef5134db38b40404329f}{Autosave\+Interval} minutes with the default filename \char`\"{}\+Autosave\#\#\#.\+sav\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_autosave_manager_a1380021fcada31aa86065ff956d113ae}{Do\+Autosave} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} evt)
+\begin{DoxyCompactList}\small\item\em Callback for the autosave event. Called automatically by the \hyperlink{namespace_scheduler}{Scheduler} when the cooldown expires. \end{DoxyCompactList}\item 
+void \hyperlink{class_autosave_manager_a66567b6e5e1ec3a234656bb24b82dcca}{Set\+Autosave\+Interval} (int new\+Interval)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_autosave_manager_aa499ab2fe041ef5134db38b40404329f}{Autosave\+Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the autosave interval in minutes. If less than or equal to zero autosaves are disabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Autosave\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_autosave_manager_a9856885198573cc21eec3034d77bc50e}\label{class_autosave_manager_a9856885198573cc21eec3034d77bc50e}} 
+\index{Autosave\+Manager@{Autosave\+Manager}!Autosave\+Manager@{Autosave\+Manager}}
+\index{Autosave\+Manager@{Autosave\+Manager}!Autosave\+Manager@{Autosave\+Manager}}
+\subsubsection{\texorpdfstring{Autosave\+Manager()}{AutosaveManager()}}
+{\footnotesize\ttfamily Autosave\+Manager.\+Autosave\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_autosave_manager}{Autosave\+Manager} class. This class schedules autosave events which save the game at regular intervals of \hyperlink{class_autosave_manager_aa499ab2fe041ef5134db38b40404329f}{Autosave\+Interval} minutes with the default filename \char`\"{}\+Autosave\#\#\#.\+sav\char`\"{}. 
+
+
+
+Definition at line 30 of file Autosave\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_autosave_manager_a1380021fcada31aa86065ff956d113ae}\label{class_autosave_manager_a1380021fcada31aa86065ff956d113ae}} 
+\index{Autosave\+Manager@{Autosave\+Manager}!Do\+Autosave@{Do\+Autosave}}
+\index{Do\+Autosave@{Do\+Autosave}!Autosave\+Manager@{Autosave\+Manager}}
+\subsubsection{\texorpdfstring{Do\+Autosave()}{DoAutosave()}}
+{\footnotesize\ttfamily void Autosave\+Manager.\+Do\+Autosave (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{evt }\end{DoxyParamCaption})}
+
+
+
+Callback for the autosave event. Called automatically by the \hyperlink{namespace_scheduler}{Scheduler} when the cooldown expires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & The Scheduled\+Event object which triggered the autosave.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file Autosave\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_autosave_manager_a66567b6e5e1ec3a234656bb24b82dcca}\label{class_autosave_manager_a66567b6e5e1ec3a234656bb24b82dcca}} 
+\index{Autosave\+Manager@{Autosave\+Manager}!Set\+Autosave\+Interval@{Set\+Autosave\+Interval}}
+\index{Set\+Autosave\+Interval@{Set\+Autosave\+Interval}!Autosave\+Manager@{Autosave\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Autosave\+Interval()}{SetAutosaveInterval()}}
+{\footnotesize\ttfamily void Autosave\+Manager.\+Set\+Autosave\+Interval (\begin{DoxyParamCaption}\item[{int}]{new\+Interval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 121 of file Autosave\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_autosave_manager_aa499ab2fe041ef5134db38b40404329f}\label{class_autosave_manager_aa499ab2fe041ef5134db38b40404329f}} 
+\index{Autosave\+Manager@{Autosave\+Manager}!Autosave\+Interval@{Autosave\+Interval}}
+\index{Autosave\+Interval@{Autosave\+Interval}!Autosave\+Manager@{Autosave\+Manager}}
+\subsubsection{\texorpdfstring{Autosave\+Interval}{AutosaveInterval}}
+{\footnotesize\ttfamily int Autosave\+Manager.\+Autosave\+Interval\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the autosave interval in minutes. If less than or equal to zero autosaves are disabled. 
+
+The autosave interval in minutes.
+
+Definition at line 79 of file Autosave\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Events/\hyperlink{_autosave_manager_8cs}{Autosave\+Manager.\+cs}\end{DoxyCompactItemize}

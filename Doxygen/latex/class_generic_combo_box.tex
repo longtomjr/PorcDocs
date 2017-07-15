@@ -1,0 +1,189 @@
+\hypertarget{class_generic_combo_box}{}\section{Generic\+Combo\+Box Class Reference}
+\label{class_generic_combo_box}\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+Inheritance diagram for Generic\+Combo\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_generic_combo_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_generic_combo_box_a00685a1aa5fb9d5a76864652d80ec557}{Dropdown\+Helper\+From\+Text} (string\mbox{[}$\,$\mbox{]} options, int value)
+\item 
+Game\+Object \hyperlink{class_generic_combo_box_a2cc0272b4b15b0616938572ce370d741}{Dropdown\+Helper\+From\+Option\+Data} (Dropdown.\+Option\+Data\mbox{[}$\,$\mbox{]} options, int value)
+\item 
+Game\+Object \hyperlink{class_generic_combo_box_a2dd11da6d2387f7adb28303113ec4c2d}{Dropdown\+Helper\+Empty} ()
+\item 
+Game\+Object \hyperlink{class_generic_combo_box_a06629d512c45d7080fef30ca4034efea}{Get\+Basic\+Element} ()
+\item 
+override Game\+Object \hyperlink{class_generic_combo_box_ae1800a7c68d3af046a2b147e117437ff}{Initialize\+Element} ()
+\begin{DoxyCompactList}\small\item\em Set ranges, set fields... Pass it back basically. \end{DoxyCompactList}\item 
+override void \hyperlink{class_generic_combo_box_a0949a84cf1e33d13346cb90597e005ce}{Cancel\+Setting} ()
+\begin{DoxyCompactList}\small\item\em Cancel setting data. \end{DoxyCompactList}\item 
+override void \hyperlink{class_generic_combo_box_a5aced71f035bd463a4ebaaffe19ec547}{Apply\+Setting} ()
+\begin{DoxyCompactList}\small\item\em Apply setting data. \end{DoxyCompactList}\item 
+int \hyperlink{class_generic_combo_box_ae46ddf9be6f30159a56950e3f1184432}{get\+Value} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dropdown \hyperlink{class_generic_combo_box_a9bdea08b062f9caecedcfc173197e310}{dropdown\+Element}
+\item 
+int \hyperlink{class_generic_combo_box_a947c313681c753185d3f6fe4bfa0e896}{selected\+Value}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 232 of file Settings\+Menu\+Functions.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_generic_combo_box_a5aced71f035bd463a4ebaaffe19ec547}\label{class_generic_combo_box_a5aced71f035bd463a4ebaaffe19ec547}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Apply\+Setting@{Apply\+Setting}}
+\index{Apply\+Setting@{Apply\+Setting}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Apply\+Setting()}{ApplySetting()}}
+{\footnotesize\ttfamily override void Generic\+Combo\+Box.\+Apply\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Apply setting data. 
+
+
+
+Implements \hyperlink{class_base_settings_element_aecb484325110e7b97ec6e4d92d856ab1}{Base\+Settings\+Element}.
+
+
+
+Reimplemented in \hyperlink{class_resolution_combo_box_ae2069c493be08045148b0e260b2112c9}{Resolution\+Combo\+Box}, \hyperlink{class_performance_h_u_d_combo_box_a80ec71a44640dad18ea4da16ecb39fb7}{Performance\+H\+U\+D\+Combo\+Box}, \hyperlink{class_v_sync_combo_box_a5d6d9a0895ae75f608a7107ce1ef5d31}{V\+Sync\+Combo\+Box}, \hyperlink{class_sound_device_combo_box_a93dba6ff0e9ebd8767b9e15551231747}{Sound\+Device\+Combo\+Box}, \hyperlink{class_shadow_combo_box_a9289f25b57e2935f1b971ec9875218d8}{Shadow\+Combo\+Box}, \hyperlink{class_a_a_combo_box_a449a6201d1e2c9e612b49bce29c1c151}{A\+A\+Combo\+Box}, \hyperlink{class_anisotropic_filtering_combo_box_a6125f1d23556243c2b50ff1063cd8a3b}{Anisotropic\+Filtering\+Combo\+Box}, \hyperlink{class_u_i_skin_combo_box_a6995ec911a8cacc899e3c44aa3099fff}{U\+I\+Skin\+Combo\+Box}, \hyperlink{class_quality_combo_box_a6f05c237068e72d2221a58425d17f402}{Quality\+Combo\+Box}, and \hyperlink{class_localization_combo_box_ad531f8563cc8085e0129d4d719f8f82b}{Localization\+Combo\+Box}.
+
+
+
+Definition at line 285 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a0949a84cf1e33d13346cb90597e005ce}\label{class_generic_combo_box_a0949a84cf1e33d13346cb90597e005ce}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Cancel\+Setting@{Cancel\+Setting}}
+\index{Cancel\+Setting@{Cancel\+Setting}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Cancel\+Setting()}{CancelSetting()}}
+{\footnotesize\ttfamily override void Generic\+Combo\+Box.\+Cancel\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cancel setting data. 
+
+
+
+Implements \hyperlink{class_base_settings_element_a66f796e4aaa1e660a7db3e69547412d3}{Base\+Settings\+Element}.
+
+
+
+Reimplemented in \hyperlink{class_resolution_combo_box_a0c831260eeb5fe60b9cb655693af4fa2}{Resolution\+Combo\+Box}, \hyperlink{class_performance_h_u_d_combo_box_a29adb8a1a56ad279f6a87e4efc1ea5e0}{Performance\+H\+U\+D\+Combo\+Box}, \hyperlink{class_v_sync_combo_box_a76f577ef0c4f59871313a824ef98058e}{V\+Sync\+Combo\+Box}, \hyperlink{class_sound_device_combo_box_af557c68898898b0a6b490b72f56ff082}{Sound\+Device\+Combo\+Box}, \hyperlink{class_shadow_combo_box_a8ab8daef08695bae23b99fd41ce1f6c1}{Shadow\+Combo\+Box}, \hyperlink{class_a_a_combo_box_a1886a8ebd7ed57a6a5739469c6a88f65}{A\+A\+Combo\+Box}, \hyperlink{class_anisotropic_filtering_combo_box_ae2c2cdc46f898319f43eff20acd32b6f}{Anisotropic\+Filtering\+Combo\+Box}, \hyperlink{class_u_i_skin_combo_box_adf108006beddfd416f81ec09ecd025f9}{U\+I\+Skin\+Combo\+Box}, \hyperlink{class_quality_combo_box_a04e70d34dd0b977690f593cfd4ecbe6b}{Quality\+Combo\+Box}, and \hyperlink{class_localization_combo_box_a67bf48bcaf083f7cdfb59fe2e82d0f12}{Localization\+Combo\+Box}.
+
+
+
+Definition at line 281 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a2dd11da6d2387f7adb28303113ec4c2d}\label{class_generic_combo_box_a2dd11da6d2387f7adb28303113ec4c2d}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Dropdown\+Helper\+Empty@{Dropdown\+Helper\+Empty}}
+\index{Dropdown\+Helper\+Empty@{Dropdown\+Helper\+Empty}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Dropdown\+Helper\+Empty()}{DropdownHelperEmpty()}}
+{\footnotesize\ttfamily Game\+Object Generic\+Combo\+Box.\+Dropdown\+Helper\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 257 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a2cc0272b4b15b0616938572ce370d741}\label{class_generic_combo_box_a2cc0272b4b15b0616938572ce370d741}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Dropdown\+Helper\+From\+Option\+Data@{Dropdown\+Helper\+From\+Option\+Data}}
+\index{Dropdown\+Helper\+From\+Option\+Data@{Dropdown\+Helper\+From\+Option\+Data}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Dropdown\+Helper\+From\+Option\+Data()}{DropdownHelperFromOptionData()}}
+{\footnotesize\ttfamily Game\+Object Generic\+Combo\+Box.\+Dropdown\+Helper\+From\+Option\+Data (\begin{DoxyParamCaption}\item[{Dropdown.\+Option\+Data \mbox{[}$\,$\mbox{]}}]{options,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a00685a1aa5fb9d5a76864652d80ec557}\label{class_generic_combo_box_a00685a1aa5fb9d5a76864652d80ec557}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Dropdown\+Helper\+From\+Text@{Dropdown\+Helper\+From\+Text}}
+\index{Dropdown\+Helper\+From\+Text@{Dropdown\+Helper\+From\+Text}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Dropdown\+Helper\+From\+Text()}{DropdownHelperFromText()}}
+{\footnotesize\ttfamily Game\+Object Generic\+Combo\+Box.\+Dropdown\+Helper\+From\+Text (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{options,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a06629d512c45d7080fef30ca4034efea}\label{class_generic_combo_box_a06629d512c45d7080fef30ca4034efea}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Get\+Basic\+Element@{Get\+Basic\+Element}}
+\index{Get\+Basic\+Element@{Get\+Basic\+Element}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Get\+Basic\+Element()}{GetBasicElement()}}
+{\footnotesize\ttfamily Game\+Object Generic\+Combo\+Box.\+Get\+Basic\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_ae46ddf9be6f30159a56950e3f1184432}\label{class_generic_combo_box_ae46ddf9be6f30159a56950e3f1184432}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily int Generic\+Combo\+Box.\+get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 290 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_ae1800a7c68d3af046a2b147e117437ff}\label{class_generic_combo_box_ae1800a7c68d3af046a2b147e117437ff}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!Initialize\+Element@{Initialize\+Element}}
+\index{Initialize\+Element@{Initialize\+Element}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{Initialize\+Element()}{InitializeElement()}}
+{\footnotesize\ttfamily override Game\+Object Generic\+Combo\+Box.\+Initialize\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set ranges, set fields... Pass it back basically. 
+
+
+
+Implements \hyperlink{class_base_u_i_element_a9a0aa6ac0b194f90e092b372adce4e30}{Base\+U\+I\+Element}.
+
+
+
+Reimplemented in \hyperlink{class_resolution_combo_box_a226f4bbab7c3729cb67a681b4adaec3d}{Resolution\+Combo\+Box}, \hyperlink{class_performance_h_u_d_combo_box_a4d2e3c3bb7815cb0274a0d890af92cd0}{Performance\+H\+U\+D\+Combo\+Box}, \hyperlink{class_v_sync_combo_box_a6de5084b8e4b47a434de53bab6650d82}{V\+Sync\+Combo\+Box}, \hyperlink{class_sound_device_combo_box_a20c9540411ea0e9248b54f5a54725290}{Sound\+Device\+Combo\+Box}, \hyperlink{class_shadow_combo_box_ae74c360bfe5007aa56efd66e1d016a74}{Shadow\+Combo\+Box}, \hyperlink{class_a_a_combo_box_a24e6de36b3019dd2a428837d6fab86b8}{A\+A\+Combo\+Box}, \hyperlink{class_anisotropic_filtering_combo_box_a3a3182ef43ee5c56158e41c750329ab5}{Anisotropic\+Filtering\+Combo\+Box}, \hyperlink{class_u_i_skin_combo_box_a4d7b16b8368b3cc075fa026a6e60af88}{U\+I\+Skin\+Combo\+Box}, \hyperlink{class_quality_combo_box_a8f6e77ad23e7e937c023d4ad4f9aeaa4}{Quality\+Combo\+Box}, and \hyperlink{class_localization_combo_box_ab676d6d7fe3c9c9d55259a8aec060622}{Localization\+Combo\+Box}.
+
+
+
+Definition at line 276 of file Settings\+Menu\+Functions.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_generic_combo_box_a9bdea08b062f9caecedcfc173197e310}\label{class_generic_combo_box_a9bdea08b062f9caecedcfc173197e310}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!dropdown\+Element@{dropdown\+Element}}
+\index{dropdown\+Element@{dropdown\+Element}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{dropdown\+Element}{dropdownElement}}
+{\footnotesize\ttfamily Dropdown Generic\+Combo\+Box.\+dropdown\+Element\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 234 of file Settings\+Menu\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_generic_combo_box_a947c313681c753185d3f6fe4bfa0e896}\label{class_generic_combo_box_a947c313681c753185d3f6fe4bfa0e896}} 
+\index{Generic\+Combo\+Box@{Generic\+Combo\+Box}!selected\+Value@{selected\+Value}}
+\index{selected\+Value@{selected\+Value}!Generic\+Combo\+Box@{Generic\+Combo\+Box}}
+\subsubsection{\texorpdfstring{selected\+Value}{selectedValue}}
+{\footnotesize\ttfamily int Generic\+Combo\+Box.\+selected\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 235 of file Settings\+Menu\+Functions.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Streaming\+Assets/\+C\+Sharp/\hyperlink{_settings_menu_functions_8cs}{Settings\+Menu\+Functions.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,271 @@
+\hypertarget{class_health_system}{}\section{Health\+System Class Reference}
+\label{class_health_system}\index{Health\+System@{Health\+System}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_health_system_a259eb4ec7b1886fd490ccd97e8d14929}{Health\+System} (float max\+Health)
+\item 
+\hyperlink{class_health_system_a632e30e7613cc00bd282819619199599}{Health\+System} (float max\+Health, bool is\+Invincible, bool is\+Healable, bool is\+Revivable, bool can\+Oveheal)
+\item 
+\hyperlink{class_health_system}{Health\+System} \hyperlink{class_health_system_a0f6e79635da6cf8a3a9493fc422f3fcb}{Clone} ()
+\item 
+void \hyperlink{class_health_system_a5b63bccbb8a3da90a8e87f75e904e572}{Damage\+Entity} (float damage)
+\begin{DoxyCompactList}\small\item\em Applies damage to the entity. \end{DoxyCompactList}\item 
+string \hyperlink{class_health_system_ab25c1f3f05672c28f452afa2d0125e97}{Text\+For\+Selection\+Panel} ()
+\begin{DoxyCompactList}\small\item\em Formats the text for health to be displayed by the Selection Panel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_health_system_ac252024753768287f4e6c07657f03a95}{Current\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_health_system_a07ce65ebdae45aef952ed6858441c3d9}{Is\+Alive}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Used to determine if the entity is still alive. \end{DoxyCompactList}\item 
+bool \hyperlink{class_health_system_ac3c807d6326bcf69776a4ab1ac2fcdc4}{Is\+Invincible}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_health_system_adeccc5512c7caf9c87ccb7c2ddda582c}{Is\+Healable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_health_system_a08239b7099b339a01e184875c322497a}{Is\+Revivable}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_health_system_af7bb446d9ab48284d61dbf387aa8bcfb}{Can\+Overheal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_health_system_a125978d7fdab158cc4799642576c0749}{Max\+Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_health_system_a56a1a326a2d7a3039a8f512e1d4d7858}{Overheal\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action \hyperlink{class_health_system_aa19ec8cdd69e9a033a76db175705a5a1}{Revive}
+\item 
+Action \hyperlink{class_health_system_ad80f0c290068df042b13b87e19329cbb}{Heal}
+\item 
+Action \hyperlink{class_health_system_a9f23dd550d7ab148c5051acc2d224ff5}{Overheal}
+\item 
+Action \hyperlink{class_health_system_ac6978d7d085bfad1c33b6ddaaac113ae}{Hit}
+\item 
+Action \hyperlink{class_health_system_aff4f590a604a12cd794a853764904e1f}{Destroyed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Health\+System.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_health_system_a259eb4ec7b1886fd490ccd97e8d14929}\label{class_health_system_a259eb4ec7b1886fd490ccd97e8d14929}} 
+\index{Health\+System@{Health\+System}!Health\+System@{Health\+System}}
+\index{Health\+System@{Health\+System}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Health\+System()}{HealthSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Health\+System.\+Health\+System (\begin{DoxyParamCaption}\item[{float}]{max\+Health }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a632e30e7613cc00bd282819619199599}\label{class_health_system_a632e30e7613cc00bd282819619199599}} 
+\index{Health\+System@{Health\+System}!Health\+System@{Health\+System}}
+\index{Health\+System@{Health\+System}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Health\+System()}{HealthSystem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Health\+System.\+Health\+System (\begin{DoxyParamCaption}\item[{float}]{max\+Health,  }\item[{bool}]{is\+Invincible,  }\item[{bool}]{is\+Healable,  }\item[{bool}]{is\+Revivable,  }\item[{bool}]{can\+Oveheal }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Health\+System.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_health_system_a0f6e79635da6cf8a3a9493fc422f3fcb}\label{class_health_system_a0f6e79635da6cf8a3a9493fc422f3fcb}} 
+\index{Health\+System@{Health\+System}!Clone@{Clone}}
+\index{Clone@{Clone}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_health_system}{Health\+System} Health\+System.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 108 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a5b63bccbb8a3da90a8e87f75e904e572}\label{class_health_system_a5b63bccbb8a3da90a8e87f75e904e572}} 
+\index{Health\+System@{Health\+System}!Damage\+Entity@{Damage\+Entity}}
+\index{Damage\+Entity@{Damage\+Entity}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Damage\+Entity()}{DamageEntity()}}
+{\footnotesize\ttfamily void Health\+System.\+Damage\+Entity (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
+
+
+
+Applies damage to the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & The number of hitpoints to remove from the entity.\\
+\hline
+\end{DoxyParams}
+T\+O\+DO\+: Add calculations with resistance. T\+O\+DO\+: Move to some sort of combat folder/class maybe the L\+UA? 
+
+Definition at line 119 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_ab25c1f3f05672c28f452afa2d0125e97}\label{class_health_system_ab25c1f3f05672c28f452afa2d0125e97}} 
+\index{Health\+System@{Health\+System}!Text\+For\+Selection\+Panel@{Text\+For\+Selection\+Panel}}
+\index{Text\+For\+Selection\+Panel@{Text\+For\+Selection\+Panel}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Text\+For\+Selection\+Panel()}{TextForSelectionPanel()}}
+{\footnotesize\ttfamily string Health\+System.\+Text\+For\+Selection\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Formats the text for health to be displayed by the Selection Panel. 
+
+\begin{DoxyReturn}{Returns}
+The newly formatted text.
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Health\+System.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_health_system_af7bb446d9ab48284d61dbf387aa8bcfb}\label{class_health_system_af7bb446d9ab48284d61dbf387aa8bcfb}} 
+\index{Health\+System@{Health\+System}!Can\+Overheal@{Can\+Overheal}}
+\index{Can\+Overheal@{Can\+Overheal}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Can\+Overheal}{CanOverheal}}
+{\footnotesize\ttfamily bool Health\+System.\+Can\+Overheal\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 96 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_ac252024753768287f4e6c07657f03a95}\label{class_health_system_ac252024753768287f4e6c07657f03a95}} 
+\index{Health\+System@{Health\+System}!Current\+Health@{Current\+Health}}
+\index{Current\+Health@{Current\+Health}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Current\+Health}{CurrentHealth}}
+{\footnotesize\ttfamily float Health\+System.\+Current\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 60 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a07ce65ebdae45aef952ed6858441c3d9}\label{class_health_system_a07ce65ebdae45aef952ed6858441c3d9}} 
+\index{Health\+System@{Health\+System}!Is\+Alive@{Is\+Alive}}
+\index{Is\+Alive@{Is\+Alive}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Is\+Alive}{IsAlive}}
+{\footnotesize\ttfamily bool Health\+System.\+Is\+Alive\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Used to determine if the entity is still alive. 
+
+
+
+Definition at line 86 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_adeccc5512c7caf9c87ccb7c2ddda582c}\label{class_health_system_adeccc5512c7caf9c87ccb7c2ddda582c}} 
+\index{Health\+System@{Health\+System}!Is\+Healable@{Is\+Healable}}
+\index{Is\+Healable@{Is\+Healable}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Is\+Healable}{IsHealable}}
+{\footnotesize\ttfamily bool Health\+System.\+Is\+Healable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 92 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_ac3c807d6326bcf69776a4ab1ac2fcdc4}\label{class_health_system_ac3c807d6326bcf69776a4ab1ac2fcdc4}} 
+\index{Health\+System@{Health\+System}!Is\+Invincible@{Is\+Invincible}}
+\index{Is\+Invincible@{Is\+Invincible}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Is\+Invincible}{IsInvincible}}
+{\footnotesize\ttfamily bool Health\+System.\+Is\+Invincible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 90 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a08239b7099b339a01e184875c322497a}\label{class_health_system_a08239b7099b339a01e184875c322497a}} 
+\index{Health\+System@{Health\+System}!Is\+Revivable@{Is\+Revivable}}
+\index{Is\+Revivable@{Is\+Revivable}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Is\+Revivable}{IsRevivable}}
+{\footnotesize\ttfamily bool Health\+System.\+Is\+Revivable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 94 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a125978d7fdab158cc4799642576c0749}\label{class_health_system_a125978d7fdab158cc4799642576c0749}} 
+\index{Health\+System@{Health\+System}!Max\+Health@{Max\+Health}}
+\index{Max\+Health@{Max\+Health}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Max\+Health}{MaxHealth}}
+{\footnotesize\ttfamily float Health\+System.\+Max\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 98 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a56a1a326a2d7a3039a8f512e1d4d7858}\label{class_health_system_a56a1a326a2d7a3039a8f512e1d4d7858}} 
+\index{Health\+System@{Health\+System}!Overheal\+Amount@{Overheal\+Amount}}
+\index{Overheal\+Amount@{Overheal\+Amount}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Overheal\+Amount}{OverhealAmount}}
+{\footnotesize\ttfamily float Health\+System.\+Overheal\+Amount\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 101 of file Health\+System.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_health_system_aff4f590a604a12cd794a853764904e1f}\label{class_health_system_aff4f590a604a12cd794a853764904e1f}} 
+\index{Health\+System@{Health\+System}!Destroyed@{Destroyed}}
+\index{Destroyed@{Destroyed}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Destroyed}{Destroyed}}
+{\footnotesize\ttfamily Action Health\+System.\+Destroyed}
+
+
+
+Definition at line 57 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_ad80f0c290068df042b13b87e19329cbb}\label{class_health_system_ad80f0c290068df042b13b87e19329cbb}} 
+\index{Health\+System@{Health\+System}!Heal@{Heal}}
+\index{Heal@{Heal}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Heal}{Heal}}
+{\footnotesize\ttfamily Action Health\+System.\+Heal}
+
+
+
+Definition at line 50 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_ac6978d7d085bfad1c33b6ddaaac113ae}\label{class_health_system_ac6978d7d085bfad1c33b6ddaaac113ae}} 
+\index{Health\+System@{Health\+System}!Hit@{Hit}}
+\index{Hit@{Hit}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Hit}{Hit}}
+{\footnotesize\ttfamily Action Health\+System.\+Hit}
+
+
+
+Definition at line 55 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_a9f23dd550d7ab148c5051acc2d224ff5}\label{class_health_system_a9f23dd550d7ab148c5051acc2d224ff5}} 
+\index{Health\+System@{Health\+System}!Overheal@{Overheal}}
+\index{Overheal@{Overheal}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Overheal}{Overheal}}
+{\footnotesize\ttfamily Action Health\+System.\+Overheal}
+
+
+
+Definition at line 53 of file Health\+System.\+cs.
+
+\mbox{\Hypertarget{class_health_system_aa19ec8cdd69e9a033a76db175705a5a1}\label{class_health_system_aa19ec8cdd69e9a033a76db175705a5a1}} 
+\index{Health\+System@{Health\+System}!Revive@{Revive}}
+\index{Revive@{Revive}!Health\+System@{Health\+System}}
+\subsubsection{\texorpdfstring{Revive}{Revive}}
+{\footnotesize\ttfamily Action Health\+System.\+Revive}
+
+
+
+Definition at line 48 of file Health\+System.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Health/\hyperlink{_health_system_8cs}{Health\+System.\+cs}\end{DoxyCompactItemize}

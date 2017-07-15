@@ -1,0 +1,246 @@
+\hypertarget{class_developer_console_1_1_core_1_1_command_base}{}\section{Developer\+Console.\+Core.\+Command\+Base Class Reference}
+\label{class_developer_console_1_1_core_1_1_command_base}\index{Developer\+Console.\+Core.\+Command\+Base@{Developer\+Console.\+Core.\+Command\+Base}}
+
+
+A command base that all commands derive from.  
+
+
+Inheritance diagram for Developer\+Console.\+Core.\+Command\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_developer_console_1_1_core_1_1_command_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{class_developer_console_1_1_core_1_1_command_base_ab68054239b7e3d2a47029839f90d59ca}{Execute\+Command} (string arguments)
+\begin{DoxyCompactList}\small\item\em Execute this command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_developer_console_1_1_core_1_1_command_base_a9a15420bd47468900b586ae11de88a66}{Regex\+To\+Standard\+Pattern} (string arguments)
+\begin{DoxyCompactList}\small\item\em Regexs the character set properly, should always be called instead of you trying to do it yourself. \end{DoxyCompactList}\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_command_base_ab91af9ff56ca90d0c2e23113840cbc27}{Get\+Constant\+For\+Match} (Match match)
+\begin{DoxyCompactList}\small\item\em Finds any constant matches in the match. \end{DoxyCompactList}\item 
+virtual object \mbox{[}$\,$\mbox{]} \hyperlink{class_developer_console_1_1_core_1_1_command_base_a63fcbc0b16344db48f1dfaab96d86759}{Parse\+Arguments} (string args)
+\begin{DoxyCompactList}\small\item\em Parse the arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_command_base_a30914c228150fccb56aba06ce78d0b80}{Descriptive\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Text describing the command. \end{DoxyCompactList}\item 
+abstract string \hyperlink{class_developer_console_1_1_core_1_1_command_base_aa7802f7a4d1c16b466ce471cfd753c19}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The parameter list. \end{DoxyCompactList}\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_command_base_a99d78a8c39ff47e8f29c699570e2dc2e}{Title}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The title of the command. \end{DoxyCompactList}\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_command_base_ad388f0c50319867b5ab17446ba978148}{Detailed\+Descriptive\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The detailed help description. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_developer_console_1_1_core_1_1_command_base_a6aaea49008e5b985da4690901173cb0b}{Tags}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The tags associated with this command. \end{DoxyCompactList}\item 
+Type \mbox{[}$\,$\mbox{]} \hyperlink{class_developer_console_1_1_core_1_1_command_base_afefb8c75e0ba04ef689e501009cd982e}{Type\+Info}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em All types associated with this command. \end{DoxyCompactList}\item 
+string \hyperlink{class_developer_console_1_1_core_1_1_command_base_a89ad8df5714aa61c63c35c53860d6836}{Default\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The default value of this command. Implemented only for L\+UA. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A command base that all commands derive from. 
+
+
+
+Definition at line 21 of file Command\+Base.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_ab68054239b7e3d2a47029839f90d59ca}\label{class_developer_console_1_1_core_1_1_command_base_ab68054239b7e3d2a47029839f90d59ca}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Execute\+Command@{Execute\+Command}}
+\index{Execute\+Command@{Execute\+Command}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Execute\+Command()}{ExecuteCommand()}}
+{\footnotesize\ttfamily abstract void Developer\+Console.\+Core.\+Command\+Base.\+Execute\+Command (\begin{DoxyParamCaption}\item[{string}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Execute this command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_developer_console_1_1_core_1_1_internal_command_a1099028980b225c379bae7b3eab35d20}{Developer\+Console.\+Core.\+Internal\+Command}, and \hyperlink{class_developer_console_1_1_core_1_1_invoke_command_a3c7631154759c3304ae757cbc437d27d}{Developer\+Console.\+Core.\+Invoke\+Command}.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_ab91af9ff56ca90d0c2e23113840cbc27}\label{class_developer_console_1_1_core_1_1_command_base_ab91af9ff56ca90d0c2e23113840cbc27}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Get\+Constant\+For\+Match@{Get\+Constant\+For\+Match}}
+\index{Get\+Constant\+For\+Match@{Get\+Constant\+For\+Match}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Get\+Constant\+For\+Match()}{GetConstantForMatch()}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Command\+Base.\+Get\+Constant\+For\+Match (\begin{DoxyParamCaption}\item[{Match}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Finds any constant matches in the match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & A match from a regex expression. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constant value if one exists in the match. 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a63fcbc0b16344db48f1dfaab96d86759}\label{class_developer_console_1_1_core_1_1_command_base_a63fcbc0b16344db48f1dfaab96d86759}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Parse\+Arguments@{Parse\+Arguments}}
+\index{Parse\+Arguments@{Parse\+Arguments}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Parse\+Arguments()}{ParseArguments()}}
+{\footnotesize\ttfamily virtual object \mbox{[}$\,$\mbox{]} Developer\+Console.\+Core.\+Command\+Base.\+Parse\+Arguments (\begin{DoxyParamCaption}\item[{string}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Parse the arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & Arguments to parse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parsed arguments.
+\end{DoxyReturn}
+
+
+Definition at line 177 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a9a15420bd47468900b586ae11de88a66}\label{class_developer_console_1_1_core_1_1_command_base_a9a15420bd47468900b586ae11de88a66}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Regex\+To\+Standard\+Pattern@{Regex\+To\+Standard\+Pattern}}
+\index{Regex\+To\+Standard\+Pattern@{Regex\+To\+Standard\+Pattern}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Regex\+To\+Standard\+Pattern()}{RegexToStandardPattern()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Developer\+Console.\+Core.\+Command\+Base.\+Regex\+To\+Standard\+Pattern (\begin{DoxyParamCaption}\item[{string}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Regexs the character set properly, should always be called instead of you trying to do it yourself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & The string to split and trim.\\
+\hline
+{\em at\+Character} & What character to split at.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Command\+Base.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a89ad8df5714aa61c63c35c53860d6836}\label{class_developer_console_1_1_core_1_1_command_base_a89ad8df5714aa61c63c35c53860d6836}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Default\+Value@{Default\+Value}}
+\index{Default\+Value@{Default\+Value}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Default\+Value}{DefaultValue}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Command\+Base.\+Default\+Value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The default value of this command. Implemented only for L\+UA. 
+
+
+
+Definition at line 76 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a30914c228150fccb56aba06ce78d0b80}\label{class_developer_console_1_1_core_1_1_command_base_a30914c228150fccb56aba06ce78d0b80}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Descriptive\+Text@{Descriptive\+Text}}
+\index{Descriptive\+Text@{Descriptive\+Text}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Descriptive\+Text}{DescriptiveText}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Command\+Base.\+Descriptive\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Text describing the command. 
+
+
+
+Definition at line 27 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_ad388f0c50319867b5ab17446ba978148}\label{class_developer_console_1_1_core_1_1_command_base_ad388f0c50319867b5ab17446ba978148}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Detailed\+Descriptive\+Text@{Detailed\+Descriptive\+Text}}
+\index{Detailed\+Descriptive\+Text@{Detailed\+Descriptive\+Text}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Detailed\+Descriptive\+Text}{DetailedDescriptiveText}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Command\+Base.\+Detailed\+Descriptive\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The detailed help description. 
+
+
+
+Definition at line 51 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_aa7802f7a4d1c16b466ce471cfd753c19}\label{class_developer_console_1_1_core_1_1_command_base_aa7802f7a4d1c16b466ce471cfd753c19}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily abstract string Developer\+Console.\+Core.\+Command\+Base.\+Parameters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The parameter list. 
+
+
+
+Definition at line 35 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a6aaea49008e5b985da4690901173cb0b}\label{class_developer_console_1_1_core_1_1_command_base_a6aaea49008e5b985da4690901173cb0b}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Tags@{Tags}}
+\index{Tags@{Tags}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Tags}{Tags}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Developer\+Console.\+Core.\+Command\+Base.\+Tags\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The tags associated with this command. 
+
+
+
+Definition at line 59 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_a99d78a8c39ff47e8f29c699570e2dc2e}\label{class_developer_console_1_1_core_1_1_command_base_a99d78a8c39ff47e8f29c699570e2dc2e}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Title@{Title}}
+\index{Title@{Title}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Title}{Title}}
+{\footnotesize\ttfamily string Developer\+Console.\+Core.\+Command\+Base.\+Title\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The title of the command. 
+
+
+
+Definition at line 43 of file Command\+Base.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_command_base_afefb8c75e0ba04ef689e501009cd982e}\label{class_developer_console_1_1_core_1_1_command_base_afefb8c75e0ba04ef689e501009cd982e}} 
+\index{Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}!Type\+Info@{Type\+Info}}
+\index{Type\+Info@{Type\+Info}!Developer\+Console\+::\+Core\+::\+Command\+Base@{Developer\+Console\+::\+Core\+::\+Command\+Base}}
+\subsubsection{\texorpdfstring{Type\+Info}{TypeInfo}}
+{\footnotesize\ttfamily Type \mbox{[}$\,$\mbox{]} Developer\+Console.\+Core.\+Command\+Base.\+Type\+Info\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+All types associated with this command. 
+
+
+
+Definition at line 67 of file Command\+Base.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Dev\+Console/\+Command\+Types/\hyperlink{_command_base_8cs}{Command\+Base.\+cs}\end{DoxyCompactItemize}

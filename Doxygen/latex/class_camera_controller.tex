@@ -1,0 +1,165 @@
+\hypertarget{class_camera_controller}{}\section{Camera\+Controller Class Reference}
+\label{class_camera_controller}\index{Camera\+Controller@{Camera\+Controller}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_controller_a2028264f95bb29ae3a0fbd3255e3c401}{Camera\+Controller} ()
+\item 
+void \hyperlink{class_camera_controller_a7c4f486f4bcbd1d54a346fdce9707bd5}{Update} ()
+\item 
+void \hyperlink{class_camera_controller_a5685e1f13b68e97d726cbb9ee92c55f7}{Change\+Zoom} (float amount)
+\item 
+void \hyperlink{class_camera_controller_a490a2f66c60adedcb74d3b3cde07275d}{Change\+Layer} (int new\+Layer)
+\item 
+void \hyperlink{class_camera_controller_aea1f76fa7604667f1442dc48be81fb2a}{Change\+Layer\+Up} ()
+\item 
+void \hyperlink{class_camera_controller_a3861db0c5202a3efc51ac3a87546d1db}{Change\+Layer\+Down} ()
+\item 
+void \hyperlink{class_camera_controller_a8c7b57499a5e204821e54bd705fb3f05}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Sets up the camera and camera presets if necessary. Presets will be null if loading an empty world and its values are then taken from the current camera values; if loading from a file, preset values are fed to the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_camera_controller_a8507cbd7f4030221961ef08e2e39a2bc}{scroll\+Speed} = 0.\+1f
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_camera_controller_a2ca9b5b3b41679613229d313a22243d2}{Current\+Layer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ Bounds $>$ \hyperlink{class_camera_controller_a660773a1d2a570dec85afc8f105bd523}{Moved}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Camera\+Controller.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_controller_a2028264f95bb29ae3a0fbd3255e3c401}\label{class_camera_controller_a2028264f95bb29ae3a0fbd3255e3c401}} 
+\index{Camera\+Controller@{Camera\+Controller}!Camera\+Controller@{Camera\+Controller}}
+\index{Camera\+Controller@{Camera\+Controller}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Camera\+Controller()}{CameraController()}}
+{\footnotesize\ttfamily Camera\+Controller.\+Camera\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file Camera\+Controller.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_controller_a490a2f66c60adedcb74d3b3cde07275d}\label{class_camera_controller_a490a2f66c60adedcb74d3b3cde07275d}} 
+\index{Camera\+Controller@{Camera\+Controller}!Change\+Layer@{Change\+Layer}}
+\index{Change\+Layer@{Change\+Layer}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Change\+Layer()}{ChangeLayer()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Change\+Layer (\begin{DoxyParamCaption}\item[{int}]{new\+Layer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file Camera\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_camera_controller_a3861db0c5202a3efc51ac3a87546d1db}\label{class_camera_controller_a3861db0c5202a3efc51ac3a87546d1db}} 
+\index{Camera\+Controller@{Camera\+Controller}!Change\+Layer\+Down@{Change\+Layer\+Down}}
+\index{Change\+Layer\+Down@{Change\+Layer\+Down}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Change\+Layer\+Down()}{ChangeLayerDown()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Change\+Layer\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file Camera\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_camera_controller_aea1f76fa7604667f1442dc48be81fb2a}\label{class_camera_controller_aea1f76fa7604667f1442dc48be81fb2a}} 
+\index{Camera\+Controller@{Camera\+Controller}!Change\+Layer\+Up@{Change\+Layer\+Up}}
+\index{Change\+Layer\+Up@{Change\+Layer\+Up}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Change\+Layer\+Up()}{ChangeLayerUp()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Change\+Layer\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file Camera\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_camera_controller_a5685e1f13b68e97d726cbb9ee92c55f7}\label{class_camera_controller_a5685e1f13b68e97d726cbb9ee92c55f7}} 
+\index{Camera\+Controller@{Camera\+Controller}!Change\+Zoom@{Change\+Zoom}}
+\index{Change\+Zoom@{Change\+Zoom}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Change\+Zoom()}{ChangeZoom()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Change\+Zoom (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file Camera\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_camera_controller_a8c7b57499a5e204821e54bd705fb3f05}\label{class_camera_controller_a8c7b57499a5e204821e54bd705fb3f05}} 
+\index{Camera\+Controller@{Camera\+Controller}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up the camera and camera presets if necessary. Presets will be null if loading an empty world and its values are then taken from the current camera values; if loading from a file, preset values are fed to the camera. 
+
+
+
+Definition at line 172 of file Camera\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_camera_controller_a7c4f486f4bcbd1d54a346fdce9707bd5}\label{class_camera_controller_a7c4f486f4bcbd1d54a346fdce9707bd5}} 
+\index{Camera\+Controller@{Camera\+Controller}!Update@{Update}}
+\index{Update@{Update}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file Camera\+Controller.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_controller_a8507cbd7f4030221961ef08e2e39a2bc}\label{class_camera_controller_a8507cbd7f4030221961ef08e2e39a2bc}} 
+\index{Camera\+Controller@{Camera\+Controller}!scroll\+Speed@{scroll\+Speed}}
+\index{scroll\+Speed@{scroll\+Speed}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{scroll\+Speed}{scrollSpeed}}
+{\footnotesize\ttfamily float Camera\+Controller.\+scroll\+Speed = 0.\+1f}
+
+
+
+Definition at line 15 of file Camera\+Controller.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_camera_controller_a2ca9b5b3b41679613229d313a22243d2}\label{class_camera_controller_a2ca9b5b3b41679613229d313a22243d2}} 
+\index{Camera\+Controller@{Camera\+Controller}!Current\+Layer@{Current\+Layer}}
+\index{Current\+Layer@{Current\+Layer}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Current\+Layer}{CurrentLayer}}
+{\footnotesize\ttfamily int Camera\+Controller.\+Current\+Layer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 70 of file Camera\+Controller.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_camera_controller_a660773a1d2a570dec85afc8f105bd523}\label{class_camera_controller_a660773a1d2a570dec85afc8f105bd523}} 
+\index{Camera\+Controller@{Camera\+Controller}!Moved@{Moved}}
+\index{Moved@{Moved}!Camera\+Controller@{Camera\+Controller}}
+\subsubsection{\texorpdfstring{Moved}{Moved}}
+{\footnotesize\ttfamily Action$<$Bounds$>$ Camera\+Controller.\+Moved}
+
+
+
+Definition at line 67 of file Camera\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Controllers/\+Input\+Output/\hyperlink{_camera_controller_8cs}{Camera\+Controller.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+\hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network}{}\section{Project\+Porcupine.\+Power\+Network.\+Fluid\+Network Class Reference}
+\label{class_project_porcupine_1_1_power_network_1_1_fluid_network}\index{Project\+Porcupine.\+Power\+Network.\+Fluid\+Network@{Project\+Porcupine.\+Power\+Network.\+Fluid\+Network}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a56313c07f89f6cbe4d63e26582936065}{Fluid\+Network} ()
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_ab210e433e0a0b3f61c1c437c494eb4d2}{Can\+Plug\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a596b3ddd907bf29d06b21a72921a3b88}{Plug\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a9155ce52d47f07a8f55e4f62e7c82934}{Plug\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection, \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a1fe6971c5ba7c3c6a9a9cbc16cfa04b3}{Is\+Plugged\+In} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection, out \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a72e4f5480600b27bfab0a8ada1639899}{Unplug} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a61faf6fab18cfdbd358862ba86d7203e}{Register\+Grid} (\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a7a0d05eb19a9e37c4f2d080e0b17e246}{Unregister\+Grid} (\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+int \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_ae388b5d0d488a00c5be22e820c45ce20}{Find\+Id} (\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a67ba7a46d3ecac00cc9b0d04c50b1244}{Unplug} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection, \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a32ce0d32ac824202fd9ac3bb50f37253}{Has\+Power} (\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable} connection)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a227301e509c1183ee799876641e724be}{Update} (float delta\+Time)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a42d6290375015ce893fd75ba5ccc5dca}{Remove\+Grid} (\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid} grid)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_fluid_network_a43316477decc4a1215cbc08f32a6da3d}{Is\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Fluid\+Network.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a56313c07f89f6cbe4d63e26582936065}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a56313c07f89f6cbe4d63e26582936065}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Fluid\+Network@{Fluid\+Network}}
+\index{Fluid\+Network@{Fluid\+Network}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Fluid\+Network()}{FluidNetwork()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Fluid\+Network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Fluid\+Network.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_ab210e433e0a0b3f61c1c437c494eb4d2}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_ab210e433e0a0b3f61c1c437c494eb4d2}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Can\+Plug\+In@{Can\+Plug\+In}}
+\index{Can\+Plug\+In@{Can\+Plug\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Can\+Plug\+In()}{CanPlugIn()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Can\+Plug\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_ae388b5d0d488a00c5be22e820c45ce20}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_ae388b5d0d488a00c5be22e820c45ce20}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Find\+Id@{Find\+Id}}
+\index{Find\+Id@{Find\+Id}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Find\+Id()}{FindId()}}
+{\footnotesize\ttfamily int Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Find\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 129 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a32ce0d32ac824202fd9ac3bb50f37253}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a32ce0d32ac824202fd9ac3bb50f37253}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Has\+Power@{Has\+Power}}
+\index{Has\+Power@{Has\+Power}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Has\+Power()}{HasPower()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Has\+Power (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Definition at line 149 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a1fe6971c5ba7c3c6a9a9cbc16cfa04b3}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a1fe6971c5ba7c3c6a9a9cbc16cfa04b3}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Is\+Plugged\+In@{Is\+Plugged\+In}}
+\index{Is\+Plugged\+In@{Is\+Plugged\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Is\+Plugged\+In()}{IsPluggedIn()}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Is\+Plugged\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection,  }\item[{out \hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a596b3ddd907bf29d06b21a72921a3b88}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a596b3ddd907bf29d06b21a72921a3b88}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Plug\+In@{Plug\+In}}
+\index{Plug\+In@{Plug\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Plug\+In()}{PlugIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Plug\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a9155ce52d47f07a8f55e4f62e7c82934}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a9155ce52d47f07a8f55e4f62e7c82934}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Plug\+In@{Plug\+In}}
+\index{Plug\+In@{Plug\+In}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Plug\+In()}{PlugIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Plug\+In (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection,  }\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a61faf6fab18cfdbd358862ba86d7203e}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a61faf6fab18cfdbd358862ba86d7203e}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Register\+Grid@{Register\+Grid}}
+\index{Register\+Grid@{Register\+Grid}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Register\+Grid()}{RegisterGrid()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Register\+Grid (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a42d6290375015ce893fd75ba5ccc5dca}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a42d6290375015ce893fd75ba5ccc5dca}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Remove\+Grid@{Remove\+Grid}}
+\index{Remove\+Grid@{Remove\+Grid}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Remove\+Grid()}{RemoveGrid()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Remove\+Grid (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a72e4f5480600b27bfab0a8ada1639899}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a72e4f5480600b27bfab0a8ada1639899}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Unplug@{Unplug}}
+\index{Unplug@{Unplug}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Unplug()}{Unplug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Unplug (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a67ba7a46d3ecac00cc9b0d04c50b1244}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a67ba7a46d3ecac00cc9b0d04c50b1244}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Unplug@{Unplug}}
+\index{Unplug@{Unplug}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Unplug()}{Unplug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Unplug (\begin{DoxyParamCaption}\item[{\hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{I\+Pluggable}}]{connection,  }\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 134 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a7a0d05eb19a9e37c4f2d080e0b17e246}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a7a0d05eb19a9e37c4f2d080e0b17e246}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Unregister\+Grid@{Unregister\+Grid}}
+\index{Unregister\+Grid@{Unregister\+Grid}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Unregister\+Grid()}{UnregisterGrid()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Unregister\+Grid (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_power_network_1_1_grid}{Grid}}]{grid }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Fluid\+Network.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a227301e509c1183ee799876641e724be}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a227301e509c1183ee799876641e724be}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Update@{Update}}
+\index{Update@{Update}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Fluid\+Network.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_fluid_network_a43316477decc4a1215cbc08f32a6da3d}\label{class_project_porcupine_1_1_power_network_1_1_fluid_network_a43316477decc4a1215cbc08f32a6da3d}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network@{Project\+Porcupine\+::\+Power\+Network\+::\+Fluid\+Network}}
+\subsubsection{\texorpdfstring{Is\+Empty}{IsEmpty}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Fluid\+Network.\+Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 27 of file Fluid\+Network.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utility\+Network/\hyperlink{_fluid_network_8cs}{Fluid\+Network.\+cs}\end{DoxyCompactItemize}

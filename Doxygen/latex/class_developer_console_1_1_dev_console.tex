@@ -1,0 +1,536 @@
+\hypertarget{class_developer_console_1_1_dev_console}{}\section{Developer\+Console.\+Dev\+Console Class Reference}
+\label{class_developer_console_1_1_dev_console}\index{Developer\+Console.\+Dev\+Console@{Developer\+Console.\+Dev\+Console}}
+Inheritance diagram for Developer\+Console.\+Dev\+Console\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_developer_console_1_1_dev_console}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_developer_console_1_1_dev_console_af57ec8873f1664aefe8574da21a18e3f}{Enter\+Pressed\+For\+Input} (Text new\+Value)
+\begin{DoxyCompactList}\small\item\em Button delegate action to handle command. \end{DoxyCompactList}\item 
+void \hyperlink{class_developer_console_1_1_dev_console_aaa079c848c38afe4832fea2a4add51a3}{Regenerate\+Auto\+Complete} (Text new\+Value)
+\begin{DoxyCompactList}\small\item\em Regenerates the autocomplete (button delegate for text field changed). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a45deaa2419420ca87dbd424b1d5ad47f}{Open} ()
+\begin{DoxyCompactList}\small\item\em Opens the console. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_acda98316836e33329984b87b5b4ba0e2}{Close} ()
+\begin{DoxyCompactList}\small\item\em Closes the console. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a1e1066a6536ffcb97b98fa0083dddc42}{Log} (object obj)
+\begin{DoxyCompactList}\small\item\em Logs to the console. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a14fdb350c2590a23ec30fb80ccfced64}{Log} (object obj, string color)
+\begin{DoxyCompactList}\small\item\em Logs to the console. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_aad85b1607d48da07b04c2bf4417ac6bf}{Log\+Warning} (object obj)
+\begin{DoxyCompactList}\small\item\em Logs to the console with color yellow. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a4756f307082a11bd36ce86637b8a8dfc}{Log\+Error} (object obj)
+\begin{DoxyCompactList}\small\item\em Logs to the console with color red. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a1133667062aefe90b952db9a08e1ede5}{Base\+Print} (string text)
+\begin{DoxyCompactList}\small\item\em Logs to the console. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_ae69b7bfc81cb59ea2ec6f6d0ccdb33e4}{Execute} (string command)
+\begin{DoxyCompactList}\small\item\em Executes the command passed. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a90e83c2a48ec1d0b2d55cfc9d49f44e7}{Show\+Help\+Method} (\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} help)
+\begin{DoxyCompactList}\small\item\em Runs the help method of the passed interface. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a8772e0ab4d0a0e0813edfd34cded2012}{Add\+Commands} (I\+Enumerable$<$ \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} $>$ commands)
+\begin{DoxyCompactList}\small\item\em Adds the given commands. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a071a365e37266ddd90f6851490fc4c49}{Add\+Commands} (params \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base}\mbox{[}$\,$\mbox{]} commands)
+\begin{DoxyCompactList}\small\item\em Adds the given commands. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a32e63d4fd5d3f05fea53a818c87dd52c}{Add\+Command} (\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} command)
+\begin{DoxyCompactList}\small\item\em Adds the specified command. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_developer_console_1_1_dev_console_a369547e22d3fcc7d2d6b90b7c6300a30}{Command\+Exists} (string command\+Title)
+\begin{DoxyCompactList}\small\item\em Returns true if the command exists. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_aa8f421feb7ebe03f0575a1ccf5cbe13a}{Remove\+Command} (string command\+Title)
+\begin{DoxyCompactList}\small\item\em Removes the commmand from the list of commands. \end{DoxyCompactList}\item 
+static I\+Enumerator$<$ \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} $>$ \hyperlink{class_developer_console_1_1_dev_console_ab2a1e0c75f816fabb91576e1dd3c9017}{Command\+Iterator} (string with\+Tag=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns an I\+Enumerator that allows iteration consisting of all the commands. \end{DoxyCompactList}\item 
+static \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} \mbox{[}$\,$\mbox{]} \hyperlink{class_developer_console_1_1_dev_console_a9a4e69ab3f7db22df4a8ee920de6ecb7}{Command\+Array} (string with\+Tag=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns an array of all the commands. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a08b3c37a06bcfbf5a0b82e7cd05a1034}{Add\+History} (string command)
+\begin{DoxyCompactList}\small\item\em Adds the specified command to the history. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a55e287794c05ce2ff7e65153f71f7a1a}{Remove\+History} (string command)
+\begin{DoxyCompactList}\small\item\em Removes specified command from the history. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a4aa582bf50489304d187c5ca7acb5f22}{Clear\+History} ()
+\begin{DoxyCompactList}\small\item\em Clears the command history. \end{DoxyCompactList}\item 
+static string \hyperlink{class_developer_console_1_1_dev_console_a2cae3e00ffac10262d3c47b0ca4a7390}{Get\+Parameters} (\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} description)
+\begin{DoxyCompactList}\small\item\em Returns a parameter list using the correct command mode. \end{DoxyCompactList}\item 
+static Text \hyperlink{class_developer_console_1_1_dev_console_aa561857615c2986c60519c4b1ef92b38}{Text\+Object} ()
+\begin{DoxyCompactList}\small\item\em Passes the Text Object. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_aa4212f80280155e1b14e57b16d81863f}{Dirty\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Refreshes variables based on the settings. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a46515b54112416427bb3bc5426b4a15f}{Add\+Parser} (Type target, Method\+Info method\+Info)
+\begin{DoxyCompactList}\small\item\em Add a parser through reflection of method info. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_abc72c2f73347121d6b25f06f0591584f}{Add\+Parser} (Type target, \hyperlink{namespace_developer_console_a62e10d7e4aeed7c6bcd4a780468c74fa}{Parse\+Delegate} method)
+\begin{DoxyCompactList}\small\item\em Add a parser through a parse delegate. \end{DoxyCompactList}\item 
+static void \hyperlink{class_developer_console_1_1_dev_console_a4183b27cc77ec3b4aad8bdc9f11c33b8}{Add\+Parser} (Type target, Func$<$ string, object $>$ method)
+\begin{DoxyCompactList}\small\item\em Add a parser through a function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ Type, \hyperlink{namespace_developer_console_a62e10d7e4aeed7c6bcd4a780468c74fa}{Parse\+Delegate} $>$ \hyperlink{class_developer_console_1_1_dev_console_aacf3a497357bcc16ce4bbb9428472136}{Parsers}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em All the parsers available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file Dev\+Console.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a32e63d4fd5d3f05fea53a818c87dd52c}\label{class_developer_console_1_1_dev_console_a32e63d4fd5d3f05fea53a818c87dd52c}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Command@{Add\+Command}}
+\index{Add\+Command@{Add\+Command}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Command()}{AddCommand()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Command (\begin{DoxyParamCaption}\item[{\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base}}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the specified command. 
+
+
+
+Definition at line 413 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a8772e0ab4d0a0e0813edfd34cded2012}\label{class_developer_console_1_1_dev_console_a8772e0ab4d0a0e0813edfd34cded2012}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Commands@{Add\+Commands}}
+\index{Add\+Commands@{Add\+Commands}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Commands()}{AddCommands()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Commands (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} $>$}]{commands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the given commands. 
+
+
+
+Definition at line 385 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a071a365e37266ddd90f6851490fc4c49}\label{class_developer_console_1_1_dev_console_a071a365e37266ddd90f6851490fc4c49}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Commands@{Add\+Commands}}
+\index{Add\+Commands@{Add\+Commands}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Commands()}{AddCommands()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Commands (\begin{DoxyParamCaption}\item[{params \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} \mbox{[}$\,$\mbox{]}}]{commands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the given commands. 
+
+
+
+Definition at line 399 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a08b3c37a06bcfbf5a0b82e7cd05a1034}\label{class_developer_console_1_1_dev_console_a08b3c37a06bcfbf5a0b82e7cd05a1034}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+History@{Add\+History}}
+\index{Add\+History@{Add\+History}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+History()}{AddHistory()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+History (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the specified command to the history. 
+
+
+
+Definition at line 501 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a46515b54112416427bb3bc5426b4a15f}\label{class_developer_console_1_1_dev_console_a46515b54112416427bb3bc5426b4a15f}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Parser@{Add\+Parser}}
+\index{Add\+Parser@{Add\+Parser}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Parser()}{AddParser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Parser (\begin{DoxyParamCaption}\item[{Type}]{target,  }\item[{Method\+Info}]{method\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a parser through reflection of method info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target type of the parser. \\
+\hline
+{\em method\+Info} & The reflected method that takes in a string and returns an object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 583 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_abc72c2f73347121d6b25f06f0591584f}\label{class_developer_console_1_1_dev_console_abc72c2f73347121d6b25f06f0591584f}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Parser@{Add\+Parser}}
+\index{Add\+Parser@{Add\+Parser}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Parser()}{AddParser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Parser (\begin{DoxyParamCaption}\item[{Type}]{target,  }\item[{\hyperlink{namespace_developer_console_a62e10d7e4aeed7c6bcd4a780468c74fa}{Parse\+Delegate}}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a parser through a parse delegate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target type of the parser. \\
+\hline
+{\em method} & A function that takes in a string and returns an object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 593 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a4183b27cc77ec3b4aad8bdc9f11c33b8}\label{class_developer_console_1_1_dev_console_a4183b27cc77ec3b4aad8bdc9f11c33b8}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Add\+Parser@{Add\+Parser}}
+\index{Add\+Parser@{Add\+Parser}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Add\+Parser()}{AddParser()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Add\+Parser (\begin{DoxyParamCaption}\item[{Type}]{target,  }\item[{Func$<$ string, object $>$}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a parser through a function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target type of the parser. \\
+\hline
+{\em method} & A function that takes in a string and returns an object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 603 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a1133667062aefe90b952db9a08e1ede5}\label{class_developer_console_1_1_dev_console_a1133667062aefe90b952db9a08e1ede5}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Base\+Print@{Base\+Print}}
+\index{Base\+Print@{Base\+Print}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Base\+Print()}{BasePrint()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Base\+Print (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to print.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a4aa582bf50489304d187c5ca7acb5f22}\label{class_developer_console_1_1_dev_console_a4aa582bf50489304d187c5ca7acb5f22}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Clear\+History@{Clear\+History}}
+\index{Clear\+History@{Clear\+History}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Clear\+History()}{ClearHistory()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Clear\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clears the command history. 
+
+
+
+Definition at line 527 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_acda98316836e33329984b87b5b4ba0e2}\label{class_developer_console_1_1_dev_console_acda98316836e33329984b87b5b4ba0e2}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Close@{Close}}
+\index{Close@{Close}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Closes the console. 
+
+
+
+Definition at line 169 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a9a4e69ab3f7db22df4a8ee920de6ecb7}\label{class_developer_console_1_1_dev_console_a9a4e69ab3f7db22df4a8ee920de6ecb7}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Command\+Array@{Command\+Array}}
+\index{Command\+Array@{Command\+Array}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Command\+Array()}{CommandArray()}}
+{\footnotesize\ttfamily static \hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base} \mbox{[}$\,$\mbox{]} Developer\+Console.\+Dev\+Console.\+Command\+Array (\begin{DoxyParamCaption}\item[{string}]{with\+Tag = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an array of all the commands. 
+
+
+
+Definition at line 481 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a369547e22d3fcc7d2d6b90b7c6300a30}\label{class_developer_console_1_1_dev_console_a369547e22d3fcc7d2d6b90b7c6300a30}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Command\+Exists@{Command\+Exists}}
+\index{Command\+Exists@{Command\+Exists}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Command\+Exists()}{CommandExists()}}
+{\footnotesize\ttfamily static bool Developer\+Console.\+Dev\+Console.\+Command\+Exists (\begin{DoxyParamCaption}\item[{string}]{command\+Title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the command exists. 
+
+
+
+Definition at line 427 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_ab2a1e0c75f816fabb91576e1dd3c9017}\label{class_developer_console_1_1_dev_console_ab2a1e0c75f816fabb91576e1dd3c9017}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Command\+Iterator@{Command\+Iterator}}
+\index{Command\+Iterator@{Command\+Iterator}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Command\+Iterator()}{CommandIterator()}}
+{\footnotesize\ttfamily static I\+Enumerator$<$\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base}$>$ Developer\+Console.\+Dev\+Console.\+Command\+Iterator (\begin{DoxyParamCaption}\item[{string}]{with\+Tag = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an I\+Enumerator that allows iteration consisting of all the commands. 
+
+
+
+Definition at line 461 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aa4212f80280155e1b14e57b16d81863f}\label{class_developer_console_1_1_dev_console_aa4212f80280155e1b14e57b16d81863f}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Dirty\+Settings@{Dirty\+Settings}}
+\index{Dirty\+Settings@{Dirty\+Settings}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Dirty\+Settings()}{DirtySettings()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Dirty\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Refreshes variables based on the settings. 
+
+
+
+Definition at line 567 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_af57ec8873f1664aefe8574da21a18e3f}\label{class_developer_console_1_1_dev_console_af57ec8873f1664aefe8574da21a18e3f}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Enter\+Pressed\+For\+Input@{Enter\+Pressed\+For\+Input}}
+\index{Enter\+Pressed\+For\+Input@{Enter\+Pressed\+For\+Input}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Enter\+Pressed\+For\+Input()}{EnterPressedForInput()}}
+{\footnotesize\ttfamily void Developer\+Console.\+Dev\+Console.\+Enter\+Pressed\+For\+Input (\begin{DoxyParamCaption}\item[{Text}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Button delegate action to handle command. 
+
+
+
+Definition at line 611 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_ae69b7bfc81cb59ea2ec6f6d0ccdb33e4}\label{class_developer_console_1_1_dev_console_ae69b7bfc81cb59ea2ec6f6d0ccdb33e4}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Execute@{Execute}}
+\index{Execute@{Execute}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Execute (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Executes the command passed. 
+
+
+
+Definition at line 270 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a2cae3e00ffac10262d3c47b0ca4a7390}\label{class_developer_console_1_1_dev_console_a2cae3e00ffac10262d3c47b0ca4a7390}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Get\+Parameters@{Get\+Parameters}}
+\index{Get\+Parameters@{Get\+Parameters}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Get\+Parameters()}{GetParameters()}}
+{\footnotesize\ttfamily static string Developer\+Console.\+Dev\+Console.\+Get\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base}}]{description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a parameter list using the correct command mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The description of the command.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 541 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a1e1066a6536ffcb97b98fa0083dddc42}\label{class_developer_console_1_1_dev_console_a1e1066a6536ffcb97b98fa0083dddc42}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Log@{Log}}
+\index{Log@{Log}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Log (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Must be convertable to string.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 187 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a14fdb350c2590a23ec30fb80ccfced64}\label{class_developer_console_1_1_dev_console_a14fdb350c2590a23ec30fb80ccfced64}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Log@{Log}}
+\index{Log@{Log}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Log (\begin{DoxyParamCaption}\item[{object}]{obj,  }\item[{string}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Must be convertable to string.\\
+\hline
+{\em color} & Can either be the name of one the common names or can be in H\+T\+ML format.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a4756f307082a11bd36ce86637b8a8dfc}\label{class_developer_console_1_1_dev_console_a4756f307082a11bd36ce86637b8a8dfc}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Log\+Error@{Log\+Error}}
+\index{Log\+Error@{Log\+Error}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Log\+Error()}{LogError()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Log\+Error (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs to the console with color red. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Must be convertable to string.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 230 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aad85b1607d48da07b04c2bf4417ac6bf}\label{class_developer_console_1_1_dev_console_aad85b1607d48da07b04c2bf4417ac6bf}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Log\+Warning@{Log\+Warning}}
+\index{Log\+Warning@{Log\+Warning}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Log\+Warning()}{LogWarning()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Log\+Warning (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs to the console with color yellow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Must be convertable to string.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 216 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a45deaa2419420ca87dbd424b1d5ad47f}\label{class_developer_console_1_1_dev_console_a45deaa2419420ca87dbd424b1d5ad47f}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Open@{Open}}
+\index{Open@{Open}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Opens the console. 
+
+
+
+Definition at line 148 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aaa079c848c38afe4832fea2a4add51a3}\label{class_developer_console_1_1_dev_console_aaa079c848c38afe4832fea2a4add51a3}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Regenerate\+Auto\+Complete@{Regenerate\+Auto\+Complete}}
+\index{Regenerate\+Auto\+Complete@{Regenerate\+Auto\+Complete}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Regenerate\+Auto\+Complete()}{RegenerateAutoComplete()}}
+{\footnotesize\ttfamily void Developer\+Console.\+Dev\+Console.\+Regenerate\+Auto\+Complete (\begin{DoxyParamCaption}\item[{Text}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Regenerates the autocomplete (button delegate for text field changed). 
+
+
+
+Definition at line 633 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aa8f421feb7ebe03f0575a1ccf5cbe13a}\label{class_developer_console_1_1_dev_console_aa8f421feb7ebe03f0575a1ccf5cbe13a}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Remove\+Command@{Remove\+Command}}
+\index{Remove\+Command@{Remove\+Command}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Remove\+Command()}{RemoveCommand()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Remove\+Command (\begin{DoxyParamCaption}\item[{string}]{command\+Title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the commmand from the list of commands. 
+
+
+
+Definition at line 442 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a55e287794c05ce2ff7e65153f71f7a1a}\label{class_developer_console_1_1_dev_console_a55e287794c05ce2ff7e65153f71f7a1a}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Remove\+History@{Remove\+History}}
+\index{Remove\+History@{Remove\+History}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Remove\+History()}{RemoveHistory()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Remove\+History (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes specified command from the history. 
+
+
+
+Definition at line 514 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_a90e83c2a48ec1d0b2d55cfc9d49f44e7}\label{class_developer_console_1_1_dev_console_a90e83c2a48ec1d0b2d55cfc9d49f44e7}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Show\+Help\+Method@{Show\+Help\+Method}}
+\index{Show\+Help\+Method@{Show\+Help\+Method}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Show\+Help\+Method()}{ShowHelpMethod()}}
+{\footnotesize\ttfamily static void Developer\+Console.\+Dev\+Console.\+Show\+Help\+Method (\begin{DoxyParamCaption}\item[{\hyperlink{class_developer_console_1_1_core_1_1_command_base}{Command\+Base}}]{help }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Runs the help method of the passed interface. 
+
+
+
+Definition at line 370 of file Dev\+Console.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aa561857615c2986c60519c4b1ef92b38}\label{class_developer_console_1_1_dev_console_aa561857615c2986c60519c4b1ef92b38}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Text\+Object@{Text\+Object}}
+\index{Text\+Object@{Text\+Object}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Text\+Object()}{TextObject()}}
+{\footnotesize\ttfamily static Text Developer\+Console.\+Dev\+Console.\+Text\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Passes the Text Object. 
+
+
+
+Definition at line 554 of file Dev\+Console.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_dev_console_aacf3a497357bcc16ce4bbb9428472136}\label{class_developer_console_1_1_dev_console_aacf3a497357bcc16ce4bbb9428472136}} 
+\index{Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}!Parsers@{Parsers}}
+\index{Parsers@{Parsers}!Developer\+Console\+::\+Dev\+Console@{Developer\+Console\+::\+Dev\+Console}}
+\subsubsection{\texorpdfstring{Parsers}{Parsers}}
+{\footnotesize\ttfamily Dictionary$<$Type, \hyperlink{namespace_developer_console_a62e10d7e4aeed7c6bcd4a780468c74fa}{Parse\+Delegate}$>$ Developer\+Console.\+Dev\+Console.\+Parsers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+All the parsers available. 
+
+
+
+Definition at line 116 of file Dev\+Console.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Dev\+Console/\hyperlink{_dev_console_8cs}{Dev\+Console.\+cs}\end{DoxyCompactItemize}

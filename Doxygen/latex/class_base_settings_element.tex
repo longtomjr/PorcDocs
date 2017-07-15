@@ -1,0 +1,202 @@
+\hypertarget{class_base_settings_element}{}\section{Base\+Settings\+Element Class Reference}
+\label{class_base_settings_element}\index{Base\+Settings\+Element@{Base\+Settings\+Element}}
+
+
+A base UI element.  
+
+
+Inheritance diagram for Base\+Settings\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_base_settings_element}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_base_settings_element_af2b10653291d4617dea28ee26e1c1c6c}{Initialize\+L\+UA} ()
+\begin{DoxyCompactList}\small\item\em L\+UA Initializer. \end{DoxyCompactList}\item 
+abstract void \hyperlink{class_base_settings_element_aecb484325110e7b97ec6e4d92d856ab1}{Apply\+Setting} ()
+\begin{DoxyCompactList}\small\item\em Apply setting data. \end{DoxyCompactList}\item 
+abstract void \hyperlink{class_base_settings_element_a66f796e4aaa1e660a7db3e69547412d3}{Cancel\+Setting} ()
+\begin{DoxyCompactList}\small\item\em Cancel setting data. \end{DoxyCompactList}\item 
+void \hyperlink{class_base_settings_element_ae9513390026665164b754fbb19a54f53}{Apply\+Setting\+L\+UA} ()
+\begin{DoxyCompactList}\small\item\em Apply setting data, sends events to L\+UA or C\# event handlers. \end{DoxyCompactList}\item 
+void \hyperlink{class_base_settings_element_a540fa858362bb8643d88c03c28d4e455}{Cancel\+Setting\+L\+UA} ()
+\begin{DoxyCompactList}\small\item\em Cancel setting data, sends events to L\+UA or C\# event handlers. \end{DoxyCompactList}\item 
+override string \hyperlink{class_base_settings_element_a01da3ad61726996dfbf111a2bcabe166}{Get\+Name} ()
+\begin{DoxyCompactList}\small\item\em The name of the settings element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_settings_option}{Settings\+Option} \hyperlink{class_base_settings_element_a2c1c435ddeb8bba562b2eaed7de48f9a}{option}
+\begin{DoxyCompactList}\small\item\em Option data for this element. \end{DoxyCompactList}\item 
+bool \hyperlink{class_base_settings_element_a111dc3010c4c6b94b57cb41f44e48f86}{value\+Changed}
+\begin{DoxyCompactList}\small\item\em Has the value changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler \hyperlink{class_base_settings_element_a1a9087dc17efd4f2bae8444c42cdc06f}{Apply\+Setting\+Handler}
+\begin{DoxyCompactList}\small\item\em Apply your setting. You can use variables in this. Do a setting.\+set\+Setting beforehand. \end{DoxyCompactList}\item 
+Event\+Handler \hyperlink{class_base_settings_element_a17af6ca2e320db153814f56b2ca0f96c}{Cancel\+Setting\+Handler}
+\begin{DoxyCompactList}\small\item\em Undo your setting. You should do a setting.\+get\+Setting call To get the latest setting info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A base UI element. 
+
+
+
+Definition at line 15 of file Base\+Settings\+Element.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_settings_element_aecb484325110e7b97ec6e4d92d856ab1}\label{class_base_settings_element_aecb484325110e7b97ec6e4d92d856ab1}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Apply\+Setting@{Apply\+Setting}}
+\index{Apply\+Setting@{Apply\+Setting}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Apply\+Setting()}{ApplySetting()}}
+{\footnotesize\ttfamily abstract void Base\+Settings\+Element.\+Apply\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Apply setting data. 
+
+\mbox{\Hypertarget{class_base_settings_element_ae9513390026665164b754fbb19a54f53}\label{class_base_settings_element_ae9513390026665164b754fbb19a54f53}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Apply\+Setting\+L\+UA@{Apply\+Setting\+L\+UA}}
+\index{Apply\+Setting\+L\+UA@{Apply\+Setting\+L\+UA}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Apply\+Setting\+L\+U\+A()}{ApplySettingLUA()}}
+{\footnotesize\ttfamily void Base\+Settings\+Element.\+Apply\+Setting\+L\+UA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apply setting data, sends events to L\+UA or C\# event handlers. 
+
+
+
+Definition at line 63 of file Base\+Settings\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_settings_element_a66f796e4aaa1e660a7db3e69547412d3}\label{class_base_settings_element_a66f796e4aaa1e660a7db3e69547412d3}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Cancel\+Setting@{Cancel\+Setting}}
+\index{Cancel\+Setting@{Cancel\+Setting}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Cancel\+Setting()}{CancelSetting()}}
+{\footnotesize\ttfamily abstract void Base\+Settings\+Element.\+Cancel\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cancel setting data. 
+
+\mbox{\Hypertarget{class_base_settings_element_a540fa858362bb8643d88c03c28d4e455}\label{class_base_settings_element_a540fa858362bb8643d88c03c28d4e455}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Cancel\+Setting\+L\+UA@{Cancel\+Setting\+L\+UA}}
+\index{Cancel\+Setting\+L\+UA@{Cancel\+Setting\+L\+UA}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Cancel\+Setting\+L\+U\+A()}{CancelSettingLUA()}}
+{\footnotesize\ttfamily void Base\+Settings\+Element.\+Cancel\+Setting\+L\+UA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cancel setting data, sends events to L\+UA or C\# event handlers. 
+
+
+
+Definition at line 76 of file Base\+Settings\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_settings_element_a01da3ad61726996dfbf111a2bcabe166}\label{class_base_settings_element_a01da3ad61726996dfbf111a2bcabe166}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily override string Base\+Settings\+Element.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The name of the settings element. 
+
+
+
+Implements \hyperlink{class_base_u_i_element_acb7fcd49138477941f2e43733ad9d34d}{Base\+U\+I\+Element}.
+
+
+
+Definition at line 89 of file Base\+Settings\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_settings_element_af2b10653291d4617dea28ee26e1c1c6c}\label{class_base_settings_element_af2b10653291d4617dea28ee26e1c1c6c}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Initialize\+L\+UA@{Initialize\+L\+UA}}
+\index{Initialize\+L\+UA@{Initialize\+L\+UA}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Initialize\+L\+U\+A()}{InitializeLUA()}}
+{\footnotesize\ttfamily void Base\+Settings\+Element.\+Initialize\+L\+UA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+L\+UA Initializer. 
+
+
+
+Definition at line 42 of file Base\+Settings\+Element.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_base_settings_element_a2c1c435ddeb8bba562b2eaed7de48f9a}\label{class_base_settings_element_a2c1c435ddeb8bba562b2eaed7de48f9a}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!option@{option}}
+\index{option@{option}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{option}{option}}
+{\footnotesize\ttfamily \hyperlink{struct_settings_option}{Settings\+Option} Base\+Settings\+Element.\+option}
+
+
+
+Option data for this element. 
+
+
+
+Definition at line 20 of file Base\+Settings\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_settings_element_a111dc3010c4c6b94b57cb41f44e48f86}\label{class_base_settings_element_a111dc3010c4c6b94b57cb41f44e48f86}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!value\+Changed@{value\+Changed}}
+\index{value\+Changed@{value\+Changed}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{value\+Changed}{valueChanged}}
+{\footnotesize\ttfamily bool Base\+Settings\+Element.\+value\+Changed}
+
+
+
+Has the value changed. 
+
+
+
+Definition at line 25 of file Base\+Settings\+Element.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_base_settings_element_a1a9087dc17efd4f2bae8444c42cdc06f}\label{class_base_settings_element_a1a9087dc17efd4f2bae8444c42cdc06f}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Apply\+Setting\+Handler@{Apply\+Setting\+Handler}}
+\index{Apply\+Setting\+Handler@{Apply\+Setting\+Handler}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Apply\+Setting\+Handler}{ApplySettingHandler}}
+{\footnotesize\ttfamily Event\+Handler Base\+Settings\+Element.\+Apply\+Setting\+Handler}
+
+
+
+Apply your setting. You can use variables in this. Do a setting.\+set\+Setting beforehand. 
+
+
+
+Definition at line 31 of file Base\+Settings\+Element.\+cs.
+
+\mbox{\Hypertarget{class_base_settings_element_a17af6ca2e320db153814f56b2ca0f96c}\label{class_base_settings_element_a17af6ca2e320db153814f56b2ca0f96c}} 
+\index{Base\+Settings\+Element@{Base\+Settings\+Element}!Cancel\+Setting\+Handler@{Cancel\+Setting\+Handler}}
+\index{Cancel\+Setting\+Handler@{Cancel\+Setting\+Handler}!Base\+Settings\+Element@{Base\+Settings\+Element}}
+\subsubsection{\texorpdfstring{Cancel\+Setting\+Handler}{CancelSettingHandler}}
+{\footnotesize\ttfamily Event\+Handler Base\+Settings\+Element.\+Cancel\+Setting\+Handler}
+
+
+
+Undo your setting. You should do a setting.\+get\+Setting call To get the latest setting info. 
+
+
+
+Definition at line 37 of file Base\+Settings\+Element.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Settings\+Menu/\hyperlink{_base_settings_element_8cs}{Base\+Settings\+Element.\+cs}\end{DoxyCompactItemize}

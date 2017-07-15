@@ -1,0 +1,27 @@
+var class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop =
+[
+    [ "Item", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_item.html", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_item" ],
+    [ "ProductionChain", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_production_chain.html", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_production_chain" ],
+    [ "WorkShopParameterDefinitions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_work_shop_parameter_definitions.html", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop_1_1_work_shop_parameter_definitions" ],
+    [ "Workshop", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#ac4acc0001bf738ed18f1ce2aa951344d", null ],
+    [ "CanFunction", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a1b478ecd3ba6d1229dd851d1ce9d1a7e", null ],
+    [ "Clone", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a902289f6ee9c0f227e093af73a477009", null ],
+    [ "FixedFrequencyUpdate", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#adaf70643c87224e88a4efe3cc45ec288", null ],
+    [ "GetContextMenu", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a08da90f814b602c3de05862fdc33dd03", null ],
+    [ "GetDescription", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#ab72b89bcd9a1c02321dadd29368769d9", null ],
+    [ "Initialize", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#af0f0f3e2aad78348bc8f68baddc119a2", null ],
+    [ "CurrentProcessingTime", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a0ac1d67e2b391dc81eee125eab48b3f2", null ],
+    [ "CurrentProductionChainName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#ac0c82b5568b9c660dd9dfd0a7bd0bf58", null ],
+    [ "Efficiency", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a7e1619e087cf4b0a5c03a71a3f3312ee", null ],
+    [ "HasAllNeededInputInventory", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#aa078f7dba5791c83438dcaa5975703b1", null ],
+    [ "HaulConditions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a206a3373e68eb6e145bde69fe24aa9ba", null ],
+    [ "InputHaulingJobsCount", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#abe2dba7935a354973c78034a025da092", null ],
+    [ "InputProcessed", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a6f9b42749fd16a75d114d47844529e11", null ],
+    [ "IsRunning", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a1806c2ccfeccfd62fb85a04ae30e1c5c", null ],
+    [ "MaxProcessingTime", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a73736780857311a757ea45af0dcf7f75", null ],
+    [ "ParamsDefinitions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a3a420273ac915717c9dbdf975c621d5e", null ],
+    [ "PossibleProductions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a72227db84558a7f574f4e26b97920757", null ],
+    [ "RequiresSlowUpdate", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a64a55c81a9fa14f7ec1644d4df482a13", null ],
+    [ "RunConditions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#abaea7b615e40b9512cbbe2b5d7c4a4b0", null ],
+    [ "WorkshopMenuActions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_workshop.html#a92fcf1e615e4caba3fcaeb1bad11f6d3", null ]
+];

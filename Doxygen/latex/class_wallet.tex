@@ -1,0 +1,125 @@
+\hypertarget{class_wallet}{}\section{Wallet Class Reference}
+\label{class_wallet}\index{Wallet@{Wallet}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wallet_ac9a00180a49eb21e07c8fff305604a67}{Wallet} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_wallet}{Wallet} class. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_wallet_a4512e9639bd8fb8803eb84acb44eab40}{Get\+Currency\+Names} ()
+\item 
+void \hyperlink{class_wallet_ac0d658fdcc4062427fd1eaf828b00472}{Add\+Currency} (string name, float balance)
+\begin{DoxyCompactList}\small\item\em Adds a currency with the given name and balance. \end{DoxyCompactList}\item 
+J\+Token \hyperlink{class_wallet_a55bfd77761cd69e935960ede23a71e2a}{To\+Json} ()
+\item 
+void \hyperlink{class_wallet_a43449073506217924f905adc90b5a2e8}{From\+Json} (J\+Token wallet\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_currency}{Currency} \hyperlink{class_wallet_a7a0b160460a0749074db2943feda130e}{this\mbox{[}string name\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_currency}{Currency} with the specified name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Wallet.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wallet_ac9a00180a49eb21e07c8fff305604a67}\label{class_wallet_ac9a00180a49eb21e07c8fff305604a67}} 
+\index{Wallet@{Wallet}!Wallet@{Wallet}}
+\index{Wallet@{Wallet}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{Wallet()}{Wallet()}}
+{\footnotesize\ttfamily Wallet.\+Wallet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_wallet}{Wallet} class. 
+
+
+
+Definition at line 21 of file Wallet.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wallet_ac0d658fdcc4062427fd1eaf828b00472}\label{class_wallet_ac0d658fdcc4062427fd1eaf828b00472}} 
+\index{Wallet@{Wallet}!Add\+Currency@{Add\+Currency}}
+\index{Add\+Currency@{Add\+Currency}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{Add\+Currency()}{AddCurrency()}}
+{\footnotesize\ttfamily void Wallet.\+Add\+Currency (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{float}]{balance }\end{DoxyParamCaption})}
+
+
+
+Adds a currency with the given name and balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The currency name.\\
+\hline
+{\em balance} & The starting balance.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Wallet.\+cs.
+
+\mbox{\Hypertarget{class_wallet_a43449073506217924f905adc90b5a2e8}\label{class_wallet_a43449073506217924f905adc90b5a2e8}} 
+\index{Wallet@{Wallet}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Wallet.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{wallet\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file Wallet.\+cs.
+
+\mbox{\Hypertarget{class_wallet_a4512e9639bd8fb8803eb84acb44eab40}\label{class_wallet_a4512e9639bd8fb8803eb84acb44eab40}} 
+\index{Wallet@{Wallet}!Get\+Currency\+Names@{Get\+Currency\+Names}}
+\index{Get\+Currency\+Names@{Get\+Currency\+Names}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{Get\+Currency\+Names()}{GetCurrencyNames()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Wallet.\+Get\+Currency\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Wallet.\+cs.
+
+\mbox{\Hypertarget{class_wallet_a55bfd77761cd69e935960ede23a71e2a}\label{class_wallet_a55bfd77761cd69e935960ede23a71e2a}} 
+\index{Wallet@{Wallet}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Wallet.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file Wallet.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_wallet_a7a0b160460a0749074db2943feda130e}\label{class_wallet_a7a0b160460a0749074db2943feda130e}} 
+\index{Wallet@{Wallet}!this\mbox{[}string name\mbox{]}@{this[string name]}}
+\index{this\mbox{[}string name\mbox{]}@{this[string name]}!Wallet@{Wallet}}
+\subsubsection{\texorpdfstring{this[string name]}{this[string name]}}
+{\footnotesize\ttfamily \hyperlink{class_currency}{Currency} Wallet.\+this\mbox{[}string name\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the \hyperlink{class_currency}{Currency} with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The currency name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Wallet.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Trade/\hyperlink{_wallet_8cs}{Wallet.\+cs}\end{DoxyCompactItemize}

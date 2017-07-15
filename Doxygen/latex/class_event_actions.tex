@@ -1,0 +1,200 @@
+\hypertarget{class_event_actions}{}\section{Event\+Actions Class Reference}
+\label{class_event_actions}\index{Event\+Actions@{Event\+Actions}}
+
+
+This class handles L\+UA actions take in response to events triggered within C\# or L\+UA. For each event name (e.\+g. On\+Update, ...) there is a list of L\+UA function that are registered and will be called once the event with that name is fired.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_event_actions}{Event\+Actions} \hyperlink{class_event_actions_a47d30ed28e530388cc005a58ba507f4e}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Used to transfer register actions to new object. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_actions_a566d71637c9b0eef462b1c03c7ef8845}{Read\+Xml} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Fill the values of this using an xml specification. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_actions_a1a364d74c5363a6a20c50db59100472a}{Register} (string action\+Name, string lua\+Func)
+\begin{DoxyCompactList}\small\item\em Register a function named lua\+Func, that gets fired in response to an action named action\+Name. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_actions_a1537bfd03582825716502a960ff1b041}{Deregister} (string action\+Name, string lua\+Func)
+\begin{DoxyCompactList}\small\item\em Deregister a function named lua\+Func, from the action. \end{DoxyCompactList}\item 
+void \hyperlink{class_event_actions_a732a0dd92722a0d30bab61df00ccb46c}{Trigger} (string action\+Name, params object\mbox{[}$\,$\mbox{]} parameters)
+\begin{DoxyCompactList}\small\item\em Fire the event named action\+Name, resulting in all lua functions being called. This one reduces GC bloat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_event_actions_a042920ebed150392f68e1d110b9c8d1d}{Has\+Event} (string action\+Name)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance has any events named action\+Name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_event_actions_a356450553da17ec832729bbe14757c8c}{Has\+Events} ()
+\begin{DoxyCompactList}\small\item\em Determines whether this instance has any events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, List$<$ string $>$ $>$ \hyperlink{class_event_actions_a70ac038ce2e3cabfa1dfb6f7706154b6}{actions\+List} = new Dictionary$<$string, List$<$string$>$$>$()
+\begin{DoxyCompactList}\small\item\em Stores a list of L\+UA functions for each type of event (event\+Name). All will be called at once. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles L\+UA actions take in response to events triggered within C\# or L\+UA. For each event name (e.\+g. On\+Update, ...) there is a list of L\+UA function that are registered and will be called once the event with that name is fired. 
+
+
+
+Definition at line 19 of file Event\+Action.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_actions_a47d30ed28e530388cc005a58ba507f4e}\label{class_event_actions_a47d30ed28e530388cc005a58ba507f4e}} 
+\index{Event\+Actions@{Event\+Actions}!Clone@{Clone}}
+\index{Clone@{Clone}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_event_actions}{Event\+Actions} Event\+Actions.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to transfer register actions to new object. 
+
+\begin{DoxyReturn}{Returns}
+A new object copy of this.
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a1537bfd03582825716502a960ff1b041}\label{class_event_actions_a1537bfd03582825716502a960ff1b041}} 
+\index{Event\+Actions@{Event\+Actions}!Deregister@{Deregister}}
+\index{Deregister@{Deregister}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Deregister()}{Deregister()}}
+{\footnotesize\ttfamily void Event\+Actions.\+Deregister (\begin{DoxyParamCaption}\item[{string}]{action\+Name,  }\item[{string}]{lua\+Func }\end{DoxyParamCaption})}
+
+
+
+Deregister a function named lua\+Func, from the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & Name of event triggering action.\\
+\hline
+{\em lua\+Func} & Lua function to add to list of actions.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a042920ebed150392f68e1d110b9c8d1d}\label{class_event_actions_a042920ebed150392f68e1d110b9c8d1d}} 
+\index{Event\+Actions@{Event\+Actions}!Has\+Event@{Has\+Event}}
+\index{Has\+Event@{Has\+Event}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Has\+Event()}{HasEvent()}}
+{\footnotesize\ttfamily bool Event\+Actions.\+Has\+Event (\begin{DoxyParamCaption}\item[{string}]{action\+Name }\end{DoxyParamCaption})}
+
+
+
+Determines whether this instance has any events named action\+Name. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance has any events named action\+Name; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & Action name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a356450553da17ec832729bbe14757c8c}\label{class_event_actions_a356450553da17ec832729bbe14757c8c}} 
+\index{Event\+Actions@{Event\+Actions}!Has\+Events@{Has\+Events}}
+\index{Has\+Events@{Has\+Events}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Has\+Events()}{HasEvents()}}
+{\footnotesize\ttfamily bool Event\+Actions.\+Has\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether this instance has any events. 
+
+
+
+Definition at line 127 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a566d71637c9b0eef462b1c03c7ef8845}\label{class_event_actions_a566d71637c9b0eef462b1c03c7ef8845}} 
+\index{Event\+Actions@{Event\+Actions}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily void Event\+Actions.\+Read\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Fill the values of this using an xml specification. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Reader pointing to an Action tag.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a1a364d74c5363a6a20c50db59100472a}\label{class_event_actions_a1a364d74c5363a6a20c50db59100472a}} 
+\index{Event\+Actions@{Event\+Actions}!Register@{Register}}
+\index{Register@{Register}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Event\+Actions.\+Register (\begin{DoxyParamCaption}\item[{string}]{action\+Name,  }\item[{string}]{lua\+Func }\end{DoxyParamCaption})}
+
+
+
+Register a function named lua\+Func, that gets fired in response to an action named action\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & Name of event triggering action.\\
+\hline
+{\em lua\+Func} & Lua function to add to list of actions.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file Event\+Action.\+cs.
+
+\mbox{\Hypertarget{class_event_actions_a732a0dd92722a0d30bab61df00ccb46c}\label{class_event_actions_a732a0dd92722a0d30bab61df00ccb46c}} 
+\index{Event\+Actions@{Event\+Actions}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{Trigger()}{Trigger()}}
+{\footnotesize\ttfamily void Event\+Actions.\+Trigger (\begin{DoxyParamCaption}\item[{string}]{action\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{parameters }\end{DoxyParamCaption})}
+
+
+
+Fire the event named action\+Name, resulting in all lua functions being called. This one reduces GC bloat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & Name of the action being triggered.\\
+\hline
+{\em target} & Object, passed to L\+UA function as 1-\/argument.\\
+\hline
+{\em parameters} & Parameters in question. First one must be target instance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Event\+Action.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_event_actions_a70ac038ce2e3cabfa1dfb6f7706154b6}\label{class_event_actions_a70ac038ce2e3cabfa1dfb6f7706154b6}} 
+\index{Event\+Actions@{Event\+Actions}!actions\+List@{actions\+List}}
+\index{actions\+List@{actions\+List}!Event\+Actions@{Event\+Actions}}
+\subsubsection{\texorpdfstring{actions\+List}{actionsList}}
+{\footnotesize\ttfamily Dictionary$<$string, List$<$string$>$ $>$ Event\+Actions.\+actions\+List = new Dictionary$<$string, List$<$string$>$$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Stores a list of L\+UA functions for each type of event (event\+Name). All will be called at once. 
+
+
+
+Definition at line 24 of file Event\+Action.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Events/\hyperlink{_event_action_8cs}{Event\+Action.\+cs}\end{DoxyCompactItemize}

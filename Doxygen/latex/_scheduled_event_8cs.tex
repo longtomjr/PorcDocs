@@ -1,0 +1,19 @@
+\hypertarget{_scheduled_event_8cs}{}\section{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Scheduler/\+Scheduled\+Event.cs File Reference}
+\label{_scheduled_event_8cs}\index{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Scheduler/\+Scheduled\+Event.\+cs@{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Scheduler/\+Scheduled\+Event.\+cs}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class represents an individual event which is handled by the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler}. May \char`\"{}fire\char`\"{} either a C\# or Lua function. \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is actually blind to the type of function backing the event. It knows through the Event\+Type property, but this has no impact on the functioning of the class itself. The scheduler is solely responsible for wrapping Lua functions in delegates for handling by the events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_scheduler}{Scheduler}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}{Scheduler.\+Event\+Type} \{ \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Scheduler.\+Event\+Type.\+C\+Sharp}, 
+\hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}{Scheduler.\+Event\+Type.\+Lua}
+ \}\begin{DoxyCompactList}\small\item\em The type of function backing a Scheduled\+Event. Options\+: C\+Sharp or Lua. \end{DoxyCompactList}
+\end{DoxyCompactItemize}

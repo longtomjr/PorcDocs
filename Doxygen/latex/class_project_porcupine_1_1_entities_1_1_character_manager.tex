@@ -1,0 +1,235 @@
+\hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager}{}\section{Project\+Porcupine.\+Entities.\+Character\+Manager Class Reference}
+\label{class_project_porcupine_1_1_entities_1_1_character_manager}\index{Project\+Porcupine.\+Entities.\+Character\+Manager@{Project\+Porcupine.\+Entities.\+Character\+Manager}}
+
+
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} manager that holds all the characters.  
+
+
+Inheritance diagram for Project\+Porcupine.\+Entities.\+Character\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_project_porcupine_1_1_entities_1_1_character_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_ab14467714097458d428428ee18fe6a76}{Character\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager}{Character\+Manager} class. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_ae0f5194163caf61bbc59dc263fbd4e8b}{Create} (\hyperlink{class_tile}{Tile} tile, string name=null)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} in the specified tile. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_aa047fc884e4067303d3aeeba1405d6dd}{Create} (\hyperlink{class_tile}{Tile} tile, Color color, Color uniform\+Color, Color skin\+Color, string name=null)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} in the specified tile, with the specified color, uniform color and skin color. \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a3a19765654a5c1d8cd88bdf28ccba9ef}{Get\+All\+From\+Name} (string name)
+\begin{DoxyCompactList}\small\item\em A function to return all characters that match the given name. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a78609b299737390c470ae939a9a00bd9}{Get\+From\+ID} (int id)
+\begin{DoxyCompactList}\small\item\em Returns the character with the ID wanted. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a2d75bb0449e9a7e74e43a1a9f4c91b10}{Get\+Enumerator} ()
+\begin{DoxyCompactList}\small\item\em Gets the characters enumerator. \end{DoxyCompactList}\item 
+J\+Token \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_aa12ac490f3e9f2197831e50f291b50a3}{To\+Json} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a06bf7980cdec23a5939d03f196839ccb}{From\+Json} (J\+Token characters\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a09c3aa1467a21d4ae1b671503f20d84d}{Characters}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager_a6de593fee27b425be723fd43231cc1fc}{Created}
+\begin{DoxyCompactList}\small\item\em Occurs when a character is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} manager that holds all the characters. 
+
+
+
+Definition at line 23 of file Character\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_ab14467714097458d428428ee18fe6a76}\label{class_project_porcupine_1_1_entities_1_1_character_manager_ab14467714097458d428428ee18fe6a76}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Character\+Manager@{Character\+Manager}}
+\index{Character\+Manager@{Character\+Manager}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Character\+Manager()}{CharacterManager()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+Character\+Manager.\+Character\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character_manager}{Character\+Manager} class. 
+
+
+
+Definition at line 28 of file Character\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_ae0f5194163caf61bbc59dc263fbd4e8b}\label{class_project_porcupine_1_1_entities_1_1_character_manager_ae0f5194163caf61bbc59dc263fbd4e8b}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Create@{Create}}
+\index{Create@{Create}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} Project\+Porcupine.\+Entities.\+Character\+Manager.\+Create (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{string}]{name = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Create a \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} in the specified tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The tile where the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is placed.\\
+\hline
+{\em name} & The name of the character, will get a new one if it is null.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_aa047fc884e4067303d3aeeba1405d6dd}\label{class_project_porcupine_1_1_entities_1_1_character_manager_aa047fc884e4067303d3aeeba1405d6dd}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Create@{Create}}
+\index{Create@{Create}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} Project\+Porcupine.\+Entities.\+Character\+Manager.\+Create (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{Color}]{color,  }\item[{Color}]{uniform\+Color,  }\item[{Color}]{skin\+Color,  }\item[{string}]{name = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Create a \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} in the specified tile, with the specified color, uniform color and skin color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The tile where the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is placed.\\
+\hline
+{\em color} & The uniform strip color.\\
+\hline
+{\em uniform\+Color} & The uniform color.\\
+\hline
+{\em skin\+Color} & The skin color.\\
+\hline
+{\em name} & The name of the character, will get a new one if it is null.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a06bf7980cdec23a5939d03f196839ccb}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a06bf7980cdec23a5939d03f196839ccb}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character\+Manager.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{characters\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a3a19765654a5c1d8cd88bdf28ccba9ef}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a3a19765654a5c1d8cd88bdf28ccba9ef}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Get\+All\+From\+Name@{Get\+All\+From\+Name}}
+\index{Get\+All\+From\+Name@{Get\+All\+From\+Name}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Get\+All\+From\+Name()}{GetAllFromName()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Project\+Porcupine.\+Entities.\+Character\+Manager.\+Get\+All\+From\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+A function to return all characters that match the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the character.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The character with that name.
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a2d75bb0449e9a7e74e43a1a9f4c91b10}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a2d75bb0449e9a7e74e43a1a9f4c91b10}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator Project\+Porcupine.\+Entities.\+Character\+Manager.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the characters enumerator. 
+
+\begin{DoxyReturn}{Returns}
+The enumerator.
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a78609b299737390c470ae939a9a00bd9}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a78609b299737390c470ae939a9a00bd9}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Get\+From\+ID@{Get\+From\+ID}}
+\index{Get\+From\+ID@{Get\+From\+ID}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Get\+From\+I\+D()}{GetFromID()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} Project\+Porcupine.\+Entities.\+Character\+Manager.\+Get\+From\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Returns the character with the ID wanted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the character. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The character or null if no character has ID supplied. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Character\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_aa12ac490f3e9f2197831e50f291b50a3}\label{class_project_porcupine_1_1_entities_1_1_character_manager_aa12ac490f3e9f2197831e50f291b50a3}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Project\+Porcupine.\+Entities.\+Character\+Manager.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file Character\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a09c3aa1467a21d4ae1b671503f20d84d}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a09c3aa1467a21d4ae1b671503f20d84d}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Characters@{Characters}}
+\index{Characters@{Characters}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Characters}{Characters}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Project\+Porcupine.\+Entities.\+Character\+Manager.\+Characters\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 38 of file Character\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_manager_a6de593fee27b425be723fd43231cc1fc}\label{class_project_porcupine_1_1_entities_1_1_character_manager_a6de593fee27b425be723fd43231cc1fc}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}!Created@{Created}}
+\index{Created@{Created}!Project\+Porcupine\+::\+Entities\+::\+Character\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Manager}}
+\subsubsection{\texorpdfstring{Created}{Created}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Project\+Porcupine.\+Entities.\+Character\+Manager.\+Created}
+
+
+
+Occurs when a character is created. 
+
+
+
+Definition at line 36 of file Character\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Character/\hyperlink{_character_manager_8cs}{Character\+Manager.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,271 @@
+\hypertarget{class_build_mode_controller}{}\section{Build\+Mode\+Controller Class Reference}
+\label{class_build_mode_controller}\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_build_mode_controller_aebdab45886f7d5596c93615e35b7ffa4}{Build\+Mode\+Controller} ()
+\item 
+void \hyperlink{class_build_mode_controller_aeff1dc27c03ea6b305e96cd27479e4f0}{Set\+Mouse\+Controller} (\hyperlink{class_mouse_controller}{Mouse\+Controller} current\+Mouse\+Controller)
+\item 
+bool \hyperlink{class_build_mode_controller_afa05334c74ecba755e41508ac035725b}{Is\+Object\+Draggable} ()
+\item 
+string \hyperlink{class_build_mode_controller_a43ac9aa9dbe863ce1072848d095ed6d5}{Get\+Floor\+Tile} ()
+\item 
+void \hyperlink{class_build_mode_controller_a0958b997758652d8248fa44c77203ad2}{Set\+Build\+Mode} (\hyperlink{_build_mode_controller_8cs_a9c6873c2efeb065f633a16b39a5841bd}{Build\+Mode} new\+Mode, string type=null, bool use\+Crated\+Object=false, bool start\+Build\+Mode=true)
+\item 
+void \hyperlink{class_build_mode_controller_a15f5663c50eb333203de7c643eae6079}{Set\+Mode\+Build\+Tile} (\hyperlink{class_tile_type}{Tile\+Type} type)
+\item 
+void \hyperlink{class_build_mode_controller_a3efe18c3fb374c2acc5f389486f10f90}{Set\+Mode\+\_\+\+Designate\+Room\+Behavior} (string type)
+\item 
+void \hyperlink{class_build_mode_controller_a1290bf6ed004c20fcc676dfe804d4724}{Set\+Mode\+\_\+\+Build\+Furniture} (string type, bool use\+Crated\+Object=false)
+\item 
+void \hyperlink{class_build_mode_controller_a914bc417c126e01bd62ae59e45fcad92}{Set\+Mode\+\_\+\+Build\+Utility} (string type)
+\item 
+void \hyperlink{class_build_mode_controller_ae9e998ff515c9af0a7f1d0ac1b46b403}{Set\+Mode\+\_\+\+Deconstruct} ()
+\item 
+void \hyperlink{class_build_mode_controller_a895c0c5021e532b32fdc28d9c8c45c1b}{Set\+Mode\+\_\+\+Mine} ()
+\item 
+void \hyperlink{class_build_mode_controller_acc5df17b8a7f94448334cf7e5a414b5b}{Do\+Build} (\hyperlink{class_tile}{Tile} tile)
+\item 
+bool \hyperlink{class_build_mode_controller_a2beedb8a4f48ee65488038473c180b50}{Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job} (\hyperlink{class_tile}{Tile} t, string furniture\+Type, float rotation=0)
+\item 
+bool \hyperlink{class_build_mode_controller_a701cb5c8326af048f78a511cf7c1c190}{Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job} (string utility\+Type, \hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Does the utility build job overlap an existing utility build job of the same type. \end{DoxyCompactList}\item 
+bool \hyperlink{class_build_mode_controller_ab58a539a9a44498085bb28a63d8c4713}{Does\+Same\+Utility\+Type\+Already\+Exist} (string type, \hyperlink{class_tile}{Tile} tile)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_build_mode_controller}{Build\+Mode\+Controller} \hyperlink{class_build_mode_controller_ae4e88a943b1c877701b9b1cd361761cd}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+float \hyperlink{class_build_mode_controller_a179a7474206bcddbf78d17574c1100dc}{Current\+Preview\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{_build_mode_controller_8cs_a9c6873c2efeb065f633a16b39a5841bd}{Build\+Mode} \hyperlink{class_build_mode_controller_ac6fdada4acb0019086133d0a14f588d5}{Build\+Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_build_mode_controller_a002aef1314c097a269c18c5b2e153b56}{Build\+Mode\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Build\+Mode\+Controller.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_build_mode_controller_aebdab45886f7d5596c93615e35b7ffa4}\label{class_build_mode_controller_aebdab45886f7d5596c93615e35b7ffa4}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Build\+Mode\+Controller()}{BuildModeController()}}
+{\footnotesize\ttfamily Build\+Mode\+Controller.\+Build\+Mode\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Build\+Mode\+Controller.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_build_mode_controller_acc5df17b8a7f94448334cf7e5a414b5b}\label{class_build_mode_controller_acc5df17b8a7f94448334cf7e5a414b5b}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Do\+Build@{Do\+Build}}
+\index{Do\+Build@{Do\+Build}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Do\+Build()}{DoBuild()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Do\+Build (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 143 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a2beedb8a4f48ee65488038473c180b50}\label{class_build_mode_controller_a2beedb8a4f48ee65488038473c180b50}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job@{Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job}}
+\index{Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job@{Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job()}{DoesFurnitureBuildJobOverlapExistingBuildJob()}}
+{\footnotesize\ttfamily bool Build\+Mode\+Controller.\+Does\+Furniture\+Build\+Job\+Overlap\+Existing\+Build\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{t,  }\item[{string}]{furniture\+Type,  }\item[{float}]{rotation = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 393 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_ab58a539a9a44498085bb28a63d8c4713}\label{class_build_mode_controller_ab58a539a9a44498085bb28a63d8c4713}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Does\+Same\+Utility\+Type\+Already\+Exist@{Does\+Same\+Utility\+Type\+Already\+Exist}}
+\index{Does\+Same\+Utility\+Type\+Already\+Exist@{Does\+Same\+Utility\+Type\+Already\+Exist}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Does\+Same\+Utility\+Type\+Already\+Exist()}{DoesSameUtilityTypeAlreadyExist()}}
+{\footnotesize\ttfamily bool Build\+Mode\+Controller.\+Does\+Same\+Utility\+Type\+Already\+Exist (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 442 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a701cb5c8326af048f78a511cf7c1c190}\label{class_build_mode_controller_a701cb5c8326af048f78a511cf7c1c190}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job@{Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job}}
+\index{Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job@{Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job()}{DoesUtilityBuildJobOverlapExistingBuildJob()}}
+{\footnotesize\ttfamily bool Build\+Mode\+Controller.\+Does\+Utility\+Build\+Job\+Overlap\+Existing\+Build\+Job (\begin{DoxyParamCaption}\item[{string}]{utility\+Type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Does the utility build job overlap an existing utility build job of the same type. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if utility build job overlaps an existing utility build job of the same type, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+Type} & \hyperlink{class_utility}{Utility} type to check for.\\
+\hline
+{\em tile} & \hyperlink{class_tile}{Tile} to check for pending buildjobs.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 427 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a43ac9aa9dbe863ce1072848d095ed6d5}\label{class_build_mode_controller_a43ac9aa9dbe863ce1072848d095ed6d5}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Get\+Floor\+Tile@{Get\+Floor\+Tile}}
+\index{Get\+Floor\+Tile@{Get\+Floor\+Tile}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Floor\+Tile()}{GetFloorTile()}}
+{\footnotesize\ttfamily string Build\+Mode\+Controller.\+Get\+Floor\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_afa05334c74ecba755e41508ac035725b}\label{class_build_mode_controller_afa05334c74ecba755e41508ac035725b}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Is\+Object\+Draggable@{Is\+Object\+Draggable}}
+\index{Is\+Object\+Draggable@{Is\+Object\+Draggable}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Is\+Object\+Draggable()}{IsObjectDraggable()}}
+{\footnotesize\ttfamily bool Build\+Mode\+Controller.\+Is\+Object\+Draggable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a0958b997758652d8248fa44c77203ad2}\label{class_build_mode_controller_a0958b997758652d8248fa44c77203ad2}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Build\+Mode@{Set\+Build\+Mode}}
+\index{Set\+Build\+Mode@{Set\+Build\+Mode}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Build\+Mode()}{SetBuildMode()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Build\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{_build_mode_controller_8cs_a9c6873c2efeb065f633a16b39a5841bd}{Build\+Mode}}]{new\+Mode,  }\item[{string}]{type = {\ttfamily null},  }\item[{bool}]{use\+Crated\+Object = {\ttfamily false},  }\item[{bool}]{start\+Build\+Mode = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a1290bf6ed004c20fcc676dfe804d4724}\label{class_build_mode_controller_a1290bf6ed004c20fcc676dfe804d4724}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+\_\+\+Build\+Furniture@{Set\+Mode\+\_\+\+Build\+Furniture}}
+\index{Set\+Mode\+\_\+\+Build\+Furniture@{Set\+Mode\+\_\+\+Build\+Furniture}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+\_\+\+Build\+Furniture()}{SetMode\_BuildFurniture()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+\_\+\+Build\+Furniture (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{bool}]{use\+Crated\+Object = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a914bc417c126e01bd62ae59e45fcad92}\label{class_build_mode_controller_a914bc417c126e01bd62ae59e45fcad92}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+\_\+\+Build\+Utility@{Set\+Mode\+\_\+\+Build\+Utility}}
+\index{Set\+Mode\+\_\+\+Build\+Utility@{Set\+Mode\+\_\+\+Build\+Utility}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+\_\+\+Build\+Utility()}{SetMode\_BuildUtility()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+\_\+\+Build\+Utility (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_ae9e998ff515c9af0a7f1d0ac1b46b403}\label{class_build_mode_controller_ae9e998ff515c9af0a7f1d0ac1b46b403}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+\_\+\+Deconstruct@{Set\+Mode\+\_\+\+Deconstruct}}
+\index{Set\+Mode\+\_\+\+Deconstruct@{Set\+Mode\+\_\+\+Deconstruct}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+\_\+\+Deconstruct()}{SetMode\_Deconstruct()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+\_\+\+Deconstruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a3efe18c3fb374c2acc5f389486f10f90}\label{class_build_mode_controller_a3efe18c3fb374c2acc5f389486f10f90}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+\_\+\+Designate\+Room\+Behavior@{Set\+Mode\+\_\+\+Designate\+Room\+Behavior}}
+\index{Set\+Mode\+\_\+\+Designate\+Room\+Behavior@{Set\+Mode\+\_\+\+Designate\+Room\+Behavior}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+\_\+\+Designate\+Room\+Behavior()}{SetMode\_DesignateRoomBehavior()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+\_\+\+Designate\+Room\+Behavior (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a895c0c5021e532b32fdc28d9c8c45c1b}\label{class_build_mode_controller_a895c0c5021e532b32fdc28d9c8c45c1b}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+\_\+\+Mine@{Set\+Mode\+\_\+\+Mine}}
+\index{Set\+Mode\+\_\+\+Mine@{Set\+Mode\+\_\+\+Mine}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+\_\+\+Mine()}{SetMode\_Mine()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+\_\+\+Mine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 137 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a15f5663c50eb333203de7c643eae6079}\label{class_build_mode_controller_a15f5663c50eb333203de7c643eae6079}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mode\+Build\+Tile@{Set\+Mode\+Build\+Tile}}
+\index{Set\+Mode\+Build\+Tile@{Set\+Mode\+Build\+Tile}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mode\+Build\+Tile()}{SetModeBuildTile()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mode\+Build\+Tile (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_aeff1dc27c03ea6b305e96cd27479e4f0}\label{class_build_mode_controller_aeff1dc27c03ea6b305e96cd27479e4f0}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Set\+Mouse\+Controller@{Set\+Mouse\+Controller}}
+\index{Set\+Mouse\+Controller@{Set\+Mouse\+Controller}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Mouse\+Controller()}{SetMouseController()}}
+{\footnotesize\ttfamily void Build\+Mode\+Controller.\+Set\+Mouse\+Controller (\begin{DoxyParamCaption}\item[{\hyperlink{class_mouse_controller}{Mouse\+Controller}}]{current\+Mouse\+Controller }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Build\+Mode\+Controller.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_build_mode_controller_ac6fdada4acb0019086133d0a14f588d5}\label{class_build_mode_controller_ac6fdada4acb0019086133d0a14f588d5}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Build\+Mode@{Build\+Mode}}
+\index{Build\+Mode@{Build\+Mode}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Build\+Mode}{BuildMode}}
+{\footnotesize\ttfamily \hyperlink{_build_mode_controller_8cs_a9c6873c2efeb065f633a16b39a5841bd}{Build\+Mode} Build\+Mode\+Controller.\+Build\+Mode\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 43 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a002aef1314c097a269c18c5b2e153b56}\label{class_build_mode_controller_a002aef1314c097a269c18c5b2e153b56}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Build\+Mode\+Type@{Build\+Mode\+Type}}
+\index{Build\+Mode\+Type@{Build\+Mode\+Type}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Build\+Mode\+Type}{BuildModeType}}
+{\footnotesize\ttfamily string Build\+Mode\+Controller.\+Build\+Mode\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 45 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_a179a7474206bcddbf78d17574c1100dc}\label{class_build_mode_controller_a179a7474206bcddbf78d17574c1100dc}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Current\+Preview\+Rotation@{Current\+Preview\+Rotation}}
+\index{Current\+Preview\+Rotation@{Current\+Preview\+Rotation}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Current\+Preview\+Rotation}{CurrentPreviewRotation}}
+{\footnotesize\ttfamily float Build\+Mode\+Controller.\+Current\+Preview\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 41 of file Build\+Mode\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_build_mode_controller_ae4e88a943b1c877701b9b1cd361761cd}\label{class_build_mode_controller_ae4e88a943b1c877701b9b1cd361761cd}} 
+\index{Build\+Mode\+Controller@{Build\+Mode\+Controller}!Instance@{Instance}}
+\index{Instance@{Instance}!Build\+Mode\+Controller@{Build\+Mode\+Controller}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{class_build_mode_controller}{Build\+Mode\+Controller} Build\+Mode\+Controller.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 39 of file Build\+Mode\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Controllers/\+Input\+Output/\hyperlink{_build_mode_controller_8cs}{Build\+Mode\+Controller.\+cs}\end{DoxyCompactItemize}

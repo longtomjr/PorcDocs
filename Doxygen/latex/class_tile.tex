@@ -1,0 +1,823 @@
+\hypertarget{class_tile}{}\section{Tile Class Reference}
+\label{class_tile}\index{Tile@{Tile}}
+Inheritance diagram for Tile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{class_tile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tile_aa35a3149e656433f826c5b4a8c45fd71}{Tile} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_tile}{Tile} class. \end{DoxyCompactList}\item 
+void \hyperlink{class_tile_a104759fa434ea7c6acc85c81a710a0d9}{Set\+Tile\+Type} (\hyperlink{class_tile_type}{Tile\+Type} new\+Tile\+Type, bool do\+Room\+Flood\+Fill=true)
+\item 
+bool \hyperlink{class_tile_a47e3946def991a9751ebb485d7f2f28b}{Unplace\+Furniture} ()
+\item 
+bool \hyperlink{class_tile_ada07c2ba6dd6355e13612b45bfc0c4f0}{Place\+Furniture} (\hyperlink{class_furniture}{Furniture} obj\+Instance)
+\item 
+bool \hyperlink{class_tile_abfcc2e84347bbb279e288f0d1c995567}{Unplace\+Utility} (\hyperlink{class_utility}{Utility} utility)
+\item 
+bool \hyperlink{class_tile_a10c975f1ca685654ef1d843210f27b47}{Place\+Utility} (\hyperlink{class_utility}{Utility} obj\+Instance)
+\item 
+bool \hyperlink{class_tile_af43b05f2ac39247b4aef063995aa3743}{Place\+Inventory} (\hyperlink{class_inventory}{Inventory} inventory)
+\item 
+void \hyperlink{class_tile_acfb09ae7f8dc543b46f76cef3de2c689}{Equalise\+Gas} (float leak\+Factor)
+\item 
+float \hyperlink{class_tile_a26292fe76574b5c665fb21bca478a28e}{Get\+Gas\+Pressure} (string gas)
+\item 
+bool \hyperlink{class_tile_a4f390d0ed829888b1446ec099ab28124}{Is\+Neighbour} (\hyperlink{class_tile}{Tile} tile, bool diag\+Okay=false)
+\item 
+\hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} \hyperlink{class_tile_ad4db0caa267514917bafbb228eebd809}{Get\+Neighbours} (bool diag\+Okay=false, bool vert\+Okay=false, bool null\+Okay=false)
+\begin{DoxyCompactList}\small\item\em Gets the neighbours. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} \hyperlink{class_tile_aa6677ae6cb5d9d6bb4c5e73f18889454}{Get\+Vertical\+Neighbors} (bool null\+Okay=false)
+\item 
+bool \hyperlink{class_tile_a267a13f2e5883b4e3c4ef0352c3c738f}{Has\+Neighbours\+Of\+Type} (\hyperlink{class_tile_type}{Tile\+Type} tile\+Type)
+\begin{DoxyCompactList}\small\item\em If one of the 8 neighbouring tiles is of \hyperlink{class_tile_type}{Tile\+Type} type then this returns true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tile_afe9cc96998331946edf8098b56c04dee}{Is\+Reachable\+From\+Any\+Neighbor} (bool check\+Diagonals=false)
+\begin{DoxyCompactList}\small\item\em Returns true if any of the neighours can reach this tile. Checks for clipping of diagonal paths. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tile_a3d66c8afb8475b85d84d1385e9ea2fa1}{Is\+Clipping\+Corner} (\hyperlink{class_tile}{Tile} neighbor\+Tile)
+\item 
+bool \hyperlink{class_tile_aafdf735f6dc8ac83724c78e311def882}{Has\+Clear\+Line\+To\+Bottom} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_acc0ae09e957b413c556c4afb6b4b95d5}{North} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_aa0e869284f94317f4f5231a239b7b4b1}{South} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_afb3865cdc4621002d32d863e6c3dee87}{East} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_afbff4f028a2b8f7a0c58726aa75aed82}{West} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_a2edba7e7456c987ed34a9f67bb9277b9}{Up} ()
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_tile_a339b45abc4deea7cfb2827bafae48df0}{Down} ()
+\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_tile_a6d4077ccda74405aa415279515b03b32}{Get\+Nearest\+Room} ()
+\begin{DoxyCompactList}\small\item\em Gets the nearest room. \end{DoxyCompactList}\item 
+\hyperlink{_tile_8cs_a48a7177f465b04f310ccf25ae69d070a}{Enterability} \hyperlink{class_tile_a132d1e4646d4e5aedb7a81d6e3003c1d}{Is\+Enterable} ()
+\item 
+void \hyperlink{class_tile_ad0acba5981f6e117788c1c112ac1e443}{On\+Enter} ()
+\item 
+void \hyperlink{class_tile_a1a39799ae879d44cd5c88ba1349e656e}{On\+Tile\+Clean} ()
+\item 
+object \hyperlink{class_tile_a852cc14213c5a329e0d70eedd22f023a}{To\+Json} ()
+\item 
+void \hyperlink{class_tile_a2c8ea5b7ad194989644872ffbf29c491}{From\+Json} (J\+Token tile\+Token)
+\item 
+string \hyperlink{class_tile_a6a552b263f6505a56a4d81f9ed835e84}{Get\+Name} ()
+\item 
+string \hyperlink{class_tile_a827ddb92a97dc4f34ab12052127f4d3b}{Get\+Description} ()
+\item 
+string \hyperlink{class_tile_a6f3f4232bc888cd335b3d0b2af6edda5}{Get\+Job\+Description} ()
+\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_tile_adae7d6b9e3e0e33ed9a398efca024055}{Get\+Additional\+Info} ()
+\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_tile_abb0b61dee4ac0ed5af02165c45a6e688}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\item 
+bool \hyperlink{class_tile_adee7f47667dd691bc8a6ba2c382c2751}{Is\+Reserved\+Work\+Spot} ()
+\item 
+int \hyperlink{class_tile_a6151ab911bebe9e8c930427799697165}{Compare\+To} (object other)
+\item 
+bool \hyperlink{class_tile_a96cd7d02df2c613bc99961e1456f4c53}{Equals} (\hyperlink{class_tile}{Tile} other\+Tile)
+\item 
+void \hyperlink{class_tile_afe3b386af919d58d0c8f69ae50e2d96e}{Move\+Tile} (int x, int y, int z)
+\item 
+override string \hyperlink{class_tile_a0aa5ac04f01031e9cdfd9ae9abcb75bd}{To\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_tile_a6e49ff8d44f3f2d0ae06370db9c7db21}{Change\+Tile\+Type\+Job\+Complete} (\hyperlink{class_job}{Job} the\+Job)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tile_type}{Tile\+Type} \hyperlink{class_tile_ae81a2b6cfecac7ae9e0d246e97dad91e}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Hash\+Set$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_tile_af57365d59cb055a342e5e56f237aaf8e}{Reserved\+As\+Work\+Spot\+By}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_inventory}{Inventory} \hyperlink{class_tile_a686d7969d77a7370c913d9980d264cd8}{Inventory}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} \hyperlink{class_tile_ac5e22a506cb6c40aa6e73ad091ef89bf}{Room}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_tile_a17d6d1ccd67d0c6335de52a12c2d98a6}{Characters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_tile_a2c237270d1174c03c33afd93c7759491}{Furniture}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{class_tile_a3f200b79ce637c1b70dcedf6b7ca21b4}{Walk\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Dictionary$<$ string, \hyperlink{class_utility}{Utility} $>$ \hyperlink{class_tile_a2073539dbc53f09e81b688dacfc4efb7}{Utilities}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_tile_a6dbcb3c830e1bb4447ed95a010bdf244}{Pathfinding\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total pathfinding cost of entering this tile. The final cost is equal to the \hyperlink{class_tile}{Tile}\textquotesingle{}s Base\+Movement\+Cost $\ast$ \hyperlink{class_tile}{Tile}\textquotesingle{}s Pathfinding\+Weight $\ast$ \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Pathfinding\+Weight $\ast$ \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Movement\+Cost + \hyperlink{class_tile}{Tile}\textquotesingle{}s Pathfinding\+Modifier + \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Pathfinding\+Modifier. \end{DoxyCompactList}\item 
+Hash\+Set$<$ \hyperlink{class_job}{Job} $>$ \hyperlink{class_tile_aa23e1ff55199851f33739caee50495fc}{Pending\+Build\+Jobs}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_tile_a9cf9a09c5a83a5789b3302b2cd888552}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{class_tile_aaa6f10c5c75614c1c855a9e5be97acd0}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{class_tile_a8f051217146f35f8df3f110a5408b7fe}{Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_tile_abb2003a763a47e688f96edf88633ace7}{Movement\+Modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_tile_a0711fb028d7d558334c3bc57ebd49e80}{Movement\+Cost}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_tile_a29b80ed6a151b7613b9e903d046bdb1e}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{class_tile_a6efbaf733ba89b602e3293d78840d8e8}{Force\+Tile\+Update}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+Vector3 \hyperlink{class_tile_a195ab8d54782b43fb51c55c833bfe7e1}{Vector3}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_tile}{Tile} $>$ \hyperlink{class_tile_a95594f2dd7d805875b81820e19f25247}{Tile\+Changed}
+\item 
+Action$<$ \hyperlink{class_tile}{Tile} $>$ \hyperlink{class_tile_a73162fe19ec1295f61ad29b0fbb1a049}{Tile\+Type\+Changed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Tile.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_aa35a3149e656433f826c5b4a8c45fd71}\label{class_tile_aa35a3149e656433f826c5b4a8c45fd71}} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Tile.\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_tile}{Tile} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate.\\
+\hline
+{\em y} & The y coordinate.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Tile.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_a6e49ff8d44f3f2d0ae06370db9c7db21}\label{class_tile_a6e49ff8d44f3f2d0ae06370db9c7db21}} 
+\index{Tile@{Tile}!Change\+Tile\+Type\+Job\+Complete@{Change\+Tile\+Type\+Job\+Complete}}
+\index{Change\+Tile\+Type\+Job\+Complete@{Change\+Tile\+Type\+Job\+Complete}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Change\+Tile\+Type\+Job\+Complete()}{ChangeTileTypeJobComplete()}}
+{\footnotesize\ttfamily static void Tile.\+Change\+Tile\+Type\+Job\+Complete (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{the\+Job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 148 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6151ab911bebe9e8c930427799697165}\label{class_tile_a6151ab911bebe9e8c930427799697165}} 
+\index{Tile@{Tile}!Compare\+To@{Compare\+To}}
+\index{Compare\+To@{Compare\+To}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Compare\+To()}{CompareTo()}}
+{\footnotesize\ttfamily int Tile.\+Compare\+To (\begin{DoxyParamCaption}\item[{object}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 662 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a339b45abc4deea7cfb2827bafae48df0}\label{class_tile_a339b45abc4deea7cfb2827bafae48df0}} 
+\index{Tile@{Tile}!Down@{Down}}
+\index{Down@{Down}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Down()}{Down()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 516 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_afb3865cdc4621002d32d863e6c3dee87}\label{class_tile_afb3865cdc4621002d32d863e6c3dee87}} 
+\index{Tile@{Tile}!East@{East}}
+\index{East@{East}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{East()}{East()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+East (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 501 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_acfb09ae7f8dc543b46f76cef3de2c689}\label{class_tile_acfb09ae7f8dc543b46f76cef3de2c689}} 
+\index{Tile@{Tile}!Equalise\+Gas@{Equalise\+Gas}}
+\index{Equalise\+Gas@{Equalise\+Gas}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Equalise\+Gas()}{EqualiseGas()}}
+{\footnotesize\ttfamily void Tile.\+Equalise\+Gas (\begin{DoxyParamCaption}\item[{float}]{leak\+Factor }\end{DoxyParamCaption})}
+
+
+
+Definition at line 307 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a96cd7d02df2c613bc99961e1456f4c53}\label{class_tile_a96cd7d02df2c613bc99961e1456f4c53}} 
+\index{Tile@{Tile}!Equals@{Equals}}
+\index{Equals@{Equals}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool Tile.\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{other\+Tile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 696 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a2c8ea5b7ad194989644872ffbf29c491}\label{class_tile_a2c8ea5b7ad194989644872ffbf29c491}} 
+\index{Tile@{Tile}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Tile.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{tile\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 585 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_adae7d6b9e3e0e33ed9a398efca024055}\label{class_tile_adae7d6b9e3e0e33ed9a398efca024055}} 
+\index{Tile@{Tile}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Tile.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 616 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_abb0b61dee4ac0ed5af02165c45a6e688}\label{class_tile_abb0b61dee4ac0ed5af02165c45a6e688}} 
+\index{Tile@{Tile}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Tile.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 624 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a827ddb92a97dc4f34ab12052127f4d3b}\label{class_tile_a827ddb92a97dc4f34ab12052127f4d3b}} 
+\index{Tile@{Tile}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Tile.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 606 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a26292fe76574b5c665fb21bca478a28e}\label{class_tile_a26292fe76574b5c665fb21bca478a28e}} 
+\index{Tile@{Tile}!Get\+Gas\+Pressure@{Get\+Gas\+Pressure}}
+\index{Get\+Gas\+Pressure@{Get\+Gas\+Pressure}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Gas\+Pressure()}{GetGasPressure()}}
+{\footnotesize\ttfamily float Tile.\+Get\+Gas\+Pressure (\begin{DoxyParamCaption}\item[{string}]{gas }\end{DoxyParamCaption})}
+
+
+
+Definition at line 312 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6f3f4232bc888cd335b3d0b2af6edda5}\label{class_tile_a6f3f4232bc888cd335b3d0b2af6edda5}} 
+\index{Tile@{Tile}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Tile.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 611 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6a552b263f6505a56a4d81f9ed835e84}\label{class_tile_a6a552b263f6505a56a4d81f9ed835e84}} 
+\index{Tile@{Tile}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Tile.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 601 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6d4077ccda74405aa415279515b03b32}\label{class_tile_a6d4077ccda74405aa415279515b03b32}} 
+\index{Tile@{Tile}!Get\+Nearest\+Room@{Get\+Nearest\+Room}}
+\index{Get\+Nearest\+Room@{Get\+Nearest\+Room}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Nearest\+Room()}{GetNearestRoom()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Tile.\+Get\+Nearest\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the nearest room. 
+
+\begin{DoxyReturn}{Returns}
+The nearest room. If this tile has a room, it will return this tile\textquotesingle{}s room.
+\end{DoxyReturn}
+
+
+Definition at line 525 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_ad4db0caa267514917bafbb228eebd809}\label{class_tile_ad4db0caa267514917bafbb228eebd809}} 
+\index{Tile@{Tile}!Get\+Neighbours@{Get\+Neighbours}}
+\index{Get\+Neighbours@{Get\+Neighbours}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Neighbours()}{GetNeighbours()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} Tile.\+Get\+Neighbours (\begin{DoxyParamCaption}\item[{bool}]{diag\+Okay = {\ttfamily false},  }\item[{bool}]{vert\+Okay = {\ttfamily false},  }\item[{bool}]{null\+Okay = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Gets the neighbours. 
+
+\begin{DoxyReturn}{Returns}
+The neighbours.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em diag\+Okay} & Is diagonal movement okay?.\\
+\hline
+{\em vert\+Okay} & Is vertical movement okay?.\\
+\hline
+{\em null\+Okay} & Is returning null tiles okay?.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 368 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_aa6677ae6cb5d9d6bb4c5e73f18889454}\label{class_tile_aa6677ae6cb5d9d6bb4c5e73f18889454}} 
+\index{Tile@{Tile}!Get\+Vertical\+Neighbors@{Get\+Vertical\+Neighbors}}
+\index{Get\+Vertical\+Neighbors@{Get\+Vertical\+Neighbors}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Get\+Vertical\+Neighbors()}{GetVerticalNeighbors()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} \mbox{[}$\,$\mbox{]} Tile.\+Get\+Vertical\+Neighbors (\begin{DoxyParamCaption}\item[{bool}]{null\+Okay = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 402 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_aafdf735f6dc8ac83724c78e311def882}\label{class_tile_aafdf735f6dc8ac83724c78e311def882}} 
+\index{Tile@{Tile}!Has\+Clear\+Line\+To\+Bottom@{Has\+Clear\+Line\+To\+Bottom}}
+\index{Has\+Clear\+Line\+To\+Bottom@{Has\+Clear\+Line\+To\+Bottom}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Has\+Clear\+Line\+To\+Bottom()}{HasClearLineToBottom()}}
+{\footnotesize\ttfamily bool Tile.\+Has\+Clear\+Line\+To\+Bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 474 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a267a13f2e5883b4e3c4ef0352c3c738f}\label{class_tile_a267a13f2e5883b4e3c4ef0352c3c738f}} 
+\index{Tile@{Tile}!Has\+Neighbours\+Of\+Type@{Has\+Neighbours\+Of\+Type}}
+\index{Has\+Neighbours\+Of\+Type@{Has\+Neighbours\+Of\+Type}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Has\+Neighbours\+Of\+Type()}{HasNeighboursOfType()}}
+{\footnotesize\ttfamily bool Tile.\+Has\+Neighbours\+Of\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{tile\+Type }\end{DoxyParamCaption})}
+
+
+
+If one of the 8 neighbouring tiles is of \hyperlink{class_tile_type}{Tile\+Type} type then this returns true. 
+
+
+
+Definition at line 429 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a3d66c8afb8475b85d84d1385e9ea2fa1}\label{class_tile_a3d66c8afb8475b85d84d1385e9ea2fa1}} 
+\index{Tile@{Tile}!Is\+Clipping\+Corner@{Is\+Clipping\+Corner}}
+\index{Is\+Clipping\+Corner@{Is\+Clipping\+Corner}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Clipping\+Corner()}{IsClippingCorner()}}
+{\footnotesize\ttfamily bool Tile.\+Is\+Clipping\+Corner (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{neighbor\+Tile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 445 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a132d1e4646d4e5aedb7a81d6e3003c1d}\label{class_tile_a132d1e4646d4e5aedb7a81d6e3003c1d}} 
+\index{Tile@{Tile}!Is\+Enterable@{Is\+Enterable}}
+\index{Is\+Enterable@{Is\+Enterable}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Enterable()}{IsEnterable()}}
+{\footnotesize\ttfamily \hyperlink{_tile_8cs_a48a7177f465b04f310ccf25ae69d070a}{Enterability} Tile.\+Is\+Enterable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 544 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a4f390d0ed829888b1446ec099ab28124}\label{class_tile_a4f390d0ed829888b1446ec099ab28124}} 
+\index{Tile@{Tile}!Is\+Neighbour@{Is\+Neighbour}}
+\index{Is\+Neighbour@{Is\+Neighbour}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Neighbour()}{IsNeighbour()}}
+{\footnotesize\ttfamily bool Tile.\+Is\+Neighbour (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{diag\+Okay = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 351 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_afe9cc96998331946edf8098b56c04dee}\label{class_tile_afe9cc96998331946edf8098b56c04dee}} 
+\index{Tile@{Tile}!Is\+Reachable\+From\+Any\+Neighbor@{Is\+Reachable\+From\+Any\+Neighbor}}
+\index{Is\+Reachable\+From\+Any\+Neighbor@{Is\+Reachable\+From\+Any\+Neighbor}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Reachable\+From\+Any\+Neighbor()}{IsReachableFromAnyNeighbor()}}
+{\footnotesize\ttfamily bool Tile.\+Is\+Reachable\+From\+Any\+Neighbor (\begin{DoxyParamCaption}\item[{bool}]{check\+Diagonals = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Returns true if any of the neighours can reach this tile. Checks for clipping of diagonal paths. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em check\+Diagonals} & Will test diagonals as well if true.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 438 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_adee7f47667dd691bc8a6ba2c382c2751}\label{class_tile_adee7f47667dd691bc8a6ba2c382c2751}} 
+\index{Tile@{Tile}!Is\+Reserved\+Work\+Spot@{Is\+Reserved\+Work\+Spot}}
+\index{Is\+Reserved\+Work\+Spot@{Is\+Reserved\+Work\+Spot}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Reserved\+Work\+Spot()}{IsReservedWorkSpot()}}
+{\footnotesize\ttfamily bool Tile.\+Is\+Reserved\+Work\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 655 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_afe3b386af919d58d0c8f69ae50e2d96e}\label{class_tile_afe3b386af919d58d0c8f69ae50e2d96e}} 
+\index{Tile@{Tile}!Move\+Tile@{Move\+Tile}}
+\index{Move\+Tile@{Move\+Tile}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Move\+Tile()}{MoveTile()}}
+{\footnotesize\ttfamily void Tile.\+Move\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Definition at line 707 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_acc0ae09e957b413c556c4afb6b4b95d5}\label{class_tile_acc0ae09e957b413c556c4afb6b4b95d5}} 
+\index{Tile@{Tile}!North@{North}}
+\index{North@{North}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{North()}{North()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+North (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 491 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_ad0acba5981f6e117788c1c112ac1e443}\label{class_tile_ad0acba5981f6e117788c1c112ac1e443}} 
+\index{Tile@{Tile}!On\+Enter@{On\+Enter}}
+\index{On\+Enter@{On\+Enter}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{On\+Enter()}{OnEnter()}}
+{\footnotesize\ttfamily void Tile.\+On\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 561 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a1a39799ae879d44cd5c88ba1349e656e}\label{class_tile_a1a39799ae879d44cd5c88ba1349e656e}} 
+\index{Tile@{Tile}!On\+Tile\+Clean@{On\+Tile\+Clean}}
+\index{On\+Tile\+Clean@{On\+Tile\+Clean}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{On\+Tile\+Clean()}{OnTileClean()}}
+{\footnotesize\ttfamily void Tile.\+On\+Tile\+Clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 567 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_ada07c2ba6dd6355e13612b45bfc0c4f0}\label{class_tile_ada07c2ba6dd6355e13612b45bfc0c4f0}} 
+\index{Tile@{Tile}!Place\+Furniture@{Place\+Furniture}}
+\index{Place\+Furniture@{Place\+Furniture}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Place\+Furniture()}{PlaceFurniture()}}
+{\footnotesize\ttfamily bool Tile.\+Place\+Furniture (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{obj\+Instance }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_af43b05f2ac39247b4aef063995aa3743}\label{class_tile_af43b05f2ac39247b4aef063995aa3743}} 
+\index{Tile@{Tile}!Place\+Inventory@{Place\+Inventory}}
+\index{Place\+Inventory@{Place\+Inventory}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Place\+Inventory()}{PlaceInventory()}}
+{\footnotesize\ttfamily bool Tile.\+Place\+Inventory (\begin{DoxyParamCaption}\item[{\hyperlink{class_inventory}{Inventory}}]{inventory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 264 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a10c975f1ca685654ef1d843210f27b47}\label{class_tile_a10c975f1ca685654ef1d843210f27b47}} 
+\index{Tile@{Tile}!Place\+Utility@{Place\+Utility}}
+\index{Place\+Utility@{Place\+Utility}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Place\+Utility()}{PlaceUtility()}}
+{\footnotesize\ttfamily bool Tile.\+Place\+Utility (\begin{DoxyParamCaption}\item[{\hyperlink{class_utility}{Utility}}]{obj\+Instance }\end{DoxyParamCaption})}
+
+
+
+Definition at line 246 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a104759fa434ea7c6acc85c81a710a0d9}\label{class_tile_a104759fa434ea7c6acc85c81a710a0d9}} 
+\index{Tile@{Tile}!Set\+Tile\+Type@{Set\+Tile\+Type}}
+\index{Set\+Tile\+Type@{Set\+Tile\+Type}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Set\+Tile\+Type()}{SetTileType()}}
+{\footnotesize\ttfamily void Tile.\+Set\+Tile\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile_type}{Tile\+Type}}]{new\+Tile\+Type,  }\item[{bool}]{do\+Room\+Flood\+Fill = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_aa0e869284f94317f4f5231a239b7b4b1}\label{class_tile_aa0e869284f94317f4f5231a239b7b4b1}} 
+\index{Tile@{Tile}!South@{South}}
+\index{South@{South}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{South()}{South()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+South (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 496 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a852cc14213c5a329e0d70eedd22f023a}\label{class_tile_a852cc14213c5a329e0d70eedd22f023a}} 
+\index{Tile@{Tile}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily object Tile.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 574 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a0aa5ac04f01031e9cdfd9ae9abcb75bd}\label{class_tile_a0aa5ac04f01031e9cdfd9ae9abcb75bd}} 
+\index{Tile@{Tile}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Tile.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 714 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a47e3946def991a9751ebb485d7f2f28b}\label{class_tile_a47e3946def991a9751ebb485d7f2f28b}} 
+\index{Tile@{Tile}!Unplace\+Furniture@{Unplace\+Furniture}}
+\index{Unplace\+Furniture@{Unplace\+Furniture}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Unplace\+Furniture()}{UnplaceFurniture()}}
+{\footnotesize\ttfamily bool Tile.\+Unplace\+Furniture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 186 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_abfcc2e84347bbb279e288f0d1c995567}\label{class_tile_abfcc2e84347bbb279e288f0d1c995567}} 
+\index{Tile@{Tile}!Unplace\+Utility@{Unplace\+Utility}}
+\index{Unplace\+Utility@{Unplace\+Utility}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Unplace\+Utility()}{UnplaceUtility()}}
+{\footnotesize\ttfamily bool Tile.\+Unplace\+Utility (\begin{DoxyParamCaption}\item[{\hyperlink{class_utility}{Utility}}]{utility }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a2edba7e7456c987ed34a9f67bb9277b9}\label{class_tile_a2edba7e7456c987ed34a9f67bb9277b9}} 
+\index{Tile@{Tile}!Up@{Up}}
+\index{Up@{Up}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 511 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_afbff4f028a2b8f7a0c58726aa75aed82}\label{class_tile_afbff4f028a2b8f7a0c58726aa75aed82}} 
+\index{Tile@{Tile}!West@{West}}
+\index{West@{West}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{West()}{West()}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Tile.\+West (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 506 of file Tile.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_tile_a17d6d1ccd67d0c6335de52a12c2d98a6}\label{class_tile_a17d6d1ccd67d0c6335de52a12c2d98a6}} 
+\index{Tile@{Tile}!Characters@{Characters}}
+\index{Characters@{Characters}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Characters}{Characters}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Tile.\+Characters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 73 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6efbaf733ba89b602e3293d78840d8e8}\label{class_tile_a6efbaf733ba89b602e3293d78840d8e8}} 
+\index{Tile@{Tile}!Force\+Tile\+Update@{Force\+Tile\+Update}}
+\index{Force\+Tile\+Update@{Force\+Tile\+Update}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Force\+Tile\+Update}{ForceTileUpdate}}
+{\footnotesize\ttfamily bool Tile.\+Force\+Tile\+Update\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 135 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a2c237270d1174c03c33afd93c7759491}\label{class_tile_a2c237270d1174c03c33afd93c7759491}} 
+\index{Tile@{Tile}!Furniture@{Furniture}}
+\index{Furniture@{Furniture}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Furniture}{Furniture}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Tile.\+Furniture\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 76 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a686d7969d77a7370c913d9980d264cd8}\label{class_tile_a686d7969d77a7370c913d9980d264cd8}} 
+\index{Tile@{Tile}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Inventory}{Inventory}}
+{\footnotesize\ttfamily \hyperlink{class_inventory}{Inventory} Tile.\+Inventory\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 69 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a29b80ed6a151b7613b9e903d046bdb1e}\label{class_tile_a29b80ed6a151b7613b9e903d046bdb1e}} 
+\index{Tile@{Tile}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Tile.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 133 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a0711fb028d7d558334c3bc57ebd49e80}\label{class_tile_a0711fb028d7d558334c3bc57ebd49e80}} 
+\index{Tile@{Tile}!Movement\+Cost@{Movement\+Cost}}
+\index{Movement\+Cost@{Movement\+Cost}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Movement\+Cost}{MovementCost}}
+{\footnotesize\ttfamily float Tile.\+Movement\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 124 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_abb2003a763a47e688f96edf88633ace7}\label{class_tile_abb2003a763a47e688f96edf88633ace7}} 
+\index{Tile@{Tile}!Movement\+Modifier@{Movement\+Modifier}}
+\index{Movement\+Modifier@{Movement\+Modifier}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Movement\+Modifier}{MovementModifier}}
+{\footnotesize\ttfamily float Tile.\+Movement\+Modifier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 121 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a6dbcb3c830e1bb4447ed95a010bdf244}\label{class_tile_a6dbcb3c830e1bb4447ed95a010bdf244}} 
+\index{Tile@{Tile}!Pathfinding\+Cost@{Pathfinding\+Cost}}
+\index{Pathfinding\+Cost@{Pathfinding\+Cost}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Pathfinding\+Cost}{PathfindingCost}}
+{\footnotesize\ttfamily float Tile.\+Pathfinding\+Cost\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The total pathfinding cost of entering this tile. The final cost is equal to the \hyperlink{class_tile}{Tile}\textquotesingle{}s Base\+Movement\+Cost $\ast$ \hyperlink{class_tile}{Tile}\textquotesingle{}s Pathfinding\+Weight $\ast$ \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Pathfinding\+Weight $\ast$ \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Movement\+Cost + \hyperlink{class_tile}{Tile}\textquotesingle{}s Pathfinding\+Modifier + \hyperlink{class_furniture}{Furniture}\textquotesingle{}s Pathfinding\+Modifier. 
+
+
+
+Definition at line 90 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_aa23e1ff55199851f33739caee50495fc}\label{class_tile_aa23e1ff55199851f33739caee50495fc}} 
+\index{Tile@{Tile}!Pending\+Build\+Jobs@{Pending\+Build\+Jobs}}
+\index{Pending\+Build\+Jobs@{Pending\+Build\+Jobs}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Pending\+Build\+Jobs}{PendingBuildJobs}}
+{\footnotesize\ttfamily Hash\+Set$<$\hyperlink{class_job}{Job}$>$ Tile.\+Pending\+Build\+Jobs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 113 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_af57365d59cb055a342e5e56f237aaf8e}\label{class_tile_af57365d59cb055a342e5e56f237aaf8e}} 
+\index{Tile@{Tile}!Reserved\+As\+Work\+Spot\+By@{Reserved\+As\+Work\+Spot\+By}}
+\index{Reserved\+As\+Work\+Spot\+By@{Reserved\+As\+Work\+Spot\+By}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Reserved\+As\+Work\+Spot\+By}{ReservedAsWorkSpotBy}}
+{\footnotesize\ttfamily Hash\+Set$<$\hyperlink{class_furniture}{Furniture}$>$ Tile.\+Reserved\+As\+Work\+Spot\+By\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 66 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_ac5e22a506cb6c40aa6e73ad091ef89bf}\label{class_tile_ac5e22a506cb6c40aa6e73ad091ef89bf}} 
+\index{Tile@{Tile}!Room@{Room}}
+\index{Room@{Room}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Room}{Room}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_rooms_1_1_room}{Room} Tile.\+Room\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 71 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_ae81a2b6cfecac7ae9e0d246e97dad91e}\label{class_tile_ae81a2b6cfecac7ae9e0d246e97dad91e}} 
+\index{Tile@{Tile}!Type@{Type}}
+\index{Type@{Type}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \hyperlink{class_tile_type}{Tile\+Type} Tile.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 59 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a2073539dbc53f09e81b688dacfc4efb7}\label{class_tile_a2073539dbc53f09e81b688dacfc4efb7}} 
+\index{Tile@{Tile}!Utilities@{Utilities}}
+\index{Utilities@{Utilities}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Utilities}{Utilities}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{class_utility}{Utility}$>$ Tile.\+Utilities\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 82 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a195ab8d54782b43fb51c55c833bfe7e1}\label{class_tile_a195ab8d54782b43fb51c55c833bfe7e1}} 
+\index{Tile@{Tile}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Vector3}{Vector3}}
+{\footnotesize\ttfamily Vector3 Tile.\+Vector3\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 138 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a3f200b79ce637c1b70dcedf6b7ca21b4}\label{class_tile_a3f200b79ce637c1b70dcedf6b7ca21b4}} 
+\index{Tile@{Tile}!Walk\+Count@{Walk\+Count}}
+\index{Walk\+Count@{Walk\+Count}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Walk\+Count}{WalkCount}}
+{\footnotesize\ttfamily int Tile.\+Walk\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 79 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a9cf9a09c5a83a5789b3302b2cd888552}\label{class_tile_a9cf9a09c5a83a5789b3302b2cd888552}} 
+\index{Tile@{Tile}!X@{X}}
+\index{X@{X}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily int Tile.\+X\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 115 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_aaa6f10c5c75614c1c855a9e5be97acd0}\label{class_tile_aaa6f10c5c75614c1c855a9e5be97acd0}} 
+\index{Tile@{Tile}!Y@{Y}}
+\index{Y@{Y}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily int Tile.\+Y\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 117 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a8f051217146f35f8df3f110a5408b7fe}\label{class_tile_a8f051217146f35f8df3f110a5408b7fe}} 
+\index{Tile@{Tile}!Z@{Z}}
+\index{Z@{Z}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily int Tile.\+Z\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 119 of file Tile.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_tile_a95594f2dd7d805875b81820e19f25247}\label{class_tile_a95594f2dd7d805875b81820e19f25247}} 
+\index{Tile@{Tile}!Tile\+Changed@{Tile\+Changed}}
+\index{Tile\+Changed@{Tile\+Changed}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Tile\+Changed}{TileChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_tile}{Tile}$>$ Tile.\+Tile\+Changed}
+
+
+
+Definition at line 52 of file Tile.\+cs.
+
+\mbox{\Hypertarget{class_tile_a73162fe19ec1295f61ad29b0fbb1a049}\label{class_tile_a73162fe19ec1295f61ad29b0fbb1a049}} 
+\index{Tile@{Tile}!Tile\+Type\+Changed@{Tile\+Type\+Changed}}
+\index{Tile\+Type\+Changed@{Tile\+Type\+Changed}!Tile@{Tile}}
+\subsubsection{\texorpdfstring{Tile\+Type\+Changed}{TileTypeChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_tile}{Tile}$>$ Tile.\+Tile\+Type\+Changed}
+
+
+
+Definition at line 55 of file Tile.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_tile_8cs}{Tile.\+cs}\end{DoxyCompactItemize}

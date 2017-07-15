@@ -1,0 +1,383 @@
+\hypertarget{class_atmosphere_component}{}\section{Atmosphere\+Component Class Reference}
+\label{class_atmosphere_component}\index{Atmosphere\+Component@{Atmosphere\+Component}}
+
+
+An atmosphere component which controls gas and temperature.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_atmosphere_component_aa1d8f0e689d42f6ae5663473406db9be}{Atmosphere\+Component} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor, that initialises variables. \end{DoxyCompactList}\item 
+float \hyperlink{class_atmosphere_component_af15c6de153494ee1908429e72575b08b}{Get\+Gas\+Amount} (string gas\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the amount of this gas stored in this component. \end{DoxyCompactList}\item 
+float \hyperlink{class_atmosphere_component_afb20b22d2f7601b7647a716c1baf4a27}{Get\+Gas\+Fraction} (string gas\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the fraction of the gas present that is this type of gas. \end{DoxyCompactList}\item 
+string \mbox{[}$\,$\mbox{]} \hyperlink{class_atmosphere_component_a6a41cdeb590b5c1b4fe5336fc62039ab}{Get\+Gas\+Names} ()
+\begin{DoxyCompactList}\small\item\em Get the names of gasses present in this component. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a0dd1d74b73b45aac38e77297532a50f3}{Set\+Gas} (string gas\+Name, float new\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the amount of gas of this type to the value. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a84ad0d10ca2c978df17736750cb4ac61}{Set\+Gas} (float new\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the total gas value then evenly spreads it depending on gas fractions. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a5cf504fc9a6e6dda40e0d978826f3b1b}{Change\+Gas} (string gas\+Name, float amount)
+\begin{DoxyCompactList}\small\item\em Update a gas with a new amount. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a96f96d66987e071cf9c686d807aa699d}{Create\+Gas} (string gas\+Name, float amount, float temperature)
+\begin{DoxyCompactList}\small\item\em Creates gas of a determined type and temperature out of nowhere. This should only be used when there is no source for the gas. Otherwise use Move\+Gas\+To. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a0c4f4a859c0a5ad8cd35374989aeecdf}{Destroy\+Gas} (float amount)
+\begin{DoxyCompactList}\small\item\em Destroys gas evenly. This should only be used when there is no destination for the gas. Otherwise use Move\+Gas\+To. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_ae48468d3e0f6e6aedffd3e3dcb418800}{Destroy\+Gas} (string gas\+Name, float amount)
+\begin{DoxyCompactList}\small\item\em Destroys gas of this type. This should only be used when there is no destination for the gas. Otherwise use Move\+Gas\+To. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a8f0b2f406c993dff7c315e43624775b0}{Move\+Gas\+To} (\hyperlink{class_atmosphere_component}{Atmosphere\+Component} destination, float amount)
+\begin{DoxyCompactList}\small\item\em Moves gas to another atmosphere. Temperature is transferred accordingly. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a5344325e734a5b8c1064bf23efa15f03}{Move\+Gas\+To} (\hyperlink{class_atmosphere_component}{Atmosphere\+Component} destination, string gas\+Name, float amount)
+\item 
+\hyperlink{struct_temperature_value}{Temperature\+Value} \hyperlink{class_atmosphere_component_a46943e800a2c308b26728a7cbc4b8f71}{Get\+Temperature} ()
+\begin{DoxyCompactList}\small\item\em Gets the temperature value for this room. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a5bfd247451db89bb03bbd4f8d2adc258}{Set\+Temperature} (float temperature)
+\begin{DoxyCompactList}\small\item\em Sets the temperature. \end{DoxyCompactList}\item 
+void \hyperlink{class_atmosphere_component_a00e0f048f19f2fd4c93cd4b4958c26c3}{Change\+Energy} (float amount)
+\begin{DoxyCompactList}\small\item\em Changes the energy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_atmosphere_component_a36f398bb1cc5031be7309cc06de32ad0}{Total\+Gas}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total gas amount. \end{DoxyCompactList}\item 
+float \hyperlink{class_atmosphere_component_aefa5aa1258c50b53eb78be9bf0750cbd}{Thermal\+Energy}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The thermal energy of this component A\+L\+W\+A\+YS set after gas since, this will also update the internal temperature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An atmosphere component which controls gas and temperature. 
+
+
+
+Definition at line 22 of file Atmosphere\+Component.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_atmosphere_component_aa1d8f0e689d42f6ae5663473406db9be}\label{class_atmosphere_component_aa1d8f0e689d42f6ae5663473406db9be}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Atmosphere\+Component@{Atmosphere\+Component}}
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Atmosphere\+Component()}{AtmosphereComponent()}}
+{\footnotesize\ttfamily Atmosphere\+Component.\+Atmosphere\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor, that initialises variables. 
+
+
+
+Definition at line 42 of file Atmosphere\+Component.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_atmosphere_component_a00e0f048f19f2fd4c93cd4b4958c26c3}\label{class_atmosphere_component_a00e0f048f19f2fd4c93cd4b4958c26c3}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Change\+Energy@{Change\+Energy}}
+\index{Change\+Energy@{Change\+Energy}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Change\+Energy()}{ChangeEnergy()}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Change\+Energy (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Changes the energy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of energy added or removed from the total.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 305 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a5cf504fc9a6e6dda40e0d978826f3b1b}\label{class_atmosphere_component_a5cf504fc9a6e6dda40e0d978826f3b1b}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Change\+Gas@{Change\+Gas}}
+\index{Change\+Gas@{Change\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Change\+Gas()}{ChangeGas()}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Change\+Gas (\begin{DoxyParamCaption}\item[{string}]{gas\+Name,  }\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Update a gas with a new amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & The gas to update. \\
+\hline
+{\em amount} & The amount to update by. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 141 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a96f96d66987e071cf9c686d807aa699d}\label{class_atmosphere_component_a96f96d66987e071cf9c686d807aa699d}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Create\+Gas@{Create\+Gas}}
+\index{Create\+Gas@{Create\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Create\+Gas()}{CreateGas()}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Create\+Gas (\begin{DoxyParamCaption}\item[{string}]{gas\+Name,  }\item[{float}]{amount,  }\item[{float}]{temperature }\end{DoxyParamCaption})}
+
+
+
+Creates gas of a determined type and temperature out of nowhere. This should only be used when there is no source for the gas. Otherwise use Move\+Gas\+To. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & Name of the gas to create.\\
+\hline
+{\em Get\+Gas\+Amount} & Amount of gas to create.\\
+\hline
+{\em temperature} & Temperature of the gas.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 166 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a0c4f4a859c0a5ad8cd35374989aeecdf}\label{class_atmosphere_component_a0c4f4a859c0a5ad8cd35374989aeecdf}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Destroy\+Gas@{Destroy\+Gas}}
+\index{Destroy\+Gas@{Destroy\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Destroy\+Gas()}{DestroyGas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Destroy\+Gas (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Destroys gas evenly. This should only be used when there is no destination for the gas. Otherwise use Move\+Gas\+To. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount to destroy.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_ae48468d3e0f6e6aedffd3e3dcb418800}\label{class_atmosphere_component_ae48468d3e0f6e6aedffd3e3dcb418800}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Destroy\+Gas@{Destroy\+Gas}}
+\index{Destroy\+Gas@{Destroy\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Destroy\+Gas()}{DestroyGas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Destroy\+Gas (\begin{DoxyParamCaption}\item[{string}]{gas\+Name,  }\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Destroys gas of this type. This should only be used when there is no destination for the gas. Otherwise use Move\+Gas\+To. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & Name of gas to destroy.\\
+\hline
+{\em amount} & Amount to destroy.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 206 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_af15c6de153494ee1908429e72575b08b}\label{class_atmosphere_component_af15c6de153494ee1908429e72575b08b}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Get\+Gas\+Amount@{Get\+Gas\+Amount}}
+\index{Get\+Gas\+Amount@{Get\+Gas\+Amount}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Get\+Gas\+Amount()}{GetGasAmount()}}
+{\footnotesize\ttfamily float Atmosphere\+Component.\+Get\+Gas\+Amount (\begin{DoxyParamCaption}\item[{string}]{gas\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the amount of this gas stored in this component. 
+
+\begin{DoxyReturn}{Returns}
+The amount of this gas stored in the component.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & Gas you want the pressure of.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_afb20b22d2f7601b7647a716c1baf4a27}\label{class_atmosphere_component_afb20b22d2f7601b7647a716c1baf4a27}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Get\+Gas\+Fraction@{Get\+Gas\+Fraction}}
+\index{Get\+Gas\+Fraction@{Get\+Gas\+Fraction}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Get\+Gas\+Fraction()}{GetGasFraction()}}
+{\footnotesize\ttfamily float Atmosphere\+Component.\+Get\+Gas\+Fraction (\begin{DoxyParamCaption}\item[{string}]{gas\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the fraction of the gas present that is this type of gas. 
+
+\begin{DoxyReturn}{Returns}
+The fraction of this type of gas.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & Name of the gas.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a6a41cdeb590b5c1b4fe5336fc62039ab}\label{class_atmosphere_component_a6a41cdeb590b5c1b4fe5336fc62039ab}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Get\+Gas\+Names@{Get\+Gas\+Names}}
+\index{Get\+Gas\+Names@{Get\+Gas\+Names}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Get\+Gas\+Names()}{GetGasNames()}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Atmosphere\+Component.\+Get\+Gas\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the names of gasses present in this component. 
+
+\begin{DoxyReturn}{Returns}
+The names of gasses present.
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a46943e800a2c308b26728a7cbc4b8f71}\label{class_atmosphere_component_a46943e800a2c308b26728a7cbc4b8f71}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Get\+Temperature@{Get\+Temperature}}
+\index{Get\+Temperature@{Get\+Temperature}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Get\+Temperature()}{GetTemperature()}}
+{\footnotesize\ttfamily \hyperlink{struct_temperature_value}{Temperature\+Value} Atmosphere\+Component.\+Get\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the temperature value for this room. 
+
+\begin{DoxyReturn}{Returns}
+The temperature value as \hyperlink{struct_temperature_value}{Temperature\+Value}. 
+\end{DoxyReturn}
+
+
+Definition at line 286 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a8f0b2f406c993dff7c315e43624775b0}\label{class_atmosphere_component_a8f0b2f406c993dff7c315e43624775b0}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Move\+Gas\+To@{Move\+Gas\+To}}
+\index{Move\+Gas\+To@{Move\+Gas\+To}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Move\+Gas\+To()}{MoveGasTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Move\+Gas\+To (\begin{DoxyParamCaption}\item[{\hyperlink{class_atmosphere_component}{Atmosphere\+Component}}]{destination,  }\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Moves gas to another atmosphere. Temperature is transferred accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & Destination of the gas.\\
+\hline
+{\em amount} & Amount of gas to move.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 224 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a5344325e734a5b8c1064bf23efa15f03}\label{class_atmosphere_component_a5344325e734a5b8c1064bf23efa15f03}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Move\+Gas\+To@{Move\+Gas\+To}}
+\index{Move\+Gas\+To@{Move\+Gas\+To}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Move\+Gas\+To()}{MoveGasTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Move\+Gas\+To (\begin{DoxyParamCaption}\item[{\hyperlink{class_atmosphere_component}{Atmosphere\+Component}}]{destination,  }\item[{string}]{gas\+Name,  }\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a0dd1d74b73b45aac38e77297532a50f3}\label{class_atmosphere_component_a0dd1d74b73b45aac38e77297532a50f3}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Set\+Gas@{Set\+Gas}}
+\index{Set\+Gas@{Set\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Set\+Gas()}{SetGas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Set\+Gas (\begin{DoxyParamCaption}\item[{string}]{gas\+Name,  }\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the amount of gas of this type to the value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Name} & The name of the gas whose value is set.\\
+\hline
+{\em amount} & The amount of gas to set it to.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a84ad0d10ca2c978df17736750cb4ac61}\label{class_atmosphere_component_a84ad0d10ca2c978df17736750cb4ac61}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Set\+Gas@{Set\+Gas}}
+\index{Set\+Gas@{Set\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Set\+Gas()}{SetGas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Set\+Gas (\begin{DoxyParamCaption}\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the total gas value then evenly spreads it depending on gas fractions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value for the total gas to be. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a5bfd247451db89bb03bbd4f8d2adc258}\label{class_atmosphere_component_a5bfd247451db89bb03bbd4f8d2adc258}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Set\+Temperature@{Set\+Temperature}}
+\index{Set\+Temperature@{Set\+Temperature}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Set\+Temperature()}{SetTemperature()}}
+{\footnotesize\ttfamily void Atmosphere\+Component.\+Set\+Temperature (\begin{DoxyParamCaption}\item[{float}]{temperature }\end{DoxyParamCaption})}
+
+
+
+Sets the temperature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature} & Temperature.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 295 of file Atmosphere\+Component.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_atmosphere_component_aefa5aa1258c50b53eb78be9bf0750cbd}\label{class_atmosphere_component_aefa5aa1258c50b53eb78be9bf0750cbd}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Thermal\+Energy@{Thermal\+Energy}}
+\index{Thermal\+Energy@{Thermal\+Energy}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Thermal\+Energy}{ThermalEnergy}}
+{\footnotesize\ttfamily float Atmosphere\+Component.\+Thermal\+Energy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The thermal energy of this component A\+L\+W\+A\+YS set after gas since, this will also update the internal temperature. 
+
+
+
+Definition at line 60 of file Atmosphere\+Component.\+cs.
+
+\mbox{\Hypertarget{class_atmosphere_component_a36f398bb1cc5031be7309cc06de32ad0}\label{class_atmosphere_component_a36f398bb1cc5031be7309cc06de32ad0}} 
+\index{Atmosphere\+Component@{Atmosphere\+Component}!Total\+Gas@{Total\+Gas}}
+\index{Total\+Gas@{Total\+Gas}!Atmosphere\+Component@{Atmosphere\+Component}}
+\subsubsection{\texorpdfstring{Total\+Gas}{TotalGas}}
+{\footnotesize\ttfamily float Atmosphere\+Component.\+Total\+Gas\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The total gas amount. 
+
+
+
+Definition at line 52 of file Atmosphere\+Component.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_atmosphere_component_8cs}{Atmosphere\+Component.\+cs}\end{DoxyCompactItemize}

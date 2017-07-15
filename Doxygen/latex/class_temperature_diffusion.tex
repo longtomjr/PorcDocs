@@ -1,0 +1,141 @@
+\hypertarget{class_temperature_diffusion}{}\section{Temperature\+Diffusion Class Reference}
+\label{class_temperature_diffusion}\index{Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_temperature_diffusion_aa73aa039994d11bcd81249d843638377}{Temperature\+Diffusion} (\hyperlink{class_world}{World} world)
+\begin{DoxyCompactList}\small\item\em Create and Initialize arrays with default values. \end{DoxyCompactList}\item 
+void \hyperlink{class_temperature_diffusion_ac079af3d36f20c9fea50c79565cd7052}{Fixed\+Frequency} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em If needed, progress physics. \end{DoxyCompactList}\item 
+void \hyperlink{class_temperature_diffusion_adddffe95f6243220d7231398e9e1a9df}{Register\+Sink\+Or\+Source} (\hyperlink{class_furniture}{Furniture} provider)
+\begin{DoxyCompactList}\small\item\em Register a sink or a source. \end{DoxyCompactList}\item 
+void \hyperlink{class_temperature_diffusion_a4e5af68445b339aec17d7bc33b426e47}{Deregister\+Sink\+Or\+Source} (\hyperlink{class_furniture}{Furniture} provider)
+\begin{DoxyCompactList}\small\item\em Deregister a sink or a source. \end{DoxyCompactList}\item 
+\hyperlink{struct_temperature_value}{Temperature\+Value} \hyperlink{class_temperature_diffusion_ad0b5f88a095255ab3b4576b86178a762}{Get\+Temperature} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Public interface to temperature model, returns temperature at x, y. \end{DoxyCompactList}\item 
+void \hyperlink{class_temperature_diffusion_ad957fa5453b088548c14ad50a1d0556b}{Resize} ()
+\begin{DoxyCompactList}\small\item\em Resize Map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Temperature\+Diffusion.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_temperature_diffusion_aa73aa039994d11bcd81249d843638377}\label{class_temperature_diffusion_aa73aa039994d11bcd81249d843638377}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Temperature\+Diffusion()}{TemperatureDiffusion()}}
+{\footnotesize\ttfamily Temperature\+Diffusion.\+Temperature\+Diffusion (\begin{DoxyParamCaption}\item[{\hyperlink{class_world}{World}}]{world }\end{DoxyParamCaption})}
+
+
+
+Create and Initialize arrays with default values. 
+
+
+
+Definition at line 25 of file Temperature\+Diffusion.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_temperature_diffusion_a4e5af68445b339aec17d7bc33b426e47}\label{class_temperature_diffusion_a4e5af68445b339aec17d7bc33b426e47}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Deregister\+Sink\+Or\+Source@{Deregister\+Sink\+Or\+Source}}
+\index{Deregister\+Sink\+Or\+Source@{Deregister\+Sink\+Or\+Source}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Deregister\+Sink\+Or\+Source()}{DeregisterSinkOrSource()}}
+{\footnotesize\ttfamily void Temperature\+Diffusion.\+Deregister\+Sink\+Or\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{provider }\end{DoxyParamCaption})}
+
+
+
+Deregister a sink or a source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & The provider of this change. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Temperature\+Diffusion.\+cs.
+
+\mbox{\Hypertarget{class_temperature_diffusion_ac079af3d36f20c9fea50c79565cd7052}\label{class_temperature_diffusion_ac079af3d36f20c9fea50c79565cd7052}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Fixed\+Frequency@{Fixed\+Frequency}}
+\index{Fixed\+Frequency@{Fixed\+Frequency}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency()}{FixedFrequency()}}
+{\footnotesize\ttfamily void Temperature\+Diffusion.\+Fixed\+Frequency (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+If needed, progress physics. 
+
+
+
+Definition at line 37 of file Temperature\+Diffusion.\+cs.
+
+\mbox{\Hypertarget{class_temperature_diffusion_ad0b5f88a095255ab3b4576b86178a762}\label{class_temperature_diffusion_ad0b5f88a095255ab3b4576b86178a762}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Get\+Temperature@{Get\+Temperature}}
+\index{Get\+Temperature@{Get\+Temperature}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Get\+Temperature()}{GetTemperature()}}
+{\footnotesize\ttfamily \hyperlink{struct_temperature_value}{Temperature\+Value} Temperature\+Diffusion.\+Get\+Temperature (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Public interface to temperature model, returns temperature at x, y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinates.\\
+\hline
+{\em y} & Y coordinates.\\
+\hline
+{\em z} & Z coordinates.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Temperature at x,y,z.
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Temperature\+Diffusion.\+cs.
+
+\mbox{\Hypertarget{class_temperature_diffusion_adddffe95f6243220d7231398e9e1a9df}\label{class_temperature_diffusion_adddffe95f6243220d7231398e9e1a9df}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Register\+Sink\+Or\+Source@{Register\+Sink\+Or\+Source}}
+\index{Register\+Sink\+Or\+Source@{Register\+Sink\+Or\+Source}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Register\+Sink\+Or\+Source()}{RegisterSinkOrSource()}}
+{\footnotesize\ttfamily void Temperature\+Diffusion.\+Register\+Sink\+Or\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{provider }\end{DoxyParamCaption})}
+
+
+
+Register a sink or a source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & The provider of this change. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Temperature\+Diffusion.\+cs.
+
+\mbox{\Hypertarget{class_temperature_diffusion_ad957fa5453b088548c14ad50a1d0556b}\label{class_temperature_diffusion_ad957fa5453b088548c14ad50a1d0556b}} 
+\index{Temperature\+Diffusion@{Temperature\+Diffusion}!Resize@{Resize}}
+\index{Resize@{Resize}!Temperature\+Diffusion@{Temperature\+Diffusion}}
+\subsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void Temperature\+Diffusion.\+Resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resize Map. 
+
+
+
+Definition at line 82 of file Temperature\+Diffusion.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Area/\hyperlink{_temperature_diffusion_8cs}{Temperature\+Diffusion.\+cs}\end{DoxyCompactItemize}

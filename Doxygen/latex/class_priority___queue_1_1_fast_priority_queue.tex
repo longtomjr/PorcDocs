@@ -1,0 +1,284 @@
+\hypertarget{class_priority___queue_1_1_fast_priority_queue}{}\section{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$ Class Template Reference}
+\label{class_priority___queue_1_1_fast_priority_queue}\index{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$@{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$}}
+
+
+An implementation of a min-\/\+Priority Queue using a heap. Has O(1) .\hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Contains()}! See \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Getting-Started}{\tt https\+://github.\+com/\+Blue\+Raja/\+High-\/\+Speed-\/\+Priority-\/\+Queue-\/for-\/\+C-\/\+Sharp/wiki/\+Getting-\/\+Started} for more information  
+
+
+Inheritance diagram for Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_priority___queue_1_1_fast_priority_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_priority___queue_1_1_fast_priority_queue_a9b36491841ecaf15f8253a14a4050e0b}{Fast\+Priority\+Queue} (int max\+Nodes)
+\begin{DoxyCompactList}\small\item\em Instantiate a new Priority Queue \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_fast_priority_queue_a2e6712e62f3f64596884f35d6fec4441}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Removes every node from the queue. O(n) (So, don\textquotesingle{}t do this often!) \end{DoxyCompactList}\item 
+bool \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Contains} (T node)
+\begin{DoxyCompactList}\small\item\em Returns (in O(1)!) whether the given node is in the queue. O(1) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_fast_priority_queue_a9338584620111d3a2f0dc429e197be1a}{Enqueue} (T node, double priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. If the queue is full, the result is undefined. If the node is already enqueued, the result is undefined. O(log n) \end{DoxyCompactList}\item 
+T \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, result is undefined O(log n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_fast_priority_queue_a6e765b7a118ec3c56a092a058ec987c1}{Resize} (int max\+Nodes)
+\begin{DoxyCompactList}\small\item\em Resize the queue so it can accept more nodes. All currently enqueued nodes are remain. Attempting to decrease the queue size to a size too small to hold the existing nodes results in undefined behavior O(n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_fast_priority_queue_a6a264392ba7d522df490170facc1f252}{Update\+Priority} (T node, double priority)
+\begin{DoxyCompactList}\small\item\em This method must be called on a node every time its priority changes while it is in the queue. {\bfseries Forgetting to call this method will result in a corrupted queue!} Calling this method on a node not in the queue results in undefined behavior O(log n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac4b7f14c5114cc676537d80168679698}{Remove} (T node)
+\begin{DoxyCompactList}\small\item\em Removes a node from the queue. The node does not need to be the head of the queue. If the node is not in the queue, the result is undefined. If unsure, check \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Contains()} first O(log n) \end{DoxyCompactList}\item 
+I\+Enumerator$<$ T $>$ \hyperlink{class_priority___queue_1_1_fast_priority_queue_a6bc93c974be3bd97fbce99478a2bca46}{Get\+Enumerator} ()
+\item 
+bool \hyperlink{class_priority___queue_1_1_fast_priority_queue_ae0ac5139a5b545e75808a4173a8777d6}{Is\+Valid\+Queue} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries Should not be called in production code.} Checks to make sure the queue is still in a valid state. Used for testing/debugging the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_priority___queue_1_1_fast_priority_queue_ae439e87d078e219b8bcd8fa59f3b5750}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the queue. O(1) \end{DoxyCompactList}\item 
+int \hyperlink{class_priority___queue_1_1_fast_priority_queue_a1dc8784035e6432aa2851a5251cb72bf}{Max\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the maximum number of items that can be enqueued at once in this queue. Once you hit this number (ie. once Count == Max\+Size), attempting to enqueue another item will cause undefined behavior. O(1) \end{DoxyCompactList}\item 
+T \hyperlink{class_priority___queue_1_1_fast_priority_queue_ada99ea4007e6af6c84660d088bb054fc}{First}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the head of the queue, without removing it (use \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}{Dequeue()} for that). If the queue is empty, behavior is undefined. O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An implementation of a min-\/\+Priority Queue using a heap. Has O(1) .\hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Contains()}! See \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Getting-Started}{\tt https\+://github.\+com/\+Blue\+Raja/\+High-\/\+Speed-\/\+Priority-\/\+Queue-\/for-\/\+C-\/\+Sharp/wiki/\+Getting-\/\+Started} for more information 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The values in the queue. Must extend the Fast\+Priority\+Queue\+Node class\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Fast\+Priority\+Queue\+Node}]\end{description}
+\end{Desc}
+
+
+Definition at line 16 of file Fast\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a9b36491841ecaf15f8253a14a4050e0b}\label{class_priority___queue_1_1_fast_priority_queue_a9b36491841ecaf15f8253a14a4050e0b}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Fast\+Priority\+Queue@{Fast\+Priority\+Queue}}
+\index{Fast\+Priority\+Queue@{Fast\+Priority\+Queue}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Fast\+Priority\+Queue()}{FastPriorityQueue()}}
+{\footnotesize\ttfamily \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.\hyperlink{class_priority___queue_1_1_fast_priority_queue}{Fast\+Priority\+Queue} (\begin{DoxyParamCaption}\item[{int}]{max\+Nodes }\end{DoxyParamCaption})}
+
+
+
+Instantiate a new Priority Queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Nodes} & The max nodes ever allowed to be enqueued (going over this will cause undefined behavior)\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Fast\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a2e6712e62f3f64596884f35d6fec4441}\label{class_priority___queue_1_1_fast_priority_queue_a2e6712e62f3f64596884f35d6fec4441}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Clear@{Clear}}
+\index{Clear@{Clear}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes every node from the queue. O(n) (So, don\textquotesingle{}t do this often!) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a5939e029c023e34d3f70c350f6355823}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 72 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}\label{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Contains@{Contains}}
+\index{Contains@{Contains}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Returns (in O(1)!) whether the given node is in the queue. O(1) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_ac7d7359b5f70bbed350d2fe3135519cf}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 84 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}\label{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily T \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, result is undefined O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 245 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a9338584620111d3a2f0dc429e197be1a}\label{class_priority___queue_1_1_fast_priority_queue_a9338584620111d3a2f0dc429e197be1a}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Enqueue (\begin{DoxyParamCaption}\item[{T}]{node,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. If the queue is full, the result is undefined. If the node is already enqueued, the result is undefined. O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_ab9de1e02c2861409b9ee7ee2b0935840}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 109 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a6bc93c974be3bd97fbce99478a2bca46}\label{class_priority___queue_1_1_fast_priority_queue_a6bc93c974be3bd97fbce99478a2bca46}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator$<$T$>$ \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 392 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ae0ac5139a5b545e75808a4173a8777d6}\label{class_priority___queue_1_1_fast_priority_queue_ae0ac5139a5b545e75808a4173a8777d6}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Is\+Valid\+Queue@{Is\+Valid\+Queue}}
+\index{Is\+Valid\+Queue@{Is\+Valid\+Queue}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Is\+Valid\+Queue()}{IsValidQueue()}}
+{\footnotesize\ttfamily bool \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Is\+Valid\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries Should not be called in production code.} Checks to make sure the queue is still in a valid state. Used for testing/debugging the queue. 
+
+
+
+Definition at line 407 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ac4b7f14c5114cc676537d80168679698}\label{class_priority___queue_1_1_fast_priority_queue_ac4b7f14c5114cc676537d80168679698}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Remove@{Remove}}
+\index{Remove@{Remove}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Removes a node from the queue. The node does not need to be the head of the queue. If the node is not in the queue, the result is undefined. If unsure, check \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac7ed1c55afc22b9f492576675d0651c7}{Contains()} first O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a4140ec265c23d3b230d701a25def6cf9}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 361 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a6e765b7a118ec3c56a092a058ec987c1}\label{class_priority___queue_1_1_fast_priority_queue_a6e765b7a118ec3c56a092a058ec987c1}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Resize@{Resize}}
+\index{Resize@{Resize}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Resize (\begin{DoxyParamCaption}\item[{int}]{max\+Nodes }\end{DoxyParamCaption})}
+
+
+
+Resize the queue so it can accept more nodes. All currently enqueued nodes are remain. Attempting to decrease the queue size to a size too small to hold the existing nodes results in undefined behavior O(n) 
+
+
+
+Definition at line 270 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a6a264392ba7d522df490170facc1f252}\label{class_priority___queue_1_1_fast_priority_queue_a6a264392ba7d522df490170facc1f252}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Update\+Priority@{Update\+Priority}}
+\index{Update\+Priority@{Update\+Priority}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Update\+Priority()}{UpdatePriority()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Update\+Priority (\begin{DoxyParamCaption}\item[{T}]{node,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+This method must be called on a node every time its priority changes while it is in the queue. {\bfseries Forgetting to call this method will result in a corrupted queue!} Calling this method on a node not in the queue results in undefined behavior O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a2f2576faa1974a2266d155addb431db2}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 322 of file Fast\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ae439e87d078e219b8bcd8fa59f3b5750}\label{class_priority___queue_1_1_fast_priority_queue_ae439e87d078e219b8bcd8fa59f3b5750}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Count@{Count}}
+\index{Count@{Count}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the number of nodes in the queue. O(1) 
+
+
+
+Definition at line 46 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_ada99ea4007e6af6c84660d088bb054fc}\label{class_priority___queue_1_1_fast_priority_queue_ada99ea4007e6af6c84660d088bb054fc}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!First@{First}}
+\index{First@{First}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{First}{First}}
+{\footnotesize\ttfamily T \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.First\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the head of the queue, without removing it (use \hyperlink{class_priority___queue_1_1_fast_priority_queue_ac1b1d19f0769e01956cdcb1fbd5f08ac}{Dequeue()} for that). If the queue is empty, behavior is undefined. O(1) 
+
+
+
+Definition at line 299 of file Fast\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_fast_priority_queue_a1dc8784035e6432aa2851a5251cb72bf}\label{class_priority___queue_1_1_fast_priority_queue_a1dc8784035e6432aa2851a5251cb72bf}} 
+\index{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}!Max\+Size@{Max\+Size}}
+\index{Max\+Size@{Max\+Size}!Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Fast\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Max\+Size}{MaxSize}}
+{\footnotesize\ttfamily int \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Priority\+\_\+\+Queue.\+Fast\+Priority\+Queue}$<$ T $>$.Max\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the maximum number of items that can be enqueued at once in this queue. Once you hit this number (ie. once Count == Max\+Size), attempting to enqueue another item will cause undefined behavior. O(1) 
+
+
+
+Definition at line 58 of file Fast\+Priority\+Queue.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utilities/\+Priority\+\_\+\+Queue/\+Priority Queue/\hyperlink{_fast_priority_queue_8cs}{Fast\+Priority\+Queue.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,424 @@
+\hypertarget{class_sound_controller}{}\section{Sound\+Controller Class Reference}
+\label{class_sound_controller}\index{Sound\+Controller@{Sound\+Controller}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Audio\+Channel} \{ \newline
+\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baeb0a191797624dd3a48fa681d3061212}{Audio\+Channel.\+master}, 
+\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba71ff71526d15db86eb50fcac245d183b}{Audio\+Channel.\+UI}, 
+\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1bac5bc36183d001a9c0771d46f7ef922d2}{Audio\+Channel.\+game\+Sounds}, 
+\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baabca7cba75e5a9ff86b1490f32891f82}{Audio\+Channel.\+alerts}, 
+\newline
+\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba18d6769919266cd0bd6cd78aa405d5d0}{Audio\+Channel.\+music}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sound_controller_aaf08d95a3300fb4e53ea2c118f07f821}{Sound\+Controller} (\hyperlink{class_world}{World} world=null)
+\item 
+void \hyperlink{class_sound_controller_ae855044aa3506d706299f79ec8dd48f3}{Update} (float delta\+Time)
+\item 
+void \hyperlink{class_sound_controller_a65991a17e33a3acd09126e63c432dbaa}{On\+Button\+S\+FX} ()
+\item 
+void \hyperlink{class_sound_controller_a0be0abc53e066a8cf60871eb95a861f9}{On\+Furniture\+Created} (\hyperlink{class_furniture}{Furniture} furniture)
+\item 
+void \hyperlink{class_sound_controller_aee57eaa6d86a32274d34c7933a02e911}{On\+Tile\+Type\+Changed} (\hyperlink{class_tile}{Tile} tile\+Data)
+\item 
+void \hyperlink{class_sound_controller_a53aebaef9113caabc4ea73891887efcd}{Play\+Sound} (Sound clip, string chan\+Group=\char`\"{}master\char`\"{}, float freq\+Range=0f, float vol\+Range=0f)
+\begin{DoxyCompactList}\small\item\em Plays the clip at camera\textquotesingle{}s location, on the channel group chan\+Group. Pitch ranges from -\/freq\+Range to +freq\+Range in semitones. Volume ranges from -\/vol\+Range to No change in decibels. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_aa4afe682b4059c5d126a87c7aa2e86de}{Play\+Sound\+At} (Sound clip, \hyperlink{class_tile}{Tile} tile, string chan\+Group=\char`\"{}master\char`\"{}, float freq\+Range=0f, float vol\+Range=0f)
+\begin{DoxyCompactList}\small\item\em Plays the clip at tile\textquotesingle{}s location, on the channel group chan\+Group. Pitch ranges from -\/freq\+Range to +freq\+Range in semitones. Volume ranges from -\/vol\+Range to No change in decibels. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_ab08659ec969cd9613d4b228c8ab1d6e4}{Set\+Audio\+Driver} (int driver\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the driver to the id provided. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_a4b11e23078dd1fb410f3db69f43758ea}{Set\+Audio\+Driver} (string driver\+G\+U\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the driver to the driver with the string G\+U\+ID provided. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_a544d8f6cf926ce1ca11ecbab5418b1e1}{Set\+Audio\+Driver} (System.\+Guid driver\+G\+U\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the driver to the driver with the G\+U\+ID provided. \end{DoxyCompactList}\item 
+int \hyperlink{class_sound_controller_a5722f7a6e1ae91b68d9b01a95ed4aef1}{Get\+Current\+Audio\+Driver} ()
+\begin{DoxyCompactList}\small\item\em Returns the current audio device index. \end{DoxyCompactList}\item 
+\hyperlink{struct_driver_info}{Driver\+Info} \hyperlink{class_sound_controller_ad41461f18e95fd286970ab750416f908}{Get\+Current\+Audio\+Driver\+Info} ()
+\begin{DoxyCompactList}\small\item\em Returns information on the current driver. \end{DoxyCompactList}\item 
+\hyperlink{struct_driver_info}{Driver\+Info} \hyperlink{class_sound_controller_a86f6ca86566a727bc20e43427b6c329e}{Get\+Driver\+Info} (int id)
+\begin{DoxyCompactList}\small\item\em Gets driver information on the provided index. \end{DoxyCompactList}\item 
+int \hyperlink{class_sound_controller_a24de360abb2e93bcf2b220163b1ec2c2}{Get\+Driver\+Count} ()
+\begin{DoxyCompactList}\small\item\em Returns the total driver count. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_a8a3c0c2beb23a2908db39d9414aac1e8}{Set\+Listener\+Position} (Vector3 new\+Position)
+\begin{DoxyCompactList}\small\item\em Sets the listener position. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_a02a53f22822d6e4adf9c3e21ee9e62ee}{Set\+Listener\+Position} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Sets the listener position. \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_controller_a96c4764ba53323ca7136a04423e19b59}{Set\+Volume} (\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Audio\+Channel} channel, float volume)
+\item 
+void \hyperlink{class_sound_controller_a07ee1ed4defecdd71d576c3349ccbc4c}{Set\+Volume} (string channel, float volume)
+\item 
+float \hyperlink{class_sound_controller_acfb82e2e50283a3298a8b70250830072}{Get\+Volume} (\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Audio\+Channel} channel)
+\item 
+float \hyperlink{class_sound_controller_aeaf20fc1bf450d878339868631689441}{Get\+Volume} (string channel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 43 of file Sound\+Controller.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}} 
+\index{Sound\+Controller@{Sound\+Controller}!Audio\+Channel@{Audio\+Channel}}
+\index{Audio\+Channel@{Audio\+Channel}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Audio\+Channel}{AudioChannel}}
+{\footnotesize\ttfamily enum \hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Sound\+Controller.\+Audio\+Channel}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{master@{master}!Sound\+Controller@{Sound\+Controller}}\index{Sound\+Controller@{Sound\+Controller}!master@{master}}}\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baeb0a191797624dd3a48fa681d3061212}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baeb0a191797624dd3a48fa681d3061212}} 
+master&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UI@{UI}!Sound\+Controller@{Sound\+Controller}}\index{Sound\+Controller@{Sound\+Controller}!UI@{UI}}}\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba71ff71526d15db86eb50fcac245d183b}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba71ff71526d15db86eb50fcac245d183b}} 
+UI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{game\+Sounds@{game\+Sounds}!Sound\+Controller@{Sound\+Controller}}\index{Sound\+Controller@{Sound\+Controller}!game\+Sounds@{game\+Sounds}}}\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1bac5bc36183d001a9c0771d46f7ef922d2}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1bac5bc36183d001a9c0771d46f7ef922d2}} 
+game\+Sounds&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{alerts@{alerts}!Sound\+Controller@{Sound\+Controller}}\index{Sound\+Controller@{Sound\+Controller}!alerts@{alerts}}}\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baabca7cba75e5a9ff86b1490f32891f82}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1baabca7cba75e5a9ff86b1490f32891f82}} 
+alerts&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{music@{music}!Sound\+Controller@{Sound\+Controller}}\index{Sound\+Controller@{Sound\+Controller}!music@{music}}}\mbox{\Hypertarget{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba18d6769919266cd0bd6cd78aa405d5d0}\label{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1ba18d6769919266cd0bd6cd78aa405d5d0}} 
+music&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 67 of file Sound\+Controller.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sound_controller_aaf08d95a3300fb4e53ea2c118f07f821}\label{class_sound_controller_aaf08d95a3300fb4e53ea2c118f07f821}} 
+\index{Sound\+Controller@{Sound\+Controller}!Sound\+Controller@{Sound\+Controller}}
+\index{Sound\+Controller@{Sound\+Controller}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Sound\+Controller()}{SoundController()}}
+{\footnotesize\ttfamily Sound\+Controller.\+Sound\+Controller (\begin{DoxyParamCaption}\item[{\hyperlink{class_world}{World}}]{world = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file Sound\+Controller.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sound_controller_a5722f7a6e1ae91b68d9b01a95ed4aef1}\label{class_sound_controller_a5722f7a6e1ae91b68d9b01a95ed4aef1}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Current\+Audio\+Driver@{Get\+Current\+Audio\+Driver}}
+\index{Get\+Current\+Audio\+Driver@{Get\+Current\+Audio\+Driver}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Current\+Audio\+Driver()}{GetCurrentAudioDriver()}}
+{\footnotesize\ttfamily int Sound\+Controller.\+Get\+Current\+Audio\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current audio device index. 
+
+\begin{DoxyReturn}{Returns}
+The index of the current audio device. 
+\end{DoxyReturn}
+
+
+Definition at line 220 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_ad41461f18e95fd286970ab750416f908}\label{class_sound_controller_ad41461f18e95fd286970ab750416f908}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Current\+Audio\+Driver\+Info@{Get\+Current\+Audio\+Driver\+Info}}
+\index{Get\+Current\+Audio\+Driver\+Info@{Get\+Current\+Audio\+Driver\+Info}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Current\+Audio\+Driver\+Info()}{GetCurrentAudioDriverInfo()}}
+{\footnotesize\ttfamily \hyperlink{struct_driver_info}{Driver\+Info} Sound\+Controller.\+Get\+Current\+Audio\+Driver\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns information on the current driver. 
+
+\begin{DoxyReturn}{Returns}
+Information covering index, name, G\+U\+ID, and other information \hyperlink{struct_driver_info}{Driver\+Info}. 
+\end{DoxyReturn}
+
+
+Definition at line 231 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a24de360abb2e93bcf2b220163b1ec2c2}\label{class_sound_controller_a24de360abb2e93bcf2b220163b1ec2c2}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Driver\+Count@{Get\+Driver\+Count}}
+\index{Get\+Driver\+Count@{Get\+Driver\+Count}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Driver\+Count()}{GetDriverCount()}}
+{\footnotesize\ttfamily int Sound\+Controller.\+Get\+Driver\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total driver count. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the total count of all audio drivers. 
+\end{DoxyReturn}
+
+
+Definition at line 252 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a86f6ca86566a727bc20e43427b6c329e}\label{class_sound_controller_a86f6ca86566a727bc20e43427b6c329e}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Driver\+Info@{Get\+Driver\+Info}}
+\index{Get\+Driver\+Info@{Get\+Driver\+Info}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Driver\+Info()}{GetDriverInfo()}}
+{\footnotesize\ttfamily \hyperlink{struct_driver_info}{Driver\+Info} Sound\+Controller.\+Get\+Driver\+Info (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets driver information on the provided index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The index in question. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Information covering index, name, G\+U\+ID, and other information \hyperlink{struct_driver_info}{Driver\+Info}. 
+\end{DoxyReturn}
+
+
+Definition at line 243 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_acfb82e2e50283a3298a8b70250830072}\label{class_sound_controller_acfb82e2e50283a3298a8b70250830072}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Volume@{Get\+Volume}}
+\index{Get\+Volume@{Get\+Volume}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Volume()}{GetVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Sound\+Controller.\+Get\+Volume (\begin{DoxyParamCaption}\item[{\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Audio\+Channel}}]{channel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 301 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_aeaf20fc1bf450d878339868631689441}\label{class_sound_controller_aeaf20fc1bf450d878339868631689441}} 
+\index{Sound\+Controller@{Sound\+Controller}!Get\+Volume@{Get\+Volume}}
+\index{Get\+Volume@{Get\+Volume}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Volume()}{GetVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Sound\+Controller.\+Get\+Volume (\begin{DoxyParamCaption}\item[{string}]{channel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 306 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a65991a17e33a3acd09126e63c432dbaa}\label{class_sound_controller_a65991a17e33a3acd09126e63c432dbaa}} 
+\index{Sound\+Controller@{Sound\+Controller}!On\+Button\+S\+FX@{On\+Button\+S\+FX}}
+\index{On\+Button\+S\+FX@{On\+Button\+S\+FX}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{On\+Button\+S\+F\+X()}{OnButtonSFX()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+On\+Button\+S\+FX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 85 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a0be0abc53e066a8cf60871eb95a861f9}\label{class_sound_controller_a0be0abc53e066a8cf60871eb95a861f9}} 
+\index{Sound\+Controller@{Sound\+Controller}!On\+Furniture\+Created@{On\+Furniture\+Created}}
+\index{On\+Furniture\+Created@{On\+Furniture\+Created}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{On\+Furniture\+Created()}{OnFurnitureCreated()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+On\+Furniture\+Created (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{furniture }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_aee57eaa6d86a32274d34c7933a02e911}\label{class_sound_controller_aee57eaa6d86a32274d34c7933a02e911}} 
+\index{Sound\+Controller@{Sound\+Controller}!On\+Tile\+Type\+Changed@{On\+Tile\+Type\+Changed}}
+\index{On\+Tile\+Type\+Changed@{On\+Tile\+Type\+Changed}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{On\+Tile\+Type\+Changed()}{OnTileTypeChanged()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+On\+Tile\+Type\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a53aebaef9113caabc4ea73891887efcd}\label{class_sound_controller_a53aebaef9113caabc4ea73891887efcd}} 
+\index{Sound\+Controller@{Sound\+Controller}!Play\+Sound@{Play\+Sound}}
+\index{Play\+Sound@{Play\+Sound}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Play\+Sound()}{PlaySound()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Play\+Sound (\begin{DoxyParamCaption}\item[{Sound}]{clip,  }\item[{string}]{chan\+Group = {\ttfamily \char`\"{}master\char`\"{}},  }\item[{float}]{freq\+Range = {\ttfamily 0f},  }\item[{float}]{vol\+Range = {\ttfamily 0f} }\end{DoxyParamCaption})}
+
+
+
+Plays the clip at camera\textquotesingle{}s location, on the channel group chan\+Group. Pitch ranges from -\/freq\+Range to +freq\+Range in semitones. Volume ranges from -\/vol\+Range to No change in decibels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Sound to Play.\\
+\hline
+{\em chan\+Group} & Chan group to play the sound on.\\
+\hline
+{\em freq\+Range} & Frequency range in semitones.\\
+\hline
+{\em vol\+Range} & Volume range in decibels.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 129 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_aa4afe682b4059c5d126a87c7aa2e86de}\label{class_sound_controller_aa4afe682b4059c5d126a87c7aa2e86de}} 
+\index{Sound\+Controller@{Sound\+Controller}!Play\+Sound\+At@{Play\+Sound\+At}}
+\index{Play\+Sound\+At@{Play\+Sound\+At}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Play\+Sound\+At()}{PlaySoundAt()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Play\+Sound\+At (\begin{DoxyParamCaption}\item[{Sound}]{clip,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{string}]{chan\+Group = {\ttfamily \char`\"{}master\char`\"{}},  }\item[{float}]{freq\+Range = {\ttfamily 0f},  }\item[{float}]{vol\+Range = {\ttfamily 0f} }\end{DoxyParamCaption})}
+
+
+
+Plays the clip at tile\textquotesingle{}s location, on the channel group chan\+Group. Pitch ranges from -\/freq\+Range to +freq\+Range in semitones. Volume ranges from -\/vol\+Range to No change in decibels. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Sound to Play.\\
+\hline
+{\em tile} & \hyperlink{class_tile}{Tile}\textquotesingle{}s location to play at. If null, plays at camera\textquotesingle{}s position.\\
+\hline
+{\em chan\+Group} & Chan group to play the sound on.\\
+\hline
+{\em freq\+Range} & Frequency range in semitones.\\
+\hline
+{\em vol\+Range} & Volume range in decibels.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_ab08659ec969cd9613d4b228c8ab1d6e4}\label{class_sound_controller_ab08659ec969cd9613d4b228c8ab1d6e4}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Audio\+Driver@{Set\+Audio\+Driver}}
+\index{Set\+Audio\+Driver@{Set\+Audio\+Driver}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Audio\+Driver()}{SetAudioDriver()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Audio\+Driver (\begin{DoxyParamCaption}\item[{int}]{driver\+ID }\end{DoxyParamCaption})}
+
+
+
+Sets the driver to the id provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em driver\+ID} & Driver ID in question. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a4b11e23078dd1fb410f3db69f43758ea}\label{class_sound_controller_a4b11e23078dd1fb410f3db69f43758ea}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Audio\+Driver@{Set\+Audio\+Driver}}
+\index{Set\+Audio\+Driver@{Set\+Audio\+Driver}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Audio\+Driver()}{SetAudioDriver()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Audio\+Driver (\begin{DoxyParamCaption}\item[{string}]{driver\+G\+U\+ID }\end{DoxyParamCaption})}
+
+
+
+Sets the driver to the driver with the string G\+U\+ID provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em driver\+G\+U\+ID} & Driver string G\+U\+ID in question. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 195 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a544d8f6cf926ce1ca11ecbab5418b1e1}\label{class_sound_controller_a544d8f6cf926ce1ca11ecbab5418b1e1}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Audio\+Driver@{Set\+Audio\+Driver}}
+\index{Set\+Audio\+Driver@{Set\+Audio\+Driver}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Audio\+Driver()}{SetAudioDriver()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Audio\+Driver (\begin{DoxyParamCaption}\item[{System.\+Guid}]{driver\+G\+U\+ID }\end{DoxyParamCaption})}
+
+
+
+Sets the driver to the driver with the G\+U\+ID provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em driver\+G\+U\+ID} & Driver G\+U\+ID in question. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 211 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a8a3c0c2beb23a2908db39d9414aac1e8}\label{class_sound_controller_a8a3c0c2beb23a2908db39d9414aac1e8}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Listener\+Position@{Set\+Listener\+Position}}
+\index{Set\+Listener\+Position@{Set\+Listener\+Position}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Listener\+Position()}{SetListenerPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Listener\+Position (\begin{DoxyParamCaption}\item[{Vector3}]{new\+Position }\end{DoxyParamCaption})}
+
+
+
+Sets the listener position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Position} & New position for the listener.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 263 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a02a53f22822d6e4adf9c3e21ee9e62ee}\label{class_sound_controller_a02a53f22822d6e4adf9c3e21ee9e62ee}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Listener\+Position@{Set\+Listener\+Position}}
+\index{Set\+Listener\+Position@{Set\+Listener\+Position}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Listener\+Position()}{SetListenerPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Listener\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Sets the listener position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate.\\
+\hline
+{\em y} & The y coordinate.\\
+\hline
+{\em z} & The z coordinate.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 274 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a96c4764ba53323ca7136a04423e19b59}\label{class_sound_controller_a96c4764ba53323ca7136a04423e19b59}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Volume@{Set\+Volume}}
+\index{Set\+Volume@{Set\+Volume}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Volume()}{SetVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Volume (\begin{DoxyParamCaption}\item[{\hyperlink{class_sound_controller_a1decb27e541146cfadf5becf24e5fa1b}{Audio\+Channel}}]{channel,  }\item[{float}]{volume }\end{DoxyParamCaption})}
+
+
+
+Definition at line 284 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_a07ee1ed4defecdd71d576c3349ccbc4c}\label{class_sound_controller_a07ee1ed4defecdd71d576c3349ccbc4c}} 
+\index{Sound\+Controller@{Sound\+Controller}!Set\+Volume@{Set\+Volume}}
+\index{Set\+Volume@{Set\+Volume}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Volume()}{SetVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Set\+Volume (\begin{DoxyParamCaption}\item[{string}]{channel,  }\item[{float}]{volume }\end{DoxyParamCaption})}
+
+
+
+Definition at line 289 of file Sound\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_sound_controller_ae855044aa3506d706299f79ec8dd48f3}\label{class_sound_controller_ae855044aa3506d706299f79ec8dd48f3}} 
+\index{Sound\+Controller@{Sound\+Controller}!Update@{Update}}
+\index{Update@{Update}!Sound\+Controller@{Sound\+Controller}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sound\+Controller.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file Sound\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Controllers/\+Input\+Output/\hyperlink{_sound_controller_8cs}{Sound\+Controller.\+cs}\end{DoxyCompactItemize}

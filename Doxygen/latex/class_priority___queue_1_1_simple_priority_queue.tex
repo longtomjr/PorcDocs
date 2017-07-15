@@ -1,0 +1,223 @@
+\hypertarget{class_priority___queue_1_1_simple_priority_queue}{}\section{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$ Class Template Reference}
+\label{class_priority___queue_1_1_simple_priority_queue}\index{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$@{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$}}
+Inheritance diagram for Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_priority___queue_1_1_simple_priority_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_priority___queue_1_1_simple_priority_queue_a4f0f5f2a811fdda31dedffffbaf6407f}{Simple\+Priority\+Queue} ()
+\item 
+void \hyperlink{class_priority___queue_1_1_simple_priority_queue_a23b62d7c0a813de7136c48396f2e936c}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Removes every node from the queue. O(n) \end{DoxyCompactList}\item 
+bool \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}{Contains} (T item)
+\begin{DoxyCompactList}\small\item\em Returns whether the given item is in the queue. O(n) \end{DoxyCompactList}\item 
+T \hyperlink{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, throws an exception O(log n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7f24aa70888f2509f9ec9f714619a075}{Enqueue} (T item, double priority)
+\begin{DoxyCompactList}\small\item\em Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Duplicates are allowed. O(log n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_simple_priority_queue_a16f1802e80604982bd76fef639f271e8}{Remove} (T item)
+\begin{DoxyCompactList}\small\item\em Removes an item from the queue. The item does not need to be the head of the queue. If the item is not in the queue, an exception is thrown. If unsure, check \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}{Contains()} first. If multiple copies of the item are enqueued, only the first one is removed. O(n) \end{DoxyCompactList}\item 
+void \hyperlink{class_priority___queue_1_1_simple_priority_queue_a90988345298443d824db48ae0fa35f2f}{Update\+Priority} (T item, double priority)
+\begin{DoxyCompactList}\small\item\em Call this method to change the priority of an item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). O(n) \end{DoxyCompactList}\item 
+I\+Enumerator$<$ T $>$ \hyperlink{class_priority___queue_1_1_simple_priority_queue_ab045d436a8cc1b85d4cb8d37f6f33b58}{Get\+Enumerator} ()
+\item 
+bool \hyperlink{class_priority___queue_1_1_simple_priority_queue_a98351afbd0dfa324b0be7806f1e17aa7}{Is\+Valid\+Queue} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_priority___queue_1_1_simple_priority_queue_a366f0a020200ba48e64afe8064ef014c}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the queue. O(1) \end{DoxyCompactList}\item 
+T \hyperlink{class_priority___queue_1_1_simple_priority_queue_ab8d3592674c629038086a006069bb9dd}{First}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the head of the queue, without removing it (use \hyperlink{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}{Dequeue()} for that). Throws an exception when the queue is empty. O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Simple\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a4f0f5f2a811fdda31dedffffbaf6407f}\label{class_priority___queue_1_1_simple_priority_queue_a4f0f5f2a811fdda31dedffffbaf6407f}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Simple\+Priority\+Queue@{Simple\+Priority\+Queue}}
+\index{Simple\+Priority\+Queue@{Simple\+Priority\+Queue}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Simple\+Priority\+Queue()}{SimplePriorityQueue()}}
+{\footnotesize\ttfamily \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.\hyperlink{class_priority___queue_1_1_simple_priority_queue}{Simple\+Priority\+Queue} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Simple\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a23b62d7c0a813de7136c48396f2e936c}\label{class_priority___queue_1_1_simple_priority_queue_a23b62d7c0a813de7136c48396f2e936c}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Clear@{Clear}}
+\index{Clear@{Clear}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes every node from the queue. O(n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a5939e029c023e34d3f70c350f6355823}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 86 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}\label{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Contains@{Contains}}
+\index{Contains@{Contains}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Returns whether the given item is in the queue. O(n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_ac7d7359b5f70bbed350d2fe3135519cf}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 98 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}\label{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily T \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the head of the queue (node with minimum priority; ties are broken by order of insertion), and returns it. If queue is empty, throws an exception O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_af5f9d687732841a773b3b0d332402b7b}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 119 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a7f24aa70888f2509f9ec9f714619a075}\label{class_priority___queue_1_1_simple_priority_queue_a7f24aa70888f2509f9ec9f714619a075}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Enqueue (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+Enqueue a node to the priority queue. Lower values are placed in front. Ties are broken by first-\/in-\/first-\/out. This queue automatically resizes itself, so there\textquotesingle{}s no concern of the queue becoming \textquotesingle{}full\textquotesingle{}. Duplicates are allowed. O(log n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_ab9de1e02c2861409b9ee7ee2b0935840}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 139 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_ab045d436a8cc1b85d4cb8d37f6f33b58}\label{class_priority___queue_1_1_simple_priority_queue_ab045d436a8cc1b85d4cb8d37f6f33b58}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator$<$T$>$ \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 197 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a98351afbd0dfa324b0be7806f1e17aa7}\label{class_priority___queue_1_1_simple_priority_queue_a98351afbd0dfa324b0be7806f1e17aa7}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Is\+Valid\+Queue@{Is\+Valid\+Queue}}
+\index{Is\+Valid\+Queue@{Is\+Valid\+Queue}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Is\+Valid\+Queue()}{IsValidQueue()}}
+{\footnotesize\ttfamily bool \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Is\+Valid\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 217 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a16f1802e80604982bd76fef639f271e8}\label{class_priority___queue_1_1_simple_priority_queue_a16f1802e80604982bd76fef639f271e8}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Remove@{Remove}}
+\index{Remove@{Remove}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Removes an item from the queue. The item does not need to be the head of the queue. If the item is not in the queue, an exception is thrown. If unsure, check \hyperlink{class_priority___queue_1_1_simple_priority_queue_a7c557aba4037622190880b129a0ee7dd}{Contains()} first. If multiple copies of the item are enqueued, only the first one is removed. O(n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a4140ec265c23d3b230d701a25def6cf9}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 158 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a90988345298443d824db48ae0fa35f2f}\label{class_priority___queue_1_1_simple_priority_queue_a90988345298443d824db48ae0fa35f2f}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Update\+Priority@{Update\+Priority}}
+\index{Update\+Priority@{Update\+Priority}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Update\+Priority()}{UpdatePriority()}}
+{\footnotesize\ttfamily void \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Update\+Priority (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{double}]{priority }\end{DoxyParamCaption})}
+
+
+
+Call this method to change the priority of an item. Calling this method on a item not in the queue will throw an exception. If the item is enqueued multiple times, only the first one will be updated. (If your requirements are complex enough that you need to enqueue the same item multiple times {\itshape and} be able to update all of them, please wrap your items in a wrapper class so they can be distinguished). O(n) 
+
+
+
+Implements \hyperlink{interface_priority___queue_1_1_i_priority_queue_a2f2576faa1974a2266d155addb431db2}{Priority\+\_\+\+Queue.\+I\+Priority\+Queue$<$ T $>$}.
+
+
+
+Definition at line 181 of file Simple\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_a366f0a020200ba48e64afe8064ef014c}\label{class_priority___queue_1_1_simple_priority_queue_a366f0a020200ba48e64afe8064ef014c}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!Count@{Count}}
+\index{Count@{Count}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the number of nodes in the queue. O(1) 
+
+
+
+Definition at line 49 of file Simple\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_priority___queue_1_1_simple_priority_queue_ab8d3592674c629038086a006069bb9dd}\label{class_priority___queue_1_1_simple_priority_queue_ab8d3592674c629038086a006069bb9dd}} 
+\index{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}!First@{First}}
+\index{First@{First}!Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue@{Priority\+\_\+\+Queue\+::\+Simple\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{First}{First}}
+{\footnotesize\ttfamily T \hyperlink{class_priority___queue_1_1_simple_priority_queue}{Priority\+\_\+\+Queue.\+Simple\+Priority\+Queue}$<$ T $>$.First\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the head of the queue, without removing it (use \hyperlink{class_priority___queue_1_1_simple_priority_queue_ad17b59ab99b074c9f697fee41b7583c3}{Dequeue()} for that). Throws an exception when the queue is empty. O(1) 
+
+
+
+Definition at line 66 of file Simple\+Priority\+Queue.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utilities/\+Priority\+\_\+\+Queue/\+Priority Queue/\hyperlink{_simple_priority_queue_8cs}{Simple\+Priority\+Queue.\+cs}\end{DoxyCompactItemize}

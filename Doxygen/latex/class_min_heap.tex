@@ -1,0 +1,178 @@
+\hypertarget{class_min_heap}{}\section{Min\+Heap$<$ T $>$ Class Template Reference}
+\label{class_min_heap}\index{Min\+Heap$<$ T $>$@{Min\+Heap$<$ T $>$}}
+Inheritance diagram for Min\+Heap$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_min_heap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_min_heap_ab12d943d2ccb65fcd4f22a803467ee75}{Min\+Heap} ()
+\item 
+\hyperlink{class_min_heap_a6cb34313b0c8c233f9a0cf84e1eaad69}{Min\+Heap} (I\+Comparer$<$ T $>$ comp)
+\item 
+void \hyperlink{class_min_heap_a3d6a33a214d775e6973f2e02f95cf993}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Removes all items from the collection. \end{DoxyCompactList}\item 
+void \hyperlink{class_min_heap_a95d3f69823be576087b028d2e24300de}{Trim\+Excess} ()
+\begin{DoxyCompactList}\small\item\em Sets the capacity to the actual number of elements in the Binary\+Heap, if that number is less than a threshold value. \end{DoxyCompactList}\item 
+void \hyperlink{class_min_heap_a666a64f363294fca2bf96e0b92fcd755}{Insert} (T new\+Item)
+\begin{DoxyCompactList}\small\item\em Inserts an item onto the heap. \end{DoxyCompactList}\item 
+T \hyperlink{class_min_heap_a3c2b5871fae13d0765170d7f369b7ebe}{Peek} ()
+\begin{DoxyCompactList}\small\item\em Return the root item from the collection, without removing it. \end{DoxyCompactList}\item 
+T \hyperlink{class_min_heap_a67896572158c4db45e5d65739335639f}{Remove\+Root} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the root item from the collection. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_min_heap_a37ff412300c1e588a2aeac794ba9a5a4}{Get\+Enumerator} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_min_heap_af0e0aa9be4131a317e7a54c86e5aebc9}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple pooling for Unity. Author\+: Benjamin Ward (\href{mailto:ward.programm3r@gmail.com}{\tt ward.\+programm3r@gmail.\+com}) Latest Version\+: \href{https://gist.github.com/WardBenjamin/991dfa64e94892924b67efe569e35050}{\tt https\+://gist.\+github.\+com/\+Ward\+Benjamin/991dfa64e94892924b67efe569e35050} License\+: C\+C0 (\href{http://creativecommons.org/publicdomain/zero/1.0/}{\tt http\+://creativecommons.\+org/publicdomain/zero/1.\+0/}) U\+P\+D\+A\+T\+ES\+: N/A 8/31/16 -\/ Fixed according to \hyperlink{namespace_project_porcupine}{Project\+Porcupine} Style\+Cop settings \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em class}]\item[{\em T} : {\em I\+Comparable$<$T$>$}]\end{description}
+\end{Desc}
+
+
+Definition at line 19 of file Min\+Heap.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_min_heap_ab12d943d2ccb65fcd4f22a803467ee75}\label{class_min_heap_ab12d943d2ccb65fcd4f22a803467ee75}} 
+\index{Min\+Heap@{Min\+Heap}!Min\+Heap@{Min\+Heap}}
+\index{Min\+Heap@{Min\+Heap}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Min\+Heap()}{MinHeap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.\hyperlink{class_min_heap}{Min\+Heap} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a6cb34313b0c8c233f9a0cf84e1eaad69}\label{class_min_heap_a6cb34313b0c8c233f9a0cf84e1eaad69}} 
+\index{Min\+Heap@{Min\+Heap}!Min\+Heap@{Min\+Heap}}
+\index{Min\+Heap@{Min\+Heap}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Min\+Heap()}{MinHeap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.\hyperlink{class_min_heap}{Min\+Heap} (\begin{DoxyParamCaption}\item[{I\+Comparer$<$ T $>$}]{comp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Min\+Heap.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_min_heap_a3d6a33a214d775e6973f2e02f95cf993}\label{class_min_heap_a3d6a33a214d775e6973f2e02f95cf993}} 
+\index{Min\+Heap@{Min\+Heap}!Clear@{Clear}}
+\index{Clear@{Clear}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes all items from the collection. 
+
+
+
+Definition at line 55 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a37ff412300c1e588a2aeac794ba9a5a4}\label{class_min_heap_a37ff412300c1e588a2aeac794ba9a5a4}} 
+\index{Min\+Heap@{Min\+Heap}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a666a64f363294fca2bf96e0b92fcd755}\label{class_min_heap_a666a64f363294fca2bf96e0b92fcd755}} 
+\index{Min\+Heap@{Min\+Heap}!Insert@{Insert}}
+\index{Insert@{Insert}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{T}]{new\+Item }\end{DoxyParamCaption})}
+
+
+
+Inserts an item onto the heap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Item} & The item to be inserted.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a3c2b5871fae13d0765170d7f369b7ebe}\label{class_min_heap_a3c2b5871fae13d0765170d7f369b7ebe}} 
+\index{Min\+Heap@{Min\+Heap}!Peek@{Peek}}
+\index{Peek@{Peek}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily T \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the root item from the collection, without removing it. 
+
+\begin{DoxyReturn}{Returns}
+Returns the item at the root of the heap.
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a67896572158c4db45e5d65739335639f}\label{class_min_heap_a67896572158c4db45e5d65739335639f}} 
+\index{Min\+Heap@{Min\+Heap}!Remove\+Root@{Remove\+Root}}
+\index{Remove\+Root@{Remove\+Root}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Remove\+Root()}{RemoveRoot()}}
+{\footnotesize\ttfamily T \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Remove\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes and returns the root item from the collection. 
+
+\begin{DoxyReturn}{Returns}
+Returns the item at the root of the heap.
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Min\+Heap.\+cs.
+
+\mbox{\Hypertarget{class_min_heap_a95d3f69823be576087b028d2e24300de}\label{class_min_heap_a95d3f69823be576087b028d2e24300de}} 
+\index{Min\+Heap@{Min\+Heap}!Trim\+Excess@{Trim\+Excess}}
+\index{Trim\+Excess@{Trim\+Excess}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Trim\+Excess()}{TrimExcess()}}
+{\footnotesize\ttfamily void \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Trim\+Excess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the capacity to the actual number of elements in the Binary\+Heap, if that number is less than a threshold value. 
+
+The current threshold value is 90\% (.N\+ET 3.\+5), but might change in a future release. 
+
+Definition at line 67 of file Min\+Heap.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_min_heap_af0e0aa9be4131a317e7a54c86e5aebc9}\label{class_min_heap_af0e0aa9be4131a317e7a54c86e5aebc9}} 
+\index{Min\+Heap@{Min\+Heap}!Count@{Count}}
+\index{Count@{Count}!Min\+Heap@{Min\+Heap}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{class_min_heap}{Min\+Heap}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 44 of file Min\+Heap.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utilities/\hyperlink{_min_heap_8cs}{Min\+Heap.\+cs}\end{DoxyCompactItemize}

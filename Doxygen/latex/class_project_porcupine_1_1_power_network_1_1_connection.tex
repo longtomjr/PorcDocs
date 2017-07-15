@@ -1,0 +1,281 @@
+\hypertarget{class_project_porcupine_1_1_power_network_1_1_connection}{}\section{Project\+Porcupine.\+Power\+Network.\+Connection Class Reference}
+\label{class_project_porcupine_1_1_power_network_1_1_connection}\index{Project\+Porcupine.\+Power\+Network.\+Connection@{Project\+Porcupine.\+Power\+Network.\+Connection}}
+
+
+Represents connection to electric grid if furniture has connection specified it uses of produce power.  
+
+
+Inheritance diagram for Project\+Porcupine.\+Power\+Network.\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_project_porcupine_1_1_power_network_1_1_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_ad3278a48cfb6938feae85814bf0c709b}{Reconnect} ()
+\item 
+Xml\+Schema \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a94acb5c7ed80636afb3e6c441b134971}{Get\+Schema} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_aea6a9f9e413484f24a19c378f74a3500}{Read\+Xml} (Xml\+Reader reader)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a934d1ff2b1af409c86f2308407d0f039}{Read\+Prototype} (Xml\+Reader reader)
+\item 
+void \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a153d19836727ecfd020d674b5a915d82}{Write\+Xml} (Xml\+Writer writer)
+\item 
+\hyperlink{class_project_porcupine_1_1_power_network_1_1_connection}{Connection} \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a7696b642ee26d86d3f11aa940cc9588b}{Clone} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_acfe6d4414e5325fcf2c307a5194954ad}{Input\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of power consumed by this connection per Tick of system Accumulator\+: rate of charge. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a35c52a9733ec8f930195689f21958ca6}{Output\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of power produced by this connection per Tick of system Accumulator\+: rate of discharge. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_af4314a4bdbe686214f9bb754344dce62}{Capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accumulator only\+: amount of power that could be stored. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a34c8831e5821882648e5860d48ffde63}{Accumulated\+Power}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accumulator only\+: amount of power that is stored. \end{DoxyCompactList}\item 
+int \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a17d14e72394292e340bffac74493aa99}{Current\+Threshold}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Currently reached capacity threshold in \%. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a9737ff8f986dcc0fe5024f67f2480a9d}{Is\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a091f2e21670d40da2ea9ec6a5bebb14a}{Is\+Full}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a8e1c69413d62941c0e2a4fdfb7c723e9}{Is\+Power\+Producer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_aefd8b6bf19a51d5473d823efa6554b90}{Is\+Power\+Consumer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a68feabe639d89f15ac88faed4bb61c2c}{Is\+Power\+Accumulator}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection}{Connection} $>$ \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_acde68b5f3865d31e1ecb66a49edab51a}{New\+Threshold\+Reached}
+\item 
+Action \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection_a71ac81543bd631d64e28455bf799599d}{Reconnecting}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents connection to electric grid if furniture has connection specified it uses of produce power. 
+
+
+
+Definition at line 22 of file Connection.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a7696b642ee26d86d3f11aa940cc9588b}\label{class_project_porcupine_1_1_power_network_1_1_connection_a7696b642ee26d86d3f11aa940cc9588b}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Clone@{Clone}}
+\index{Clone@{Clone}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_power_network_1_1_connection}{Connection} Project\+Porcupine.\+Power\+Network.\+Connection.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a94acb5c7ed80636afb3e6c441b134971}\label{class_project_porcupine_1_1_power_network_1_1_connection_a94acb5c7ed80636afb3e6c441b134971}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Get\+Schema@{Get\+Schema}}
+\index{Get\+Schema@{Get\+Schema}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Get\+Schema()}{GetSchema()}}
+{\footnotesize\ttfamily Xml\+Schema Project\+Porcupine.\+Power\+Network.\+Connection.\+Get\+Schema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a934d1ff2b1af409c86f2308407d0f039}\label{class_project_porcupine_1_1_power_network_1_1_connection_a934d1ff2b1af409c86f2308407d0f039}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Read\+Prototype@{Read\+Prototype}}
+\index{Read\+Prototype@{Read\+Prototype}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Read\+Prototype()}{ReadPrototype()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Connection.\+Read\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_aea6a9f9e413484f24a19c378f74a3500}\label{class_project_porcupine_1_1_power_network_1_1_connection_aea6a9f9e413484f24a19c378f74a3500}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Read\+Xml@{Read\+Xml}}
+\index{Read\+Xml@{Read\+Xml}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Read\+Xml()}{ReadXml()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Connection.\+Read\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_ad3278a48cfb6938feae85814bf0c709b}\label{class_project_porcupine_1_1_power_network_1_1_connection_ad3278a48cfb6938feae85814bf0c709b}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Reconnect@{Reconnect}}
+\index{Reconnect@{Reconnect}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Reconnect()}{Reconnect()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Connection.\+Reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a153d19836727ecfd020d674b5a915d82}\label{class_project_porcupine_1_1_power_network_1_1_connection_a153d19836727ecfd020d674b5a915d82}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Write\+Xml@{Write\+Xml}}
+\index{Write\+Xml@{Write\+Xml}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Write\+Xml()}{WriteXml()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+Connection.\+Write\+Xml (\begin{DoxyParamCaption}\item[{Xml\+Writer}]{writer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 139 of file Connection.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a34c8831e5821882648e5860d48ffde63}\label{class_project_porcupine_1_1_power_network_1_1_connection_a34c8831e5821882648e5860d48ffde63}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Accumulated\+Power@{Accumulated\+Power}}
+\index{Accumulated\+Power@{Accumulated\+Power}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Accumulated\+Power}{AccumulatedPower}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+Connection.\+Accumulated\+Power\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Accumulator only\+: amount of power that is stored. 
+
+
+
+Definition at line 59 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_af4314a4bdbe686214f9bb754344dce62}\label{class_project_porcupine_1_1_power_network_1_1_connection_af4314a4bdbe686214f9bb754344dce62}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Capacity}{Capacity}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+Connection.\+Capacity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Accumulator only\+: amount of power that could be stored. 
+
+
+
+Definition at line 53 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a17d14e72394292e340bffac74493aa99}\label{class_project_porcupine_1_1_power_network_1_1_connection_a17d14e72394292e340bffac74493aa99}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Current\+Threshold@{Current\+Threshold}}
+\index{Current\+Threshold@{Current\+Threshold}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Current\+Threshold}{CurrentThreshold}}
+{\footnotesize\ttfamily int Project\+Porcupine.\+Power\+Network.\+Connection.\+Current\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Currently reached capacity threshold in \%. 
+
+
+
+Definition at line 84 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_acfe6d4414e5325fcf2c307a5194954ad}\label{class_project_porcupine_1_1_power_network_1_1_connection_acfe6d4414e5325fcf2c307a5194954ad}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Input\+Rate@{Input\+Rate}}
+\index{Input\+Rate@{Input\+Rate}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Input\+Rate}{InputRate}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+Connection.\+Input\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of power consumed by this connection per Tick of system Accumulator\+: rate of charge. 
+
+
+
+Definition at line 42 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a9737ff8f986dcc0fe5024f67f2480a9d}\label{class_project_porcupine_1_1_power_network_1_1_connection_a9737ff8f986dcc0fe5024f67f2480a9d}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Is\+Empty}{IsEmpty}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Connection.\+Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 87 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a091f2e21670d40da2ea9ec6a5bebb14a}\label{class_project_porcupine_1_1_power_network_1_1_connection_a091f2e21670d40da2ea9ec6a5bebb14a}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Is\+Full@{Is\+Full}}
+\index{Is\+Full@{Is\+Full}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Is\+Full}{IsFull}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Connection.\+Is\+Full\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 92 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a68feabe639d89f15ac88faed4bb61c2c}\label{class_project_porcupine_1_1_power_network_1_1_connection_a68feabe639d89f15ac88faed4bb61c2c}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Is\+Power\+Accumulator@{Is\+Power\+Accumulator}}
+\index{Is\+Power\+Accumulator@{Is\+Power\+Accumulator}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Is\+Power\+Accumulator}{IsPowerAccumulator}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Connection.\+Is\+Power\+Accumulator\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 107 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_aefd8b6bf19a51d5473d823efa6554b90}\label{class_project_porcupine_1_1_power_network_1_1_connection_aefd8b6bf19a51d5473d823efa6554b90}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Is\+Power\+Consumer@{Is\+Power\+Consumer}}
+\index{Is\+Power\+Consumer@{Is\+Power\+Consumer}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Is\+Power\+Consumer}{IsPowerConsumer}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Connection.\+Is\+Power\+Consumer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 102 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a8e1c69413d62941c0e2a4fdfb7c723e9}\label{class_project_porcupine_1_1_power_network_1_1_connection_a8e1c69413d62941c0e2a4fdfb7c723e9}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Is\+Power\+Producer@{Is\+Power\+Producer}}
+\index{Is\+Power\+Producer@{Is\+Power\+Producer}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Is\+Power\+Producer}{IsPowerProducer}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+Connection.\+Is\+Power\+Producer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 97 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a35c52a9733ec8f930195689f21958ca6}\label{class_project_porcupine_1_1_power_network_1_1_connection_a35c52a9733ec8f930195689f21958ca6}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Output\+Rate@{Output\+Rate}}
+\index{Output\+Rate@{Output\+Rate}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Output\+Rate}{OutputRate}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+Connection.\+Output\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of power produced by this connection per Tick of system Accumulator\+: rate of discharge. 
+
+
+
+Definition at line 48 of file Connection.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_acde68b5f3865d31e1ecb66a49edab51a}\label{class_project_porcupine_1_1_power_network_1_1_connection_acde68b5f3865d31e1ecb66a49edab51a}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!New\+Threshold\+Reached@{New\+Threshold\+Reached}}
+\index{New\+Threshold\+Reached@{New\+Threshold\+Reached}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{New\+Threshold\+Reached}{NewThresholdReached}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_power_network_1_1_connection}{Connection}$>$ Project\+Porcupine.\+Power\+Network.\+Connection.\+New\+Threshold\+Reached}
+
+
+
+Definition at line 34 of file Connection.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_power_network_1_1_connection_a71ac81543bd631d64e28455bf799599d}\label{class_project_porcupine_1_1_power_network_1_1_connection_a71ac81543bd631d64e28455bf799599d}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}!Reconnecting@{Reconnecting}}
+\index{Reconnecting@{Reconnecting}!Project\+Porcupine\+::\+Power\+Network\+::\+Connection@{Project\+Porcupine\+::\+Power\+Network\+::\+Connection}}
+\subsubsection{\texorpdfstring{Reconnecting}{Reconnecting}}
+{\footnotesize\ttfamily Action Project\+Porcupine.\+Power\+Network.\+Connection.\+Reconnecting}
+
+
+
+Definition at line 36 of file Connection.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utility\+Network/\hyperlink{_connection_8cs}{Connection.\+cs}\end{DoxyCompactItemize}

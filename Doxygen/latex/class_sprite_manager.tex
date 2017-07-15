@@ -1,0 +1,146 @@
+\hypertarget{class_sprite_manager}{}\section{Sprite\+Manager Class Reference}
+\label{class_sprite_manager}\index{Sprite\+Manager@{Sprite\+Manager}}
+
+
+Sprite Manager isn\textquotesingle{}t responsible for actually creating Game\+Objects. That is going to be the job of the individual \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+Sprite\+Controller scripts. Our job is simply to load all sprites from disk and keep the organized.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sprite_manager_a2bd7ba7f252b047b5c606a89e7a27d01}{Sprite\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_sprite_manager}{Sprite\+Manager} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Sprite \hyperlink{class_sprite_manager_a726f293c39df8c71073dfae36c8ac9ec}{Get\+Sprite} (string category\+Name, string sprite\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the sprite for the given category and name. \end{DoxyCompactList}\item 
+static Sprite \hyperlink{class_sprite_manager_afad870a040301dad12012508ed1f4fa4}{Get\+Random\+Sprite} (string category\+Name)
+\begin{DoxyCompactList}\small\item\em Gets a random sprite from a category. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_sprite_manager_a1eed6966816d35c500887cc0094b6b26}{Has\+Sprite} (string category\+Name, string sprite\+Name)
+\begin{DoxyCompactList}\small\item\em Determines if there is a sprite with the specified category and name. \end{DoxyCompactList}\item 
+static void \hyperlink{class_sprite_manager_aa42d46dc8725b403f8c0d54830209e35}{Load\+Sprite\+Files} (string directory\+Path)
+\begin{DoxyCompactList}\small\item\em Loads the sprites from the given directory path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sprite Manager isn\textquotesingle{}t responsible for actually creating Game\+Objects. That is going to be the job of the individual \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+\_\+\+Sprite\+Controller scripts. Our job is simply to load all sprites from disk and keep the organized. 
+
+
+
+Definition at line 20 of file Sprite\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_manager_a2bd7ba7f252b047b5c606a89e7a27d01}\label{class_sprite_manager_a2bd7ba7f252b047b5c606a89e7a27d01}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Sprite\+Manager@{Sprite\+Manager}}
+\index{Sprite\+Manager@{Sprite\+Manager}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Sprite\+Manager()}{SpriteManager()}}
+{\footnotesize\ttfamily Sprite\+Manager.\+Sprite\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_sprite_manager}{Sprite\+Manager} class. 
+
+
+
+Definition at line 33 of file Sprite\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_manager_afad870a040301dad12012508ed1f4fa4}\label{class_sprite_manager_afad870a040301dad12012508ed1f4fa4}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Random\+Sprite@{Get\+Random\+Sprite}}
+\index{Get\+Random\+Sprite@{Get\+Random\+Sprite}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Random\+Sprite()}{GetRandomSprite()}}
+{\footnotesize\ttfamily static Sprite Sprite\+Manager.\+Get\+Random\+Sprite (\begin{DoxyParamCaption}\item[{string}]{category\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a random sprite from a category. 
+
+\begin{DoxyReturn}{Returns}
+The sprite.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Name} & Category name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Sprite\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_sprite_manager_a726f293c39df8c71073dfae36c8ac9ec}\label{class_sprite_manager_a726f293c39df8c71073dfae36c8ac9ec}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Get\+Sprite@{Get\+Sprite}}
+\index{Get\+Sprite@{Get\+Sprite}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sprite()}{GetSprite()}}
+{\footnotesize\ttfamily static Sprite Sprite\+Manager.\+Get\+Sprite (\begin{DoxyParamCaption}\item[{string}]{category\+Name,  }\item[{string}]{sprite\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the sprite for the given category and name. 
+
+\begin{DoxyReturn}{Returns}
+The sprite.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Name} & Category name.\\
+\hline
+{\em sprite\+Name} & Sprite name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Sprite\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_sprite_manager_a1eed6966816d35c500887cc0094b6b26}\label{class_sprite_manager_a1eed6966816d35c500887cc0094b6b26}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Has\+Sprite@{Has\+Sprite}}
+\index{Has\+Sprite@{Has\+Sprite}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Has\+Sprite()}{HasSprite()}}
+{\footnotesize\ttfamily static bool Sprite\+Manager.\+Has\+Sprite (\begin{DoxyParamCaption}\item[{string}]{category\+Name,  }\item[{string}]{sprite\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines if there is a sprite with the specified category and name. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if there is a sprite with the specified category and name; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Name} & Category name.\\
+\hline
+{\em sprite\+Name} & Sprite name.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file Sprite\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_sprite_manager_aa42d46dc8725b403f8c0d54830209e35}\label{class_sprite_manager_aa42d46dc8725b403f8c0d54830209e35}} 
+\index{Sprite\+Manager@{Sprite\+Manager}!Load\+Sprite\+Files@{Load\+Sprite\+Files}}
+\index{Load\+Sprite\+Files@{Load\+Sprite\+Files}!Sprite\+Manager@{Sprite\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Sprite\+Files()}{LoadSpriteFiles()}}
+{\footnotesize\ttfamily static void Sprite\+Manager.\+Load\+Sprite\+Files (\begin{DoxyParamCaption}\item[{string}]{directory\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the sprites from the given directory path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory\+Path} & Directory path.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Sprite\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Input\+Output/\hyperlink{_sprite_manager_8cs}{Sprite\+Manager.\+cs}\end{DoxyCompactItemize}

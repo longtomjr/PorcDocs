@@ -1,0 +1,179 @@
+\hypertarget{class_currency}{}\section{Currency Class Reference}
+\label{class_currency}\index{Currency@{Currency}}
+Inheritance diagram for Currency\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_currency}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_currency_a647aa77f24ecbb8e4258047be6aa6b0a}{Currency} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_currency}{Currency} class. Empty constructor to implement \hyperlink{interface_i_prototypable}{I\+Prototypable}, should not be used. \end{DoxyCompactList}\item 
+\hyperlink{class_currency_ace384f1ac7187d836be9829284b75dbe}{Currency} (\hyperlink{class_currency}{Currency} other)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_currency}{Currency} class. Copy constructor. Use Clone instead. \end{DoxyCompactList}\item 
+\hyperlink{class_currency}{Currency} \hyperlink{class_currency_addd39e17adc2603bf12c600e23db9884}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Clone this instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_currency_a353f4810761ac68141a62c78fa248fc4}{Read\+Xml\+Prototype} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_currency_a6fe7cdb92b7359c5cf462d0691d69e2c}{Balance} = 0f
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_currency_af25e54090a6fab6786b2b9d2f8fe6cce}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the currency name. \end{DoxyCompactList}\item 
+string \hyperlink{class_currency_aa2f1e1430344046b312382646060b317}{Short\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the currency short name. \end{DoxyCompactList}\item 
+string \hyperlink{class_currency_a82124a13331b4eddafdc7f5b7bf20a51}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the currency type. Used for the prototype map and is equal to the name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Currency.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_currency_a647aa77f24ecbb8e4258047be6aa6b0a}\label{class_currency_a647aa77f24ecbb8e4258047be6aa6b0a}} 
+\index{Currency@{Currency}!Currency@{Currency}}
+\index{Currency@{Currency}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Currency()}{Currency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Currency.\+Currency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_currency}{Currency} class. Empty constructor to implement \hyperlink{interface_i_prototypable}{I\+Prototypable}, should not be used. 
+
+
+
+Definition at line 19 of file Currency.\+cs.
+
+\mbox{\Hypertarget{class_currency_ace384f1ac7187d836be9829284b75dbe}\label{class_currency_ace384f1ac7187d836be9829284b75dbe}} 
+\index{Currency@{Currency}!Currency@{Currency}}
+\index{Currency@{Currency}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Currency()}{Currency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Currency.\+Currency (\begin{DoxyParamCaption}\item[{\hyperlink{class_currency}{Currency}}]{other }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_currency}{Currency} class. Copy constructor. Use Clone instead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The currency to copy.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Currency.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_currency_addd39e17adc2603bf12c600e23db9884}\label{class_currency_addd39e17adc2603bf12c600e23db9884}} 
+\index{Currency@{Currency}!Clone@{Clone}}
+\index{Clone@{Clone}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_currency}{Currency} Currency.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone this instance. 
+
+
+
+Definition at line 58 of file Currency.\+cs.
+
+\mbox{\Hypertarget{class_currency_a353f4810761ac68141a62c78fa248fc4}\label{class_currency_a353f4810761ac68141a62c78fa248fc4}} 
+\index{Currency@{Currency}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Currency.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The Xml reader.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 67 of file Currency.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_currency_a6fe7cdb92b7359c5cf462d0691d69e2c}\label{class_currency_a6fe7cdb92b7359c5cf462d0691d69e2c}} 
+\index{Currency@{Currency}!Balance@{Balance}}
+\index{Balance@{Balance}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Balance}{Balance}}
+{\footnotesize\ttfamily float Currency.\+Balance = 0f}
+
+
+
+Definition at line 13 of file Currency.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_currency_af25e54090a6fab6786b2b9d2f8fe6cce}\label{class_currency_af25e54090a6fab6786b2b9d2f8fe6cce}} 
+\index{Currency@{Currency}!Name@{Name}}
+\index{Name@{Name}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Currency.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the currency name. 
+
+The currency name.
+
+Definition at line 38 of file Currency.\+cs.
+
+\mbox{\Hypertarget{class_currency_aa2f1e1430344046b312382646060b317}\label{class_currency_aa2f1e1430344046b312382646060b317}} 
+\index{Currency@{Currency}!Short\+Name@{Short\+Name}}
+\index{Short\+Name@{Short\+Name}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Short\+Name}{ShortName}}
+{\footnotesize\ttfamily string Currency.\+Short\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the currency short name. 
+
+The currency short name.
+
+Definition at line 44 of file Currency.\+cs.
+
+\mbox{\Hypertarget{class_currency_a82124a13331b4eddafdc7f5b7bf20a51}\label{class_currency_a82124a13331b4eddafdc7f5b7bf20a51}} 
+\index{Currency@{Currency}!Type@{Type}}
+\index{Type@{Type}!Currency@{Currency}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Currency.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the currency type. Used for the prototype map and is equal to the name. 
+
+The currency type/name.
+
+Definition at line 51 of file Currency.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Trade/\hyperlink{_currency_8cs}{Currency.\+cs}\end{DoxyCompactItemize}

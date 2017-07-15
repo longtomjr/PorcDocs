@@ -1,0 +1,258 @@
+\hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}{}\section{Project\+Porcupine.\+Power\+Network.\+I\+Pluggable Interface Reference}
+\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}\index{Project\+Porcupine.\+Power\+Network.\+I\+Pluggable@{Project\+Porcupine.\+Power\+Network.\+I\+Pluggable}}
+Inheritance diagram for Project\+Porcupine.\+Power\+Network.\+I\+Pluggable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.595442cm]{interface_project_porcupine_1_1_power_network_1_1_i_pluggable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aa18de95686be030b51cbf97051244e8d}{Reconnect} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a2104d12e5ea3ed72ce3669796e316f2f}{Input\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_ac76f57338ac45b07767b2b7b0c0d753b}{Output\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a67e3a78d88cff6c3acbd325470df9c0e}{Is\+Producer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a6172375ec2bd9e9fff27e2bf473768eb}{Is\+Consumer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a587730e025deacad93e123fabd843f18}{Is\+Storage}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aca743981d867fa52724789f173423fdd}{Stored\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7f0e7629842b31fefa2441882905ff6e}{Storage\+Capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_afd86c274f58dedf0bedde9323bf97c55}{Is\+Full}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a25866d4a15e5ea81c628ed74ffcbf4d1}{Is\+Empty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a5d4ca8ed761e31947af44b8a52b1ed48}{Utility\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a8071775f37d8a2503bffac8c0319864b}{Sub\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a62c15aa91b21f585fd6e8002c7c764cb}{Input\+Can\+Vary}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Input can be less than 100\% for machine to work -\/ efficiency. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7491aa53d81d7e614c22cca2274c60b7}{Output\+Can\+Vary}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Output varies depending on other conditions (fuel present, ... ). Output on demand. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a249477e8f058a146480c85807fdef875}{Output\+Is\+Needed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em To inform component that its output is needed. \end{DoxyCompactList}\item 
+bool \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a81caa152d37029ff758c5713162e69d7}{All\+Requirements\+Fulfilled}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Flag to inform Pluggable system if can work -\/ all conditions met (fuel present, ... ). Used in combination with Output\+Can\+Vary (Input\+Can\+Vary) and Output\+Is\+Needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action \hyperlink{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a33495abbf6449fa7f0dfef592160eebd}{Reconnecting}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file I\+Pluggable.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aa18de95686be030b51cbf97051244e8d}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aa18de95686be030b51cbf97051244e8d}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Reconnect@{Reconnect}}
+\index{Reconnect@{Reconnect}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Reconnect()}{Reconnect()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_af47c0e03299fbbbd9e95faf63d2a1f32}{Project\+Porcupine.\+Buildable.\+Components.\+Power\+Connection}, and \hyperlink{class_project_porcupine_1_1_buildable_1_1_components_1_1_fluid_connection_a0c7aa227db4d28fd8552631ed4cf89c5}{Project\+Porcupine.\+Buildable.\+Components.\+Fluid\+Connection}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a81caa152d37029ff758c5713162e69d7}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a81caa152d37029ff758c5713162e69d7}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!All\+Requirements\+Fulfilled@{All\+Requirements\+Fulfilled}}
+\index{All\+Requirements\+Fulfilled@{All\+Requirements\+Fulfilled}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{All\+Requirements\+Fulfilled}{AllRequirementsFulfilled}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+All\+Requirements\+Fulfilled\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Flag to inform Pluggable system if can work -\/ all conditions met (fuel present, ... ). Used in combination with Output\+Can\+Vary (Input\+Can\+Vary) and Output\+Is\+Needed. 
+
+
+
+Definition at line 60 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a62c15aa91b21f585fd6e8002c7c764cb}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a62c15aa91b21f585fd6e8002c7c764cb}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Input\+Can\+Vary@{Input\+Can\+Vary}}
+\index{Input\+Can\+Vary@{Input\+Can\+Vary}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Input\+Can\+Vary}{InputCanVary}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Input\+Can\+Vary\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Input can be less than 100\% for machine to work -\/ efficiency. 
+
+
+
+Definition at line 43 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a2104d12e5ea3ed72ce3669796e316f2f}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a2104d12e5ea3ed72ce3669796e316f2f}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Input\+Rate@{Input\+Rate}}
+\index{Input\+Rate@{Input\+Rate}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Input\+Rate}{InputRate}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Input\+Rate\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 18 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a6172375ec2bd9e9fff27e2bf473768eb}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a6172375ec2bd9e9fff27e2bf473768eb}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Is\+Consumer@{Is\+Consumer}}
+\index{Is\+Consumer@{Is\+Consumer}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Is\+Consumer}{IsConsumer}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Is\+Consumer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 24 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a25866d4a15e5ea81c628ed74ffcbf4d1}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a25866d4a15e5ea81c628ed74ffcbf4d1}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Is\+Empty@{Is\+Empty}}
+\index{Is\+Empty@{Is\+Empty}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Is\+Empty}{IsEmpty}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Is\+Empty\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 34 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_afd86c274f58dedf0bedde9323bf97c55}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_afd86c274f58dedf0bedde9323bf97c55}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Is\+Full@{Is\+Full}}
+\index{Is\+Full@{Is\+Full}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Is\+Full}{IsFull}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Is\+Full\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 32 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a67e3a78d88cff6c3acbd325470df9c0e}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a67e3a78d88cff6c3acbd325470df9c0e}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Is\+Producer@{Is\+Producer}}
+\index{Is\+Producer@{Is\+Producer}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Is\+Producer}{IsProducer}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Is\+Producer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 22 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a587730e025deacad93e123fabd843f18}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a587730e025deacad93e123fabd843f18}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Is\+Storage@{Is\+Storage}}
+\index{Is\+Storage@{Is\+Storage}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Is\+Storage}{IsStorage}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Is\+Storage\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 26 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7491aa53d81d7e614c22cca2274c60b7}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7491aa53d81d7e614c22cca2274c60b7}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Output\+Can\+Vary@{Output\+Can\+Vary}}
+\index{Output\+Can\+Vary@{Output\+Can\+Vary}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Output\+Can\+Vary}{OutputCanVary}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Output\+Can\+Vary\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Output varies depending on other conditions (fuel present, ... ). Output on demand. 
+
+
+
+Definition at line 49 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a249477e8f058a146480c85807fdef875}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a249477e8f058a146480c85807fdef875}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Output\+Is\+Needed@{Output\+Is\+Needed}}
+\index{Output\+Is\+Needed@{Output\+Is\+Needed}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Output\+Is\+Needed}{OutputIsNeeded}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Output\+Is\+Needed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+To inform component that its output is needed. 
+
+
+
+Definition at line 54 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_ac76f57338ac45b07767b2b7b0c0d753b}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_ac76f57338ac45b07767b2b7b0c0d753b}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Output\+Rate@{Output\+Rate}}
+\index{Output\+Rate@{Output\+Rate}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Output\+Rate}{OutputRate}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Output\+Rate\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 20 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7f0e7629842b31fefa2441882905ff6e}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a7f0e7629842b31fefa2441882905ff6e}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Storage\+Capacity@{Storage\+Capacity}}
+\index{Storage\+Capacity@{Storage\+Capacity}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Storage\+Capacity}{StorageCapacity}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Storage\+Capacity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 30 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aca743981d867fa52724789f173423fdd}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_aca743981d867fa52724789f173423fdd}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Stored\+Amount@{Stored\+Amount}}
+\index{Stored\+Amount@{Stored\+Amount}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Stored\+Amount}{StoredAmount}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Stored\+Amount\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 28 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a8071775f37d8a2503bffac8c0319864b}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a8071775f37d8a2503bffac8c0319864b}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Sub\+Type@{Sub\+Type}}
+\index{Sub\+Type@{Sub\+Type}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Sub\+Type}{SubType}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Sub\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 38 of file I\+Pluggable.\+cs.
+
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a5d4ca8ed761e31947af44b8a52b1ed48}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a5d4ca8ed761e31947af44b8a52b1ed48}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Utility\+Type@{Utility\+Type}}
+\index{Utility\+Type@{Utility\+Type}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Utility\+Type}{UtilityType}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Utility\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 36 of file I\+Pluggable.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a33495abbf6449fa7f0dfef592160eebd}\label{interface_project_porcupine_1_1_power_network_1_1_i_pluggable_a33495abbf6449fa7f0dfef592160eebd}} 
+\index{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}!Reconnecting@{Reconnecting}}
+\index{Reconnecting@{Reconnecting}!Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable@{Project\+Porcupine\+::\+Power\+Network\+::\+I\+Pluggable}}
+\subsubsection{\texorpdfstring{Reconnecting}{Reconnecting}}
+{\footnotesize\ttfamily Action Project\+Porcupine.\+Power\+Network.\+I\+Pluggable.\+Reconnecting}
+
+
+
+Definition at line 16 of file I\+Pluggable.\+cs.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Utility\+Network/\hyperlink{_i_pluggable_8cs}{I\+Pluggable.\+cs}\end{DoxyCompactItemize}

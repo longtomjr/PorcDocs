@@ -1,0 +1,31 @@
+\subsubsection*{Features}
+
+
+\begin{DoxyItemize}
+\item Faster (for path-\/finding, at least) than any other C\# priority queue out there!
+\item Easy to use
+\item No dependencies on third-\/party libraries
+\item Free for both personal and commercial use
+\item Implements {\ttfamily I\+Enumerable$<$T$>$} for L\+I\+NQ support!
+\item Fully unit-\/tested
+\item Is a {\bfseries stable priority queue} -\/ that is, if two items are are enqueued with the same priority, they\textquotesingle{}ll be dequeued in the same order they were enqueued
+\item Takes advantage of the new \href{http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimploptions%28v=vs.110%29.aspx}{\tt forced inline support} when compiling under .Net 4.\+5, for even faster speeds
+\item Published to \href{https://www.nuget.org/packages/OptimizedPriorityQueue/}{\tt Nu\+Get} -\/ can \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Getting-Started}{\tt easily be added to any project}
+\item Should work on .Net versions as old as .Net 2.\+0
+\end{DoxyItemize}
+
+\subsubsection*{Is this software free?}
+
+{\bfseries Yes!} See the \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/License}{\tt license page} for more details.
+
+\subsubsection*{Getting Started}
+
+This project contains two priority queue implementations -\/ one that\textquotesingle{}s super-\/fast \+\_\+(without thread-\/safety, safety checks, etc)\+\_\+, and one that\textquotesingle{}s easy/safe to use.
+
+See the \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Getting-Started}{\tt Getting Started} page, or decide what type of queue you want\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Using-the-SimplePriorityQueue}{\tt I want a Priority\+Queue that\textquotesingle{}s easy to use}
+\item \href{https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sharp/wiki/Using-the-FastPriorityQueue}{\tt I want a Priority\+Queue that\textquotesingle{}s as {\itshape fast} as possible} 
+\end{DoxyItemize}

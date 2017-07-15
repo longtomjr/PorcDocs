@@ -1,0 +1,188 @@
+\hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{}\section{Project\+Porcupine.\+Entities.\+States.\+State Class Reference}
+\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state}\index{Project\+Porcupine.\+Entities.\+States.\+State@{Project\+Porcupine.\+Entities.\+States.\+State}}
+Inheritance diagram for Project\+Porcupine.\+Entities.\+States.\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.707071cm]{class_project_porcupine_1_1_entities_1_1_states_1_1_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ad7d3195ae32a038f76b90d9b2af8a204}{State} (string name, \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a0647dd5dacc8fba22b1c462c954180c7}{character}, \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{State} next\+State)
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a1e1ee50555cfa4eb75d52876015b54c1}{Enter} ()
+\item 
+abstract void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a46337df73c448f5dd84e350e987af8b5}{Update} (float delta\+Time)
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_aed1e6db379e98e447596fc72a69eec0c}{Exit} ()
+\item 
+virtual void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a82fba061891136da0cc359c54337d0be}{Interrupt} ()
+\item 
+override string \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_adf4aa7bccea2bb293c960a38450664a6}{To\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a2a2356d04d252973b4631b11531e6218}{Finished} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a47d4b5ed4e9de5c42eefdf39830fd665}{Debug\+Log} (string message, params object\mbox{[}$\,$\mbox{]} par)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a0647dd5dacc8fba22b1c462c954180c7}{character}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a6f88eac7c687ff082d5eff3d8a3b5b36}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{State} \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ac86f35a38df13f9c426ea32265b8455a}{Next\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file State.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ad7d3195ae32a038f76b90d9b2af8a204}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ad7d3195ae32a038f76b90d9b2af8a204}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!State@{State}}
+\index{State@{State}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+States.\+State.\+State (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}}]{character,  }\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{State}}]{next\+State }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file State.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a47d4b5ed4e9de5c42eefdf39830fd665}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a47d4b5ed4e9de5c42eefdf39830fd665}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Debug\+Log@{Debug\+Log}}
+\index{Debug\+Log@{Debug\+Log}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Debug\+Log()}{DebugLog()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+States.\+State.\+Debug\+Log (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{par }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 64 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a1e1ee50555cfa4eb75d52876015b54c1}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a1e1ee50555cfa4eb75d52876015b54c1}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Enter@{Enter}}
+\index{Enter@{Enter}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Entities.\+States.\+State.\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_move_state_ae2cbe17dbccd0db23e01f7734a0f7b8f}{Project\+Porcupine.\+Entities.\+States.\+Move\+State}.
+
+
+
+Definition at line 28 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_aed1e6db379e98e447596fc72a69eec0c}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_aed1e6db379e98e447596fc72a69eec0c}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Exit@{Exit}}
+\index{Exit@{Exit}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Entities.\+States.\+State.\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_move_state_a5b379c83e83f2db29c338f0babc3994e}{Project\+Porcupine.\+Entities.\+States.\+Move\+State}.
+
+
+
+Definition at line 35 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a2a2356d04d252973b4631b11531e6218}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a2a2356d04d252973b4631b11531e6218}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Finished@{Finished}}
+\index{Finished@{Finished}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Finished()}{Finished()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+States.\+State.\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a82fba061891136da0cc359c54337d0be}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a82fba061891136da0cc359c54337d0be}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Interrupt@{Interrupt}}
+\index{Interrupt@{Interrupt}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Interrupt()}{Interrupt()}}
+{\footnotesize\ttfamily virtual void Project\+Porcupine.\+Entities.\+States.\+State.\+Interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_move_state_a875221e1914193146fc96d1fc5a3ac59}{Project\+Porcupine.\+Entities.\+States.\+Move\+State}, and \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_job_state_a538f6ddf6987df25b399324840ae3354}{Project\+Porcupine.\+Entities.\+States.\+Job\+State}.
+
+
+
+Definition at line 40 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_adf4aa7bccea2bb293c960a38450664a6}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_adf4aa7bccea2bb293c960a38450664a6}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Project\+Porcupine.\+Entities.\+States.\+State.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a46337df73c448f5dd84e350e987af8b5}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a46337df73c448f5dd84e350e987af8b5}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Update@{Update}}
+\index{Update@{Update}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily abstract void Project\+Porcupine.\+Entities.\+States.\+State.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_haul_state_a67ae03ea7f3d877eb04c86e8594cb09f}{Project\+Porcupine.\+Entities.\+States.\+Haul\+State}, \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_move_state_ab808623899b7a874f6bf6689ebca7def}{Project\+Porcupine.\+Entities.\+States.\+Move\+State}, \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_job_state_a78be509101aa1172cdac8b0dd90b8412}{Project\+Porcupine.\+Entities.\+States.\+Job\+State}, \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_idle_state_acb8508997e5c56a5da15c054a4b691a3}{Project\+Porcupine.\+Entities.\+States.\+Idle\+State}, \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_dump_state_a77dc842baa81adec1ae155cdb4c3cf07}{Project\+Porcupine.\+Entities.\+States.\+Dump\+State}, and \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_need_state_a7719ba9d0ec106d384cb84f40e89b885}{Project\+Porcupine.\+Entities.\+States.\+Need\+State}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a0647dd5dacc8fba22b1c462c954180c7}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a0647dd5dacc8fba22b1c462c954180c7}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!character@{character}}
+\index{character@{character}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{character}{character}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} Project\+Porcupine.\+Entities.\+States.\+State.\+character\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 15 of file State.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a6f88eac7c687ff082d5eff3d8a3b5b36}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_a6f88eac7c687ff082d5eff3d8a3b5b36}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Name@{Name}}
+\index{Name@{Name}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+States.\+State.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 24 of file State.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ac86f35a38df13f9c426ea32265b8455a}\label{class_project_porcupine_1_1_entities_1_1_states_1_1_state_ac86f35a38df13f9c426ea32265b8455a}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}!Next\+State@{Next\+State}}
+\index{Next\+State@{Next\+State}!Project\+Porcupine\+::\+Entities\+::\+States\+::\+State@{Project\+Porcupine\+::\+Entities\+::\+States\+::\+State}}
+\subsubsection{\texorpdfstring{Next\+State}{NextState}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{State} Project\+Porcupine.\+Entities.\+States.\+State.\+Next\+State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Definition at line 26 of file State.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+State/\hyperlink{_state_8cs}{State.\+cs}\end{DoxyCompactItemize}

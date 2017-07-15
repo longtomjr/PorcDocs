@@ -1,0 +1,37 @@
+\hypertarget{_character_animation_8cs}{}\section{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Animation/\+Character\+Animation.cs File Reference}
+\label{_character_animation_8cs}\index{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Animation/\+Character\+Animation.\+cs@{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Animation/\+Character\+Animation.\+cs}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_animation_1_1_character_animation}{Animation.\+Character\+Animation}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_animation_1_1_character_animation}{Character\+Animation} gets reference to character, and should be able to figure out which animation to play, by looking at character Facing and Is\+Moving. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_animation}{Animation}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8}{Animation.\+Animation\+Type} \{ \newline
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a5a4d804b0bce2ce1de5202116c40528f}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+N\+O\+R\+TH} = 0, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a7ec95007a57fbd8d6f86f9eba6a33099}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+E\+A\+ST} = 1, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a1d3f039db369a017815d763d47457c5c}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+S\+O\+U\+TH} = 2, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8aaf92740000ea30730f97266307900001}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+W\+E\+ST} = 3, 
+\newline
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8ac816b064af0a54a2870157f6d2854162}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+N\+O\+R\+TH} = 10, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a105b5490dfcabd26c5e687256799a25e}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+E\+A\+ST} = 11, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8aaa9ef32f599657198a34b0dae322164d}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+S\+O\+U\+TH} = 12, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a15e06bce789d8b3f93f034c3957f16f0}{Animation.\+Animation\+Type.\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+W\+E\+ST} = 13, 
+\newline
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a9a27fdde63aa46519177ab9fe96b6904}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+N\+O\+R\+TH} = 100, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a6f8c57d3ad86355939e864a404ec4704}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+E\+A\+ST} = 101, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a9551bb6960d4228b2c44a5b443119cd8}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+S\+O\+U\+TH} = 102, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a78ab90b231a0b3e34bfd918ca3808788}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+I\+D\+L\+E\+\_\+\+W\+E\+ST} = 103, 
+\newline
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8afde8f2fb4e0206c69d1af1d8ff1d863c}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+N\+O\+R\+TH} = 110, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8a6c4452fdc5bad5cf1a894f47591e119c}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+E\+A\+ST} = 111, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8acdf12d13d9fbdaacb8bba0888530ee6a}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+S\+O\+U\+TH} = 112, 
+\hyperlink{namespace_animation_a2088578945c96e9b64b66bd44b2c57c8aaa37ffff954ae11f7733d53d4d7d60a2}{Animation.\+Animation\+Type.\+N\+O\+H\+E\+L\+M\+E\+T\+\_\+\+W\+A\+L\+K\+\_\+\+W\+E\+ST} = 113
+ \}
+\end{DoxyCompactItemize}

@@ -1,0 +1,383 @@
+\hypertarget{class_buildable_jobs}{}\section{Buildable\+Jobs Class Reference}
+\label{class_buildable_jobs}\index{Buildable\+Jobs@{Buildable\+Jobs}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_buildable_jobs_adae8130157e0004cd6cf62275698c81f}{Buildable\+Jobs} (\hyperlink{interface_i_buildable}{I\+Buildable} build\+Entity)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_buildable_jobs}{Buildable\+Jobs} class. \end{DoxyCompactList}\item 
+\hyperlink{class_buildable_jobs_a0039b45683227d612bb6a917cbc3b42d}{Buildable\+Jobs} (\hyperlink{interface_i_buildable}{I\+Buildable} build\+Entity, \hyperlink{class_buildable_jobs}{Buildable\+Jobs} jobs)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_buildable_jobs}{Buildable\+Jobs} class by copying some of the values from another instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_a1d1403862cca825858202843fbee4b74}{Read\+Work\+Spot\+Offset} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the job work spot offset from the xml. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_afdf239ec2f81f9156844d271abe99cba}{Read\+Input\+Spot\+Offset} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the input spot offset from the xml. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_a555d096b725e42460648535bfc9bec63}{Read\+Output\+Spot\+Offset} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the output spot offset from the xml. \end{DoxyCompactList}\item 
+bool \hyperlink{class_buildable_jobs_af90f2c51bf74125bd84ee3320b54ffe2}{Has\+Job\+With\+Predicate} (Func$<$ \hyperlink{class_job}{Job}, bool $>$ predicate, out \hyperlink{class_job}{Job} job)
+\begin{DoxyCompactList}\small\item\em Checks for the first buildable job with specific condition. \end{DoxyCompactList}\item 
+bool \hyperlink{class_buildable_jobs_ae2c9644155b5d308a251231b6b07fdac}{Work\+Spot\+Is\+Internal} ()
+\begin{DoxyCompactList}\small\item\em Checks if the work spot is contained within the buildable\textquotesingle{}s height and width. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_acd535917cc45b5f3a61ca86be97ac2a8}{Add} (\hyperlink{class_job}{Job} job)
+\begin{DoxyCompactList}\small\item\em Link a job to the current buildable. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_aa314a2e1dfe5543a5ae6d467dd24d9f2}{Cancel\+All} ()
+\begin{DoxyCompactList}\small\item\em Cancel all the active jobs linked to the current buildable. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_a79e890b27c8b98c6379026d1f4c039b8}{Resume\+All} ()
+\begin{DoxyCompactList}\small\item\em Resumes all the paused jobs linked to the current buildable. \end{DoxyCompactList}\item 
+void \hyperlink{class_buildable_jobs_a1c84d8b98fe126a82acfc8eba0bdc4b6}{Pause\+All} ()
+\begin{DoxyCompactList}\small\item\em Pauses all the active jobs linked to the current buildable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{class_buildable_jobs_a65dd0d32fb03f04cf0fb38a484edd420}{Work\+Spot\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the spot offset where the Character will stand when he is using the buildable. This is relative to the bottom left tile of the sprite. This can be outside of the actual buildable. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_buildable_jobs_a90df4c5107208eaa614604135f395caf}{Input\+Spot\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the spot offset where inventory is inserted for a \hyperlink{class_job}{Job} with this buildable. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_buildable_jobs_ad42e0dc5d8bd26fa606e37bb8846ac99}{Output\+Spot\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the spot offset where inventory is spawn when a \hyperlink{class_job}{Job} is done with this buildable. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_buildable_jobs_a04c116e0984a4f16eacc43437e75a971}{Work\+Spot\+Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tile that is used to do a job. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_buildable_jobs_afee5486dcb9dfdea6e639fe96c1ccbc3}{Input\+Spot\+Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tile where inventory is placed to be used by this buildable. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_buildable_jobs_aa8bda994afc1614cb14f9021f3c6e3ac}{Output\+Spot\+Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tile that is used to spawn new objects (i.\+e. \hyperlink{class_inventory}{Inventory}, Character). \end{DoxyCompactList}\item 
+int \hyperlink{class_buildable_jobs_a19d62a0f9f218a281481bae5b3d6863b}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many active jobs are linked to this buildable. \end{DoxyCompactList}\item 
+\hyperlink{class_job}{Job} \hyperlink{class_buildable_jobs_ae00535b7e3944cb463dfa2df8d76c3c1}{this\mbox{[}int i\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the active \hyperlink{class_job}{Job} with the specified index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Buildable\+Jobs.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_buildable_jobs_adae8130157e0004cd6cf62275698c81f}\label{class_buildable_jobs_adae8130157e0004cd6cf62275698c81f}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Buildable\+Jobs@{Buildable\+Jobs}}
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Buildable\+Jobs()}{BuildableJobs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Buildable\+Jobs.\+Buildable\+Jobs (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_buildable}{I\+Buildable}}]{build\+Entity }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_buildable_jobs}{Buildable\+Jobs} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buildable} & The current buildable.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a0039b45683227d612bb6a917cbc3b42d}\label{class_buildable_jobs_a0039b45683227d612bb6a917cbc3b42d}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Buildable\+Jobs@{Buildable\+Jobs}}
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Buildable\+Jobs()}{BuildableJobs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Buildable\+Jobs.\+Buildable\+Jobs (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_buildable}{I\+Buildable}}]{build\+Entity,  }\item[{\hyperlink{class_buildable_jobs}{Buildable\+Jobs}}]{jobs }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_buildable_jobs}{Buildable\+Jobs} class by copying some of the values from another instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em build\+Entity} & The current buildable.\\
+\hline
+{\em jobs} & The buildable jobs to copy from.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Buildable\+Jobs.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_buildable_jobs_acd535917cc45b5f3a61ca86be97ac2a8}\label{class_buildable_jobs_acd535917cc45b5f3a61ca86be97ac2a8}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Add@{Add}}
+\index{Add@{Add}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Link a job to the current buildable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & The job that you want to link to the buildable.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_aa314a2e1dfe5543a5ae6d467dd24d9f2}\label{class_buildable_jobs_aa314a2e1dfe5543a5ae6d467dd24d9f2}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Cancel\+All@{Cancel\+All}}
+\index{Cancel\+All@{Cancel\+All}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Cancel\+All()}{CancelAll()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Cancel\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cancel all the active jobs linked to the current buildable. 
+
+
+
+Definition at line 191 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_af90f2c51bf74125bd84ee3320b54ffe2}\label{class_buildable_jobs_af90f2c51bf74125bd84ee3320b54ffe2}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Has\+Job\+With\+Predicate@{Has\+Job\+With\+Predicate}}
+\index{Has\+Job\+With\+Predicate@{Has\+Job\+With\+Predicate}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Has\+Job\+With\+Predicate()}{HasJobWithPredicate()}}
+{\footnotesize\ttfamily bool Buildable\+Jobs.\+Has\+Job\+With\+Predicate (\begin{DoxyParamCaption}\item[{Func$<$ \hyperlink{class_job}{Job}, bool $>$}]{predicate,  }\item[{out \hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Checks for the first buildable job with specific condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & \\
+\hline
+{\em job} & \hyperlink{class_job}{Job} fulfilling predicate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is job with predicate.
+\end{DoxyReturn}
+
+
+Definition at line 151 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a1c84d8b98fe126a82acfc8eba0bdc4b6}\label{class_buildable_jobs_a1c84d8b98fe126a82acfc8eba0bdc4b6}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Pause\+All@{Pause\+All}}
+\index{Pause\+All@{Pause\+All}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Pause\+All()}{PauseAll()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Pause\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pauses all the active jobs linked to the current buildable. 
+
+T\+O\+DO\+: Refactor this when the new job system is implemented 
+
+Definition at line 221 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_afdf239ec2f81f9156844d271abe99cba}\label{class_buildable_jobs_afdf239ec2f81f9156844d271abe99cba}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Read\+Input\+Spot\+Offset@{Read\+Input\+Spot\+Offset}}
+\index{Read\+Input\+Spot\+Offset@{Read\+Input\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Read\+Input\+Spot\+Offset()}{ReadInputSpotOffset()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Read\+Input\+Spot\+Offset (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the input spot offset from the xml. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The Xml Reader.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a555d096b725e42460648535bfc9bec63}\label{class_buildable_jobs_a555d096b725e42460648535bfc9bec63}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Read\+Output\+Spot\+Offset@{Read\+Output\+Spot\+Offset}}
+\index{Read\+Output\+Spot\+Offset@{Read\+Output\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Read\+Output\+Spot\+Offset()}{ReadOutputSpotOffset()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Read\+Output\+Spot\+Offset (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the output spot offset from the xml. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The Xml Reader.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a1d1403862cca825858202843fbee4b74}\label{class_buildable_jobs_a1d1403862cca825858202843fbee4b74}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Read\+Work\+Spot\+Offset@{Read\+Work\+Spot\+Offset}}
+\index{Read\+Work\+Spot\+Offset@{Read\+Work\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Read\+Work\+Spot\+Offset()}{ReadWorkSpotOffset()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Read\+Work\+Spot\+Offset (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the job work spot offset from the xml. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The Xml Reader.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a79e890b27c8b98c6379026d1f4c039b8}\label{class_buildable_jobs_a79e890b27c8b98c6379026d1f4c039b8}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Resume\+All@{Resume\+All}}
+\index{Resume\+All@{Resume\+All}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Resume\+All()}{ResumeAll()}}
+{\footnotesize\ttfamily void Buildable\+Jobs.\+Resume\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resumes all the paused jobs linked to the current buildable. 
+
+T\+O\+DO\+: Refactor this when the new job system is implemented 
+
+Definition at line 204 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_ae2c9644155b5d308a251231b6b07fdac}\label{class_buildable_jobs_ae2c9644155b5d308a251231b6b07fdac}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Work\+Spot\+Is\+Internal@{Work\+Spot\+Is\+Internal}}
+\index{Work\+Spot\+Is\+Internal@{Work\+Spot\+Is\+Internal}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Work\+Spot\+Is\+Internal()}{WorkSpotIsInternal()}}
+{\footnotesize\ttfamily bool Buildable\+Jobs.\+Work\+Spot\+Is\+Internal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the work spot is contained within the buildable\textquotesingle{}s height and width. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if the work spot is internal to the buildable, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Buildable\+Jobs.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_buildable_jobs_a19d62a0f9f218a281481bae5b3d6863b}\label{class_buildable_jobs_a19d62a0f9f218a281481bae5b3d6863b}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Count@{Count}}
+\index{Count@{Count}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int Buildable\+Jobs.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+How many active jobs are linked to this buildable. 
+
+The number of active jobs linked to this buildable.
+
+Definition at line 105 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a90df4c5107208eaa614604135f395caf}\label{class_buildable_jobs_a90df4c5107208eaa614604135f395caf}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Input\+Spot\+Offset@{Input\+Spot\+Offset}}
+\index{Input\+Spot\+Offset@{Input\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Input\+Spot\+Offset}{InputSpotOffset}}
+{\footnotesize\ttfamily Vector2 Buildable\+Jobs.\+Input\+Spot\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the spot offset where inventory is inserted for a \hyperlink{class_job}{Job} with this buildable. 
+
+The spawn spot offset.
+
+Definition at line 65 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_afee5486dcb9dfdea6e639fe96c1ccbc3}\label{class_buildable_jobs_afee5486dcb9dfdea6e639fe96c1ccbc3}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Input\+Spot\+Tile@{Input\+Spot\+Tile}}
+\index{Input\+Spot\+Tile@{Input\+Spot\+Tile}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Input\+Spot\+Tile}{InputSpotTile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Buildable\+Jobs.\+Input\+Spot\+Tile\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the tile where inventory is placed to be used by this buildable. 
+
+\hyperlink{class_tile}{Tile} where inventory is placed to be used by this buildable.
+
+Definition at line 87 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_ad42e0dc5d8bd26fa606e37bb8846ac99}\label{class_buildable_jobs_ad42e0dc5d8bd26fa606e37bb8846ac99}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Output\+Spot\+Offset@{Output\+Spot\+Offset}}
+\index{Output\+Spot\+Offset@{Output\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Output\+Spot\+Offset}{OutputSpotOffset}}
+{\footnotesize\ttfamily Vector2 Buildable\+Jobs.\+Output\+Spot\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the spot offset where inventory is spawn when a \hyperlink{class_job}{Job} is done with this buildable. 
+
+The spawn spot offset.
+
+Definition at line 71 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_aa8bda994afc1614cb14f9021f3c6e3ac}\label{class_buildable_jobs_aa8bda994afc1614cb14f9021f3c6e3ac}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Output\+Spot\+Tile@{Output\+Spot\+Tile}}
+\index{Output\+Spot\+Tile@{Output\+Spot\+Tile}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Output\+Spot\+Tile}{OutputSpotTile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Buildable\+Jobs.\+Output\+Spot\+Tile\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the tile that is used to spawn new objects (i.\+e. \hyperlink{class_inventory}{Inventory}, Character). 
+
+\hyperlink{class_tile}{Tile} that is used to spawn objects (i.\+e. \hyperlink{class_inventory}{Inventory}, Character).
+
+Definition at line 96 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_ae00535b7e3944cb463dfa2df8d76c3c1}\label{class_buildable_jobs_ae00535b7e3944cb463dfa2df8d76c3c1}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!this\mbox{[}int i\mbox{]}@{this[int i]}}
+\index{this\mbox{[}int i\mbox{]}@{this[int i]}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{this[int i]}{this[int i]}}
+{\footnotesize\ttfamily \hyperlink{class_job}{Job} Buildable\+Jobs.\+this\mbox{[}int i\mbox{]}\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the active \hyperlink{class_job}{Job} with the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a65dd0d32fb03f04cf0fb38a484edd420}\label{class_buildable_jobs_a65dd0d32fb03f04cf0fb38a484edd420}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Work\+Spot\+Offset@{Work\+Spot\+Offset}}
+\index{Work\+Spot\+Offset@{Work\+Spot\+Offset}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Work\+Spot\+Offset}{WorkSpotOffset}}
+{\footnotesize\ttfamily Vector2 Buildable\+Jobs.\+Work\+Spot\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the spot offset where the Character will stand when he is using the buildable. This is relative to the bottom left tile of the sprite. This can be outside of the actual buildable. 
+
+The spot offset where the Character will stand when he uses the buildable.
+
+Definition at line 59 of file Buildable\+Jobs.\+cs.
+
+\mbox{\Hypertarget{class_buildable_jobs_a04c116e0984a4f16eacc43437e75a971}\label{class_buildable_jobs_a04c116e0984a4f16eacc43437e75a971}} 
+\index{Buildable\+Jobs@{Buildable\+Jobs}!Work\+Spot\+Tile@{Work\+Spot\+Tile}}
+\index{Work\+Spot\+Tile@{Work\+Spot\+Tile}!Buildable\+Jobs@{Buildable\+Jobs}}
+\subsubsection{\texorpdfstring{Work\+Spot\+Tile}{WorkSpotTile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Buildable\+Jobs.\+Work\+Spot\+Tile\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the tile that is used to do a job. 
+
+\hyperlink{class_tile}{Tile} that is used for jobs.
+
+Definition at line 78 of file Buildable\+Jobs.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_buildable_jobs_8cs}{Buildable\+Jobs.\+cs}\end{DoxyCompactItemize}

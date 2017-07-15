@@ -1,0 +1,133 @@
+\hypertarget{class_developer_console_1_1_core_1_1_internal_command}{}\section{Developer\+Console.\+Core.\+Internal\+Command Class Reference}
+\label{class_developer_console_1_1_core_1_1_internal_command}\index{Developer\+Console.\+Core.\+Internal\+Command@{Developer\+Console.\+Core.\+Internal\+Command}}
+
+
+A core class for Internal Commands.  
+
+
+Inheritance diagram for Developer\+Console.\+Core.\+Internal\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_developer_console_1_1_core_1_1_internal_command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_developer_console_1_1_core_1_1_internal_command_aa2cc5051f7a6ed4b3b8a0b7bcdcd172f}{Internal\+Command} (string title, Method\+Info method, string descriptive\+Text, Type\mbox{[}$\,$\mbox{]} type\+Info, string parameters, string detailed\+Descriptive\+Text=\char`\"{}\char`\"{}, string\mbox{[}$\,$\mbox{]} tags=null)
+\begin{DoxyCompactList}\small\item\em Standard with title, method, and help text. \end{DoxyCompactList}\item 
+override void \hyperlink{class_developer_console_1_1_core_1_1_internal_command_a1099028980b225c379bae7b3eab35d20}{Execute\+Command} (string arguments)
+\begin{DoxyCompactList}\small\item\em Executes the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \hyperlink{class_developer_console_1_1_core_1_1_internal_command_a3ff56e669bfd4c06244116cbbcc35818}{Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get all the parameters for this function. A string of all the parameters with a comma between them. \end{DoxyCompactList}\item 
+Method\+Info \hyperlink{class_developer_console_1_1_core_1_1_internal_command_aa37dedf92763807179b659eeb035064f}{Method}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The method to call to perform the required action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A core class for Internal Commands. 
+
+
+
+Definition at line 19 of file Internal\+Command.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_internal_command_aa2cc5051f7a6ed4b3b8a0b7bcdcd172f}\label{class_developer_console_1_1_core_1_1_internal_command_aa2cc5051f7a6ed4b3b8a0b7bcdcd172f}} 
+\index{Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}!Internal\+Command@{Internal\+Command}}
+\index{Internal\+Command@{Internal\+Command}!Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}}
+\subsubsection{\texorpdfstring{Internal\+Command()}{InternalCommand()}}
+{\footnotesize\ttfamily Developer\+Console.\+Core.\+Internal\+Command.\+Internal\+Command (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{Method\+Info}]{method,  }\item[{string}]{descriptive\+Text,  }\item[{Type \mbox{[}$\,$\mbox{]}}]{type\+Info,  }\item[{string}]{parameters,  }\item[{string}]{detailed\+Descriptive\+Text = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string \mbox{[}$\,$\mbox{]}}]{tags = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Standard with title, method, and help text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title for the command. \\
+\hline
+{\em method} & The command to execute. \\
+\hline
+{\em descriptive\+Text} & The help text to display. \\
+\hline
+{\em detailed\+Descriptive\+Text} & More detailed help text to display. \\
+\hline
+{\em parameters} & In format of \textquotesingle{}Type name\textquotesingle{} i.\+e. Int my\+Int. With a comma separator. \\
+\hline
+{\em tags} & Tags group commands for easy access. \\
+\hline
+{\em type\+Info} & All the types in respect to this command. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Internal\+Command.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_internal_command_a1099028980b225c379bae7b3eab35d20}\label{class_developer_console_1_1_core_1_1_internal_command_a1099028980b225c379bae7b3eab35d20}} 
+\index{Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}!Execute\+Command@{Execute\+Command}}
+\index{Execute\+Command@{Execute\+Command}!Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}}
+\subsubsection{\texorpdfstring{Execute\+Command()}{ExecuteCommand()}}
+{\footnotesize\ttfamily override void Developer\+Console.\+Core.\+Internal\+Command.\+Execute\+Command (\begin{DoxyParamCaption}\item[{string}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & Passes the arguments.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_developer_console_1_1_core_1_1_command_base_ab68054239b7e3d2a47029839f90d59ca}{Developer\+Console.\+Core.\+Command\+Base}.
+
+
+
+Definition at line 57 of file Internal\+Command.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_internal_command_aa37dedf92763807179b659eeb035064f}\label{class_developer_console_1_1_core_1_1_internal_command_aa37dedf92763807179b659eeb035064f}} 
+\index{Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}!Method@{Method}}
+\index{Method@{Method}!Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}}
+\subsubsection{\texorpdfstring{Method}{Method}}
+{\footnotesize\ttfamily Method\+Info Developer\+Console.\+Core.\+Internal\+Command.\+Method\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The method to call to perform the required action. 
+
+
+
+Definition at line 51 of file Internal\+Command.\+cs.
+
+\mbox{\Hypertarget{class_developer_console_1_1_core_1_1_internal_command_a3ff56e669bfd4c06244116cbbcc35818}\label{class_developer_console_1_1_core_1_1_internal_command_a3ff56e669bfd4c06244116cbbcc35818}} 
+\index{Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!Developer\+Console\+::\+Core\+::\+Internal\+Command@{Developer\+Console\+::\+Core\+::\+Internal\+Command}}
+\subsubsection{\texorpdfstring{Parameters}{Parameters}}
+{\footnotesize\ttfamily override string Developer\+Console.\+Core.\+Internal\+Command.\+Parameters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Get all the parameters for this function. A string of all the parameters with a comma between them. 
+
+
+
+Definition at line 46 of file Internal\+Command.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+U\+I/\+In\+Game\+U\+I/\+Dev\+Console/\+Command\+Types/\hyperlink{_internal_command_8cs}{Internal\+Command.\+cs}\end{DoxyCompactItemize}

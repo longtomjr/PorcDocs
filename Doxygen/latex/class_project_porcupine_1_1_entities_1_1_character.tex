@@ -1,0 +1,622 @@
+\hypertarget{class_project_porcupine_1_1_entities_1_1_character}{}\section{Project\+Porcupine.\+Entities.\+Character Class Reference}
+\label{class_project_porcupine_1_1_entities_1_1_character}\index{Project\+Porcupine.\+Entities.\+Character@{Project\+Porcupine.\+Entities.\+Character}}
+
+
+A \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is an entity on the map that can move between tiles and, for now, grabs jobs from the work queue and performs this. Later, the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} class will likely be refactored (possibly with sub-\/classes or interfaces) to support friendly workers, enemies, etc...  
+
+
+Inheritance diagram for Project\+Porcupine.\+Entities.\+Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.674140cm]{class_project_porcupine_1_1_entities_1_1_character}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character_a8db8c2f16e32a09749adf9e14eb6f952}{Character} ()
+\begin{DoxyCompactList}\small\item\em Use only for serialization. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character_a470d1d6a44a287c92da31e61c610fb19}{Character} (\hyperlink{class_tile}{Tile} tile, Color color, Color uniform\+Color, Color skin\+Color, string name)
+\item 
+I\+Enumerable$<$ \hyperlink{class_context_menu_action}{Context\+Menu\+Action} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a57c4c3ef718c8e08d8c9c06df4a3b3f9}{Get\+Context\+Menu\+Actions} (\hyperlink{class_context_menu}{Context\+Menu} context\+Menu)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_aef25ac994da838be626b8e364ba307c9}{Prioritize\+Job} (\hyperlink{class_job}{Job} job)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a8d7ae19ccf3405f0819149a6e5821fc2}{Interrupt\+State} ()
+\begin{DoxyCompactList}\small\item\em Stops the current state. Makes the character halt what is going on and start looking for something new to do, might be the same thing. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a129b77bcac4c2dd9c8516b5f20162001}{Clear\+State\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Removes all the queued up states. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a71dca9d60d0fa118d79f4438f40ef542}{Queue\+State} (\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{States.\+State} new\+State)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_af2e44de8914b84282ad1e476720f5606}{Set\+State} (\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{States.\+State} new\+State)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_ae3c85ddd163fbb4680572fb03e7fc6fc}{Every\+Frame\+Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Runs every \char`\"{}frame\char`\"{} while the simulation is not paused. \end{DoxyCompactList}\item 
+object \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a1df031072d90268d3ada823657d95440}{To\+J\+S\+ON} ()
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_character_abe834c84bb93ab0518c92452a33d18e5}{Get\+Name} ()
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_character_aad98e60530da392f0d4ee0efd0d8cb7c}{Get\+Description} ()
+\item 
+I\+Enumerable$<$ string $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a25f40156785cb40c6bfc3496e27262b9}{Get\+Additional\+Info} ()
+\item 
+Color \hyperlink{class_project_porcupine_1_1_entities_1_1_character_ad5653d3e619be5640031bb743dece241}{Get\+Character\+Color} ()
+\item 
+Color \hyperlink{class_project_porcupine_1_1_entities_1_1_character_acf17f0334c731644375dfd1d55244b63}{Get\+Character\+Skin\+Color} ()
+\item 
+Color \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a7bd0d5d0c5b73b18f2f47e63035798a1}{Get\+Character\+Uniform\+Color} ()
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a8bdbe6c8bd400cb777f7c6e34f54c29b}{Get\+Job\+Description} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_ac0d176f59c1c385b90be580ab3cfa020}{Face\+Tile} (\hyperlink{class_tile}{Tile} next\+Tile)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a9ac39404237d8a6f3da2688bc4ab9c13}{Fixed\+Frequency\+Update} (float delta\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a0e5fccdb1459c7c2ab72c2f6e8faf3ec}{ID}
+\begin{DoxyCompactList}\small\item\em Unique ID of the character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_character_af4e554d7f9ef54371bc8b4759be5ec47}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}. \end{DoxyCompactList}\item 
+\hyperlink{class_inventory}{Inventory} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a051d739a9db597fbcf9b089d635467f1}{Inventory}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The item we are carrying (not gear/equipment). \end{DoxyCompactList}\item 
+\hyperlink{class_animation_1_1_character_animation}{Animation.\+Character\+Animation} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_aaec7ff140a2e9ab0b1866fe0269e28ab}{Animation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Holds all character animations. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_entities_1_1_character_af30b174c7f2a3a97f59b5691731940b0}{Is\+Walking}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the character walking or idle. \end{DoxyCompactList}\item 
+\hyperlink{namespace_project_porcupine_1_1_entities_a91ebf8b2a3a0315adf5da6e882862808}{Facing} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a3320243dfa85049b8fa5e6e7d879280e}{Char\+Facing}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em What direction our character is looking. \end{DoxyCompactList}\item 
+Dictionary$<$ string, \hyperlink{class_project_porcupine_1_1_entities_1_1_stat}{Stat} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a6c6632eda9fdf6d2739291d69faf73ec}{Stats}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Stats, for character. \end{DoxyCompactList}\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_need}{Need} \mbox{[}$\,$\mbox{]} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_ac92263a27f7fd4001b18d0b01b24ab2f}{Needs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em All the needs of this character. \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a6c11db7332986df6ee844a427a230b43}{Tile\+Offset}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} offset for animation. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_character_abf864a3d09e08bac14e8dae22fb16bac}{Movement\+Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tiles per second. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_character_aad15ce6a42a7c6196f6ee9635d5955f1}{X}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s X position, which can be part-\/way between two tiles during movement. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a5c2f36d8758d9e982456af01fddb5997}{Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s Y position, which can be part-\/way between two tiles during movement. \end{DoxyCompactList}\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a9c149d9a477af33818b602cf6dfa9ea5}{Z}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s Z position, which can be part-\/way between two tiles during movement. \end{DoxyCompactList}\item 
+Bounds \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a14bb1214e9ebcc8b1cebc805e2574f85}{Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_tile}{Tile} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_ad25bedfb01beb7d9dfca1dad6ba937e0}{Curr\+Tile}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The tile the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is considered to still be standing in. \end{DoxyCompactList}\item 
+\hyperlink{class_job}{Job} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_af58d5df398e6a77b97bc6d38cf52f800}{My\+Job}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Our job, if any. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a9a5ce9d0a1138bba9b929a27069d9de4}{Is\+Selected}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_health_system}{Health\+System} \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a583d507f17c0164d156f735172fab042}{Health}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Health of this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} $>$ \hyperlink{class_project_porcupine_1_1_entities_1_1_character_a6371cd47c886db713e136ddefeb6c108}{On\+Character\+Changed}
+\begin{DoxyCompactList}\small\item\em A callback to trigger when character information changes (notably, the position). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is an entity on the map that can move between tiles and, for now, grabs jobs from the work queue and performs this. Later, the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} class will likely be refactored (possibly with sub-\/classes or interfaces) to support friendly workers, enemies, etc... 
+
+
+
+Definition at line 34 of file Character.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a8db8c2f16e32a09749adf9e14eb6f952}\label{class_project_porcupine_1_1_entities_1_1_character_a8db8c2f16e32a09749adf9e14eb6f952}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Character@{Character}}
+\index{Character@{Character}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+Character.\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Use only for serialization. 
+
+
+
+Definition at line 80 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a470d1d6a44a287c92da31e61c610fb19}\label{class_project_porcupine_1_1_entities_1_1_character_a470d1d6a44a287c92da31e61c610fb19}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Character@{Character}}
+\index{Character@{Character}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+Character.\+Character (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{Color}]{color,  }\item[{Color}]{uniform\+Color,  }\item[{Color}]{skin\+Color,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 87 of file Character.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a129b77bcac4c2dd9c8516b5f20162001}\label{class_project_porcupine_1_1_entities_1_1_character_a129b77bcac4c2dd9c8516b5f20162001}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Clear\+State\+Queue@{Clear\+State\+Queue}}
+\index{Clear\+State\+Queue@{Clear\+State\+Queue}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Clear\+State\+Queue()}{ClearStateQueue()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Clear\+State\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes all the queued up states. 
+
+
+
+Definition at line 304 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_ae3c85ddd163fbb4680572fb03e7fc6fc}\label{class_project_porcupine_1_1_entities_1_1_character_ae3c85ddd163fbb4680572fb03e7fc6fc}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Every\+Frame\+Update@{Every\+Frame\+Update}}
+\index{Every\+Frame\+Update@{Every\+Frame\+Update}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Every\+Frame\+Update()}{EveryFrameUpdate()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Every\+Frame\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Runs every \char`\"{}frame\char`\"{} while the simulation is not paused. 
+
+
+
+Implements \hyperlink{interface_i_updatable_a07ea8d8e0858fd96c18baef481632c9d}{I\+Updatable}.
+
+
+
+Definition at line 337 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_ac0d176f59c1c385b90be580ab3cfa020}\label{class_project_porcupine_1_1_entities_1_1_character_ac0d176f59c1c385b90be580ab3cfa020}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Face\+Tile@{Face\+Tile}}
+\index{Face\+Tile@{Face\+Tile}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Face\+Tile()}{FaceTile()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Face\+Tile (\begin{DoxyParamCaption}\item[{\hyperlink{class_tile}{Tile}}]{next\+Tile }\end{DoxyParamCaption})}
+
+
+
+Definition at line 470 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a9ac39404237d8a6f3da2688bc4ab9c13}\label{class_project_porcupine_1_1_entities_1_1_character_a9ac39404237d8a6f3da2688bc4ab9c13}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}}
+\index{Fixed\+Frequency\+Update@{Fixed\+Frequency\+Update}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency\+Update()}{FixedFrequencyUpdate()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Fixed\+Frequency\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_updatable_a360da1e579ac8d1ed8adb700176cc45f}{I\+Updatable}.
+
+
+
+Definition at line 491 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a25f40156785cb40c6bfc3496e27262b9}\label{class_project_porcupine_1_1_entities_1_1_character_a25f40156785cb40c6bfc3496e27262b9}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Additional\+Info@{Get\+Additional\+Info}}
+\index{Get\+Additional\+Info@{Get\+Additional\+Info}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Additional\+Info()}{GetAdditionalInfo()}}
+{\footnotesize\ttfamily I\+Enumerable$<$string$>$ Project\+Porcupine.\+Entities.\+Character.\+Get\+Additional\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a337f81bfa99bb254bb2f7de6a8b5cd4b}{I\+Selectable}.
+
+
+
+Definition at line 428 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_ad5653d3e619be5640031bb743dece241}\label{class_project_porcupine_1_1_entities_1_1_character_ad5653d3e619be5640031bb743dece241}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Character\+Color@{Get\+Character\+Color}}
+\index{Get\+Character\+Color@{Get\+Character\+Color}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Character\+Color()}{GetCharacterColor()}}
+{\footnotesize\ttfamily Color Project\+Porcupine.\+Entities.\+Character.\+Get\+Character\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 443 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_acf17f0334c731644375dfd1d55244b63}\label{class_project_porcupine_1_1_entities_1_1_character_acf17f0334c731644375dfd1d55244b63}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Character\+Skin\+Color@{Get\+Character\+Skin\+Color}}
+\index{Get\+Character\+Skin\+Color@{Get\+Character\+Skin\+Color}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Character\+Skin\+Color()}{GetCharacterSkinColor()}}
+{\footnotesize\ttfamily Color Project\+Porcupine.\+Entities.\+Character.\+Get\+Character\+Skin\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 448 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a7bd0d5d0c5b73b18f2f47e63035798a1}\label{class_project_porcupine_1_1_entities_1_1_character_a7bd0d5d0c5b73b18f2f47e63035798a1}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Character\+Uniform\+Color@{Get\+Character\+Uniform\+Color}}
+\index{Get\+Character\+Uniform\+Color@{Get\+Character\+Uniform\+Color}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Character\+Uniform\+Color()}{GetCharacterUniformColor()}}
+{\footnotesize\ttfamily Color Project\+Porcupine.\+Entities.\+Character.\+Get\+Character\+Uniform\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 453 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a57c4c3ef718c8e08d8c9c06df4a3b3f9}\label{class_project_porcupine_1_1_entities_1_1_character_a57c4c3ef718c8e08d8c9c06df4a3b3f9}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}}
+\index{Get\+Context\+Menu\+Actions@{Get\+Context\+Menu\+Actions}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Context\+Menu\+Actions()}{GetContextMenuActions()}}
+{\footnotesize\ttfamily I\+Enumerable$<$\hyperlink{class_context_menu_action}{Context\+Menu\+Action}$>$ Project\+Porcupine.\+Entities.\+Character.\+Get\+Context\+Menu\+Actions (\begin{DoxyParamCaption}\item[{\hyperlink{class_context_menu}{Context\+Menu}}]{context\+Menu }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_context_action_provider_acb23b31fd7720af55c607a3c12634d1e}{I\+Context\+Action\+Provider}.
+
+
+
+Definition at line 258 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_aad98e60530da392f0d4ee0efd0d8cb7c}\label{class_project_porcupine_1_1_entities_1_1_character_aad98e60530da392f0d4ee0efd0d8cb7c}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Description()}{GetDescription()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Character.\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a1d8947a443b6214cff01f2d75c8bc75a}{I\+Selectable}.
+
+
+
+Definition at line 423 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a8bdbe6c8bd400cb777f7c6e34f54c29b}\label{class_project_porcupine_1_1_entities_1_1_character_a8bdbe6c8bd400cb777f7c6e34f54c29b}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Job\+Description@{Get\+Job\+Description}}
+\index{Get\+Job\+Description@{Get\+Job\+Description}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Job\+Description()}{GetJobDescription()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Character.\+Get\+Job\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_a4d0f9fa51a3d70a7fbcbb39e126e4c73}{I\+Selectable}.
+
+
+
+Definition at line 458 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_abe834c84bb93ab0518c92452a33d18e5}\label{class_project_porcupine_1_1_entities_1_1_character_abe834c84bb93ab0518c92452a33d18e5}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Character.\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_selectable_af676ba50e2cd5839438d3092743a79da}{I\+Selectable}.
+
+
+
+Definition at line 418 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a8d7ae19ccf3405f0819149a6e5821fc2}\label{class_project_porcupine_1_1_entities_1_1_character_a8d7ae19ccf3405f0819149a6e5821fc2}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Interrupt\+State@{Interrupt\+State}}
+\index{Interrupt\+State@{Interrupt\+State}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Interrupt\+State()}{InterruptState()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Interrupt\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the current state. Makes the character halt what is going on and start looking for something new to do, might be the same thing. 
+
+
+
+Definition at line 290 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_aef25ac994da838be626b8e364ba307c9}\label{class_project_porcupine_1_1_entities_1_1_character_aef25ac994da838be626b8e364ba307c9}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Prioritize\+Job@{Prioritize\+Job}}
+\index{Prioritize\+Job@{Prioritize\+Job}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Prioritize\+Job()}{PrioritizeJob()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Prioritize\+Job (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Definition at line 277 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a71dca9d60d0fa118d79f4438f40ef542}\label{class_project_porcupine_1_1_entities_1_1_character_a71dca9d60d0fa118d79f4438f40ef542}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Queue\+State@{Queue\+State}}
+\index{Queue\+State@{Queue\+State}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Queue\+State()}{QueueState()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Queue\+State (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{States.\+State}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Definition at line 314 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_af2e44de8914b84282ad1e476720f5606}\label{class_project_porcupine_1_1_entities_1_1_character_af2e44de8914b84282ad1e476720f5606}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Set\+State()}{SetState()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Character.\+Set\+State (\begin{DoxyParamCaption}\item[{\hyperlink{class_project_porcupine_1_1_entities_1_1_states_1_1_state}{States.\+State}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Definition at line 319 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a1df031072d90268d3ada823657d95440}\label{class_project_porcupine_1_1_entities_1_1_character_a1df031072d90268d3ada823657d95440}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!To\+J\+S\+ON@{To\+J\+S\+ON}}
+\index{To\+J\+S\+ON@{To\+J\+S\+ON}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{To\+J\+S\+O\+N()}{ToJSON()}}
+{\footnotesize\ttfamily object Project\+Porcupine.\+Entities.\+Character.\+To\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 377 of file Character.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a0e5fccdb1459c7c2ab72c2f6e8faf3ec}\label{class_project_porcupine_1_1_entities_1_1_character_a0e5fccdb1459c7c2ab72c2f6e8faf3ec}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!ID@{ID}}
+\index{ID@{ID}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily readonly int Project\+Porcupine.\+Entities.\+Character.\+ID}
+
+
+
+Unique ID of the character. 
+
+
+
+Definition at line 37 of file Character.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_aaec7ff140a2e9ab0b1866fe0269e28ab}\label{class_project_porcupine_1_1_entities_1_1_character_aaec7ff140a2e9ab0b1866fe0269e28ab}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Animation@{Animation}}
+\index{Animation@{Animation}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Animation}{Animation}}
+{\footnotesize\ttfamily \hyperlink{class_animation_1_1_character_animation}{Animation.\+Character\+Animation} Project\+Porcupine.\+Entities.\+Character.\+Animation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holds all character animations. 
+
+
+
+Definition at line 113 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a14bb1214e9ebcc8b1cebc805e2574f85}\label{class_project_porcupine_1_1_entities_1_1_character_a14bb1214e9ebcc8b1cebc805e2574f85}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Bounds@{Bounds}}
+\index{Bounds@{Bounds}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Bounds}{Bounds}}
+{\footnotesize\ttfamily Bounds Project\+Porcupine.\+Entities.\+Character.\+Bounds\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 176 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a3320243dfa85049b8fa5e6e7d879280e}\label{class_project_porcupine_1_1_entities_1_1_character_a3320243dfa85049b8fa5e6e7d879280e}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Char\+Facing@{Char\+Facing}}
+\index{Char\+Facing@{Char\+Facing}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Char\+Facing}{CharFacing}}
+{\footnotesize\ttfamily \hyperlink{namespace_project_porcupine_1_1_entities_a91ebf8b2a3a0315adf5da6e882862808}{Facing} Project\+Porcupine.\+Entities.\+Character.\+Char\+Facing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+What direction our character is looking. 
+
+
+
+Definition at line 119 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_ad25bedfb01beb7d9dfca1dad6ba937e0}\label{class_project_porcupine_1_1_entities_1_1_character_ad25bedfb01beb7d9dfca1dad6ba937e0}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Curr\+Tile@{Curr\+Tile}}
+\index{Curr\+Tile@{Curr\+Tile}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Curr\+Tile}{CurrTile}}
+{\footnotesize\ttfamily \hyperlink{class_tile}{Tile} Project\+Porcupine.\+Entities.\+Character.\+Curr\+Tile\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The tile the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} is considered to still be standing in. 
+
+
+
+Definition at line 189 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a583d507f17c0164d156f735172fab042}\label{class_project_porcupine_1_1_entities_1_1_character_a583d507f17c0164d156f735172fab042}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Health@{Health}}
+\index{Health@{Health}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Health}{Health}}
+{\footnotesize\ttfamily \hyperlink{class_health_system}{Health\+System} Project\+Porcupine.\+Entities.\+Character.\+Health\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Health of this object. 
+
+
+
+Definition at line 246 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a051d739a9db597fbcf9b089d635467f1}\label{class_project_porcupine_1_1_entities_1_1_character_a051d739a9db597fbcf9b089d635467f1}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Inventory}{Inventory}}
+{\footnotesize\ttfamily \hyperlink{class_inventory}{Inventory} Project\+Porcupine.\+Entities.\+Character.\+Inventory\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The item we are carrying (not gear/equipment). 
+
+
+
+Definition at line 110 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a9a5ce9d0a1138bba9b929a27069d9de4}\label{class_project_porcupine_1_1_entities_1_1_character_a9a5ce9d0a1138bba9b929a27069d9de4}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Is\+Selected@{Is\+Selected}}
+\index{Is\+Selected@{Is\+Selected}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Is\+Selected}{IsSelected}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Entities.\+Character.\+Is\+Selected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 225 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_af30b174c7f2a3a97f59b5691731940b0}\label{class_project_porcupine_1_1_entities_1_1_character_af30b174c7f2a3a97f59b5691731940b0}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Is\+Walking@{Is\+Walking}}
+\index{Is\+Walking@{Is\+Walking}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Is\+Walking}{IsWalking}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Entities.\+Character.\+Is\+Walking\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the character walking or idle. 
+
+
+
+Definition at line 116 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_abf864a3d09e08bac14e8dae22fb16bac}\label{class_project_porcupine_1_1_entities_1_1_character_abf864a3d09e08bac14e8dae22fb16bac}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Movement\+Speed@{Movement\+Speed}}
+\index{Movement\+Speed@{Movement\+Speed}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Movement\+Speed}{MovementSpeed}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Character.\+Movement\+Speed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Tiles per second. 
+
+
+
+Definition at line 132 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_af58d5df398e6a77b97bc6d38cf52f800}\label{class_project_porcupine_1_1_entities_1_1_character_af58d5df398e6a77b97bc6d38cf52f800}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!My\+Job@{My\+Job}}
+\index{My\+Job@{My\+Job}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{My\+Job}{MyJob}}
+{\footnotesize\ttfamily \hyperlink{class_job}{Job} Project\+Porcupine.\+Entities.\+Character.\+My\+Job\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Our job, if any. 
+
+
+
+Definition at line 211 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_af4e554d7f9ef54371bc8b4759be5ec47}\label{class_project_porcupine_1_1_entities_1_1_character_af4e554d7f9ef54371bc8b4759be5ec47}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Name@{Name}}
+\index{Name@{Name}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Character.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Name of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}. 
+
+
+
+Definition at line 107 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_ac92263a27f7fd4001b18d0b01b24ab2f}\label{class_project_porcupine_1_1_entities_1_1_character_ac92263a27f7fd4001b18d0b01b24ab2f}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Needs@{Needs}}
+\index{Needs@{Needs}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Needs}{Needs}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_need}{Need} \mbox{[}$\,$\mbox{]} Project\+Porcupine.\+Entities.\+Character.\+Needs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+All the needs of this character. 
+
+
+
+Definition at line 125 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a6c6632eda9fdf6d2739291d69faf73ec}\label{class_project_porcupine_1_1_entities_1_1_character_a6c6632eda9fdf6d2739291d69faf73ec}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Stats@{Stats}}
+\index{Stats@{Stats}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Stats}{Stats}}
+{\footnotesize\ttfamily Dictionary$<$string, \hyperlink{class_project_porcupine_1_1_entities_1_1_stat}{Stat}$>$ Project\+Porcupine.\+Entities.\+Character.\+Stats\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Stats, for character. 
+
+
+
+Definition at line 122 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a6c11db7332986df6ee844a427a230b43}\label{class_project_porcupine_1_1_entities_1_1_character_a6c11db7332986df6ee844a427a230b43}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Tile\+Offset@{Tile\+Offset}}
+\index{Tile\+Offset@{Tile\+Offset}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Tile\+Offset}{TileOffset}}
+{\footnotesize\ttfamily Vector3 Project\+Porcupine.\+Entities.\+Character.\+Tile\+Offset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\hyperlink{class_tile}{Tile} offset for animation. 
+
+
+
+Definition at line 128 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_aad15ce6a42a7c6196f6ee9635d5955f1}\label{class_project_porcupine_1_1_entities_1_1_character_aad15ce6a42a7c6196f6ee9635d5955f1}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!X@{X}}
+\index{X@{X}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Character.\+X\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s X position, which can be part-\/way between two tiles during movement. 
+
+
+
+Definition at line 144 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a5c2f36d8758d9e982456af01fddb5997}\label{class_project_porcupine_1_1_entities_1_1_character_a5c2f36d8758d9e982456af01fddb5997}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Y@{Y}}
+\index{Y@{Y}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Character.\+Y\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s Y position, which can be part-\/way between two tiles during movement. 
+
+
+
+Definition at line 156 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a9c149d9a477af33818b602cf6dfa9ea5}\label{class_project_porcupine_1_1_entities_1_1_character_a9c149d9a477af33818b602cf6dfa9ea5}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!Z@{Z}}
+\index{Z@{Z}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Character.\+Z\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns a float representing the \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}\textquotesingle{}s Z position, which can be part-\/way between two tiles during movement. 
+
+
+
+Definition at line 168 of file Character.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_a6371cd47c886db713e136ddefeb6c108}\label{class_project_porcupine_1_1_entities_1_1_character_a6371cd47c886db713e136ddefeb6c108}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}!On\+Character\+Changed@{On\+Character\+Changed}}
+\index{On\+Character\+Changed@{On\+Character\+Changed}!Project\+Porcupine\+::\+Entities\+::\+Character@{Project\+Porcupine\+::\+Entities\+::\+Character}}
+\subsubsection{\texorpdfstring{On\+Character\+Changed}{OnCharacterChanged}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character}$>$ Project\+Porcupine.\+Entities.\+Character.\+On\+Character\+Changed}
+
+
+
+A callback to trigger when character information changes (notably, the position). 
+
+
+
+Definition at line 104 of file Character.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Character/\hyperlink{_character_8cs}{Character.\+cs}\end{DoxyCompactItemize}

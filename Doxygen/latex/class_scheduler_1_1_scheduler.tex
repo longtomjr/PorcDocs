@@ -1,0 +1,289 @@
+\hypertarget{class_scheduler_1_1_scheduler}{}\section{Scheduler.\+Scheduler Class Reference}
+\label{class_scheduler_1_1_scheduler}\index{Scheduler.\+Scheduler@{Scheduler.\+Scheduler}}
+
+
+Generic scheduler class for tracking and dispatching Scheduled\+Events.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scheduler_1_1_scheduler_a0e6742111304fdc40c80b819da24d3f7}{Scheduler} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler.\+Scheduler} class. Note\+: you probably want to use Scheduler.\+Current to get the singleton instance of the main game scheduler. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a198612b5b2266eab1ac6b80a65f788eb}{Schedule\+Event} (string name, float cooldown, bool repeats\+Forever=false, int repeats=1)
+\begin{DoxyCompactList}\small\item\em Schedules an event from a prototype. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_aca67becc7742a1ae216cd9e444849f76}{Schedule\+Event} (string name, float cooldown, float time\+To\+Wait, bool repeats\+Forever=false, int repeats=1)
+\begin{DoxyCompactList}\small\item\em Schedules an event from a prototype. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a183dd5e7560cd9b70133eea57ef12acd}{Register\+Event} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} evt)
+\begin{DoxyCompactList}\small\item\em Registers a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} to be tracked by the scheduler. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduler_1_1_scheduler_a53ebcf4526da0f018a1012cd79f82ff4}{Is\+Registered} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} evt)
+\begin{DoxyCompactList}\small\item\em Determines whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is registered with the scheduler. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a7b069af9525b1f363465d99e916155ae}{Deregister\+Event} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} evt)
+\begin{DoxyCompactList}\small\item\em Deregisters the event. N\+O\+TE\+: This actually calls Stop() on the event so that it will no longer be run. It will be removed on the next call of \hyperlink{class_scheduler_1_1_scheduler_a9762a6e51fd4a109c4a89b718a5a8ce3}{Update()}. \end{DoxyCompactList}\item 
+float \hyperlink{class_scheduler_1_1_scheduler_ac22fd3be39b7d3fd210c5e64417c6d2c}{Time\+To\+Next\+Event} ()
+\begin{DoxyCompactList}\small\item\em Time to next event in seconds. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a9762a6e51fd4a109c4a89b718a5a8ce3}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Update the scheduler by the specified delta\+Time, running event callbacks as needed. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduler_1_1_scheduler_aed037bf3f01540e9f8fcf7c4a0f61573}{Register\+Event\+Prototype} (\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} event\+Prototype)
+\begin{DoxyCompactList}\small\item\em Registers an event prototype with \hyperlink{class_prototype_manager}{Prototype\+Manager}. \end{DoxyCompactList}\item 
+J\+Token \hyperlink{class_scheduler_1_1_scheduler_ad84c5bec9c251c9c3859fd6253bad97b}{To\+Json} ()
+\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a45a216c36b720e5f1bae0796aeae0f36}{From\+Json} (J\+Token scheduler\+Token)
+\item 
+void \hyperlink{class_scheduler_1_1_scheduler_a2d598dd02e278c0fb25d473ae622229f}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_scheduler_1_1_scheduler}{Scheduler} \hyperlink{class_scheduler_1_1_scheduler_a66617179c19d1dd759b5eec0fb538907}{Current}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get the singleton instance of the main game scheduler. If it does not exist yet it is created on demand. \end{DoxyCompactList}\item 
+Read\+Only\+Collection$<$ \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} $>$ \hyperlink{class_scheduler_1_1_scheduler_a78cb7c8fd7f08a284064373b350ddd4d}{Events}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the events currently queued for execution by the scheduler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic scheduler class for tracking and dispatching Scheduled\+Events. 
+
+
+
+Definition at line 22 of file Scheduler.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a0e6742111304fdc40c80b819da24d3f7}\label{class_scheduler_1_1_scheduler_a0e6742111304fdc40c80b819da24d3f7}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Scheduler()}{Scheduler()}}
+{\footnotesize\ttfamily Scheduler.\+Scheduler.\+Scheduler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler.\+Scheduler} class. Note\+: you probably want to use Scheduler.\+Current to get the singleton instance of the main game scheduler. 
+
+
+
+Definition at line 32 of file Scheduler.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a7b069af9525b1f363465d99e916155ae}\label{class_scheduler_1_1_scheduler_a7b069af9525b1f363465d99e916155ae}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Deregister\+Event@{Deregister\+Event}}
+\index{Deregister\+Event@{Deregister\+Event}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Deregister\+Event()}{DeregisterEvent()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Deregister\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{evt }\end{DoxyParamCaption})}
+
+
+
+Deregisters the event. N\+O\+TE\+: This actually calls Stop() on the event so that it will no longer be run. It will be removed on the next call of \hyperlink{class_scheduler_1_1_scheduler_a9762a6e51fd4a109c4a89b718a5a8ce3}{Update()}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evt} & Event to deregister.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a2d598dd02e278c0fb25d473ae622229f}\label{class_scheduler_1_1_scheduler_a2d598dd02e278c0fb25d473ae622229f}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy this instance. 
+
+
+
+Definition at line 238 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a45a216c36b720e5f1bae0796aeae0f36}\label{class_scheduler_1_1_scheduler_a45a216c36b720e5f1bae0796aeae0f36}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{scheduler\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a53ebcf4526da0f018a1012cd79f82ff4}\label{class_scheduler_1_1_scheduler_a53ebcf4526da0f018a1012cd79f82ff4}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Is\+Registered@{Is\+Registered}}
+\index{Is\+Registered@{Is\+Registered}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Is\+Registered()}{IsRegistered()}}
+{\footnotesize\ttfamily bool Scheduler.\+Scheduler.\+Is\+Registered (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{evt }\end{DoxyParamCaption})}
+
+
+
+Determines whether this \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is registered with the scheduler. 
+
+
+
+Definition at line 123 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a183dd5e7560cd9b70133eea57ef12acd}\label{class_scheduler_1_1_scheduler_a183dd5e7560cd9b70133eea57ef12acd}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Register\+Event@{Register\+Event}}
+\index{Register\+Event@{Register\+Event}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Register\+Event()}{RegisterEvent()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Register\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{evt }\end{DoxyParamCaption})}
+
+
+
+Registers a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} to be tracked by the scheduler. 
+
+
+
+Definition at line 107 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_aed037bf3f01540e9f8fcf7c4a0f61573}\label{class_scheduler_1_1_scheduler_aed037bf3f01540e9f8fcf7c4a0f61573}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Register\+Event\+Prototype@{Register\+Event\+Prototype}}
+\index{Register\+Event\+Prototype@{Register\+Event\+Prototype}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Register\+Event\+Prototype()}{RegisterEventPrototype()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Register\+Event\+Prototype (\begin{DoxyParamCaption}\item[{\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}}]{event\+Prototype }\end{DoxyParamCaption})}
+
+
+
+Registers an event prototype with \hyperlink{class_prototype_manager}{Prototype\+Manager}. 
+
+
+
+Definition at line 189 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a198612b5b2266eab1ac6b80a65f788eb}\label{class_scheduler_1_1_scheduler_a198612b5b2266eab1ac6b80a65f788eb}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Schedule\+Event@{Schedule\+Event}}
+\index{Schedule\+Event@{Schedule\+Event}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Schedule\+Event()}{ScheduleEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Schedule\+Event (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{float}]{cooldown,  }\item[{bool}]{repeats\+Forever = {\ttfamily false},  }\item[{int}]{repeats = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Schedules an event from a prototype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the event (for serialization etc.).\\
+\hline
+{\em cooldown} & Cooldown in seconds.\\
+\hline
+{\em repeats\+Forever} & Whether the event repeats forever (defaults false). If true repeats is ignored.\\
+\hline
+{\em repeats} & Number of repeats (default 1). Ignored if repeats\+Forever=true.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_aca67becc7742a1ae216cd9e444849f76}\label{class_scheduler_1_1_scheduler_aca67becc7742a1ae216cd9e444849f76}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Schedule\+Event@{Schedule\+Event}}
+\index{Schedule\+Event@{Schedule\+Event}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Schedule\+Event()}{ScheduleEvent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Schedule\+Event (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{float}]{cooldown,  }\item[{float}]{time\+To\+Wait,  }\item[{bool}]{repeats\+Forever = {\ttfamily false},  }\item[{int}]{repeats = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Schedules an event from a prototype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the event (for serialization etc.).\\
+\hline
+{\em cooldown} & Cooldown in seconds.\\
+\hline
+{\em time\+To\+Wait} & Time to wait before next firing in seconds.\\
+\hline
+{\em repeats\+Forever} & Whether the event repeats forever (defaults false). If true repeats is ignored.\\
+\hline
+{\em repeats} & Number of repeats (default 1). Ignored if repeats\+Forever=true.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_ac22fd3be39b7d3fd210c5e64417c6d2c}\label{class_scheduler_1_1_scheduler_ac22fd3be39b7d3fd210c5e64417c6d2c}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Time\+To\+Next\+Event@{Time\+To\+Next\+Event}}
+\index{Time\+To\+Next\+Event@{Time\+To\+Next\+Event}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Time\+To\+Next\+Event()}{TimeToNextEvent()}}
+{\footnotesize\ttfamily float Scheduler.\+Scheduler.\+Time\+To\+Next\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Time to next event in seconds. 
+
+\begin{DoxyReturn}{Returns}
+The to next event (-\/1 if there are no events).
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_ad84c5bec9c251c9c3859fd6253bad97b}\label{class_scheduler_1_1_scheduler_ad84c5bec9c251c9c3859fd6253bad97b}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Scheduler.\+Scheduler.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 194 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a9762a6e51fd4a109c4a89b718a5a8ce3}\label{class_scheduler_1_1_scheduler_a9762a6e51fd4a109c4a89b718a5a8ce3}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Update@{Update}}
+\index{Update@{Update}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scheduler.\+Scheduler.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the scheduler by the specified delta\+Time, running event callbacks as needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & Delta time in seconds.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file Scheduler.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a66617179c19d1dd759b5eec0fb538907}\label{class_scheduler_1_1_scheduler_a66617179c19d1dd759b5eec0fb538907}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Current@{Current}}
+\index{Current@{Current}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily \hyperlink{class_scheduler_1_1_scheduler}{Scheduler} Scheduler.\+Scheduler.\+Current\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Get the singleton instance of the main game scheduler. If it does not exist yet it is created on demand. 
+
+
+
+Definition at line 45 of file Scheduler.\+cs.
+
+\mbox{\Hypertarget{class_scheduler_1_1_scheduler_a78cb7c8fd7f08a284064373b350ddd4d}\label{class_scheduler_1_1_scheduler_a78cb7c8fd7f08a284064373b350ddd4d}} 
+\index{Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}!Events@{Events}}
+\index{Events@{Events}!Scheduler\+::\+Scheduler@{Scheduler\+::\+Scheduler}}
+\subsubsection{\texorpdfstring{Events}{Events}}
+{\footnotesize\ttfamily Read\+Only\+Collection$<$\hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}$>$ Scheduler.\+Scheduler.\+Events\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the events currently queued for execution by the scheduler. 
+
+The events.
+
+Definition at line 62 of file Scheduler.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Scheduler/\hyperlink{_scheduler_8cs}{Scheduler.\+cs}\end{DoxyCompactItemize}

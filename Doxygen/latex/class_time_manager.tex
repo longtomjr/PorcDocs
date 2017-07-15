@@ -1,0 +1,475 @@
+\hypertarget{class_time_manager}{}\section{Time\+Manager Class Reference}
+\label{class_time_manager}\index{Time\+Manager@{Time\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_time_manager_a77e028375607efbc2f94d83729f73f77}{Time\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_time_manager}{Time\+Manager} class. \end{DoxyCompactList}\item 
+float \mbox{[}$\,$\mbox{]} \hyperlink{class_time_manager_a4d38aca3fb77a306f12058159418afa5}{Get\+Time\+Scale\+Array\+Copy} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the time scale array. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_a981b6152006a85774eae414e5cfac46c}{Update} (float time)
+\begin{DoxyCompactList}\small\item\em Update the total time and invoke the required events. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_abc8d4800c8e592ff21eb128f7729e7ec}{Process\+Updatables} (float delta\+Time)
+\item 
+void \hyperlink{class_time_manager_a13fc95a140feaa5b8dae1b56c9de647e}{Set\+Time\+Scale\+Position} (int new\+Time\+Scale\+Position)
+\begin{DoxyCompactList}\small\item\em Sets the speed of the game. Greater time scale position equals greater speed. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_ade3342429174a1ddcf2557a03d340211}{Increase\+Time\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Increases the game speed by increasing the time scale by 1. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_a23aecf449e33a25ab34cd685d95419f4}{Decrease\+Time\+Scale} ()
+\begin{DoxyCompactList}\small\item\em Decreases the game speed by decreasing the time scale by 1. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_a804d5557e6611976bcaf246c2ba2abc0}{Destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy this instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_add5fdf0eb0e02fcdeaf8f8b7f201093b}{Register\+Fast\+Update} (\hyperlink{interface_i_updatable}{I\+Updatable} updatable)
+\item 
+void \hyperlink{class_time_manager_ad7bb3e065a799ce4110c378d9681eac7}{Unregister\+Fast\+Update} (\hyperlink{interface_i_updatable}{I\+Updatable} updatable)
+\item 
+void \hyperlink{class_time_manager_a8220eefffab92503ad9f635419f00152}{Register\+Slow\+Update} (\hyperlink{interface_i_updatable}{I\+Updatable} updatable)
+\item 
+void \hyperlink{class_time_manager_a2b41968cd3169bfc3a7a232da307f57d}{Unregister\+Slow\+Update} (\hyperlink{interface_i_updatable}{I\+Updatable} updatable)
+\item 
+void \hyperlink{class_time_manager_a74ea70f67b4faec30bad59668dd0fb1e}{Run\+Next\+Frame} (Action action)
+\begin{DoxyCompactList}\small\item\em Runs the action in the next frame before any updates are ran. \end{DoxyCompactList}\item 
+void \hyperlink{class_time_manager_a3b14c9e855ae6faffeb22897f3a55caf}{From\+Json} (J\+Token time\+Token)
+\item 
+J\+Token \hyperlink{class_time_manager_ad65e1163a2aea49194d3fbad7a764403}{To\+Json} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_time_manager}{Time\+Manager} \hyperlink{class_time_manager_a8c617ca2654bfe0d219d75a1c18afaad}{Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_time_manager}{Time\+Manager} instance. \end{DoxyCompactList}\item 
+float \hyperlink{class_time_manager_ae66e23b656eaad9ea1fe2ec8ffbb4ded}{Game\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the game time. \end{DoxyCompactList}\item 
+\hyperlink{struct_world_time}{World\+Time} \hyperlink{class_time_manager_a3a32877df68e778a84e8568a51c38f6a}{World\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{class_time_manager_ac0553946947ac0ff31307c69cc073ca7}{Time\+Scale\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_time_manager_ab76892d73eb84bacf19ffea6b603c03c}{Game\+Tick\+Delay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the game time tick delay. \end{DoxyCompactList}\item 
+float \hyperlink{class_time_manager_adeed4ffac282b5dfcccd1914363e5725}{Total\+Delta\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the total delta time. \end{DoxyCompactList}\item 
+float \hyperlink{class_time_manager_a2ecf6c84dc9909554b89db8a29edca76}{Time\+Scale}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multiplier of Time.\+delta\+Time. \end{DoxyCompactList}\item 
+bool \hyperlink{class_time_manager_af2072e9048d854f66fc5b7eb48d3c4af}{Is\+Paused}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the game is paused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ float $>$ \hyperlink{class_time_manager_aab532df265c6f480671cdab70bed571b}{Every\+Frame}
+\begin{DoxyCompactList}\small\item\em Systems that update every frame. \end{DoxyCompactList}\item 
+Action$<$ float $>$ \hyperlink{class_time_manager_a084a70cfad60b39d423fe1113ae3f62f}{Every\+Frame\+Not\+Modal}
+\begin{DoxyCompactList}\small\item\em Systems that update every frame not in Modal. \end{DoxyCompactList}\item 
+Action$<$ float $>$ \hyperlink{class_time_manager_ab7ecb89b1c903096f6b95b031e8b4b98}{Every\+Frame\+Unpaused}
+\begin{DoxyCompactList}\small\item\em Systems that update every frame while unpaused. \end{DoxyCompactList}\item 
+Action$<$ float $>$ \hyperlink{class_time_manager_aeebfc9883aff231dfd13abc52f1510c6}{Fixed\+Frequency}
+\begin{DoxyCompactList}\small\item\em Systems that update at fixed frequency. \end{DoxyCompactList}\item 
+Action$<$ float $>$ \hyperlink{class_time_manager_a6409743a5b7413daae38d535063dc29d}{Fixed\+Frequency\+Unpaused}
+\begin{DoxyCompactList}\small\item\em Systems that update at fixed frequency while unpaused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Time\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_time_manager_a77e028375607efbc2f94d83729f73f77}\label{class_time_manager_a77e028375607efbc2f94d83729f73f77}} 
+\index{Time\+Manager@{Time\+Manager}!Time\+Manager@{Time\+Manager}}
+\index{Time\+Manager@{Time\+Manager}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Time\+Manager()}{TimeManager()}}
+{\footnotesize\ttfamily Time\+Manager.\+Time\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_time_manager}{Time\+Manager} class. 
+
+
+
+Definition at line 42 of file Time\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_time_manager_a23aecf449e33a25ab34cd685d95419f4}\label{class_time_manager_a23aecf449e33a25ab34cd685d95419f4}} 
+\index{Time\+Manager@{Time\+Manager}!Decrease\+Time\+Scale@{Decrease\+Time\+Scale}}
+\index{Decrease\+Time\+Scale@{Decrease\+Time\+Scale}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Decrease\+Time\+Scale()}{DecreaseTimeScale()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Decrease\+Time\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decreases the game speed by decreasing the time scale by 1. 
+
+
+
+Definition at line 277 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a804d5557e6611976bcaf246c2ba2abc0}\label{class_time_manager_a804d5557e6611976bcaf246c2ba2abc0}} 
+\index{Time\+Manager@{Time\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy this instance. 
+
+
+
+Definition at line 285 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a3b14c9e855ae6faffeb22897f3a55caf}\label{class_time_manager_a3b14c9e855ae6faffeb22897f3a55caf}} 
+\index{Time\+Manager@{Time\+Manager}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Time\+Manager.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{time\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 332 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a4d38aca3fb77a306f12058159418afa5}\label{class_time_manager_a4d38aca3fb77a306f12058159418afa5}} 
+\index{Time\+Manager@{Time\+Manager}!Get\+Time\+Scale\+Array\+Copy@{Get\+Time\+Scale\+Array\+Copy}}
+\index{Get\+Time\+Scale\+Array\+Copy@{Get\+Time\+Scale\+Array\+Copy}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Time\+Scale\+Array\+Copy()}{GetTimeScaleArrayCopy()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Time\+Manager.\+Get\+Time\+Scale\+Array\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a copy of the time scale array. 
+
+\begin{DoxyReturn}{Returns}
+A non reference copy of the time scale array. 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ade3342429174a1ddcf2557a03d340211}\label{class_time_manager_ade3342429174a1ddcf2557a03d340211}} 
+\index{Time\+Manager@{Time\+Manager}!Increase\+Time\+Scale@{Increase\+Time\+Scale}}
+\index{Increase\+Time\+Scale@{Increase\+Time\+Scale}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Increase\+Time\+Scale()}{IncreaseTimeScale()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Increase\+Time\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increases the game speed by increasing the time scale by 1. 
+
+
+
+Definition at line 269 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_abc8d4800c8e592ff21eb128f7729e7ec}\label{class_time_manager_abc8d4800c8e592ff21eb128f7729e7ec}} 
+\index{Time\+Manager@{Time\+Manager}!Process\+Updatables@{Process\+Updatables}}
+\index{Process\+Updatables@{Process\+Updatables}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Process\+Updatables()}{ProcessUpdatables()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Process\+Updatables (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 223 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_add5fdf0eb0e02fcdeaf8f8b7f201093b}\label{class_time_manager_add5fdf0eb0e02fcdeaf8f8b7f201093b}} 
+\index{Time\+Manager@{Time\+Manager}!Register\+Fast\+Update@{Register\+Fast\+Update}}
+\index{Register\+Fast\+Update@{Register\+Fast\+Update}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Fast\+Update()}{RegisterFastUpdate()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Register\+Fast\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_updatable}{I\+Updatable}}]{updatable }\end{DoxyParamCaption})}
+
+
+
+Definition at line 290 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a8220eefffab92503ad9f635419f00152}\label{class_time_manager_a8220eefffab92503ad9f635419f00152}} 
+\index{Time\+Manager@{Time\+Manager}!Register\+Slow\+Update@{Register\+Slow\+Update}}
+\index{Register\+Slow\+Update@{Register\+Slow\+Update}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Slow\+Update()}{RegisterSlowUpdate()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Register\+Slow\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_updatable}{I\+Updatable}}]{updatable }\end{DoxyParamCaption})}
+
+
+
+Definition at line 306 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a74ea70f67b4faec30bad59668dd0fb1e}\label{class_time_manager_a74ea70f67b4faec30bad59668dd0fb1e}} 
+\index{Time\+Manager@{Time\+Manager}!Run\+Next\+Frame@{Run\+Next\+Frame}}
+\index{Run\+Next\+Frame@{Run\+Next\+Frame}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Run\+Next\+Frame()}{RunNextFrame()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Run\+Next\+Frame (\begin{DoxyParamCaption}\item[{Action}]{action }\end{DoxyParamCaption})}
+
+
+
+Runs the action in the next frame before any updates are ran. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action with no parameters.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 327 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a13fc95a140feaa5b8dae1b56c9de647e}\label{class_time_manager_a13fc95a140feaa5b8dae1b56c9de647e}} 
+\index{Time\+Manager@{Time\+Manager}!Set\+Time\+Scale\+Position@{Set\+Time\+Scale\+Position}}
+\index{Set\+Time\+Scale\+Position@{Set\+Time\+Scale\+Position}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Time\+Scale\+Position()}{SetTimeScalePosition()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Set\+Time\+Scale\+Position (\begin{DoxyParamCaption}\item[{int}]{new\+Time\+Scale\+Position }\end{DoxyParamCaption})}
+
+
+
+Sets the speed of the game. Greater time scale position equals greater speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Time\+Scale\+Position} & New time scale position.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 256 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ad65e1163a2aea49194d3fbad7a764403}\label{class_time_manager_ad65e1163a2aea49194d3fbad7a764403}} 
+\index{Time\+Manager@{Time\+Manager}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Time\+Manager.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 340 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ad7bb3e065a799ce4110c378d9681eac7}\label{class_time_manager_ad7bb3e065a799ce4110c378d9681eac7}} 
+\index{Time\+Manager@{Time\+Manager}!Unregister\+Fast\+Update@{Unregister\+Fast\+Update}}
+\index{Unregister\+Fast\+Update@{Unregister\+Fast\+Update}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Unregister\+Fast\+Update()}{UnregisterFastUpdate()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Unregister\+Fast\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_updatable}{I\+Updatable}}]{updatable }\end{DoxyParamCaption})}
+
+
+
+Definition at line 298 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a2b41968cd3169bfc3a7a232da307f57d}\label{class_time_manager_a2b41968cd3169bfc3a7a232da307f57d}} 
+\index{Time\+Manager@{Time\+Manager}!Unregister\+Slow\+Update@{Unregister\+Slow\+Update}}
+\index{Unregister\+Slow\+Update@{Unregister\+Slow\+Update}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Unregister\+Slow\+Update()}{UnregisterSlowUpdate()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Unregister\+Slow\+Update (\begin{DoxyParamCaption}\item[{\hyperlink{interface_i_updatable}{I\+Updatable}}]{updatable }\end{DoxyParamCaption})}
+
+
+
+Definition at line 314 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a981b6152006a85774eae414e5cfac46c}\label{class_time_manager_a981b6152006a85774eae414e5cfac46c}} 
+\index{Time\+Manager@{Time\+Manager}!Update@{Update}}
+\index{Update@{Update}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Time\+Manager.\+Update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Update the total time and invoke the required events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Time since last frame.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file Time\+Manager.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_time_manager_ab76892d73eb84bacf19ffea6b603c03c}\label{class_time_manager_ab76892d73eb84bacf19ffea6b603c03c}} 
+\index{Time\+Manager@{Time\+Manager}!Game\+Tick\+Delay@{Game\+Tick\+Delay}}
+\index{Game\+Tick\+Delay@{Game\+Tick\+Delay}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Game\+Tick\+Delay}{GameTickDelay}}
+{\footnotesize\ttfamily float Time\+Manager.\+Game\+Tick\+Delay\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the game time tick delay. 
+
+The game time tick delay.
+
+Definition at line 140 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ae66e23b656eaad9ea1fe2ec8ffbb4ded}\label{class_time_manager_ae66e23b656eaad9ea1fe2ec8ffbb4ded}} 
+\index{Time\+Manager@{Time\+Manager}!Game\+Time@{Game\+Time}}
+\index{Game\+Time@{Game\+Time}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Game\+Time}{GameTime}}
+{\footnotesize\ttfamily float Time\+Manager.\+Game\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the game time. 
+
+The game time.
+
+Definition at line 109 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a8c617ca2654bfe0d219d75a1c18afaad}\label{class_time_manager_a8c617ca2654bfe0d219d75a1c18afaad}} 
+\index{Time\+Manager@{Time\+Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \hyperlink{class_time_manager}{Time\+Manager} Time\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the \hyperlink{class_time_manager}{Time\+Manager} instance. 
+
+The \hyperlink{class_time_manager}{Time\+Manager} instance.
+
+Definition at line 93 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_af2072e9048d854f66fc5b7eb48d3c4af}\label{class_time_manager_af2072e9048d854f66fc5b7eb48d3c4af}} 
+\index{Time\+Manager@{Time\+Manager}!Is\+Paused@{Is\+Paused}}
+\index{Is\+Paused@{Is\+Paused}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Paused}{IsPaused}}
+{\footnotesize\ttfamily bool Time\+Manager.\+Is\+Paused\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Returns true if the game is paused. 
+
+{\ttfamily true} if this game is paused; otherwise, {\ttfamily false}.
+
+Definition at line 160 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a2ecf6c84dc9909554b89db8a29edca76}\label{class_time_manager_a2ecf6c84dc9909554b89db8a29edca76}} 
+\index{Time\+Manager@{Time\+Manager}!Time\+Scale@{Time\+Scale}}
+\index{Time\+Scale@{Time\+Scale}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Time\+Scale}{TimeScale}}
+{\footnotesize\ttfamily float Time\+Manager.\+Time\+Scale\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Multiplier of Time.\+delta\+Time. 
+
+The time scale.
+
+Definition at line 154 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ac0553946947ac0ff31307c69cc073ca7}\label{class_time_manager_ac0553946947ac0ff31307c69cc073ca7}} 
+\index{Time\+Manager@{Time\+Manager}!Time\+Scale\+Position@{Time\+Scale\+Position}}
+\index{Time\+Scale\+Position@{Time\+Scale\+Position}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Time\+Scale\+Position}{TimeScalePosition}}
+{\footnotesize\ttfamily int Time\+Manager.\+Time\+Scale\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 133 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_adeed4ffac282b5dfcccd1914363e5725}\label{class_time_manager_adeed4ffac282b5dfcccd1914363e5725}} 
+\index{Time\+Manager@{Time\+Manager}!Total\+Delta\+Time@{Total\+Delta\+Time}}
+\index{Total\+Delta\+Time@{Total\+Delta\+Time}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Total\+Delta\+Time}{TotalDeltaTime}}
+{\footnotesize\ttfamily float Time\+Manager.\+Total\+Delta\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the total delta time. 
+
+The total delta time.
+
+Definition at line 148 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a3a32877df68e778a84e8568a51c38f6a}\label{class_time_manager_a3a32877df68e778a84e8568a51c38f6a}} 
+\index{Time\+Manager@{Time\+Manager}!World\+Time@{World\+Time}}
+\index{World\+Time@{World\+Time}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{World\+Time}{WorldTime}}
+{\footnotesize\ttfamily \hyperlink{struct_world_time}{World\+Time} Time\+Manager.\+World\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+Gets or sets the world time.
+
+Assigning to \hyperlink{struct_world_time}{World\+Time} will adjust Game\+Time appropriately, however, using the Set and Add methods directly on \hyperlink{struct_world_time}{World\+Time} will not work. To adjust \hyperlink{struct_world_time}{World\+Time} assign a new \hyperlink{struct_world_time}{World\+Time}, or assign immediately after adjusting.
+
+Example\+: {\ttfamily \hyperlink{struct_world_time}{World\+Time} = World\+Time.\+Set\+Hour(8).Set\+Minute(0)} will properly change the time to 8\+:00, leaving everything else the same.
+
+The world time.
+
+Definition at line 119 of file Time\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_time_manager_aab532df265c6f480671cdab70bed571b}\label{class_time_manager_aab532df265c6f480671cdab70bed571b}} 
+\index{Time\+Manager@{Time\+Manager}!Every\+Frame@{Every\+Frame}}
+\index{Every\+Frame@{Every\+Frame}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Every\+Frame}{EveryFrame}}
+{\footnotesize\ttfamily Action$<$float$>$ Time\+Manager.\+Every\+Frame}
+
+
+
+Systems that update every frame. 
+
+
+
+Definition at line 66 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a084a70cfad60b39d423fe1113ae3f62f}\label{class_time_manager_a084a70cfad60b39d423fe1113ae3f62f}} 
+\index{Time\+Manager@{Time\+Manager}!Every\+Frame\+Not\+Modal@{Every\+Frame\+Not\+Modal}}
+\index{Every\+Frame\+Not\+Modal@{Every\+Frame\+Not\+Modal}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Every\+Frame\+Not\+Modal}{EveryFrameNotModal}}
+{\footnotesize\ttfamily Action$<$float$>$ Time\+Manager.\+Every\+Frame\+Not\+Modal}
+
+
+
+Systems that update every frame not in Modal. 
+
+
+
+Definition at line 71 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_ab7ecb89b1c903096f6b95b031e8b4b98}\label{class_time_manager_ab7ecb89b1c903096f6b95b031e8b4b98}} 
+\index{Time\+Manager@{Time\+Manager}!Every\+Frame\+Unpaused@{Every\+Frame\+Unpaused}}
+\index{Every\+Frame\+Unpaused@{Every\+Frame\+Unpaused}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Every\+Frame\+Unpaused}{EveryFrameUnpaused}}
+{\footnotesize\ttfamily Action$<$float$>$ Time\+Manager.\+Every\+Frame\+Unpaused}
+
+
+
+Systems that update every frame while unpaused. 
+
+
+
+Definition at line 76 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_aeebfc9883aff231dfd13abc52f1510c6}\label{class_time_manager_aeebfc9883aff231dfd13abc52f1510c6}} 
+\index{Time\+Manager@{Time\+Manager}!Fixed\+Frequency@{Fixed\+Frequency}}
+\index{Fixed\+Frequency@{Fixed\+Frequency}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency}{FixedFrequency}}
+{\footnotesize\ttfamily Action$<$float$>$ Time\+Manager.\+Fixed\+Frequency}
+
+
+
+Systems that update at fixed frequency. 
+
+
+
+Definition at line 81 of file Time\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_time_manager_a6409743a5b7413daae38d535063dc29d}\label{class_time_manager_a6409743a5b7413daae38d535063dc29d}} 
+\index{Time\+Manager@{Time\+Manager}!Fixed\+Frequency\+Unpaused@{Fixed\+Frequency\+Unpaused}}
+\index{Fixed\+Frequency\+Unpaused@{Fixed\+Frequency\+Unpaused}!Time\+Manager@{Time\+Manager}}
+\subsubsection{\texorpdfstring{Fixed\+Frequency\+Unpaused}{FixedFrequencyUnpaused}}
+{\footnotesize\ttfamily Action$<$float$>$ Time\+Manager.\+Fixed\+Frequency\+Unpaused}
+
+
+
+Systems that update at fixed frequency while unpaused. 
+
+
+
+Definition at line 86 of file Time\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Time/\hyperlink{_time_manager_8cs}{Time\+Manager.\+cs}\end{DoxyCompactItemize}

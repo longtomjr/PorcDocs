@@ -1,0 +1,294 @@
+\hypertarget{class_furniture_manager}{}\section{Furniture\+Manager Class Reference}
+\label{class_furniture_manager}\index{Furniture\+Manager@{Furniture\+Manager}}
+Inheritance diagram for Furniture\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_furniture_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_furniture_manager_a761364a8580e4a11ed7b775a02f91bd8}{Furniture\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_furniture_manager}{Furniture\+Manager} class. \end{DoxyCompactList}\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_furniture_manager_a4b40e2d1a5018e87a6985ffc7876a4e3}{Place\+Furniture} (string type, \hyperlink{class_tile}{Tile} tile, bool do\+Room\+Flood\+Fill=true, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Creates a furniture with the given type and places it at the given tile. \end{DoxyCompactList}\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_furniture_manager_ae7a63d95e4bb329ffa60d3e82852d895}{Place\+Furniture} (\hyperlink{class_furniture}{Furniture} prototype, \hyperlink{class_tile}{Tile} tile, bool do\+Room\+Flood\+Fill=true)
+\begin{DoxyCompactList}\small\item\em Places the given furniture prototype at the given tile. \end{DoxyCompactList}\item 
+void \hyperlink{class_furniture_manager_a011d3a18ca0bb2d2efc9e865cf65b1a3}{Construct\+Job\+Completed} (\hyperlink{class_job}{Job} job)
+\begin{DoxyCompactList}\small\item\em When a construction job is completed, place the furniture. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_manager_a358df1d08a99d84ea0905cc299d5365c}{Is\+Placement\+Valid} (string type, \hyperlink{class_tile}{Tile} tile, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Determines whether the placement of a furniture with the given type at the given tile is valid. \end{DoxyCompactList}\item 
+bool \hyperlink{class_furniture_manager_a82b6dcc693f7e66ee2cc65bfc9073efb}{Is\+Work\+Spot\+Clear} (string type, \hyperlink{class_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em Determines whether the work spot of the furniture with the given type at the given tile is clear. \end{DoxyCompactList}\item 
+int \hyperlink{class_furniture_manager_a70313492579a8ea148e6f44801295c12}{Count\+With\+Type} (string type)
+\begin{DoxyCompactList}\small\item\em Returns the amount of furniture with the given type. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_furniture_manager_a51c4836f1c5143937591e7ba2bbf5421}{Find} (Func$<$ \hyperlink{class_furniture}{Furniture}, bool $>$ filter\+Func)
+\begin{DoxyCompactList}\small\item\em Returns a list of furniture using the given filter function. \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_furniture_manager_ae0592610047ec63534e486aea0efe024}{Get\+Enumerator} ()
+\begin{DoxyCompactList}\small\item\em Gets the furnitures enumerator. \end{DoxyCompactList}\item 
+J\+Token \hyperlink{class_furniture_manager_aa383347dc534e4f52ae0fbb3729fe220}{To\+Json} ()
+\item 
+void \hyperlink{class_furniture_manager_a3e1027bf9740154600e18d726e73e2fd}{From\+Json} (J\+Token furnitures\+Token)
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \hyperlink{class_furniture}{Furniture} $>$ \hyperlink{class_furniture_manager_a40726185433919d2017c568af6deef33}{Created}
+\begin{DoxyCompactList}\small\item\em Occurs when a \hyperlink{class_furniture}{Furniture} is created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Furniture\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_furniture_manager_a761364a8580e4a11ed7b775a02f91bd8}\label{class_furniture_manager_a761364a8580e4a11ed7b775a02f91bd8}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Furniture\+Manager@{Furniture\+Manager}}
+\index{Furniture\+Manager@{Furniture\+Manager}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Furniture\+Manager()}{FurnitureManager()}}
+{\footnotesize\ttfamily Furniture\+Manager.\+Furniture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_furniture_manager}{Furniture\+Manager} class. 
+
+
+
+Definition at line 25 of file Furniture\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_furniture_manager_a011d3a18ca0bb2d2efc9e865cf65b1a3}\label{class_furniture_manager_a011d3a18ca0bb2d2efc9e865cf65b1a3}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Construct\+Job\+Completed@{Construct\+Job\+Completed}}
+\index{Construct\+Job\+Completed@{Construct\+Job\+Completed}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Construct\+Job\+Completed()}{ConstructJobCompleted()}}
+{\footnotesize\ttfamily void Furniture\+Manager.\+Construct\+Job\+Completed (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+When a construction job is completed, place the furniture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & The completed job.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a70313492579a8ea148e6f44801295c12}\label{class_furniture_manager_a70313492579a8ea148e6f44801295c12}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Count\+With\+Type@{Count\+With\+Type}}
+\index{Count\+With\+Type@{Count\+With\+Type}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Count\+With\+Type()}{CountWithType()}}
+{\footnotesize\ttfamily int Furniture\+Manager.\+Count\+With\+Type (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Returns the amount of furniture with the given type. 
+
+\begin{DoxyReturn}{Returns}
+The amount of furniture with the given type.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The furniture type.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 160 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a51c4836f1c5143937591e7ba2bbf5421}\label{class_furniture_manager_a51c4836f1c5143937591e7ba2bbf5421}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Find@{Find}}
+\index{Find@{Find}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_furniture}{Furniture}$>$ Furniture\+Manager.\+Find (\begin{DoxyParamCaption}\item[{Func$<$ \hyperlink{class_furniture}{Furniture}, bool $>$}]{filter\+Func }\end{DoxyParamCaption})}
+
+
+
+Returns a list of furniture using the given filter function. 
+
+\begin{DoxyReturn}{Returns}
+A list of furnitures.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em filter\+Func} & The filter function.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 170 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a3e1027bf9740154600e18d726e73e2fd}\label{class_furniture_manager_a3e1027bf9740154600e18d726e73e2fd}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!From\+Json@{From\+Json}}
+\index{From\+Json@{From\+Json}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{From\+Json()}{FromJson()}}
+{\footnotesize\ttfamily void Furniture\+Manager.\+From\+Json (\begin{DoxyParamCaption}\item[{J\+Token}]{furnitures\+Token }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_ae0592610047ec63534e486aea0efe024}\label{class_furniture_manager_ae0592610047ec63534e486aea0efe024}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator Furniture\+Manager.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the furnitures enumerator. 
+
+\begin{DoxyReturn}{Returns}
+The enumerator.
+\end{DoxyReturn}
+
+
+Definition at line 179 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a358df1d08a99d84ea0905cc299d5365c}\label{class_furniture_manager_a358df1d08a99d84ea0905cc299d5365c}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Is\+Placement\+Valid@{Is\+Placement\+Valid}}
+\index{Is\+Placement\+Valid@{Is\+Placement\+Valid}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Placement\+Valid()}{IsPlacementValid()}}
+{\footnotesize\ttfamily bool Furniture\+Manager.\+Is\+Placement\+Valid (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})}
+
+
+
+Determines whether the placement of a furniture with the given type at the given tile is valid. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the placement is valid; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The furniture type.\\
+\hline
+{\em tile} & The tile where the furniture will be placed.\\
+\hline
+{\em rotation} & The rotation applied to the furniture.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a82b6dcc693f7e66ee2cc65bfc9073efb}\label{class_furniture_manager_a82b6dcc693f7e66ee2cc65bfc9073efb}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Is\+Work\+Spot\+Clear@{Is\+Work\+Spot\+Clear}}
+\index{Is\+Work\+Spot\+Clear@{Is\+Work\+Spot\+Clear}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Work\+Spot\+Clear()}{IsWorkSpotClear()}}
+{\footnotesize\ttfamily bool Furniture\+Manager.\+Is\+Work\+Spot\+Clear (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+Determines whether the work spot of the furniture with the given type at the given tile is clear. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the work spot at the give tile is clear; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em furniture\+Type} & \hyperlink{class_furniture}{Furniture} type.\\
+\hline
+{\em tile} & The tile we want to check.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_a4b40e2d1a5018e87a6985ffc7876a4e3}\label{class_furniture_manager_a4b40e2d1a5018e87a6985ffc7876a4e3}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Place\+Furniture@{Place\+Furniture}}
+\index{Place\+Furniture@{Place\+Furniture}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Place\+Furniture()}{PlaceFurniture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Furniture\+Manager.\+Place\+Furniture (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{do\+Room\+Flood\+Fill = {\ttfamily true},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})}
+
+
+
+Creates a furniture with the given type and places it at the given tile. 
+
+\begin{DoxyReturn}{Returns}
+The furniture.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the furniture.\\
+\hline
+{\em tile} & The tile to place the furniture at.\\
+\hline
+{\em do\+Room\+Flood\+Fill} & If set to {\ttfamily true} do room flood fill.\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & The rotation applied to te furniture.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_ae7a63d95e4bb329ffa60d3e82852d895}\label{class_furniture_manager_ae7a63d95e4bb329ffa60d3e82852d895}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Place\+Furniture@{Place\+Furniture}}
+\index{Place\+Furniture@{Place\+Furniture}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Place\+Furniture()}{PlaceFurniture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Furniture\+Manager.\+Place\+Furniture (\begin{DoxyParamCaption}\item[{\hyperlink{class_furniture}{Furniture}}]{prototype,  }\item[{\hyperlink{class_tile}{Tile}}]{tile,  }\item[{bool}]{do\+Room\+Flood\+Fill = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Places the given furniture prototype at the given tile. 
+
+\begin{DoxyReturn}{Returns}
+The furniture.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em prototype} & The furniture prototype.\\
+\hline
+{\em tile} & The tile to place the furniture at.\\
+\hline
+{\em do\+Room\+Flood\+Fill} & If set to {\ttfamily true} do room flood fill.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Furniture\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_furniture_manager_aa383347dc534e4f52ae0fbb3729fe220}\label{class_furniture_manager_aa383347dc534e4f52ae0fbb3729fe220}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!To\+Json@{To\+Json}}
+\index{To\+Json@{To\+Json}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{To\+Json()}{ToJson()}}
+{\footnotesize\ttfamily J\+Token Furniture\+Manager.\+To\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file Furniture\+Manager.\+cs.
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_furniture_manager_a40726185433919d2017c568af6deef33}\label{class_furniture_manager_a40726185433919d2017c568af6deef33}} 
+\index{Furniture\+Manager@{Furniture\+Manager}!Created@{Created}}
+\index{Created@{Created}!Furniture\+Manager@{Furniture\+Manager}}
+\subsubsection{\texorpdfstring{Created}{Created}}
+{\footnotesize\ttfamily Action$<$\hyperlink{class_furniture}{Furniture}$>$ Furniture\+Manager.\+Created}
+
+
+
+Occurs when a \hyperlink{class_furniture}{Furniture} is created. 
+
+
+
+Definition at line 33 of file Furniture\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Buildable/\hyperlink{_furniture_manager_8cs}{Furniture\+Manager.\+cs}\end{DoxyCompactItemize}

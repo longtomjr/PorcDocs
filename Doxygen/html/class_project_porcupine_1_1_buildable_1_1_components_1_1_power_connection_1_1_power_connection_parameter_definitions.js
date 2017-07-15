@@ -1,0 +1,16 @@
+var class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions =
+[
+    [ "PowerConnectionParameterDefinitions", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#a628efdc76d299cf19ae1375d5f54136c", null ],
+    [ "CurAccumulatorChargeParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#ab854fa88f5bd37226ce16be83f9280a4", null ],
+    [ "CurAccumulatorIndexParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#ad102141d8915a8ff68c08df2616ee71c", null ],
+    [ "CurEfficiencyParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#ab43ce85e33fdff8a653c74e11d726b71", null ],
+    [ "CurIsConnectedParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#a5f33d96a60c0ea74d1feab5d5ee7f4da", null ],
+    [ "CurIsRunningParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#ae92f54bead5456a3fe78816791783182", null ],
+    [ "CurPowerOutputNeededParamName", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#afa4062d4705d60a0b11472cdd7d65330", null ],
+    [ "CurrentAcumulatorCharge", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#a8c8c1981be7015f99eab23a9d5d17c5f", null ],
+    [ "CurrentAcumulatorChargeIndex", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#ac928466fa20c85677b29481c90af0dec", null ],
+    [ "Efficiency", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#aa99b6bdda64e03a9ba5db483fa0bf70c", null ],
+    [ "IsConnected", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#a5cb25c84af21c0d6fe5b71ee37a460c6", null ],
+    [ "IsRunning", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#a8b1c83b00444ce193b45a678a9a1c651", null ],
+    [ "OutputNeeded", "class_project_porcupine_1_1_buildable_1_1_components_1_1_power_connection_1_1_power_connection_parameter_definitions.html#af874844d2f05d28fbddf234d0b508562", null ]
+];

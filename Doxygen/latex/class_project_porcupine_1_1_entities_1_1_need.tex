@@ -1,0 +1,292 @@
+\hypertarget{class_project_porcupine_1_1_entities_1_1_need}{}\section{Project\+Porcupine.\+Entities.\+Need Class Reference}
+\label{class_project_porcupine_1_1_entities_1_1_need}\index{Project\+Porcupine.\+Entities.\+Need@{Project\+Porcupine.\+Entities.\+Need}}
+Inheritance diagram for Project\+Porcupine.\+Entities.\+Need\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_project_porcupine_1_1_entities_1_1_need}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_need_a148253883ad936962964886824a16806}{Need} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a00e0fc61e6ad375cc6f7a0d94200f481}{Update} (float delta\+Time)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_af676e3d4ffb2be13a03ebe996dbffa18}{Read\+Xml\+Prototype} (Xml\+Reader parent\+Reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a04ddf2d9ecbb517d365082d33f1ced42}{Complete\+Job\+Norm} (\hyperlink{class_job}{Job} job)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_ab2c5d9c61f2f7d11a7ceea0dca6b089b}{Complete\+Job\+Crit} (\hyperlink{class_job}{Job} job)
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_need}{Need} \hyperlink{class_project_porcupine_1_1_entities_1_1_need_ad876e665d7a1d3b1431f4b0178ac31c1}{Clone} ()
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a2a175d9f075fcdefa0254553cf8d178e}{Default\+Need\+Decay} (float delta\+Time)
+\item 
+void \hyperlink{class_project_porcupine_1_1_entities_1_1_need_ae479726245e39ddd70ccd7236839a39c}{Default\+Empty\+Need} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a1ef863325aba0c89791d2e83b01e59a7}{Character}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_need_aebf1aa4bc780aa29f0d99b3b108d5d34}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a06818f5451bf2eee85bc3b141b741fea}{Localization\+ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_need_afbfbd5983c86e7654c8e0737d309ca53}{Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a451f8a3a610a2af5be7ac849db04e304}{Restore\+Need\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a3cda999c9c674956713f5644a9dc2609}{Growth\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a4f78d13808f8b140e82c5865f911cd58}{Damage}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{class_project_porcupine_1_1_entities_1_1_need_af40852be1b22753dd66f79e907c08bca}{Complete\+On\+Fail}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_furniture}{Furniture} \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a23c8510ac64b1811b52a882e20dd3d1c}{Restore\+Need\+Furn}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a64b98312bcc8d39c636cf52a9c0d1283}{Restore\+Need\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a9ee9f436ab282d791c37869442ffb10d}{Display\+Amount}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{class_event_actions}{Event\+Actions} \hyperlink{class_project_porcupine_1_1_entities_1_1_need_a06702925123a4542be6e8e39c77128d3}{Event\+Actions}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Event\+Action for the current furniture. These actions are called when an event is called. They get passed the furniture they belong to, plus a delta\+Time (which defaults to 0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Need.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a148253883ad936962964886824a16806}\label{class_project_porcupine_1_1_entities_1_1_need_a148253883ad936962964886824a16806}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Need@{Need}}
+\index{Need@{Need}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Need()}{Need()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+Need.\+Need (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Need.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_ad876e665d7a1d3b1431f4b0178ac31c1}\label{class_project_porcupine_1_1_entities_1_1_need_ad876e665d7a1d3b1431f4b0178ac31c1}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Clone@{Clone}}
+\index{Clone@{Clone}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_need}{Need} Project\+Porcupine.\+Entities.\+Need.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_ab2c5d9c61f2f7d11a7ceea0dca6b089b}\label{class_project_porcupine_1_1_entities_1_1_need_ab2c5d9c61f2f7d11a7ceea0dca6b089b}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Complete\+Job\+Crit@{Complete\+Job\+Crit}}
+\index{Complete\+Job\+Crit@{Complete\+Job\+Crit}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Complete\+Job\+Crit()}{CompleteJobCrit()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Complete\+Job\+Crit (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Definition at line 201 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a04ddf2d9ecbb517d365082d33f1ced42}\label{class_project_porcupine_1_1_entities_1_1_need_a04ddf2d9ecbb517d365082d33f1ced42}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Complete\+Job\+Norm@{Complete\+Job\+Norm}}
+\index{Complete\+Job\+Norm@{Complete\+Job\+Norm}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Complete\+Job\+Norm()}{CompleteJobNorm()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Complete\+Job\+Norm (\begin{DoxyParamCaption}\item[{\hyperlink{class_job}{Job}}]{job }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_ae479726245e39ddd70ccd7236839a39c}\label{class_project_porcupine_1_1_entities_1_1_need_ae479726245e39ddd70ccd7236839a39c}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Default\+Empty\+Need@{Default\+Empty\+Need}}
+\index{Default\+Empty\+Need@{Default\+Empty\+Need}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Default\+Empty\+Need()}{DefaultEmptyNeed()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Default\+Empty\+Need (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 216 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a2a175d9f075fcdefa0254553cf8d178e}\label{class_project_porcupine_1_1_entities_1_1_need_a2a175d9f075fcdefa0254553cf8d178e}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Default\+Need\+Decay@{Default\+Need\+Decay}}
+\index{Default\+Need\+Decay@{Default\+Need\+Decay}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Default\+Need\+Decay()}{DefaultNeedDecay()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Default\+Need\+Decay (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_af676e3d4ffb2be13a03ebe996dbffa18}\label{class_project_porcupine_1_1_entities_1_1_need_af676e3d4ffb2be13a03ebe996dbffa18}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader\+Parent} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 145 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a00e0fc61e6ad375cc6f7a0d94200f481}\label{class_project_porcupine_1_1_entities_1_1_need_a00e0fc61e6ad375cc6f7a0d94200f481}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Update@{Update}}
+\index{Update@{Update}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Project\+Porcupine.\+Entities.\+Need.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file Need.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_afbfbd5983c86e7654c8e0737d309ca53}\label{class_project_porcupine_1_1_entities_1_1_need_afbfbd5983c86e7654c8e0737d309ca53}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Amount@{Amount}}
+\index{Amount@{Amount}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Amount}{Amount}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Need.\+Amount\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 54 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a1ef863325aba0c89791d2e83b01e59a7}\label{class_project_porcupine_1_1_entities_1_1_need_a1ef863325aba0c89791d2e83b01e59a7}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Character@{Character}}
+\index{Character@{Character}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Character}{Character}}
+{\footnotesize\ttfamily \hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} Project\+Porcupine.\+Entities.\+Need.\+Character\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 47 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_af40852be1b22753dd66f79e907c08bca}\label{class_project_porcupine_1_1_entities_1_1_need_af40852be1b22753dd66f79e907c08bca}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Complete\+On\+Fail@{Complete\+On\+Fail}}
+\index{Complete\+On\+Fail@{Complete\+On\+Fail}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Complete\+On\+Fail}{CompleteOnFail}}
+{\footnotesize\ttfamily bool Project\+Porcupine.\+Entities.\+Need.\+Complete\+On\+Fail\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 72 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a4f78d13808f8b140e82c5865f911cd58}\label{class_project_porcupine_1_1_entities_1_1_need_a4f78d13808f8b140e82c5865f911cd58}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Damage@{Damage}}
+\index{Damage@{Damage}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Damage}{Damage}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Need.\+Damage\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 70 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a9ee9f436ab282d791c37869442ffb10d}\label{class_project_porcupine_1_1_entities_1_1_need_a9ee9f436ab282d791c37869442ffb10d}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Display\+Amount@{Display\+Amount}}
+\index{Display\+Amount@{Display\+Amount}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Display\+Amount}{DisplayAmount}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Need.\+Display\+Amount\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 79 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a06702925123a4542be6e8e39c77128d3}\label{class_project_porcupine_1_1_entities_1_1_need_a06702925123a4542be6e8e39c77128d3}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Event\+Actions@{Event\+Actions}}
+\index{Event\+Actions@{Event\+Actions}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Event\+Actions}{EventActions}}
+{\footnotesize\ttfamily \hyperlink{class_event_actions}{Event\+Actions} Project\+Porcupine.\+Entities.\+Need.\+Event\+Actions\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Event\+Action for the current furniture. These actions are called when an event is called. They get passed the furniture they belong to, plus a delta\+Time (which defaults to 0). 
+
+The event actions that is called on update.
+
+Definition at line 97 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a3cda999c9c674956713f5644a9dc2609}\label{class_project_porcupine_1_1_entities_1_1_need_a3cda999c9c674956713f5644a9dc2609}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Growth\+Rate@{Growth\+Rate}}
+\index{Growth\+Rate@{Growth\+Rate}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Growth\+Rate}{GrowthRate}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Need.\+Growth\+Rate\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 68 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a06818f5451bf2eee85bc3b141b741fea}\label{class_project_porcupine_1_1_entities_1_1_need_a06818f5451bf2eee85bc3b141b741fea}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Localization\+ID@{Localization\+ID}}
+\index{Localization\+ID@{Localization\+ID}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Localization\+ID}{LocalizationID}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Need.\+Localization\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 51 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a451f8a3a610a2af5be7ac849db04e304}\label{class_project_porcupine_1_1_entities_1_1_need_a451f8a3a610a2af5be7ac849db04e304}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Restore\+Need\+Amount@{Restore\+Need\+Amount}}
+\index{Restore\+Need\+Amount@{Restore\+Need\+Amount}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Restore\+Need\+Amount}{RestoreNeedAmount}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Need.\+Restore\+Need\+Amount\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 66 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a23c8510ac64b1811b52a882e20dd3d1c}\label{class_project_porcupine_1_1_entities_1_1_need_a23c8510ac64b1811b52a882e20dd3d1c}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Restore\+Need\+Furn@{Restore\+Need\+Furn}}
+\index{Restore\+Need\+Furn@{Restore\+Need\+Furn}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Restore\+Need\+Furn}{RestoreNeedFurn}}
+{\footnotesize\ttfamily \hyperlink{class_furniture}{Furniture} Project\+Porcupine.\+Entities.\+Need.\+Restore\+Need\+Furn\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 74 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_a64b98312bcc8d39c636cf52a9c0d1283}\label{class_project_porcupine_1_1_entities_1_1_need_a64b98312bcc8d39c636cf52a9c0d1283}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Restore\+Need\+Time@{Restore\+Need\+Time}}
+\index{Restore\+Need\+Time@{Restore\+Need\+Time}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Restore\+Need\+Time}{RestoreNeedTime}}
+{\footnotesize\ttfamily float Project\+Porcupine.\+Entities.\+Need.\+Restore\+Need\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 76 of file Need.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_need_aebf1aa4bc780aa29f0d99b3b108d5d34}\label{class_project_porcupine_1_1_entities_1_1_need_aebf1aa4bc780aa29f0d99b3b108d5d34}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}!Type@{Type}}
+\index{Type@{Type}!Project\+Porcupine\+::\+Entities\+::\+Need@{Project\+Porcupine\+::\+Entities\+::\+Need}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Project\+Porcupine.\+Entities.\+Need.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Definition at line 49 of file Need.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Job/\hyperlink{_need_8cs}{Need.\+cs}\end{DoxyCompactItemize}

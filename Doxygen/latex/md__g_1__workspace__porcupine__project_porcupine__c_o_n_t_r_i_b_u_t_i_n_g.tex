@@ -1,0 +1,261 @@
+/// Xml documentation comments are encouraged. Describe public A\+P\+Is and the intent of code, not implementation details. /// 
+
+\href{#contributing}{\tt Contributing} \href{#resolving-merge-conflicts}{\tt Resolving Merge Conflicts} \href{#unity-version}{\tt Unity Version} \href{#general-resources}{\tt General resources} \href{#style-guidelines}{\tt Style Guidelines} \href{#adding-new-types-of-furniture-inventory-commands}{\tt Adding Furniture and Inventory} \href{#best-practices-for-contributing}{\tt Best Practices for Contributing} \href{#file-formats}{\tt Image \& Sound File Formats}
+
+\section*{How do I make my old Project Porcupine repository link to the new one?}
+
+If you have an old Project Porcupine repository fork and you want to contribute to the new one it is quite easy, if you want to keep the old repository fork then follow these instructions. If you don\textquotesingle{}t then just delete your old fork and then do these steps, instead of having two forks with the new one called {\ttfamily Project\+Porcupine-\/1} you\textquotesingle{}ll just have one with it being called {\ttfamily \hyperlink{namespace_project_porcupine}{Project\+Porcupine}}, so remove all instances of {\ttfamily -\/1} in the below set of instructions.
+\begin{DoxyEnumerate}
+\item First you have to fork the new {\ttfamily Order\+Of\+The\+Porcupine/\+Project\+Porcupine} project.
+\item You will now have two forks one called {\ttfamily \hyperlink{namespace_project_porcupine}{Project\+Porcupine}} and the other {\ttfamily Project\+Porcupine-\/1}.
+\item Copy the link to the git of the {\ttfamily Project\+Porcupine-\/1} (https) it should be in format {\ttfamily \href{https://github.com/}{\tt https\+://github.\+com/}$<$U\+S\+E\+R\+N\+A\+ME$>$/\+Project\+Porcupine-\/1.git}.
+\item Open up gitbash or commandline and type {\ttfamily git remote remove origin}. This will remove your origin remote that originally was linked to the old repository, if your\textquotesingle{}s is called something different for some reason remove that one.
+\item Also remove the old upstream using {\ttfamily git remote remove upstream}.
+\item Link to the new upstream by typing {\ttfamily git remote add upstream \href{https://github.com/OrderOfThePorcupine/ProjectPorcupine.git}{\tt https\+://github.\+com/\+Order\+Of\+The\+Porcupine/\+Project\+Porcupine.\+git}}
+\item Add the link to your new origin by typing {\ttfamily git remote add origin \href{https://github.com/}{\tt https\+://github.\+com/}$<$U\+S\+E\+R\+N\+A\+ME$>$/\+Project\+Porcupine-\/1.git} (using that link you just copied before).
+\item And tada your done, you can checkout any feature branches you were working on and push them to your new fork location since you\textquotesingle{}ll still have the local copies and it doesn\textquotesingle{}t require any new setup just changing of remotes. Isn\textquotesingle{}t this easy!
+\end{DoxyEnumerate}
+
+\section*{Note}
+
+Please also read the \mbox{[}Contributor\textquotesingle{}s Portal\mbox{]}(../../wiki/\+Contributors\textquotesingle{}-\/\+Portal\#important-\/links), mainly the \href{../../wiki/Contributing-Guidelines}{\tt Contributing Guidelines}.
+
+\section*{Contributing}
+
+If you would like to contribute to this project by modifying/adding to the program code or various creative assets, read the \href{#best-practices-for-contributing}{\tt Best Practices for Contributing} below and feel free to follow the standard Github workflow\+:
+
+
+\begin{DoxyEnumerate}
+\item Fork the project.
+\item Clone your fork to your computer.
+\begin{DoxyItemize}
+\item From the command line\+: {\ttfamily git clone \href{https://github.com/}{\tt https\+://github.\+com/}$<$U\+S\+E\+R\+N\+A\+ME$>$/\+Project\+Porcupine.git}
+\end{DoxyItemize}
+\item Change into your new project folder.
+\begin{DoxyItemize}
+\item From the command line\+: {\ttfamily cd \hyperlink{namespace_project_porcupine}{Project\+Porcupine}}
+\end{DoxyItemize}
+\item \mbox{[}optional\mbox{]} Add the upstream repository to your list of remotes.
+\begin{DoxyItemize}
+\item From the command line\+: {\ttfamily git remote add upstream \href{https://github.com/OrderOfThePorcupine/ProjectPorcupine.git}{\tt https\+://github.\+com/\+Order\+Of\+The\+Porcupine/\+Project\+Porcupine.\+git}}
+\end{DoxyItemize}
+\item Create a branch for your new feature.
+\begin{DoxyItemize}
+\item From the command line\+: {\ttfamily git checkout -\/b my-\/feature-\/branch-\/name}
+\end{DoxyItemize}
+\item Make your changes.
+\begin{DoxyItemize}
+\item Avoid making changes to more files than necessary for your feature (i.\+e. refrain from combining your \char`\"{}real\char`\"{} pull request with incidental bug fixes). This will simplify the merging process and make your changes clearer.
+\item Very much avoid making changes to the Unity-\/specific files, like the scene and the project settings unless absolutely necessary. Changes here are very likely to cause difficult to merge conflicts. Work in code as much as possible. (We will be trying to change the UI to be more code-\/driven in the future.) Making changes to prefabs should generally be safe -- but create a copy of the main scene and work there instead (then delete your copy of the scene before committing).
+\end{DoxyItemize}
+\item Commit your changes. From the command line\+:
+\begin{DoxyItemize}
+\item {\ttfamily git add Assets/my-\/changed-\/file.\+cs}
+\item {\ttfamily git add Assets/my-\/other-\/changed-\/file.\+cs}
+\item {\ttfamily git commit -\/m \char`\"{}\+A descriptive commit message\char`\"{}}
+\end{DoxyItemize}
+\item While you were working some other pull request might have gone in the breaks your stuff or vice versa. This can be a {\itshape merge conflict} but also conflicting game logic or code. Before you test, merge with master.
+\begin{DoxyItemize}
+\item {\ttfamily git fetch upstream}
+\item {\ttfamily git merge upstream/master}
+\end{DoxyItemize}
+\item Test. Start the game and do something related to your feature/fix.
+\item Push the branch, uploading it to Github.
+\begin{DoxyItemize}
+\item {\ttfamily git push origin my-\/feature-\/branch-\/name}
+\end{DoxyItemize}
+\item Make a \char`\"{}\+Pull Request\char`\"{} from your branch here on Github.
+\begin{DoxyItemize}
+\item Include screenshots demonstrating your change if applicable.
+\end{DoxyItemize}
+\item For a video tutorial, please see\+: \href{https://www.youtube.com/watch?v=R2fl17eEpwI}{\tt https\+://www.\+youtube.\+com/watch?v=\+R2fl17e\+EpwI}
+\end{DoxyEnumerate}
+
+\section*{Resolving Merge Conflicts}
+
+Depending on the order that Pull Requests get processed, your PR may result in a conflict and become un-\/mergable. To correct this, do the following from the command line\+:
+
+Switch to your branch\+: {\ttfamily git checkout my-\/feature-\/branch-\/name} Pull in the latest upstream changes\+: {\ttfamily git pull upstream master} Find out what files have a conflict\+: {\ttfamily git status}
+
+Edit the conflicting file(s) and look for a block that looks like this\+: 
+\begin{DoxyCode}
+<<<<<<< HEAD
+my awesome change
+=======
+some other person's less awesome change
+>>>>>>> some-branch
+\end{DoxyCode}
+
+
+Replace all five (or more) lines with the correct version (yours, theirs, or a combination of the two). O\+N\+LY the correct content should remain (none of that {\ttfamily $<$$<$$<$$<$$<$ H\+E\+AD} stuff.)
+
+Then re-\/commit and re-\/push the file.
+
+
+\begin{DoxyCode}
+git add the-changed-file.cs
+git commit -m "Resolved conflict between this and PR #123"
+git push origin my-feature-branch-name
+\end{DoxyCode}
+
+
+The pull request should automatically update to reflect your changes.
+
+\section*{Unity Version}
+
+We are using Unity version 5.\+6.\+2. All pull requests must build in 5.\+6.\+2 to be a valid patch. Though you can use {\ttfamily \#\+IF U\+N\+I\+T\+Y\+\_\+\+X\+\_\+\+Y\+\_\+Z} with x, y, z referring to the version details such as 5.\+4.\+2 or 5.\+6.\+1, More details \href{https://docs.unity3d.com/Manual/PlatformDependentCompilation.html}{\tt here}
+
+\section*{General resources}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.youtube.com/watch?v=R2fl17eEpwI}{\tt Github Tutorial by Quill18}
+\item \href{https://gist.github.com/Chaser324/ce0505fbed06b947d962}{\tt Git\+Hub Forking Overview}
+\item \href{https://help.github.com/desktop/guides/contributing/}{\tt Git\+Hub Documentation for Desktop Client}
+\item \href{https://desktop.github.com/}{\tt Git\+Hub Desktop Client}
+\item \href{https://git-for-windows.github.io/}{\tt Git\+Hub for Windows}
+\item \href{https://www.youtube.com/channel/UCPXOQq7PWh5OdCwEO60Y8jQ}{\tt Quill18\textquotesingle{}s Channel}
+\item \href{https://www.youtube.com/playlist?list=PLbghT7MmckI4_VM5q3va043FgAwRim6yX}{\tt Project Porcupine Playlist}
+\end{DoxyItemize}
+
+\subsection*{Kaplan Board? (Projects)}
+
+You can find it \href{https://github.com/OrderOfThePorcupine/ProjectPorcupine/projects/1}{\tt here}. Due to weird restrictions that github puts on projects only gate keepers can update them (personally I\textquotesingle{}m all for a system that is request based so we just have to approve changes but doubt github would ever implement that). Regardless me and Koosemose will update it (along with any other gatekeepers) as time goes on, whenever you open a PR I will move the note into the {\ttfamily In Progress} column, you can also  me on either the PR or on Discord, I\textquotesingle{}m somewhat regular in checking emails and github, and try to give me/koosemose atleast 12 hrs cause of sleep and other commitments before pinging us to death.
+
+\subsection*{Style Guidelines}
+
+We have standardized on Microsoft\textquotesingle{}s \href{https://msdn.microsoft.com/en-us/library/ff926074.aspx}{\tt C\# Coding Conventions} and \href{https://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx}{\tt General Naming Conventions}, with the following exception\+:
+
+
+\begin{DoxyItemize}
+\item Avoid using \textquotesingle{}var\textquotesingle{}, even when the type would be clear from context. Verbose typing is best typing.
+\end{DoxyItemize}
+
+As a TL;DR on our coding practices, adhere to the following example\+:
+
+
+\begin{DoxyCode}
+\{c#\}
+// All files begin with the following license header (remove this line):
+#region License
+// ====================================================
+// Project Porcupine Copyright(C) 2016 Team Porcupine
+// This program comes with ABSOLUTELY NO WARRANTY; This is free software,
+// and you are welcome to redistribute it under certain conditions; See
+// file LICENSE, which is part of this source code package, for details.
+// ====================================================
+#endregion
+
+using System; // System usings go first
+using UnityEngine; // followed by any other using directives
+
+// Use camelCasing unless stated otherwise.
+// Descriptive names for variables/methods should be used.
+// Fields, properties and methods should always specify their scope, aka private/protected/internal/public.
+
+// Interfaces start with an I and should use PascalCasing.
+public interface IInterfaceable
+\{
+\}
+
+// Class names should use PascalCasing.
+// Braces are on a new line. ;)
+
+///
+public class Class
+\{
+    // Private fields should be camelCased.
+    // Use properties for any field that needs access levels other than private
+    private string someField;
+
+    // Events should use PascalCasing as well.
+    // ✓ DO name events with a verb or a verb phrase.
+    // Examples include Clicked, Painting, DroppedDown, and so on.
+    // ✓ DO give events names with a concept of before and after, using the present and past tenses.
+    // For example, a close event that is raised before a window is closed would be called Closing,
+    // and one that is raised after the window is closed would be called Closed.
+    public event EventHandler<EventArgs> SomeEvent;
+
+    // Properties should use PascalCasing.
+    public int MemberProperty \{ get; set; \}
+
+    // Methods should use PascalCasing.
+    // Method parameters should be camelCased.
+    public void SomeMethod(int functionParameter)
+    \{
+        // Local variables should also be camelCased.
+        int myLocalVariable = 0;
+    \}
+\}
+\end{DoxyCode}
+
+
+Additionally, for the sake of simplicity, we are standardizing on what should be Microsoft Visual Studio\textquotesingle{}s default code formatting rules. If you are using Mono\+Develop (as many of us are), please go to your preferences and set the C\# source code formatting rules to the M\+VS setting\+:
+
+ 
+
+It is also highly recommended that you install \href{https://github.com/TeamPorcupine/ProjectPorcupine/wiki/StyleCop}{\tt Style\+Cop}, which will automatically point out any deviations from the project\textquotesingle{}s style guidelines. Any deviations in your code which can be tracked by Style\+Cop will result in the rejection of your Pull Request.
+
+\subsection*{Adding New Types of \hyperlink{class_furniture}{Furniture}, \hyperlink{class_inventory}{Inventory}, Commands...}
+
+There are multiple examples and it should be reasonably easy to add new types, when building a PR of just these you don\textquotesingle{}t need to open an issue though it is encouraged for balancing purposes. Any new types should be fully implemented in PR and shouldn\textquotesingle{}t just be placeholders.
+
+\subsubsection*{Furniture/\+Inventory}
+
+We have standardized the Types of \hyperlink{class_furniture}{Furniture} and \hyperlink{class_inventory}{Inventory} to match {\ttfamily type\+\_\+material}, such as {\ttfamily wall\+\_\+steel} and {\ttfamily generator\+\_\+oxygen} or {\ttfamily generator\+\_\+power}, for localization a matching prefix is added automatically to Type such as {\ttfamily inv} and {\ttfamily furn}. This means a few things\+:
+
+
+\begin{DoxyItemize}
+\item When adding a new \hyperlink{class_furniture}{Furniture} or inventory the files should have the Type \char`\"{}type\+\_\+material\char`\"{}, you could give it the more english sounding name, as of now name is not used for anything.
+\item For machines the convention will be {\ttfamily what\+It\+Does\+\_\+what\+It\+Makes}.
+\item For multiword parts it will be {\ttfamily my\+Type\+\_\+my\+Material}.
+\item In the Localization a line could be will be {\ttfamily inv\+\_\+type\+\_\+material=Material Type} and {\ttfamily furn\+\_\+type\+\_\+material=Material Type}.
+\item In Localization the description can be set with {\ttfamily inv\+\_\+type\+\_\+material\+\_\+desc=Some cool description.} and {\ttfamily furn\+\_\+type\+\_\+material\+\_\+desc=Some awesome description}.
+\item For image files and their xml files use the Type as the name.
+\end{DoxyItemize}
+
+\subsection*{Best Practices for Contributing}
+
+
+\begin{DoxyItemize}
+\item Before you start coding, open an issue so that the community can discuss your change to ensure it is in line with the goals of the project and not being worked on by someone else. This allows for discussion and fine tuning of your feature and results in a more succent and focused additions.
+\begin{DoxyItemize}
+\item If you are fixing a small glitch or bug, you may make a PR without opening an issue.
+\item If you are adding a large feature, create an issue prefixed with \char`\"{}\mbox{[}\+Discussion\mbox{]}\char`\"{} and be sure to take community feedback and get general approval before making your change and submitting a PR.
+\end{DoxyItemize}
+\item Pull Requests represent final code. Please ensure they are\+:
+\begin{DoxyItemize}
+\item Well tested by the author. It is the author\textquotesingle{}s job to ensure their code works as expected.
+\item Be free of unnecessary log calls. Logging is great for debugging, but when a PR is made, log calls should only be present when there is an actual error or to warn of an unimplemented feature. Please use {\ttfamily Unity\+Debugger.\+Debugger} instead of Unity\textquotesingle{}s {\ttfamily Debug.\+Log()}.
+\end{DoxyItemize}
+
+If your code is untested, log heavy, or incomplete, prefix your PR with \char`\"{}\mbox{[}\+W\+I\+P\mbox{]}\char`\"{}, so others know it is still being tested and shouldn\textquotesingle{}t be considered for merging yet.
+\item Small changes are preferable over large ones. The larger a change is the more likely it is to conflict with the project and thus be denied. If your addition is large, be sure to extensively discuss it in an \char`\"{}issue\char`\"{} before you submit a PR, or even start coding.
+\item Changes to code that your PR isn\textquotesingle{}t specifically fixing, try to keep your PR focused cause people may have problems with a small section of your PR but the rest is ready to be merged which complicates the merging procedure.
+\item Limit any change to code definitions (variables, functions, properties, and classes/structs/interfaces)
+\begin{DoxyItemize}
+\item A restructure/overhaul is defined as the focus being on the entire system rather than a small module so almost every one of these \textquotesingle{}cautions\textquotesingle{} are void in that case.
+\item Any changes to functions should be limited, you should try to work \textquotesingle{}within\textquotesingle{} the current project. Any system \textquotesingle{}restructures\textquotesingle{} or overhauls are obviously a different matter. This is because if you have to manipulate and twist functions to achieve certain functionality you are most likely applying a hack, or the system is very limited in scope and in that case it is most likely a restructure or overhaul that you are doing.
+\item Adding new public variables should always be a cautionary procedure, so unless you are specifically exposing private variables for modding purposes or removing public variables since they aren\textquotesingle{}t needed, you should take care with adding a bunch of public variables. Exceptions being new systems entirely or system restructures.
+\item Shouldn\textquotesingle{}t remove any classes/interfaces/structs unless your PR is a restructure/overhaul.
+\end{DoxyItemize}
+\item Document your changes in your PR. If you add a feature that you expect others to use, explain exactly how future code should interact with your additions.
+\item Avoid making changes to more files than necessary for your feature (i.\+e. refrain from combining your \char`\"{}real\char`\"{} pull request with incidental bug fixes). This will simplify the merging process and make your changes clearer.
+\item Avoid making changes to the Unity-\/specific files, like the scene and the project settings unless absolutely necessary. Changes here are very likely to cause difficult merge conflicts. Work in code as much as possible. (We will be trying to change the UI to be more code-\/driven in the future.) Making changes to prefabs should generally be safe -- but create a copy of the main scene and work there instead (then delete your copy of the scene before committing).
+\item Include screenshots demonstrating your change if applicable. All UI changes should include screenshots.
+\item If you want to help with localization of the project you can submit your work over at \href{https://github.com/QuiZr/ProjectPorcupineLocalization/tree/Someone_will_come_up_with_a_proper_naming_scheme_later}{\tt Localization Repo}
+\end{DoxyItemize}
+
+That\textquotesingle{}s it! Following these guidelines will ensure that your additions are approved quickly and integrated into the project. Thanks for your contribution!
+
+\subsection*{File Formats}
+
+In the primary G\+IT repo, we will only accept files in these formats\+:
+
+\subsubsection*{Images}
+
+Images should be in a compressed, ready-\/to share format like P\+NG or J\+P\+EG. The original Photoshop/\+G\+I\+M\+P/etc... files are not to be commited to the repository. However, hosting the originals somewhere (like a public Google Drive folder) as a reference would be appreciated (but not required).
+
+\subsubsection*{Sound Files \& Music}
+
+As per Issue \#795, we have standardized on the open-\/source friendly O\+GG audio format, as opposed to M\+P3 or uncompressed W\+AV files. Small sound effects that are played frequently should likely be set to \char`\"{}\+Decompress on Load\char`\"{} in Unity\textquotesingle{}s inspector, whereas longer sounds (such as songs) should not be. Hosting the original, uncompressed W\+AV files somewhere (like a public Google Drive folder) as a reference would be appreciated (but not required). 

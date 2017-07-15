@@ -1,0 +1,210 @@
+\hypertarget{class_lua_functions}{}\section{Lua\+Functions Class Reference}
+\label{class_lua_functions}\index{Lua\+Functions@{Lua\+Functions}}
+Inheritance diagram for Lua\+Functions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lua_functions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_lua_functions_ab3e8e3948a49cde556fa27f93a68d0db}{Lua\+Functions} ()
+\item 
+bool \hyperlink{class_lua_functions_a1bcc0469b7501e9e949e0575aba7fb80}{Has\+Function} (string name)
+\item 
+bool \hyperlink{class_lua_functions_a308710875bcf9a6d4a8513029922a766}{Has\+Constructor} (string class\+Name)
+\item 
+bool \hyperlink{class_lua_functions_af17a439c6a875a777b9b2e5bc3f5c072}{Load\+Script} (string text, string script\+Name)
+\begin{DoxyCompactList}\small\item\em Loads the script from the specified text. \end{DoxyCompactList}\item 
+Dyn\+Value \hyperlink{class_lua_functions_a8fcb93802ded2a89af4ce20efef82a70}{Call\+With\+Error} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+Dyn\+Value \hyperlink{class_lua_functions_a8662db102890d5b12fada540482c51eb}{Call} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+T \hyperlink{class_lua_functions_ac1bbf0ec272f91f4322e89796deadf52}{Call$<$ T $>$} (string function\+Name, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+Dyn\+Value \hyperlink{class_lua_functions_a48e53ec3f02676d03050066fd3555d12}{Create\+Instance} (object from\+Object)
+\item 
+T \hyperlink{class_lua_functions_a920ae8303f3acff9b271c68889ca7ee5}{Create\+Instance$<$ T $>$} (string class\+Name, params object\mbox{[}$\,$\mbox{]} arguments)
+\item 
+void \hyperlink{class_lua_functions_ab3693345e8576e3f1cb5874531b10626}{Register\+Type} (Type type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Script \hyperlink{class_lua_functions_a4a3ad64c9593f35238cc445645f68771}{script}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Lua\+Functions.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lua_functions_ab3e8e3948a49cde556fa27f93a68d0db}\label{class_lua_functions_ab3e8e3948a49cde556fa27f93a68d0db}} 
+\index{Lua\+Functions@{Lua\+Functions}!Lua\+Functions@{Lua\+Functions}}
+\index{Lua\+Functions@{Lua\+Functions}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Lua\+Functions()}{LuaFunctions()}}
+{\footnotesize\ttfamily Lua\+Functions.\+Lua\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Lua\+Functions.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_functions_a8662db102890d5b12fada540482c51eb}\label{class_lua_functions_a8662db102890d5b12fada540482c51eb}} 
+\index{Lua\+Functions@{Lua\+Functions}!Call@{Call}}
+\index{Call@{Call}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Call()}{Call()}}
+{\footnotesize\ttfamily Dyn\+Value Lua\+Functions.\+Call (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a0d5502d86d4b34c04f36d7f8a41c5f27}{I\+Functions}.
+
+
+
+Definition at line 86 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_ac1bbf0ec272f91f4322e89796deadf52}\label{class_lua_functions_ac1bbf0ec272f91f4322e89796deadf52}} 
+\index{Lua\+Functions@{Lua\+Functions}!Call$<$ T $>$@{Call$<$ T $>$}}
+\index{Call$<$ T $>$@{Call$<$ T $>$}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Call$<$ T $>$()}{Call< T >()}}
+{\footnotesize\ttfamily T \hyperlink{class_lua_functions_a8662db102890d5b12fada540482c51eb}{Lua\+Functions.\+Call}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_ab14a9a3261c860d7dba22a9c927f1068}{I\+Functions}.
+
+
+
+Definition at line 91 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_a8fcb93802ded2a89af4ce20efef82a70}\label{class_lua_functions_a8fcb93802ded2a89af4ce20efef82a70}} 
+\index{Lua\+Functions@{Lua\+Functions}!Call\+With\+Error@{Call\+With\+Error}}
+\index{Call\+With\+Error@{Call\+With\+Error}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Call\+With\+Error()}{CallWithError()}}
+{\footnotesize\ttfamily Dyn\+Value Lua\+Functions.\+Call\+With\+Error (\begin{DoxyParamCaption}\item[{string}]{function\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a6914f7ab45913120802554ac2ef28dba}{I\+Functions}.
+
+
+
+Definition at line 81 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_a48e53ec3f02676d03050066fd3555d12}\label{class_lua_functions_a48e53ec3f02676d03050066fd3555d12}} 
+\index{Lua\+Functions@{Lua\+Functions}!Create\+Instance@{Create\+Instance}}
+\index{Create\+Instance@{Create\+Instance}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Create\+Instance()}{CreateInstance()}}
+{\footnotesize\ttfamily Dyn\+Value Lua\+Functions.\+Create\+Instance (\begin{DoxyParamCaption}\item[{object}]{from\+Object }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a7578bf930745a057a9e24f6048858fe2}{I\+Functions}.
+
+
+
+Definition at line 96 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_a920ae8303f3acff9b271c68889ca7ee5}\label{class_lua_functions_a920ae8303f3acff9b271c68889ca7ee5}} 
+\index{Lua\+Functions@{Lua\+Functions}!Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}}
+\index{Create\+Instance$<$ T $>$@{Create\+Instance$<$ T $>$}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Create\+Instance$<$ T $>$()}{CreateInstance< T >()}}
+{\footnotesize\ttfamily T \hyperlink{class_lua_functions_a48e53ec3f02676d03050066fd3555d12}{Lua\+Functions.\+Create\+Instance}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{class\+Name,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{arguments }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a5acd536d97990a6d5d575dce8bfff5f1}{I\+Functions}.
+
+
+
+Definition at line 101 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_a308710875bcf9a6d4a8513029922a766}\label{class_lua_functions_a308710875bcf9a6d4a8513029922a766}} 
+\index{Lua\+Functions@{Lua\+Functions}!Has\+Constructor@{Has\+Constructor}}
+\index{Has\+Constructor@{Has\+Constructor}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Has\+Constructor()}{HasConstructor()}}
+{\footnotesize\ttfamily bool Lua\+Functions.\+Has\+Constructor (\begin{DoxyParamCaption}\item[{string}]{class\+Name }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a41edac00a2af1290932ae95536f987f9}{I\+Functions}.
+
+
+
+Definition at line 55 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_a1bcc0469b7501e9e949e0575aba7fb80}\label{class_lua_functions_a1bcc0469b7501e9e949e0575aba7fb80}} 
+\index{Lua\+Functions@{Lua\+Functions}!Has\+Function@{Has\+Function}}
+\index{Has\+Function@{Has\+Function}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Has\+Function()}{HasFunction()}}
+{\footnotesize\ttfamily bool Lua\+Functions.\+Has\+Function (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interface_i_functions_a55a472175a59db8ec3b00c5dad20cf20}{I\+Functions}.
+
+
+
+Definition at line 50 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_af17a439c6a875a777b9b2e5bc3f5c072}\label{class_lua_functions_af17a439c6a875a777b9b2e5bc3f5c072}} 
+\index{Lua\+Functions@{Lua\+Functions}!Load\+Script@{Load\+Script}}
+\index{Load\+Script@{Load\+Script}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Load\+Script()}{LoadScript()}}
+{\footnotesize\ttfamily bool Lua\+Functions.\+Load\+Script (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{script\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads the script from the specified text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The code text.\\
+\hline
+{\em script\+Name} & The script name.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_functions_acdee59b5855ab9e87fcf11e3cdf9c967}{I\+Functions}.
+
+
+
+Definition at line 65 of file Lua\+Functions.\+cs.
+
+\mbox{\Hypertarget{class_lua_functions_ab3693345e8576e3f1cb5874531b10626}\label{class_lua_functions_ab3693345e8576e3f1cb5874531b10626}} 
+\index{Lua\+Functions@{Lua\+Functions}!Register\+Type@{Register\+Type}}
+\index{Register\+Type@{Register\+Type}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{Register\+Type()}{RegisterType()}}
+{\footnotesize\ttfamily void Lua\+Functions.\+Register\+Type (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file Lua\+Functions.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lua_functions_a4a3ad64c9593f35238cc445645f68771}\label{class_lua_functions_a4a3ad64c9593f35238cc445645f68771}} 
+\index{Lua\+Functions@{Lua\+Functions}!script@{script}}
+\index{script@{script}!Lua\+Functions@{Lua\+Functions}}
+\subsubsection{\texorpdfstring{script}{script}}
+{\footnotesize\ttfamily Script Lua\+Functions.\+script\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17 of file Lua\+Functions.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Functions/\hyperlink{_lua_functions_8cs}{Lua\+Functions.\+cs}\end{DoxyCompactItemize}

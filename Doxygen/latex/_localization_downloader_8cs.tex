@@ -1,0 +1,12 @@
+\hypertarget{_localization_downloader_8cs}{}\section{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Localization/\+Localization\+Downloader.cs File Reference}
+\label{_localization_downloader_8cs}\index{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Localization/\+Localization\+Downloader.\+cs@{G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Localization/\+Localization\+Downloader.\+cs}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Project\+Porcupine.\+Localization.\+Localization\+Downloader}
+\begin{DoxyCompactList}\small\item\em This class makes sure that your localization is up to date. It does that by comparing latest know commit hash (which is stored in Application.\+streaming\+Assets\+Path/\+Localization/curr.ver) to the latest hash available through Git\+Hub. If the hashes don\textquotesingle{}t match or curr.\+ver doesn\textquotesingle{}t exist a new zip containing localization will be downloaded from Git\+Hub repo. Then, the zip is stored in the memory and waits for Application.\+streaming\+Assets\+Path/\+Localization to be cleaned. When It\textquotesingle{}s empty the zip gets unpacked and saved to hard drive using I\+C\+Sharp\+Code.\+Sharp\+Zip\+Lib.\+Zip library. Every Git\+Hub zip download has a folder with {\itshape Project\+Name}-\/$\ast$\+Branch\+Name$\ast$ so all of it\textquotesingle{}s content needs to be moved to Application.\+streaming\+Assets\+Path/\+Localization. After that the folder get\textquotesingle{}s deleted and new curr.\+ver file is created containing latest hash. Git\+Hub\textquotesingle{}s branch name corresponds to World.\+current.\+game\+Version, so that the changes in localization for version 0.\+2 won\textquotesingle{}t affect users who haven\textquotesingle{}t updated yet from version 0.\+1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_project_porcupine_1_1_localization}{Project\+Porcupine.\+Localization}
+\end{DoxyCompactItemize}

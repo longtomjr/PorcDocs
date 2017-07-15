@@ -1,0 +1,222 @@
+\hypertarget{class_pathfinding_priority_queue}{}\section{Pathfinding\+Priority\+Queue$<$ T $>$ Class Template Reference}
+\label{class_pathfinding_priority_queue}\index{Pathfinding\+Priority\+Queue$<$ T $>$@{Pathfinding\+Priority\+Queue$<$ T $>$}}
+
+
+Wraps the Fast\+Priority\+Queue class so that it\textquotesingle{}s both easy-\/to-\/use, and faster than Simple\+Priority\+Queue (which sports an O(n) Contains and an O(n) Update\+Priority -- not exactly ideal).  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_pathfinding_priority_queue_1_1_wrapped_node}{Wrapped\+Node}
+\begin{DoxyCompactList}\small\item\em A version of a Priority\+Queue\+Node that contains a reference to data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pathfinding_priority_queue_a6c51d5d262d8f4c7ea1b78167f61134a}{Pathfinding\+Priority\+Queue} (int starting\+Size=10)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Pathfinding\+Priority\+Queue`1 class. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pathfinding_priority_queue_a209c7782b0464f8647a0235762dcb71c}{Contains} (T data)
+\begin{DoxyCompactList}\small\item\em Checks whether the PQ contains the specified data. Uses a Dictionary for lookup, so it should only take O(1). \end{DoxyCompactList}\item 
+void \hyperlink{class_pathfinding_priority_queue_a2a0eedc51a0f850ac755eea625a3adc5}{Enqueue} (T data, float priority)
+\begin{DoxyCompactList}\small\item\em Enqueue the specified data and priority. If the data already exists in the queue, it updates the priority instead. Should take O(log n) -- O(1) amortized for the resizing, and O(log n) for the insertion. \end{DoxyCompactList}\item 
+void \hyperlink{class_pathfinding_priority_queue_a238cd4a461cfda78ffd826402de5c9f2}{Update\+Priority} (T data, float priority)
+\begin{DoxyCompactList}\small\item\em Updates the priority associated with the given data. \end{DoxyCompactList}\item 
+void \hyperlink{class_pathfinding_priority_queue_a9e4ba2e8cda0253ffcb6481b4cf93fb0}{Enqueue\+Or\+Update} (T data, float priority)
+\begin{DoxyCompactList}\small\item\em Enqueues or updates data. \end{DoxyCompactList}\item 
+T \hyperlink{class_pathfinding_priority_queue_acd6a93f8a439754a3047c81826451fb8}{Dequeue} ()
+\begin{DoxyCompactList}\small\item\em Pops the item with the lowest priority off of the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_priority___queue_1_1_fast_priority_queue}{Fast\+Priority\+Queue}$<$ \hyperlink{class_pathfinding_priority_queue_1_1_wrapped_node}{Wrapped\+Node} $>$ \hyperlink{class_pathfinding_priority_queue_aa100a37883699f322596879886c5d2fd}{underlying\+Queue}
+\begin{DoxyCompactList}\small\item\em The underlying Fast\+Priority\+Queue instance. \end{DoxyCompactList}\item 
+Dictionary$<$ T, \hyperlink{class_pathfinding_priority_queue_1_1_wrapped_node}{Wrapped\+Node} $>$ \hyperlink{class_pathfinding_priority_queue_aaf27aa2336ffa42a76fc0eb64784a4e8}{map\+Data\+To\+Wrapped\+Node}
+\begin{DoxyCompactList}\small\item\em The map between data and Wrapped\+Nodes. Used to make operations like Contains and Update\+Priority more efficient. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_pathfinding_priority_queue_ab19d993982443538e47a52e5740bc476}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the number of items in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps the Fast\+Priority\+Queue class so that it\textquotesingle{}s both easy-\/to-\/use, and faster than Simple\+Priority\+Queue (which sports an O(n) Contains and an O(n) Update\+Priority -- not exactly ideal). 
+
+
+
+Definition at line 18 of file Pathfinding\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pathfinding_priority_queue_a6c51d5d262d8f4c7ea1b78167f61134a}\label{class_pathfinding_priority_queue_a6c51d5d262d8f4c7ea1b78167f61134a}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Pathfinding\+Priority\+Queue()}{PathfindingPriorityQueue()}}
+{\footnotesize\ttfamily \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.\hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue} (\begin{DoxyParamCaption}\item[{int}]{starting\+Size = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Pathfinding\+Priority\+Queue`1 class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting\+Size} & The starting size.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Pathfinding\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pathfinding_priority_queue_a209c7782b0464f8647a0235762dcb71c}\label{class_pathfinding_priority_queue_a209c7782b0464f8647a0235762dcb71c}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Contains@{Contains}}
+\index{Contains@{Contains}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})}
+
+
+
+Checks whether the PQ contains the specified data. Uses a Dictionary for lookup, so it should only take O(1). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Datakey to check.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Pathfinding\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_pathfinding_priority_queue_acd6a93f8a439754a3047c81826451fb8}\label{class_pathfinding_priority_queue_acd6a93f8a439754a3047c81826451fb8}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily T \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pops the item with the lowest priority off of the queue. 
+
+
+
+Definition at line 119 of file Pathfinding\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_pathfinding_priority_queue_a2a0eedc51a0f850ac755eea625a3adc5}\label{class_pathfinding_priority_queue_a2a0eedc51a0f850ac755eea625a3adc5}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily void \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Enqueue (\begin{DoxyParamCaption}\item[{T}]{data,  }\item[{float}]{priority }\end{DoxyParamCaption})}
+
+
+
+Enqueue the specified data and priority. If the data already exists in the queue, it updates the priority instead. Should take O(log n) -- O(1) amortized for the resizing, and O(log n) for the insertion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be enqueued.\\
+\hline
+{\em priority} & The priority of the data.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Pathfinding\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_pathfinding_priority_queue_a9e4ba2e8cda0253ffcb6481b4cf93fb0}\label{class_pathfinding_priority_queue_a9e4ba2e8cda0253ffcb6481b4cf93fb0}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Enqueue\+Or\+Update@{Enqueue\+Or\+Update}}
+\index{Enqueue\+Or\+Update@{Enqueue\+Or\+Update}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Enqueue\+Or\+Update()}{EnqueueOrUpdate()}}
+{\footnotesize\ttfamily void \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Enqueue\+Or\+Update (\begin{DoxyParamCaption}\item[{T}]{data,  }\item[{float}]{priority }\end{DoxyParamCaption})}
+
+
+
+Enqueues or updates data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Datakey to enqueue or update..\\
+\hline
+{\em priority} & New priority level.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 104 of file Pathfinding\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_pathfinding_priority_queue_a238cd4a461cfda78ffd826402de5c9f2}\label{class_pathfinding_priority_queue_a238cd4a461cfda78ffd826402de5c9f2}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Update\+Priority@{Update\+Priority}}
+\index{Update\+Priority@{Update\+Priority}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Update\+Priority()}{UpdatePriority()}}
+{\footnotesize\ttfamily void \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Update\+Priority (\begin{DoxyParamCaption}\item[{T}]{data,  }\item[{float}]{priority }\end{DoxyParamCaption})}
+
+
+
+Updates the priority associated with the given data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data whose priority needs updating.\\
+\hline
+{\em priority} & The new priority value.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Pathfinding\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pathfinding_priority_queue_aaf27aa2336ffa42a76fc0eb64784a4e8}\label{class_pathfinding_priority_queue_aaf27aa2336ffa42a76fc0eb64784a4e8}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!map\+Data\+To\+Wrapped\+Node@{map\+Data\+To\+Wrapped\+Node}}
+\index{map\+Data\+To\+Wrapped\+Node@{map\+Data\+To\+Wrapped\+Node}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{map\+Data\+To\+Wrapped\+Node}{mapDataToWrappedNode}}
+{\footnotesize\ttfamily Dictionary$<$T, \hyperlink{class_pathfinding_priority_queue_1_1_wrapped_node}{Wrapped\+Node}$>$ \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.map\+Data\+To\+Wrapped\+Node\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The map between data and Wrapped\+Nodes. Used to make operations like Contains and Update\+Priority more efficient. 
+
+
+
+Definition at line 29 of file Pathfinding\+Priority\+Queue.\+cs.
+
+\mbox{\Hypertarget{class_pathfinding_priority_queue_aa100a37883699f322596879886c5d2fd}\label{class_pathfinding_priority_queue_aa100a37883699f322596879886c5d2fd}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!underlying\+Queue@{underlying\+Queue}}
+\index{underlying\+Queue@{underlying\+Queue}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{underlying\+Queue}{underlyingQueue}}
+{\footnotesize\ttfamily \hyperlink{class_priority___queue_1_1_fast_priority_queue}{Fast\+Priority\+Queue}$<$\hyperlink{class_pathfinding_priority_queue_1_1_wrapped_node}{Wrapped\+Node}$>$ \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.underlying\+Queue\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The underlying Fast\+Priority\+Queue instance. 
+
+
+
+Definition at line 23 of file Pathfinding\+Priority\+Queue.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_pathfinding_priority_queue_ab19d993982443538e47a52e5740bc476}\label{class_pathfinding_priority_queue_ab19d993982443538e47a52e5740bc476}} 
+\index{Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}!Count@{Count}}
+\index{Count@{Count}!Pathfinding\+Priority\+Queue@{Pathfinding\+Priority\+Queue}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \hyperlink{class_pathfinding_priority_queue}{Pathfinding\+Priority\+Queue}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the number of items in the queue. 
+
+The count.
+
+Definition at line 46 of file Pathfinding\+Priority\+Queue.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Pathfinding/\hyperlink{_pathfinding_priority_queue_8cs}{Pathfinding\+Priority\+Queue.\+cs}\end{DoxyCompactItemize}

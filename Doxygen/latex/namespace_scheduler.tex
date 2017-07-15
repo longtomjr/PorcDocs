@@ -1,0 +1,43 @@
+\hypertarget{namespace_scheduler}{}\section{Scheduler Namespace Reference}
+\label{namespace_scheduler}\index{Scheduler@{Scheduler}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduler.\+Scheduled\+Event} class represents an individual event which is handled by the \hyperlink{class_scheduler_1_1_scheduler}{Scheduler}. May \char`\"{}fire\char`\"{} either a C\# or Lua function. \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event} is actually blind to the type of function backing the event. It knows through the Event\+Type property, but this has no impact on the functioning of the class itself. The scheduler is solely responsible for wrapping Lua functions in delegates for handling by the events. \end{DoxyCompactList}\item 
+class \hyperlink{class_scheduler_1_1_scheduler}{Scheduler}
+\begin{DoxyCompactList}\small\item\em Generic scheduler class for tracking and dispatching Scheduled\+Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}{Event\+Type} \{ \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}{Event\+Type.\+C\+Sharp}, 
+\hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}{Event\+Type.\+Lua}
+ \}\begin{DoxyCompactList}\small\item\em The type of function backing a Scheduled\+Event. Options\+: C\+Sharp or Lua. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}\label{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}} 
+\index{Scheduler@{Scheduler}!Event\+Type@{Event\+Type}}
+\index{Event\+Type@{Event\+Type}!Scheduler@{Scheduler}}
+\subsubsection{\texorpdfstring{Event\+Type}{EventType}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81}{Scheduler.\+Event\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The type of function backing a \hyperlink{class_scheduler_1_1_scheduled_event}{Scheduled\+Event}. Options\+: C\+Sharp or Lua. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+Sharp@{C\+Sharp}!Scheduler@{Scheduler}}\index{Scheduler@{Scheduler}!C\+Sharp@{C\+Sharp}}}\mbox{\Hypertarget{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}\label{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a83925001a044cdfe0c64e9a44345b66d}} 
+C\+Sharp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Lua@{Lua}!Scheduler@{Scheduler}}\index{Scheduler@{Scheduler}!Lua@{Lua}}}\mbox{\Hypertarget{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}\label{namespace_scheduler_a85a4e27de37756a9765a49f3b3e4ba81a0ae9478a1db9d1e2c48efa49eac1c7c6}} 
+Lua&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 21 of file Scheduled\+Event.\+cs.
+

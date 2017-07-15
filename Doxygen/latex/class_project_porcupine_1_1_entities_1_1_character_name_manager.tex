@@ -1,0 +1,89 @@
+\hypertarget{class_project_porcupine_1_1_entities_1_1_character_name_manager}{}\section{Project\+Porcupine.\+Entities.\+Character\+Name\+Manager Class Reference}
+\label{class_project_porcupine_1_1_entities_1_1_character_name_manager}\index{Project\+Porcupine.\+Entities.\+Character\+Name\+Manager@{Project\+Porcupine.\+Entities.\+Character\+Name\+Manager}}
+
+
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} name manager that holds all the possible names and tries to give a random and unused name everytime is requested.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character_name_manager_a92c82c6cf338443c6c2bd7a40aefc484}{Character\+Name\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character_name_manager}{Character\+Name\+Manager} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_project_porcupine_1_1_entities_1_1_character_name_manager_aaa230ecfbd820bd719090425d5c67a97}{Load\+Names} (string\mbox{[}$\,$\mbox{]} name\+Strings)
+\begin{DoxyCompactList}\small\item\em Load new names to use for Characters. \end{DoxyCompactList}\item 
+static string \hyperlink{class_project_porcupine_1_1_entities_1_1_character_name_manager_a68badf7451947de52b682c44cc8b2dfd}{Get\+New\+Name} ()
+\begin{DoxyCompactList}\small\item\em Returns a randomly chosen name, prioritizing names which have not been used yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_project_porcupine_1_1_entities_1_1_character}{Character} name manager that holds all the possible names and tries to give a random and unused name everytime is requested. 
+
+
+
+Definition at line 17 of file Character\+Name\+Manager.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_name_manager_a92c82c6cf338443c6c2bd7a40aefc484}\label{class_project_porcupine_1_1_entities_1_1_character_name_manager_a92c82c6cf338443c6c2bd7a40aefc484}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}!Character\+Name\+Manager@{Character\+Name\+Manager}}
+\index{Character\+Name\+Manager@{Character\+Name\+Manager}!Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}}
+\subsubsection{\texorpdfstring{Character\+Name\+Manager()}{CharacterNameManager()}}
+{\footnotesize\ttfamily Project\+Porcupine.\+Entities.\+Character\+Name\+Manager.\+Character\+Name\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_project_porcupine_1_1_entities_1_1_character_name_manager}{Character\+Name\+Manager} class. 
+
+
+
+Definition at line 25 of file Character\+Name\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_name_manager_a68badf7451947de52b682c44cc8b2dfd}\label{class_project_porcupine_1_1_entities_1_1_character_name_manager_a68badf7451947de52b682c44cc8b2dfd}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}!Get\+New\+Name@{Get\+New\+Name}}
+\index{Get\+New\+Name@{Get\+New\+Name}!Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}}
+\subsubsection{\texorpdfstring{Get\+New\+Name()}{GetNewName()}}
+{\footnotesize\ttfamily static string Project\+Porcupine.\+Entities.\+Character\+Name\+Manager.\+Get\+New\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a randomly chosen name, prioritizing names which have not been used yet. 
+
+\begin{DoxyReturn}{Returns}
+A randomly chosen name.
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Character\+Name\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_project_porcupine_1_1_entities_1_1_character_name_manager_aaa230ecfbd820bd719090425d5c67a97}\label{class_project_porcupine_1_1_entities_1_1_character_name_manager_aaa230ecfbd820bd719090425d5c67a97}} 
+\index{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}!Load\+Names@{Load\+Names}}
+\index{Load\+Names@{Load\+Names}!Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager@{Project\+Porcupine\+::\+Entities\+::\+Character\+Name\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Names()}{LoadNames()}}
+{\footnotesize\ttfamily static void Project\+Porcupine.\+Entities.\+Character\+Name\+Manager.\+Load\+Names (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{name\+Strings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load new names to use for Characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Strings} & An array of name strings.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Character\+Name\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Character/\hyperlink{_character_name_manager_8cs}{Character\+Name\+Manager.\+cs}\end{DoxyCompactItemize}

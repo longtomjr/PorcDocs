@@ -1,0 +1,246 @@
+\hypertarget{class_game_event}{}\section{Game\+Event Class Reference}
+\label{class_game_event}\index{Game\+Event@{Game\+Event}}
+Inheritance diagram for Game\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_event_a575221b54e41817d77dfdd0bd2a8427c}{Game\+Event} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_game_event}{Game\+Event} class. Used to create the Prototype. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_event_af2a343f2404849a8b171c5a34dc75168}{Update} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Update the game event. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_event_a9dfc62e4b1595e95238c7e69973f9eb7}{Add\+Timer} (float time)
+\begin{DoxyCompactList}\small\item\em Adds the given time to the timer. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_event_adcb077cb4321b37575624d41cca71453}{Reset\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Resets the game event timer. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_event_ab310e768a6d0603e1c04db54e6ac06ad}{Execute} ()
+\begin{DoxyCompactList}\small\item\em Execute the actions of this game event. \end{DoxyCompactList}\item 
+\hyperlink{class_game_event}{Game\+Event} \hyperlink{class_game_event_a41d51d26400785d060c39f534f98dc75}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Clones this instance. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_event_a5219d3c4766e76549b4b90926a4e5066}{Read\+Xml\+Prototype} (Xml\+Reader reader)
+\begin{DoxyCompactList}\small\item\em Reads the prototype from the specified X\+ML reader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_game_event_ad8921f17ac09eb80cfe3428020d4a160}{Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the type of the game event. Used for the Prototype and is equal to the name. \end{DoxyCompactList}\item 
+string \hyperlink{class_game_event_a9dcf75aa8906aeabdbc1039fe7968503}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the name of the game event. \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_event_aaa381ffa74bbae7bb3cf78994d1bb3ef}{Repeat}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this \hyperlink{class_game_event}{Game\+Event} is repeats. \end{DoxyCompactList}\item 
+int \hyperlink{class_game_event_a091a536003bfe1c09a4b84d724cf90d6}{Max\+Repeats}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the max amount of repeats. \end{DoxyCompactList}\item 
+float \hyperlink{class_game_event_a7e22dae8daf4f8e5a89e7ef0c13e2aaf}{Timer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Game\+Event.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_event_a575221b54e41817d77dfdd0bd2a8427c}\label{class_game_event_a575221b54e41817d77dfdd0bd2a8427c}} 
+\index{Game\+Event@{Game\+Event}!Game\+Event@{Game\+Event}}
+\index{Game\+Event@{Game\+Event}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Game\+Event()}{GameEvent()}}
+{\footnotesize\ttfamily Game\+Event.\+Game\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \hyperlink{class_game_event}{Game\+Event} class. Used to create the Prototype. 
+
+
+
+Definition at line 29 of file Game\+Event.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_event_a9dfc62e4b1595e95238c7e69973f9eb7}\label{class_game_event_a9dfc62e4b1595e95238c7e69973f9eb7}} 
+\index{Game\+Event@{Game\+Event}!Add\+Timer@{Add\+Timer}}
+\index{Add\+Timer@{Add\+Timer}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Add\+Timer()}{AddTimer()}}
+{\footnotesize\ttfamily void Game\+Event.\+Add\+Timer (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Adds the given time to the timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time to add.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_a41d51d26400785d060c39f534f98dc75}\label{class_game_event_a41d51d26400785d060c39f534f98dc75}} 
+\index{Game\+Event@{Game\+Event}!Clone@{Clone}}
+\index{Clone@{Clone}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_game_event}{Game\+Event} Game\+Event.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clones this instance. 
+
+
+
+Definition at line 148 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_ab310e768a6d0603e1c04db54e6ac06ad}\label{class_game_event_ab310e768a6d0603e1c04db54e6ac06ad}} 
+\index{Game\+Event@{Game\+Event}!Execute@{Execute}}
+\index{Execute@{Execute}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Game\+Event.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Execute the actions of this game event. 
+
+
+
+Definition at line 131 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_a5219d3c4766e76549b4b90926a4e5066}\label{class_game_event_a5219d3c4766e76549b4b90926a4e5066}} 
+\index{Game\+Event@{Game\+Event}!Read\+Xml\+Prototype@{Read\+Xml\+Prototype}}
+\index{Read\+Xml\+Prototype@{Read\+Xml\+Prototype}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Read\+Xml\+Prototype()}{ReadXmlPrototype()}}
+{\footnotesize\ttfamily void Game\+Event.\+Read\+Xml\+Prototype (\begin{DoxyParamCaption}\item[{Xml\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Reads the prototype from the specified X\+ML reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & The X\+ML reader to read from.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_i_prototypable_a024d752c4be655a7166db5718f1fad6a}{I\+Prototypable}.
+
+
+
+Definition at line 157 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_adcb077cb4321b37575624d41cca71453}\label{class_game_event_adcb077cb4321b37575624d41cca71453}} 
+\index{Game\+Event@{Game\+Event}!Reset\+Timer@{Reset\+Timer}}
+\index{Reset\+Timer@{Reset\+Timer}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Reset\+Timer()}{ResetTimer()}}
+{\footnotesize\ttfamily void Game\+Event.\+Reset\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the game event timer. 
+
+
+
+Definition at line 123 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_af2a343f2404849a8b171c5a34dc75168}\label{class_game_event_af2a343f2404849a8b171c5a34dc75168}} 
+\index{Game\+Event@{Game\+Event}!Update@{Update}}
+\index{Update@{Update}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Event.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the game event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & Delta time.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Game\+Event.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_game_event_a091a536003bfe1c09a4b84d724cf90d6}\label{class_game_event_a091a536003bfe1c09a4b84d724cf90d6}} 
+\index{Game\+Event@{Game\+Event}!Max\+Repeats@{Max\+Repeats}}
+\index{Max\+Repeats@{Max\+Repeats}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Max\+Repeats}{MaxRepeats}}
+{\footnotesize\ttfamily int Game\+Event.\+Max\+Repeats\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets the max amount of repeats. 
+
+The max amount of repeats.
+
+Definition at line 80 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_a9dcf75aa8906aeabdbc1039fe7968503}\label{class_game_event_a9dcf75aa8906aeabdbc1039fe7968503}} 
+\index{Game\+Event@{Game\+Event}!Name@{Name}}
+\index{Name@{Name}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Game\+Event.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets the name of the game event. 
+
+The name of the game event.
+
+Definition at line 68 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_aaa381ffa74bbae7bb3cf78994d1bb3ef}\label{class_game_event_aaa381ffa74bbae7bb3cf78994d1bb3ef}} 
+\index{Game\+Event@{Game\+Event}!Repeat@{Repeat}}
+\index{Repeat@{Repeat}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Repeat}{Repeat}}
+{\footnotesize\ttfamily bool Game\+Event.\+Repeat\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets a value indicating whether this \hyperlink{class_game_event}{Game\+Event} is repeats. 
+
+{\ttfamily true} if the game event repeats; otherwise, {\ttfamily false}.
+
+Definition at line 74 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_a7e22dae8daf4f8e5a89e7ef0c13e2aaf}\label{class_game_event_a7e22dae8daf4f8e5a89e7ef0c13e2aaf}} 
+\index{Game\+Event@{Game\+Event}!Timer@{Timer}}
+\index{Timer@{Timer}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Timer}{Timer}}
+{\footnotesize\ttfamily float Game\+Event.\+Timer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the timer. 
+
+The game event timer.
+
+Definition at line 87 of file Game\+Event.\+cs.
+
+\mbox{\Hypertarget{class_game_event_ad8921f17ac09eb80cfe3428020d4a160}\label{class_game_event_ad8921f17ac09eb80cfe3428020d4a160}} 
+\index{Game\+Event@{Game\+Event}!Type@{Type}}
+\index{Type@{Type}!Game\+Event@{Game\+Event}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string Game\+Event.\+Type\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the type of the game event. Used for the Prototype and is equal to the name. 
+
+The type of the game event.
+
+Definition at line 60 of file Game\+Event.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Workspace/\+Porcupine/\+Project\+Porcupine/\+Assets/\+Scripts/\+Models/\+Events/\hyperlink{_game_event_8cs}{Game\+Event.\+cs}\end{DoxyCompactItemize}
